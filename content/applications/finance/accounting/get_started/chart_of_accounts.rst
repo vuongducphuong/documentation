@@ -185,8 +185,7 @@ To do so, check the :guilabel:`Deprecated` box in the account's settings, and sa
    * :doc:`cheat_sheet`
    * :doc:`../vendor_bills/assets`
    * :doc:`../vendor_bills/deferred_expenses`
-   * :doc:`../customer_invoices/deferred_revenues`
-   * :doc:`../../fiscal_localizations`
+   * :doc:`../customer_invoices/deferred_revenues`   
    * `Leansoft Tutorials: Chart of accounts <https://leansoft.vn/slides/slide/chart-of-accounts-1630>`_
    * `Leansoft Tutorials: Update your chart of accounts
      <https://leansoft.vn/slides/slide/update-your-chart-of-accounts-1658>`_

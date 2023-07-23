@@ -64,10 +64,6 @@ grids that are used to record invoices or credit notes.
    :align: center
    :alt: Configure taxes and their tax grids in Odoo Accounting
 
-.. note::
-   Taxes and reports are usually already pre-configured in Odoo: a :ref:`fiscal localization package
-   <fiscal_localizations/packages>` is installed according to the country you select at the creation
-   of your database.
 
 .. _tax-returns/close:
 
@@ -119,5 +115,4 @@ report to the tax authorities, along with the amount you have to pay or be refun
 
 .. seealso::
    * :doc:`../taxes`
-   * :doc:`../get_started`
-   * :doc:`../../fiscal_localizations`
+   * :doc:`../get_started`   

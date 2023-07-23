@@ -16,8 +16,8 @@ _logger = logging.getLogger(__name__)
 #=== General configuration ===#
 
 # General information about the project.
-project = 'Odoo'
-copyright = 'Odoo S.A.'
+project = 'Leansoft'
+copyright = 'Leansoft'
 
 # `version` is the version info for the project being documented, acts as replacement for |version|,
 # also used in various other places throughout the built documents.
@@ -80,60 +80,19 @@ source_read_replace_vals = {
     'CURRENT_VERSION': current_version,
     'CURRENT_MAJOR_BRANCH': current_major_branch,
     'CURRENT_MAJOR_VERSION': current_major_version,
-    'GITHUB_PATH': f'https://github.com/odoo/odoo/blob/{version}',
-    'GITHUB_ENT_PATH': f'https://github.com/odoo/enterprise/blob/{version}',
-    'OWL_PATH': f'https://github.com/odoo/owl/blob/master',
+    'GITHUB_PATH': f'https://github.com/leansoft/blob/{version}',
+    'GITHUB_ENT_PATH': f'https://github.com/leansoft/blob/{version}',
+    'OWL_PATH': f'https://github.com/leansoft/owl/blob/master',
 }
 
 # Add extensions directory to PYTHONPATH
 extension_dir = Path('extensions')
 sys.path.insert(0, str(extension_dir.absolute()))
 
-# Search for the directory of odoo sources to know whether autodoc should be used on the dev doc
-odoo_sources_candidate_dirs = (Path('odoo'), Path('../odoo'))
-# odoo_sources_dirs = [
-#     d for d in odoo_sources_candidate_dirs if d.is_dir() and (d / 'odoo-bin').exists()
-# ]
+
 odoo_dir_in_path = False
 
-# if not odoo_sources_dirs:
-#     _logger.warning(
-#         "Could not find Odoo sources directory in neither of the following folders:\n"
-#         "%(dir_list)s\n"
-#         "The 'Developer' documentation will be built but autodoc directives will be skipped.\n"
-#         "In order to fully build the 'Developer' documentation, clone the repository with "
-#         "`git clone https://github.com/odoo/odoo` or create a symbolic link.",
-#         {'dir_list': '\n'.join([f'\t- {d.resolve()}' for d in odoo_sources_candidate_dirs])},
-#     )
-# else:
-#     if (3, 6) < sys.version_info < (3, 7):
-#         # Running odoo needs python 3.7 min but monkey patch version_info to be compatible with 3.6.
-#         sys.version_info = (3, 7, 0)
-#     odoo_dir = odoo_sources_dirs[0].resolve()
-#     source_read_replace_vals['ODOO_RELPATH'] = '/../' + str(odoo_sources_dirs[0])
-#     sys.path.insert(0, str(odoo_dir))
-#     import odoo.addons
-#     odoo.addons.__path__.append(str(odoo_dir) + '/addons')
-#     from odoo import release as odoo_release  # Don't collide with Sphinx's 'release' config option
-#     odoo_version = '.'.join(str(s) for s in odoo_release.version_info[:2]).replace('~', '-')  # Change saas~XX.Y to saas-XX.Y
-#     odoo_version = 'master' if 'alpha' in odoo_release.version else odoo_version
-#     if release != odoo_version:
-#         _logger.warning(
-#             "Found Odoo sources in %(directory)s but with version '%(odoo_version)s' incompatible "
-#             "with documentation version '%(doc_version)s'.\n"
-#             "The 'Developer' documentation will be built but autodoc directives will be skipped.\n"
-#             "In order to fully build the 'Developer' documentation, checkout the matching branch"
-#             " with `cd odoo && git checkout %(doc_version)s`.",
-#             {'directory': odoo_dir, 'odoo_version': odoo_version, 'doc_version': version},
-#         )
-#     else:
-#         _logger.info(
-#             "Found Odoo sources in %(directory)s matching documentation version '%(version)s'.",
-#             {'directory': odoo_dir, 'version': release},
-#         )
-#         odoo_dir_in_path = True
-
-# Mapping between odoo models related to master data and the declaration of the
+# Mapping between Leansoft models related to master data and the declaration of the
 # data. This is used to point users to available xml_ids when giving values for
 # a field with the autodoc_field extension.
 model_references = {
@@ -151,7 +110,7 @@ extensions = [
     # Support the specialized to-do directives
     'sphinx.ext.todo',
 
-    # Custom Odoo theme
+    # Custom Leansoft theme
     'odoo_theme',
 
     # Youtube and Vimeo videos integration (youtube, vimeo directives)
@@ -198,7 +157,7 @@ intersphinx_mapping = {
     'werkzeug': ('https://werkzeug.palletsprojects.com/en/2.3.x/', None),
 }
 
-github_user = 'odoo'
+github_user = 'leansoft'
 github_project = 'documentation'
 
 locale_dirs = ['../locale/']
@@ -213,30 +172,20 @@ sphinx.transforms.i18n.docname_to_domain = (
 # is populated. If a version is passed to `versions` but is not listed here, it will not be shown.
 versions_names = {
     'master': "Master",
-    'saas-16.3': "Odoo Online",
-    'saas-16.2': "Odoo Online",
-    'saas-16.1': "Odoo Online",
-    '16.0': "Odoo 16",
-    'saas-15.2': "Odoo Online",
-    '15.0': "Odoo 15",
-    '14.0': "Odoo 14",
-    '13.0': "Odoo 13",
+    'saas-16.3': "Leansoft",
+    'saas-16.2': "Leansoft",
+    'saas-16.1': "Leansoft",
+    '16.0': "Leansoft",
+    'saas-15.2': "Leansoft",
+    '15.0': "Leansoft",
+    '14.0': "Leansoft",
+    '13.0': "Leansoft",
 }
 
 # The language names that should be shown in the language switcher, if the config option `languages`
 # is populated. If a language is passed to `languages` but is not listed here, it will not be shown.
-languages_names = {
-    'de': 'DE',
-    'en': 'EN',
-    'es': 'ES',
-    'fr': 'FR',
-    'it': 'IT',
-    'nl': 'NL',
-    'pt_BR': 'PT',
-    'ro': 'RO',
-    'uk': 'UA',
-    'zh_CN': 'ZH (CN)',
-    'zh_TW': 'ZH (TW)'
+languages_names = {    
+    'en': 'EN',    
 }
 
 # The directory in which files holding redirect rules used by the 'redirects' extension are listed.
@@ -292,37 +241,6 @@ latex_elements = {
 
 latex_additional_files = ['static/latex/odoo.sty']
 
-# Grouping the document tree into LaTeX files. List of tuples:
-# (source start file, target name, title, author, documentclass [howto, manual, or own class]).
-latex_documents = [
-    ('legal/terms/enterprise_tex', 'odoo_enterprise_agreement.tex',
-     'Odoo Enterprise Subscription Agreement', '', 'howto'),
-    ('legal/terms/partnership_tex',
-     'odoo_partnership_agreement.tex', 'Odoo Partnership Agreement', '', 'howto'),
-    ('legal/terms/terms_of_sale',
-     'terms_of_sale.tex', 'Odoo Terms of Sale', '', 'howto'),
-
-    ('legal/terms/i18n/enterprise_tex_fr', 'odoo_enterprise_agreement_fr.tex',
-     'Odoo Enterprise Subscription Agreement (FR)', '', 'howto'),
-    ('legal/terms/i18n/partnership_tex_fr',
-     'odoo_partnership_agreement_fr.tex', 'Odoo Partnership Agreement (FR)', '', 'howto'),
-    ('legal/terms/i18n/terms_of_sale_fr', 'terms_of_sale_fr.tex',
-     'Conditions Générales de Vente Odoo', '', 'howto'),
-
-    ('legal/terms/i18n/enterprise_tex_nl', 'odoo_enterprise_agreement_nl.tex',
-     'Odoo Enterprise Subscription Agreement (NL)', '', 'howto'),
-
-    ('legal/terms/i18n/enterprise_tex_de', 'odoo_enterprise_agreement_de.tex',
-     'Odoo Enterprise Subscription Agreement (DE)', '', 'howto'),
-
-    ('legal/terms/i18n/enterprise_tex_es', 'odoo_enterprise_agreement_es.tex',
-     'Odoo Enterprise Subscription Agreement (ES)', '', 'howto'),
-    ('legal/terms/i18n/partnership_tex_es',
-     'odoo_partnership_agreement_es.tex', 'Odoo Partnership Agreement (ES)', '', 'howto'),
-
-    ('legal/terms/i18n/enterprise_tex_pt_BR', 'odoo_enterprise_agreement_pt_BR.tex',
-     'Odoo Enterprise Subscription Agreement (PT)', '', 'howto'),
-]
 
 # List of languages that have legal translations (excluding EN). The keys must be in
 # `languages_names`. These translations will have a link to their versions of the legal

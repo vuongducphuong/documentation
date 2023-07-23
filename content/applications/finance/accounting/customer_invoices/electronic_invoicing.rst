@@ -13,47 +13,6 @@ some governments for fiscal control or to facilitate the administration.
 Electronic invoicing of your documents such as customer invoices, credit notes or vendor bills is
 one of the application of EDI.
 
-Odoo supports, among others, the following formats.
-
-.. list-table::
-   :header-rows: 1
-
-   * - Format Name
-     - Applicability
-   * - Factur-X (PDF/A-3)
-     - For French and German companies
-   * - Peppol BIS Billing 3.0 (UBL)
-     - For companies whose countries are part of the `EAS list
-       <https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/>`_
-   * - E-FFF
-     - For Belgian companies
-   * - XRechnung (UBL)
-     - For German companies
-   * - Fattura PA (IT)
-     - For Italian companies
-   * - CFDI (4.0)
-     - For Mexican companies
-   * - Peru UBL 2.1
-     - For Peruvian companies
-   * - SII IVA Llevanza de libros registro (ES)
-     - For Spanish companies
-   * - UBL 2.1 (Columbia)
-     - For Colombian companies
-   * - Egyptian Tax Authority
-     - For Egyptian companies
-   * - E-Invoice (IN)
-     - For Indian companies
-   * - NLCIUS (Netherlands)
-     - For Dutch companies
-   * - EHF 3.0
-     - For Norwegian companies
-   * - SG BIS Billing 3.0
-     - For Singaporean companies
-   * - A-NZ BIS Billing 3.0
-     - For Australian/New Zealand companies
-
-.. seealso::
-   :ref:`fiscal_localizations/packages`
 
 .. _e-invoicing/configuration:
 

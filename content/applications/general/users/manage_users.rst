@@ -138,10 +138,6 @@ Multi Companies
 The *Multi Companies* field allows you to set to which of the multiple companies database you hold
 the user can have access.
 
-.. note::
-   Note that if not handled correctly, it may be the source of a lot of inconsistent multi-company
-   behaviors. Therefore, a good knowledge of Odoo is required. For technical explanations refer
-   to :doc:`this </developer/howtos/company>` documentation.
 
 .. image:: manage_users/multi-companies.png
    :align: center

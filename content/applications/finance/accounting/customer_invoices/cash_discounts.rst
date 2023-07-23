@@ -109,8 +109,6 @@ Never
    - :ref:`Tax grids <tax-returns/tax-grids>`, which are used for the tax report, are correctly
      computed according to the :ref:`type of tax reduction <cash-discounts/tax-reductions>` you
      configured.
-   - The **type of cash discount tax reduction** may be correctly pre-configured, depending on your
-     :ref:`fiscal localization package <fiscal_localizations/packages>`.
 
 .. _cash-discounts/gain-loss-accounts:
 

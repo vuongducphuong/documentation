@@ -57,13 +57,6 @@ Configuration --> Fiscal Positions`, and :guilabel:`Create` a new **fiscal posit
 Do the same for the :guilabel:`Account Mapping` tab if required, and repeat this process for
 **each** constituent company on your database.
 
-.. Example::
-   Depending on your :doc:`localization package </applications/finance/fiscal_localizations>`, taxes
-   may vary from the screenshot displayed.
-
-   .. image:: vat_units/fiscal-positions.png
-      :align: center
-      :alt: Tax mapping of fiscal position for VAT unit
 
 Then, assign the fiscal position by opening the **Contacts** app. Search for a **constituent**
 company, and open the contact's **card**. Click the :guilabel:`Sales & Purchase` tab, and in the
