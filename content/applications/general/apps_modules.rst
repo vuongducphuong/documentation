@@ -44,9 +44,6 @@ Go to :menuselection:`Apps`, and click on the *Install* button of the app you wa
 Upgrade apps and modules
 ========================
 
-On some occasions, new improvements or app features are added to :doc:`supported versions of Odoo
-</administration/maintain/supported_versions>`. To be able to use them, you must **upgrade** your
-app.
 
 Go to :menuselection:`Apps`, click on the *dropdown menu* of the app you want to upgrade, then on
 *Upgrade*.

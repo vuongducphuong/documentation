@@ -13,8 +13,7 @@ and allow workers to trigger maintenance operations, feedback loops, quality iss
 
 .. seealso::
    - `Leansoft Tutorials: MRP <https://leansoft.vn/slides/mrp-29>`_
-   - `Leansoft Tutorials: Barcode Scanner <https://leansoft.vn/slides/barcode-30>`_
-   - :doc:`IoT Boxes (MES) </applications/productivity/iot>`
+   - `Leansoft Tutorials: Barcode Scanner <https://leansoft.vn/slides/barcode-30>`_   
 
 .. toctree::
    :titlesonly:

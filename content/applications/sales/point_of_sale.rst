@@ -10,8 +10,7 @@ a web browser, even if you are temporarily offline. Product moves are automatica
 your stock, you get real-time statistics, and your data is consolidated across all shops.
 
 .. seealso::
-   - `Leansoft Tutorials: Point of Sale Tutorials <https://leansoft.vn/slides/point-of-sale-28>`_
-   - :doc:`IoT Boxes Documentations </applications/productivity/iot>`
+   - `Leansoft Tutorials: Point of Sale Tutorials <https://leansoft.vn/slides/point-of-sale-28>`_   
 
 .. _pos/session-start:
 

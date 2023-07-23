@@ -8,8 +8,7 @@ different products/services, or different audiences. In these cases, having diff
 help avoid confusion and make it easier to tailor your digital outreach strategies and reach your
 target audience.
 
-Each website can be designed and configured independently with its own :doc:`domain name
-</administration/maintain/domain_names>`, theme, pages,
+Each website can be designed and configured independently with its own domain name, theme, pages,
 menus, :doc:`languages <translate>`, :doc:`products <../../ecommerce/managing_products/products>`,
 assigned sales team, etc. They can also :ref:`share content and pages
 <multi-website/website_content>`.
@@ -30,7 +29,7 @@ To create a new website, proceed as follows:
       :alt: New website button
 
 #. Specify the :guilabel:`Website Name` and :guilabel:`Website domain`. Each website must be
-   published under its own :doc:`domain </administration/maintain/domain_names>`.
+   published under its own domain.
 #. Adapt the :guilabel:`Company name`, :guilabel:`Languages` and :guilabel:`Default language`
    if needed.
 #. Click the :guilabel:`Create` button.

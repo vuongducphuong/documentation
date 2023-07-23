@@ -88,20 +88,6 @@ const _prepareAccordion = (tocElement) => {
  * included in the original URL. The last fallback URL is the root of the documentation with the
  * version stripped off to redirect the user to the index of the default version.
  *
- * Example:
- * 1. .../documentation/13.0/contributing/documentation.html
- * 2. .../documentation/13.0/contributing.html
- * 3. .../documentation/13.0
- * 4. .../documentation/
- *
- * Example:
- * 1. .../documentation/15.0/fr/administration/install.html
- * 2. .../documentation/15.0/administration/install.html
- * 3. .../documentation/15.0/fr/administration.html
- * 4. .../documentation/15.0/administration.html
- * 5. .../documentation/15.0/fr/
- * 6. .../documentation/15.0/
- * 7. .../documentation/
  */
 const _generateFallbackUrls = async (targetUrl) => {
 

@@ -52,7 +52,6 @@ redirect rule must be added in the following cases:
 
    Example: The entire content of `administation/install/odoo_sh.rst` is moved into
    `administration/odoo_sh.rst` and the first file is deleted. The redirect rule should be:
-
-   `administration/install/odoo_sh.rst administration/odoo_sh.rst  # Move all information related to Odoo.sh on a single page`
+   
 
 No redirect rule should be created when you delete a source file for which there is no alternative.

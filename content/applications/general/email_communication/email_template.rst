@@ -68,8 +68,6 @@ On the other hand, sales orders made by a customer on one of your Odoo e-commerc
 link established with the website from which the order was made. As a result, the e-mail sent for
 the sales orders uses the domain name defined for the corresponding website to generate the links.
 
-For more information about how to configure your domains, we invite you to check :doc:`our domain name
-documentation </administration/maintain/domain_names>`.
 
 Updating translations within email templates
 --------------------------------------------

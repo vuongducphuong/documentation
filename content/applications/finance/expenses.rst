@@ -214,12 +214,6 @@ Configuration --> Settings`. Ensure :guilabel:`Incoming Emails` is enabled.
    :align: center
    :alt: Create the domain alias by clicking the link.
 
-.. note::
-   If the domain alias needs to be set up, :guilabel:`Setup your domain alias` will appear beneath
-   the incoming emails check box instead of the email address field. Refer to this documentation for
-   setup instructions and more information: :doc:`/administration/maintain/domain_names`. Once the
-   domain alias is configured, the email address field will be visible beneath the incoming emails
-   section.
 
 Next, enter the email address to be used in the email field, and then click :guilabel:`Save`. Now
 that the email address has been entered, emails can be sent to that alias to create new expenses

@@ -848,7 +848,6 @@ abbr {
 }
 
 // API and Reference Styles
-//(ex: https://leansoft.vn/documentation/master/developer/reference/backend/orm.html#fields)
 
 .sig {
     font-size: 0.875rem;
@@ -900,7 +899,6 @@ dl.py, dl.js, dl.o-definition-list {
 }
 
 // The field-lists are generated Parameters and Arguments
-// within the References (ex: https://leansoft.vn/documentation/master/developer/reference/backend/orm.html#odoo.fields.Field)
 dl.field-list {
     padding: .5rem;
     border: 1px solid $o-gray-border;
@@ -929,7 +927,6 @@ dl:not([class]) dd {
 }
 
 // Child of source-code URL
-// ex: https://leansoft.vn/documentation/16.0/developer/reference/backend/orm.html#odoo.models.AbstractModel
 span.viewcode-link {
     float: none;
     margin-left: .3rem;

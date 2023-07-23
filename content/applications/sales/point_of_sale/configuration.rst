@@ -26,7 +26,6 @@ You can also configure some settings from the dashboard by clicking the vertical
 (:guilabel:`⋮`) on a POS card. Doing so opens a popup window, from which you can:
 
 - :doc:`Enable multiple employees to log in. <employee_login>`
-- :doc:`Connect and set up an IoT box. <../../productivity/iot/config/pos>`
 - :doc:`Connect and set up an ePOS printer. <configuration/epos_ssc>`
 
 .. image:: configuration/toggle-settings.png

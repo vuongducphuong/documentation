@@ -9,8 +9,7 @@ This is particularly helpful if the organization uses Google Workspace, and want
 the organization to connect to Odoo using their Google Accounts.
 
 .. seealso::
-   - :doc:`/applications/productivity/calendar/google`
-   - :doc:`/administration/maintain/google_oauth`
+   - :doc:`/applications/productivity/calendar/google`   
 
 .. _google-sign-in/configuration:
 

@@ -62,9 +62,6 @@ enable the :guilabel:`Custom Email Servers` option. Then, click :guilabel:`Save`
 record in Odoo. Reference the SMTP data of the external email server. Once all the information has
 been filled out, click :guilabel:`Test Connection`.
 
-.. seealso::
-   - :doc:`/administration/maintain/google_oauth`
-   - :doc:`/administration/maintain/azure_oauth`
 
 .. note::
    Ensuring the outgoing domain has :abbr:`SPF (Sender Policy Framework)`, :abbr:`DKIM (DomainKeys
@@ -176,7 +173,7 @@ Set up different dedicated servers for transactional and mass emails
 
 In Odoo a separate email server can be used for transactional emails and mass
 mailings. Example: Use Postmark or SendinBlue for transactional emails, and Amazon SES, Mailgun,
-Sendgrid or :doc:`Mailjet </administration/maintain/mailjet_api>` for mass mailings.
+Sendgrid for mass mailings.
 
 .. important::
    A default outgoing email server is already configured. Do not create an alternative one unless a

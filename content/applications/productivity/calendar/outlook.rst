@@ -7,7 +7,6 @@ appointments across all related applications.
 
 .. seealso::
    - :doc:`/applications/general/auth/azure`
-   - :doc:`/administration/maintain/azure_oauth`
 
 Register the application with Microsoft Azure
 =============================================

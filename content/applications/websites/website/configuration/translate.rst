@@ -75,8 +75,6 @@ contents and saving.
      .. image:: translate/product-translation.png
         :alt: Translate product-related items.
 
-   - You can also :doc:`export/import translations <../../../../developer/howtos/translations>`
-     to translate multiple items (e.g., product names and descriptions) in one go.
 
 Language selector menu
 ======================
