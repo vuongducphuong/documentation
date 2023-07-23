@@ -436,7 +436,7 @@ aside.o_page_toc {
     @include media-breakpoint-up(lg) {
         grid-template-areas: "sidebar main toc";
         grid-template-columns: minmax(0,$o-side-nav-width) minmax(0,auto) minmax(0,$o-on-page-width);
-        margin-top: $o-headers-height;
+        // margin-top: $o-headers-height;        
     }
 }
 
