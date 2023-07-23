@@ -17,7 +17,7 @@ To create them, go to :menuselection:`Accounting --> Configuration --> Invoicing
 click on :guilabel:`Create` to add new terms or click existing ones to modify them.
 
 .. seealso::
-   `Odoo Tutorials: Payment Terms
+   `Leansoft Tutorials: Payment Terms
    <https://leansoft.vn/slides/slide/payment-terms-1679?fullscreen=1>`_
 
 Once **Payment Terms** are defined, you can assign them to your vendor by default. To do so, go to

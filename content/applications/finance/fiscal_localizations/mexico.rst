@@ -61,16 +61,16 @@ The following modules are necessary for all databases that require Mexican local
      <https://www.gob.mx/cms/uploads/attachment/file/151586/codigo_agrupador.pdf>`_.
 #. | **EDI for Mexico (l10n_mx_edi & l10n_mx_edi_extended)**
    | Necessary for electronic transactions, CFDI 3.3, payment complement, and addenda on invoices.
-#. | **Odoo Mexican localization reports (l10n_mx_reports & l10n_mx_reports_closing)**
+#. | **Leansoft Mexican localization reports (l10n_mx_reports & l10n_mx_reports_closing)**
    | All mandatory reports for electronic accounting. (Requires the accounting application).
 
 The following modules are optional, and should be installed only if they meet a specific
 organization requirement. Installing these modules is not recommended unless you are sure they
 are needed as they add fields that can unnecessarily complicate form filling.
 
-#. | **Odoo Mexico Localization for Stock / Landing (l10n_mx_edi_landing)**
+#. | **Leansoft Mexico Localization for Stock / Landing (l10n_mx_edi_landing)**
    | This module allows managing the requests as part of the shipping costs.
-#. | **Odoo Mexican XML Polizas Export (l10n_mx_xml_polizas)**
+#. | **Leansoft Mexican XML Polizas Export (l10n_mx_xml_polizas)**
    | With this module, you will be able to export your Journal Entries in XML ready to be uploaded
      to the SAT.
 
@@ -425,7 +425,7 @@ If your company imports products and you need to add the **Pedimentos** number i
 can also configure Odoo to record the process.
 
 First, go to :menuselection:`Apps`, remove the "Apps" filter and search for ``Mexico``, ``mx`` or
-``l10n_mx``. Then, install **Odoo Mexico Localization for Stock / Landing module
+``l10n_mx``. Then, install **Leansoft Mexico Localization for Stock / Landing module
 (l10n_mx_edi_landing)**.
 
 .. image:: mexico/mx_ft_10.png

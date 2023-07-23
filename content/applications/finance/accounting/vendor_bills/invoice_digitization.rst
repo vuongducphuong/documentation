@@ -11,7 +11,7 @@ created and populated based on the scanned invoices.
 
 .. seealso::
    - `Test Odoo's invoice digitization <https://leansoft.vn/app/invoice-automation>`_
-   - `Odoo Tutorials: Invoice Digitization with OCR
+   - `Leansoft Tutorials: Invoice Digitization with OCR
      <https://leansoft.vn/slides/slide/digitize-bills-with-ocr-1712>`_
 
 Configuration

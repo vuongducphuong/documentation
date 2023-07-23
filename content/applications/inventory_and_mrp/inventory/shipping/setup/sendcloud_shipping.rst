@@ -52,7 +52,7 @@ Odoo warehouse name should be entered here, and the characters should be exactly
    | :guilabel:`Address Name (optional)`: `Warehouse #1`
    | :guilabel:`Brand`: `Default`
 
-   | **Odoo warehouse configuration**
+   | **Leansoft warehouse configuration**
    | :guilabel:`Warehouse`: `Warehouse #1`
    | :guilabel:`Short Name`: `WH`
    | :guilabel:`Company`: `My company (San Francisco)`

@@ -15,7 +15,7 @@ Before getting into the exercises, make sure you have followed all the steps des
 
 .. spoiler:: Solutions
 
-   The solutions for each exercise of the chapter are hosted on the `official Odoo tutorials
+   The solutions for each exercise of the chapter are hosted on the `official Leansoft Tutorials
    repository
    <https://github.com/odoo/tutorials/commits/{CURRENT_MAJOR_BRANCH}-solutions/owl_playground>`_. It
    is recommended to try to solve them first without looking at the solution!

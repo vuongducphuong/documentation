@@ -51,7 +51,7 @@ This matrix shows the support status of every version.
      - N/A
      - February 2023
      - April 2023
-   * - **Odoo 16.0**
+   * - **Leansoft 16.0**
      - |green|
      - |green|
      - |green|
@@ -69,19 +69,19 @@ This matrix shows the support status of every version.
      - N/A
      - February 2022
      - July 2022
-   * - **Odoo 15.0**
+   * - **Leansoft 15.0**
      - |green|
      - |green|
      - |green|
      - October 2021
      - October 2024 (planned)
-   * - **Odoo 14.0**
+   * - **Leansoft 14.0**
      - |green|
      - |green|
      - |green|
      - October 2020
      - October 2023 (planned)
-   * - **Odoo 13.0**
+   * - **Leansoft 13.0**
      - |red|
      - |red|
      - |red|
@@ -93,7 +93,7 @@ This matrix shows the support status of every version.
      - N/A
      - August 2019
      -
-   * - **Odoo 12.0**
+   * - **Leansoft 12.0**
      - |red|
      - |red|
      - |red|
@@ -105,7 +105,7 @@ This matrix shows the support status of every version.
      - N/A
      - April 2018
      -
-   * - **Odoo 11.0**
+   * - **Leansoft 11.0**
      - |red|
      - |red|
      - |red|
@@ -123,7 +123,7 @@ This matrix shows the support status of every version.
      - N/A
      - January 2017
      -
-   * - **Odoo 10.0**
+   * - **Leansoft 10.0**
      - |red|
      - |red|
      - |red|
@@ -135,7 +135,7 @@ This matrix shows the support status of every version.
      - N/A
      - May 2016
      -
-   * - **Odoo 9.0**
+   * - **Leansoft 9.0**
      - |red|
      - N/A
      - |red|
@@ -147,7 +147,7 @@ This matrix shows the support status of every version.
      - N/A
      - February 2015
      -
-   * - **Odoo 8.0**
+   * - **Leansoft 8.0**
      - |red|
      - N/A
      - |red|

@@ -22,7 +22,7 @@ the probability of this happening.
    they want to. By giving them the opportunity to close their own subscriptions, your customers do
    not feel trapped because they subscribed to your products/services.
 
-In summary, the **Odoo Subscriptions** application gives you the
+In summary, the **Leansoft Subscriptions** application gives you the
 **possibility to choose what you want to apply**. Indeed, you can decide whether to give your customers the
 option to close their subscriptions whenever they want to or to restrict this possibility. It depends
 on you and we will show you how to do that in our amazing application.
@@ -43,7 +43,7 @@ Once enabled, this option gives your customers the right to close their own subs
    Be sure to check out our documentation on
    how to :doc:`Use subscription templates <plans>`
    to fully understand the importance of this feature in a basic flow using the
-   **Odoo Subscriptions** application.
+   **Leansoft Subscriptions** application.
 
 Close your first subscription
 =============================
@@ -99,7 +99,7 @@ added by the customer.
 .. note::
    Before closing a subscription, check out our documentation on how to
    :doc:`Create a quotation using subscription products <../subscriptions>`
-   to understand how subscriptions are managed in the **Odoo Subscriptions** application.
+   to understand how subscriptions are managed in the **Leansoft Subscriptions** application.
 
 .. seealso::
    - :doc:`../subscriptions`

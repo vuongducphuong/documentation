@@ -54,7 +54,7 @@ concepts to the proper understanding of the following reports:
   during his/her entire contract. This approach emphasizes the importance of customer retention,
   shifting our focus from a quarterly or yearly approach to a long-term one.
 
-Check out the different kinds of reports you can access from the **Odoo Subscriptions**
+Check out the different kinds of reports you can access from the **Leansoft Subscriptions**
 application.
 
 Subscriptions analysis report

@@ -15,7 +15,7 @@ Each subscriber experiences this renewal process monthly, annually, or sometimes
 the duration of the contract. Most subscription companies choose to automate their renewal processes
 but, in some cases, manual subscription renewals are still the preferred option.
 
-With **Odoo Subscriptions**, you can have all your subscriptions in one application, suggest an
+With **Leansoft Subscriptions**, you can have all your subscriptions in one application, suggest an
 automatic subscription renewal to your customers (as well as a manual one) and, finally, filter all
 your subscriptions and easily find those to renew (with the help of the tag *To renew*).
 
@@ -47,7 +47,7 @@ When a subscription needs to be renewed, you have the possibility to use a new b
 *Renewal quotation*. By clicking on it, a new quotation is created. From there, start a basic sales
 flow allowing you to send the quotation by email to your customers or to confirm it. It is better to
 first *Send by email* the quotation to your customers in order to have their confirmation and, then,
-*Confirm* it in **Odoo Sales**.
+*Confirm* it in **Leansoft Sales**.
 
 .. note::
    In the Chatter of this new quotation, it is mentioned that "This renewal order has been created

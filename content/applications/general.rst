@@ -1,5 +1,5 @@
 =============
-Miscellaneous
+Khác
 =============
 
 .. toctree::

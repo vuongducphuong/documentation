@@ -2,7 +2,7 @@
 :show-toc:
 
 =========
-Live Chat
+Chat trực tuyến
 =========
 
 Odoo *Live Chat* allows users to communicate with website visitors in real time. With *Live Chat*,

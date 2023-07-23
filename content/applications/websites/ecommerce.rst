@@ -17,8 +17,8 @@ products and increase your average cart sizes.
 
 .. seealso::
    - :doc:`Website Documentation <website>`
-   - `Odoo Tutorials: Website <https://leansoft.vn/slides/website-25>`_
-   - `Odoo Tutorials: eCommerce <https://leansoft.vn/slides/ecommerce-26>`_
+   - `Leansoft Tutorials: Website <https://leansoft.vn/slides/website-25>`_
+   - `Leansoft Tutorials: eCommerce <https://leansoft.vn/slides/ecommerce-26>`_
 
 .. toctree::
    :titlesonly:

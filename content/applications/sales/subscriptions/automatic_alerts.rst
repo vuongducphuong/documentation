@@ -11,7 +11,7 @@ email to welcome them and express your gratitude. Or, if the satisfaction rate o
 drops below 50%, you would probably want to schedule a call with them to understand the reasons for
 their dissatisfaction.
 
-With **Odoo Subscriptions**, you can set automatic emails, create a "Call" task for one
+With **Leansoft Subscriptions**, you can set automatic emails, create a "Call" task for one
 of your salespeople so that he/she can try to understand your customer's dissatisfaction, and
 finally, why not automatically send satisfaction surveys so customers can evaluate your services?
 All of that is now possible.

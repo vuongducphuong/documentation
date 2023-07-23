@@ -1,7 +1,7 @@
 :nosearch:
 
 =============================
-Optimize your Day-to-Day work
+Tối ưu hóa công việc hàng ngày
 =============================
 
 .. toctree::

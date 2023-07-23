@@ -12,7 +12,7 @@ keep the churn under control, and :doc:`generate reports
 etc.
 
 .. seealso::
-   - `Odoo Tutorials: Subscriptions <https://leansoft.vn/slides/subscription-20>`_
+   - `Leansoft Tutorials: Subscriptions <https://leansoft.vn/slides/subscription-20>`_
    - :doc:`/applications/sales/subscriptions/products`
    - :doc:`/applications/sales/subscriptions/ecommerce`
    - :doc:`/applications/sales/subscriptions/plans`

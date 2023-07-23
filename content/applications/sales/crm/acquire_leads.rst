@@ -1,7 +1,7 @@
 :nosearch:
 
 =============
-Acquire leads
+Khách hàng tiềm năng
 =============
 
 .. toctree::
@@ -9,5 +9,4 @@ Acquire leads
 
    acquire_leads/convert
    acquire_leads/generate_leads
-   acquire_leads/send_quotes
-   acquire_leads/lead_mining
+   acquire_leads/send_quotes   

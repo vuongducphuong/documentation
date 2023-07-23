@@ -1,5 +1,5 @@
 ============================
-Generate leads/opportunities
+Tạo khách hàng tiềm năng/cơ hội
 ============================
 
 Two key ways to generate new leads or opportunities for your business are through email aliases and

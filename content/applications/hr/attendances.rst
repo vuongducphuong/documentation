@@ -7,11 +7,11 @@
 Attendances
 ===========
 
-**Odoo Attendances** functions as a time clock. Employees check in and check out of work, while
+**Leansoft Attendances** functions as a time clock. Employees check in and check out of work, while
 managers can see who is available at any given time.
 
 .. seealso::
-   `Odoo Tutorials: Attendances <https://leansoft.vn/slides/slide/attendances-684>`_
+   `Leansoft Tutorials: Attendances <https://leansoft.vn/slides/slide/attendances-684>`_
 
 .. toctree::
    :titlesonly:

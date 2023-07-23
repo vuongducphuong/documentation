@@ -333,7 +333,7 @@ This government-certified system entails the use of a :ref:`certified POS system
 Certified POS system
 --------------------
 
-The Odoo POS system is certified for the major versions of databases hosted on **Odoo Online** and
+The Odoo POS system is certified for the major versions of databases hosted on **Leansoft Online** and
 **Odoo.sh**. Please refer to the following table to ensure that your POS system is certified.
 
 .. list-table::

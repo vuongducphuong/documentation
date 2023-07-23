@@ -5,7 +5,7 @@ Surveys
 =======
 
 .. seealso::
-   - `Odoo Tutorials: Surveys <https://leansoft.vn/slides/surveys-62>`_
+   - `Leansoft Tutorials: Surveys <https://leansoft.vn/slides/surveys-62>`_
 
 .. toctree::
    :titlesonly:

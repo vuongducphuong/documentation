@@ -6,7 +6,7 @@
 Knowledge
 =========
 
-**Odoo Knowledge** is a multipurpose productivity app that allows internal users to enrich their
+**Leansoft Knowledge** is a multipurpose productivity app that allows internal users to enrich their
 business knowledge base and provide individually or collaboratively gathered information.
 
 The pages on which they gather content are called *articles*. They are mainly composed of a title

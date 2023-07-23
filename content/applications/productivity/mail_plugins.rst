@@ -54,4 +54,4 @@ select a package.
 
 .. seealso::
    - :doc:`../general/in_app_purchase`
-   - `Odoo Tutorials: Lead Enrichment <https://leansoft.vn/r/p73>`_
+   - `Leansoft Tutorials: Lead Enrichment <https://leansoft.vn/r/p73>`_

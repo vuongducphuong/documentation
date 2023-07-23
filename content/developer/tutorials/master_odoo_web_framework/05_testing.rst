@@ -8,7 +8,7 @@ introduce (too many) bugs or regressions. Let us see how to test our code.
 .. spoiler:: Solutions
 
    The solutions for each exercise of the chapter are hosted on the
-   `official Odoo tutorials repository
+   `official Leansoft Tutorials repository
    <https://github.com/odoo/tutorials/commits/{CURRENT_MAJOR_BRANCH}-solutions>`_.
 
 1. Integration testing

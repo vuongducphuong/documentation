@@ -2,7 +2,7 @@
 Sign
 ====
 
-**Odoo Sign** allows you to send, sign and approve documents online, using electronic signatures.
+**Leansoft Sign** allows you to send, sign and approve documents online, using electronic signatures.
 
 An **electronic signature** shows a person's agreement to the content of a document. Just like a
 handwritten signature, the electronic one represents a legal bounding by the terms of the signed
@@ -13,7 +13,7 @@ in with the user's details present in your database.
 
 .. seealso::
    - `Odoo Sign: product page <https://leansoft.vn/app/sign>`_
-   - `Odoo Tutorials: Sign <https://leansoft.vn/slides/sign-61>`_
+   - `Leansoft Tutorials: Sign <https://leansoft.vn/slides/sign-61>`_
 
 Validity of electronic signatures
 =================================

@@ -1,7 +1,7 @@
 :nosearch:
 
 ===============
-Human resources
+Nhân sự
 ===============
 
 .. toctree::

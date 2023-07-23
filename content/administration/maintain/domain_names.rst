@@ -22,7 +22,7 @@ You can use a custom domain name to access your Odoo database and websites:
    ``www.example.com`` rather than the default ``example.leansoft.vn``.
 
 .. seealso::
-   - `Odoo Tutorials: Register a Free Domain Name
+   - `Leansoft Tutorials: Register a Free Domain Name
      <https://leansoft.vn/slides/slide/register-a-free-domain-name-1663>`_
    - `Odoo Quick Tips: Get a free domain name! <https://www.youtube.com/watch?v=eAfgeNOHLP4>`_
 

@@ -11,7 +11,7 @@ Odoo Project is a tool to manage your ongoing projects. Schedule tasks, assign a
 coworkers, and keep track of each project's profitability.
 
 .. seealso::
-   `Odoo Tutorials: Project and Timesheets <https://leansoft.vn/slides/project-and-timesheets-21>`_
+   `Leansoft Tutorials: Project and Timesheets <https://leansoft.vn/slides/project-and-timesheets-21>`_
 
 .. toctree::
    :titlesonly:

@@ -27,7 +27,7 @@ orders linked to that customer.
 .. spoiler:: Solutions
 
    The solutions for each exercise of the chapter are hosted on the
-   `official Odoo tutorials repository
+   `official Leansoft Tutorials repository
    <https://github.com/odoo/tutorials/commits/{CURRENT_MAJOR_BRANCH}-solutions/awesome_tshirt>`_.
 
 1. Create a new kanban view

@@ -1,7 +1,7 @@
 :nosearch:
 
 =====
-Sales
+Bán hàng
 =====
 
 

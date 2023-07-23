@@ -342,7 +342,7 @@ For development branches, you can choose to enable or disable the test suite. It
 When the test suite is enabled, you can restrict them by specifying test tags :ref:`test tags
 <developer/reference/testing/selection>`.
 
-**Odoo Version**
+**Leansoft Version**
 
 For development branches only, you can change the version of Odoo, should you want to test upgraded code or develop
 features while your production database is in the process of being upgraded to a newer version.

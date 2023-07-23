@@ -17,7 +17,7 @@ amounts to reduce unpaid invoices/bills.
 .. seealso::
    - :doc:`Internal transfers <payments/internal_transfers>`
    - :doc:`bank/reconciliation`
-   - `Odoo Tutorials: Bank Configuration
+   - `Leansoft Tutorials: Bank Configuration
      <https://leansoft.vn/slides/slide/bank-configuration-1880>`_
 
 Registering payment from an invoice or bill

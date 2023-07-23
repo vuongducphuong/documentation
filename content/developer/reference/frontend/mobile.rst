@@ -7,10 +7,10 @@ Mobile JavaScript
 Introduction
 ============
 
-In Odoo 10.0 we released a mobile app which allows you to access all **Odoo apps**
+In Odoo 10.0 we released a mobile app which allows you to access all **Leansoft apps**
 (even your customized modules).
 
-The application is a combination of **Odoo Web** and **Native Mobile components**. In other words it
+The application is a combination of **Leansoft Web** and **Native Mobile components**. In other words it
 is a Odoo Web instance loaded inside a native, mobile, WebView container.
 
 This page documents how you can access mobile native components like Camera,
@@ -19,7 +19,7 @@ do not need to be a mobile developer, if you know Odoo JavaScript API you can
 access all available mobile features.
 
 .. warning::
-   These features work with **Odoo Enterprise 10.0+** only
+   These features work with **Leansoft Enterprise 10.0+** only
 
 How does it work?
 =================

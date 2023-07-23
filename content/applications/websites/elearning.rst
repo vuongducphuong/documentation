@@ -13,7 +13,7 @@ learning experience enhances their attentiveness and fosters heightened producti
    create your content.
 
 .. seealso::
-   `Odoo Tutorials: eLearning <https://leansoft.vn/slides/elearning-56>`_
+   `Leansoft Tutorials: eLearning <https://leansoft.vn/slides/elearning-56>`_
 
 Courses
 =======

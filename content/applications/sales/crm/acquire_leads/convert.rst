@@ -1,5 +1,5 @@
 ================================
-Convert leads into opportunities
+Chuyển đổi tiềm năng thành cơ hội
 ================================
 
 The system can generate leads instead of opportunities, in order to add

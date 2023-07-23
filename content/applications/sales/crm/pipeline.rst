@@ -1,7 +1,7 @@
 :nosearch:
 
 =====================
-Organize the pipeline
+Chu trình bán hàng
 =====================
 
 .. toctree::

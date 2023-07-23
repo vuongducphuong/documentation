@@ -39,7 +39,7 @@ payment dates defined beforehand by the seller.
      use, return policies, and other policies surrounding the sale of goods and services.
 
 .. seealso::
-   - `Odoo Tutorials: payment terms <https://leansoft.vn/slides/slide/payment-terms-1679>`_
+   - `Leansoft Tutorials: payment terms <https://leansoft.vn/slides/slide/payment-terms-1679>`_
    - :doc:`cash_discounts`
 
 Configuration

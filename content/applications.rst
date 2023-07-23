@@ -5,19 +5,19 @@
 
 
 =========
-User Docs
+Hướng dẫn sử dụng
 =========
 
-Discover our user guides and configuration tutorials per application.
+Khám phá những điều kỳ diệu mà Leansoft đem đến cho doanh nghiệp bạn.
 
 
 .. toctree::
     :maxdepth: 2
-
-    applications/finance
+    
     applications/sales
     applications/websites
     applications/inventory_and_mrp
+    applications/finance
     applications/hr
     applications/marketing
     applications/services

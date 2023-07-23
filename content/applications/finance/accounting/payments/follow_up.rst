@@ -8,7 +8,7 @@ that automatically trigger one or more actions according to the number of overdu
 your follow-ups via different means, such as email, post, or SMS.
 
 .. seealso::
-   - `Odoo Tutorials: Payment Follow-up <https://leansoft.vn/slides/slide/payment-follow-up-1682>`_
+   - `Leansoft Tutorials: Payment Follow-up <https://leansoft.vn/slides/slide/payment-follow-up-1682>`_
 
 Configuration
 =============

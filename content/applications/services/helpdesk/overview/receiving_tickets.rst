@@ -48,7 +48,7 @@ ticket. The body of the email is also added to the ticket under the :guilabel:`D
 in the ticket's :guilabel:`Chatter` section.
 
 .. important::
-   The configuration steps outlined above are for **Odoo Online** and **Odoo.sh** databases. For
+   The configuration steps outlined above are for **Leansoft Online** and **Odoo.sh** databases. For
    **On-premise** databases, additional configuration for custom email servers and email aliases
    may be required.
 

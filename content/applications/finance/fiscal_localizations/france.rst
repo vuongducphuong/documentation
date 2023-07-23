@@ -374,7 +374,7 @@ In case of non-conformity, your company risks a fine of €7,500.
 
 To get the certification, just follow the following steps:
 
-- If you use **Odoo Point of Sale**, :ref:`install <general/install>` the **France - VAT Anti-Fraud
+- If you use **Leansoft Point of Sale**, :ref:`install <general/install>` the **France - VAT Anti-Fraud
   Certification for Point of Sale (CGI 286 I-3 bis)** module by going to :menuselection:`Apps`,
   removing the *Apps* filter, then searching for *l10n_fr_pos_cert*, and installing the module.
 

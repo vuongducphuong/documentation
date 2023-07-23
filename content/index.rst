@@ -1,13 +1,13 @@
 :nosearch:
 
 ==================
-Odoo Documentation
+Tài liệu hướng dẫn sử dụng Leansoft
 ==================
 
 
 .. toctree::
 
     applications
-    administration
-    developer
-    contributing
+    .. administration
+    .. developer
+    .. contributing

@@ -2,14 +2,14 @@
 Rental
 ======
 
-**Odoo Rental** is a comprehensive solution to manage your rentals.
+**Leansoft Rental** is a comprehensive solution to manage your rentals.
 
 From a single view, you can send out quotations, confirm orders, schedule rentals, register when
 products are picked up and returned, and invoice your customers.
 
 .. seealso::
    - `Odoo Rental: product page <https://leansoft.vn/app/rental>`_
-   - `Odoo Tutorials: Rental <https://leansoft.vn/slides/rental-48>`_
+   - `Leansoft Tutorials: Rental <https://leansoft.vn/slides/rental-48>`_
 
 .. _rental/pricing:
 
@@ -86,7 +86,7 @@ and click on *Sign Now* to start the signing process with your customer. Once th
 completed, click on *Validate & Send Completed Document*.
 
 .. seealso::
-   - `Odoo Tutorials: Sign <https://leansoft.vn/slides/sign-61>`_
+   - `Leansoft Tutorials: Sign <https://leansoft.vn/slides/sign-61>`_
 
 .. _rental/pickup-return:
 

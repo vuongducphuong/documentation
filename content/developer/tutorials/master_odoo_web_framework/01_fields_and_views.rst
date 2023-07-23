@@ -9,7 +9,7 @@ like Chart.js. Now, let's learn how to create new fields and views.
 .. spoiler:: Solutions
 
    The solutions for each exercise of the chapter are hosted on the
-   `official Odoo tutorials repository
+   `official Leansoft Tutorials repository
    <https://github.com/odoo/tutorials/commits/{CURRENT_MAJOR_BRANCH}-solutions/awesome_tshirt>`_. It
    is recommended not to look at them before trying the exercises.
 

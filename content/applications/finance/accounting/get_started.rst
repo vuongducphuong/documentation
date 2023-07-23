@@ -187,7 +187,7 @@ Send yourself a sample invoice by email to make sure everything is correctly con
    * :doc:`get_started/chart_of_accounts`
    * :doc:`bank/bank_synchronization`
    * :doc:`../fiscal_localizations`
-   * `Odoo Tutorials: Accounting Basics <https://leansoft.vn/r/lsZ>`_
+   * `Leansoft Tutorials: Accounting Basics <https://leansoft.vn/r/lsZ>`_
 
 .. toctree::
    :titlesonly:

@@ -1,7 +1,7 @@
 :nosearch:
 
 ======================
-Assign and track leads
+Phân chia và theo dõi khách hàng tiềm năng
 ======================
 
 .. toctree::

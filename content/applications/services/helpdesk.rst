@@ -8,7 +8,7 @@ Helpdesk
 ========
 
 .. seealso::
-   - `Odoo Tutorials: Helpdesk <https://leansoft.vn/slides/helpdesk-51>`_
+   - `Leansoft Tutorials: Helpdesk <https://leansoft.vn/slides/helpdesk-51>`_
 
 .. toctree::
    :titlesonly:

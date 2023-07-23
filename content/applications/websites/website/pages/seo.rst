@@ -58,17 +58,17 @@ Content is King
 When it comes to SEO, content is usually king. Odoo provides several
 modules to help you build your website content:
 
-- **Odoo Blogs**: write great contents.
+- **Leansoft Blogs**: write great contents.
 
-- **Odoo Slides**: publish all your Powerpoint or PDF presentations.
+- **Leansoft Slides**: publish all your Powerpoint or PDF presentations.
   Their content is automatically indexed on the web page. Example:
   `leansoft.vn/slides/public-channel-1 <https://leansoft.vn/slides/public-channel-1>`_
 
-- **Odoo Forum**: let your community create contents for you. Example:
+- **Leansoft Forum**: let your community create contents for you. Example:
   `leansoft.vn/forum/1 <https://leansoft.vn/forum/1>`_
   (accounts for 30% of leansoft.vn landing pages)
 
-- **Odoo Mailing List Archive**: publish mailing list archives on your
+- **Leansoft Mailing List Archive**: publish mailing list archives on your
   website. Example:
   `leansoft.vn/groups/community-59 <https://leansoft.vn/groups/community-59>`_
   (1000 pages created per month)

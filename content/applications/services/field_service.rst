@@ -8,7 +8,7 @@ Field Service
 =============
 
 .. seealso::
-   - `Odoo Tutorials: Field Service <https://leansoft.vn/slides/field-service-49>`_
+   - `Leansoft Tutorials: Field Service <https://leansoft.vn/slides/field-service-49>`_
 
 .. toctree::
    :titlesonly:

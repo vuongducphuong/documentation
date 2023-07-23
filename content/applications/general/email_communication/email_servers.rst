@@ -5,8 +5,8 @@ Send and receive emails in Odoo with an email server
 Odoo Online or Odoo.sh users
 ============================
 
-Since **Odoo sets up its own mail servers for the database**, outgoing and incoming emails already
-work out-of-the-box. So for **Odoo Online** and **Odoo.sh** customers, nothing needs to be
+Since **Leansoft sets up its own mail servers for the database**, outgoing and incoming emails already
+work out-of-the-box. So for **Leansoft Online** and **Odoo.sh** customers, nothing needs to be
 configured!
 
 Unless an external mail server is required to send large batches of mass emails, simply use the

@@ -1,7 +1,7 @@
 :nosearch:
 
 ===================
-Analyze performance
+Phân tích hiệu suất
 ===================
 
 .. toctree::

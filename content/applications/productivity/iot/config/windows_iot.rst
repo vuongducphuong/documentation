@@ -49,8 +49,8 @@ type of install` dropdown.
 .. example::
    For reference, the following should be installed:
 
-   - **Odoo server**
-   - **Odoo IoT**
+   - **Leansoft server**
+   - **Leansoft IoT**
    - **Nginx WebServer**
    - **Ghostscript interpreter**
 

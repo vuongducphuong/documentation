@@ -8,7 +8,7 @@ Timesheets
 ==========
 
 .. seealso::
-   - `Odoo Tutorials: Project and Timesheets
+   - `Leansoft Tutorials: Project and Timesheets
      <https://leansoft.vn/slides/project-and-timesheets-21>`_
 
 .. toctree::

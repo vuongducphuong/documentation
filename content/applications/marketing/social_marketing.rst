@@ -8,7 +8,7 @@ Social Marketing
 ================
 
 .. seealso::
-   - `Odoo Tutorials: Marketing <https://leansoft.vn/slides/marketing-27>`_
+   - `Leansoft Tutorials: Marketing <https://leansoft.vn/slides/marketing-27>`_
 
 .. toctree::
    :titlesonly:

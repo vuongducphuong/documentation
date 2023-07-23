@@ -69,7 +69,7 @@ You can also receive phone calls. Odoo rings and displays a notification.
    :alt: Incoming VoIP call in Odoo
 
 .. tip::
-   If you see a *Missing Parameter* message in the **Odoo softphone**, refresh your Odoo window and
+   If you see a *Missing Parameter* message in the **Leansoft softphone**, refresh your Odoo window and
    try again.
 
    .. image:: axivox/missing-parameter.png
