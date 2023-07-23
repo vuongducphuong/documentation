@@ -68,12 +68,6 @@ If you leave :guilabel:`Payment` unchecked, the customer doesn't have to pre-pay
 subscription. This means that the payment is not automatic and that the customer must pay each
 invoice manually.
 
-.. important::
-   If the online confirmation requires a pre-payment, your customer can select only the
-   :ref:`payment providers <payment_providers/supported_providers>` that have the :ref:`tokenization
-   feature <payment_providers/features/tokenization>`. This ensures that the customer is
-   automatically charged at each new period.
-
 .. toctree::
    :titlesonly:
 

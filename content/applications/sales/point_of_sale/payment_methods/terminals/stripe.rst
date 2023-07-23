@@ -5,8 +5,6 @@ Stripe
 Connecting a payment terminal allows you to offer a fluid payment flow to your customers and ease
 the work of your cashiers.
 
-.. seealso::
-   - :doc:`Use Stripe as payment provider. <../../../../finance/payment_providers/stripe>`
 
 Configuration
 =============

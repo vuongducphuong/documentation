@@ -95,8 +95,7 @@ payment provider needs to be enabled first.
 
 .. seealso::
    - :doc:`/applications/sales/sales/products_prices/returns`
-   - :doc:`/applications/services/helpdesk/advanced/after_sales`
-   - :doc:`/applications/finance/payment_providers`
+   - :doc:`/applications/services/helpdesk/advanced/after_sales`   
 
 .. _handling/legal:
 
