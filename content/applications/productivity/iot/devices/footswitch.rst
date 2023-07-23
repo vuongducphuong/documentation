@@ -16,7 +16,7 @@ Connection
 To connect a footswitch to the :abbr:`IoT (Internet of Things)` box, connect the two devices via
 cable. More often than not, this is done with a :abbr:`USB (Universal Serial Bus)` cable.
 
-If the footswitch is a `supported device <https://www.odoo.com/page/iot-hardware>`_, there is no
+If the footswitch is a `supported device <https://leansoft.vn/page/iot-hardware>`_, there is no
 need to take further action, since it'll be automatically detected when connected.
 
 .. image:: footswitch/footswitch-dropdown.png

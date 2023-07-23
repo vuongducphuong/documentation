@@ -13,12 +13,12 @@ products and increase your average cart sizes.
 .. important::
    Odoo offers a :ref:`free custom domain name <domain-name/odoo-register>` to all Odoo Online
    databases for one year. Visitors can then access your website with an address such as
-   ``www.example.com`` rather than the default ``example.odoo.com``.
+   ``www.example.com`` rather than the default ``example.leansoft.vn``.
 
 .. seealso::
    - :doc:`Website Documentation <website>`
-   - `Odoo Tutorials: Website <https://www.odoo.com/slides/website-25>`_
-   - `Odoo Tutorials: eCommerce <https://www.odoo.com/slides/ecommerce-26>`_
+   - `Odoo Tutorials: Website <https://leansoft.vn/slides/website-25>`_
+   - `Odoo Tutorials: eCommerce <https://leansoft.vn/slides/ecommerce-26>`_
 
 .. toctree::
    :titlesonly:

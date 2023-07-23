@@ -7,7 +7,7 @@ Odoo database for use in the *Quality app* on a quality control point/quality ch
 work center during the manufacturing process.
 
 Find the list of supported devices here: `Supported devices
-<https://www.odoo.com/page/iot-hardware>`_.
+<https://leansoft.vn/page/iot-hardware>`_.
 
 Connect with universal serial bus (USB)
 =======================================

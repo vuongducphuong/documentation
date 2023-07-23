@@ -10,19 +10,19 @@ folders. At the moment, some settings are out of Odoo's control, notably the way
 providers classify Odoo's emails according to their own restriction policy and/or limitations.
 
 It is standard in Odoo that emails are received from ``"name of the author"
-<notifications@mycompany.odoo.com>``. In other words this can be translated to: ``"name of the
+<notifications@mycompany.leansoft.vn>``. In other words this can be translated to: ``"name of the
 author" <{ICP.mail.from.filter}@{mail.catchall.domain}>``. In this case ICP stands for
 `ir.config.parameters`, which are the System Parameters. Deliverability is greatly improved with the
 :ref:`notifications configuration <email_servers/notifications>`.
 
 In order for servers to accept emails from Odoo on a more regular basis, one of the solutions is
 for customers to create rules within their own mailbox. A filter can be added to the email inbox so
-that when email is received from Odoo (`notifications@mycompany.odoo.com`) it is moved to the
+that when email is received from Odoo (`notifications@mycompany.leansoft.vn`) it is moved to the
 inbox. It is also possible to add the Odoo database domain onto a safe senders list or whitelist
 on the receiving domain.
 
 If an Odoo email server appears on a blacklist, notify Odoo via a `new help ticket
-<https://www.odoo.com/help>`_ and the support team will work to get the servers removed from the
+<https://leansoft.vn/help>`_ and the support team will work to get the servers removed from the
 blacklist.
 
 Should the Odoo database be using a custom domain for sending emails from Odoo there are three
@@ -53,7 +53,7 @@ zone of the domain name. In order for the verification to work properly, each do
 one :abbr:`SPF (Sender Policy Framework)` record.
 
 If the domain name does not yet have a :abbr:`SPF (Sender Policy Framework)` record, create one
-using the following input: `v=spf1 include:_spf.odoo.com ~all`
+using the following input: `v=spf1 include:_spf.leansoft.vn ~all`
 
 If the domain name already has a :abbr:`SPF (Sender Policy Framework)` record, the record must be
 updated (and do not create a new one).
@@ -61,7 +61,7 @@ updated (and do not create a new one).
 .. example::
 
    If the TXT record is `v=spf1 include:_spf.google.com ~all`, edit it to add
-   `include:_spf.odoo.com`: `v=spf1 include:_spf.odoo.com include:_spf.google.com ~all`
+   `include:_spf.leansoft.vn`: `v=spf1 include:_spf.leansoft.vn include:_spf.google.com ~all`
 
 Check if the :abbr:`SPF (Sender Policy Framework)` record is valid with a free tool like `MXToolbox
 SPF <https://mxtoolbox.com/spf.aspx>`_.
@@ -83,11 +83,11 @@ altered during transport.
 To enable :abbr:`DKIM (DomainKeys Identified Mail)`, add a :abbr:`CNAME (Canonical Name)` record to
 the :abbr:`DNS (Domain Name System)` zone of the domain name:
 
-`odoo._domainkey IN CNAME odoo._domainkey.odoo.com.`
+`odoo._domainkey IN CNAME odoo._domainkey.leansoft.vn.`
 
 .. tip::
    If the domain name is `mycompany.com`, make sure to create a subdomain
-   `odoo._domainkey.mycompany.com` whose canonical name is `odoo._domainkey.odoo.com.`.
+   `odoo._domainkey.mycompany.com` whose canonical name is `odoo._domainkey.leansoft.vn.`.
 
 The way to create or modify a :abbr:`CNAME (Canonical Name)` record depends on the provider hosting
 the :abbr:`DNS (Domain Name System)` zone of the domain name. The most common providers are

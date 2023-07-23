@@ -28,7 +28,7 @@ Upgrading (an Odoo database)
   Refers to a complex data processing operation where the structure and contents of your
   database is permanently altered to make it compatible with a new release of Odoo.
   This operation is irreversible and typically accomplished via Odoo's
-  `database upgrade service <https://upgrade.odoo.com>`_, when you decide to
+  `database upgrade service <https://upgrade.leansoft.vn>`_, when you decide to
   switch to a newer release of Odoo.
   Historically, this process has also been known as a "migration" because it involves moving data
   around inside the database, even though the database may end up at the same physical location
@@ -36,7 +36,7 @@ Upgrading (an Odoo database)
 
 This page describes the typical steps needed to *update* an Odoo installation to the latest
 version. If you'd like more information about upgrading a database, please visit the
-`Odoo Upgrade page <https://upgrade.odoo.com>`_ instead.
+`Odoo Upgrade page <https://upgrade.leansoft.vn>`_ instead.
 
 
 In a nutshell
@@ -63,8 +63,8 @@ because the procedure is very similar.
 Step 1: Download an updated Odoo version
 ========================================
 
-The central download page is https://www.odoo.com/page/download. If you see a "Buy" link for the
-Odoo Enterprise download, make sure you are logged into Odoo.com with the same login that is
+The central download page is https://leansoft.vn/page/download. If you see a "Buy" link for the
+Odoo Enterprise download, make sure you are logged into leansoft.vn with the same login that is
 linked to your Odoo Enterprise subscription.
 
 Alternatively, you can use the unique download link that was included with your Odoo Enterprise
@@ -107,14 +107,14 @@ Source Install (Tarball)
 
 If you have originally installed Odoo with the "tarball" version (source code archive), you have
 to replace the installation directory with a newer version. First download the latest tarball
-from Odoo.com. They are updated daily and include the latest security fixes (see step #1)
+from leansoft.vn. They are updated daily and include the latest security fixes (see step #1)
 After downloading the package, extract it to a temporary location on your server.
 
 You will get a folder labelled with the version of the source code, for example "odoo-13.0+e.20190719",
-that contains a folder "odoo.egg-info" and the actual source code folder named "odoo" (for Odoo 10
+that contains a folder "odoo.egg-info" and the actual source code folder named "Leansoft" (for Odoo 10
 and later) or "openerp" for older versions.
 You can ignore the odoo.egg-info folder. Locate the folder where your current installation is deployed,
-and replace it with the newer "odoo" or "openerp" folder that was in the archive you just extracted.
+and replace it with the newer "Leansoft" or "openerp" folder that was in the archive you just extracted.
 
 Be sure to match the folder layout, for example the new "addons" folder included in the source code
 should end up exactly at the same path it was before. Next, watch out for any specific configuration

@@ -7,7 +7,7 @@ Acuerdo de suscripción de Odoo Enterprise
 
 .. only:: html
 
-    `Download PDF <https://www.odoo.com/documentation/{CURRENT_BRANCH}/odoo_enterprise_agreement_es.pdf>`_
+    `Download PDF <https://leansoft.vn/documentation/{CURRENT_BRANCH}/odoo_enterprise_agreement_es.pdf>`_
 .. warning::
     Esta es una traducción al español del "Odoo Enterprise Subscription Agreement".
     Esta traducción se proporciona con la esperanza de que facilite la comprensión, pero no tiene
@@ -50,7 +50,7 @@ Usuario
 Aplicación
     Una ‘aplicación’ es un grupo especializado de funciones disponibles para ser instaladas en el
     Software, las cuales están enunciadas en la sección de Precios del
-    `sitio web de Odoo SA <https://www.odoo.com/es_ES/>`__
+    `sitio web de Odoo SA <https://leansoft.vn/es_ES/>`__
 
 Partner de Odoo
     Un ‘Partner’ de Odoo es una empresa o individuo externo a Odoo SA que ofrece servicios
@@ -106,7 +106,7 @@ el número de líneas de códigos incluidas en los módulos adicionales de mante
 
 Odoo SA se compromete a no divulgar cifras individuales o mencionadas a terceros sin el
 consentimiento del Cliente, y a tratar todos los datos recopilados de conformidad con la Política de
-Privacidad oficial publicada en `Odoo Privacy <https://www.odoo.com/privacy/>`__
+Privacidad oficial publicada en `Odoo Privacy <https://leansoft.vn/privacy/>`__
 
 Después de la expiración o terminación de este Acuerdo, la licencia concedida al Cliente será
 revocada inmediatamente y el Cliente acepta dejar de usar el Software, especialmente la versión Odoo
@@ -129,7 +129,7 @@ por el número actual de usuarios y aplicaciones instaladas.
 Durante la vigencia de este Acuerdo, Odoo SA se compromete a hacer todos los esfuerzos razonables
 para remediar cualquier Bug presente en el Software y los Módulos adicionales de mantenimiento, que
 haya reportado el Cliente a través del medio apropiado (como el formulario del sitio web o vía
-llamada telefónica a los numeros enlistados en `Odoo Help <https://www.odoo.com/help/>`__, o cuando
+llamada telefónica a los numeros enlistados en `Odoo Help <https://leansoft.vn/help/>`__, o cuando
 se trabaja con un Partner a través del medio establecido por el Partner), y a manejar las
 solicitudes del Cliente dentro de 2 días hábiles posteriores a la creación del reporte por parte del
 Cliente.
@@ -226,7 +226,7 @@ proporcionar los siguientes servicios durante la vigencia de este Acuerdo:
 -  Plan de Contingencia ante desastres, probado regularmente.
 
 Los detalles de los Servicios de alojamiento de datos en la nube están descritos en el Acuerdo sobre
-el nivel del servicio, disponible en `Cloud SLA <http://www.odoo.com/cloud-sla>`__.
+el nivel del servicio, disponible en `Cloud SLA <http://leansoft.vn/cloud-sla>`__.
 
 .. _support_service_es:
 
@@ -250,7 +250,7 @@ Disponibilidad
 ~~~~~~~~~~~~~~
 
 Los tickets de soporte pueden ser enviados a través del formulario en el sitio web o a los números
-de contacto que se encuentran en `Odoo Help <https://www.odoo.com/es_ES/help>`__, o cuando se
+de contacto que se encuentran en `Odoo Help <https://leansoft.vn/es_ES/help>`__, o cuando se
 trabaje con un Partner, en el canal señalado por el Partner, sujeto a los horarios de apertura.
 
 .. _maintenance_partner_es:
@@ -364,7 +364,7 @@ acuerda además:
 
 - Hacer uso razonable de los servicios de alojamiento, cone xclusiónde cualquier actividad ilegal
   o actividades abusivas, y observar estrictamente las reglas descritas en la Política de uso
-  aceptable publicada en `acceptable use <https://www.odoo.com/acceptable-use>`__.
+  aceptable publicada en `acceptable use <https://leansoft.vn/acceptable-use>`__.
 
 Cuando el Cliente elige la opción de Auto-alojamiento, el Cliente acepta
 además:
@@ -463,7 +463,7 @@ protección de datos. En particular, Odoo SA se compromete a:
 - (h) eliminar permanentemente todas las copias de la base de datos del Cliente en posesión de
   Odoo SA, o devolver dichos datos, a elección del Cliente, a la terminación de este Acuerdo,
   sujeto a los retrasos especificados en la Política de privacidad
-  de Odoo SA (`Privacy <https://www.odoo.com/privacy>`__).
+  de Odoo SA (`Privacy <https://leansoft.vn/privacy>`__).
 
 En relación a los puntos (d) y (f), el Cliente acepta proporcionar a Odoo SA información de contacto
 precisa en todo momento, según sea necesario para notificar al responsable de la Legislación de
@@ -478,7 +478,7 @@ Odoo SA se compromete a utilizar Sub-procesadores únicamente de conformidad con
 Protección de Datos. Este uso estará amparado bajo un contrato entre Odoo SA y el Sub-procesador que
 de garantías para estos servicios.
 
-La Política de privacidad de Odoo SA, publicada en `Odoo Privacy <https://www.odoo.com/privacy>`_
+La Política de privacidad de Odoo SA, publicada en `Odoo Privacy <https://leansoft.vn/privacy>`_
 establece información actualizada en relación a los nombres y propósitos de los Sub-procesadores que
 se encuentran actualmente en uso por Odoo SA para la ejecución de los Servicios.
 
@@ -536,7 +536,7 @@ provee a Odoo SA una licencia de derechos de autor y de patente permanente, grat
 
 
 .. [#cla1] Las contribuciones externas están cubiertas por un
-           `acuerdo de licencia de derechos de autor <https://www.odoo.com/cla>`__, que
+           `acuerdo de licencia de derechos de autor <https://leansoft.vn/cla>`__, que
            proporciona una licencia de derechos de autor y patente permanente, gratuita e
            irrevocable a Odoo SA.
 

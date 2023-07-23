@@ -40,7 +40,7 @@ the user. The user must click on it to accept the invitation and create a login.
 
 .. note::
    Remember that subscription prices follow the number of users. Refer to our
-   `pricing page <https://www.odoo.com/pricing>`_
+   `pricing page <https://leansoft.vn/pricing>`_
    for more information.
 
 With the :ref:`developer mode <developer-mode>` activated, *User Types* can be selected.
@@ -123,8 +123,8 @@ form. Click on the *Action* button and select *Change Password*.
 Enter a new password and confirm by clicking on *Change Password*.
 
 .. note::
-   This operation only modifies the password of the users locally and does not affect their odoo.com
-   account. If you want to change the odoo.com password, you can :ref:`send the password reset
+   This operation only modifies the password of the users locally and does not affect their leansoft.vn
+   account. If you want to change the leansoft.vn password, you can :ref:`send the password reset
    instructions <users/reset-password-email>`.
 
 Click on *Change Password* one more time. You are then redirected to an Odoo login page where you

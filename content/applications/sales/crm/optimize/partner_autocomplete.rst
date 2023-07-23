@@ -45,4 +45,4 @@ Pricing
      the suggested company will be the website link and the logo.
    - If you are on Odoo Online and you have the Enterprise version, you benefit from free trial
      credits to test the feature.
-   - Learn about our *Privacy Policy* `here <https://iap.odoo.com/privacy#header_2>`_.
+   - Learn about our *Privacy Policy* `here <https://iap.leansoft.vn/privacy#header_2>`_.

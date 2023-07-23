@@ -6,7 +6,7 @@ Odoo Enterprise Subscription Agreement
 
 .. only:: html
 
-   `Download PDF <https://www.odoo.com/documentation/{CURRENT_BRANCH}/odoo_enterprise_agreement.pdf>`_
+   `Download PDF <https://leansoft.vn/documentation/{CURRENT_BRANCH}/odoo_enterprise_agreement.pdf>`_
 
 .. note:: Version 10a - 2022-10-27
 
@@ -108,7 +108,7 @@ the number of Users, the installed Apps, and the number of lines of code of Cove
 
 Odoo SA commits not to disclose individual or named figures to third parties without the consent
 of the Customer, and to deal with all collected data in compliance with its official Privacy
-Policy, published at https://www.odoo.com/privacy.
+Policy, published at https://leansoft.vn/privacy.
 
 Upon expiration or termination of this Agreement, this license is revoked immediately and the
 Customer agrees to stop using the Odoo Enterprise Edition software and the Cloud Platform.
@@ -129,7 +129,7 @@ fee equal to 300% of the applicable list price for the actual number of Users.
 
 For the duration of this Agreement, Odoo SA commits to making all reasonable efforts to remedy any
 Bug of the Software and Covered Extra Modules submitted by the Customer through the appropriate
-channel (typically, the web form or phone numbers listed on `odoo.com/help <https://www.odoo.com/help>`_,
+channel (typically, the web form or phone numbers listed on `leansoft.vn/help <https://leansoft.vn/help>`_,
 or when working with an Odoo Partner, the channel provided by the partner), and to start handling
 such Customer submissions within 2 business days.
 
@@ -224,7 +224,7 @@ Odoo SA commits to providing at least the following services:
 - Disaster Recovery Plan, tested regularly
 
 The details of the Cloud Hosting Services are described on the Service Level Agreement page at
-https://www.odoo.com/cloud-sla.
+https://leansoft.vn/cloud-sla.
 
 
 .. _support_service:
@@ -247,7 +247,7 @@ the decision is at the discretion of Odoo SA.
 Availability
 ~~~~~~~~~~~~
 
-Tickets can be submitted via the web form or phone numbers listed on `odoo.com/help <https://www.odoo.com/help>`_,
+Tickets can be submitted via the web form or phone numbers listed on `leansoft.vn/help <https://leansoft.vn/help>`_,
 or when working with an Odoo Partner, the channel provided by the partner, subject to local
 opening hours.
 
@@ -350,7 +350,7 @@ When the Customer chooses to use the Cloud Platform, the Customer further agrees
   a strong password and not sharing it with anyone else;
 - make a reasonable use of the Hosting Services, to the exclusion of any illegal or abusive
   activities, and strictly observe the rules outlined in the Acceptable Use Policy
-  published at https://www.odoo.com/acceptable-use.
+  published at https://leansoft.vn/acceptable-use.
 
 When the Customer chooses the Self-Hosting option, the Customer further agrees to:
 
@@ -451,7 +451,7 @@ In particular, Odoo SA commits to:
 - (h) permanently delete all copies of the Customer's database in possession of Odoo SA,
   or return such data, at the Customer’s choice, upon termination of this Agreement,
   subject to the delays specified in Odoo SA's
-  `Privacy Policy <https://www.odoo.com/privacy>`_ ;
+  `Privacy Policy <https://leansoft.vn/privacy>`_ ;
 
 With regard to points (d) to (f), the Customer agrees to provide Odoo SA with accurate contact
 information at all times, as necessary to notify the Customer's Data Protection responsible.
@@ -463,7 +463,7 @@ The Customer acknowledges and agrees that in order to provide the Services, Odoo
 third-party service providers (Subprocessors) to process Personal Data. Odoo SA commits to only
 use Subprocessors in compliance with Data Protection Legislation. This use will be covered by a
 contract between Odoo SA and the Subprocessor that provides guarantees to that effect.
-Odoo SA's Privacy Policy, published at https://www.odoo.com/privacy provides up-to-date information
+Odoo SA's Privacy Policy, published at https://leansoft.vn/privacy provides up-to-date information
 regarding the names and purposes of Subprocessors currently in use by Odoo SA for the
 execution of the Services.
 
@@ -516,7 +516,7 @@ The Customer's sole and exclusive remedy and Odoo SA's only obligation for any b
 is for Odoo SA to resume the execution of the Services at no additional charge.
 
 
-.. [#cla1] External contributions are covered by a `Copyright License Agreement <https://www.odoo.com/cla>`_
+.. [#cla1] External contributions are covered by a `Copyright License Agreement <https://leansoft.vn/cla>`_
            that provides a permanent, free and irrevocable, copyright and patent licence to Odoo SA.
 
 .. _disclaimers:

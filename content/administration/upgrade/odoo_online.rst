@@ -3,7 +3,7 @@ Odoo Online
 ===========
 
 Odoo databases can be manually upgraded directly from the main Odoo website. To upgrade an Odoo
-database, navigate to the `database manager <https://www.odoo.com/my/databases>`_ page and sign in.
+database, navigate to the `database manager <https://leansoft.vn/my/databases>`_ page and sign in.
 
 The database manager page displays all of the Odoo databases associated with the user's account. Any
 databases that are not already on the most recent version of Odoo display an **arrow in a circle**
@@ -59,7 +59,7 @@ pop-up.
    :alt: The "Upgrade in progress" tag next to the database name.
 
 Once the upgrade is complete, a new test database appears on the `database manager
-<https://www.odoo.com/my/databases>`_ page. To access the test database, click the drop-down arrow
+<https://leansoft.vn/my/databases>`_ page. To access the test database, click the drop-down arrow
 (:guilabel:`⯆`) to the left of the main database's name. Doing so makes the test version appear
 below it. Finally, click the green :guilabel:`Connect` button on the right side of the test
 version's row to go to the database.
@@ -76,7 +76,7 @@ Production database
 ===================
 
 After confirming the integrity of the new version, return to the `database manager
-<https://www.odoo.com/my/databases>`_ page. Once again, click on the **arrow in a circle** icon next
+<https://leansoft.vn/my/databases>`_ page. Once again, click on the **arrow in a circle** icon next
 to the database being upgraded. The :guilabel:`Upgrade your database` pop-up appears as before,
 except that there is now a :guilabel:`Production` option under the :guilabel:`Purpose` section.
 

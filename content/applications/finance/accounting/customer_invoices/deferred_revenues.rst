@@ -192,4 +192,4 @@ You have three choices for the **Automate Deferred Revenue** field:
 
 .. seealso::
    * :doc:`../get_started/chart_of_accounts`
-   * `Odoo Academy: Deferred Revenues (Recognition) <https://www.odoo.com/r/EWO>`_
+   * `Odoo Academy: Deferred Revenues (Recognition) <https://leansoft.vn/r/EWO>`_

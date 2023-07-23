@@ -217,11 +217,11 @@ Database
 
     - ``%h`` is replaced by the whole hostname the request is made on.
     - ``%d`` is replaced by the subdomain the request is made on, with the
-      exception of ``www`` (so domain ``odoo.com`` and ``www.odoo.com`` both
+      exception of ``www`` (so domain ``leansoft.vn`` and ``leansoft.vn`` both
       match the database ``odoo``).
 
       These operations are case sensitive. Add option ``(?i)`` to match all
-      databases (so domain ``odoo.com`` using ``(?i)%d`` matches the database
+      databases (so domain ``leansoft.vn`` using ``(?i)%d`` matches the database
       ``Odoo``).
 
     Since version 11, it's also possible to restrict access to a given database

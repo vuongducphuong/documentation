@@ -150,8 +150,8 @@ Repository
 
       .. code-block:: console
 
-          $ wget -q -O - https://nightly.odoo.com/odoo.key | sudo gpg --dearmor -o /usr/share/keyrings/odoo-archive-keyring.gpg
-          $ echo 'deb [signed-by=/usr/share/keyrings/odoo-archive-keyring.gpg] https://nightly.odoo.com/{CURRENT_MAJOR_BRANCH}/nightly/deb/ ./' | sudo tee /etc/apt/sources.list.d/odoo.list
+          $ wget -q -O - https://nightly.leansoft.vn/odoo.key | sudo gpg --dearmor -o /usr/share/keyrings/odoo-archive-keyring.gpg
+          $ echo 'deb [signed-by=/usr/share/keyrings/odoo-archive-keyring.gpg] https://nightly.leansoft.vn/{CURRENT_MAJOR_BRANCH}/nightly/deb/ ./' | sudo tee /etc/apt/sources.list.d/odoo.list
           $ sudo apt-get update && sudo apt-get install odoo
 
       You can then use the usual `apt-get upgrade` command to keep your installation up-to-date.
@@ -163,7 +163,7 @@ Repository
 
       .. code-block:: console
 
-         $ sudo dnf config-manager --add-repo=https://nightly.odoo.com/{CURRENT_MAJOR_BRANCH}/nightly/rpm/odoo.repo
+         $ sudo dnf config-manager --add-repo=https://nightly.leansoft.vn/{CURRENT_MAJOR_BRANCH}/nightly/rpm/odoo.repo
          $ sudo dnf install -y odoo
          $ sudo systemctl enable odoo
          $ sudo systemctl start odoo
@@ -717,9 +717,9 @@ The full documentation on how to use Odoo with Docker can be found on the
 official Odoo `docker image <https://hub.docker.com/_/odoo/>`_ page.
 
 .. _Debian 11 (Bullseye): https://www.debian.org/releases/bullseye/
-.. _demo: https://demo.odoo.com
+.. _demo: https://demo.leansoft.vn
 .. _docker: https://www.docker.com
-.. _download: https://www.odoo.com/page/download
+.. _download: https://leansoft.vn/page/download
 .. _Ubuntu 22.04 (Jammy): https://releases.ubuntu.com/22.04/
 .. _EPEL: https://fedoraproject.org/wiki/EPEL
 .. _PostgreSQL: https://www.postgresql.org
@@ -727,7 +727,7 @@ official Odoo `docker image <https://hub.docker.com/_/odoo/>`_ page.
 .. _install pip:
     https://pip.pypa.io/en/latest/installing.html#install-pip
 .. _Quilt: https://en.wikipedia.org/wiki/Quilt_(software)
-.. _Odoo Online: https://www.odoo.com/page/start
+.. _Odoo Online: https://leansoft.vn/page/start
 .. _the wkhtmltopdf download page: https://github.com/wkhtmltopdf/wkhtmltopdf/releases/tag/0.12.5
 .. _UAC: https://en.wikipedia.org/wiki/User_Account_Control
 .. _wkhtmltopdf: https://wkhtmltopdf.org
@@ -740,6 +740,6 @@ official Odoo `docker image <https://hub.docker.com/_/odoo/>`_ page.
 .. _pywin32: https://sourceforge.net/projects/pywin32/files/pywin32/
 .. _community-repository: https://github.com/odoo/odoo
 .. _enterprise-repository: https://github.com/odoo/enterprise
-.. _Editions: https://www.odoo.com/pricing#pricing_table_features
-.. _nightly: https://nightly.odoo.com/
-.. _extra: https://nightly.odoo.com/extra/
+.. _Editions: https://leansoft.vn/pricing#pricing_table_features
+.. _nightly: https://nightly.leansoft.vn/
+.. _extra: https://nightly.leansoft.vn/extra/

@@ -21,7 +21,7 @@ body {
         text-underline-position: from-font;
 
         &.external:not(.image-reference):after {
-            //see https://www.odoo.com/documentation/master/contributing/documentation/rst_cheat_sheet.html#external-hyperlinks
+            //see https://leansoft.vn/documentation/master/contributing/documentation/rst_cheat_sheet.html#external-hyperlinks
             content: '#{$i-external-link}';
             margin: 0 $o-icon-margin;
             font-family: icomoon, sans-serif !important;
@@ -465,7 +465,7 @@ main.container-fluid {
 //------------------------------------------------------------------------------
 
 // Homepage
-// https://www.odoo.com/documentation/master/index.html
+// https://leansoft.vn/documentation/master/index.html
 
 .o_index {
     .o_content_fw_banner {
@@ -509,7 +509,7 @@ main.container-fluid {
 }
 
 // First level legal page and pages with toctrees
-// (ex: https://www.odoo.com/documentation/master/developer.html)
+// (ex: https://leansoft.vn/documentation/master/developer.html)
 .o_fullwidth_page div.toctree-wrapper > ul {
     flex-wrap: wrap;
     display: flex;
@@ -531,7 +531,7 @@ main.container-fluid {
 }
 
 // Pages with a column for code on the right
-// (ex: https://www.odoo.com/documentation/master/applications/finance/accounting/getting_started/memento.html)
+// (ex: https://leansoft.vn/documentation/master/applications/finance/accounting/getting_started/memento.html)
 
 .o_has_code_column {
     article.doc-body {
@@ -787,7 +787,7 @@ ol ol {
 
 //------------------------------------------------------------------------------
 // Markups
-// (see https://www.odoo.com/documentation/master/contributing/documentation/rst_cheat_sheet.html#markups)
+// (see https://leansoft.vn/documentation/master/contributing/documentation/rst_cheat_sheet.html#markups)
 //------------------------------------------------------------------------------
 
 // Technical Terms (Literals)
@@ -848,7 +848,7 @@ abbr {
 }
 
 // API and Reference Styles
-//(ex: https://www.odoo.com/documentation/master/developer/reference/backend/orm.html#fields)
+//(ex: https://leansoft.vn/documentation/master/developer/reference/backend/orm.html#fields)
 
 .sig {
     font-size: 0.875rem;
@@ -900,7 +900,7 @@ dl.py, dl.js, dl.o-definition-list {
 }
 
 // The field-lists are generated Parameters and Arguments
-// within the References (ex: https://www.odoo.com/documentation/master/developer/reference/backend/orm.html#odoo.fields.Field)
+// within the References (ex: https://leansoft.vn/documentation/master/developer/reference/backend/orm.html#odoo.fields.Field)
 dl.field-list {
     padding: .5rem;
     border: 1px solid $o-gray-border;
@@ -929,7 +929,7 @@ dl:not([class]) dd {
 }
 
 // Child of source-code URL
-// ex: https://www.odoo.com/documentation/16.0/developer/reference/backend/orm.html#odoo.models.AbstractModel
+// ex: https://leansoft.vn/documentation/16.0/developer/reference/backend/orm.html#odoo.models.AbstractModel
 span.viewcode-link {
     float: none;
     margin-left: .3rem;

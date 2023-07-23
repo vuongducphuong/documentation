@@ -28,7 +28,7 @@ The **Auto Return** feature automatically redirects customers to Odoo once the p
 
 From :guilabel:`Website payments`, go to :menuselection:`Website preferences --> Update --> Auto
 return for website payments --> Auto return` and select :guilabel:`On`. Enter the address of your
-Odoo database (e.g., `https://yourcompany.odoo.com`) in the :guilabel:`Return URL` field, and
+Odoo database (e.g., `https://yourcompany.leansoft.vn`) in the :guilabel:`Return URL` field, and
 :guilabel:`Save`.
 
 .. note::

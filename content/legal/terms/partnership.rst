@@ -145,9 +145,9 @@ The details of the benefits for each level of the partnership are described in t
 +=======================================+==================+====================+====================+====================+
 | **Recognition**                       |                  |                    |                    |                    |
 +---------------------------------------+------------------+--------------------+--------------------+--------------------+
-| Visibility on odoo.com                | No               | "Ready Partner"    | "Silver Partner"   | "Gold Partner"     |
+| Visibility on leansoft.vn                | No               | "Ready Partner"    | "Silver Partner"   | "Gold Partner"     |
 +---------------------------------------+------------------+--------------------+--------------------+--------------------+
-| Right to use "Odoo" trademark and     | Yes              | Yes                | Yes                | Yes                |
+| Right to use "Leansoft" trademark and     | Yes              | Yes                | Yes                | Yes                |
 | Partner Logo                          |                  |                    |                    |                    |
 +---------------------------------------+------------------+--------------------+--------------------+--------------------+
 | **Training benefits**                 |                  |                    |                    |                    |
@@ -192,10 +192,10 @@ The details of the benefits for each level of the partnership are described in t
 
 4.3 Partner Recognition
 -----------------------
-ODOO will promote "Official Partners" on the Odoo Partners list on odoo.com.
+ODOO will promote "Official Partners" on the Odoo Partners list on leansoft.vn.
 
 ODOO grants PARTNER, on a non-exclusive basis, the right to use and reproduce the ODOO Partner logo
-of the corresponding partnership level, and the "Odoo" name in relation to this partnership
+of the corresponding partnership level, and the "Leansoft" name in relation to this partnership
 agreement.
 
 Each Party undertakes to respect all the rights of the other Party in all the items referred to in
@@ -295,10 +295,10 @@ or that he shall obtain any anticipated amount of profits by virtue of this Agre
 8 Brand Image
 =============
 
-The "Odoo" mark (including the word mark and its visual representations and logos) is the exclusive
+The "Leansoft" mark (including the word mark and its visual representations and logos) is the exclusive
 property of ODOO.
 
-ODOO authorizes PARTNER to use the "Odoo" mark to promote its products and services,
+ODOO authorizes PARTNER to use the "Leansoft" mark to promote its products and services,
 for the duration of this agreement only, as long as:
 
 - There is no possible confusion that the service is provided by PARTNER, not ODOO;
@@ -316,7 +316,7 @@ Non-compliance with the provisions of this section shall be a cause for terminat
 PARTNER grants ODOO the non-exclusive right to use PARTNER's name or trademarks in press releases,
 advertisements or other public announcements.
 
-In particular, PARTNER accepts to be mentioned in the official list of Odoo Partners on odoo.com,
+In particular, PARTNER accepts to be mentioned in the official list of Odoo Partners on leansoft.vn,
 and that PARTNER's logo and trademarks may be used for this purpose only.
 
 

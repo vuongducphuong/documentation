@@ -30,7 +30,7 @@ When configuring the :guilabel:`Redirect URI`, choose :guilabel:`Web` and copy t
 URI (URL) followed by `/microsoft_account/authentication`.
 
 .. example::
-   Enter `https://www.companyname.odoo.com/microsoft_account/authentication` for the
+   Enter `https://www.companyname.leansoft.vn/microsoft_account/authentication` for the
    :guilabel:`Redirect URI`.
 
 .. image:: outlook/azure-register-application.png

@@ -7,7 +7,7 @@ Odoo Enterprise Abonnementsvertrag
 
 .. only:: html
 
-    `Download PDF <https://www.odoo.com/documentation/{CURRENT_BRANCH}/odoo_enterprise_agreement_de.pdf>`_
+    `Download PDF <https://leansoft.vn/documentation/{CURRENT_BRANCH}/odoo_enterprise_agreement_de.pdf>`_
 .. warning::
    Dies ist eine deutsche Übersetzung des "Odoo Enterprise Subscription Agreement". Diese
    Übersetzung soll das Verständnis erleichtern, hat aber keinen rechtlichen Wert. Der einzige
@@ -60,7 +60,7 @@ Benutzer
 
 App
     Eine "App" ist eine spezielle Gruppe von Funktionen, die zur Installation in der Software zur
-    Verfügung steht und in der öffentlichen Preisliste der `Odoo SA-Website <https://www.odoo.com>`_
+    Verfügung steht und in der öffentlichen Preisliste der `Odoo SA-Website <https://leansoft.vn>`_
     aufgeführt ist.
 
 Odoo-Partner
@@ -115,7 +115,7 @@ unterstützten Zusatzmodule.
 
 Odoo SA verpflichtet sich, ohne Zustimmung des Kunden keine individuellen oder namentlichen Angaben
 an Dritte weiterzugeben und alle gesammelten Daten in Übereinstimmung mit der offiziellen
-Datenschutzpolitik zu behandeln, die unter https://www.odoo.com/privacy veröffentlicht ist.
+Datenschutzpolitik zu behandeln, die unter https://leansoft.vn/privacy veröffentlicht ist.
 
 Bei Ablauf oder Kündigung dieser Vereinbarung wird diese Lizenz unverzüglich widerrufen und der
 Kunde verpflichtet sich, die Nutzung der Odoo Enterprise Edition Software und der Cloud-Plattform
@@ -138,7 +138,7 @@ der Benutzer und installierten Apps zu zahlen.
 Während der Laufzeit dieser Vereinbarung verpflichtet sich Odoo SA, alle zumutbaren Anstrengungen zu
 unternehmen, um Fehler der Software und der unterstützten Zusatzmodule zu beheben, die vom Kunden
 über den entsprechenden Kanal eingereicht werden (in der Regel das Webformular oder die
-Telefonnummern, die auf https://odoo.com/help aufgeführt sind, oder - im Falle der Zusammenarbeit
+Telefonnummern, die auf https://leansoft.vn/help aufgeführt sind, oder - im Falle der Zusammenarbeit
 mit einem Odoo-Partner - der vom Partner bereitgestellte Kanal), und mit der Bearbeitung innerhalb
 von zwei Werktagen nach Eingang zu beginnen.
 
@@ -236,7 +236,7 @@ während der Laufzeit dieser Vereinbarung mindestens folgendes anzubieten:
 - Notfallplan, regelmäßig getestet
 
 Die Einzelheiten der Cloud-Hosting-Dienste sind in der Dienstgütevereinbarung unter
-https://www.odoo.com/cloud-sla beschrieben.
+https://leansoft.vn/cloud-sla beschrieben.
 
 .. _support_service_de:
 
@@ -258,7 +258,7 @@ von diesem Vertrag abgedeckt ist, liegt die Entscheidung im Ermessen von Odoo SA
 Verfügbarkeit
 ~~~~~~~~~~~~~
 
-Tickets können über das Webformular oder die auf https://odoo.com/help aufgeführten Telefonnummern
+Tickets können über das Webformular oder die auf https://leansoft.vn/help aufgeführten Telefonnummern
 eingereicht werden, oder, wenn Sie mit einem Odoo-Partner zusammenarbeiten, über den von diesem
 bereitgestellten Kanal, abhängig von den örtlichen Öffnungszeiten.
 
@@ -362,7 +362,7 @@ einverstanden:
 
 - die Hosting-Dienste in angemessener Weise und unter Ausschluss jeglicher illegaler oder
   missbräuchlicher Aktivitäten zu nutzen und sich strikt an die Regeln zu halten, die in der unter
-  https://www.odoo.com/acceptable-use veröffentlichten Acceptable Use Policy (Nutzungsrichtlinien)
+  https://leansoft.vn/acceptable-use veröffentlichten Acceptable Use Policy (Nutzungsrichtlinien)
   aufgeführt sind.
 
 Sollte der Kunde die Self-Hosting-Option gewählt haben, erklärt er sich des weiteren dazu bereit:
@@ -464,7 +464,7 @@ verpflichtet sich Odoo SA dazu:
   dazu beizutragen;
 - (h) je nach Wahl des Kunden, alle Kopien der Datenbank des Kunden, die sich im Besitz von Odoo SA
   befinden, bei Beendigung dieser Vereinbarung entweder dauerhaft zu löschen oder zurückzugeben,
-  unter Einhaltung der in der `Datenschutzrichtlinie <https://www.odoo.com/de_DE/privacy>`_ von
+  unter Einhaltung der in der `Datenschutzrichtlinie <https://leansoft.vn/de_DE/privacy>`_ von
   Odoo SA genannten Fristen
 
 In Bezug auf die Punkte (d) bis (f) verpflichtet sich der Kunde, Odoo SA jederzeit genaue
@@ -479,7 +479,7 @@ Dienstleistungen Dritte (Unterauftragsverarbeiter) mit der Verarbeitung personen
 beauftragt. Odoo SA verpflichtet sich, Unterauftragsverarbeiter nur in Übereinstimmung mit der
 Datenschutzgesetzgebung einzusetzen. Diese Nutzung wird durch einen Vertrag zwischen Odoo SA und dem
 Unterauftragsverarbeiter abgedeckt, der entsprechende Garantien enthält. Die Datenschutzrichtlinie
-von Odoo SA, die unter https://www.odoo.com/privacy veröffentlicht ist, enthält aktuelle
+von Odoo SA, die unter https://leansoft.vn/privacy veröffentlicht ist, enthält aktuelle
 Informationen zu den Namen und Zwecken der Unterauftragsverarbeiter, die Odoo SA derzeit für die
 Erbringung der Dienstleistungen einsetzt.
 
@@ -532,7 +532,7 @@ bei einem Verstoß gegen diese Garantie besteht darin, dass Odoo SA die Ausführ
 Dienstleistungen ohne zusätzliche Kosten wieder aufnimmt.
 
 .. [#cla_de1] Externe Beiträge sind durch einen
-              `Copyright-Lizenzvertrag <https://www.odoo.com/cla>`_ abgedeckt, der Odoo SA eine
+              `Copyright-Lizenzvertrag <https://leansoft.vn/cla>`_ abgedeckt, der Odoo SA eine
               dauerhafte, kostenlose und unwiderrufliche Copyright- und Patentlizenz gewährt.
 
 .. _disclaimers_de:

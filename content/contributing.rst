@@ -27,7 +27,7 @@ lists the most important of them.
    * - Join the community
      - Participate in discussions on the forums, help answer questions, and assist other members of
        the Odoo community.
-     - * `Odoo forums <https://www.odoo.com/forum>`_
+     - * `Odoo forums <https://leansoft.vn/forum>`_
      - Anyone interested in Odoo
    * - Submit bug reports
      - Help improve the stability of Odoo by reporting the bugs that you discover in :doc:`supported
@@ -35,7 +35,7 @@ lists the most important of them.
        to include as many details (version, environment, test scenario...) as possible. If you don't
        have the Odoo Enterprise license required for contacting the support, open a new issue on the
        GitHub repository of Odoo.
-     - * `Odoo support <https://www.odoo.com/help>`_
+     - * `Odoo support <https://leansoft.vn/help>`_
        * `Issue tracker on GitHub <https://github.com/odoo/odoo/issues>`_
      - Users of Odoo
    * - Translate Odoo
@@ -61,7 +61,7 @@ lists the most important of them.
        for free or paid on the Odoo App Store or on any other Odoo modules library. By creating
        custom modules and making them available to others, you can help grow the Odoo ecosystem and
        provide additional value to users of the platform.
-     - * `Odoo Apps Store <https://apps.odoo.com/apps>`_
+     - * `Odoo Apps Store <https://apps.leansoft.vn/apps>`_
      - Developers with experience in Python and web development
 
 .. important::

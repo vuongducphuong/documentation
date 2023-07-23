@@ -116,7 +116,7 @@ Service)` mailings it will take to deliver the complete message.
    :abbr:`SMS (Short Message Service)` messages will not be sent without credits.
 
 .. seealso::
-   `Odoo SMS - FAQ <https://iap-services.odoo.com/iap/sms/pricing>`_
+   `Odoo SMS - FAQ <https://iap-services.leansoft.vn/iap/sms/pricing>`_
 
 Track links used in SMS messages
 --------------------------------

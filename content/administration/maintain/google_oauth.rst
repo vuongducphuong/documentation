@@ -69,7 +69,7 @@ On the :guilabel:`OAuth consent screen` step, under the :guilabel:`App informati
 :guilabel:`User support` email field.
 
 Next, under :menuselection:`App Domain --> Authorized domains`, click on :guilabel:`Add Domain` and
-enter `odoo.com`.
+enter `leansoft.vn`.
 
 After that, under the :guilabel:`Developer contact information` section, enter the organization's
 email address. Google uses this email address to notify the organization about any changes to your
@@ -97,7 +97,7 @@ from the dropdown menu.
 - Under :guilabel:`Application Type`, select :guilabel:`Web Application` from the dropdown menu.
 - In the :guilabel:`Name` field, enter `Odoo`.
 - Under the :guilabel:`Authorized redirect URIs` label, click the button :guilabel:`ADD URI`, and
-  then input `https://yourdbname.odoo.com/google_gmail/confirm` in the :guilabel:`URIs 1` field.
+  then input `https://yourdbname.leansoft.vn/google_gmail/confirm` in the :guilabel:`URIs 1` field.
   Be sure to replace the *yourdbname* part of the URL with the actual Odoo database name.
 - Next, click on :guilabel:`Create` to generate an OAuth :guilabel:`Client ID` and :guilabel:`Client
   Secret`. Finally, copy each generated value for later use when configuring in Odoo, and then
@@ -215,5 +215,5 @@ selected for the :guilabel:`Application Type`, an :guilabel:`Authorization Error
 To correct this error, delete the credentials already created and create new credentials, selecting
 :guilabel:`Web Application` for the :guilabel:`Application Type`. Then, under :guilabel:`Authorized
 redirect URIs`, click :guilabel:`ADD URI` and type:
-`https://yourdbname.odoo.com/google_gmail/confirm` in the field, being sure to replace *yourdbname*
+`https://yourdbname.leansoft.vn/google_gmail/confirm` in the field, being sure to replace *yourdbname*
 in the URL with the Odoo database name.

@@ -239,7 +239,7 @@ with your subscription.
   Adding more workers will not magically solve all performance issues. It only allows the server
   to handle more connections at the same time. If some operations are unusually slow, it's most
   likely a problem with the code, if it's not due to your own customizations you can open a ticket
-  `here <https://www.odoo.com/help>`_.
+  `here <https://leansoft.vn/help>`_.
 
 Staging Branches
 ================

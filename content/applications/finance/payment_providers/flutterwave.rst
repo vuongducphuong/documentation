@@ -15,7 +15,7 @@ Configuration on Flutterwave Dashboard
    :guilabel:`Secret Key` fields and save them for later.
 #. | Go to :menuselection:`Settings --> Webhooks` and enter your Odoo database URL followed by
      `/payment/flutterwave/webhook` in the :guilabel:`URL` text field.
-   | For example: `https://yourcompany.odoo.com/payment/flutterwave/webhook`.
+   | For example: `https://yourcompany.leansoft.vn/payment/flutterwave/webhook`.
 #. Fill the :guilabel:`Secret hash` with a password that you generate and save its value for later.
 #. Make sure *all* the remaining checkboxes are ticked.
 #. Click on **Save** to finalize the configuration.

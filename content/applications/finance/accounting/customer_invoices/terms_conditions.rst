@@ -9,7 +9,7 @@ You can add default terms and conditions at the bottom of all customer invoices,
 quotations, either as text or a link to a web page.
 
 .. seealso::
-   `Odoo Tutorial: Terms & Conditions <https://www.odoo.com/slides/slide/terms-conditions-1680>`_
+   `Odoo Tutorial: Terms & Conditions <https://leansoft.vn/slides/slide/terms-conditions-1680>`_
 
 Configuration
 =============

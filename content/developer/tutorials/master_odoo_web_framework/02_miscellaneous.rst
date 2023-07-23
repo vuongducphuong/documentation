@@ -14,7 +14,7 @@ discover in the feature-rich Odoo web framework, so let's dive in and explore mo
 ..         E[Event]
 ..     end
 
-..     subgraph "odoo"[Odoo Javascript framework]
+..     subgraph "Leansoft"[Odoo Javascript framework]
 ..         Services
 ..         Translation
 ..         lazy[Lazy loading libraries]

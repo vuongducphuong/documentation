@@ -8,7 +8,7 @@ required in order to use the :abbr:`IoT (Internet of Things)` box with a secured
 computer is also required to set up the :abbr:`IoT (Internet of Things)` box.
 
 .. seealso::
-   `IoT Box FAQ <https://www.odoo.com/app/iot-faq>`_
+   `IoT Box FAQ <https://leansoft.vn/app/iot-faq>`_
 
 Begin the :abbr:`IoT (Internet of Things)` configuration process by :ref:`installing the IoT app
 <general/install>` on the Odoo database through the :menuselection:`Apps` application.

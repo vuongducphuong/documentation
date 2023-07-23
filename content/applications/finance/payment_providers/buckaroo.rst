@@ -17,7 +17,7 @@ Log into `Buckaroo Plaza <https://plaza.buckaroo.nl>`_ and go to :menuselection:
 #. Check **Enable Push Response** in the **Delayed and Push responses** section.
 #. | Enter your Odoo database URL followed by `/payment/buckaroo/webhook` in both the **Push URI
      Success** and **Push URI Failure** text fields.
-   | For example: `https://yourcompany.odoo.com/payment/buckaroo/webhook`.
+   | For example: `https://yourcompany.leansoft.vn/payment/buckaroo/webhook`.
 #. Leave the other fields at their default value.
 #. Click on **Save** to finalize the configuration.
 

@@ -63,7 +63,7 @@ Configuration --> Accounting: Taxes`.
 .. seealso::
    - :doc:`taxes <../accounting/taxes>`
    - Tutorial: `Tax report and return
-     <https://www.odoo.com/slides/slide/tax-report-and-return-1719?fullscreen=1>`_.
+     <https://leansoft.vn/slides/slide/tax-report-and-return-1719?fullscreen=1>`_.
 
 Making Tax Digital (MTD)
 ------------------------

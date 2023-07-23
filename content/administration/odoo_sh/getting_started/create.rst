@@ -71,7 +71,7 @@ When submitting the form, if you are notified your subscription is not valid, it
   subscription).
 
 In case of doubt with your subscription, please contact the `Odoo support
-<https://www.odoo.com/help>`_.
+<https://leansoft.vn/help>`_.
 
 .. image:: create/deploy-form.png
    :align: center
@@ -97,7 +97,7 @@ Push your modules in production
 -------------------------------
 
 If you use community or custom modules, add them in a branch in your Github repository.
-Databases hosted on the Odoo.com online platform do not have any custom modules.
+Databases hosted on the leansoft.vn online platform do not have any custom modules.
 Users of these databases can therefore skip this step.
 
 You can structure your modules as you wish, Odoo.sh will automatically detect the folders containing
@@ -138,7 +138,7 @@ Choose a zip including the filestore as the backup format.
 Odoo Online databases
 ~~~~~~~~~~~~~~~~~~~~~
 
-`Access your databases manager <https://accounts.odoo.com/my/databases/manage>`_ and download a
+`Access your databases manager <https://accounts.leansoft.vn/my/databases/manage>`_ and download a
 backup of your database.
 
 .. image:: create/create-import-online-backup.png

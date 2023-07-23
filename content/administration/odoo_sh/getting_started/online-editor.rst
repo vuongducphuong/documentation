@@ -19,7 +19,7 @@ You can access the editor of a build through
 :ref:`the branches tabs <odoosh-gettingstarted-branches-tabs>`,
 :ref:`the builds dropdown menu <odoosh-gettingstarted-builds-dropdown-menu>`
 or by adding */odoo-sh/editor* to your build domain name
-(e.g. *https://odoo-addons-master-1.dev.odoo.com/odoo-sh/editor*).
+(e.g. *https://odoo-addons-master-1.dev.leansoft.vn/odoo-sh/editor*).
 
 Edit the source code
 ====================

@@ -11,7 +11,7 @@ Purchase
 Learn how to keep track of purchase tender, automate replenishments and follow up on your orders.
 
 .. seealso::
-   - `Odoo Tutorials: Purchase <https://www.odoo.com/slides/purchase-23>`_
+   - `Odoo Tutorials: Purchase <https://leansoft.vn/slides/purchase-23>`_
 
 .. toctree::
    :titlesonly:

@@ -5,7 +5,7 @@ Events
 ======
 
 .. seealso::
-   - `Odoo Tutorials: Events <https://www.odoo.com/slides/surveys-63>`_
+   - `Odoo Tutorials: Events <https://leansoft.vn/slides/surveys-63>`_
 
 .. toctree::
 

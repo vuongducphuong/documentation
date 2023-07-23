@@ -6,7 +6,7 @@ Conditions Générales de Vente
 
 .. only:: html
 
-   `Download PDF <https://www.odoo.com/documentation/{CURRENT_BRANCH}/terms_of_sale_fr.pdf>`_
+   `Download PDF <https://leansoft.vn/documentation/{CURRENT_BRANCH}/terms_of_sale_fr.pdf>`_
 
 .. note:: Dernière modification: 20 octobre 2021.
 

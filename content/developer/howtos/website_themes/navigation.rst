@@ -85,7 +85,7 @@ Add a link to an external website.
 .. code-block:: xml
 
    <record id="..." model="website.menu">
-       <field name="url">https://www.odoo.com</field>
+       <field name="url">https://leansoft.vn</field>
    </record>
 
 Anchor

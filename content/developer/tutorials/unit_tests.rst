@@ -93,9 +93,9 @@ Runbot
 ------
 
 **Reference**: the documentation related to this topic can be found in
-`Runbot FAQ <https://runbot.odoo.com/doc>`__.
+`Runbot FAQ <https://runbot.leansoft.vn/doc>`__.
 
-Most of the tests are run on `Runbot <https://runbot.odoo.com>`__ every time a commit is pushed on
+Most of the tests are run on `Runbot <https://runbot.leansoft.vn>`__ every time a commit is pushed on
 GitHub.
 
 You can see the state of a commit/branch by filtering on the runbot dashboard.
@@ -146,7 +146,7 @@ a `rebase` than a `merge`). It will then go to the mergebot.
 Mergebot
 --------
 
-`Mergebot <https://mergebot.odoo.com>`__ is the last testing phase before merging a PR.
+`Mergebot <https://mergebot.leansoft.vn>`__ is the last testing phase before merging a PR.
 
 It will take the commits in your branch not yet present on the target, stage it and rerun the tests
 one more time, including the enterprise version even if you are only changing something in
@@ -155,7 +155,7 @@ community.
 This step can fail with a `Staging failed` error message. This could be due to
 
 * a nondeterministic bug that is already on the target. If you are an Odoo employee, you can check
-  those here: https://runbot.odoo.com/runbot/errors
+  those here: https://runbot.leansoft.vn/runbot/errors
 * a nondeterministic bug that you introduced but wasn't detected in the CI before
 * an incompatibility with another commit merged right before and what you are trying to merge
 * an incompatibility with the enterprise repository if you only did changes in the community repo

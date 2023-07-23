@@ -67,7 +67,7 @@ We Strive To
      commercial offers or discuss software other than Odoo. New modules and
      features can be announced on the “Announcements” mailing list only.
    * Don't use the list to report copyright or licenses infringements, report
-     issues to abuse@odoo.com instead.
+     issues to abuse@leansoft.vn instead.
 
 6. Don't feed the trolls
 
@@ -94,7 +94,7 @@ If you have concerns about someone’s conduct:
 Direct contact: it is always appropriate to email a list member, mention that
 you think their behavior was out of line, and (if necessary) point them to this
 document.
-Moderators: You can reach the list moderators through community-mods@odoo.com
+Moderators: You can reach the list moderators through community-mods@leansoft.vn
 
 
 This policy was inspired by

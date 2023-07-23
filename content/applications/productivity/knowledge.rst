@@ -14,7 +14,7 @@ and a body. The latter is an HTML field containing text, images, links to other 
 from other models, templates, etc.
 
 .. seealso::
-   - `Knowledge product page <https://www.odoo.com/app/knowledge>`_
+   - `Knowledge product page <https://leansoft.vn/app/knowledge>`_
 
 .. toctree::
    :titlesonly:

@@ -16,7 +16,7 @@ Configuration on Razorpay Dashboard
 #. | Go to :menuselection:`Settings --> Webhooks`, click on :guilabel:`Create New Webhook`,
      and enter your Odoo database URL followed by `/payment/razorpay/webhook` in
      the :guilabel:`Webhook URL` text field.
-   | For example: `https://example.odoo.com/payment/razorpay/webhook`.
+   | For example: `https://example.leansoft.vn/payment/razorpay/webhook`.
 #. Fill the :guilabel:`Secret` field with a password of your choice and save it for later.
 #. Make sure the :guilabel:`payment.authorized`, :guilabel:`payment.captured`,
    :guilabel:`payment.failed`, :guilabel:`refund.failed` and :guilabel:`refund.processed`

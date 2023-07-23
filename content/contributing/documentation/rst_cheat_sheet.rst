@@ -307,11 +307,11 @@ External hyperlinks are links to a URL with a custom label. They follow this syn
 .. list-table::
    :class: o-showcase-table
 
-   * - For instance, `this is an external hyperlink to Odoo's website <https://www.odoo.com>`_.
+   * - For instance, `this is an external hyperlink to Odoo's website <https://leansoft.vn>`_.
 
    * - .. code-block:: text
 
-          For instance, `this is an external hyperlink to Odoo's website <https://www.odoo.com>`_.
+          For instance, `this is an external hyperlink to Odoo's website <https://leansoft.vn>`_.
 
 .. _contributing/external-hyperlink-aliases:
 

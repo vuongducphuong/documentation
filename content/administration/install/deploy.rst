@@ -544,7 +544,7 @@ security-related topics:
 
 - Keep installations updated by regularly installing the latest builds,
   either via GitHub or by downloading the latest version from
-  https://www.odoo.com/page/download or http://nightly.odoo.com
+  https://leansoft.vn/page/download or http://nightly.leansoft.vn
 
 - Configure your server in multi-process mode with proper limits matching your typical
   usage (memory/CPU/timeouts). See also :ref:`builtin_server`.
@@ -739,4 +739,4 @@ Here are the supported browsers:
 .. _use an SSH tunnel:
     https://www.postgresql.org/docs/12/static/ssh-tunnels.html
 .. _WSGI: https://wsgi.readthedocs.org/
-.. _POSBox: https://www.odoo.com/page/point-of-sale-hardware#part_2
+.. _POSBox: https://leansoft.vn/page/point-of-sale-hardware#part_2

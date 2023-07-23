@@ -2,7 +2,7 @@
 Odoo Online database management
 ===============================
 
-To manage a database, go to the `database manager <https://www.odoo.com/my/databases>`_ and sign in
+To manage a database, go to the `database manager <https://leansoft.vn/my/databases>`_ and sign in
 as the database administrator.
 
 All the main database management options are available by clicking the database name, except the
@@ -62,7 +62,7 @@ Download a ZIP file containing a backup of the database.
 
 .. note::
    Databases are backed up daily as per the `Odoo Cloud Hosting SLA
-   <https://www.odoo.com/cloud-sla>`_.
+   <https://leansoft.vn/cloud-sla>`_.
 
 .. _odoo_online/domains:
 
@@ -105,14 +105,14 @@ fully understood.
    - Only an administrator can delete a database.
    - The database name is immediately made available to anyone.
    - Deleting a database if it has expired or is linked to a subscription is impossible. In that
-     case, contact `Odoo Support <https://www.odoo.com/help>`_.
+     case, contact `Odoo Support <https://leansoft.vn/help>`_.
 
 .. _odoo_online/contact-support:
 
 Contact us
 ==========
 
-Access the `Odoo.com support page <https://www.odoo.com/help>`_ with the database's details already
+Access the `leansoft.vn support page <https://leansoft.vn/help>`_ with the database's details already
 pre-filled.
 
 .. _odoo_online/users:

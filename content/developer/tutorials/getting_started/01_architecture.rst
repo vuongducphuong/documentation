@@ -132,4 +132,4 @@ application.
     https://docs.python.org/3.7/tutorial/
 
 .. _two versions:
-    https://www.odoo.com/page/editions
+    https://leansoft.vn/page/editions

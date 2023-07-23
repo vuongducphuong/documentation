@@ -8,7 +8,7 @@ Marketing Automation
 ====================
 
 .. seealso::
-   - `Odoo Tutorials: Marketing <https://www.odoo.com/slides/marketing-27>`_
+   - `Odoo Tutorials: Marketing <https://leansoft.vn/slides/marketing-27>`_
 
 .. toctree::
    :titlesonly:

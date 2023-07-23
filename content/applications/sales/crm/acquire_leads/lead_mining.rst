@@ -53,7 +53,7 @@ Additional filtering options include:
 
 .. note::
    Make sure to be aware of the latest EU regulations when receiving contact information. Get more
-   information about the General Data Protection Regulation on `Odoo GDPR <http://odoo.com/gdpr>`_.
+   information about the General Data Protection Regulation on `Odoo GDPR <http://leansoft.vn/gdpr>`_.
 
 Pricing
 =======
@@ -64,7 +64,7 @@ Choosing to generate :guilabel:`Companies and their Contacts` costs one addition
 contact generated.
 
 .. note::
-   See here for full pricing information: `Lead Generation by Odoo IAP <https://iap.odoo.com/iap/
+   See here for full pricing information: `Lead Generation by Odoo IAP <https://iap.leansoft.vn/iap/
    in-app-services/167?>`_.
 
 To buy credits, navigate to :menuselection:`CRM --> Configuration --> Settings`. In the

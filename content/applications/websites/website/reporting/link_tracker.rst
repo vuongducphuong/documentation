@@ -47,7 +47,7 @@ country of origin for those clicks.
 
 .. tip::
 
-   #. You can also access the link tracker on *odoo.com/r* via your browser.
+   #. You can also access the link tracker on *leansoft.vn/r* via your browser.
    #. Activate the developer mode (:menuselection:`Settings --> Activate the developer mode`) and
       get access to the *Link Tracker* module and its back-end functionalities.
    #. Integrated with :doc:`Google Analytics <google_analytics>`, those trackers allow you to see

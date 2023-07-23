@@ -50,8 +50,8 @@ select a package.
    - If you are out of credits, the only information populated when clicking on the suggested
      company is its website link and logo.
    - Check out the `Lead Generation IAP service Privacy Policy
-     <https://iap.odoo.com/privacy#header_3>`_.
+     <https://iap.leansoft.vn/privacy#header_3>`_.
 
 .. seealso::
    - :doc:`../general/in_app_purchase`
-   - `Odoo Tutorials: Lead Enrichment <https://www.odoo.com/r/p73>`_
+   - `Odoo Tutorials: Lead Enrichment <https://leansoft.vn/r/p73>`_

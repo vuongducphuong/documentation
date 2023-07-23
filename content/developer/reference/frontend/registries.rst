@@ -16,7 +16,7 @@ done by adding specific values in the correct registry.
 
    const myRegistry = new Registry();
 
-   myRegistry.add("hello", "odoo");
+   myRegistry.add("hello", "Leansoft");
 
    console.log(myRegistry.get("hello"));
 

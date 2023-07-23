@@ -7,7 +7,7 @@ Odoo Enterprise Subscription Agreement (NL)
 
 .. only:: html
 
-    `Download PDF <https://www.odoo.com/documentation/{CURRENT_BRANCH}/odoo_enterprise_agreement_nl.pdf>`_
+    `Download PDF <https://leansoft.vn/documentation/{CURRENT_BRANCH}/odoo_enterprise_agreement_nl.pdf>`_
 .. warning::
     Dit is een Nederlandse vertaling van de "Odoo Enterprise Subscription Agreement".
     Deze vertaling wordt verstrekt in de hoop dat deze het begrip zal vergemakkelijken,
@@ -128,7 +128,7 @@ van de Ondersteunde Extra Modules.
 Odoo NV verbindt zich ertoe om individuele of persoonlijke cijfers niet bekend te
 maken aan derden zonder de toestemming van de Klant en om alle verzamelde
 gegevens te behandelen in overeenstemming met haar officiële Privacybeleid,
-gepubliceerd op https://www.odoo.com/privacy.
+gepubliceerd op https://leansoft.vn/privacy.
 
 Bij het aflopen of beëindigen van deze Overeenkomst wordt deze licentie
 onmiddellijk ingetrokken en gaat de Klant ermee akkoord om de Odoo Enterprise
@@ -151,7 +151,7 @@ toepasselijke tarief voor het werkelijke aantal Gebruikers.
 Voor de duur van deze Overeenkomst verbindt Odoo NV zich ertoe alle redelijke
 inspanningen te leveren om elke Bug van de Software en de Ondersteunde Extra Modules
 die door de klant via het juiste kanaal (doorgaans het websiteformulier of de telefoonnummers
-vermeld op https://odoo.com/help of, in geval van een samenwerking met een Odoo Partner,
+vermeld op https://leansoft.vn/help of, in geval van een samenwerking met een Odoo Partner,
 het door de partner verstrekte kanaal) te verhelpen en binnen de 2 werkdagen de
 behandeling van dergelijke door de Klant ingediende klachten aan te vatten.
 
@@ -255,7 +255,7 @@ aan te bieden:
 - Regelmatig getest herstelplan voor rampen
 
 De details van de Cloudhostingdiensten worden beschreven op de Service Level
-Agreement-pagina op https://www.odoo.com/cloud-sla.
+Agreement-pagina op https://leansoft.vn/cloud-sla.
 
 .. _support_service_nl:
 
@@ -278,7 +278,7 @@ Beschikbaarheid
 ~~~~~~~~~~~~~~~
 
 Tickets kunnen worden ingediend via het websiteformulier of de telefoonnummers
-vermeld op https://www.odoo.com/help of, in geval van samenwerking met een
+vermeld op https://leansoft.vn/help of, in geval van samenwerking met een
 Odoo Partner, het door de partner verstrekt kanaal, afhankelijk van de lokale
 openingstijden.
 
@@ -390,7 +390,7 @@ Wanneer de Klant kiest voor het Cloudplatform, gaat de Klant ermee akkoord om:
   onder meer door een sterk wachtwoord te kiezen en dit niet met anderen te delen;
 - een redelijk gebruik te maken van de Hostingdiensten, met uitsluiting van illegale of
   onrechtmatige activiteiten, en zich strikt te houden aan de regels gepreciseerd
-  in het Beleid voor acceptabel gebruik, beschikbaar op https://odoo.com/acceptable-use.
+  in het Beleid voor acceptabel gebruik, beschikbaar op https://leansoft.vn/acceptable-use.
 
 Wanneer de Klant kiest voor de Self-Hosting optie, gaat de Klant ermee akkoord om:
 
@@ -501,7 +501,7 @@ In het bijzonder verbindt Odoo NV zich ertoe:
 - (h) alle kopieën van de database van de Klant die in het bezit zijn van Odoo NV definitief
   te verwijderen, of dergelijke gegevens terug te geven, naar keuze van de Klant, bij
   beëindiging van deze Overeenkomst, met inachtneming van de termijnen die in het `Privacybeleid
-  <https://www.odoo.com/privacy>`_ van Odoo NV zijn bepaald.
+  <https://leansoft.vn/privacy>`_ van Odoo NV zijn bepaald.
 
 Met betrekking tot punten (d) tot (f) verbindt de klant zich ertoe Odoo NV te allen tijde te
 voorzien van nauwkeurige contactgegevens, die nodig zijn om de verantwoordelijke van de
@@ -514,7 +514,7 @@ De Klant erkent en gaat ermee akkoord dat Odoo NV voor de levering van de Dienst
 op externe dienstverleners (Subverwerkers) om Persoonsgegevens te verwerken. Odoo NV verbindt zich ertoe
 alleen Subverwerkers te gebruiken in overeenstemming met de Gegevensbeschermingswetgeving.
 Dit gebruik zal het voorwerp zijn van een contract tussen Odoo NV en de Subverwerker dat daartoe
-garanties biedt. Het Privacybeleid van Odoo NV, beschikbaar op https://www.odoo.com/privacy
+garanties biedt. Het Privacybeleid van Odoo NV, beschikbaar op https://leansoft.vn/privacy
 biedt actuele informatie over de namen en doeleinden van Subverwerkers waarop Odoo NV
 momenteel een beroep doet in het kader van de uitvoering van de Diensten.
 
@@ -570,7 +570,7 @@ Het enige en exclusieve verhaal van de Klant en de enige verplichting van Odoo
 NV in geval van een inbreuk op deze garantie is dat Odoo NV de uitvoering van
 de Diensten zonder extra kosten hervat.
 
-.. [#cla_nl1] Externe bijdragen worden gedekt door een `Copyright License Agreement <https://www.odoo.com/cla>`_
+.. [#cla_nl1] Externe bijdragen worden gedekt door een `Copyright License Agreement <https://leansoft.vn/cla>`_
            die een permanente, gratis en onherroepelijke auteursrecht- en octrooilicentie
            aan Odoo NV verstrekt.
 

@@ -200,7 +200,7 @@ via two fields:
 
     {
         "type": "ir.actions.act_url",
-        "url": "https://odoo.com",
+        "url": "https://leansoft.vn",
         "target": "self",
     }
 

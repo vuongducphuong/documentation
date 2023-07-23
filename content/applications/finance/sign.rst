@@ -12,8 +12,8 @@ With Sign, you can upload any PDF file and add fields to it. These fields are au
 in with the user's details present in your database.
 
 .. seealso::
-   - `Odoo Sign: product page <https://www.odoo.com/app/sign>`_
-   - `Odoo Tutorials: Sign <https://www.odoo.com/slides/sign-61>`_
+   - `Odoo Sign: product page <https://leansoft.vn/app/sign>`_
+   - `Odoo Tutorials: Sign <https://leansoft.vn/slides/sign-61>`_
 
 Validity of electronic signatures
 =================================

@@ -150,7 +150,7 @@ Provides a way to manipulate cookies. For example:
 
 .. code-block:: javascript
 
-   cookieService.setCookie("hello", "odoo");
+   cookieService.setCookie("hello", "Leansoft");
 
 API
 ~~~
@@ -762,7 +762,7 @@ Overview
 - Dependencies: none
 
 The `title` service offers a simple API that allows to read/modify the document
-title. For example, if the current document title is "Odoo", we can change it
+title. For example, if the current document title is "Leansoft", we can change it
 to "Odoo 15 - Apple" by using the following command:
 
 .. code-block:: javascript
@@ -812,7 +812,7 @@ Its API is:
 
    .. code-block:: javascript
 
-      { odoo: "Odoo", action: "Import" }
+      { odoo: "Leansoft", action: "Import" }
 
    with ``current`` value being ``Odoo - Import`` , then
 

@@ -12,7 +12,7 @@ Connection
 
 The :abbr:`IoT (Internet of Things)` box supports printers connected through :abbr:`USB (Universal
 Serial Bus)`, network connection, or Bluetooth. `Supported printers
-<https://www.odoo.com/page/iot-hardware>`__ are detected automatically, and appear in the
+<https://leansoft.vn/page/iot-hardware>`__ are detected automatically, and appear in the
 :guilabel:`Devices` list of the *IoT app*.
 
 .. image:: printer/printer-detected.png

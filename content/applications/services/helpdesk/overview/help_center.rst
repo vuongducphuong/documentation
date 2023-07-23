@@ -363,7 +363,7 @@ the course in sections.
    the setting.
 
 .. seealso::
-   `Odoo Tutorials: eLearning <https://www.odoo.com/slides/elearning-56>`_
+   `Odoo Tutorials: eLearning <https://leansoft.vn/slides/elearning-56>`_
 
 Publish an eLearning course
 ---------------------------

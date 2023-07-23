@@ -3,7 +3,7 @@
 .. |assistance-contact| replace::
    If you need Odoo assistance on this matter, please get in touch with your Odoo Account Manager or
    our `Sales department`_.
-.. _Sales department: mailto:sales@odoo.com
+.. _Sales department: mailto:sales@leansoft.vn
 
 =======
 Upgrade
@@ -103,7 +103,7 @@ Request a test database
 =======================
 
 Follow the instructions available per hosting type on the `website form
-<https://upgrade.odoo.com>`_ and select *Testing* purpose.
+<https://upgrade.leansoft.vn>`_ and select *Testing* purpose.
 
 .. image:: upgrade/test-purpose.png
    :align: center
@@ -127,7 +127,7 @@ Assistance
 ----------
 
 If you encounter an issue in the **test database**, please get in touch with Odoo Upgrade Support
-via the `Odoo Support page <https://www.odoo.com/help>`_.
+via the `Odoo Support page <https://leansoft.vn/help>`_.
 
 Under the *Ticket Description* section, select *An issue related to my upgrade* ticket type.
 
@@ -157,7 +157,7 @@ production data (invoices, VAT returns, inventories, current orders) to a new ve
 choice.
 
 After your :ref:`tests <upgrade/testing-phase>` are completed to your satisfaction, submit the
-request to upgrade your production database via our `website form <https://upgrade.odoo.com>`_.
+request to upgrade your production database via our `website form <https://upgrade.leansoft.vn>`_.
 Select *Production* purpose.
 
 .. important::
@@ -174,7 +174,7 @@ Assistance
 If you encounter issues or problems in the **production database**, please get in touch with **Odoo
 Support**:
 
-#. Connect to our `Odoo Support page <https://www.odoo.com/help>`_.
+#. Connect to our `Odoo Support page <https://leansoft.vn/help>`_.
 #. Under the *Ticket Description* section, select the appropriate type related to your issue but
    **do not select** the option *An issue related to my upgrade*.
 
@@ -200,7 +200,7 @@ Contact our upgrade service support
 -----------------------------------
 
 Should you have any more questions about the upgrade, do not hesitate to send a message to `Odoo
-Upgrade Team <mailto:upgrade@odoo.com>`_. We will be happy to answer it as soon as possible.
+Upgrade Team <mailto:upgrade@leansoft.vn>`_. We will be happy to answer it as soon as possible.
 
 .. _upgrade/supported-versions:
 

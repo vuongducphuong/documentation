@@ -38,8 +38,8 @@ Under the :guilabel:`Redirect URL` section, select :guilabel:`Web` as the platfo
 is the canonical domain at which your Odoo instance can be reached in the URL field.
 
 .. example::
-   *mydatabase.odoo.com*, where *mydatabase* is the actual prefix of the database's subdomain,
-   assuming it's hosted on Odoo.com
+   *mydatabase.leansoft.vn*, where *mydatabase* is the actual prefix of the database's subdomain,
+   assuming it's hosted on leansoft.vn
 
 After the URL has been added to the field, :guilabel:`Register` the application so it is created.
 

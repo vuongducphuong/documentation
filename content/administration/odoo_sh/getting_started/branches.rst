@@ -265,7 +265,7 @@ The list contains the backups kept on the server your production database is hos
 This server only keeps one month of backups: 7 daily and 4 weekly backups.
 
 Dedicated backup servers keep the same backups, as well as 3 additional monthly backups.
-To restore or download one of these monthly backups, please `contact us <https://www.odoo.com/help>`_.
+To restore or download one of these monthly backups, please `contact us <https://leansoft.vn/help>`_.
 
 If you merge a commit updating the version of one or several modules (in :file:`__manifest__.py`), or their linked python
 dependencies (in :file:`requirements.txt`), then Odoo.sh performs a backup automatically (flagged with type Update in the list),
@@ -359,18 +359,18 @@ In addition, for each version you have two options regarding the code update.
 **Custom domains**
 
 Here you can configure additional domains for the selected branch. It's possible to add other
-*<name>.odoo.com* domains or your own custom domains. For the latter you have to:
+*<name>.leansoft.vn* domains or your own custom domains. For the latter you have to:
 
 * own or purchase the domain name,
 * add the domain name in this list,
 * in your registrar's domain name manager,
   configure the domain name with a ``CNAME`` record set to your production database domain name.
 
-For instance, to associate *www.mycompany.com* to your database *mycompany.odoo.com*:
+For instance, to associate *www.mycompany.com* to your database *mycompany.leansoft.vn*:
 
 * in Odoo.sh, add *www.mycompany.com* in the custom domains of your project settings,
 * in your domain name manager (e.g. *godaddy.com*, *gandi.net*, *ovh.com*),
-  configure *www.mycompany.com* with a ``CNAME`` record with as value *mycompany.odoo.com*.
+  configure *www.mycompany.com* with a ``CNAME`` record with as value *mycompany.leansoft.vn*.
 
 Bare domains (e.g. *mycompany.com*) are not accepted:
 

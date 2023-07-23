@@ -10,9 +10,9 @@ recognize the content of the documents. Vendor bill and customer invoice forms a
 created and populated based on the scanned invoices.
 
 .. seealso::
-   - `Test Odoo's invoice digitization <https://www.odoo.com/app/invoice-automation>`_
+   - `Test Odoo's invoice digitization <https://leansoft.vn/app/invoice-automation>`_
    - `Odoo Tutorials: Invoice Digitization with OCR
-     <https://www.odoo.com/slides/slide/digitize-bills-with-ocr-1712>`_
+     <https://leansoft.vn/slides/slide/digitize-bills-with-ocr-1712>`_
 
 Configuration
 =============
@@ -53,7 +53,7 @@ sent to this address will be converted automatically into new invoices or bills.
 
 .. note::
    If you use the :doc:`Documents <../../documents>` app, you can automatically send your scanned
-   invoices to the :guilabel:`Finance` workspace (e.g., `inbox-financial@example.odoo.com`).
+   invoices to the :guilabel:`Finance` workspace (e.g., `inbox-financial@example.leansoft.vn`).
 
 The default email aliases `vendor-bills@` and `customer-invoices@` followed by the
 :guilabel:`Alias Domain` you set are automatically created for the :guilabel:`Vendor Bills` and
@@ -95,5 +95,5 @@ and click on :guilabel:`Buy credits`, or go to :menuselection:`Settings --> Odoo
    test the feature.
 
 .. seealso::
-   - `Our Privacy Policy <https://iap.odoo.com/privacy#header_6>`_
+   - `Our Privacy Policy <https://iap.leansoft.vn/privacy#header_6>`_
    - :doc:`/applications/general/in_app_purchase`

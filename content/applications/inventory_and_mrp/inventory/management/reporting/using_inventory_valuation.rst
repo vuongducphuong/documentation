@@ -171,4 +171,4 @@ moved in and out of the warehouse.
       :alt: Accounting entry for the inventory valuation of 10 tables.
 
 .. seealso::
-   `Odoo Tutorial: Inventory Valuation <https://www.odoo.com/slides/slide/2795/share>`_
+   `Odoo Tutorial: Inventory Valuation <https://leansoft.vn/slides/slide/2795/share>`_

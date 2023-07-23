@@ -1,37 +1,42 @@
 <div id="o_content">
     <section class="o_content_fw_banner">
-        <h1 class="text-white">{{ _("Odoo Documentation") }}</h1>
+        <h1 class="text-white">{{ _("Tài liệu hướng dẫn sử dụng Leansoft") }}</h1>
     </section>
     <section>
         <div class="row gx-lg-5">
-            <div class="col-lg-6">
-                <h2><a href="{{ pathto('applications') }}">{{ _("User Docs") }}</a></h2>
-                <p class="text-dark">{{ _("Discover our guide to help you use and configure the platform, by applications.") }}</p>
-                <h5 class="text-dark pt-3 text-uppercase fw_bold">{{ _("Top Apps") }}</h5>
+            <!-- <div class="col-lg-6"> -->
+                <h2><a href="{{ pathto('applications') }}">{{ _("Khám phá những điều kỳ diệu mà Leansoft đem đến cho doanh nghiệp bạn") }}</a></h2>
+                <!-- <p class="text-dark">{{ _("Khám phá hướng dẫn của chúng tôi để giúp bạn sử dụng và thiết lập hệ thống phù hợp với doanh nghiệp bạn.") }}</p> -->
+                <h5 class="text-dark pt-3 text-uppercase fw_bold">{{ _("Ứng dụng hàng đầu") }}</h5>
                 <ul class="list-unstyled">
                     <li>
-                        <a href="{{ pathto('applications/finance/accounting') }}" class="stretched-link">
-                            {{ _("Accounting") }}
-                        </a>
-                    </li>
-                    <li>
                         <a href="{{ pathto('applications/inventory_and_mrp/inventory') }}" class="stretched-link">
-                            {{ _("Inventory") }}
+                            {{ _("Kho vận") }}
                         </a>
                     </li>
                     <li>
                         <a href="{{ pathto('applications/inventory_and_mrp/manufacturing') }}" class="stretched-link">
-                            {{ _("Manufacturing") }}
+                            {{ _("Sản xuất") }}
                         </a>
                     </li>
                     <li>
+                        <a href="{{ pathto('applications/finance/accounting') }}" class="stretched-link">
+                            {{ _("Kế toán") }}
+                        </a>
+                    </li>                    
+                    <li>
                         <a href="{{ pathto('applications/sales/point_of_sale') }}" class="stretched-link">
-                            {{ _("Point of Sale") }}
+                            {{ _("Điểm bán hàng") }}
                         </a>
                     </li>
+                    <li>
+                        <a href="{{ pathto('applications/hr/employees') }}" class="stretched-link">
+                            {{ _("Nhân sự") }}
+                        </a>
+                    </li>                    
                 </ul>
-            </div>
-            <div class="col-lg-6">
+            <!-- </div> -->
+            <!-- <div class="col-lg-6">
                 <h2 class="border-top pt-4 pt-lg-0"><a href="{{ pathto('administration') }}">{{ _("Install and Maintain") }}</a></h2>
                 <p class="text-dark">{{ _("Learn how to install, deploy and upgrade Odoo on premise or on Odoo.sh.") }}</p>
                 <h5 class="text-dark pt-3 text-uppercase fw_bold">{{ _("Top Links") }}</h5>
@@ -57,9 +62,9 @@
                         </a>
                     </li>
                 </ul>
-            </div>
+            </div> -->
         </div>
-        <div class="row gx-lg-5">
+        <!-- <div class="row gx-lg-5">
             <div class="col-lg-6">
                 <h2 class="border-top pt-4"><a href="{{ pathto('developer') }}">{{ _("Developer") }}</a></h2>
                 <p class="text-dark">{{ _("Learn to develop in Odoo by reading the framework references and programmer tutorials.") }}</p>
@@ -114,7 +119,7 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </div> -->
     </section>
     {# If changelog exists import it here}
         {% include "layout_templates/changelog.html" %}

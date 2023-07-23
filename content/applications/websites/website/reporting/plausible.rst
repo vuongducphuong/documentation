@@ -38,7 +38,7 @@ To follow your website's traffic with Plausible.io:
 
 .. note::
    - | **You are on the Odoo Online Platform**
-     | When you `create your Odoo Online database <https://www.odoo.com/trial>`_, we create it for
+     | When you `create your Odoo Online database <https://leansoft.vn/trial>`_, we create it for
        you on our own server. You don't have anything to do.
    - | **What about the Goal?**
      | Odoo pushes out-of-the-box custom events: `Lead Generation` and `Shop`.

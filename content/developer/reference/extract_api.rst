@@ -11,7 +11,7 @@ total, due date, or invoice lines for *invoices*, the total, date, payment refer
 or the name, email, phone number for *resumes*.
 
 This service is a paid service. Each document processing will cost you one credit.
-Credits can be bought on `iap.odoo.com <https://iap.odoo.com/iap/in-app-services/259?sortby=date>`_.
+Credits can be bought on `iap.leansoft.vn <https://iap.leansoft.vn/iap/in-app-services/259?sortby=date>`_.
 
 You can either use this service directly in the Accounting, Expense, or Recruitment App or through
 the API. The Extract API, which is detailed in the next section, allows you to integrate our
@@ -22,7 +22,7 @@ Overview
 ========
 
 The extract API uses the JSON-RPC2_ protocol; its endpoint routes are located at
-`https://iap-extract.odoo.com`.
+`https://iap-extract.leansoft.vn`.
 
 Version
 -------

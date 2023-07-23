@@ -85,7 +85,7 @@ Connect your database
 
       For Google Chrome, you can do so by following the guide at:
       `https://support.google.com/chrome/answer/95647 <https://support.google.com/chrome/answer/95647#:~:text=Allow%20or%20block%20cookies%20for%20a%20specific%20site>`_
-      and adding `download.odoo.com` to the list of `Sites that can always use cookies`.
+      and adding `download.leansoft.vn` to the list of `Sites that can always use cookies`.
 
       Once done, the Outlook panel needs to be opened again.
 

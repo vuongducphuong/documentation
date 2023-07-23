@@ -25,7 +25,7 @@ If you already have an Odoo server installed, you can just use its parameters.
 
 .. important::
 
-    For Odoo Online instances (<domain>.odoo.com), users are created without a
+    For Odoo Online instances (<domain>.leansoft.vn), users are created without a
     *local* password (as a person you are logged in via the Odoo Online
     authentication system, not by the instance itself). To use XML-RPC on Odoo
     Online instances, you will need to set a password on the user account you
@@ -38,7 +38,7 @@ If you already have an Odoo server installed, you can just use its parameters.
     * Set a :guilabel:`New Password` value then click :guilabel:`Change Password`.
 
     The *server url* is the instance's domain (e.g.
-    *https://mycompany.odoo.com*), the *database name* is the name of the
+    *https://mycompany.leansoft.vn*), the *database name* is the name of the
     instance (e.g. *mycompany*). The *username* is the configured user's login
     as shown by the *Change Password* screen.
 
@@ -130,7 +130,7 @@ a new key and update all the places where you used the old one.
 Test database
 ~~~~~~~~~~~~~
 
-To make exploration simpler, you can also ask https://demo.odoo.com for a test
+To make exploration simpler, you can also ask https://demo.leansoft.vn for a test
 database:
 
 .. tabs::
@@ -138,13 +138,13 @@ database:
    .. code-tab:: python
 
       import xmlrpc.client
-      info = xmlrpc.client.ServerProxy('https://demo.odoo.com/start').start()
+      info = xmlrpc.client.ServerProxy('https://demo.leansoft.vn/start').start()
       url, db, username, password = info['host'], info['database'], info['user'], info['password']
 
    .. code-tab:: ruby
 
       require "xmlrpc/client"
-      info = XMLRPC::Client.new2('https://demo.odoo.com/start').call('start')
+      info = XMLRPC::Client.new2('https://demo.leansoft.vn/start').call('start')
       url, db, username, password = info['host'], info['database'], info['user'], info['password']
 
    .. group-tab:: PHP
@@ -152,7 +152,7 @@ database:
       .. code-block:: php
 
          require_once('ripcord.php');
-         $info = ripcord::client('https://demo.odoo.com/start')->start();
+         $info = ripcord::client('https://demo.leansoft.vn/start')->start();
          list($url, $db, $username, $password) = array($info['host'], $info['database'], $info['user'], $info['password']);
 
       .. note::
@@ -174,7 +174,7 @@ database:
          final XmlRpcClient client = new XmlRpcClient();
 
          final XmlRpcClientConfigImpl start_config = new XmlRpcClientConfigImpl();
-         start_config.setServerURL(new URL("https://demo.odoo.com/start"));
+         start_config.setServerURL(new URL("https://demo.leansoft.vn/start"));
          final Map<String, String> info = (Map<String, String>)client.execute(
              start_config, "start", emptyList());
 
@@ -193,7 +193,7 @@ database:
 
       .. code-block:: go
 
-         client, err := xmlrpc.NewClient("https://demo.odoo.com/start", nil)
+         client, err := xmlrpc.NewClient("https://demo.leansoft.vn/start", nil)
          if err != nil {
              log.Fatal(err)
          }

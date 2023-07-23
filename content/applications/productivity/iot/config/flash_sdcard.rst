@@ -42,9 +42,9 @@ open-source utility used for burning image files onto drives. Click to `download
 <https://www.balena.io/etcher#download-etcher>`_. Install and launch the program on the computer.
 
 Then download the version-specific :abbr:`IoT (Internet of Things)` image from `nightly
-<http://nightly.odoo.com/master/iotbox/>`_.
+<http://nightly.leansoft.vn/master/iotbox/>`_.
 
-The following are image versions on the `nightly <http://nightly.odoo.com/master/iotbox/>`_ website
+The following are image versions on the `nightly <http://nightly.leansoft.vn/master/iotbox/>`_ website
 with their corresponding Odoo database version:
 
 - Odoo V16 --> iotbox-latest.zip

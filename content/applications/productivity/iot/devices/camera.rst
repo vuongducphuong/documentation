@@ -14,7 +14,7 @@ Connection
 To connect a camera to an :abbr:`IoT (Internet of Things)` box, simply connect the two via cable.
 This is usually done with a :abbr:`USB (Universal Serial Bus)` cable of some sort.
 
-If the camera is `supported <https://www.odoo.com/page/iot-hardware>`_, there is no need to set up
+If the camera is `supported <https://leansoft.vn/page/iot-hardware>`_, there is no need to set up
 anything, as it'll be detected as soon as it's connected.
 
 .. image:: camera/camera-dropdown.png

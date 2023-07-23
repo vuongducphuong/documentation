@@ -6,7 +6,7 @@ Odoo Enterprise Subscription Agreement (FR)
 
 .. only:: html
 
-    `Download PDF <https://www.odoo.com/documentation/{CURRENT_BRANCH}/odoo_enterprise_agreement_fr.pdf>`_
+    `Download PDF <https://leansoft.vn/documentation/{CURRENT_BRANCH}/odoo_enterprise_agreement_fr.pdf>`_
 .. warning::
     Ceci est une traduction en français du contrat “Odoo Enterprise Subscription Agreement”.
     Cette traduction est fournie dans l’espoir qu’elle facilitera sa compréhension, mais elle
@@ -119,7 +119,7 @@ Modules Supplémentaires Couverts.
 Odoo SA s'engage à ne pas divulguer à une tierce partie d'informations chiffrées personnelles ou
 spécifiques sans le consentement du Client, et à traiter toutes les données recueillies en
 respectant sa politique officielle de confidentialité, telle que publiée sur
-https://www.odoo.com/privacy.
+https://leansoft.vn/privacy.
 
 À l'expiration ou la résiliation de ce Contrat, cette licence est immédiatement révoquée et le
 Client accepte de cesser toute utilisation du logiciel Odoo Enterprise Edition et de la Plate-forme
@@ -143,7 +143,7 @@ correspondant au nombre réel d'Utilisateurs.
 Pour la durée de ce Contrat, Odoo SA s'engage à déployer tous les efforts raisonnables pour
 corriger tout Bug du Logiciel ou des Modules Supplémentaires Couverts qui pourrait être signalé
 par le Client en suivant la procédure appropriée (généralement par le biais du formulaire en ligne
-ou des numéros de téléphone indiqués sur http://www.odoo.com.help, ou en cas de travail avec
+ou des numéros de téléphone indiqués sur http://leansoft.vn.help, ou en cas de travail avec
 un Partenaire Odoo, le canal prévu par le partenaire), et de commencer à traiter ces signalements
 du Client dans un délai de 2 jours ouvrables.
 
@@ -243,7 +243,7 @@ Odoo SA s'engage à fournir au minimum le service suivant:
 - Plan de Reprise d'Activité, testé régulièrement
 
 Les détails du Service d'Hébergement Cloud sont décrits sur la page du Service Level Agreement:
-https://www.odoo.com/cloud-sla.
+https://leansoft.vn/cloud-sla.
 
 
 .. _support_service_fr:
@@ -268,7 +268,7 @@ Disponibilité
 ~~~~~~~~~~~~~
 
 Les demandes d'assistances peuvent être soumises via le formulaire en ligne ou les numéros
-de téléphone indiqués sur https://www.odoo.com/help, ou en cas de travail avec un
+de téléphone indiqués sur https://leansoft.vn/help, ou en cas de travail avec un
 Partenaire Odoo, le canal préconisé par ce partenaire, pendant les heures de bureau
 correspondantes.
 
@@ -374,7 +374,7 @@ Lorsque le Client choisit d'utiliser la Plate-forme Cloud, il accepte aussi de:
   en choisissant un mot de passe sûr et en ne le partageant avec personne;
 - Faire une utilisation raisonnable des Services d'Hébergement, à l'exclusion de toute activité
   illégale ou abusive, et de respecter strictement les règles indiquées dans la Politique
-  d'Utilisation Acceptable: https://www.odoo.com/acceptable-use.
+  d'Utilisation Acceptable: https://leansoft.vn/acceptable-use.
 
 Lorsque le Client choisit l'Auto-Hébergement, il accepte aussi de:
 
@@ -478,7 +478,7 @@ En particulier, Odoo SA s'engage à:
   audits, y compris des inspections, conduits ou mandatés par le Client dans ce but;
 - (h) Supprimer définitivement tout copie de la base de données du Client en possession d'Odoo SA,
   ou retourner ces données, au choix du Client, lors de la résiliation de ce Contrat,
-  en respect des délais indiqués dans la `Politique de Protection des Données <https://www.odoo.com/privacy>`_
+  en respect des délais indiqués dans la `Politique de Protection des Données <https://leansoft.vn/privacy>`_
   d'Odoo SA ;
 
 Concernant les points (d) à (f), le Client s'engage à fournir à Odoo SA des informations de
@@ -493,7 +493,7 @@ prestataires de service tiers (Sous-traitants) pour traiter les Données à Cara
 Odoo SA s'engage à n'utiliser de tels Sous-traitants qu'en conformité avec la Législation
 sur la Protection des Données. Cet usage sera couvert par un contrat entre Odoo SA et le Sous-traitant
 qui offrira toutes les garanties nécessaires à cet effet.
-La Politique de Protection des Données d'Odoo SA, publiée à l'adresse https://www.odoo.com/privacy
+La Politique de Protection des Données d'Odoo SA, publiée à l'adresse https://leansoft.vn/privacy
 fournit des informations actualisées sur les noms et les finalités des Sous-traitants utilisés par
 Odoo SA pour l'exécution des Services.
 
@@ -547,7 +547,7 @@ La reprise de l'exécution des Services par Odoo SA sans frais supplémentaires 
 unique réparation pour le Client et la seule obligation d'Odoo SA pour tout manquement à cette
 garantie.
 
-.. [#cla_fr1] Les contributions externes sont couvertes par un `Copyright License Agreement <https://www.odoo.com/cla>`_
+.. [#cla_fr1] Les contributions externes sont couvertes par un `Copyright License Agreement <https://leansoft.vn/cla>`_
               fournissant une licence de copyright et de brevet permanente, gratuite et irrévocable à Odoo SA.
 
 
@@ -674,7 +674,7 @@ soit compatible avec les conditions de la licence Odoo Enterprise Edition Licenc
 Vous êtes autorisé à utiliser des modules Odoo publiés sous n'importe quelle
 licence, pour autant que leur licence soit compatible avec les conditions
 de la licence Odoo Enterprise Edition License (Notamment tous les
-modules publiés sur l'Odoo Apps Store sur odoo.com/apps).
+modules publiés sur l'Odoo Apps Store sur leansoft.vn/apps).
 
 Il est interdit de publier, distribuer, accorder des sous-licences, ou vendre
 tout copie du Logiciel ou toute copie modifiée du Logiciel.

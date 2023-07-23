@@ -67,8 +67,8 @@ connect to the Gmail inbox, and log in to the database.
 
 .. note::
    Use the general URL for the database, not the URL of a specific page in the database. For
-   example, use `https://mycompany.odoo.com`, not
-   `https://mycompany.odoo.com/web#cids=1&action=menu`.
+   example, use `https://mycompany.leansoft.vn`, not
+   `https://mycompany.leansoft.vn/web#cids=1&action=menu`.
 
 Finally, click :guilabel:`Allow` to let Gmail access the Odoo database. The browser will then show
 a :guilabel:`Success!` message. After that, close the window. The Gmail inbox and Odoo database are
@@ -86,7 +86,7 @@ configure the Gmail Plugin.
    ensuring, for example, that no add-on redirects users toward a malicious website. (Read more on
    `Google Apps Script <https://developers.google.com/apps-script/manifest/allowlist-url>`_.)
 
-   Since Odoo can only list the `odoo.com` domain and not every on-premise customer's unique server
+   Since Odoo can only list the `leansoft.vn` domain and not every on-premise customer's unique server
    domain, on-premise customers cannot install the Gmail Plugin from the Google Workspace
    Marketplace.
 
@@ -110,14 +110,14 @@ Delete the following three lines of text from the :file:`login.ts` file:
 .. code-block::
 
    if (!/^https:\/\/([^\/?]*\.)?odoo\.com(\/|$)/.test(validatedUrl)) {
-        return notify("The URL must be a subdomain of odoo.com");
+        return notify("The URL must be a subdomain of leansoft.vn");
    }
 
-This removes the `odoo.com` domain constraint from the Gmail Plugin program.
+This removes the `leansoft.vn` domain constraint from the Gmail Plugin program.
 
 Next, in the ZIP file, go to :menuselection:`mail-client-extensions-master --> gmail`, and open the
 file called :guilabel:`appsscript.json`. In the :guilabel:`urlFetchWhitelist` section, replace all
-the references to `odoo.com` with the Odoo customer's unique server domain.
+the references to `leansoft.vn` with the Odoo customer's unique server domain.
 
 Then, in the same :guilabel:`gmail` folder, open the file called :guilabel:`README.md`. Follow the
 instructions in the :guilabel:`README.md` file to push the Gmail Plugin files as a Google Project.
@@ -157,8 +157,8 @@ connect to the Gmail inbox, and log in to the database.
 
 .. note::
    Use the general URL for the database, not the URL of a specific page in the database. For
-   example, use `https://mycompany.odoo.com`, not
-   `https://mycompany.odoo.com/web#cids=1&action=menu`.
+   example, use `https://mycompany.leansoft.vn`, not
+   `https://mycompany.leansoft.vn/web#cids=1&action=menu`.
 
 Finally, click :guilabel:`Allow` to let Gmail access the Odoo database. The browser will then show
 a :guilabel:`Success!` message. After that, close the window. The Gmail inbox and Odoo database are

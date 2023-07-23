@@ -15,7 +15,7 @@ These guidelines should be applied to every new module and to all new developmen
     strictly supersedes any other style guidelines. In other words please never
     modify existing files in order to apply these guidelines. It avoids disrupting
     the revision history of code lines. Diff should be kept minimal. For more
-    details, see our `pull request guide <https://odoo.com/submit-pr>`_.
+    details, see our `pull request guide <https://leansoft.vn/submit-pr>`_.
 
 .. warning::
 

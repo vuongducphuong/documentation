@@ -15,7 +15,7 @@ cost, Monday to Friday**. Our teams are located around the world to ensure you
 have support, no matter your location. Your support representative could be
 communicating to you from San Francisco, Belgium, or India!
 
-Our support team can be contacted through our `online support form <https://www.odoo.com/help>`__.
+Our support team can be contacted through our `online support form <https://leansoft.vn/help>`__.
 
 
 What kind of support is included?
@@ -54,7 +54,7 @@ What kind of support is not included?
   either by Odoo or a third party (this is specific only to your database or
   involving code)
 
-You can get this type of support with a `Success Pack <https://www.odoo.com/pricing-packs>`__.
+You can get this type of support with a `Success Pack <https://leansoft.vn/pricing-packs>`__.
 With a pack, one of our consultants will analyze the way your business runs and
 tell you how you can get the most out of your Odoo Database. We will handle all
 configurations and coach you on how to use Odoo.

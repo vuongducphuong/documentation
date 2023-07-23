@@ -1,7 +1,7 @@
 .. |assistance-contact| replace::
    If you need Odoo assistance on this matter, please get in touch with your Odoo Account Manager or
    our `Sales department`_.
-.. _Sales department: mailto:sales@odoo.com
+.. _Sales department: mailto:sales@leansoft.vn
 
 ===
 FAQ
@@ -33,7 +33,7 @@ Availability of the new version
 As soon as Odoo announces the release of a new major version, you can create a test upgrade request
 to try the latest version. Please note that at this point, the upgrade scripts will only have been
 tested with demo data. Please report any issue you might encounter while testing via the `Odoo
-Support page <https://www.odoo.com/help>`_ and make sure to be happy with your test version before
+Support page <https://leansoft.vn/help>`_ and make sure to be happy with your test version before
 requesting the upgrade of your database in production.
 
 .. _upgrade-faq/duration:
@@ -101,17 +101,17 @@ community or enterprise edition. It is required to have an enterprise subscripti
 
  .. note::
     If you need assistance on this matter,  please contact us via the `Odoo Support page
-    <https://www.odoo.com/help>`_.
+    <https://leansoft.vn/help>`_.
 
 .. seealso::
-   - `Editions <https://www.odoo.com/page/editions>`_
+   - `Editions <https://leansoft.vn/page/editions>`_
 
 .. _upgrade-faq/hosting-types-switch:
 
 Switching the hosting types (On-premise vs. Odoo Online vs. Odoo.sh)
 ====================================================================
 
-An upgrade does not cover a change of `Hosting types <https://www.odoo.com/page/hosting-types>`_.
+An upgrade does not cover a change of `Hosting types <https://leansoft.vn/page/hosting-types>`_.
 
 Open the following link to get :doc:`more information about how to change your hosting type
 <../maintain/hosting_changes>`.
@@ -145,7 +145,7 @@ might be impacted by this.
 Release Notes by version
 ========================
 
-Open our `Release Note <https://www.odoo.com/page/release-notes>`_ page to get a summary of the new
+Open our `Release Note <https://leansoft.vn/page/release-notes>`_ page to get a summary of the new
 features and improvements made in each version.
 
 How long is my test available for
@@ -164,7 +164,7 @@ How to/Where to report upgrade issues?
 ======================================
 
 If you encounter issues during the upgrade process, please contact the Odoo Support through the
-`Odoo Support page <https://www.odoo.com/help>`_.
+`Odoo Support page <https://leansoft.vn/help>`_.
 
 - To report an issue discovered during the testing phase, please select **An issue related to my
   upgrade (test phase)**.
@@ -181,7 +181,7 @@ production upgrade.
 How is my data handled in the Upgrade Platform?
 ===============================================
 
-The Odoo Upgrade platform uses the same Privacy Policy as the rest of Odoo.com services.
+The Odoo Upgrade platform uses the same Privacy Policy as the rest of leansoft.vn services.
 
 Your data is hosted on servers that follow our security guidelines, namely:
 
@@ -202,7 +202,7 @@ The uploaded and migrated databases uploaded to the Upgrade platform are kept fo
 are permanently deleted following that period.
 
 You can learn more about privacy and data handling at Odoo by visiting our `General Data Protection
-Regulation page <https://www.odoo.com/gdpr>`_.
+Regulation page <https://leansoft.vn/gdpr>`_.
 
 Rolling Release (applicable to Odoo Online databases)
 =====================================================
@@ -214,14 +214,14 @@ The message offers two options:
 
 #. To 'Upgrade Now', which immediately triggers the upgrade of your live production database.
 
-#. To take you to your `database manager <https://www.odoo.com/my/databases/>`_ where you can
-   `request an upgraded test database <https://upgrade.odoo.com/#online/>`_ and check the upgraded
+#. To take you to your `database manager <https://leansoft.vn/my/databases/>`_ where you can
+   `request an upgraded test database <https://upgrade.leansoft.vn/#online/>`_ and check the upgraded
    test database for any discrepancies.
 
 When you choose to proceed with the production upgrade directly, make sure all users have saved
 their work and are logged out. The upgrade takes approximately 15 minutes. During this time your
 database is unreachable. If you notice any problem after the upgrade, please report it via the `Odoo
-Support page <https://www.odoo.com/help>`_.
+Support page <https://leansoft.vn/help>`_.
 
 .. note::
    If you are using the Website or Studio app, we recommend you always do a test upgrade before

@@ -92,7 +92,7 @@ Alternatively, replace the default content of these pages using XPath.
 
 .. seealso::
    - `Odoo eLearning: Search Engine Optimization (SEO)
-     <https://www.odoo.com/slides/slide/search-engine-optimization-seo-648>`_
+     <https://leansoft.vn/slides/slide/search-engine-optimization-seo-648>`_
    - :doc:`Odoo Documentation on SEO <../../../applications/websites/website/pages/seo>`
 
 Theme pages

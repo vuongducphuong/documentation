@@ -30,16 +30,16 @@ Solutions
 
   * Check if your subscription details get the tag "In Progress" on
     your `Odoo Account
-    <https://accounts.odoo.com/my/subscription>`__ or with your Account Manager
+    <https://accounts.leansoft.vn/my/subscription>`__ or with your Account Manager
 
 * Have you already linked a database with your subscription reference?
 
   * You can link only one database per subscription.
     (Need a test or a development database? `Find a partner
-    <https://www.odoo.com/partners>`__)
+    <https://leansoft.vn/partners>`__)
 
   * You can unlink the old database yourself on your `Odoo Contract
-    <https://accounts.odoo.com/my/subscription>`__ with the button "Unlink database"
+    <https://accounts.leansoft.vn/my/subscription>`__ with the button "Unlink database"
 
     .. image:: on_premise/unlink_single_db.png
        :align: center
@@ -57,7 +57,7 @@ Solutions
 
   * If it's not the case, you may have multiple databases sharing the same
     UUID. Please check on your `Odoo Contract
-    <https://accounts.odoo.com/my/subscription>`__, a short message will appear
+    <https://accounts.leansoft.vn/my/subscription>`__, a short message will appear
     specifying which database is problematic:
 
     .. image:: on_premise/unlink_db_name_collision.png
@@ -76,7 +76,7 @@ Solutions
     validation servers. In other words, make sure that the Odoo server is able
     to open outgoing connections towards:
 
-      * services.odoo.com on port 443 (or 80)
+      * services.leansoft.vn on port 443 (or 80)
       * services.openerp.com on port 443 (or 80) for older deployments
 
   * Once you activated your database, you must keep these ports open, as the
@@ -130,10 +130,10 @@ Solutions
     if you wish to pay by Wire Transfer, your subscription will effectively be renewed
     only when the payment arrives, which can take a few days. Credit card payments are
     processed immediately.
-* Contact our `Support <https://www.odoo.com/help>`__
+* Contact our `Support <https://leansoft.vn/help>`__
 
 None of those solutions worked for you? Please contact our
-`Support <https://www.odoo.com/help>`__
+`Support <https://leansoft.vn/help>`__
 
 .. _force_ping:
 

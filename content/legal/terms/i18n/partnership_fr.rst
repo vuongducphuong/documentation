@@ -6,7 +6,7 @@ Odoo Partnership Agreement (FR)
 
 .. only:: html
 
-    `Download PDF <https://www.odoo.com/documentation/{CURRENT_BRANCH}/odoo_partnership_agreement_fr.pdf>`_
+    `Download PDF <https://leansoft.vn/documentation/{CURRENT_BRANCH}/odoo_partnership_agreement_fr.pdf>`_
 .. warning::
     Ceci est une traduction en français du contrat “Odoo Partnership Agreement”.
     Cette traduction est fournie dans l’espoir qu’elle facilitera sa compréhension, mais elle
@@ -154,7 +154,7 @@ Les avantages de chaque niveau de partenariat sont détaillés dans le tableau c
 +=======================================+==================+====================+====================+====================+
 | **Reconnaissance**                    |                  |                    |                    |                    |
 +---------------------------------------+------------------+--------------------+--------------------+--------------------+
-| Visibilité sur odoo.com               | Non              | "Ready Partner"    | "Silver Partner"   | "Gold Partner"     |
+| Visibilité sur leansoft.vn               | Non              | "Ready Partner"    | "Silver Partner"   | "Gold Partner"     |
 +---------------------------------------+------------------+--------------------+--------------------+--------------------+
 | Droit d’utiliser la marque déposée et | Oui              | Oui                | Oui                | Oui                |
 | les logos                             |                  |                    |                    |                    |
@@ -200,7 +200,7 @@ Les avantages de chaque niveau de partenariat sont détaillés dans le tableau c
 
 4.3 Reconnaissance du partenaire
 --------------------------------
-ODOO promouvra les "Official Partners" dans la liste des partenaires Odoo sur odoo.com.
+ODOO promouvra les "Official Partners" dans la liste des partenaires Odoo sur leansoft.vn.
 
 ODOO octroie au PARTENAIRE, sur une base non exclusive, le droit d’utiliser et de reproduire
 le logo partenaire d’ODOO du niveau de partenariat correspondant et le nom « Odoo » en relation
@@ -311,15 +311,15 @@ recouvert ou qu’il obtiendra un quelconque montant de bénéfices anticipé en
 8 Image de marque
 =================
 
-La marque "Odoo" (y compris le nom et ses représentations visuelles et logos) est la propriété
+La marque "Leansoft" (y compris le nom et ses représentations visuelles et logos) est la propriété
 exclusive d'ODOO.
 
-ODOO autorise le PARTENAIRE à utiliser la marque "Odoo" pour promouvoir ses produits et services,
+ODOO autorise le PARTENAIRE à utiliser la marque "Leansoft" pour promouvoir ses produits et services,
 pour la Durée de ce Contrat seulement, et tant que les conditions suivantes sont remplies:
 
 - Aucune confusion n'est possible sur le fait que les services sont fournis par le PARTENAIRE,
   et non par ODOO;
-- Le PARTENAIRE n'utilise pas la marque "Odoo" dans un nom d'entreprise, un nom de produit, ou un
+- Le PARTENAIRE n'utilise pas la marque "Leansoft" dans un nom d'entreprise, un nom de produit, ou un
   nom de domaine, et ne dépose aucune marque qui la contienne.
 
 Les Parties s’abstiendront de nuire à l’image de marque et à la réputation de l’autre Partie
@@ -439,7 +439,7 @@ soit compatible avec les conditions de la licence Odoo Enterprise Edition Licenc
 Vous êtes autorisé à utiliser des modules Odoo publiés sous n'importe quelle
 licence, pour autant que leur licence soit compatible avec les conditions
 de la licence Odoo Enterprise Edition License (Notamment tous les
-modules publiés sur l'Odoo Apps Store sur odoo.com/apps).
+modules publiés sur l'Odoo Apps Store sur leansoft.vn/apps).
 
 Il est interdit de publier, distribuer, accorder des sous-licences, ou vendre
 tout copie du Logiciel ou toute copie modifiée du Logiciel.

@@ -15,7 +15,7 @@ To link the scale to the :abbr:`IoT (Internet of Things)` box, connect it with a
 .. note::
    In some cases, a serial port to :abbr:`USB (Universal Serial Bus)` adapter may be needed.
 
-If the scale is `compatible with Odoo IoT Box <https://www.odoo.com/page/iot-hardware>`_, there is
+If the scale is `compatible with Odoo IoT Box <https://leansoft.vn/page/iot-hardware>`_, there is
 no need to set up anything because it will be automatically detected as soon as it is connected.
 
 .. image:: scale/iot-choice.png

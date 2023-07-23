@@ -3,7 +3,7 @@ Domain names
 ============
 
 A **domain name** works as an address for your website. It makes the Internet much more accessible
-as it allows users to type a meaningful web address, such as ``www.odoo.com``, rather than its
+as it allows users to type a meaningful web address, such as ``leansoft.vn``, rather than its
 server's IP address with a series of numbers.
 
 You can use a custom domain name to access your Odoo database and websites:
@@ -14,16 +14,16 @@ You can use a custom domain name to access your Odoo database and websites:
 
 .. note::
    Odoo Online and Odoo.sh databases, including their websites, use by default a subdomain of
-   ``odoo.com`` for both the URL and the emails (e.g., ``https://example.odoo.com``).
+   ``leansoft.vn`` for both the URL and the emails (e.g., ``https://example.leansoft.vn``).
 
 .. important::
    Odoo offers a :ref:`free custom domain name <domain-name/odoo-register>` to all Odoo Online
    databases for one year. Visitors can then access your website with an address such as
-   ``www.example.com`` rather than the default ``example.odoo.com``.
+   ``www.example.com`` rather than the default ``example.leansoft.vn``.
 
 .. seealso::
    - `Odoo Tutorials: Register a Free Domain Name
-     <https://www.odoo.com/slides/slide/register-a-free-domain-name-1663>`_
+     <https://leansoft.vn/slides/slide/register-a-free-domain-name-1663>`_
    - `Odoo Quick Tips: Get a free domain name! <https://www.youtube.com/watch?v=eAfgeNOHLP4>`_
 
 .. _domain-name/about:
@@ -38,7 +38,7 @@ short, easy to remember and spell*.
 A **subdomain** is a domain that is a part of another domain. It often refers to the additional part
 that comes before the main domain name. Traditionally, most websites use the ``www.`` subdomain,
 but any string of letters can be used as well. You can use subdomains to direct your visitors to
-other websites than your main website or to specific pages (e.g., ``experience.odoo.com`` points to
+other websites than your main website or to specific pages (e.g., ``experience.leansoft.vn`` points to
 a specific page.)
 
 All domain names are referenced in the **Domain Name System**, or **DNS**, which works as a giant
@@ -93,7 +93,7 @@ database manager.
      <domain-name/odoo-manage>` to use your own email server or solution such as Google Workspace.
 
 To do so, go to :menuselection:`Website --> Domain Name`. Alternatively, open your `database manager
-<https://www.odoo.com/my/databases>`_, click on the :guilabel:`settings` button next to your
+<https://leansoft.vn/my/databases>`_, click on the :guilabel:`settings` button next to your
 database, then on :guilabel:`Domain names`.
 
 .. image:: domain_names/register-menu.png
@@ -124,7 +124,7 @@ Manage your domain name registered with Odoo
 --------------------------------------------
 
 To manage the DNS records of your domain name registered with Odoo or to visualize the contacts
-associated with it, open your `database manager <https://www.odoo.com/my/databases>`_, click on the
+associated with it, open your `database manager <https://leansoft.vn/my/databases>`_, click on the
 :guilabel:`settings` button next to your database, on :guilabel:`Domain names`, and then on
 :guilabel:`Contacts` or :guilabel:`DNS`.
 
@@ -133,7 +133,7 @@ associated with it, open your `database manager <https://www.odoo.com/my/databas
    :alt: Management of the domain names linked to an Odoo database
 
 .. note::
-   Please `submit a support ticket <https://www.odoo.com/help>`_ if you need further assistance to
+   Please `submit a support ticket <https://leansoft.vn/help>`_ if you need further assistance to
    manage your domain name.
 
 .. _domain-name/existing:
@@ -166,7 +166,7 @@ database manager.
    .. group-tab:: Odoo Online
 
       The target address is the current address of your database, as defined at its creation (e.g.,
-      ``example.odoo.com``)
+      ``example.leansoft.vn``)
 
    .. group-tab:: Odoo.sh
 
@@ -187,13 +187,13 @@ can of course use any domain name of your choice, with any subdomain (e.g.,
 
 .. example::
    You own the domain name ``example.com``, and you have an Odoo Online database at the address
-   ``example.odoo.com``. You want to access your Odoo database primarily with the domain
+   ``example.leansoft.vn``. You want to access your Odoo database primarily with the domain
    ``www.example.com`` but also with the :ref:`naked domain <domain-name/naked-domain>`
    ``example.com``.
 
-   To do so, you create a CNAME record for the ``www`` subdomain, with ``example.odoo.com`` as the
+   To do so, you create a CNAME record for the ``www`` subdomain, with ``example.leansoft.vn`` as the
    target. The DNS zone manager generates the following rule and adds it to your DNS zone: ``www IN
-   CNAME example.odoo.com.``
+   CNAME example.leansoft.vn.``
 
    You also create a redirection from ``example.com`` to ``wwww.example.com``.
 
@@ -214,7 +214,7 @@ Naked domain
 ~~~~~~~~~~~~
 
 A **naked domain** is a domain name that doesn't have any subdomain at the beginning of the address
-(e.g., ``odoo.com`` instead of ``www.odoo.com``).
+(e.g., ``leansoft.vn`` instead of ``leansoft.vn``).
 
 You may want your naked domain to redirect to your website as some visitors may not type the full
 domain name to access your website.
@@ -235,7 +235,7 @@ Map your domain name with your Odoo database
 
    .. group-tab:: Odoo Online
 
-      Open your `database manager <https://www.odoo.com/my/databases>`_, click on the
+      Open your `database manager <https://leansoft.vn/my/databases>`_, click on the
       :guilabel:`settings` button next to your database, on :guilabel:`Domain names`, and then on
       :guilabel:`Use my own domain` at the bottom of the right column.
 
@@ -269,7 +269,7 @@ Map your domain name with your Odoo database
 
    If this is the case and you have added the domain name to your database's settings less than five
    days ago, wait 24 hours as the validation may still happen. Otherwise, please `submit a support
-   ticket <https://www.odoo.com/help>`_ including screenshots of your CNAME records.
+   ticket <https://leansoft.vn/help>`_ including screenshots of your CNAME records.
 
 .. _domain-name/ssl:
 
@@ -306,7 +306,7 @@ To configure it, access your Odoo database with your custom address, then log in
 of your database (any user in the *Settings* group) from the login screen.
 
 .. warning::
-   Connecting to your database with the original Odoo subdomain address (e.g., ``example.odoo.com``
+   Connecting to your database with the original Odoo subdomain address (e.g., ``example.leansoft.vn``
    also updates the web base URL of your database. See below to prevent these automatic updates.
 
 Alternatively, you can do it manually. To do so, activate the :ref:`developer mode
@@ -350,7 +350,7 @@ In the :guilabel:`Domain` field, fill in the web address of your website (e.g.,
 
 .. warning::
    Mapping your domain name with your Odoo website prevents Google from indexing both your custom
-   domain name ``www.example.com`` and your original odoo database address ``example.odoo.com``.
+   domain name ``www.example.com`` and your original odoo database address ``example.leansoft.vn``.
 
    If both addresses are already indexed, it may take some time before Google removes the indexation
    of the second address. You may also try using the `Google Search Console

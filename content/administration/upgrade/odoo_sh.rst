@@ -60,13 +60,13 @@ Go to the :guilabel:`Upgrade` tab and select the :guilabel:`target version`. The
    :alt: Odoo.sh project and tabs
 
 The **latest production daily automatic backup** is sent to the
-`upgrade platform <https://www.upgrade.odoo.com>`_ to start the upgrade test process.
+`upgrade platform <https://www.upgrade.leansoft.vn>`_ to start the upgrade test process.
 
 .. note::
    You can follow the upgrade process by going to the :guilabel:`Upgrade` menu of your
    :guilabel:`Production` branch.
 
-When the upgraded backup is ready on the `upgrade platform <https://www.upgrade.odoo.com>`_, it is
+When the upgraded backup is ready on the `upgrade platform <https://www.upgrade.leansoft.vn>`_, it is
 automatically downloaded back to your project.
 
 The branch is now in a **special mode**: each time a **commit is pushed** on the branch, a

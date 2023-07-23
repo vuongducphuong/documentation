@@ -92,7 +92,7 @@ Credentials
 
    In order to achieve this, in the :guilabel:`Authorized redirect URIs` field, enter the database's
    domain immediately followed by `/auth_oauth/signin`. For example:
-   `https://mydomain.odoo.com/auth_oauth/signin`, then click on :guilabel:`Create`.
+   `https://mydomain.leansoft.vn/auth_oauth/signin`, then click on :guilabel:`Create`.
 
 #. Now that the *OAuth client* has been created, a screen will appear with the :guilabel:`Client ID`
    and :guilabel:`Client Secret`. Copy the :guilabel:`Client ID` for later, as it will be necessary

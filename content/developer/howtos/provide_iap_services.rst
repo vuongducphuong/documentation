@@ -59,7 +59,7 @@ Overview
     may vary following the countries).
 
     The value of the credits is fixed with the help of prepaid credit packs
-    that the clients can buy on https://iap.odoo.com (see :ref:`Packs <iap-packages>`).
+    that the clients can buy on https://iap.leansoft.vn (see :ref:`Packs <iap-packages>`).
 
 .. note:: In the following explanations we will ignore the External Service,
           they are just a detail of the service you provide.
@@ -119,10 +119,10 @@ Register the service on Odoo
 
 The first step is to register your service on the IAP endpoint (production
 and/or test) before you can actually query user accounts. To create a service,
-go to your *Portal Account* on the IAP endpoint (https://iap.odoo.com for
-production, https://iap-sandbox.odoo.com for testing, the endpoints are
+go to your *Portal Account* on the IAP endpoint (https://iap.leansoft.vn for
+production, https://iap-sandbox.leansoft.vn for testing, the endpoints are
 *independent* and *not synchronized*). Alternatively, you can go to your portal
-on Odoo (https://iap.odoo.com/my/home) and select *In-App Services*.
+on Odoo (https://iap.leansoft.vn/my/home) and select *In-App Services*.
 
 .. note::
 
@@ -403,7 +403,7 @@ perform the service within:
             # will be raised & transmitted in case of issue, if no error
             # is raised we did the job
 
-.. todo:: for the actual IAP will the "portal" page be on odoo.com or iap.odoo.com?
+.. todo:: for the actual IAP will the "portal" page be on leansoft.vn or iap.leansoft.vn?
 
 .. todo:: "My Account" > "Your InApp Services"?
 
@@ -423,9 +423,9 @@ The :class:`~odoo.addons.iap.tools.iap_tools.iap_charge` helper will:
 .. danger::
 
     By default, :class:`~odoo.addons.iap.tools.iap_tools.iap_charge` contacts the *production*
-    IAP endpoint, https://iap.odoo.com. While developing and testing your
+    IAP endpoint, https://iap.leansoft.vn. While developing and testing your
     service you may want to point it towards the *development* IAP endpoint
-    https://iap-sandbox.odoo.com.
+    https://iap-sandbox.leansoft.vn.
 
     To do so, set the ``iap.endpoint`` config parameter in your service
     Odoo: in debug/developer mode, :menuselection:`Setting --> Technical -->
@@ -523,7 +523,7 @@ JSON-RPC2_ Transaction API
 * Exceptions are returned as JSON-RPC2_ errors, the formal exception name is
   available on ``data.name`` for programmatic manipulation.
 
-.. seealso:: `iap.odoo.com documentation`_ for additional information.
+.. seealso:: `iap.leansoft.vn documentation`_ for additional information.
 
 Authorize
 ---------
@@ -537,7 +537,7 @@ Authorize
     unavailable to further authorize calls.
 
     Returns a :class:`TransactionToken` identifying the pending transaction
-    which can be used to capture (confirm) or cancel said transaction (`iap.odoo.com documentation`_).
+    which can be used to capture (confirm) or cancel said transaction (`iap.leansoft.vn documentation`_).
 
     :param ServiceKey key:
     :param UserToken account_token:
@@ -644,7 +644,7 @@ care how they are implemented.
 
 .. class:: ServiceName
 
-    String identifying your service on https://iap.odoo.com (production) as well
+    String identifying your service on https://iap.leansoft.vn (production) as well
     as the account related to your service in the client's database.
 
 .. class:: ServiceKey
@@ -892,5 +892,5 @@ Capture
 
 
 .. _JSON-RPC2: https://www.jsonrpc.org/specification
-.. _Odoo App: https://www.odoo.com/apps
-.. _iap.odoo.com documentation: https://iap.odoo.com/iap/1/documentation
+.. _Odoo App: https://leansoft.vn/apps
+.. _iap.leansoft.vn documentation: https://iap.leansoft.vn/iap/1/documentation

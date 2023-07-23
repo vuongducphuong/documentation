@@ -19,7 +19,7 @@ installation.
 
 - Odoo 16 database or any version above.
 - :abbr:`IoT (Internet of Things)` compatible devices (except those mentioned above). Refer to:
-  `Odoo's compatible IoT devices <https://www.odoo.com/app/iot-hardware>`_.
+  `Odoo's compatible IoT devices <https://leansoft.vn/app/iot-hardware>`_.
 - Device drivers for Windows.
 
   .. note::
@@ -39,7 +39,7 @@ Download and initial installation
 ---------------------------------
 
 To begin the installation, navigate to the Odoo 16 or higher installation package for Enterprise or
-Community - Windows edition at `Odoo's download page <https://odoo.com/download>`_. Next, install
+Community - Windows edition at `Odoo's download page <https://leansoft.vn/download>`_. Next, install
 and setup the Odoo :file:`.exe` file. After the instructions screen, click :guilabel:`Next` to start
 the installation and agree to the :abbr:`TOS (Terms of Service)`.
 

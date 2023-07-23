@@ -1,14 +1,14 @@
 ============================
-Deleting an Odoo.com Account
+Deleting an leansoft.vn Account
 ============================
 
-To delete your Odoo.com account, access the delete option by clicking on the user icon. The delete
+To delete your leansoft.vn account, access the delete option by clicking on the user icon. The delete
 option can be accessed by going to :menuselection:`My Account --> Edit Security Settings --> Delete
-Account`. It can also be accessed by going to https://www.odoo.com/my/home.
+Account`. It can also be accessed by going to https://leansoft.vn/my/home.
 
 .. danger::
    Deleting an Odoo account is irreversible. Take caution when performing this action as the
-   Odoo.com account will not be retrievable.
+   leansoft.vn account will not be retrievable.
 
 Upon clicking the :guilabel:`Delete Account` button, a pop-up window will appear, asking you to
 confirm the account deletion.

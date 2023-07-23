@@ -207,10 +207,10 @@ Odoo relies on generic email aliases to fetch incoming messages.
 * **Reply messages** of messages sent from Odoo are routed to their original discussion thread (and
   to the inbox of all its followers) by the alias of the model if there is any or by the catchall
   alias (**catchall@**). Replies to messages of models that don't have a custom alias will use the
-  catchall alias (`catchall@mycompany.odoo.com`). The catchall address, however, does not have
+  catchall alias (`catchall@mycompany.leansoft.vn`). The catchall address, however, does not have
   another action attached to it like other aliases might, it is only used to collect replies.
 * **Bounced messages** are used as a Return-Path. One example this is especially
-  useful for is in `Odoo Email Marketing <https://www.odoo.com/page/email-marketing>`__. In this
+  useful for is in `Odoo Email Marketing <https://leansoft.vn/page/email-marketing>`__. In this
   case bounces are opt-out based on if the email bounced too many times (5) in the last month and
   the bounces are separated by one week. This is done to avoid blacklisting someone because of a
   mail server error. If these circumstances are met then the email is considered invalid and is
@@ -223,12 +223,12 @@ Odoo relies on generic email aliases to fetch incoming messages.
 * **Original messages**: several business objects have their own alias to create new records in Odoo
   from incoming emails:
 
-   * Sales channel (to create *Leads* or *Opportunities* in `Odoo CRM <https://www.odoo.com/page/
+   * Sales channel (to create *Leads* or *Opportunities* in `Odoo CRM <https://leansoft.vn/page/
      crm>`_)
-   * Support channel (to create *Tickets* in `Odoo Helpdesk <https://www.odoo.com/page/helpdesk>`_)
-   * Projects (to create new *Tasks* in `Odoo Project <https://www.odoo.com/page
+   * Support channel (to create *Tickets* in `Odoo Helpdesk <https://leansoft.vn/page/helpdesk>`_)
+   * Projects (to create new *Tasks* in `Odoo Project <https://leansoft.vn/page
      /project-management>`_)
-   * Job positions (to create *Applicants* in `Odoo Recruitment <https://www.odoo.com/page
+   * Job positions (to create *Applicants* in `Odoo Recruitment <https://leansoft.vn/page
      /recruitment>`_)
 
 Depending on the mail server, there might be several methods to fetch emails. The easiest and most
@@ -253,7 +253,7 @@ recommended method is to manage one email address per Odoo alias in the mail ser
   messages to Odoo's domain name instead of the external email server is recommended. That way,
   incoming messages can be received without delay. Redirections for all email addresses should be
   set to Odoo's domain name in the email server (e.g. `catchall\@mydomain.ext` to
-  `catchall\@mycompany.odoo.com`).
+  `catchall\@mycompany.leansoft.vn`).
 
 All the aliases are customizable in Odoo. Object aliases can be edited from their respective
 configuration view by navigating to :menuselection:`Settings --> Technical Menu --> Email -->

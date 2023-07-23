@@ -15,7 +15,7 @@ Before starting, make sure the following equipment is available:
 - An RJ45 Ethernet Cable (optional, but preferred over WiFi, which is already built in).
 - Any of the supported hardware (receipt printer, barcode scanner, cash drawer, payment terminal,
   scale, customer display, etc.). The list of supported hardware can be found on the `POS Hardware
-  page <https://www.odoo.com/page/point-of-sale-hardware>`_.
+  page <https://leansoft.vn/page/point-of-sale-hardware>`_.
 
 Setup
 =====

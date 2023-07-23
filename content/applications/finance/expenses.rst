@@ -9,7 +9,7 @@ in Odoo, the expenses are reviewed by management and accounting teams. Once appr
 then be processed and disbursed back to the employee for reimbursement(s).
 
 .. seealso::
-   `Odoo Expenses: product page <https://www.odoo.com/app/expenses>`_
+   `Odoo Expenses: product page <https://leansoft.vn/app/expenses>`_
 
 Set expense categories
 ======================

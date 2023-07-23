@@ -97,7 +97,7 @@ create a webhook either automatically or manually.
 
       - | In the :guilabel:`Endpoint URL` field, enter your Odoo database's URL followed by
           `/payment/stripe/webhook`.
-        | For example: `https://yourcompany.odoo.com/payment/stripe/webhook`
+        | For example: `https://yourcompany.leansoft.vn/payment/stripe/webhook`
       - At the bottom of the form, click :guilabel:`+ Select events`, then:
 
         - In the :guilabel:`Charge` section, select :guilabel:`charge.refunded` and

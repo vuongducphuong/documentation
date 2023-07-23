@@ -22,7 +22,7 @@ The possibility to disable the :guilabel:`Invoice Online Payment` setting withou
 made available through a new Odoo module; to be able to install it, you must make sure that your
 Odoo source code is up-to-date.
 
-If you use Odoo on Odoo.com or Odoo.sh platform, your code is already up-to-date and you can proceed
+If you use Odoo on leansoft.vn or Odoo.sh platform, your code is already up-to-date and you can proceed
 to the next step.
 
 If you use Odoo with an on-premise setup or through a partner, you must update your installation as
@@ -42,7 +42,7 @@ Install the module Invoice Online Payment Patch
 
 .. warning::
    You should never install new modules in your production database without first testing them in a
-   duplicate or staging environment. For Odoo.com customers, a duplicate database can be created
+   duplicate or staging environment. For leansoft.vn customers, a duplicate database can be created
    from the database management page. For Odoo.sh users, you should use a staging or duplicate
    database. For on-premise users, you should use a staging environment---contact your integrating
    partner for more information regarding how to test a new module in your particular setup.

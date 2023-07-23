@@ -9,7 +9,7 @@ In Odoo, we can register vendor bills **manually** or **automatically**, while t
 amounts on time.
 
 .. seealso::
-   - Tutorial `Registering a vendor bill <https://www.odoo.com/slides/slide/registering-a-vendor-bill-1683?fullscreen=1>`_
+   - Tutorial `Registering a vendor bill <https://leansoft.vn/slides/slide/registering-a-vendor-bill-1683?fullscreen=1>`_
    - :doc:`/applications/inventory_and_mrp/purchase/manage_deals/manage`
 
 Bill creation

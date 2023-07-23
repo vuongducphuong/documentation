@@ -11,7 +11,7 @@ into tasks, which are categorized on a whiteboard according to what production p
 
 .. seealso::
    `Odoo Tutorials: Kanban Project Management
-   <https://www.odoo.com/slides/slide/kanban-project-management-1664>`_
+   <https://leansoft.vn/slides/slide/kanban-project-management-1664>`_
 
 Configuration
 =============
@@ -56,7 +56,7 @@ Additionally, you can mark the project as :guilabel:`Favorite`, allowing you to 
 
 .. seealso::
    `Odoo Tutorials: Customize your project
-   <https://www.odoo.com/slides/slide/customize-your-project-1662?fullscreen=1>`_
+   <https://leansoft.vn/slides/slide/customize-your-project-1662?fullscreen=1>`_
 
 Further settings are available under the :guilabel:`Settings` tab. Most of them are *only* available
 depending on the activated apps.

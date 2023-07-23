@@ -13,7 +13,7 @@ Upgrade request via command line
 For technically-advanced users and partners, the upgrade process can be initiated via the following
 command line on the server where the database is hosted:
 
-:command:`python <(curl -s https://upgrade.odoo.com/upgrade) test -d <your db name> -t
+:command:`python <(curl -s https://upgrade.leansoft.vn/upgrade) test -d <your db name> -t
 <target version>`
 
 The above command creates the database dump, sends it to the upgrade platform, and initiates the
@@ -26,7 +26,7 @@ Upgrade request via the Odoo Upgrade Portal
 
 #. Download a recent copy of your database and select the option :guilabel:`pg_dump custom format
    (without filestore)`.
-#. Upload this dump file at https://upgrade.odoo.com and select *Testing* as the aim.
+#. Upload this dump file at https://upgrade.leansoft.vn and select *Testing* as the aim.
    Odoo performs the automated upgrade process. Once it is completed, you receive an email with a
    link to download the upgrade database dump file.
 #. Import the upgraded database into your on-premise environment and manually test all processes and
@@ -35,7 +35,7 @@ Upgrade request via the Odoo Upgrade Portal
 .. note::
    - For security reasons, only the person who submitted the upgrade request is able to download it.
    - Any problem found during testing should be reported via the `helpdesk
-     <https://odoo.com/help>`_.
+     <https://leansoft.vn/help>`_.
 
 Upgrade your production database
 ================================

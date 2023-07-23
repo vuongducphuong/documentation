@@ -118,7 +118,7 @@ customer when a ticket reaches that specific stage in the helpdesk pipeline. Lik
 
 .. important::
    SMS Text Messaging is an In-App Purchase (IAP) service that requires prepaid credits to work.
-   Refer to `SMS Pricing FAQ <https://iap-services.odoo.com/iap/sms/pricing>`_ for additional
+   Refer to `SMS Pricing FAQ <https://iap-services.leansoft.vn/iap/sms/pricing>`_ for additional
    information.
 
 To select an existing email template, select it from the :guilabel:`Email Template` field. Click on
