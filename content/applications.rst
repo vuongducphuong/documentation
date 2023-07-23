@@ -15,11 +15,12 @@ Khám phá những điều kỳ diệu mà Leansoft đem đến cho doanh nghi�
     :maxdepth: 2
     
     applications/sales
-    applications/websites
+    
     applications/inventory_and_mrp
     applications/finance
     applications/hr
     applications/marketing
+    applications/websites
     applications/services
     applications/productivity
     applications/general

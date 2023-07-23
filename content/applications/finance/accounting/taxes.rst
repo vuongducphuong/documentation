@@ -307,6 +307,5 @@ directly to a product line.
    taxes/vat_verification
    taxes/fiscal_positions
    taxes/avatax
-   taxes/taxcloud
-   taxes/eu_distance_selling
+   taxes/taxcloud   
    taxes/B2B_B2C
