@@ -12,27 +12,27 @@
                 <h5 class="text-dark pt-3 text-uppercase fw_bold">{{ _("Ứng dụng hàng đầu") }}</h5>
                 <ul class="list-unstyled">
                     <li>
-                        <a href="{{ pathto('applications/inventory_and_mrp/inventory') }}" class="stretched-link">
+                        <a href="{{ pathto('applications/marketing') }}" class="stretched-link">
                             {{ _("Marketing") }}
                         </a>
                     </li>
                     <li>
-                        <a href="{{ pathto('applications/inventory_and_mrp/manufacturing') }}" class="stretched-link">
+                        <a href="{{ pathto('applications/sales/crm') }}" class="stretched-link">
                             {{ _("CRM") }}
                         </a>
                     </li>
                     <li>
-                        <a href="{{ pathto('applications/finance/accounting') }}" class="stretched-link">
+                        <a href="{{ pathto('applications/sales/sales') }}" class="stretched-link">
                             {{ _("Bán hàng") }}
                         </a>
                     </li>                    
                     <li>
-                        <a href="{{ pathto('applications/sales/point_of_sale') }}" class="stretched-link">
+                        <a href="{{ pathto('applications/websites/ecommerce') }}" class="stretched-link">
                             {{ _("Thương mại điện tử") }}
                         </a>
                     </li>
                     <li>
-                        <a href="{{ pathto('applications/hr/employees') }}" class="stretched-link">
+                        <a href="{{ pathto('applications/sales/point_of_sale') }}" class="stretched-link">
                             {{ _("Bán lẻ - Nhà hàng - Siêu thị") }}
                         </a>
                     </li>                    
@@ -40,32 +40,32 @@
             </div>
             <div class="col-lg-6">
                 <h2 style="color: #2E7D32;">{{ _("Kho vận & Sản xuất") }}</h2>
-                <!-- <h2 class="border-top pt-4 pt-lg-0"><a href="{{ pathto('administration') }}">{{ _("Install and Maintain") }}</a></h2> -->
+                <!-- <h2 class="border-top pt-4 pt-lg-0"><a href="{{ pathto('applications') }}">{{ _("Install and Maintain") }}</a></h2> -->
                 <!-- <p class="text-dark">{{ _("Learn how to install, deploy and upgrade Leansoft on premise or on Leansoft.sh.") }}</p> -->
                 <h5 class="text-dark pt-3 text-uppercase fw_bold">{{ _("Ứng dụng hàng đầu") }}</h5>
                 <ul class="list-unstyled">
                     <li>
-                        <a href=" {{ pathto('administration/deployment/install') }} " class="stretched-link">
+                        <a href=" {{ pathto('applications/inventory_and_mrp/inventory') }} " class="stretched-link">
                             {{ _("Tồn kho") }}
                         </a>
                     </li>
                     <li>
-                        <a href="{{ pathto('administration/maintain/update') }}" class="stretched-link">
+                        <a href="{{ pathto('applications/inventory_and_mrp/manufacturing/management') }}" class="stretched-link">
                             {{ _("Sản xuất") }}
                         </a>
                     </li>
                     <li>
-                        <a href="{{ pathto('administration/upgrade') }}" class="stretched-link">
+                        <a href="{{ pathto('applications/inventory_and_mrp/purchase') }}" class="stretched-link">
                             {{ _("Mua hàng") }}
                         </a>
                     </li>
                     <li>
-                        <a href="{{ pathto('administration/odoo_sh/overview/introduction') }}" class="stretched-link">
+                        <a href="{{ pathto('applications/inventory_and_mrp/manufacturing/quality_control') }}" class="stretched-link">
                             {{ _("Quản lý chất lượng") }}
                         </a>
                     </li>
                     <li>
-                        <a href="{{ pathto('administration/odoo_sh/overview/introduction') }}" class="stretched-link">
+                        <a href="{{ pathto('applications/inventory_and_mrp/manufacturing/maintenance') }}" class="stretched-link">
                             {{ _("Bảo trì - Sửa chữa") }}
                         </a>
                     </li>                    
@@ -75,32 +75,32 @@
         <div class="row gx-lg-5">
             <div class="col-lg-6">
                 <h2 style="color: #ffc107;">{{ _("Tài chính & Nhân sự") }}</h2>
-                <!-- <h2 class="border-top pt-4"><a href="{{ pathto('developer') }}">{{ _("Developer") }}</a></h2> -->
+                <!-- <h2 class="border-top pt-4"><a href="{{ pathto('applications') }}">{{ _("Developer") }}</a></h2> -->
                 <!-- <p class="text-dark">{{ _("Learn to develop in Leansoft by reading the framework references and programmer tutorials.") }}</p> -->
                 <h5 class="text-dark pt-3 text-uppercase fw_bold">{{ _("Ứng dụng hàng đầu") }}</h5>
                 <ul class="list-unstyled">
                     <li>
-                        <a href="{{ pathto('developer/tutorials/getting_started') }}" class="stretched-link">
+                        <a href="{{ pathto('applications/finance/accounting') }}" class="stretched-link">
                             {{ _("Kế toán- Hóa đơn") }}
                         </a>
                     </li>
                     <li>
-                        <a href="{{ pathto('developer/reference/backend/orm') }}" class="stretched-link">
+                        <a href="{{ pathto('applications/finance/expenses') }}" class="stretched-link">
                             {{ _("Chi phí - Ngân sách") }}
                         </a>
                     </li>
                     <li>
-                        <a href="{{ pathto('developer/reference/backend/views') }}" class="stretched-link">
-                            {{ _("Tuyển dụng - Hợp đồng") }}
+                        <a href="{{ pathto('applications/finance/sign') }}" class="stretched-link">
+                            {{ _("Chữ ký điện tử") }}
                         </a>
                     </li>
                     <li>
-                        <a href="{{ pathto('developer/reference/frontend/qweb') }}" class="stretched-link">
+                        <a href="{{ pathto('applications/hr/employees') }}" class="stretched-link">
                             {{ _("Nhân sự - Tiền lương") }}
                         </a>
                     </li>
                     <li>
-                        <a href="{{ pathto('developer/api/external_api') }}" class="stretched-link">
+                        <a href="{{ pathto('applications/hr/attendances') }}" class="stretched-link">
                             {{ _("Nghỉ phép - Chấm công") }}
                         </a>
                     </li>
@@ -108,32 +108,32 @@
             </div>
             <div class="col-lg-6">
                 <h2 style="color: #ff5722;">{{ _("Con người & Quy trình") }}</h2>
-                <!-- <h2 class="border-top pt-4"><a href="{{ pathto('contributing') }}">{{ _("Contributing") }}</a></h2> -->
+                <!-- <h2 class="border-top pt-4"><a href="{{ pathto('applications') }}">{{ _("Contributing") }}</a></h2> -->
                 <!-- <p class="text-dark">{{ _("You want to contribute to Leansoft but don't know where to start? The tutorials and guidelines are there to help you make Leansoft even better.") }}</p> -->
                 <h5 class="text-dark pt-3 text-uppercase fw_bold">{{ _("Ứng dụng hàng đầu") }}</h5>
                 <ul class="list-unstyled">
                     <li>
-                        <a href="{{ pathto('contributing/development/coding_guidelines') }}" class="stretched-link">
+                        <a href="{{ pathto('applications/productivity/discuss') }}" class="stretched-link">
                             {{ _("Thảo luận") }}
                         </a>
                     </li>
                     <li>
-                        <a href="{{ pathto('contributing/documentation') }}" class="stretched-link">
+                        <a href="{{ pathto('applications/services/project') }}" class="stretched-link">
                             {{ _("Dự án - Công việc") }}
                         </a>
                     </li>
                     <li>
-                        <a href="{{ pathto('contributing/documentation/content_guidelines') }}" class="stretched-link">
-                            {{ _("Đề xuất - Phê duyệt") }}
+                        <a href="{{ pathto('applications/services/helpdesk') }}" class="stretched-link">
+                            {{ _("Trung tâm hỗ trợ") }}
                         </a>
                     </li>
                     <li>
-                        <a href="{{ pathto('contributing/documentation/content_guidelines') }}" class="stretched-link">
-                            {{ _("Đào tạo - Đánh giá") }}
+                        <a href="{{ pathto('applications/productivity/knowledge') }}" class="stretched-link">
+                            {{ _("Đào tạo - Kiến thức") }}
                         </a>
                     </li>
                     <li>
-                        <a href="{{ pathto('contributing/documentation/content_guidelines') }}" class="stretched-link">
+                        <a href="{{ pathto('applications/finance/documents') }}" class="stretched-link">
                             {{ _("Hồ sơ - Tài liệu") }}
                         </a>
                     </li>                                        

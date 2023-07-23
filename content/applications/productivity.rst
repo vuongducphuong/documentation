@@ -9,7 +9,6 @@ Hiệu suất
 
     productivity/discuss
     productivity/calendar
-    productivity/knowledge
-    productivity/iot
+    productivity/knowledge    
     productivity/mail_plugins
     productivity/studio
