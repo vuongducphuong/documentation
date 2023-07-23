@@ -130,8 +130,7 @@ and the invoice or bill marked as :guilabel:`Paid`.
 
 .. toctree::
    :titlesonly:
-
-   payments/online
+   
    payments/checks
    payments/batch
    payments/batch_sdd

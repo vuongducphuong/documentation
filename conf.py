@@ -91,47 +91,47 @@ sys.path.insert(0, str(extension_dir.absolute()))
 
 # Search for the directory of odoo sources to know whether autodoc should be used on the dev doc
 odoo_sources_candidate_dirs = (Path('odoo'), Path('../odoo'))
-odoo_sources_dirs = [
-    d for d in odoo_sources_candidate_dirs if d.is_dir() and (d / 'odoo-bin').exists()
-]
+# odoo_sources_dirs = [
+#     d for d in odoo_sources_candidate_dirs if d.is_dir() and (d / 'odoo-bin').exists()
+# ]
 odoo_dir_in_path = False
 
-if not odoo_sources_dirs:
-    _logger.warning(
-        "Could not find Odoo sources directory in neither of the following folders:\n"
-        "%(dir_list)s\n"
-        "The 'Developer' documentation will be built but autodoc directives will be skipped.\n"
-        "In order to fully build the 'Developer' documentation, clone the repository with "
-        "`git clone https://github.com/odoo/odoo` or create a symbolic link.",
-        {'dir_list': '\n'.join([f'\t- {d.resolve()}' for d in odoo_sources_candidate_dirs])},
-    )
-else:
-    if (3, 6) < sys.version_info < (3, 7):
-        # Running odoo needs python 3.7 min but monkey patch version_info to be compatible with 3.6.
-        sys.version_info = (3, 7, 0)
-    odoo_dir = odoo_sources_dirs[0].resolve()
-    source_read_replace_vals['ODOO_RELPATH'] = '/../' + str(odoo_sources_dirs[0])
-    sys.path.insert(0, str(odoo_dir))
-    import odoo.addons
-    odoo.addons.__path__.append(str(odoo_dir) + '/addons')
-    from odoo import release as odoo_release  # Don't collide with Sphinx's 'release' config option
-    odoo_version = '.'.join(str(s) for s in odoo_release.version_info[:2]).replace('~', '-')  # Change saas~XX.Y to saas-XX.Y
-    odoo_version = 'master' if 'alpha' in odoo_release.version else odoo_version
-    if release != odoo_version:
-        _logger.warning(
-            "Found Odoo sources in %(directory)s but with version '%(odoo_version)s' incompatible "
-            "with documentation version '%(doc_version)s'.\n"
-            "The 'Developer' documentation will be built but autodoc directives will be skipped.\n"
-            "In order to fully build the 'Developer' documentation, checkout the matching branch"
-            " with `cd odoo && git checkout %(doc_version)s`.",
-            {'directory': odoo_dir, 'odoo_version': odoo_version, 'doc_version': version},
-        )
-    else:
-        _logger.info(
-            "Found Odoo sources in %(directory)s matching documentation version '%(version)s'.",
-            {'directory': odoo_dir, 'version': release},
-        )
-        odoo_dir_in_path = True
+# if not odoo_sources_dirs:
+#     _logger.warning(
+#         "Could not find Odoo sources directory in neither of the following folders:\n"
+#         "%(dir_list)s\n"
+#         "The 'Developer' documentation will be built but autodoc directives will be skipped.\n"
+#         "In order to fully build the 'Developer' documentation, clone the repository with "
+#         "`git clone https://github.com/odoo/odoo` or create a symbolic link.",
+#         {'dir_list': '\n'.join([f'\t- {d.resolve()}' for d in odoo_sources_candidate_dirs])},
+#     )
+# else:
+#     if (3, 6) < sys.version_info < (3, 7):
+#         # Running odoo needs python 3.7 min but monkey patch version_info to be compatible with 3.6.
+#         sys.version_info = (3, 7, 0)
+#     odoo_dir = odoo_sources_dirs[0].resolve()
+#     source_read_replace_vals['ODOO_RELPATH'] = '/../' + str(odoo_sources_dirs[0])
+#     sys.path.insert(0, str(odoo_dir))
+#     import odoo.addons
+#     odoo.addons.__path__.append(str(odoo_dir) + '/addons')
+#     from odoo import release as odoo_release  # Don't collide with Sphinx's 'release' config option
+#     odoo_version = '.'.join(str(s) for s in odoo_release.version_info[:2]).replace('~', '-')  # Change saas~XX.Y to saas-XX.Y
+#     odoo_version = 'master' if 'alpha' in odoo_release.version else odoo_version
+#     if release != odoo_version:
+#         _logger.warning(
+#             "Found Odoo sources in %(directory)s but with version '%(odoo_version)s' incompatible "
+#             "with documentation version '%(doc_version)s'.\n"
+#             "The 'Developer' documentation will be built but autodoc directives will be skipped.\n"
+#             "In order to fully build the 'Developer' documentation, checkout the matching branch"
+#             " with `cd odoo && git checkout %(doc_version)s`.",
+#             {'directory': odoo_dir, 'odoo_version': odoo_version, 'doc_version': version},
+#         )
+#     else:
+#         _logger.info(
+#             "Found Odoo sources in %(directory)s matching documentation version '%(version)s'.",
+#             {'directory': odoo_dir, 'version': release},
+#         )
+#         odoo_dir_in_path = True
 
 # Mapping between odoo models related to master data and the declaration of the
 # data. This is used to point users to available xml_ids when giving values for
