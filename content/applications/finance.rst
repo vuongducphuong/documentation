@@ -11,5 +11,4 @@ Tài chính
     finance/documents
     finance/sign
     finance/spreadsheet
-    finance/payment_providers
-    finance/fiscal_localizations
+    finance/payment_providers    
