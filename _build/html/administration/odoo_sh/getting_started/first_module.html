@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/administration/odoo_sh/getting_started/first_module.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/administration/odoo_sh/getting_started/first_module.html" />
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -1988,14 +1988,14 @@ to the code of your development branch.</p>
 </section><section id="from-your-computer">
 <h3>From your computer<a class="headerlink" href="#from-your-computer" title="Permalink to this headline">¶</a></h3>
 <p>Clone your Github repository on your computer:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>mkdir<span class="w"> </span>~/src
-$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/src
-$<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/odoo/odoo-addons.git
-$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/src/odoo-addons
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ mkdir ~/src
+$ <span class="nb">cd</span> ~/src
+$ git clone https://github.com/odoo/odoo-addons.git
+$ <span class="nb">cd</span> ~/src/odoo-addons
 </pre></div>
 </div>
 <p>Create a new branch:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>feature-1<span class="w"> </span>master
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git checkout -b feature-1 master
 </pre></div>
 </div>
 </section><section id="create-the-module-structure">
@@ -2005,11 +2005,11 @@ $<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/src
 <p>While not necessary, scaffolding avoids the tedium of setting the basic Odoo module structure.
 You can scaffold a new module using the executable <em>odoo-bin</em>.</p>
 <p>From the Odoo.sh editor, in a terminal:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>odoo-bin<span class="w"> </span>scaffold<span class="w"> </span>my_module<span class="w"> </span>~/src/user/
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ odoo-bin scaffold my_module ~/src/user/
 </pre></div>
 </div>
 <p>Or, from your computer, if you have an <a class="reference internal" href="../../install/install.html#setup-install-source"><span class="std std-ref">installation of Odoo</span></a>:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>./odoo-bin<span class="w"> </span>scaffold<span class="w"> </span>my_module<span class="w"> </span>~/src/odoo-addons/
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ ./odoo-bin scaffold my_module ~/src/odoo-addons/
 </pre></div>
 </div>
 <p>If you do not want to bother installing Odoo on your computer,
@@ -2068,16 +2068,16 @@ the structure of a module and the content of each file.</p>
 </section><section id="push-the-development-branch">
 <h2>Push the development branch<a class="headerlink" href="#push-the-development-branch" title="Permalink to this headline">¶</a></h2>
 <p>Stage the changes to be committed</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>add<span class="w"> </span>my_module
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git add my_module
 </pre></div>
 </div>
 <p>Commit your changes</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;My first module&quot;</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git commit -m <span class="s2">&quot;My first module&quot;</span>
 </pre></div>
 </div>
 <p>Push your changes to your remote repository</p>
 <p>From an Odoo.sh editor terminal:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>push<span class="w"> </span>https<span class="w"> </span>HEAD:feature-1
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git push https HEAD:feature-1
 </pre></div>
 </div>
 <p>The above command is explained in the section
@@ -2087,12 +2087,12 @@ chapter.
 It includes the explanation regarding the fact you will be prompted to type your username and
 password, and what to do if you use the two-factor authentication.</p>
 <p>Or, from your computer terminal:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>feature-1
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git push -u origin feature-1
 </pre></div>
 </div>
 <p>You need to specify <em>-u origin feature-1</em> for the first push only.
 From that point, to push your future changes from your computer, you can simply use</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>push
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git push
 </pre></div>
 </div>
 </section><section id="test-your-module">
@@ -2190,11 +2190,11 @@ such as <em>Atom</em>, <em>Sublime Text</em>, <em>PyCharm</em>, <em>vim</em>, �
 </div>
 <p>Then, open the file <em>views/views.xml</em>.</p>
 <p>After</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;value2&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;value2&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 <p>Add</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;start_datetime&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;start_datetime&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 <p>These changes alter the database structure by adding a column in a table,
@@ -2216,28 +2216,28 @@ your changes, increase your module version in its manifest.</p>
 revision deployment.</p>
 <p>Browse to your Git folder.</p>
 <p>Then, from an Odoo.sh terminal:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/src/user/
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> ~/src/user/
 </pre></div>
 </div>
 <p>Or, from your computer terminal:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/src/odoo-addons/
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> ~/src/odoo-addons/
 </pre></div>
 </div>
 <p>Then, stage your changes to be committed</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>add<span class="w"> </span>my_module
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git add my_module
 </pre></div>
 </div>
 <p>Commit your changes</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;[ADD] my_module: add the start_datetime field to the model my_module.my_module&quot;</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git commit -m <span class="s2">&quot;[ADD] my_module: add the start_datetime field to the model my_module.my_module&quot;</span>
 </pre></div>
 </div>
 <p>Push your changes:</p>
 <p>From an Odoo.sh terminal:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>push<span class="w"> </span>https<span class="w"> </span>HEAD:feature-1
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git push https HEAD:feature-1
 </pre></div>
 </div>
 <p>Or, from your computer terminal:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>push
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git push
 </pre></div>
 </div>
 <p>The platform will then create a new build for the branch <em>feature-1</em>.</p>
@@ -2309,18 +2309,18 @@ field of your model.</p>
 </pre></div>
 </div>
 <p>Stage and commit your changes:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>add<span class="w"> </span>requirements.txt
-$<span class="w"> </span>git<span class="w"> </span>add<span class="w"> </span>my_module
-$<span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;[IMP] my_module: automatically remove special chars in my_module.my_module name field&quot;</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git add requirements.txt
+$ git add my_module
+$ git commit -m <span class="s2">&quot;[IMP] my_module: automatically remove special chars in my_module.my_module name field&quot;</span>
 </pre></div>
 </div>
 <p>Then, push your changes:</p>
 <p>In an Odoo.sh terminal:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>push<span class="w"> </span>https<span class="w"> </span>HEAD:feature-1
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git push https HEAD:feature-1
 </pre></div>
 </div>
 <p>In your computer terminal:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>push
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git push
 </pre></div>
 </div>
 </section>

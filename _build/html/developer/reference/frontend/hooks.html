@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/reference/frontend/hooks.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/reference/frontend/hooks.html" />
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -2013,18 +2013,18 @@ more details.</p>
 <h3>Description<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <p>Focus an element referenced by a t-ref=”autofocus” in the current component as
 soon as it appears in the DOM and if it was not displayed before.</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useAutofocus</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@web/core/utils/hooks&quot;</span><span class="p">;</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">useAutofocus</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@web/core/utils/hooks&quot;</span><span class="p">;</span>
 
-<span class="kd">class</span><span class="w"> </span><span class="nx">Comp</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">inputRef</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useAutofocus</span><span class="p">();</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="w">  </span><span class="k">static</span><span class="w"> </span><span class="nx">template</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Comp&quot;</span><span class="p">;</span>
+<span class="kr">class</span> <span class="nx">Comp</span> <span class="p">{</span>
+  <span class="nx">setup</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">inputRef</span> <span class="o">=</span> <span class="nx">useAutofocus</span><span class="p">();</span>
+  <span class="p">}</span>
+  <span class="kr">static</span> <span class="nx">template</span> <span class="o">=</span> <span class="s2">&quot;Comp&quot;</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-name=</span><span class="s">&quot;Comp&quot;</span><span class="w"> </span><span class="na">owl=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
-<span class="w">  </span><span class="nt">&lt;input</span><span class="w"> </span><span class="na">t-ref=</span><span class="s">&quot;autofocus&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;text&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span> <span class="na">t-name=</span><span class="s">&quot;Comp&quot;</span> <span class="na">owl=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">t-ref=</span><span class="s">&quot;autofocus&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/t&gt;</span>
 </pre></div>
 </div>
@@ -2049,14 +2049,14 @@ soon as it appears in the DOM and if it was not displayed before.</p>
 <h3>Description<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
 <p>Add and clear an event listener to a bus. This hook ensures that
 the listener is properly cleared when the component is unmounted.</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useBus</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@web/core/utils/hooks&quot;</span><span class="p">;</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">useBus</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@web/core/utils/hooks&quot;</span><span class="p">;</span>
 
-<span class="kd">class</span><span class="w"> </span><span class="nx">MyComponent</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">useBus</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">bus</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;some-event&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">event</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">event</span><span class="p">);</span>
-<span class="w">    </span><span class="p">});</span>
-<span class="w">  </span><span class="p">}</span>
+<span class="kr">class</span> <span class="nx">MyComponent</span> <span class="p">{</span>
+  <span class="nx">setup</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">useBus</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">bus</span><span class="p">,</span> <span class="s2">&quot;some-event&quot;</span><span class="p">,</span> <span class="nx">event</span> <span class="p">=&gt;</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">event</span><span class="p">);</span>
+    <span class="p">});</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -2084,26 +2084,26 @@ the listener is properly cleared when the component is unmounted.</p>
 </section><section id="id7">
 <h3>Description<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
 <p>Display the <a class="reference internal" href="owl_components.html#frontend-pager"><span class="std std-ref">Pager</span></a> of the control panel of a view. This hooks correctly sets <code class="o_code docutils literal notranslate"><span class="pre">env.config</span></code> to provide the props to the pager.</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">usePager</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@web/search/pager_hook&quot;</span><span class="p">;</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">usePager</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@web/search/pager_hook&quot;</span><span class="p">;</span>
 
-<span class="kd">class</span><span class="w"> </span><span class="nx">CustomView</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">owl</span><span class="p">.</span><span class="nx">hooks</span><span class="p">.</span><span class="nx">useState</span><span class="p">({</span>
-<span class="w">      </span><span class="nx">offset</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span>
-<span class="w">      </span><span class="nx">limit</span><span class="o">:</span><span class="w"> </span><span class="mf">80</span><span class="p">,</span>
-<span class="w">      </span><span class="nx">total</span><span class="o">:</span><span class="w"> </span><span class="mf">50</span><span class="p">,</span>
-<span class="w">    </span><span class="p">});</span>
-<span class="w">    </span><span class="nx">usePager</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">offset</span><span class="o">:</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">offset</span><span class="p">,</span>
-<span class="w">        </span><span class="nx">limit</span><span class="o">:</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">limit</span><span class="p">,</span>
-<span class="w">        </span><span class="nx">total</span><span class="o">:</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">total</span><span class="p">,</span>
-<span class="w">        </span><span class="nx">onUpdate</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">newState</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">          </span><span class="nb">Object</span><span class="p">.</span><span class="nx">assign</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">,</span><span class="w"> </span><span class="nx">newState</span><span class="p">);</span>
-<span class="w">        </span><span class="p">},</span>
-<span class="w">      </span><span class="p">};</span>
-<span class="w">    </span><span class="p">});</span>
-<span class="w">  </span><span class="p">}</span>
+<span class="kr">class</span> <span class="nx">CustomView</span> <span class="p">{</span>
+  <span class="nx">setup</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kr">const</span> <span class="nx">state</span> <span class="o">=</span> <span class="nx">owl</span><span class="p">.</span><span class="nx">hooks</span><span class="p">.</span><span class="nx">useState</span><span class="p">({</span>
+      <span class="nx">offset</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
+      <span class="nx">limit</span><span class="o">:</span> <span class="mi">80</span><span class="p">,</span>
+      <span class="nx">total</span><span class="o">:</span> <span class="mi">50</span><span class="p">,</span>
+    <span class="p">});</span>
+    <span class="nx">usePager</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="p">{</span>
+        <span class="nx">offset</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">offset</span><span class="p">,</span>
+        <span class="nx">limit</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">limit</span><span class="p">,</span>
+        <span class="nx">total</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">total</span><span class="p">,</span>
+        <span class="nx">onUpdate</span><span class="o">:</span> <span class="p">(</span><span class="nx">newState</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+          <span class="nb">Object</span><span class="p">.</span><span class="nx">assign</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">,</span> <span class="nx">newState</span><span class="p">);</span>
+        <span class="p">},</span>
+      <span class="p">};</span>
+    <span class="p">});</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -2131,15 +2131,15 @@ the listener is properly cleared when the component is unmounted.</p>
 <p>Helps positioning an HTMLElement (the <code class="o_code docutils literal notranslate"><span class="pre">popper</span></code>) relatively to another
 HTMLElement (the <code class="o_code docutils literal notranslate"><span class="pre">reference</span></code>). This hook ensures the positioning is updated when
 the window is resized/scrolled.</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">usePosition</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@web/core/position_hook&quot;</span><span class="p">;</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">usePosition</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@web/core/position_hook&quot;</span><span class="p">;</span>
 
-<span class="kd">class</span><span class="w"> </span><span class="nx">MyPopover</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">owl</span><span class="p">.</span><span class="nx">Component</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="c1">// Here, the reference is the target props, which is an HTMLElement</span>
-<span class="w">    </span><span class="nx">usePosition</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">target</span><span class="p">);</span>
-<span class="w">  </span><span class="p">}</span>
+<span class="kr">class</span> <span class="nx">MyPopover</span> <span class="kr">extends</span> <span class="nx">owl</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
+  <span class="nx">setup</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// Here, the reference is the target props, which is an HTMLElement</span>
+    <span class="nx">usePosition</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">target</span><span class="p">);</span>
+  <span class="p">}</span>
 <span class="p">}</span>
-<span class="nx">MyPopover</span><span class="p">.</span><span class="nx">template</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">owl</span><span class="p">.</span><span class="nx">tags</span><span class="p">.</span><span class="nx">xml</span><span class="sb">`</span>
+<span class="nx">MyPopover</span><span class="p">.</span><span class="nx">template</span> <span class="o">=</span> <span class="nx">owl</span><span class="p">.</span><span class="nx">tags</span><span class="p">.</span><span class="nx">xml</span><span class="sb">`</span>
 <span class="sb">  &lt;div t-ref=&quot;popper&quot;&gt;</span>
 <span class="sb">    I am positioned through a wonderful hook!</span>
 <span class="sb">  &lt;/div&gt;</span>
@@ -2215,25 +2215,25 @@ The <code class="o_code docutils literal notranslate"><span class="pre">Position
 </table>
 <div class="alert alert-success">
 <p class="alert-title">
-Example</p><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">usePosition</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@web/core/position_hook&quot;</span><span class="p">;</span>
+Example</p><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">usePosition</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@web/core/position_hook&quot;</span><span class="p">;</span>
 
-<span class="kd">class</span><span class="w"> </span><span class="nx">DropMenu</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">owl</span><span class="p">.</span><span class="nx">Component</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">toggler</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">owl</span><span class="p">.</span><span class="nx">useRef</span><span class="p">(</span><span class="s2">&quot;toggler&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">usePosition</span><span class="p">(</span>
-<span class="w">      </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">toggler</span><span class="p">.</span><span class="nx">el</span><span class="p">,</span>
-<span class="w">      </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">popper</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;menu&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nx">position</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;right-start&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nx">onPositioned</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">el</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">direction</span><span class="p">,</span><span class="w"> </span><span class="nx">variant</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">          </span><span class="nx">el</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="sb">`dm-</span><span class="si">${</span><span class="nx">direction</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span><span class="w"> </span><span class="c1">// -&gt; &quot;dm-top&quot; &quot;dm-right&quot; &quot;dm-bottom&quot; &quot;dm-left&quot;</span>
-<span class="w">          </span><span class="nx">el</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">backgroundColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">variant</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">&quot;middle&quot;</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="s2">&quot;red&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;blue&quot;</span><span class="p">;</span>
-<span class="w">        </span><span class="p">},</span>
-<span class="w">      </span><span class="p">},</span>
-<span class="w">    </span><span class="p">);</span>
-<span class="w">  </span><span class="p">}</span>
+<span class="kr">class</span> <span class="nx">DropMenu</span> <span class="kr">extends</span> <span class="nx">owl</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
+  <span class="nx">setup</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kr">const</span> <span class="nx">toggler</span> <span class="o">=</span> <span class="nx">owl</span><span class="p">.</span><span class="nx">useRef</span><span class="p">(</span><span class="s2">&quot;toggler&quot;</span><span class="p">);</span>
+    <span class="nx">usePosition</span><span class="p">(</span>
+      <span class="p">()</span> <span class="p">=&gt;</span> <span class="nx">toggler</span><span class="p">.</span><span class="nx">el</span><span class="p">,</span>
+      <span class="p">{</span>
+        <span class="nx">popper</span><span class="o">:</span> <span class="s2">&quot;menu&quot;</span><span class="p">,</span>
+        <span class="nx">position</span><span class="o">:</span> <span class="s2">&quot;right-start&quot;</span><span class="p">,</span>
+        <span class="nx">onPositioned</span><span class="o">:</span> <span class="p">(</span><span class="nx">el</span><span class="p">,</span> <span class="p">{</span> <span class="nx">direction</span><span class="p">,</span> <span class="nx">variant</span> <span class="p">})</span> <span class="p">=&gt;</span> <span class="p">{</span>
+          <span class="nx">el</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="sb">`dm-</span><span class="si">${</span><span class="nx">direction</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span> <span class="c1">// -&gt; &quot;dm-top&quot; &quot;dm-right&quot; &quot;dm-bottom&quot; &quot;dm-left&quot;</span>
+          <span class="nx">el</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">backgroundColor</span> <span class="o">=</span> <span class="nx">variant</span> <span class="o">===</span> <span class="s2">&quot;middle&quot;</span> <span class="o">?</span> <span class="s2">&quot;red&quot;</span> <span class="o">:</span> <span class="s2">&quot;blue&quot;</span><span class="p">;</span>
+        <span class="p">},</span>
+      <span class="p">},</span>
+    <span class="p">);</span>
+  <span class="p">}</span>
 <span class="p">}</span>
-<span class="nx">DropMenu</span><span class="p">.</span><span class="nx">template</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">owl</span><span class="p">.</span><span class="nx">tags</span><span class="p">.</span><span class="nx">xml</span><span class="sb">`</span>
+<span class="nx">DropMenu</span><span class="p">.</span><span class="nx">template</span> <span class="o">=</span> <span class="nx">owl</span><span class="p">.</span><span class="nx">tags</span><span class="p">.</span><span class="nx">xml</span><span class="sb">`</span>
 <span class="sb">  &lt;button t-ref=&quot;toggler&quot;&gt;Toggle Menu&lt;/button&gt;</span>
 <span class="sb">  &lt;div t-ref=&quot;menu&quot;&gt;</span>
 <span class="sb">    &lt;t t-slot=&quot;default&quot;&gt;</span>

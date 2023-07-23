@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/tutorials/backend.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/tutorials/backend.html" />
     
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" /> 
@@ -2059,7 +2059,7 @@ might contain:</p>
 </pre></div>
 </div>
 <p>Odoo provides a mechanism to help set up a new module, <a class="reference internal" href="../reference/cli.html#reference-cmdline-server"><span class="std std-ref">odoo-bin</span></a> has a subcommand <a class="reference internal" href="../reference/cli.html#reference-cmdline-scaffold"><span class="std std-ref">scaffold</span></a> to create an empty module:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>odoo-bin<span class="w"> </span>scaffold<span class="w"> </span>&lt;module<span class="w"> </span>name&gt;<span class="w"> </span>&lt;where<span class="w"> </span>to<span class="w"> </span>put<span class="w"> </span>it&gt;
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> odoo-bin scaffold &lt;module name&gt; &lt;where to put it&gt;
 </pre></div>
 </div>
 <p>The command creates a subdirectory for your module, and automatically creates a
@@ -2167,9 +2167,9 @@ Tip</p><p>some modules exist solely to add data into Odoo</p>
 record.</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;odoo&gt;</span>
 
-<span class="w">        </span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;{model name}&quot;</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;{record identifier}&quot;</span><span class="nt">&gt;</span>
-<span class="w">            </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;{a field name}&quot;</span><span class="nt">&gt;</span>{a<span class="w"> </span>value}<span class="nt">&lt;/field&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/record&gt;</span>
+        <span class="nt">&lt;record</span> <span class="na">model=</span><span class="s">&quot;{model name}&quot;</span> <span class="na">id=</span><span class="s">&quot;{record identifier}&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;{a field name}&quot;</span><span class="nt">&gt;</span>{a value}<span class="nt">&lt;/field&gt;</span>
+        <span class="nt">&lt;/record&gt;</span>
 
 <span class="nt">&lt;/odoo&gt;</span>
 </pre></div>
@@ -2206,13 +2206,13 @@ data files. Actions can be triggered in three ways:</p>
 <p>Because menus are somewhat complex to declare there is a <code class="o_code docutils literal notranslate"><span class="pre">&lt;menuitem&gt;</span></code>
 shortcut to declare an <code class="o_code docutils literal notranslate"><span class="pre">ir.ui.menu</span></code> and connect it to the corresponding
 action more easily.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.actions.act_window&quot;</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;action_list_ideas&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>Ideas<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;res_model&quot;</span><span class="nt">&gt;</span>idea.idea<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;view_mode&quot;</span><span class="nt">&gt;</span>tree,form<span class="nt">&lt;/field&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span> <span class="na">model=</span><span class="s">&quot;ir.actions.act_window&quot;</span> <span class="na">id=</span><span class="s">&quot;action_list_ideas&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>Ideas<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;res_model&quot;</span><span class="nt">&gt;</span>idea.idea<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;view_mode&quot;</span><span class="nt">&gt;</span>tree,form<span class="nt">&lt;/field&gt;</span>
 <span class="nt">&lt;/record&gt;</span>
-<span class="nt">&lt;menuitem</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;menu_ideas&quot;</span><span class="w"> </span><span class="na">parent=</span><span class="s">&quot;menu_root&quot;</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Ideas&quot;</span><span class="w"> </span><span class="na">sequence=</span><span class="s">&quot;10&quot;</span>
-<span class="w">          </span><span class="na">action=</span><span class="s">&quot;action_list_ideas&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;menuitem</span> <span class="na">id=</span><span class="s">&quot;menu_ideas&quot;</span> <span class="na">parent=</span><span class="s">&quot;menu_root&quot;</span> <span class="na">name=</span><span class="s">&quot;Ideas&quot;</span> <span class="na">sequence=</span><span class="s">&quot;10&quot;</span>
+          <span class="na">action=</span><span class="s">&quot;action_list_ideas&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 <div class="aphorism alert alert-danger">
@@ -2246,13 +2246,13 @@ declared elsewhere (adding or removing content).</p>
 <h3>Generic view declaration<a class="headerlink" href="#generic-view-declaration" title="Permalink to this headline">¶</a></h3>
 <p>A view is declared as a record of the model <code class="o_code docutils literal notranslate"><span class="pre">ir.ui.view</span></code>. The view type
 is implied by the root element of the <code class="o_code docutils literal notranslate"><span class="pre">arch</span></code> field:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;view_id&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>view.name<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;model&quot;</span><span class="nt">&gt;</span>object_name<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;priority&quot;</span><span class="w"> </span><span class="na">eval=</span><span class="s">&quot;16&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;arch&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;xml&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="cm">&lt;!-- view content: &lt;form&gt;, &lt;tree&gt;, &lt;graph&gt;, ... --&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/field&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span> <span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span> <span class="na">id=</span><span class="s">&quot;view_id&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>view.name<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;model&quot;</span><span class="nt">&gt;</span>object_name<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;priority&quot;</span> <span class="na">eval=</span><span class="s">&quot;16&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;arch&quot;</span> <span class="na">type=</span><span class="s">&quot;xml&quot;</span><span class="nt">&gt;</span>
+        <span class="c">&lt;!-- view content: &lt;form&gt;, &lt;tree&gt;, &lt;graph&gt;, ... --&gt;</span>
+    <span class="nt">&lt;/field&gt;</span>
 <span class="nt">&lt;/record&gt;</span>
 </pre></div>
 </div>
@@ -2266,9 +2266,9 @@ Danger</p><p>The view’s content is XML.</p>
 <p>Tree views, also called list views, display records in a tabular form.</p>
 <p>Their root element is <code class="o_code docutils literal notranslate"><span class="pre">&lt;tree&gt;</span></code>. The simplest form of the tree view simply
 lists all the fields to display in the table (each field as a column):</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;tree</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Idea list&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;inventor_id&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;tree</span> <span class="na">string=</span><span class="s">&quot;Idea list&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;inventor_id&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/tree&gt;</span>
 </pre></div>
 </div>
@@ -2277,28 +2277,28 @@ lists all the fields to display in the table (each field as a column):</p>
 <p>Forms are used to create and edit single records.</p>
 <p>Their root element is <code class="o_code docutils literal notranslate"><span class="pre">&lt;form&gt;</span></code>. They are composed of high-level structure
 elements (groups, notebooks) and interactive elements (buttons and fields):</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;form</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Idea form&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;group</span><span class="w"> </span><span class="na">colspan=</span><span class="s">&quot;4&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;group</span><span class="w"> </span><span class="na">colspan=</span><span class="s">&quot;2&quot;</span><span class="w"> </span><span class="na">col=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>
-<span class="w">            </span><span class="nt">&lt;separator</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;General stuff&quot;</span><span class="w"> </span><span class="na">colspan=</span><span class="s">&quot;2&quot;</span><span class="nt">/&gt;</span>
-<span class="w">            </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">/&gt;</span>
-<span class="w">            </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;inventor_id&quot;</span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/group&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;form</span> <span class="na">string=</span><span class="s">&quot;Idea form&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;group</span> <span class="na">colspan=</span><span class="s">&quot;4&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;group</span> <span class="na">colspan=</span><span class="s">&quot;2&quot;</span> <span class="na">col=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;separator</span> <span class="na">string=</span><span class="s">&quot;General stuff&quot;</span> <span class="na">colspan=</span><span class="s">&quot;2&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;inventor_id&quot;</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;/group&gt;</span>
 
-<span class="w">        </span><span class="nt">&lt;group</span><span class="w"> </span><span class="na">colspan=</span><span class="s">&quot;2&quot;</span><span class="w"> </span><span class="na">col=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>
-<span class="w">            </span><span class="nt">&lt;separator</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Dates&quot;</span><span class="w"> </span><span class="na">colspan=</span><span class="s">&quot;2&quot;</span><span class="nt">/&gt;</span>
-<span class="w">            </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;active&quot;</span><span class="nt">/&gt;</span>
-<span class="w">            </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;invent_date&quot;</span><span class="w"> </span><span class="na">readonly=</span><span class="s">&quot;1&quot;</span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/group&gt;</span>
+        <span class="nt">&lt;group</span> <span class="na">colspan=</span><span class="s">&quot;2&quot;</span> <span class="na">col=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;separator</span> <span class="na">string=</span><span class="s">&quot;Dates&quot;</span> <span class="na">colspan=</span><span class="s">&quot;2&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;active&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;invent_date&quot;</span> <span class="na">readonly=</span><span class="s">&quot;1&quot;</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;/group&gt;</span>
 
-<span class="w">        </span><span class="nt">&lt;notebook</span><span class="w"> </span><span class="na">colspan=</span><span class="s">&quot;4&quot;</span><span class="nt">&gt;</span>
-<span class="w">            </span><span class="nt">&lt;page</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Description&quot;</span><span class="nt">&gt;</span>
-<span class="w">                </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;description&quot;</span><span class="w"> </span><span class="na">nolabel=</span><span class="s">&quot;1&quot;</span><span class="nt">/&gt;</span>
-<span class="w">            </span><span class="nt">&lt;/page&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/notebook&gt;</span>
+        <span class="nt">&lt;notebook</span> <span class="na">colspan=</span><span class="s">&quot;4&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;page</span> <span class="na">string=</span><span class="s">&quot;Description&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;description&quot;</span> <span class="na">nolabel=</span><span class="s">&quot;1&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;/page&gt;</span>
+        <span class="nt">&lt;/notebook&gt;</span>
 
-<span class="w">        </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;state&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/group&gt;</span>
+        <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;state&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/group&gt;</span>
 <span class="nt">&lt;/form&gt;</span>
 </pre></div>
 </div>
@@ -2315,26 +2315,26 @@ Exercise</p><p>Notebooks</p>
 add other tabs later, containing additional information.</p>
 </div>
 <p>Form views can also use plain HTML for more flexible layouts:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;form</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Idea Form&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;header&gt;</span>
-<span class="w">        </span><span class="nt">&lt;button</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Confirm&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;object&quot;</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;action_confirm&quot;</span>
-<span class="w">                </span><span class="na">states=</span><span class="s">&quot;draft&quot;</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;oe_highlight&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;button</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Mark as done&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;object&quot;</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;action_done&quot;</span>
-<span class="w">                </span><span class="na">states=</span><span class="s">&quot;confirmed&quot;</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;oe_highlight&quot;</span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;button</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Reset to draft&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;object&quot;</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;action_draft&quot;</span>
-<span class="w">                </span><span class="na">states=</span><span class="s">&quot;confirmed,done&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;state&quot;</span><span class="w"> </span><span class="na">widget=</span><span class="s">&quot;statusbar&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/header&gt;</span>
-<span class="w">    </span><span class="nt">&lt;sheet&gt;</span>
-<span class="w">        </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;oe_title&quot;</span><span class="nt">&gt;</span>
-<span class="w">            </span><span class="nt">&lt;label</span><span class="w"> </span><span class="na">for=</span><span class="s">&quot;name&quot;</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;oe_edit_only&quot;</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Idea Name&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">            </span><span class="nt">&lt;h1&gt;&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="w"> </span><span class="nt">/&gt;&lt;/h1&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/div&gt;</span>
-<span class="w">        </span><span class="nt">&lt;separator</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;General&quot;</span><span class="w"> </span><span class="na">colspan=</span><span class="s">&quot;2&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;group</span><span class="w"> </span><span class="na">colspan=</span><span class="s">&quot;2&quot;</span><span class="w"> </span><span class="na">col=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>
-<span class="w">            </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;description&quot;</span><span class="w"> </span><span class="na">placeholder=</span><span class="s">&quot;Idea description...&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/group&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/sheet&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;form</span> <span class="na">string=</span><span class="s">&quot;Idea Form&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;header&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">string=</span><span class="s">&quot;Confirm&quot;</span> <span class="na">type=</span><span class="s">&quot;object&quot;</span> <span class="na">name=</span><span class="s">&quot;action_confirm&quot;</span>
+                <span class="na">states=</span><span class="s">&quot;draft&quot;</span> <span class="na">class=</span><span class="s">&quot;oe_highlight&quot;</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">string=</span><span class="s">&quot;Mark as done&quot;</span> <span class="na">type=</span><span class="s">&quot;object&quot;</span> <span class="na">name=</span><span class="s">&quot;action_done&quot;</span>
+                <span class="na">states=</span><span class="s">&quot;confirmed&quot;</span> <span class="na">class=</span><span class="s">&quot;oe_highlight&quot;</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">string=</span><span class="s">&quot;Reset to draft&quot;</span> <span class="na">type=</span><span class="s">&quot;object&quot;</span> <span class="na">name=</span><span class="s">&quot;action_draft&quot;</span>
+                <span class="na">states=</span><span class="s">&quot;confirmed,done&quot;</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;state&quot;</span> <span class="na">widget=</span><span class="s">&quot;statusbar&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/header&gt;</span>
+    <span class="nt">&lt;sheet&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;oe_title&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;name&quot;</span> <span class="na">class=</span><span class="s">&quot;oe_edit_only&quot;</span> <span class="na">string=</span><span class="s">&quot;Idea Name&quot;</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;h1&gt;&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span> <span class="nt">/&gt;&lt;/h1&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;separator</span> <span class="na">string=</span><span class="s">&quot;General&quot;</span> <span class="na">colspan=</span><span class="s">&quot;2&quot;</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;group</span> <span class="na">colspan=</span><span class="s">&quot;2&quot;</span> <span class="na">col=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;description&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Idea description...&quot;</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/group&gt;</span>
+    <span class="nt">&lt;/sheet&gt;</span>
 <span class="nt">&lt;/form&gt;</span>
 </pre></div>
 </div>
@@ -2344,8 +2344,8 @@ add other tabs later, containing additional information.</p>
 other aggregated views). Their root element is <code class="o_code docutils literal notranslate"><span class="pre">&lt;search&gt;</span></code> and they’re
 composed of fields defining which fields can be searched on:</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;search&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;inventor_id&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;inventor_id&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/search&gt;</span>
 </pre></div>
 </div>
@@ -2471,18 +2471,18 @@ root views, and can add or remove content from their parent.</p>
 <p>An extension view references its parent using the <code class="o_code docutils literal notranslate"><span class="pre">inherit_id</span></code> field, and
 instead of a single view its <code class="o_code docutils literal notranslate"><span class="pre">arch</span></code> field is composed of any number of
 <code class="o_code docutils literal notranslate"><span class="pre">xpath</span></code> elements selecting and altering the content of their parent view:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="cm">&lt;!-- improved idea categories list --&gt;</span>
-<span class="nt">&lt;record</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;idea_category_list2&quot;</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>id.category.list2<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;model&quot;</span><span class="nt">&gt;</span>idea.category<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;inherit_id&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;id_category_list&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;arch&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;xml&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="cm">&lt;!-- find field description and add the field</span>
-<span class="cm">             idea_ids after it --&gt;</span>
-<span class="w">        </span><span class="nt">&lt;xpath</span><span class="w"> </span><span class="na">expr=</span><span class="s">&quot;//field[@name=&#39;description&#39;]&quot;</span><span class="w"> </span><span class="na">position=</span><span class="s">&quot;after&quot;</span><span class="nt">&gt;</span>
-<span class="w">          </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;idea_ids&quot;</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Number of ideas&quot;</span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/xpath&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/field&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="c">&lt;!-- improved idea categories list --&gt;</span>
+<span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">&quot;idea_category_list2&quot;</span> <span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>id.category.list2<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;model&quot;</span><span class="nt">&gt;</span>idea.category<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;inherit_id&quot;</span> <span class="na">ref=</span><span class="s">&quot;id_category_list&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;arch&quot;</span> <span class="na">type=</span><span class="s">&quot;xml&quot;</span><span class="nt">&gt;</span>
+        <span class="c">&lt;!-- find field description and add the field</span>
+<span class="c">             idea_ids after it --&gt;</span>
+        <span class="nt">&lt;xpath</span> <span class="na">expr=</span><span class="s">&quot;//field[@name=&#39;description&#39;]&quot;</span> <span class="na">position=</span><span class="s">&quot;after&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;idea_ids&quot;</span> <span class="na">string=</span><span class="s">&quot;Number of ideas&quot;</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;/xpath&gt;</span>
+    <span class="nt">&lt;/field&gt;</span>
 <span class="nt">&lt;/record&gt;</span>
 </pre></div>
 </div>
@@ -2512,12 +2512,12 @@ in the new body with the original element</p>
 Tip</p><p>When matching a single element, the <code class="o_code docutils literal notranslate"><span class="pre">position</span></code> attribute can be set directly
 on the element to be found. Both inheritances below will give the same result.</p>
 <blockquote>
-<div><div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;xpath</span><span class="w"> </span><span class="na">expr=</span><span class="s">&quot;//field[@name=&#39;description&#39;]&quot;</span><span class="w"> </span><span class="na">position=</span><span class="s">&quot;after&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;idea_ids&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<div><div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;xpath</span> <span class="na">expr=</span><span class="s">&quot;//field[@name=&#39;description&#39;]&quot;</span> <span class="na">position=</span><span class="s">&quot;after&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;idea_ids&quot;</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;/xpath&gt;</span>
 
-<span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;description&quot;</span><span class="w"> </span><span class="na">position=</span><span class="s">&quot;after&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;idea_ids&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;description&quot;</span> <span class="na">position=</span><span class="s">&quot;after&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;idea_ids&quot;</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;/field&gt;</span>
 </pre></div>
 </div>
@@ -2678,10 +2678,10 @@ fields is modified. To achieve this, define a method where <code class="o_code d
 the record in the form view, and decorate it with <code class="xref py py-func o_code docutils literal notranslate"><span class="pre">onchange()</span></code>
 to specify on which field it has to be triggered. Any change you make on
 <code class="o_code docutils literal notranslate"><span class="pre">self</span></code> will be reflected on the form.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="cm">&lt;!-- content of form view --&gt;</span>
-<span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;amount&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;unit_price&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;price&quot;</span><span class="w"> </span><span class="na">readonly=</span><span class="s">&quot;1&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="c">&lt;!-- content of form view --&gt;</span>
+<span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;amount&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;unit_price&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;price&quot;</span> <span class="na">readonly=</span><span class="s">&quot;1&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># onchange handler</span>
@@ -2779,10 +2779,10 @@ This value is formatted as <code class="o_code docutils literal notranslate"><sp
 <p><code class="o_code docutils literal notranslate"><span class="pre">{$name}</span></code> can be <code class="o_code docutils literal notranslate"><span class="pre">bf</span></code> (<code class="o_code docutils literal notranslate"><span class="pre">font-weight:</span> <span class="pre">bold</span></code>), <code class="o_code docutils literal notranslate"><span class="pre">it</span></code>
 (<code class="o_code docutils literal notranslate"><span class="pre">font-style:</span> <span class="pre">italic</span></code>), or any <a class="reference external" href="https://getbootstrap.com/docs/3.3/components/#available-variations">bootstrap contextual color</a> (<code class="o_code docutils literal notranslate"><span class="pre">danger</span></code>,
 <code class="o_code docutils literal notranslate"><span class="pre">info</span></code>, <code class="o_code docutils literal notranslate"><span class="pre">muted</span></code>, <code class="o_code docutils literal notranslate"><span class="pre">primary</span></code>, <code class="o_code docutils literal notranslate"><span class="pre">success</span></code> or <code class="o_code docutils literal notranslate"><span class="pre">warning</span></code>).</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;tree</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Idea Categories&quot;</span><span class="w"> </span><span class="na">decoration-info=</span><span class="s">&quot;state==&#39;draft&#39;&quot;</span>
-<span class="w">    </span><span class="na">decoration-danger=</span><span class="s">&quot;state==&#39;trashed&#39;&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;state&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;tree</span> <span class="na">string=</span><span class="s">&quot;Idea Categories&quot;</span> <span class="na">decoration-info=</span><span class="s">&quot;state==&#39;draft&#39;&quot;</span>
+    <span class="na">decoration-danger=</span><span class="s">&quot;state==&#39;trashed&#39;&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;state&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/tree&gt;</span>
 </pre></div>
 </div>
@@ -2816,8 +2816,8 @@ given the same color.</p>
 <dt><code class="o_code docutils literal notranslate"><span class="pre">string</span></code></dt><dd><p>record’s field to define the label for each calendar event</p>
 </dd>
 </dl>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;calendar</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Ideas&quot;</span><span class="w"> </span><span class="na">date_start=</span><span class="s">&quot;invent_date&quot;</span><span class="w"> </span><span class="na">color=</span><span class="s">&quot;inventor_id&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;calendar</span> <span class="na">string=</span><span class="s">&quot;Ideas&quot;</span> <span class="na">date_start=</span><span class="s">&quot;invent_date&quot;</span> <span class="na">color=</span><span class="s">&quot;inventor_id&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/calendar&gt;</span>
 </pre></div>
 </div>
@@ -2842,19 +2842,19 @@ predefined searches. Filters must have one of the following attributes:</p>
 results on the given field name</p>
 </dd>
 </dl>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;search</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Ideas&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;description&quot;</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Name and description&quot;</span>
-<span class="w">           </span><span class="na">filter_domain=</span><span class="s">&quot;[&#39;|&#39;, (&#39;name&#39;, &#39;ilike&#39;, self), (&#39;description&#39;, &#39;ilike&#39;, self)]&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;inventor_id&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;country_id&quot;</span><span class="w"> </span><span class="na">widget=</span><span class="s">&quot;selection&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;search</span> <span class="na">string=</span><span class="s">&quot;Ideas&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;description&quot;</span> <span class="na">string=</span><span class="s">&quot;Name and description&quot;</span>
+           <span class="na">filter_domain=</span><span class="s">&quot;[&#39;|&#39;, (&#39;name&#39;, &#39;ilike&#39;, self), (&#39;description&#39;, &#39;ilike&#39;, self)]&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;inventor_id&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;country_id&quot;</span> <span class="na">widget=</span><span class="s">&quot;selection&quot;</span><span class="nt">/&gt;</span>
 
-<span class="w">    </span><span class="nt">&lt;filter</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;my_ideas&quot;</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;My Ideas&quot;</span>
-<span class="w">            </span><span class="na">domain=</span><span class="s">&quot;[(&#39;inventor_id&#39;, &#39;=&#39;, uid)]&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;group</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Group By&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;filter</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;group_by_inventor&quot;</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Inventor&quot;</span>
-<span class="w">                </span><span class="na">context=</span><span class="s">&quot;{&#39;group_by&#39;: &#39;inventor_id&#39;}&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/group&gt;</span>
+    <span class="nt">&lt;filter</span> <span class="na">name=</span><span class="s">&quot;my_ideas&quot;</span> <span class="na">string=</span><span class="s">&quot;My Ideas&quot;</span>
+            <span class="na">domain=</span><span class="s">&quot;[(&#39;inventor_id&#39;, &#39;=&#39;, uid)]&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;group</span> <span class="na">string=</span><span class="s">&quot;Group By&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;filter</span> <span class="na">name=</span><span class="s">&quot;group_by_inventor&quot;</span> <span class="na">string=</span><span class="s">&quot;Inventor&quot;</span>
+                <span class="na">context=</span><span class="s">&quot;{&#39;group_by&#39;: &#39;inventor_id&#39;}&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/group&gt;</span>
 <span class="nt">&lt;/search&gt;</span>
 </pre></div>
 </div>
@@ -2882,11 +2882,11 @@ Warning</p><p>The gantt view requires the web_gantt module which is present in <
 </div>
 <p>Horizontal bar charts typically used to show project planning and advancement,
 their root element is <code class="o_code docutils literal notranslate"><span class="pre">&lt;gantt&gt;</span></code>.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;gantt</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Ideas&quot;</span>
-<span class="w">       </span><span class="na">date_start=</span><span class="s">&quot;invent_date&quot;</span>
-<span class="w">       </span><span class="na">date_stop=</span><span class="s">&quot;date_finished&quot;</span>
-<span class="w">       </span><span class="na">progress=</span><span class="s">&quot;progress&quot;</span>
-<span class="w">       </span><span class="na">default_group_by=</span><span class="s">&quot;inventor_id&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;gantt</span> <span class="na">string=</span><span class="s">&quot;Ideas&quot;</span>
+       <span class="na">date_start=</span><span class="s">&quot;invent_date&quot;</span>
+       <span class="na">date_stop=</span><span class="s">&quot;date_finished&quot;</span>
+       <span class="na">progress=</span><span class="s">&quot;progress&quot;</span>
+       <span class="na">default_group_by=</span><span class="s">&quot;inventor_id&quot;</span> <span class="nt">/&gt;</span>
 </pre></div>
 </div>
 <div class="alert alert-dark">
@@ -2926,9 +2926,9 @@ the values:</p>
 <dt><code class="o_code docutils literal notranslate"><span class="pre">measure</span></code></dt><dd><p>the field should be aggregated rather than grouped on</p>
 </dd>
 </dl>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;graph</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Total idea score by Inventor&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;inventor_id&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;score&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;measure&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;graph</span> <span class="na">string=</span><span class="s">&quot;Total idea score by Inventor&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;inventor_id&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;score&quot;</span> <span class="na">type=</span><span class="s">&quot;measure&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/graph&gt;</span>
 </pre></div>
 </div>
@@ -3009,15 +3009,15 @@ access rights are limited.</p>
 <p>Here is an example of a rule that prevents the deletion of leads that are not
 in state <code class="o_code docutils literal notranslate"><span class="pre">cancel</span></code>. Notice that the value of the field <code class="o_code docutils literal notranslate"><span class="pre">groups</span></code> must follow
 the same convention as the method <code class="xref py py-meth o_code docutils literal notranslate"><span class="pre">write()</span></code> of the ORM.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;delete_cancelled_only&quot;</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.rule&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>Only<span class="w"> </span>cancelled<span class="w"> </span>leads<span class="w"> </span>may<span class="w"> </span>be<span class="w"> </span>deleted<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;model_id&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;crm.model_crm_lead&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;groups&quot;</span><span class="w"> </span><span class="na">eval=</span><span class="s">&quot;[(4, ref(&#39;sales_team.group_sale_manager&#39;))]&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;perm_read&quot;</span><span class="w"> </span><span class="na">eval=</span><span class="s">&quot;0&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;perm_write&quot;</span><span class="w"> </span><span class="na">eval=</span><span class="s">&quot;0&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;perm_create&quot;</span><span class="w"> </span><span class="na">eval=</span><span class="s">&quot;0&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;perm_unlink&quot;</span><span class="w"> </span><span class="na">eval=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;domain_force&quot;</span><span class="nt">&gt;</span>[(&#39;state&#39;,&#39;=&#39;,&#39;cancel&#39;)]<span class="nt">&lt;/field&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">&quot;delete_cancelled_only&quot;</span> <span class="na">model=</span><span class="s">&quot;ir.rule&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>Only cancelled leads may be deleted<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;model_id&quot;</span> <span class="na">ref=</span><span class="s">&quot;crm.model_crm_lead&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;groups&quot;</span> <span class="na">eval=</span><span class="s">&quot;[(4, ref(&#39;sales_team.group_sale_manager&#39;))]&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;perm_read&quot;</span> <span class="na">eval=</span><span class="s">&quot;0&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;perm_write&quot;</span> <span class="na">eval=</span><span class="s">&quot;0&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;perm_create&quot;</span> <span class="na">eval=</span><span class="s">&quot;0&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;perm_unlink&quot;</span> <span class="na">eval=</span><span class="s">&quot;1&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;domain_force&quot;</span><span class="nt">&gt;</span>[(&#39;state&#39;,&#39;=&#39;,&#39;cancel&#39;)]<span class="nt">&lt;/field&gt;</span>
 <span class="nt">&lt;/record&gt;</span>
 </pre></div>
 </div>
@@ -3064,12 +3064,12 @@ button.</p>
 a tree or form view. This is done through the <code class="o_code docutils literal notranslate"><span class="pre">binding_model_id</span></code> field of the
 action. Setting this field will make the action appear on the views of the model
 the action is “bound” to.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;launch_the_wizard&quot;</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.actions.act_window&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>Launch<span class="w"> </span>the<span class="w"> </span>Wizard<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;res_model&quot;</span><span class="nt">&gt;</span>wizard.model.name<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;view_mode&quot;</span><span class="nt">&gt;</span>form<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;target&quot;</span><span class="nt">&gt;</span>new<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;binding_model_id&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;model_context_model_ref&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">&quot;launch_the_wizard&quot;</span> <span class="na">model=</span><span class="s">&quot;ir.actions.act_window&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>Launch the Wizard<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;res_model&quot;</span><span class="nt">&gt;</span>wizard.model.name<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;view_mode&quot;</span><span class="nt">&gt;</span>form<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;target&quot;</span><span class="nt">&gt;</span>new<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;binding_model_id&quot;</span> <span class="na">ref=</span><span class="s">&quot;model_context_model_ref&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/record&gt;</span>
 </pre></div>
 </div>
@@ -3150,17 +3150,17 @@ module using the facilities provided by Odoo.</p>
 <li><p>an <code class="o_code docutils literal notranslate"><span class="pre">ir.actions.report</span></code> which configures various basic parameters for the
 report (default type, whether the report should be saved to the database
 after generation,…)</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;account_invoices&quot;</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.actions.report&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>Invoices<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;model&quot;</span><span class="nt">&gt;</span>account.invoice<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;report_type&quot;</span><span class="nt">&gt;</span>qweb-pdf<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;report_name&quot;</span><span class="nt">&gt;</span>account.report_invoice<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;report_file&quot;</span><span class="nt">&gt;</span>account.report_invoice<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;attachment_use&quot;</span><span class="w"> </span><span class="na">eval=</span><span class="s">&quot;True&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;attachment&quot;</span><span class="nt">&gt;</span>(object.state<span class="w"> </span>in<span class="w"> </span>(&#39;open&#39;,&#39;paid&#39;))<span class="w"> </span>and
-<span class="w">        </span>(&#39;INV&#39;+(object.number<span class="w"> </span>or<span class="w"> </span>&#39;&#39;).replace(&#39;/&#39;,&#39;&#39;)+&#39;.pdf&#39;)<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;binding_model_id&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;model_account_invoice&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;binding_type&quot;</span><span class="nt">&gt;</span>report<span class="nt">&lt;/field&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">&quot;account_invoices&quot;</span> <span class="na">model=</span><span class="s">&quot;ir.actions.report&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>Invoices<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;model&quot;</span><span class="nt">&gt;</span>account.invoice<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;report_type&quot;</span><span class="nt">&gt;</span>qweb-pdf<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;report_name&quot;</span><span class="nt">&gt;</span>account.report_invoice<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;report_file&quot;</span><span class="nt">&gt;</span>account.report_invoice<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;attachment_use&quot;</span> <span class="na">eval=</span><span class="s">&quot;True&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;attachment&quot;</span><span class="nt">&gt;</span>(object.state in (&#39;open&#39;,&#39;paid&#39;)) and
+        (&#39;INV&#39;+(object.number or &#39;&#39;).replace(&#39;/&#39;,&#39;&#39;)+&#39;.pdf&#39;)<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;binding_model_id&quot;</span> <span class="na">ref=</span><span class="s">&quot;model_account_invoice&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;binding_type&quot;</span><span class="nt">&gt;</span>report<span class="nt">&lt;/field&gt;</span>
 <span class="nt">&lt;/record&gt;</span>
 </pre></div>
 </div>
@@ -3176,14 +3176,14 @@ technical difference but putting elements in the right place helps users.</p>
 </div>
 </li>
 <li><p>A standard <a class="reference internal" href="../reference/backend/views.html#reference-views-qweb"><span class="std std-ref">QWeb view</span></a> for the actual report:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-call=</span><span class="s">&quot;web.html_container&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-foreach=</span><span class="s">&quot;docs&quot;</span><span class="w"> </span><span class="na">t-as=</span><span class="s">&quot;o&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-call=</span><span class="s">&quot;web.external_layout&quot;</span><span class="nt">&gt;</span>
-<span class="w">            </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;page&quot;</span><span class="nt">&gt;</span>
-<span class="w">                </span><span class="nt">&lt;h2&gt;</span>Report<span class="w"> </span>title<span class="nt">&lt;/h2&gt;</span>
-<span class="w">            </span><span class="nt">&lt;/div&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/t&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/t&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span> <span class="na">t-call=</span><span class="s">&quot;web.html_container&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-foreach=</span><span class="s">&quot;docs&quot;</span> <span class="na">t-as=</span><span class="s">&quot;o&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;t</span> <span class="na">t-call=</span><span class="s">&quot;web.external_layout&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;page&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;h2&gt;</span>Report title<span class="nt">&lt;/h2&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/t&gt;</span>
+    <span class="nt">&lt;/t&gt;</span>
 <span class="nt">&lt;/t&gt;</span>
 </pre></div>
 </div>

@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/howtos/javascript_client_action.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/howtos/javascript_client_action.html" />
     
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -1934,9 +1934,9 @@ framework and use services, core components, hooks,…</p>
 <ol class="arabic">
 <li><p>Create the <a class="reference internal" href="../reference/backend/actions.html#reference-actions-client"><span class="std std-ref">client action</span></a>, don’t forget to
 make it accessible.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.actions.client&quot;</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;my_client_action&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>My<span class="w"> </span>Client<span class="w"> </span>Action<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;tag&quot;</span><span class="nt">&gt;</span>my_module.MyClientAction<span class="nt">&lt;/field&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span> <span class="na">model=</span><span class="s">&quot;ir.actions.client&quot;</span> <span class="na">id=</span><span class="s">&quot;my_client_action&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>My Client Action<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;tag&quot;</span><span class="nt">&gt;</span>my_module.MyClientAction<span class="nt">&lt;/field&gt;</span>
 <span class="nt">&lt;/record&gt;</span>
 </pre></div>
 </div>
@@ -1946,25 +1946,25 @@ make it accessible.</p>
 <div class="code-block-caption"><span class="caption-text"><code class="file o_code docutils literal notranslate"><span class="pre">my_client_action.js</span></code></span><a class="headerlink" href="#id1" title="Permalink to this code">¶</a></div>
 <div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="cm">/** @odoo-module **/</span>
 
-<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">registry</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@web/core/registry&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">registry</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@web/core/registry&quot;</span><span class="p">;</span>
 
-<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Component</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w">  </span><span class="s2">&quot;@odoo/owl&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">Component</span> <span class="p">}</span> <span class="nx">from</span>  <span class="s2">&quot;@odoo/owl&quot;</span><span class="p">;</span>
 
-<span class="kd">class</span><span class="w"> </span><span class="nx">MyClientAction</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">Component</span><span class="w"> </span><span class="p">{}</span>
-<span class="nx">MyClientAction</span><span class="p">.</span><span class="nx">template</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;my_module.clientaction&quot;</span><span class="p">;</span>
+<span class="kr">class</span> <span class="nx">MyClientAction</span> <span class="kr">extends</span> <span class="nx">Component</span> <span class="p">{}</span>
+<span class="nx">MyClientAction</span><span class="p">.</span><span class="nx">template</span> <span class="o">=</span> <span class="s2">&quot;my_module.clientaction&quot;</span><span class="p">;</span>
 
 <span class="c1">// remember the tag name we put in the first step</span>
-<span class="nx">registry</span><span class="p">.</span><span class="nx">category</span><span class="p">(</span><span class="s2">&quot;actions&quot;</span><span class="p">).</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;my_module.MyClientAction&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">MyClientAction</span><span class="p">);</span>
+<span class="nx">registry</span><span class="p">.</span><span class="nx">category</span><span class="p">(</span><span class="s2">&quot;actions&quot;</span><span class="p">).</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;my_module.MyClientAction&quot;</span><span class="p">,</span> <span class="nx">MyClientAction</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
 <div class="literal-block-wrapper docutils container" id="id2">
 <div class="code-block-caption"><span class="caption-text"><code class="file o_code docutils literal notranslate"><span class="pre">my_client_action.xml</span></code></span><a class="headerlink" href="#id2" title="Permalink to this code">¶</a></div>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span>
-<span class="nt">&lt;templates</span><span class="w"> </span><span class="na">xml:space=</span><span class="s">&quot;preserve&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-name=</span><span class="s">&quot;awesome_tshirt.clientaction&quot;</span><span class="w"> </span><span class="na">owl=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span>Hello<span class="w"> </span>world
-<span class="w">    </span><span class="nt">&lt;/t&gt;</span>
+<span class="nt">&lt;templates</span> <span class="na">xml:space=</span><span class="s">&quot;preserve&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-name=</span><span class="s">&quot;awesome_tshirt.clientaction&quot;</span> <span class="na">owl=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+        Hello world
+    <span class="nt">&lt;/t&gt;</span>
 <span class="nt">&lt;/templates&gt;</span>
 </pre></div>
 </div>

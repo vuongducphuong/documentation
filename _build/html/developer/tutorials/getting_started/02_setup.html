@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/tutorials/getting_started/02_setup.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/tutorials/getting_started/02_setup.html" />
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -1968,14 +1968,14 @@ directories containing Odoo modules.</p>
 <a class="reference external" href="https://github.com/odoo/technical-training-sandbox">github.com/odoo/technical-training-sandbox</a> and click the <span class="guilabel">Fork</span> button to
 create a fork of the repository under your account.</p></li>
 <li><p>Clone the repository on your machine with:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>clone<span class="w"> </span>git@github.com:odoo/technical-training-sandbox.git
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git clone git@github.com:odoo/technical-training-sandbox.git
 </pre></div>
 </div>
 </li>
 <li><p>Configure the repository to push changes to your fork:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>technical-training-sandbox/
-<span class="gp">$ </span>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>dev<span class="w"> </span>git@github.com:&lt;your_github_account&gt;/technical-training-sandbox.git
-<span class="gp">$ </span>git<span class="w"> </span>remote<span class="w"> </span>set-url<span class="w"> </span>--push<span class="w"> </span>origin<span class="w"> </span>you_should_not_push_on_this_repository
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">cd</span> technical-training-sandbox/
+<span class="gp">$</span> git remote add dev git@github.com:&lt;your_github_account&gt;/technical-training-sandbox.git
+<span class="gp">$</span> git remote set-url --push origin you_should_not_push_on_this_repository
 </pre></div>
 </div>
 </li>
@@ -2004,8 +2004,8 @@ providing the appropriate relative path from the <code class="o_code docutils li
 <h3>Launch with <code class="o_code docutils literal notranslate"><span class="pre">odoo-bin</span></code><a class="headerlink" href="#launch-with-odoo-bin" title="Permalink to this headline">¶</a></h3>
 <p>Once all dependencies are set up, Odoo can be launched by running <code class="o_code docutils literal notranslate"><span class="pre">odoo-bin</span></code>, the command-line
 interface of the server.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span><span class="nv">$HOME</span>/src/odoo/
-<span class="gp">$ </span>./odoo-bin<span class="w"> </span>--addons-path<span class="o">=</span><span class="s2">&quot;addons/,../enterprise/,../technical-training-sandbox&quot;</span><span class="w"> </span>-d<span class="w"> </span>rd-demo
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">cd</span> <span class="nv">$HOME</span>/src/odoo/
+<span class="gp">$</span> ./odoo-bin --addons-path<span class="o">=</span><span class="s2">&quot;addons/,../enterprise/,../technical-training-sandbox&quot;</span> -d rd-demo
 </pre></div>
 </div>
 <p>There are multiple <a class="reference internal" href="../../reference/cli.html#reference-cmdline-server"><span class="std std-ref">command-line arguments</span></a> that you can use to run
@@ -2049,8 +2049,8 @@ requirements with <strong class="command o_code">$ pip install --upgrade --force
 <div class="line">You can also clear the python cache to solve the issue:</div>
 </div>
 <blockquote>
-<div><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span><span class="nv">$HOME</span>/.local/lib/python3.8/site-packages/
-<span class="gp">$ </span>find<span class="w"> </span>-name<span class="w"> </span><span class="s1">&#39;*.pyc&#39;</span><span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-delete
+<div><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">cd</span> <span class="nv">$HOME</span>/.local/lib/python3.8/site-packages/
+<span class="gp">$</span> find -name <span class="s1">&#39;*.pyc&#39;</span> -type f -delete
 </pre></div>
 </div>
 </div></blockquote>
@@ -2096,22 +2096,22 @@ You will be led into installing your own application in the next chapter.</p>
 <div class="line">When you switch branches, both repositories (odoo and enterprise) must be synchronized, i.e.
 both need to be in the same branch.</div>
 </div>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span><span class="nv">$HOME</span>/src/odoo
-<span class="gp">$ </span>git<span class="w"> </span>switch<span class="w"> </span><span class="m">16</span>.0
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">cd</span> <span class="nv">$HOME</span>/src/odoo
+<span class="gp">$</span> git switch <span class="m">16</span>.0
 
-<span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span><span class="nv">$HOME</span>/src/enterprise
-<span class="gp">$ </span>git<span class="w"> </span>switch<span class="w"> </span><span class="m">16</span>.0
+<span class="gp">$</span> <span class="nb">cd</span> <span class="nv">$HOME</span>/src/enterprise
+<span class="gp">$</span> git switch <span class="m">16</span>.0
 </pre></div>
 </div>
 </li>
 <li><p>Fetch and rebase:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span><span class="nv">$HOME</span>/src/odoo
-<span class="gp">$ </span>git<span class="w"> </span>fetch<span class="w"> </span>--all<span class="w"> </span>--prune
-<span class="gp">$ </span>git<span class="w"> </span>rebase<span class="w"> </span>--autostash<span class="w"> </span>odoo/16.0
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">cd</span> <span class="nv">$HOME</span>/src/odoo
+<span class="gp">$</span> git fetch --all --prune
+<span class="gp">$</span> git rebase --autostash odoo/16.0
 
-<span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span><span class="nv">$HOME</span>/src/enterprise
-<span class="gp">$ </span>git<span class="w"> </span>fetch<span class="w"> </span>--all<span class="w"> </span>--prune
-<span class="gp">$ </span>git<span class="w"> </span>rebase<span class="w"> </span>--autostash<span class="w"> </span>enterprise/16.0
+<span class="gp">$</span> <span class="nb">cd</span> <span class="nv">$HOME</span>/src/enterprise
+<span class="gp">$</span> git fetch --all --prune
+<span class="gp">$</span> git rebase --autostash enterprise/16.0
 </pre></div>
 </div>
 </li>

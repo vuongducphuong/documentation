@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/tutorials/master_odoo_web_framework/03_custom_kanban_view.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/tutorials/master_odoo_web_framework/03_custom_kanban_view.html" />
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -1954,7 +1954,7 @@ click on a customer on the left sidebar, the kanban view on the right is filtere
 orders linked to that customer.</p>
 <div class="admonition-goal alert">
 <p class="alert-title">
-Goal</p><img alt="../../../_images/overview1.png" class="align-center" src="../../../_images/overview1.png" />
+Goal</p><img alt="../../../_images/overview.png" class="align-center" src="../../../_images/overview.png" />
 </div>
 <div class="accordion accordion-flush o_spoiler alert"><div class="accordion-item"><span class="accordion-header" id="o_spoiler_header_0"><button aria-controls="o_spoiler_content_0" aria-expanded="false" class="accordion-button collapsed flex-row-reverse justify-content-end fw-bold p-0 border-bottom-0" data-bs-target="#o_spoiler_content_0" data-bs-toggle="collapse" type="button">Solutions</button></span><div aria-labelledby="o_spoiler_header_0" class="accordion-collapse collapse border-bottom-0" id="o_spoiler_content_0"><div class="accordion-body"><p>The solutions for each exercise of the chapter are hosted on the
 <a class="reference external" href="https://github.com/odoo/tutorials/commits/16.0-solutions/awesome_tshirt">official Odoo tutorials repository</a>.</p>
@@ -2007,13 +2007,13 @@ Exercise</p><ol class="arabic simple">
 <li><p>Modify the template to give the real function to the <code class="o_code docutils literal notranslate"><span class="pre">CustomerList</span></code> <code class="o_code docutils literal notranslate"><span class="pre">selectCustomer</span></code> prop.</p></li>
 </ol>
 <p>Since it is not trivial to interact with the search view, here is a quick snippet to help:</p>
-<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">selectCustomer</span><span class="p">(</span><span class="nx">customer_id</span><span class="p">,</span><span class="w"> </span><span class="nx">customer_name</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">   </span><span class="k">this</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">searchModel</span><span class="p">.</span><span class="nx">setDomainParts</span><span class="p">({</span>
-<span class="w">      </span><span class="nx">customer</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="nx">domain</span><span class="o">:</span><span class="w"> </span><span class="p">[[</span><span class="s2">&quot;customer_id&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;=&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">customer_id</span><span class="p">]],</span>
-<span class="w">            </span><span class="nx">facetLabel</span><span class="o">:</span><span class="w"> </span><span class="nx">customer_name</span><span class="p">,</span>
-<span class="w">      </span><span class="p">},</span>
-<span class="w">   </span><span class="p">});</span>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">selectCustomer</span><span class="p">(</span><span class="nx">customer_id</span><span class="p">,</span> <span class="nx">customer_name</span><span class="p">)</span> <span class="p">{</span>
+   <span class="k">this</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">searchModel</span><span class="p">.</span><span class="nx">setDomainParts</span><span class="p">({</span>
+      <span class="nx">customer</span><span class="o">:</span> <span class="p">{</span>
+            <span class="nx">domain</span><span class="o">:</span> <span class="p">[[</span><span class="s2">&quot;customer_id&quot;</span><span class="p">,</span> <span class="s2">&quot;=&quot;</span><span class="p">,</span> <span class="nx">customer_id</span><span class="p">]],</span>
+            <span class="nx">facetLabel</span><span class="o">:</span> <span class="nx">customer_name</span><span class="p">,</span>
+      <span class="p">},</span>
+   <span class="p">});</span>
 <span class="p">}</span>
 </pre></div>
 </div>

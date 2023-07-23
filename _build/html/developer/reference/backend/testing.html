@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/reference/backend/testing.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/reference/backend/testing.html" />
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -2082,14 +2082,14 @@ default you can remove the <code class="o_code docutils literal notranslate"><sp
 </div>
 <p>This test will not be selected by default, to run it the relevant tag will
 have to be selected explicitly:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>odoo-bin<span class="w"> </span>--test-tags<span class="w"> </span>nice
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> odoo-bin --test-tags nice
 </pre></div>
 </div>
 <p>Note that only the tests tagged <code class="o_code docutils literal notranslate"><span class="pre">nice</span></code> are going to be executed. To run
 <em>both</em> <code class="o_code docutils literal notranslate"><span class="pre">nice</span></code> and <code class="o_code docutils literal notranslate"><span class="pre">standard</span></code> tests, provide multiple values to
 <a class="reference internal" href="../cli.html#cmdoption-odoo-bin-test-tags"><code class="xref std std-option o_code docutils literal notranslate"><span class="pre">--test-tags</span></code></a>: on the command-line, values
 are <em>additive</em> (you’re selecting all tests with <em>any</em> of the specified tags)</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>odoo-bin<span class="w"> </span>--test-tags<span class="w"> </span>nice,standard
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> odoo-bin --test-tags nice,standard
 </pre></div>
 </div>
 <p>The config switch parameter also accepts the <code class="o_code docutils literal notranslate"><span class="pre">+</span></code> and <code class="o_code docutils literal notranslate"><span class="pre">-</span></code> prefixes. The
@@ -2098,7 +2098,7 @@ prefix is made to deselect tests tagged with the prefixed tags, even if they
 are selected by other specified tags e.g. if there are <code class="o_code docutils literal notranslate"><span class="pre">standard</span></code> tests which
 are also tagged as <code class="o_code docutils literal notranslate"><span class="pre">slow</span></code> you can run all standard tests <em>except</em> the slow
 ones:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>odoo-bin<span class="w"> </span>--test-tags<span class="w"> </span><span class="s1">&#39;standard,-slow&#39;</span>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> odoo-bin --test-tags <span class="s1">&#39;standard,-slow&#39;</span>
 </pre></div>
 </div>
 <p>When you write a test that does not inherit from the
@@ -2122,20 +2122,20 @@ is:</p>
 </div>
 <p>So if you want to test the <code class="o_code docutils literal notranslate"><span class="pre">stock_account</span></code> module, you can use:</p>
 <blockquote>
-<div><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>odoo-bin<span class="w"> </span>--test-tags<span class="w"> </span>/stock_account
+<div><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> odoo-bin --test-tags /stock_account
 </pre></div>
 </div>
 </div></blockquote>
 <p>If you want to test a specific function with a unique name, it can be specified
 directly:</p>
 <blockquote>
-<div><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>odoo-bin<span class="w"> </span>--test-tags<span class="w"> </span>.test_supplier_invoice_forwarded_by_internal_user_without_supplier
+<div><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> odoo-bin --test-tags .test_supplier_invoice_forwarded_by_internal_user_without_supplier
 </pre></div>
 </div>
 </div></blockquote>
 <p>This is equivalent to</p>
 <blockquote>
-<div><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>odoo-bin<span class="w"> </span>--test-tags<span class="w"> </span>/account:TestAccountIncomingSupplierInvoice.test_supplier_invoice_forwarded_by_internal_user_without_supplier
+<div><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> odoo-bin --test-tags /account:TestAccountIncomingSupplierInvoice.test_supplier_invoice_forwarded_by_internal_user_without_supplier
 </pre></div>
 </div>
 </div></blockquote>
@@ -2171,15 +2171,15 @@ needed, unless you need to upgrade the module, in which case
 not specified in the examples below.</p>
 </div>
 <p>Run only the tests from the sale module:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>odoo-bin<span class="w"> </span>--test-tags<span class="w"> </span>/sale
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> odoo-bin --test-tags /sale
 </pre></div>
 </div>
 <p>Run the tests from the sale module but not the ones tagged as slow:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>odoo-bin<span class="w"> </span>--test-tags<span class="w"> </span><span class="s1">&#39;/sale,-slow&#39;</span>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> odoo-bin --test-tags <span class="s1">&#39;/sale,-slow&#39;</span>
 </pre></div>
 </div>
 <p>Run only the tests from stock or tagged as slow:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>odoo-bin<span class="w"> </span>--test-tags<span class="w"> </span><span class="s1">&#39;-standard, slow, /stock&#39;</span>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> odoo-bin --test-tags <span class="s1">&#39;-standard, slow, /stock&#39;</span>
 </pre></div>
 </div>
 <div class="alert alert-primary">
@@ -2201,13 +2201,13 @@ and gives us a web based interface to execute the tests.</p>
 <p>For example, here is what a pyUtils test could look like:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">QUnit</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">&#39;py_utils&#39;</span><span class="p">);</span>
 
-<span class="nx">QUnit</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s1">&#39;simple arithmetic&#39;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">assert</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">assert</span><span class="p">.</span><span class="nx">expect</span><span class="p">(</span><span class="mf">2</span><span class="p">);</span>
+<span class="nx">QUnit</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s1">&#39;simple arithmetic&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">assert</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">expect</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
 
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">pyUtils</span><span class="p">.</span><span class="nx">py_eval</span><span class="p">(</span><span class="s2">&quot;1 + 2&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">assert</span><span class="p">.</span><span class="nx">strictEqual</span><span class="p">(</span><span class="nx">result</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;should properly evaluate sum&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">pyUtils</span><span class="p">.</span><span class="nx">py_eval</span><span class="p">(</span><span class="s2">&quot;42 % 5&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">assert</span><span class="p">.</span><span class="nx">strictEqual</span><span class="p">(</span><span class="nx">result</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;should properly evaluate modulo operator&quot;</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">pyUtils</span><span class="p">.</span><span class="nx">py_eval</span><span class="p">(</span><span class="s2">&quot;1 + 2&quot;</span><span class="p">);</span>
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">strictEqual</span><span class="p">(</span><span class="nx">result</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;should properly evaluate sum&quot;</span><span class="p">);</span>
+    <span class="nx">result</span> <span class="o">=</span> <span class="nx">pyUtils</span><span class="p">.</span><span class="nx">py_eval</span><span class="p">(</span><span class="s2">&quot;42 % 5&quot;</span><span class="p">);</span>
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">strictEqual</span><span class="p">(</span><span class="nx">result</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;should properly evaluate modulo operator&quot;</span><span class="p">);</span>
 <span class="p">});</span>
 </pre></div>
 </div>
@@ -2274,14 +2274,14 @@ the following:</p>
 <li><p>create a new file <em>my_addon/static/tests/utils_tests.js</em>. This file contains the basic code to
 add a QUnit module <em>my_addon &gt; utils</em>.</p>
 <blockquote>
-<div><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">odoo</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s1">&#39;my_addon.utils_tests&#39;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">require</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<div><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">odoo</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="s1">&#39;my_addon.utils_tests&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">require</span><span class="p">)</span> <span class="p">{</span>
 <span class="s2">&quot;use strict&quot;</span><span class="p">;</span>
 
-<span class="kd">var</span><span class="w"> </span><span class="nx">utils</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;my_addon.utils&#39;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">utils</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;my_addon.utils&#39;</span><span class="p">);</span>
 
-<span class="nx">QUnit</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">&#39;my_addon&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{},</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="nx">QUnit</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">&#39;my_addon&#39;</span><span class="p">,</span> <span class="p">{},</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
 
-<span class="w">    </span><span class="nx">QUnit</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">&#39;utils&#39;</span><span class="p">);</span>
+    <span class="nx">QUnit</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">&#39;utils&#39;</span><span class="p">);</span>
 
 <span class="p">});</span>
 <span class="p">});</span>
@@ -2293,11 +2293,11 @@ add a QUnit module <em>my_addon &gt; utils</em>.</p>
 <blockquote>
 <div><div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
 <span class="nt">&lt;odoo&gt;</span>
-<span class="w">    </span><span class="nt">&lt;template</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;qunit_suite_tests&quot;</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;my addon tests&quot;</span><span class="w"> </span><span class="na">inherit_id=</span><span class="s">&quot;web.qunit_suite_tests&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;xpath</span><span class="w"> </span><span class="na">expr=</span><span class="s">&quot;//script[last()]&quot;</span><span class="w"> </span><span class="na">position=</span><span class="s">&quot;after&quot;</span><span class="nt">&gt;</span>
-<span class="w">            </span><span class="nt">&lt;script</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="w"> </span><span class="na">src=</span><span class="s">&quot;/my_addon/static/tests/utils_tests.js&quot;</span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/xpath&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/template&gt;</span>
+    <span class="nt">&lt;template</span> <span class="na">id=</span><span class="s">&quot;qunit_suite_tests&quot;</span> <span class="na">name=</span><span class="s">&quot;my addon tests&quot;</span> <span class="na">inherit_id=</span><span class="s">&quot;web.qunit_suite_tests&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;xpath</span> <span class="na">expr=</span><span class="s">&quot;//script[last()]&quot;</span> <span class="na">position=</span><span class="s">&quot;after&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;/my_addon/static/tests/utils_tests.js&quot;</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;/xpath&gt;</span>
+    <span class="nt">&lt;/template&gt;</span>
 <span class="nt">&lt;/odoo&gt;</span>
 </pre></div>
 </div>
@@ -2307,11 +2307,11 @@ add a QUnit module <em>my_addon &gt; utils</em>.</p>
 make sure the new test file is loaded)</p></li>
 <li><p>Add a test case after the definition of the <em>utils</em> sub test suite:</p>
 <blockquote>
-<div><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">QUnit</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s2">&quot;some test case that we want to test&quot;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">assert</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">assert</span><span class="p">.</span><span class="nx">expect</span><span class="p">(</span><span class="mf">1</span><span class="p">);</span>
+<div><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">QUnit</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s2">&quot;some test case that we want to test&quot;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">assert</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">expect</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
 
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">utils</span><span class="p">.</span><span class="nx">myFunction</span><span class="p">(</span><span class="nx">someArgument</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">assert</span><span class="p">.</span><span class="nx">strictEqual</span><span class="p">(</span><span class="nx">result</span><span class="p">,</span><span class="w"> </span><span class="nx">expectedResult</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">utils</span><span class="p">.</span><span class="nx">myFunction</span><span class="p">(</span><span class="nx">someArgument</span><span class="p">);</span>
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">strictEqual</span><span class="p">(</span><span class="nx">result</span><span class="p">,</span> <span class="nx">expectedResult</span><span class="p">);</span>
 <span class="p">});</span>
 </pre></div>
 </div>
@@ -2345,24 +2345,24 @@ a widget/jQuery/HtmlElement and a selector, then checks if the target contains
 exactly one match for the css selector.</p></li>
 </ul>
 <p>For example, with these helpers, here is what a simple form test could look like:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">QUnit</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s1">&#39;simple group rendering&#39;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">assert</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">assert</span><span class="p">.</span><span class="nx">expect</span><span class="p">(</span><span class="mf">1</span><span class="p">);</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">QUnit</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s1">&#39;simple group rendering&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">assert</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">expect</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
 
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">form</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">testUtils</span><span class="p">.</span><span class="nx">createView</span><span class="p">({</span>
-<span class="w">        </span><span class="nx">View</span><span class="o">:</span><span class="w"> </span><span class="nx">FormView</span><span class="p">,</span>
-<span class="w">        </span><span class="nx">model</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;partner&#39;</span><span class="p">,</span>
-<span class="w">        </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">data</span><span class="p">,</span>
-<span class="w">        </span><span class="nx">arch</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&lt;form string=&quot;Partners&quot;&gt;&#39;</span><span class="w"> </span><span class="o">+</span>
-<span class="w">                </span><span class="s1">&#39;&lt;group&gt;&#39;</span><span class="w"> </span><span class="o">+</span>
-<span class="w">                    </span><span class="s1">&#39;&lt;field name=&quot;foo&quot;/&gt;&#39;</span><span class="w"> </span><span class="o">+</span>
-<span class="w">                </span><span class="s1">&#39;&lt;/group&gt;&#39;</span><span class="w"> </span><span class="o">+</span>
-<span class="w">            </span><span class="s1">&#39;&lt;/form&gt;&#39;</span><span class="p">,</span>
-<span class="w">        </span><span class="nx">res_id</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span>
-<span class="w">    </span><span class="p">});</span>
+    <span class="kd">var</span> <span class="nx">form</span> <span class="o">=</span> <span class="nx">testUtils</span><span class="p">.</span><span class="nx">createView</span><span class="p">({</span>
+        <span class="nx">View</span><span class="o">:</span> <span class="nx">FormView</span><span class="p">,</span>
+        <span class="nx">model</span><span class="o">:</span> <span class="s1">&#39;partner&#39;</span><span class="p">,</span>
+        <span class="nx">data</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">data</span><span class="p">,</span>
+        <span class="nx">arch</span><span class="o">:</span> <span class="s1">&#39;&lt;form string=&quot;Partners&quot;&gt;&#39;</span> <span class="o">+</span>
+                <span class="s1">&#39;&lt;group&gt;&#39;</span> <span class="o">+</span>
+                    <span class="s1">&#39;&lt;field name=&quot;foo&quot;/&gt;&#39;</span> <span class="o">+</span>
+                <span class="s1">&#39;&lt;/group&gt;&#39;</span> <span class="o">+</span>
+            <span class="s1">&#39;&lt;/form&gt;&#39;</span><span class="p">,</span>
+        <span class="nx">res_id</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="p">});</span>
 
-<span class="w">    </span><span class="nx">assert</span><span class="p">.</span><span class="nx">containsOnce</span><span class="p">(</span><span class="nx">form</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;table.o_inner_group&#39;</span><span class="p">);</span>
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">containsOnce</span><span class="p">(</span><span class="nx">form</span><span class="p">,</span> <span class="s1">&#39;table.o_inner_group&#39;</span><span class="p">);</span>
 
-<span class="w">    </span><span class="nx">form</span><span class="p">.</span><span class="nx">destroy</span><span class="p">();</span>
+    <span class="nx">form</span><span class="p">.</span><span class="nx">destroy</span><span class="p">();</span>
 <span class="p">});</span>
 </pre></div>
 </div>
@@ -2455,12 +2455,12 @@ See also</p><ul class="simple">
 <ol class="arabic">
 <li><p>Setup your tour by registering it.</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="cm">/** @odoo-module **/</span>
-<span class="k">import</span><span class="w"> </span><span class="nx">tour</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;web_tour.tour&#39;</span><span class="p">;</span>
-<span class="nx">tour</span><span class="p">.</span><span class="nx">register</span><span class="p">(</span><span class="s1">&#39;rental_product_configurator_tour&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;/web&#39;</span><span class="p">,</span><span class="w">  </span><span class="c1">// Here, you can specify any other starting url</span>
-<span class="w">    </span><span class="nx">test</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
-<span class="p">},</span><span class="w"> </span><span class="p">[</span>
-<span class="w">    </span><span class="c1">// Your sequence of steps</span>
+<span class="kr">import</span> <span class="nx">tour</span> <span class="nx">from</span> <span class="s1">&#39;web_tour.tour&#39;</span><span class="p">;</span>
+<span class="nx">tour</span><span class="p">.</span><span class="nx">register</span><span class="p">(</span><span class="s1">&#39;rental_product_configurator_tour&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="nx">url</span><span class="o">:</span> <span class="s1">&#39;/web&#39;</span><span class="p">,</span>  <span class="c1">// Here, you can specify any other starting url</span>
+    <span class="nx">test</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+<span class="p">},</span> <span class="p">[</span>
+    <span class="c1">// Your sequence of steps</span>
 <span class="p">]);</span>
 </pre></div>
 </div>
@@ -2476,10 +2476,10 @@ Example</p><div class="highlight-javascript notranslate"><div class="highlight">
 <span class="nx">tour</span><span class="p">.</span><span class="nx">stepUtils</span><span class="p">.</span><span class="nx">showAppsMenuItem</span><span class="p">(),</span>
 <span class="c1">// Second step</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="nx">trigger</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;.o_app[data-menu-xmlid=&quot;your_module.maybe_your_module_menu_root&quot;]&#39;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">edition</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;community&#39;</span><span class="w">  </span><span class="c1">// Optional</span>
-<span class="p">},</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="c1">// Third step</span>
+    <span class="nx">trigger</span><span class="o">:</span> <span class="s1">&#39;.o_app[data-menu-xmlid=&quot;your_module.maybe_your_module_menu_root&quot;]&#39;</span><span class="p">,</span>
+    <span class="nx">edition</span><span class="o">:</span> <span class="s1">&#39;community&#39;</span>  <span class="c1">// Optional</span>
+<span class="p">},</span> <span class="p">{</span>
+    <span class="c1">// Third step</span>
 <span class="p">},</span>
 </pre></div>
 </div>
@@ -2487,8 +2487,8 @@ Example</p><div class="highlight-javascript notranslate"><div class="highlight">
 <div class="alert alert-success">
 <p class="alert-title">
 Example</p><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="w">    </span><span class="nx">trigger</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;.js_product:has(strong:contains(Chair floor protection)) .js_add&#39;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">extra_trigger</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;.oe_advanced_configurator_modal&#39;</span><span class="p">,</span><span class="w">  </span><span class="c1">// This ensure we are in the wizard</span>
+    <span class="nx">trigger</span><span class="o">:</span> <span class="s1">&#39;.js_product:has(strong:contains(Chair floor protection)) .js_add&#39;</span><span class="p">,</span>
+    <span class="nx">extra_trigger</span><span class="o">:</span> <span class="s1">&#39;.oe_advanced_configurator_modal&#39;</span><span class="p">,</span>  <span class="c1">// This ensure we are in the wizard</span>
 <span class="p">},</span>
 </pre></div>
 </div>
@@ -2496,9 +2496,9 @@ Example</p><div class="highlight-javascript notranslate"><div class="highlight">
 <div class="alert alert-success">
 <p class="alert-title">
 Example</p><div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="w">    </span><span class="nx">trigger</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;a:contains(&quot;Add a product&quot;)&#39;</span><span class="p">,</span>
-<span class="w">    </span><span class="c1">// Extra-trigger to make sure a line is added before trying to add another one</span>
-<span class="w">    </span><span class="nx">extra_trigger</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;.o_field_many2one[name=&quot;product_template_id&quot;] .o_external_button&#39;</span><span class="p">,</span>
+    <span class="nx">trigger</span><span class="o">:</span> <span class="s1">&#39;a:contains(&quot;Add a product&quot;)&#39;</span><span class="p">,</span>
+    <span class="c1">// Extra-trigger to make sure a line is added before trying to add another one</span>
+    <span class="nx">extra_trigger</span><span class="o">:</span> <span class="s1">&#39;.o_field_many2one[name=&quot;product_template_id&quot;] .o_external_button&#39;</span><span class="p">,</span>
 <span class="p">},</span>
 </pre></div>
 </div>

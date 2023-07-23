@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/tutorials/web.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/tutorials/web.html" />
     
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" /> 
@@ -2010,7 +2010,7 @@ Warning</p><p>This guide assumes knowledge of:</p>
 configuration and letting us test the web framework.</p>
 <p>The example module is available online and can be downloaded using the
 following command:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>clone<span class="w"> </span>http://github.com/odoo/petstore
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git clone http://github.com/odoo/petstore
 </pre></div>
 </div>
 <p>This will create a <code class="o_code docutils literal notranslate"><span class="pre">petstore</span></code> folder wherever you executed the command.
@@ -2056,19 +2056,19 @@ sub-folders are conventional and not strictly necessary.</p>
 <dt><code class="o_code docutils literal notranslate"><span class="pre">oepetstore/static/js/petstore.js</span></code></dt><dd><p>The most important (and interesting) part, contains the logic of the
 application (or at least its web-browser side) as javascript. It should
 currently look like:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">odoo</span><span class="p">.</span><span class="nx">oepetstore</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="nx">instance</span><span class="p">,</span><span class="w"> </span><span class="nx">local</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">_t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">_t</span><span class="p">,</span>
-<span class="w">        </span><span class="nx">_lt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">_lt</span><span class="p">;</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">QWeb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">qweb</span><span class="p">;</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">odoo</span><span class="p">.</span><span class="nx">oepetstore</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">instance</span><span class="p">,</span> <span class="nx">local</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">_t</span> <span class="o">=</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">_t</span><span class="p">,</span>
+        <span class="nx">_lt</span> <span class="o">=</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">_lt</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">QWeb</span> <span class="o">=</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">qweb</span><span class="p">;</span>
 
-<span class="w">    </span><span class="nx">local</span><span class="p">.</span><span class="nx">HomePage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
-<span class="w">        </span><span class="nx">start</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;pet store home page loaded&quot;</span><span class="p">);</span>
-<span class="w">        </span><span class="p">},</span>
-<span class="w">    </span><span class="p">});</span>
+    <span class="nx">local</span><span class="p">.</span><span class="nx">HomePage</span> <span class="o">=</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+        <span class="nx">start</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;pet store home page loaded&quot;</span><span class="p">);</span>
+        <span class="p">},</span>
+    <span class="p">});</span>
 
-<span class="w">    </span><span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">client_actions</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span>
-<span class="w">        </span><span class="s1">&#39;petstore.homepage&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;instance.oepetstore.HomePage&#39;</span><span class="p">);</span>
+    <span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">client_actions</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span>
+        <span class="s1">&#39;petstore.homepage&#39;</span><span class="p">,</span> <span class="s1">&#39;instance.oepetstore.HomePage&#39;</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -2103,8 +2103,8 @@ naming conflicts.</p>
 <p>The Odoo framework uses one such pattern to define modules within web addons,
 in order to both namespace code and correctly order its loading.</p>
 <p><code class="o_code docutils literal notranslate"><span class="pre">oepetstore/static/js/petstore.js</span></code> contains a module declaration:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">odoo</span><span class="p">.</span><span class="nx">oepetstore</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="nx">instance</span><span class="p">,</span><span class="w"> </span><span class="nx">local</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">local</span><span class="p">.</span><span class="nx">xxx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">...;</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">odoo</span><span class="p">.</span><span class="nx">oepetstore</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">instance</span><span class="p">,</span> <span class="nx">local</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">local</span><span class="p">.</span><span class="nx">xxx</span> <span class="o">=</span> <span class="p">...;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -2133,10 +2133,10 @@ equivalent (if lower-level and more verbose) mechanisms.</p>
 system based on John Resig’s <a class="reference external" href="http://ejohn.org/blog/simple-javascript-inheritance/">Simple JavaScript Inheritance</a>.</p>
 <p>New classes are defined by calling the <code class="xref js js-func o_code docutils literal notranslate"><span class="pre">extend()</span></code>
 method of <code class="xref js js-class o_code docutils literal notranslate"><span class="pre">odoo.web.Class()</span></code>:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span><span class="w"> </span><span class="nx">MyClass</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
-<span class="w">    </span><span class="nx">say_hello</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;hello&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="p">},</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">MyClass</span> <span class="o">=</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="nx">say_hello</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;hello&quot;</span><span class="p">);</span>
+    <span class="p">},</span>
 <span class="p">});</span>
 </pre></div>
 </div>
@@ -2144,20 +2144,20 @@ method of <code class="xref js js-class o_code docutils literal notranslate"><sp
 the new class’s content (methods and static attributes). In this case, it will
 only have a <code class="o_code docutils literal notranslate"><span class="pre">say_hello</span></code> method which takes no parameters.</p>
 <p>Classes are instantiated using the <code class="o_code docutils literal notranslate"><span class="pre">new</span></code> operator:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span><span class="w"> </span><span class="nx">my_object</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">MyClass</span><span class="p">();</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">my_object</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MyClass</span><span class="p">();</span>
 <span class="nx">my_object</span><span class="p">.</span><span class="nx">say_hello</span><span class="p">();</span>
 <span class="c1">// print &quot;hello&quot; in the console</span>
 </pre></div>
 </div>
 <p>And attributes of the instance can be accessed via <code class="o_code docutils literal notranslate"><span class="pre">this</span></code>:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span><span class="w"> </span><span class="nx">MyClass</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
-<span class="w">    </span><span class="nx">say_hello</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;hello&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
-<span class="w">    </span><span class="p">},</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">MyClass</span> <span class="o">=</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="nx">say_hello</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;hello&quot;</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+    <span class="p">},</span>
 <span class="p">});</span>
 
-<span class="kd">var</span><span class="w"> </span><span class="nx">my_object</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">MyClass</span><span class="p">();</span>
-<span class="nx">my_object</span><span class="p">.</span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Bob&quot;</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">my_object</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MyClass</span><span class="p">();</span>
+<span class="nx">my_object</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="s2">&quot;Bob&quot;</span><span class="p">;</span>
 <span class="nx">my_object</span><span class="p">.</span><span class="nx">say_hello</span><span class="p">();</span>
 <span class="c1">// print &quot;hello Bob&quot; in the console</span>
 </pre></div>
@@ -2165,16 +2165,16 @@ only have a <code class="o_code docutils literal notranslate"><span class="pre">
 <p>Classes can provide an initializer to perform the initial setup of the
 instance, by defining an <code class="o_code docutils literal notranslate"><span class="pre">init()</span></code> method. The initializer receives the
 parameters passed when using the <code class="o_code docutils literal notranslate"><span class="pre">new</span></code> operator:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span><span class="w"> </span><span class="nx">MyClass</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
-<span class="w">    </span><span class="nx">init</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">name</span><span class="p">;</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nx">say_hello</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;hello&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
-<span class="w">    </span><span class="p">},</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">MyClass</span> <span class="o">=</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="nx">init</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+    <span class="p">},</span>
+    <span class="nx">say_hello</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;hello&quot;</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+    <span class="p">},</span>
 <span class="p">});</span>
 
-<span class="kd">var</span><span class="w"> </span><span class="nx">my_object</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">MyClass</span><span class="p">(</span><span class="s2">&quot;Bob&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">my_object</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MyClass</span><span class="p">(</span><span class="s2">&quot;Bob&quot;</span><span class="p">);</span>
 <span class="nx">my_object</span><span class="p">.</span><span class="nx">say_hello</span><span class="p">();</span>
 <span class="c1">// print &quot;hello Bob&quot; in the console</span>
 </pre></div>
@@ -2182,27 +2182,27 @@ parameters passed when using the <code class="o_code docutils literal notranslat
 <p>It is also possible to create subclasses from existing (used-defined) classes
 by calling <code class="xref js js-func o_code docutils literal notranslate"><span class="pre">extend()</span></code> on the parent class, as is done
 to subclass <code class="xref js js-class o_code docutils literal notranslate"><span class="pre">Class()</span></code>:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span><span class="w"> </span><span class="nx">MySpanishClass</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">MyClass</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
-<span class="w">    </span><span class="nx">say_hello</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;hola&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
-<span class="w">    </span><span class="p">},</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">MySpanishClass</span> <span class="o">=</span> <span class="nx">MyClass</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="nx">say_hello</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;hola&quot;</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+    <span class="p">},</span>
 <span class="p">});</span>
 
-<span class="kd">var</span><span class="w"> </span><span class="nx">my_object</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">MySpanishClass</span><span class="p">(</span><span class="s2">&quot;Bob&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">my_object</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MySpanishClass</span><span class="p">(</span><span class="s2">&quot;Bob&quot;</span><span class="p">);</span>
 <span class="nx">my_object</span><span class="p">.</span><span class="nx">say_hello</span><span class="p">();</span>
 <span class="c1">// print &quot;hola Bob&quot; in the console</span>
 </pre></div>
 </div>
 <p>When overriding a method using inheritance, you can use <code class="o_code docutils literal notranslate"><span class="pre">this._super()</span></code> to
 call the original method:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span><span class="w"> </span><span class="nx">MySpanishClass</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">MyClass</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
-<span class="w">    </span><span class="nx">say_hello</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">_super</span><span class="p">();</span>
-<span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;translation in Spanish: hola&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
-<span class="w">    </span><span class="p">},</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">MySpanishClass</span> <span class="o">=</span> <span class="nx">MyClass</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="nx">say_hello</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">_super</span><span class="p">();</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;translation in Spanish: hola&quot;</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+    <span class="p">},</span>
 <span class="p">});</span>
 
-<span class="kd">var</span><span class="w"> </span><span class="nx">my_object</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">MySpanishClass</span><span class="p">(</span><span class="s2">&quot;Bob&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">my_object</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MySpanishClass</span><span class="p">(</span><span class="s2">&quot;Bob&quot;</span><span class="p">);</span>
 <span class="nx">my_object</span><span class="p">.</span><span class="nx">say_hello</span><span class="p">();</span>
 <span class="c1">// print &quot;hello Bob \n translation in Spanish: hola Bob&quot; in the console</span>
 </pre></div>
@@ -2215,19 +2215,19 @@ during the <em>synchronous</em> part of a method call, for use in asynchronous
 handlers (after network calls or in <code class="o_code docutils literal notranslate"><span class="pre">setTimeout</span></code> callbacks) a reference
 to its value should be retained, it should not be accessed via <code class="o_code docutils literal notranslate"><span class="pre">this</span></code>:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// broken, will generate an error</span>
-<span class="nx">say_hello</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">_super</span><span class="p">();</span>
-<span class="w">    </span><span class="p">}.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">),</span><span class="w"> </span><span class="mf">0</span><span class="p">);</span>
+<span class="nx">say_hello</span><span class="o">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">_super</span><span class="p">();</span>
+    <span class="p">}.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">),</span> <span class="mi">0</span><span class="p">);</span>
 <span class="p">}</span>
 
 <span class="c1">// correct</span>
-<span class="nx">say_hello</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="c1">// don&#39;t forget .bind()</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">_super</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">_super</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">_super</span><span class="p">();</span>
-<span class="w">    </span><span class="p">}.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">),</span><span class="w"> </span><span class="mf">0</span><span class="p">);</span>
+<span class="nx">say_hello</span><span class="o">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// don&#39;t forget .bind()</span>
+    <span class="kd">var</span> <span class="nx">_super</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">_super</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+    <span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="nx">_super</span><span class="p">();</span>
+    <span class="p">}.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">),</span> <span class="mi">0</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -2246,10 +2246,10 @@ information for the user.</p>
 </section><section id="your-first-widget">
 <h3>Your First Widget<a class="headerlink" href="#your-first-widget" title="Permalink to this headline">¶</a></h3>
 <p>The initial demonstration module already provides a basic widget:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">HomePage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
-<span class="w">    </span><span class="nx">start</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;pet store home page loaded&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="p">},</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">HomePage</span> <span class="o">=</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="nx">start</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;pet store home page loaded&quot;</span><span class="p">);</span>
+    <span class="p">},</span>
 <span class="p">});</span>
 </pre></div>
 </div>
@@ -2258,7 +2258,7 @@ information for the user.</p>
 — does little for now.</p>
 <p>This line at the end of the file:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">client_actions</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span>
-<span class="w">    </span><span class="s1">&#39;petstore.homepage&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;instance.oepetstore.HomePage&#39;</span><span class="p">);</span>
+    <span class="s1">&#39;petstore.homepage&#39;</span><span class="p">,</span> <span class="s1">&#39;instance.oepetstore.HomePage&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>registers our basic widget as a client action. Client actions will be
@@ -2290,10 +2290,10 @@ empty <code class="o_code docutils literal notranslate"><span class="pre">&lt;di
 without specific styles giving it a size) which is why nothing is displayed
 on the page when <code class="o_code docutils literal notranslate"><span class="pre">HomePage</span></code> is launched.</p>
 <p>Let’s add some content to the widget’s root element, using jQuery:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">HomePage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
-<span class="w">    </span><span class="nx">start</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">$el</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">&quot;&lt;div&gt;Hello dear Odoo user!&lt;/div&gt;&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="p">},</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">HomePage</span> <span class="o">=</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="nx">start</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">$el</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">&quot;&lt;div&gt;Hello dear Odoo user!&lt;/div&gt;&quot;</span><span class="p">);</span>
+    <span class="p">},</span>
 <span class="p">});</span>
 </pre></div>
 </div>
@@ -2306,21 +2306,21 @@ the page. There is no need to restart the Odoo server.</p>
 </div>
 <p>The <code class="o_code docutils literal notranslate"><span class="pre">HomePage</span></code> widget is used by Odoo Web and managed automatically.
 To learn how to use a widget “from scratch” let’s create a new one:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">GreetingsWidget</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
-<span class="w">    </span><span class="nx">start</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">$el</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">&quot;&lt;div&gt;We are so happy to see you again in this menu!&lt;/div&gt;&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="p">},</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">GreetingsWidget</span> <span class="o">=</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="nx">start</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">$el</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">&quot;&lt;div&gt;We are so happy to see you again in this menu!&lt;/div&gt;&quot;</span><span class="p">);</span>
+    <span class="p">},</span>
 <span class="p">});</span>
 </pre></div>
 </div>
 <p>We can now add our <code class="o_code docutils literal notranslate"><span class="pre">GreetingsWidget</span></code> to the <code class="o_code docutils literal notranslate"><span class="pre">HomePage</span></code> by using the
 <code class="o_code docutils literal notranslate"><span class="pre">GreetingsWidget</span></code>’s <code class="xref js js-func o_code docutils literal notranslate"><span class="pre">appendTo()</span></code> method:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">HomePage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
-<span class="w">    </span><span class="nx">start</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">$el</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">&quot;&lt;div&gt;Hello dear Odoo user!&lt;/div&gt;&quot;</span><span class="p">);</span>
-<span class="w">        </span><span class="kd">var</span><span class="w"> </span><span class="nx">greeting</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">local</span><span class="p">.</span><span class="nx">GreetingsWidget</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">greeting</span><span class="p">.</span><span class="nx">appendTo</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">$el</span><span class="p">);</span>
-<span class="w">    </span><span class="p">},</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">HomePage</span> <span class="o">=</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="nx">start</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">$el</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">&quot;&lt;div&gt;Hello dear Odoo user!&lt;/div&gt;&quot;</span><span class="p">);</span>
+        <span class="kd">var</span> <span class="nx">greeting</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">local</span><span class="p">.</span><span class="nx">GreetingsWidget</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+        <span class="k">return</span> <span class="nx">greeting</span><span class="p">.</span><span class="nx">appendTo</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">$el</span><span class="p">);</span>
+    <span class="p">},</span>
 <span class="p">});</span>
 </pre></div>
 </div>
@@ -2337,13 +2337,13 @@ to <code class="xref js js-func o_code docutils literal notranslate"><span class
 <p>To see what happens under the displayed interface, we will use the browser’s
 DOM Explorer. But first let’s alter our widgets slightly so we can more easily
 find where they are, by <code class="xref js js-attr o_code docutils literal notranslate"><span class="pre">adding</span> <span class="pre">a</span> <span class="pre">class</span> <span class="pre">to</span> <span class="pre">their</span> <span class="pre">root</span> <span class="pre">elements</span></code>:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">HomePage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
-<span class="w">    </span><span class="nx">className</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;oe_petstore_homepage&#39;</span><span class="p">,</span>
-<span class="w">    </span><span class="p">...</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">HomePage</span> <span class="o">=</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="nx">className</span><span class="o">:</span> <span class="s1">&#39;oe_petstore_homepage&#39;</span><span class="p">,</span>
+    <span class="p">...</span>
 <span class="p">});</span>
-<span class="nx">local</span><span class="p">.</span><span class="nx">GreetingsWidget</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
-<span class="w">    </span><span class="nx">className</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;oe_petstore_greetings&#39;</span><span class="p">,</span>
-<span class="w">    </span><span class="p">...</span>
+<span class="nx">local</span><span class="p">.</span><span class="nx">GreetingsWidget</span> <span class="o">=</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="nx">className</span><span class="o">:</span> <span class="s1">&#39;oe_petstore_greetings&#39;</span><span class="p">,</span>
+    <span class="p">...</span>
 <span class="p">});</span>
 </pre></div>
 </div>
@@ -2367,7 +2367,7 @@ instance, since we appended</p>
 </section><section id="widget-parents-and-children">
 <h3>Widget Parents and Children<a class="headerlink" href="#widget-parents-and-children" title="Permalink to this headline">¶</a></h3>
 <p>In the previous part, we instantiated a widget using this syntax:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="ow">new</span><span class="w"> </span><span class="nx">local</span><span class="p">.</span><span class="nx">GreetingsWidget</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="k">new</span> <span class="nx">local</span><span class="p">.</span><span class="nx">GreetingsWidget</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>The first argument is <code class="o_code docutils literal notranslate"><span class="pre">this</span></code>, which in that case was a <code class="o_code docutils literal notranslate"><span class="pre">HomePage</span></code>
@@ -2381,23 +2381,23 @@ of another widget, and exist on behalf of it. We call the container the
 to know who is its parent and who are its children.</p>
 <dl>
 <dt><code class="xref js js-func o_code docutils literal notranslate"><span class="pre">getParent()</span></code></dt><dd><p>can be used to get the parent of a widget:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">GreetingsWidget</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
-<span class="w">    </span><span class="nx">start</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">getParent</span><span class="p">().</span><span class="nx">$el</span><span class="w"> </span><span class="p">);</span>
-<span class="w">        </span><span class="c1">// will print &quot;div.oe_petstore_homepage&quot; in the console</span>
-<span class="w">    </span><span class="p">},</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">GreetingsWidget</span> <span class="o">=</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="nx">start</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">getParent</span><span class="p">().</span><span class="nx">$el</span> <span class="p">);</span>
+        <span class="c1">// will print &quot;div.oe_petstore_homepage&quot; in the console</span>
+    <span class="p">},</span>
 <span class="p">});</span>
 </pre></div>
 </div>
 </dd>
 <dt><code class="xref js js-func o_code docutils literal notranslate"><span class="pre">getChildren()</span></code></dt><dd><p>can be used to get a list of its children:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">HomePage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
-<span class="w">    </span><span class="nx">start</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="kd">var</span><span class="w"> </span><span class="nx">greeting</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">local</span><span class="p">.</span><span class="nx">GreetingsWidget</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
-<span class="w">        </span><span class="nx">greeting</span><span class="p">.</span><span class="nx">appendTo</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">$el</span><span class="p">);</span>
-<span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">getChildren</span><span class="p">()[</span><span class="mf">0</span><span class="p">].</span><span class="nx">$el</span><span class="p">);</span>
-<span class="w">        </span><span class="c1">// will print &quot;div.oe_petstore_greetings&quot; in the console</span>
-<span class="w">    </span><span class="p">},</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">HomePage</span> <span class="o">=</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="nx">start</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">greeting</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">local</span><span class="p">.</span><span class="nx">GreetingsWidget</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+        <span class="nx">greeting</span><span class="p">.</span><span class="nx">appendTo</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">$el</span><span class="p">);</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">getChildren</span><span class="p">()[</span><span class="mi">0</span><span class="p">].</span><span class="nx">$el</span><span class="p">);</span>
+        <span class="c1">// will print &quot;div.oe_petstore_greetings&quot; in the console</span>
+    <span class="p">},</span>
 <span class="p">});</span>
 </pre></div>
 </div>
@@ -2406,17 +2406,17 @@ to know who is its parent and who are its children.</p>
 <p>When overriding the <code class="xref js js-func o_code docutils literal notranslate"><span class="pre">init()</span></code> method of a widget it is
 <em>of the utmost importance</em> to pass the parent to the <code class="o_code docutils literal notranslate"><span class="pre">this._super()</span></code> call,
 otherwise the relation will not be set up correctly:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">GreetingsWidget</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
-<span class="w">    </span><span class="nx">init</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="nx">parent</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">_super</span><span class="p">(</span><span class="nx">parent</span><span class="p">);</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">name</span><span class="p">;</span>
-<span class="w">    </span><span class="p">},</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">GreetingsWidget</span> <span class="o">=</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="nx">init</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">parent</span><span class="p">,</span> <span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">_super</span><span class="p">(</span><span class="nx">parent</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+    <span class="p">},</span>
 <span class="p">});</span>
 </pre></div>
 </div>
 <p>Finally, if a widget does not have a parent (e.g. because it’s the root
 widget of the application), <code class="o_code docutils literal notranslate"><span class="pre">null</span></code> can be provided as parent:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="ow">new</span><span class="w"> </span><span class="nx">local</span><span class="p">.</span><span class="nx">GreetingsWidget</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="k">new</span> <span class="nx">local</span><span class="p">.</span><span class="nx">GreetingsWidget</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
 </pre></div>
 </div>
 </section><section id="destroying-widgets">
@@ -2476,20 +2476,20 @@ characteristic of Odoo, and losing it was considered unacceptable.</p>
 <p>First let’s define a simple QWeb template in the almost-empty
 <code class="o_code docutils literal notranslate"><span class="pre">oepetstore/static/src/xml/petstore.xml</span></code> file:</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
-<span class="nt">&lt;templates</span><span class="w"> </span><span class="na">xml:space=</span><span class="s">&quot;preserve&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-name=</span><span class="s">&quot;HomePageTemplate&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">style=</span><span class="s">&quot;background-color: red;&quot;</span><span class="nt">&gt;</span>This<span class="w"> </span>is<span class="w"> </span>some<span class="w"> </span>simple<span class="w"> </span>HTML<span class="nt">&lt;/div&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/t&gt;</span>
+<span class="nt">&lt;templates</span> <span class="na">xml:space=</span><span class="s">&quot;preserve&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-name=</span><span class="s">&quot;HomePageTemplate&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">&quot;background-color: red;&quot;</span><span class="nt">&gt;</span>This is some simple HTML<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/t&gt;</span>
 <span class="nt">&lt;/templates&gt;</span>
 </pre></div>
 </div>
 <p>Now we can use this template inside of the <code class="o_code docutils literal notranslate"><span class="pre">HomePage</span></code> widget. Using the
 <code class="o_code docutils literal notranslate"><span class="pre">QWeb</span></code> loader variable defined at the top of the page, we can call to the
 template defined in the XML file:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">HomePage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
-<span class="w">    </span><span class="nx">start</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">$el</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="nx">QWeb</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="s2">&quot;HomePageTemplate&quot;</span><span class="p">));</span>
-<span class="w">    </span><span class="p">},</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">HomePage</span> <span class="o">=</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="nx">start</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">$el</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="nx">QWeb</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="s2">&quot;HomePageTemplate&quot;</span><span class="p">));</span>
+    <span class="p">},</span>
 <span class="p">});</span>
 </pre></div>
 </div>
@@ -2498,11 +2498,11 @@ and returns the result.</p>
 <p>However, because <code class="xref js js-class o_code docutils literal notranslate"><span class="pre">Widget()</span></code> has special integration for QWeb
 the template can be set directly on the widget via its
 <code class="xref js js-attr o_code docutils literal notranslate"><span class="pre">template</span></code> attribute:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">HomePage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
-<span class="w">    </span><span class="nx">template</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;HomePageTemplate&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">start</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="p">...</span>
-<span class="w">    </span><span class="p">},</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">HomePage</span> <span class="o">=</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="nx">template</span><span class="o">:</span> <span class="s2">&quot;HomePageTemplate&quot;</span><span class="p">,</span>
+    <span class="nx">start</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="p">...</span>
+    <span class="p">},</span>
 <span class="p">});</span>
 </pre></div>
 </div>
@@ -2528,12 +2528,12 @@ root element will be used and the others will be ignored)</p>
 <p>QWeb templates can be given data and can contain basic display logic.</p>
 <p>For explicit calls to <code class="xref js js-func o_code docutils literal notranslate"><span class="pre">QWeb.render()</span></code>, the template data is passed as
 second parameter:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">QWeb</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="s2">&quot;HomePageTemplate&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Klaus&quot;</span><span class="p">});</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">QWeb</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="s2">&quot;HomePageTemplate&quot;</span><span class="p">,</span> <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;Klaus&quot;</span><span class="p">});</span>
 </pre></div>
 </div>
 <p>with the template modified to:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-name=</span><span class="s">&quot;HomePageTemplate&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;div&gt;</span>Hello<span class="w"> </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-esc=</span><span class="s">&quot;name&quot;</span><span class="nt">/&gt;&lt;/div&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span> <span class="na">t-name=</span><span class="s">&quot;HomePageTemplate&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Hello <span class="nt">&lt;t</span> <span class="na">t-esc=</span><span class="s">&quot;name&quot;</span><span class="nt">/&gt;&lt;/div&gt;</span>
 <span class="nt">&lt;/t&gt;</span>
 </pre></div>
 </div>
@@ -2546,19 +2546,19 @@ provide additional data to the template. The template will be given a single
 <code class="o_code docutils literal notranslate"><span class="pre">widget</span></code> context variable, referencing the widget being rendered right
 before <code class="xref js js-func o_code docutils literal notranslate"><span class="pre">start()</span></code> is called (the widget’s state will
 essentially be that set up by <code class="xref js js-func o_code docutils literal notranslate"><span class="pre">init()</span></code>):</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-name=</span><span class="s">&quot;HomePageTemplate&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;div&gt;</span>Hello<span class="w"> </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-esc=</span><span class="s">&quot;widget.name&quot;</span><span class="nt">/&gt;&lt;/div&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span> <span class="na">t-name=</span><span class="s">&quot;HomePageTemplate&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Hello <span class="nt">&lt;t</span> <span class="na">t-esc=</span><span class="s">&quot;widget.name&quot;</span><span class="nt">/&gt;&lt;/div&gt;</span>
 <span class="nt">&lt;/t&gt;</span>
 </pre></div>
 </div>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">HomePage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
-<span class="w">    </span><span class="nx">template</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;HomePageTemplate&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">init</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="nx">parent</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">_super</span><span class="p">(</span><span class="nx">parent</span><span class="p">);</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Mordecai&quot;</span><span class="p">;</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nx">start</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="p">},</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">HomePage</span> <span class="o">=</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="nx">template</span><span class="o">:</span> <span class="s2">&quot;HomePageTemplate&quot;</span><span class="p">,</span>
+    <span class="nx">init</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">parent</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">_super</span><span class="p">(</span><span class="nx">parent</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="s2">&quot;Mordecai&quot;</span><span class="p">;</span>
+    <span class="p">},</span>
+    <span class="nx">start</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="p">},</span>
 <span class="p">});</span>
 </pre></div>
 </div>
@@ -2575,9 +2575,9 @@ QWeb directive is declared with XML attributes starting with <code class="o_code
 <p>The most basic directive is <code class="o_code docutils literal notranslate"><span class="pre">t-name</span></code>, used to declare new templates in
 a template file:</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;templates&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-name=</span><span class="s">&quot;HomePageTemplate&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;div&gt;</span>This<span class="w"> </span>is<span class="w"> </span>some<span class="w"> </span>simple<span class="w"> </span>HTML<span class="nt">&lt;/div&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/t&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-name=</span><span class="s">&quot;HomePageTemplate&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div&gt;</span>This is some simple HTML<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/t&gt;</span>
 <span class="nt">&lt;/templates&gt;</span>
 </pre></div>
 </div>
@@ -2587,18 +2587,18 @@ top-level of a template file.</p>
 </section><section id="escaping">
 <h4>Escaping<a class="headerlink" href="#escaping" title="Permalink to this headline">¶</a></h4>
 <p>The <code class="o_code docutils literal notranslate"><span class="pre">t-esc</span></code> directive can be used to output text:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div&gt;</span>Hello<span class="w"> </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-esc=</span><span class="s">&quot;name&quot;</span><span class="nt">/&gt;&lt;/div&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div&gt;</span>Hello <span class="nt">&lt;t</span> <span class="na">t-esc=</span><span class="s">&quot;name&quot;</span><span class="nt">/&gt;&lt;/div&gt;</span>
 </pre></div>
 </div>
 <p>It takes a Javascript expression which is evaluated, the result of the
 expression is then HTML-escaped and inserted in the document. Since it’s an
 expression it’s possible to provide just a variable name as above, or a more
 complex expression like a computation:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div&gt;&lt;t</span><span class="w"> </span><span class="na">t-esc=</span><span class="s">&quot;3+5&quot;</span><span class="nt">/&gt;&lt;/div&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div&gt;&lt;t</span> <span class="na">t-esc=</span><span class="s">&quot;3+5&quot;</span><span class="nt">/&gt;&lt;/div&gt;</span>
 </pre></div>
 </div>
 <p>or method calls:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div&gt;&lt;t</span><span class="w"> </span><span class="na">t-esc=</span><span class="s">&quot;name.toUpperCase()&quot;</span><span class="nt">/&gt;&lt;/div&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div&gt;&lt;t</span> <span class="na">t-esc=</span><span class="s">&quot;name.toUpperCase()&quot;</span><span class="nt">/&gt;&lt;/div&gt;</span>
 </pre></div>
 </div>
 </section><section id="outputting-html">
@@ -2606,7 +2606,7 @@ complex expression like a computation:</p>
 <p>To inject HTML in the page being rendered, use <code class="o_code docutils literal notranslate"><span class="pre">t-raw</span></code>. Like <code class="o_code docutils literal notranslate"><span class="pre">t-esc</span></code> it
 takes an arbitrary Javascript expression as parameter, but it does not
 perform an HTML-escape step.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div&gt;&lt;t</span><span class="w"> </span><span class="na">t-raw=</span><span class="s">&quot;name.link(user_account)&quot;</span><span class="nt">/&gt;&lt;/div&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div&gt;&lt;t</span> <span class="na">t-raw=</span><span class="s">&quot;name.link(user_account)&quot;</span><span class="nt">/&gt;&lt;/div&gt;</span>
 </pre></div>
 </div>
 <div class="alert alert-danger">
@@ -2621,12 +2621,12 @@ vulnerabilities</p>
 arbitrary expression, if the expression is falsy (<code class="o_code docutils literal notranslate"><span class="pre">false</span></code>, <code class="o_code docutils literal notranslate"><span class="pre">null</span></code>, <code class="o_code docutils literal notranslate"><span class="pre">0</span></code>
 or an empty string) the whole block is suppressed, otherwise it is displayed.</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-if=</span><span class="s">&quot;true == true&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span>true<span class="w"> </span>is<span class="w"> </span>true
-<span class="w">    </span><span class="nt">&lt;/t&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-if=</span><span class="s">&quot;true == false&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span>true<span class="w"> </span>is<span class="w"> </span>not<span class="w"> </span>true
-<span class="w">    </span><span class="nt">&lt;/t&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-if=</span><span class="s">&quot;true == true&quot;</span><span class="nt">&gt;</span>
+        true is true
+    <span class="nt">&lt;/t&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-if=</span><span class="s">&quot;true == false&quot;</span><span class="nt">&gt;</span>
+        true is not true
+    <span class="nt">&lt;/t&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
@@ -2642,11 +2642,11 @@ local variable if it’s a complex or expensive expression.</p>
 expression returning a list to iterate on <code class="o_code docutils literal notranslate"><span class="pre">t-as</span></code> takes a variable name to
 bind to each item during iteration.</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-foreach=</span><span class="s">&quot;names&quot;</span><span class="w"> </span><span class="na">t-as=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;div&gt;</span>
-<span class="w">            </span>Hello<span class="w"> </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-esc=</span><span class="s">&quot;name&quot;</span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/div&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/t&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-foreach=</span><span class="s">&quot;names&quot;</span> <span class="na">t-as=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div&gt;</span>
+            Hello <span class="nt">&lt;t</span> <span class="na">t-esc=</span><span class="s">&quot;name&quot;</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/t&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
@@ -2665,8 +2665,8 @@ name of the attribute to create (e.g. <code class="o_code docutils literal notra
 attribute’s value, it is most useful if all of the attribute’s value is
 computed:</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div&gt;</span>
-<span class="w">    </span>Input<span class="w"> </span>your<span class="w"> </span>name:
-<span class="w">    </span><span class="nt">&lt;input</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;text&quot;</span><span class="w"> </span><span class="na">t-att-value=</span><span class="s">&quot;defaultName&quot;</span><span class="nt">/&gt;</span>
+    Input your name:
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">t-att-value=</span><span class="s">&quot;defaultName&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
@@ -2675,8 +2675,8 @@ interpolation blocks inside, an interpolation block is a javascript
 expression between <code class="o_code docutils literal notranslate"><span class="pre">{{</span></code> and <code class="o_code docutils literal notranslate"><span class="pre">}}</span></code>, which will be replaced by the result
 of the expression. It is most useful for attributes which are partially
 literal and partially computed such as a class:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">t-attf-class=</span><span class="s">&quot;container {{ left ? &#39;text-left&#39; : &#39;&#39; }} {{ extra_class }}&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span>insert<span class="w"> </span>content<span class="w"> </span>here
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span> <span class="na">t-attf-class=</span><span class="s">&quot;container {{ left ? &#39;text-left&#39; : &#39;&#39; }} {{ extra_class }}&quot;</span><span class="nt">&gt;</span>
+    insert content here
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
@@ -2686,19 +2686,19 @@ literal and partially computed such as a class:</p>
 reusability or to avoid excessive markup nesting).</p>
 <p>This is done using the <code class="o_code docutils literal notranslate"><span class="pre">t-call</span></code> directive, which takes the name of the
 template to render:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-name=</span><span class="s">&quot;A&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;i-am-a&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-call=</span><span class="s">&quot;B&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/div&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span> <span class="na">t-name=</span><span class="s">&quot;A&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;i-am-a&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;t</span> <span class="na">t-call=</span><span class="s">&quot;B&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/t&gt;</span>
-<span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-name=</span><span class="s">&quot;B&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;i-am-b&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;t</span> <span class="na">t-name=</span><span class="s">&quot;B&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;i-am-b&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/t&gt;</span>
 </pre></div>
 </div>
 <p>rendering the <code class="o_code docutils literal notranslate"><span class="pre">A</span></code> template will result in:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;i-am-a&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;i-am-b&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;i-am-a&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;i-am-b&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
@@ -2736,10 +2736,10 @@ necessary CSS should be in <code class="o_code docutils literal notranslate"><sp
 </div>
 <p>But because it’s a common operation, <code class="xref js js-class o_code docutils literal notranslate"><span class="pre">Widget()</span></code> provides an
 equivalent shortcut through the <code class="xref js js-func o_code docutils literal notranslate"><span class="pre">$()</span></code> method:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">MyWidget</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
-<span class="w">    </span><span class="nx">start</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;input.my_input&quot;</span><span class="p">)...</span>
-<span class="w">    </span><span class="p">},</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">MyWidget</span> <span class="o">=</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="nx">start</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;input.my_input&quot;</span><span class="p">)...</span>
+    <span class="p">},</span>
 <span class="p">});</span>
 </pre></div>
 </div>
@@ -2756,16 +2756,16 @@ only on the DOM section it owns, there is no cause for global selection.</p>
 <h3>Easier DOM Events Binding<a class="headerlink" href="#easier-dom-events-binding" title="Permalink to this headline">¶</a></h3>
 <p>We have previously bound DOM events using normal jQuery event handlers (e.g.
 <code class="o_code docutils literal notranslate"><span class="pre">.click()</span></code> or <code class="o_code docutils literal notranslate"><span class="pre">.change()</span></code>) on widget elements:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">MyWidget</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
-<span class="w">    </span><span class="nx">start</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="kd">var</span><span class="w"> </span><span class="nx">self</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="p">;</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;.my_button&quot;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="nx">self</span><span class="p">.</span><span class="nx">button_clicked</span><span class="p">();</span>
-<span class="w">        </span><span class="p">});</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nx">button_clicked</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="p">..</span>
-<span class="w">    </span><span class="p">},</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">MyWidget</span> <span class="o">=</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="nx">start</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">self</span> <span class="o">=</span> <span class="k">this</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;.my_button&quot;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+            <span class="nx">self</span><span class="p">.</span><span class="nx">button_clicked</span><span class="p">();</span>
+        <span class="p">});</span>
+    <span class="p">},</span>
+    <span class="nx">button_clicked</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="p">..</span>
+    <span class="p">},</span>
 <span class="p">});</span>
 </pre></div>
 </div>
@@ -2779,13 +2779,13 @@ initialization)</p></li>
 </ol>
 <p>Widgets thus provide a shortcut to DOM event binding via
 <code class="xref js js-attr o_code docutils literal notranslate"><span class="pre">events</span></code>:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">MyWidget</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
-<span class="w">    </span><span class="nx">events</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="s2">&quot;click .my_button&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;button_clicked&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nx">button_clicked</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="p">..</span>
-<span class="w">    </span><span class="p">}</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">MyWidget</span> <span class="o">=</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="nx">events</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&quot;click .my_button&quot;</span><span class="o">:</span> <span class="s2">&quot;button_clicked&quot;</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="nx">button_clicked</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="p">..</span>
+    <span class="p">}</span>
 <span class="p">});</span>
 </pre></div>
 </div>
@@ -2799,8 +2799,8 @@ or method run: <code class="o_code docutils literal notranslate"><span class="pr
 <code class="o_code docutils literal notranslate"><span class="pre">my_button</span></code> class</p></li>
 <li><p>the value is the action to perform when the event is triggered</p>
 <p>It can be either a function:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">events</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="s1">&#39;click&#39;</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="cm">/* code here */</span><span class="w"> </span><span class="p">}</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">events</span><span class="o">:</span> <span class="p">{</span>
+    <span class="s1">&#39;click&#39;</span><span class="o">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span> <span class="cm">/* code here */</span> <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -2816,20 +2816,20 @@ a single parameter, the <a class="reference external" href="http://api.jquery.co
 <p>Widgets provide an event system (separate from the DOM/jQuery event system
 described above): a widget can fire events on itself, and other widgets (or
 itself) can bind themselves and listen for these events:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">ConfirmWidget</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
-<span class="w">    </span><span class="nx">events</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="s1">&#39;click button.ok_button&#39;</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="k">this</span><span class="p">.</span><span class="nx">trigger</span><span class="p">(</span><span class="s1">&#39;user_chose&#39;</span><span class="p">,</span><span class="w"> </span><span class="kc">true</span><span class="p">);</span>
-<span class="w">        </span><span class="p">},</span>
-<span class="w">        </span><span class="s1">&#39;click button.cancel_button&#39;</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="k">this</span><span class="p">.</span><span class="nx">trigger</span><span class="p">(</span><span class="s1">&#39;user_chose&#39;</span><span class="p">,</span><span class="w"> </span><span class="kc">false</span><span class="p">);</span>
-<span class="w">        </span><span class="p">}</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nx">start</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">$el</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">&quot;&lt;div&gt;Are you sure you want to perform this action?&lt;/div&gt;&quot;</span><span class="w"> </span><span class="o">+</span>
-<span class="w">            </span><span class="s2">&quot;&lt;button class=&#39;ok_button&#39;&gt;Ok&lt;/button&gt;&quot;</span><span class="w"> </span><span class="o">+</span>
-<span class="w">            </span><span class="s2">&quot;&lt;button class=&#39;cancel_button&#39;&gt;Cancel&lt;/button&gt;&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="p">},</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">ConfirmWidget</span> <span class="o">=</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="nx">events</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s1">&#39;click button.ok_button&#39;</span><span class="o">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">trigger</span><span class="p">(</span><span class="s1">&#39;user_chose&#39;</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+        <span class="p">},</span>
+        <span class="s1">&#39;click button.cancel_button&#39;</span><span class="o">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">trigger</span><span class="p">(</span><span class="s1">&#39;user_chose&#39;</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="nx">start</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">$el</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">&quot;&lt;div&gt;Are you sure you want to perform this action?&lt;/div&gt;&quot;</span> <span class="o">+</span>
+            <span class="s2">&quot;&lt;button class=&#39;ok_button&#39;&gt;Ok&lt;/button&gt;&quot;</span> <span class="o">+</span>
+            <span class="s2">&quot;&lt;button class=&#39;cancel_button&#39;&gt;Cancel&lt;/button&gt;&quot;</span><span class="p">);</span>
+    <span class="p">},</span>
 <span class="p">});</span>
 </pre></div>
 </div>
@@ -2841,19 +2841,19 @@ its first (mandatory) argument, any further arguments are treated as event
 data and passed directly to listeners.</p>
 <p>We can then set up a parent event instantiating our generic widget and
 listening to the <code class="o_code docutils literal notranslate"><span class="pre">user_chose</span></code> event using <code class="xref js js-func o_code docutils literal notranslate"><span class="pre">on()</span></code>:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">HomePage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
-<span class="w">    </span><span class="nx">start</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="kd">var</span><span class="w"> </span><span class="nx">widget</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">local</span><span class="p">.</span><span class="nx">ConfirmWidget</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
-<span class="w">        </span><span class="nx">widget</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;user_chose&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">user_chose</span><span class="p">);</span>
-<span class="w">        </span><span class="nx">widget</span><span class="p">.</span><span class="nx">appendTo</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">$el</span><span class="p">);</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nx">user_chose</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="nx">confirm</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">confirm</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;The user agreed to continue&quot;</span><span class="p">);</span>
-<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;The user refused to continue&quot;</span><span class="p">);</span>
-<span class="w">        </span><span class="p">}</span>
-<span class="w">    </span><span class="p">},</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">HomePage</span> <span class="o">=</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="nx">start</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">widget</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">local</span><span class="p">.</span><span class="nx">ConfirmWidget</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+        <span class="nx">widget</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;user_chose&quot;</span><span class="p">,</span> <span class="k">this</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">user_chose</span><span class="p">);</span>
+        <span class="nx">widget</span><span class="p">.</span><span class="nx">appendTo</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">$el</span><span class="p">);</span>
+    <span class="p">},</span>
+    <span class="nx">user_chose</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">confirm</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">confirm</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;The user agreed to continue&quot;</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;The user refused to continue&quot;</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
 <span class="p">});</span>
 </pre></div>
 </div>
@@ -2863,14 +2863,14 @@ function to call and <code class="o_code docutils literal notranslate"><span cla
 related if it is a method. The bound function will be called with the
 additional arguments of <code class="xref js js-func o_code docutils literal notranslate"><span class="pre">trigger()</span></code> if it has
 any. Example:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">start</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">widget</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">...</span>
-<span class="w">    </span><span class="nx">widget</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;my_event&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">my_event_triggered</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">widget</span><span class="p">.</span><span class="nx">trigger</span><span class="p">(</span><span class="s2">&quot;my_event&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">);</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">start</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">widget</span> <span class="o">=</span> <span class="p">...</span>
+    <span class="nx">widget</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;my_event&quot;</span><span class="p">,</span> <span class="k">this</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">my_event_triggered</span><span class="p">);</span>
+    <span class="nx">widget</span><span class="p">.</span><span class="nx">trigger</span><span class="p">(</span><span class="s2">&quot;my_event&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
 <span class="p">},</span>
-<span class="nx">my_event_triggered</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">,</span><span class="w"> </span><span class="nx">c</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">,</span><span class="w"> </span><span class="nx">c</span><span class="p">);</span>
-<span class="w">    </span><span class="c1">// will print &quot;1 2 3&quot;</span>
+<span class="nx">my_event_triggered</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">c</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">c</span><span class="p">);</span>
+    <span class="c1">// will print &quot;1 2 3&quot;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -2886,13 +2886,13 @@ the Odoo web application.</p>
 <p>Properties are very similar to normal object attributes in that they allow
 storing data on a widget instance, however they have the additional feature
 that they trigger events when set:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">start</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">widget</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">...</span>
-<span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">widget</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;change:name&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">name_changed</span><span class="p">);</span>
-<span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">widget</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s2">&quot;name&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Nicolas&quot;</span><span class="p">);</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">start</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">widget</span> <span class="o">=</span> <span class="p">...</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">widget</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;change:name&quot;</span><span class="p">,</span> <span class="k">this</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">name_changed</span><span class="p">);</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">widget</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s2">&quot;name&quot;</span><span class="p">,</span> <span class="s2">&quot;Nicolas&quot;</span><span class="p">);</span>
 <span class="p">},</span>
-<span class="nx">name_changed</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;The new value of the property &#39;name&#39; is&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">widget</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;name&quot;</span><span class="p">));</span>
+<span class="nx">name_changed</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;The new value of the property &#39;name&#39; is&quot;</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">widget</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;name&quot;</span><span class="p">));</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -2927,19 +2927,19 @@ background color as the color in the <code class="o_code docutils literal notran
 <h2>Modify existing widgets and classes<a class="headerlink" href="#modify-existing-widgets-and-classes" title="Permalink to this headline">¶</a></h2>
 <p>The class system of the Odoo web framework allows direct modification of
 existing classes using the <code class="xref js js-func o_code docutils literal notranslate"><span class="pre">include()</span></code> method:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span><span class="w"> </span><span class="nx">TestClass</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
-<span class="w">    </span><span class="nx">testMethod</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="s2">&quot;hello&quot;</span><span class="p">;</span>
-<span class="w">    </span><span class="p">},</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">TestClass</span> <span class="o">=</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="nx">testMethod</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="s2">&quot;hello&quot;</span><span class="p">;</span>
+    <span class="p">},</span>
 <span class="p">});</span>
 
 <span class="nx">TestClass</span><span class="p">.</span><span class="nx">include</span><span class="p">({</span>
-<span class="w">    </span><span class="nx">testMethod</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">_super</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot; world&quot;</span><span class="p">;</span>
-<span class="w">    </span><span class="p">},</span>
+    <span class="nx">testMethod</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">_super</span><span class="p">()</span> <span class="o">+</span> <span class="s2">&quot; world&quot;</span><span class="p">;</span>
+    <span class="p">},</span>
 <span class="p">});</span>
 
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">new</span><span class="w"> </span><span class="nx">TestClass</span><span class="p">().</span><span class="nx">testMethod</span><span class="p">());</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">new</span> <span class="nx">TestClass</span><span class="p">().</span><span class="nx">testMethod</span><span class="p">());</span>
 <span class="c1">// will print &quot;hello world&quot;</span>
 </pre></div>
 </div>
@@ -2956,8 +2956,8 @@ prior to the call to <code class="xref js js-func o_code docutils literal notran
 <p>The process to translate text in Python and JavaScript code is very
 similar. You could have noticed these lines at the beginning of the
 <code class="o_code docutils literal notranslate"><span class="pre">petstore.js</span></code> file:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span><span class="w"> </span><span class="nx">_t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">_t</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">_lt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">_lt</span><span class="p">;</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">_t</span> <span class="o">=</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">_t</span><span class="p">,</span>
+    <span class="nx">_lt</span> <span class="o">=</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">_lt</span><span class="p">;</span>
 </pre></div>
 </div>
 <p>These lines are simply used to import the translation functions in the current
@@ -2978,8 +2978,8 @@ Note</p><p>To inject user-provided values in translatable strings, it is recomme
 to use <a class="reference external" href="http://gabceb.github.io/underscore.string.site/#sprintf">_.str.sprintf</a> with named
 arguments <em>after</em> the translation:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="k">this</span><span class="p">.</span><span class="nx">$el</span><span class="p">.</span><span class="nx">text</span><span class="p">(</span><span class="nx">_</span><span class="p">.</span><span class="nx">str</span><span class="p">.</span><span class="nx">sprintf</span><span class="p">(</span>
-<span class="w">    </span><span class="nx">_t</span><span class="p">(</span><span class="s2">&quot;Hello, %(user)s!&quot;</span><span class="p">),</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">user</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Ed&quot;</span>
+    <span class="nx">_t</span><span class="p">(</span><span class="s2">&quot;Hello, %(user)s!&quot;</span><span class="p">),</span> <span class="p">{</span>
+    <span class="nx">user</span><span class="o">:</span> <span class="s2">&quot;Ed&quot;</span>
 <span class="p">}));</span>
 </pre></div>
 </div>
@@ -3019,15 +3019,15 @@ with a sample method:</p>
 <p>This declares a model with two fields, and a method <code class="o_code docutils literal notranslate"><span class="pre">my_method()</span></code> which
 returns a literal dictionary.</p>
 <p>Here is a sample widget that calls <code class="o_code docutils literal notranslate"><span class="pre">my_method()</span></code> and displays the result:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">HomePage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
-<span class="w">    </span><span class="nx">start</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="kd">var</span><span class="w"> </span><span class="nx">self</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="p">;</span>
-<span class="w">        </span><span class="kd">var</span><span class="w"> </span><span class="nx">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">Model</span><span class="p">(</span><span class="s2">&quot;oepetstore.message_of_the_day&quot;</span><span class="p">);</span>
-<span class="w">        </span><span class="nx">model</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="s2">&quot;my_method&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="nx">context</span><span class="o">:</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">CompoundContext</span><span class="p">()}).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="nx">self</span><span class="p">.</span><span class="nx">$el</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">&quot;&lt;div&gt;Hello &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">result</span><span class="p">[</span><span class="s2">&quot;hello&quot;</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;&lt;/div&gt;&quot;</span><span class="p">);</span>
-<span class="w">            </span><span class="c1">// will show &quot;Hello world&quot; to the user</span>
-<span class="w">        </span><span class="p">});</span>
-<span class="w">    </span><span class="p">},</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">HomePage</span> <span class="o">=</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="nx">start</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">self</span> <span class="o">=</span> <span class="k">this</span><span class="p">;</span>
+        <span class="kd">var</span> <span class="nx">model</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">Model</span><span class="p">(</span><span class="s2">&quot;oepetstore.message_of_the_day&quot;</span><span class="p">);</span>
+        <span class="nx">model</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="s2">&quot;my_method&quot;</span><span class="p">,</span> <span class="p">{</span><span class="nx">context</span><span class="o">:</span> <span class="k">new</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">CompoundContext</span><span class="p">()}).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">self</span><span class="p">.</span><span class="nx">$el</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">&quot;&lt;div&gt;Hello &quot;</span> <span class="o">+</span> <span class="nx">result</span><span class="p">[</span><span class="s2">&quot;hello&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;&lt;/div&gt;&quot;</span><span class="p">);</span>
+            <span class="c1">// will show &quot;Hello world&quot; to the user</span>
+        <span class="p">});</span>
+    <span class="p">},</span>
 <span class="p">});</span>
 </pre></div>
 </div>
@@ -3047,7 +3047,7 @@ provided.</p>
 <span class="k">def</span> <span class="nf">my_method2</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span> <span class="o">...</span>
 </pre></div>
 </div>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">model</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="s2">&quot;my_method&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">],</span><span class="w"> </span><span class="p">...</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">model</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="s2">&quot;my_method&quot;</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">...</span>
 <span class="c1">// with this a=1, b=2 and c=3</span>
 </pre></div>
 </div>
@@ -3058,7 +3058,7 @@ named argument <code class="o_code docutils literal notranslate"><span class="pr
 <span class="k">def</span> <span class="nf">my_method2</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span> <span class="o">...</span>
 </pre></div>
 </div>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">model</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="s2">&quot;my_method&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[],</span><span class="w"> </span><span class="p">{</span><span class="nx">a</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="o">:</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="nx">c</span><span class="o">:</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="p">...</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">model</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="s2">&quot;my_method&quot;</span><span class="p">,</span> <span class="p">[],</span> <span class="p">{</span><span class="nx">a</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">b</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span> <span class="nx">c</span><span class="o">:</span> <span class="mi">3</span><span class="p">,</span> <span class="p">...</span>
 <span class="c1">// with this a=1, b=2 and c=3</span>
 </pre></div>
 </div>
@@ -3070,7 +3070,7 @@ returned by the model’s method as first argument.</p>
 <h3>CompoundContext<a class="headerlink" href="#compoundcontext" title="Permalink to this headline">¶</a></h3>
 <p>The previous section used a <code class="o_code docutils literal notranslate"><span class="pre">context</span></code> argument which was not explained in
 the method call:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">model</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="s2">&quot;my_method&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="nx">context</span><span class="o">:</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">CompoundContext</span><span class="p">()})</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">model</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="s2">&quot;my_method&quot;</span><span class="p">,</span> <span class="p">{</span><span class="nx">context</span><span class="o">:</span> <span class="k">new</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">CompoundContext</span><span class="p">()})</span>
 </pre></div>
 </div>
 <p>The context is like a “magic” argument that the web client will always give to
@@ -3089,7 +3089,7 @@ keys to the context (some models’ methods use arbitrary keys added to the
 context). It is created by giving to its constructor any number of
 dictionaries or other <code class="xref js js-class o_code docutils literal notranslate"><span class="pre">CompoundContext()</span></code> instances. It will
 merge all those contexts before sending them to the server.</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">model</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="s2">&quot;my_method&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="nx">context</span><span class="o">:</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">CompoundContext</span><span class="p">({</span><span class="s1">&#39;new_key&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;key_value&#39;</span><span class="p">})})</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">model</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="s2">&quot;my_method&quot;</span><span class="p">,</span> <span class="p">{</span><span class="nx">context</span><span class="o">:</span> <span class="k">new</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">CompoundContext</span><span class="p">({</span><span class="s1">&#39;new_key&#39;</span><span class="o">:</span> <span class="s1">&#39;key_value&#39;</span><span class="p">})})</span>
 </pre></div>
 </div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@api</span><span class="o">.</span><span class="n">model</span>
@@ -3111,22 +3111,22 @@ models, Odoo Web provides a helper for simpler and clearer querying of models
 combination of <code class="xref py py-meth o_code docutils literal notranslate"><span class="pre">search()</span></code> and
 :<code class="xref py py-meth o_code docutils literal notranslate"><span class="pre">read()</span></code>. It provides a clearer syntax to search
 and read models:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">model</span><span class="p">.</span><span class="nx">query</span><span class="p">([</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;login&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;user_email&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;signature&#39;</span><span class="p">])</span>
-<span class="w">     </span><span class="p">.</span><span class="nx">filter</span><span class="p">([[</span><span class="s1">&#39;active&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;=&#39;</span><span class="p">,</span><span class="w"> </span><span class="kc">true</span><span class="p">],</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;company_id&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;=&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">main_company</span><span class="p">]])</span>
-<span class="w">     </span><span class="p">.</span><span class="nx">limit</span><span class="p">(</span><span class="mf">15</span><span class="p">)</span>
-<span class="w">     </span><span class="p">.</span><span class="nx">all</span><span class="p">().</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">users</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="c1">// do work with users records</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">model</span><span class="p">.</span><span class="nx">query</span><span class="p">([</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="s1">&#39;login&#39;</span><span class="p">,</span> <span class="s1">&#39;user_email&#39;</span><span class="p">,</span> <span class="s1">&#39;signature&#39;</span><span class="p">])</span>
+     <span class="p">.</span><span class="nx">filter</span><span class="p">([[</span><span class="s1">&#39;active&#39;</span><span class="p">,</span> <span class="s1">&#39;=&#39;</span><span class="p">,</span> <span class="kc">true</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;company_id&#39;</span><span class="p">,</span> <span class="s1">&#39;=&#39;</span><span class="p">,</span> <span class="nx">main_company</span><span class="p">]])</span>
+     <span class="p">.</span><span class="nx">limit</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
+     <span class="p">.</span><span class="nx">all</span><span class="p">().</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">users</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// do work with users records</span>
 <span class="p">});</span>
 </pre></div>
 </div>
 <p>versus:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">model</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="s1">&#39;search&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">[[</span><span class="s1">&#39;active&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;=&#39;</span><span class="p">,</span><span class="w"> </span><span class="kc">true</span><span class="p">],</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;company_id&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;=&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">main_company</span><span class="p">]],</span><span class="w"> </span><span class="p">{</span><span class="nx">limit</span><span class="o">:</span><span class="w"> </span><span class="mf">15</span><span class="p">})</span>
-<span class="w">    </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">ids</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">model</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="s1">&#39;read&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="nx">ids</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;login&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;user_email&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;signature&#39;</span><span class="p">]]);</span>
-<span class="w">    </span><span class="p">})</span>
-<span class="w">    </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">users</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="c1">// do work with users records</span>
-<span class="w">    </span><span class="p">});</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">model</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="s1">&#39;search&#39;</span><span class="p">,</span> <span class="p">[[</span><span class="s1">&#39;active&#39;</span><span class="p">,</span> <span class="s1">&#39;=&#39;</span><span class="p">,</span> <span class="kc">true</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;company_id&#39;</span><span class="p">,</span> <span class="s1">&#39;=&#39;</span><span class="p">,</span> <span class="nx">main_company</span><span class="p">]],</span> <span class="p">{</span><span class="nx">limit</span><span class="o">:</span> <span class="mi">15</span><span class="p">})</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">ids</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">model</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="s1">&#39;read&#39;</span><span class="p">,</span> <span class="p">[</span><span class="nx">ids</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="s1">&#39;login&#39;</span><span class="p">,</span> <span class="s1">&#39;user_email&#39;</span><span class="p">,</span> <span class="s1">&#39;signature&#39;</span><span class="p">]]);</span>
+    <span class="p">})</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">users</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// do work with users records</span>
+    <span class="p">});</span>
 </pre></div>
 </div>
 <ul class="simple">
@@ -3191,17 +3191,17 @@ a dictionary describing <a class="reference internal" href="../reference/backend
 type, and calling an action manager instance with it.</p>
 <p><code class="xref js js-func o_code docutils literal notranslate"><span class="pre">do_action()</span></code> is a shortcut of <code class="xref js js-class o_code docutils literal notranslate"><span class="pre">Widget()</span></code>
 looking up the “current” action manager and executing the action:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">TestWidget</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
-<span class="w">    </span><span class="nx">dispatch_to_new_action</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">do_action</span><span class="p">({</span>
-<span class="w">            </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;ir.actions.act_window&#39;</span><span class="p">,</span>
-<span class="w">            </span><span class="nx">res_model</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;product.product&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="nx">res_id</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span>
-<span class="w">            </span><span class="nx">views</span><span class="o">:</span><span class="w"> </span><span class="p">[[</span><span class="kc">false</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;form&#39;</span><span class="p">]],</span>
-<span class="w">            </span><span class="nx">target</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;current&#39;</span><span class="p">,</span>
-<span class="w">            </span><span class="nx">context</span><span class="o">:</span><span class="w"> </span><span class="p">{},</span>
-<span class="w">        </span><span class="p">});</span>
-<span class="w">    </span><span class="p">},</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">TestWidget</span> <span class="o">=</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">Widget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="nx">dispatch_to_new_action</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">do_action</span><span class="p">({</span>
+            <span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;ir.actions.act_window&#39;</span><span class="p">,</span>
+            <span class="nx">res_model</span><span class="o">:</span> <span class="s2">&quot;product.product&quot;</span><span class="p">,</span>
+            <span class="nx">res_id</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="nx">views</span><span class="o">:</span> <span class="p">[[</span><span class="kc">false</span><span class="p">,</span> <span class="s1">&#39;form&#39;</span><span class="p">]],</span>
+            <span class="nx">target</span><span class="o">:</span> <span class="s1">&#39;current&#39;</span><span class="p">,</span>
+            <span class="nx">context</span><span class="o">:</span> <span class="p">{},</span>
+        <span class="p">});</span>
+    <span class="p">},</span>
 <span class="p">});</span>
 </pre></div>
 </div>
@@ -3242,7 +3242,7 @@ entirely in the client, in javascript for Odoo web. The server simply sends
 an action tag (an arbitrary name), and optionally adds a few parameters, but
 beyond that <em>everything</em> is handled by custom client code.</p>
 <p>Our widget is registered as the handler for the client action through this:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">client_actions</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">&#39;petstore.homepage&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;instance.oepetstore.HomePage&#39;</span><span class="p">);</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">client_actions</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">&#39;petstore.homepage&#39;</span><span class="p">,</span> <span class="s1">&#39;instance.oepetstore.HomePage&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
 <p><code class="o_code docutils literal notranslate"><span class="pre">instance.web.client_actions</span></code> is a <code class="xref js js-class o_code docutils literal notranslate"><span class="pre">Registry()</span></code> in which
@@ -3260,14 +3260,14 @@ it’ll be called and its result (if any) will be interpreted as the
 next action to execute.</p>
 </div>
 <p>On the server side, we had simply defined an <code class="o_code docutils literal notranslate"><span class="pre">ir.actions.client</span></code> action:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;action_home_page&quot;</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.actions.client&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;tag&quot;</span><span class="nt">&gt;</span>petstore.homepage<span class="nt">&lt;/field&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">&quot;action_home_page&quot;</span> <span class="na">model=</span><span class="s">&quot;ir.actions.client&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;tag&quot;</span><span class="nt">&gt;</span>petstore.homepage<span class="nt">&lt;/field&gt;</span>
 <span class="nt">&lt;/record&gt;</span>
 </pre></div>
 </div>
 <p>and a menu opening the action:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;menuitem</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;home_page_petstore_menu&quot;</span><span class="w"> </span><span class="na">parent=</span><span class="s">&quot;petstore_menu&quot;</span>
-<span class="w">          </span><span class="na">name=</span><span class="s">&quot;Home Page&quot;</span><span class="w"> </span><span class="na">action=</span><span class="s">&quot;action_home_page&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;menuitem</span> <span class="na">id=</span><span class="s">&quot;home_page_petstore_menu&quot;</span> <span class="na">parent=</span><span class="s">&quot;petstore_menu&quot;</span>
+          <span class="na">name=</span><span class="s">&quot;Home Page&quot;</span> <span class="na">action=</span><span class="s">&quot;action_home_page&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 </section><section id="architecture-of-the-views">
@@ -3311,7 +3311,7 @@ interact with existing field types (e.g. validate
 and display them as email links).</p>
 <p>To explicitly specify which form widget should be used to display a field,
 simply use the <code class="o_code docutils literal notranslate"><span class="pre">widget</span></code> attribute in the view’s XML description:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;contact_mail&quot;</span><span class="w"> </span><span class="na">widget=</span><span class="s">&quot;email&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;contact_mail&quot;</span> <span class="na">widget=</span><span class="s">&quot;email&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 <div class="alert alert-primary">
@@ -3387,17 +3387,17 @@ each part.</p>
 <h5>Simple Read-Only Field<a class="headerlink" href="#simple-read-only-field" title="Permalink to this headline">¶</a></h5>
 <p>Here is a first implementation that will only display text. The
 user will not be able to modify the content of the field.</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">FieldChar2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">AbstractField</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
-<span class="w">    </span><span class="nx">init</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">_super</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="nx">arguments</span><span class="p">);</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s2">&quot;value&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nx">render_value</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">$el</span><span class="p">.</span><span class="nx">text</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;value&quot;</span><span class="p">));</span>
-<span class="w">    </span><span class="p">},</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">FieldChar2</span> <span class="o">=</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">AbstractField</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="nx">init</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">_super</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">arguments</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s2">&quot;value&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">);</span>
+    <span class="p">},</span>
+    <span class="nx">render_value</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">$el</span><span class="p">.</span><span class="nx">text</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;value&quot;</span><span class="p">));</span>
+    <span class="p">},</span>
 <span class="p">});</span>
 
-<span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">widgets</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">&#39;char2&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;instance.oepetstore.FieldChar2&#39;</span><span class="p">);</span>
+<span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">widgets</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">&#39;char2&#39;</span><span class="p">,</span> <span class="s1">&#39;instance.oepetstore.FieldChar2&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>In this example, we declare a class named <code class="o_code docutils literal notranslate"><span class="pre">FieldChar2</span></code> inheriting from
@@ -3429,46 +3429,46 @@ must be able to switch between modes at any moment.</p>
 sets a widget property named <code class="o_code docutils literal notranslate"><span class="pre">effective_readonly</span></code>. The field should watch
 for changes in that widget property and display the correct mode
 accordingly. Example:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">FieldChar2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">AbstractField</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
-<span class="w">    </span><span class="nx">init</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">_super</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="nx">arguments</span><span class="p">);</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s2">&quot;value&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nx">start</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;change:effective_readonly&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="k">this</span><span class="p">.</span><span class="nx">display_field</span><span class="p">();</span>
-<span class="w">            </span><span class="k">this</span><span class="p">.</span><span class="nx">render_value</span><span class="p">();</span>
-<span class="w">        </span><span class="p">});</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">display_field</span><span class="p">();</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">_super</span><span class="p">();</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nx">display_field</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="kd">var</span><span class="w"> </span><span class="nx">self</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="p">;</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">$el</span><span class="p">.</span><span class="nx">html</span><span class="p">(</span><span class="nx">QWeb</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="s2">&quot;FieldChar2&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="nx">widget</span><span class="o">:</span><span class="w"> </span><span class="k">this</span><span class="p">}));</span>
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;effective_readonly&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="k">this</span><span class="p">.</span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;input&quot;</span><span class="p">).</span><span class="nx">change</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                </span><span class="nx">self</span><span class="p">.</span><span class="nx">internal_set_value</span><span class="p">(</span><span class="nx">self</span><span class="p">.</span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;input&quot;</span><span class="p">).</span><span class="nx">val</span><span class="p">());</span>
-<span class="w">            </span><span class="p">});</span>
-<span class="w">        </span><span class="p">}</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nx">render_value</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;effective_readonly&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="k">this</span><span class="p">.</span><span class="nx">$el</span><span class="p">.</span><span class="nx">text</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;value&quot;</span><span class="p">));</span>
-<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="k">this</span><span class="p">.</span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;input&quot;</span><span class="p">).</span><span class="nx">val</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;value&quot;</span><span class="p">));</span>
-<span class="w">        </span><span class="p">}</span>
-<span class="w">    </span><span class="p">},</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">FieldChar2</span> <span class="o">=</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">AbstractField</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="nx">init</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">_super</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">arguments</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s2">&quot;value&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">);</span>
+    <span class="p">},</span>
+    <span class="nx">start</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;change:effective_readonly&quot;</span><span class="p">,</span> <span class="k">this</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">display_field</span><span class="p">();</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">render_value</span><span class="p">();</span>
+        <span class="p">});</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">display_field</span><span class="p">();</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">_super</span><span class="p">();</span>
+    <span class="p">},</span>
+    <span class="nx">display_field</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">self</span> <span class="o">=</span> <span class="k">this</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">$el</span><span class="p">.</span><span class="nx">html</span><span class="p">(</span><span class="nx">QWeb</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="s2">&quot;FieldChar2&quot;</span><span class="p">,</span> <span class="p">{</span><span class="nx">widget</span><span class="o">:</span> <span class="k">this</span><span class="p">}));</span>
+        <span class="k">if</span> <span class="p">(</span><span class="o">!</span> <span class="k">this</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;effective_readonly&quot;</span><span class="p">))</span> <span class="p">{</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;input&quot;</span><span class="p">).</span><span class="nx">change</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+                <span class="nx">self</span><span class="p">.</span><span class="nx">internal_set_value</span><span class="p">(</span><span class="nx">self</span><span class="p">.</span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;input&quot;</span><span class="p">).</span><span class="nx">val</span><span class="p">());</span>
+            <span class="p">});</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="nx">render_value</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;effective_readonly&quot;</span><span class="p">))</span> <span class="p">{</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">$el</span><span class="p">.</span><span class="nx">text</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;value&quot;</span><span class="p">));</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;input&quot;</span><span class="p">).</span><span class="nx">val</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;value&quot;</span><span class="p">));</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
 <span class="p">});</span>
 
-<span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">widgets</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">&#39;char2&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;instance.oepetstore.FieldChar2&#39;</span><span class="p">);</span>
+<span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">widgets</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">&#39;char2&#39;</span><span class="p">,</span> <span class="s1">&#39;instance.oepetstore.FieldChar2&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-name=</span><span class="s">&quot;FieldChar2&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;oe_field_char2&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-if=</span><span class="s">&quot;! widget.get(&#39;effective_readonly&#39;)&quot;</span><span class="nt">&gt;</span>
-<span class="w">            </span><span class="nt">&lt;input</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;&lt;/input&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/t&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/div&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span> <span class="na">t-name=</span><span class="s">&quot;FieldChar2&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;oe_field_char2&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;t</span> <span class="na">t-if=</span><span class="s">&quot;! widget.get(&#39;effective_readonly&#39;)&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;&lt;/input&gt;</span>
+        <span class="nt">&lt;/t&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/t&gt;</span>
 </pre></div>
 </div>
@@ -3520,7 +3520,7 @@ a field. Because this may be limiting, it is also possible to create
 <em>form widgets</em> which are not so restricted and have less ties to a specific
 lifecycle.</p>
 <p>Custom form widgets can be added to a form view through the <code class="o_code docutils literal notranslate"><span class="pre">widget</span></code> tag:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;widget</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;xxx&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;widget</span> <span class="na">type=</span><span class="s">&quot;xxx&quot;</span> <span class="nt">/&gt;</span>
 </pre></div>
 </div>
 <p>This type of widget will simply be created by the form view during the
@@ -3532,21 +3532,21 @@ abstract class.</p>
 <p>Form widgets can interact with form fields by listening for their changes and
 fetching or altering their values. They can access form fields through
 their <code class="xref js js-attr o_code docutils literal notranslate"><span class="pre">field_manager</span></code> attribute:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">WidgetMultiplication</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">FormWidget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
-<span class="w">    </span><span class="nx">start</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">_super</span><span class="p">();</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">field_manager</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;field_changed:integer_a&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">display_result</span><span class="p">);</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">field_manager</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;field_changed:integer_b&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">display_result</span><span class="p">);</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">display_result</span><span class="p">();</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nx">display_result</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="kd">var</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">field_manager</span><span class="p">.</span><span class="nx">get_field_value</span><span class="p">(</span><span class="s2">&quot;integer_a&quot;</span><span class="p">)</span><span class="w"> </span><span class="o">*</span>
-<span class="w">                     </span><span class="k">this</span><span class="p">.</span><span class="nx">field_manager</span><span class="p">.</span><span class="nx">get_field_value</span><span class="p">(</span><span class="s2">&quot;integer_b&quot;</span><span class="p">);</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">$el</span><span class="p">.</span><span class="nx">text</span><span class="p">(</span><span class="s2">&quot;a*b = &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">result</span><span class="p">);</span>
-<span class="w">    </span><span class="p">}</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">local</span><span class="p">.</span><span class="nx">WidgetMultiplication</span> <span class="o">=</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">FormWidget</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="nx">start</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">_super</span><span class="p">();</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">field_manager</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;field_changed:integer_a&quot;</span><span class="p">,</span> <span class="k">this</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">display_result</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">field_manager</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;field_changed:integer_b&quot;</span><span class="p">,</span> <span class="k">this</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">display_result</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">display_result</span><span class="p">();</span>
+    <span class="p">},</span>
+    <span class="nx">display_result</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">field_manager</span><span class="p">.</span><span class="nx">get_field_value</span><span class="p">(</span><span class="s2">&quot;integer_a&quot;</span><span class="p">)</span> <span class="o">*</span>
+                     <span class="k">this</span><span class="p">.</span><span class="nx">field_manager</span><span class="p">.</span><span class="nx">get_field_value</span><span class="p">(</span><span class="s2">&quot;integer_b&quot;</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">$el</span><span class="p">.</span><span class="nx">text</span><span class="p">(</span><span class="s2">&quot;a*b = &quot;</span> <span class="o">+</span> <span class="nx">result</span><span class="p">);</span>
+    <span class="p">}</span>
 <span class="p">});</span>
 
-<span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">custom_widgets</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">&#39;multiplication&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;instance.oepetstore.WidgetMultiplication&#39;</span><span class="p">);</span>
+<span class="nx">instance</span><span class="p">.</span><span class="nx">web</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">custom_widgets</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">&#39;multiplication&#39;</span><span class="p">,</span> <span class="s1">&#39;instance.oepetstore.WidgetMultiplication&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
 <p><code class="xref js js-attr o_code docutils literal notranslate"><span class="pre">FormWidget</span></code> is generally the

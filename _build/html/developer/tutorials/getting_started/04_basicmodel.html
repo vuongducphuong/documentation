@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/tutorials/getting_started/04_basicmodel.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/tutorials/getting_started/04_basicmodel.html" />
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -2007,7 +2007,7 @@ Exercise</p><p>Define the real estate properties model.</p>
 </div>
 <p>Any modification of the Python files requires a restart of the Odoo server. When we restart
 the server, we will add the parameters <code class="o_code docutils literal notranslate"><span class="pre">-d</span></code> and <code class="o_code docutils literal notranslate"><span class="pre">-u</span></code>:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>./odoo-bin<span class="w"> </span>--addons-path<span class="o">=</span>addons,../enterprise/,../technical-training-sandbox/<span class="w"> </span>-d<span class="w"> </span>rd-demo<span class="w"> </span>-u<span class="w"> </span>estate
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> ./odoo-bin --addons-path<span class="o">=</span>addons,../enterprise/,../technical-training-sandbox/ -d rd-demo -u estate
 </pre></div>
 </div>
 <p><code class="o_code docutils literal notranslate"><span class="pre">-u</span> <span class="pre">estate</span></code> means we want to upgrade the <code class="o_code docutils literal notranslate"><span class="pre">estate</span></code> module, i.e. the ORM will
@@ -2152,7 +2152,7 @@ and ‘West’. The selection list is defined as a list of tuples, see
 for an example.</p>
 </div>
 <p>When the fields are added to the model, restart the server with <code class="o_code docutils literal notranslate"><span class="pre">-u</span> <span class="pre">estate</span></code></p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>./odoo-bin<span class="w"> </span>--addons-path<span class="o">=</span>addons,../enterprise/,../technical-training-sandbox/<span class="w"> </span>-d<span class="w"> </span>rd-demo<span class="w"> </span>-u<span class="w"> </span>estate
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> ./odoo-bin --addons-path<span class="o">=</span>addons,../enterprise/,../technical-training-sandbox/ -d rd-demo -u estate
 </pre></div>
 </div>
 <p>Connect to <code class="o_code docutils literal notranslate"><span class="pre">psql</span></code> and check the structure of the table <code class="o_code docutils literal notranslate"><span class="pre">estate_property</span></code>. You’ll notice that

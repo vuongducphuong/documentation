@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/tutorials/getting_started/07_basicviews.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/tutorials/getting_started/07_basicviews.html" />
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -1961,9 +1961,9 @@ Note</p><p><strong>Goal</strong>: at the end of this section, the list view shou
 <p>List views, also called tree views, display records in a tabular form.</p>
 <p>Their root element is <code class="o_code docutils literal notranslate"><span class="pre">&lt;tree&gt;</span></code>. The most basic version of this view simply
 lists all the fields to display in the table (where each field is a column):</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;tree</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Tests&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;last_seen&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;tree</span> <span class="na">string=</span><span class="s">&quot;Tests&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;last_seen&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/tree&gt;</span>
 </pre></div>
 </div>
@@ -2000,22 +2000,22 @@ Note</p><p><strong>Goal</strong>: at the end of this section, the form view shou
 <p>Forms are used to create and edit single records.</p>
 <p>Their root element is <code class="o_code docutils literal notranslate"><span class="pre">&lt;form&gt;</span></code>. They are composed of high-level structure
 elements (groups and notebooks) and interactive elements (buttons and fields):</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;form</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Test&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;sheet&gt;</span>
-<span class="w">        </span><span class="nt">&lt;group&gt;</span>
-<span class="w">            </span><span class="nt">&lt;group&gt;</span>
-<span class="w">                </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">/&gt;</span>
-<span class="w">            </span><span class="nt">&lt;/group&gt;</span>
-<span class="w">            </span><span class="nt">&lt;group&gt;</span>
-<span class="w">                </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;last_seen&quot;</span><span class="nt">/&gt;</span>
-<span class="w">            </span><span class="nt">&lt;/group&gt;</span>
-<span class="w">            </span><span class="nt">&lt;notebook&gt;</span>
-<span class="w">                </span><span class="nt">&lt;page</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Description&quot;</span><span class="nt">&gt;</span>
-<span class="w">                    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;description&quot;</span><span class="nt">/&gt;</span>
-<span class="w">                </span><span class="nt">&lt;/page&gt;</span>
-<span class="w">            </span><span class="nt">&lt;/notebook&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/group&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/sheet&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;form</span> <span class="na">string=</span><span class="s">&quot;Test&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;sheet&gt;</span>
+        <span class="nt">&lt;group&gt;</span>
+            <span class="nt">&lt;group&gt;</span>
+                <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;/group&gt;</span>
+            <span class="nt">&lt;group&gt;</span>
+                <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;last_seen&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;/group&gt;</span>
+            <span class="nt">&lt;notebook&gt;</span>
+                <span class="nt">&lt;page</span> <span class="na">string=</span><span class="s">&quot;Description&quot;</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;description&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;/page&gt;</span>
+            <span class="nt">&lt;/notebook&gt;</span>
+        <span class="nt">&lt;/group&gt;</span>
+    <span class="nt">&lt;/sheet&gt;</span>
 <span class="nt">&lt;/form&gt;</span>
 </pre></div>
 </div>
@@ -2033,7 +2033,7 @@ Exercise</p><p>Add a custom form view.</p>
 that you add the fields and the tags one at a time to help understand how it works.</p>
 <p>In order to avoid relaunching the server every time you do a modification to the view, it can
 be convenient to use the <code class="o_code docutils literal notranslate"><span class="pre">--dev</span> <span class="pre">xml</span></code> parameter when launching the server:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>./odoo-bin<span class="w"> </span>--addons-path<span class="o">=</span>addons,../enterprise/,../technical-training-sandbox/<span class="w"> </span>-d<span class="w"> </span>rd-demo<span class="w"> </span>-u<span class="w"> </span>estate<span class="w"> </span>--dev<span class="w"> </span>xml
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> ./odoo-bin --addons-path<span class="o">=</span>addons,../enterprise/,../technical-training-sandbox/ -d rd-demo -u estate --dev xml
 </pre></div>
 </div>
 <p>This parameter allows you to just refresh the page to view your view modifications.</p>
@@ -2054,9 +2054,9 @@ other views’ content (generally aggregated views such as <a class="reference i
 Beyond the difference in use case, they are defined the same way.</p>
 <p>Their root element is <code class="o_code docutils literal notranslate"><span class="pre">&lt;search&gt;</span></code>. The most basic version of this view simply
 lists all the fields for which a shortcut is desired:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;search</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Tests&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;last_seen&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;search</span> <span class="na">string=</span><span class="s">&quot;Tests&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;last_seen&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/search&gt;</span>
 </pre></div>
 </div>

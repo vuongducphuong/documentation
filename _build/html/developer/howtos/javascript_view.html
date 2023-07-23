@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/howtos/javascript_view.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/howtos/javascript_view.html" />
     
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -1942,25 +1942,25 @@ can be done in a few steps:</p>
 <div class="code-block-caption"><span class="caption-text"><code class="file o_code docutils literal notranslate"><span class="pre">custom_kanban_controller.js</span></code></span><a class="headerlink" href="#id1" title="Permalink to this code">¶</a></div>
 <div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="cm">/** @odoo-module */</span>
 
-<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">KanbanController</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@web/views/kanban/kanban_controller&quot;</span><span class="p">;</span>
-<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">kanbanView</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@web/views/kanban/kanban_view&quot;</span><span class="p">;</span>
-<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">registry</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@web/core/registry&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">KanbanController</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@web/views/kanban/kanban_controller&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">kanbanView</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@web/views/kanban/kanban_view&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">registry</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@web/core/registry&quot;</span><span class="p">;</span>
 
 <span class="c1">// the controller usually contains the Layout and the renderer.</span>
-<span class="kd">class</span><span class="w"> </span><span class="nx">CustomKanbanController</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">KanbanController</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="c1">// Your logic here, override or insert new methods...</span>
-<span class="w">    </span><span class="c1">// if you override setup(), don&#39;t forget to call super.setup()</span>
+<span class="kr">class</span> <span class="nx">CustomKanbanController</span> <span class="kr">extends</span> <span class="nx">KanbanController</span> <span class="p">{</span>
+    <span class="c1">// Your logic here, override or insert new methods...</span>
+    <span class="c1">// if you override setup(), don&#39;t forget to call super.setup()</span>
 <span class="p">}</span>
 
-<span class="nx">CustomKanbanController</span><span class="p">.</span><span class="nx">template</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;my_module.CustomKanbanView&quot;</span><span class="p">;</span>
+<span class="nx">CustomKanbanController</span><span class="p">.</span><span class="nx">template</span> <span class="o">=</span> <span class="s2">&quot;my_module.CustomKanbanView&quot;</span><span class="p">;</span>
 
-<span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">customKanbanView</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="p">...</span><span class="nx">kanbanView</span><span class="p">,</span><span class="w"> </span><span class="c1">// contains the default Renderer/Controller/Model</span>
-<span class="w">    </span><span class="nx">Controller</span><span class="o">:</span><span class="w"> </span><span class="nx">CustomKanbanController</span><span class="p">,</span>
+<span class="kr">export</span> <span class="kr">const</span> <span class="nx">customKanbanView</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="p">...</span><span class="nx">kanbanView</span><span class="p">,</span> <span class="c1">// contains the default Renderer/Controller/Model</span>
+    <span class="nx">Controller</span><span class="o">:</span> <span class="nx">CustomKanbanController</span><span class="p">,</span>
 <span class="p">};</span>
 
 <span class="c1">// Register it to the views registry</span>
-<span class="nx">registry</span><span class="p">.</span><span class="nx">category</span><span class="p">(</span><span class="s2">&quot;views&quot;</span><span class="p">).</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;custom_kanban&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">customeKanbanView</span><span class="p">);</span>
+<span class="nx">registry</span><span class="p">.</span><span class="nx">category</span><span class="p">(</span><span class="s2">&quot;views&quot;</span><span class="p">).</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;custom_kanban&quot;</span><span class="p">,</span> <span class="nx">customeKanbanView</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
@@ -1970,25 +1970,25 @@ template and add our template pieces or we can define a completely new template.
 <div class="code-block-caption"><span class="caption-text"><code class="file o_code docutils literal notranslate"><span class="pre">custom_kanban_controller.xml</span></code></span><a class="headerlink" href="#id2" title="Permalink to this code">¶</a></div>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span>
 <span class="nt">&lt;templates&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-name=</span><span class="s">&quot;my_module.CustomKanbanView&quot;</span><span class="w"> </span><span class="na">t-inherit=</span><span class="s">&quot;web.KanbanView&quot;</span><span class="w"> </span><span class="na">owl=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;xpath</span><span class="w"> </span><span class="na">expr=</span><span class="s">&quot;//Layout&quot;</span><span class="w"> </span><span class="na">position=</span><span class="s">&quot;before&quot;</span><span class="nt">&gt;</span>
-<span class="w">            </span><span class="nt">&lt;div&gt;</span>
-<span class="w">                </span>Hello<span class="w"> </span>world<span class="w"> </span>!
-<span class="w">            </span><span class="nt">&lt;/div&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/xpath&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/t&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-name=</span><span class="s">&quot;my_module.CustomKanbanView&quot;</span> <span class="na">t-inherit=</span><span class="s">&quot;web.KanbanView&quot;</span> <span class="na">owl=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;xpath</span> <span class="na">expr=</span><span class="s">&quot;//Layout&quot;</span> <span class="na">position=</span><span class="s">&quot;before&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div&gt;</span>
+                Hello world !
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/xpath&gt;</span>
+    <span class="nt">&lt;/t&gt;</span>
 <span class="nt">&lt;/templates&gt;</span>
 </pre></div>
 </div>
 </div>
 </li>
 <li><p>Use the view with the <code class="o_code docutils literal notranslate"><span class="pre">js_class</span></code> attribute in arch.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;kanban</span><span class="w"> </span><span class="na">js_class=</span><span class="s">&quot;custom_kanban&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;templates&gt;</span>
-<span class="w">        </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-name=</span><span class="s">&quot;kanban-box&quot;</span><span class="nt">&gt;</span>
-<span class="w">            </span><span class="cm">&lt;!--Your comment--&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/t&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/templates&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;kanban</span> <span class="na">js_class=</span><span class="s">&quot;custom_kanban&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;templates&gt;</span>
+        <span class="nt">&lt;t</span> <span class="na">t-name=</span><span class="s">&quot;kanban-box&quot;</span><span class="nt">&gt;</span>
+            <span class="c">&lt;!--Your comment--&gt;</span>
+        <span class="nt">&lt;/t&gt;</span>
+    <span class="nt">&lt;/templates&gt;</span>
 <span class="nt">&lt;/kanban&gt;</span>
 </pre></div>
 </div>
@@ -2010,34 +2010,34 @@ of a view, such as the Renderer, Model, and Layout.</p>
 <div class="code-block-caption"><span class="caption-text"><code class="file o_code docutils literal notranslate"><span class="pre">beautiful_controller.js</span></code></span><a class="headerlink" href="#id3" title="Permalink to this code">¶</a></div>
 <div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="cm">/** @odoo-module */</span>
 
-<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Layout</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@web/search/layout&quot;</span><span class="p">;</span>
-<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useService</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@web/core/utils/hooks&quot;</span><span class="p">;</span>
-<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Component</span><span class="p">,</span><span class="w"> </span><span class="nx">onWillStart</span><span class="p">,</span><span class="w"> </span><span class="nx">useState</span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@odoo/owl&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">Layout</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@web/search/layout&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">useService</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@web/core/utils/hooks&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">Component</span><span class="p">,</span> <span class="nx">onWillStart</span><span class="p">,</span> <span class="nx">useState</span><span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@odoo/owl&quot;</span><span class="p">;</span>
 
-<span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">BeautifulController</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">Component</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">orm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useService</span><span class="p">(</span><span class="s2">&quot;orm&quot;</span><span class="p">);</span>
+<span class="kr">export</span> <span class="kr">class</span> <span class="nx">BeautifulController</span> <span class="kr">extends</span> <span class="nx">Component</span> <span class="p">{</span>
+    <span class="nx">setup</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">orm</span> <span class="o">=</span> <span class="nx">useService</span><span class="p">(</span><span class="s2">&quot;orm&quot;</span><span class="p">);</span>
 
-<span class="w">        </span><span class="c1">// The controller create the model and make it reactive so whenever this.model is</span>
-<span class="w">        </span><span class="c1">// accessed and edited then it&#39;ll cause a rerendering</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span>
-<span class="w">            </span><span class="ow">new</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">Model</span><span class="p">(</span>
-<span class="w">                </span><span class="k">this</span><span class="p">.</span><span class="nx">orm</span><span class="p">,</span>
-<span class="w">                </span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">resModel</span><span class="p">,</span>
-<span class="w">                </span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">fields</span><span class="p">,</span>
-<span class="w">                </span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">archInfo</span><span class="p">,</span>
-<span class="w">                </span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">domain</span>
-<span class="w">            </span><span class="p">)</span>
-<span class="w">        </span><span class="p">);</span>
+        <span class="c1">// The controller create the model and make it reactive so whenever this.model is</span>
+        <span class="c1">// accessed and edited then it&#39;ll cause a rerendering</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">model</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span>
+            <span class="k">new</span> <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">Model</span><span class="p">(</span>
+                <span class="k">this</span><span class="p">.</span><span class="nx">orm</span><span class="p">,</span>
+                <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">resModel</span><span class="p">,</span>
+                <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">fields</span><span class="p">,</span>
+                <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">archInfo</span><span class="p">,</span>
+                <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">domain</span>
+            <span class="p">)</span>
+        <span class="p">);</span>
 
-<span class="w">        </span><span class="nx">onWillStart</span><span class="p">(</span><span class="k">async</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="k">await</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">model</span><span class="p">.</span><span class="nx">load</span><span class="p">();</span>
-<span class="w">        </span><span class="p">});</span>
-<span class="w">    </span><span class="p">}</span>
+        <span class="nx">onWillStart</span><span class="p">(</span><span class="nx">async</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+            <span class="nx">await</span> <span class="k">this</span><span class="p">.</span><span class="nx">model</span><span class="p">.</span><span class="nx">load</span><span class="p">();</span>
+        <span class="p">});</span>
+    <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="nx">BeautifulController</span><span class="p">.</span><span class="nx">template</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;my_module.View&quot;</span><span class="p">;</span>
-<span class="nx">BeautifulController</span><span class="p">.</span><span class="nx">components</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Layout</span><span class="w"> </span><span class="p">};</span>
+<span class="nx">BeautifulController</span><span class="p">.</span><span class="nx">template</span> <span class="o">=</span> <span class="s2">&quot;my_module.View&quot;</span><span class="p">;</span>
+<span class="nx">BeautifulController</span><span class="p">.</span><span class="nx">components</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">Layout</span> <span class="p">};</span>
 </pre></div>
 </div>
 </div>
@@ -2046,12 +2046,12 @@ renderer.</p>
 <div class="literal-block-wrapper docutils container" id="id4">
 <div class="code-block-caption"><span class="caption-text"><code class="file o_code docutils literal notranslate"><span class="pre">beautiful_controller.xml</span></code></span><a class="headerlink" href="#id4" title="Permalink to this code">¶</a></div>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
-<span class="nt">&lt;templates</span><span class="w"> </span><span class="na">xml:space=</span><span class="s">&quot;preserve&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-name=</span><span class="s">&quot;my_module.View&quot;</span><span class="w"> </span><span class="na">owl=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;Layout</span><span class="w"> </span><span class="na">display=</span><span class="s">&quot;props.display&quot;</span><span class="w"> </span><span class="na">className=</span><span class="s">&quot;&#39;h-100 overflow-auto&#39;&quot;</span><span class="nt">&gt;</span>
-<span class="w">            </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-component=</span><span class="s">&quot;props.Renderer&quot;</span><span class="w"> </span><span class="na">records=</span><span class="s">&quot;model.records&quot;</span><span class="w"> </span><span class="na">propsYouWant=</span><span class="s">&quot;&#39;Hello world&#39;&quot;</span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/Layout&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/t&gt;</span>
+<span class="nt">&lt;templates</span> <span class="na">xml:space=</span><span class="s">&quot;preserve&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-name=</span><span class="s">&quot;my_module.View&quot;</span> <span class="na">owl=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;Layout</span> <span class="na">display=</span><span class="s">&quot;props.display&quot;</span> <span class="na">className=</span><span class="s">&quot;&#39;h-100 overflow-auto&#39;&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;t</span> <span class="na">t-component=</span><span class="s">&quot;props.Renderer&quot;</span> <span class="na">records=</span><span class="s">&quot;model.records&quot;</span> <span class="na">propsYouWant=</span><span class="s">&quot;&#39;Hello world&#39;&quot;</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;/Layout&gt;</span>
+    <span class="nt">&lt;/t&gt;</span>
 <span class="nt">&lt;/templates&gt;</span>
 </pre></div>
 </div>
@@ -2064,23 +2064,23 @@ the view that includes records.</p>
 </div></blockquote>
 <div class="literal-block-wrapper docutils container" id="id5">
 <div class="code-block-caption"><span class="caption-text"><code class="file o_code docutils literal notranslate"><span class="pre">beautiful_renderer.js</span></code></span><a class="headerlink" href="#id5" title="Permalink to this code">¶</a></div>
-<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Component</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@odoo/owl&quot;</span><span class="p">;</span>
-<span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">BeautifulRenderer</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">Component</span><span class="w"> </span><span class="p">{}</span>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">Component</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@odoo/owl&quot;</span><span class="p">;</span>
+<span class="kr">export</span> <span class="kr">class</span> <span class="nx">BeautifulRenderer</span> <span class="kr">extends</span> <span class="nx">Component</span> <span class="p">{}</span>
 
-<span class="nx">BeautifulRenderer</span><span class="p">.</span><span class="nx">template</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;my_module.Renderer&quot;</span><span class="p">;</span>
+<span class="nx">BeautifulRenderer</span><span class="p">.</span><span class="nx">template</span> <span class="o">=</span> <span class="s2">&quot;my_module.Renderer&quot;</span><span class="p">;</span>
 </pre></div>
 </div>
 </div>
 <div class="literal-block-wrapper docutils container" id="id6">
 <div class="code-block-caption"><span class="caption-text"><code class="file o_code docutils literal notranslate"><span class="pre">beautiful_renderer.xml</span></code></span><a class="headerlink" href="#id6" title="Permalink to this code">¶</a></div>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
-<span class="nt">&lt;templates</span><span class="w"> </span><span class="na">xml:space=</span><span class="s">&quot;preserve&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-name=</span><span class="s">&quot;my_module.Renderer&quot;</span><span class="w"> </span><span class="na">owl=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-esc=</span><span class="s">&quot;props.propsYouWant&quot;</span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-foreach=</span><span class="s">&quot;props.records&quot;</span><span class="w"> </span><span class="na">t-as=</span><span class="s">&quot;record&quot;</span><span class="w"> </span><span class="na">t-key=</span><span class="s">&quot;record.id&quot;</span><span class="nt">&gt;</span>
-<span class="w">            </span>//<span class="w"> </span>Show<span class="w"> </span>records
-<span class="w">        </span><span class="nt">&lt;/t&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/t&gt;</span>
+<span class="nt">&lt;templates</span> <span class="na">xml:space=</span><span class="s">&quot;preserve&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-name=</span><span class="s">&quot;my_module.Renderer&quot;</span> <span class="na">owl=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;t</span> <span class="na">t-esc=</span><span class="s">&quot;props.propsYouWant&quot;</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;t</span> <span class="na">t-foreach=</span><span class="s">&quot;props.records&quot;</span> <span class="na">t-as=</span><span class="s">&quot;record&quot;</span> <span class="na">t-key=</span><span class="s">&quot;record.id&quot;</span><span class="nt">&gt;</span>
+            // Show records
+        <span class="nt">&lt;/t&gt;</span>
+    <span class="nt">&lt;/t&gt;</span>
 <span class="nt">&lt;/templates&gt;</span>
 </pre></div>
 </div>
@@ -2092,28 +2092,28 @@ the view that includes records.</p>
 <div class="code-block-caption"><span class="caption-text"><code class="file o_code docutils literal notranslate"><span class="pre">beautiful_model.js</span></code></span><a class="headerlink" href="#id7" title="Permalink to this code">¶</a></div>
 <div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="cm">/** @odoo-module */</span>
 
-<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">KeepLast</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@web/core/utils/concurrency&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">KeepLast</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@web/core/utils/concurrency&quot;</span><span class="p">;</span>
 
-<span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">BeautifulModel</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kr">constructor</span><span class="p">(</span><span class="nx">orm</span><span class="p">,</span><span class="w"> </span><span class="nx">resModel</span><span class="p">,</span><span class="w"> </span><span class="nx">fields</span><span class="p">,</span><span class="w"> </span><span class="nx">archInfo</span><span class="p">,</span><span class="w"> </span><span class="nx">domain</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">orm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">orm</span><span class="p">;</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">resModel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">resModel</span><span class="p">;</span>
-<span class="w">        </span><span class="c1">// We can access arch information parsed by the beautiful arch parser</span>
-<span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">fieldFromTheArch</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">archInfo</span><span class="p">;</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">fieldFromTheArch</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">fieldFromTheArch</span><span class="p">;</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">fields</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">fields</span><span class="p">;</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">domain</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">domain</span><span class="p">;</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">keepLast</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">KeepLast</span><span class="p">();</span>
-<span class="w">    </span><span class="p">}</span>
+<span class="kr">export</span> <span class="kr">class</span> <span class="nx">BeautifulModel</span> <span class="p">{</span>
+    <span class="nx">constructor</span><span class="p">(</span><span class="nx">orm</span><span class="p">,</span> <span class="nx">resModel</span><span class="p">,</span> <span class="nx">fields</span><span class="p">,</span> <span class="nx">archInfo</span><span class="p">,</span> <span class="nx">domain</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">orm</span> <span class="o">=</span> <span class="nx">orm</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">resModel</span> <span class="o">=</span> <span class="nx">resModel</span><span class="p">;</span>
+        <span class="c1">// We can access arch information parsed by the beautiful arch parser</span>
+        <span class="kr">const</span> <span class="p">{</span> <span class="nx">fieldFromTheArch</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">archInfo</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">fieldFromTheArch</span> <span class="o">=</span> <span class="nx">fieldFromTheArch</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">fields</span> <span class="o">=</span> <span class="nx">fields</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">domain</span> <span class="o">=</span> <span class="nx">domain</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">keepLast</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">KeepLast</span><span class="p">();</span>
+    <span class="p">}</span>
 
-<span class="w">    </span><span class="k">async</span><span class="w"> </span><span class="nx">load</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="c1">// The keeplast protect against concurrency call</span>
-<span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">length</span><span class="p">,</span><span class="w"> </span><span class="nx">records</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">keepLast</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span>
-<span class="w">            </span><span class="k">this</span><span class="p">.</span><span class="nx">orm</span><span class="p">.</span><span class="nx">webSearchRead</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">resModel</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">domain</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="k">this</span><span class="p">.</span><span class="nx">fieldsFromTheArch</span><span class="p">],</span><span class="w"> </span><span class="p">{})</span>
-<span class="w">        </span><span class="p">);</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">records</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">records</span><span class="p">;</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">recordsLength</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">length</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
+    <span class="nx">async</span> <span class="nx">load</span><span class="p">()</span> <span class="p">{</span>
+        <span class="c1">// The keeplast protect against concurrency call</span>
+        <span class="kr">const</span> <span class="p">{</span> <span class="nx">length</span><span class="p">,</span> <span class="nx">records</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">await</span> <span class="k">this</span><span class="p">.</span><span class="nx">keepLast</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">orm</span><span class="p">.</span><span class="nx">webSearchRead</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">resModel</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">domain</span><span class="p">,</span> <span class="p">[</span><span class="k">this</span><span class="p">.</span><span class="nx">fieldsFromTheArch</span><span class="p">],</span> <span class="p">{})</span>
+        <span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">records</span> <span class="o">=</span> <span class="nx">records</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">recordsLength</span> <span class="o">=</span> <span class="nx">length</span><span class="p">;</span>
+    <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -2130,16 +2130,16 @@ Note</p><p>For advanced cases, instead of creating a model from scratch, it is a
 <div class="code-block-caption"><span class="caption-text"><code class="file o_code docutils literal notranslate"><span class="pre">beautiful_arch_parser.js</span></code></span><a class="headerlink" href="#id8" title="Permalink to this code">¶</a></div>
 <div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="cm">/** @odoo-module */</span>
 
-<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">XMLParser</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@web/core/utils/xml&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">XMLParser</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@web/core/utils/xml&quot;</span><span class="p">;</span>
 
-<span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">BeautifulArchParser</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">XMLParser</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">parse</span><span class="p">(</span><span class="nx">arch</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">xmlDoc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">parseXML</span><span class="p">(</span><span class="nx">arch</span><span class="p">);</span>
-<span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">fieldFromTheArch</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">xmlDoc</span><span class="p">.</span><span class="nx">getAttribute</span><span class="p">(</span><span class="s2">&quot;fieldFromTheArch&quot;</span><span class="p">);</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="nx">fieldFromTheArch</span><span class="p">,</span>
-<span class="w">        </span><span class="p">};</span>
-<span class="w">    </span><span class="p">}</span>
+<span class="kr">export</span> <span class="kr">class</span> <span class="nx">BeautifulArchParser</span> <span class="kr">extends</span> <span class="nx">XMLParser</span> <span class="p">{</span>
+    <span class="nx">parse</span><span class="p">(</span><span class="nx">arch</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kr">const</span> <span class="nx">xmlDoc</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">parseXML</span><span class="p">(</span><span class="nx">arch</span><span class="p">);</span>
+        <span class="kr">const</span> <span class="nx">fieldFromTheArch</span> <span class="o">=</span> <span class="nx">xmlDoc</span><span class="p">.</span><span class="nx">getAttribute</span><span class="p">(</span><span class="s2">&quot;fieldFromTheArch&quot;</span><span class="p">);</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="nx">fieldFromTheArch</span><span class="p">,</span>
+        <span class="p">};</span>
+    <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -2151,44 +2151,44 @@ registry.</p>
 <div class="code-block-caption"><span class="caption-text"><code class="file o_code docutils literal notranslate"><span class="pre">beautiful_view.js</span></code></span><a class="headerlink" href="#id9" title="Permalink to this code">¶</a></div>
 <div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="cm">/** @odoo-module */</span>
 
-<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">registry</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@web/core/registry&quot;</span><span class="p">;</span>
-<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">BeautifulController</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;./beautiful_controller&quot;</span><span class="p">;</span>
-<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">BeautifulArchParser</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;./beautiful_arch_parser&quot;</span><span class="p">;</span>
-<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">BeautifylModel</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;./beautiful_model&quot;</span><span class="p">;</span>
-<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">BeautifulRenderer</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;./beautiful_renderer&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">registry</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@web/core/registry&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">BeautifulController</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;./beautiful_controller&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">BeautifulArchParser</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;./beautiful_arch_parser&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">BeautifylModel</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;./beautiful_model&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">BeautifulRenderer</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;./beautiful_renderer&quot;</span><span class="p">;</span>
 
-<span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">beautifulView</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;beautiful&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">display_name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Beautiful&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">icon</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;fa fa-picture-o&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// the icon that will be displayed in the Layout panel</span>
-<span class="w">    </span><span class="nx">multiRecord</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">Controller</span><span class="o">:</span><span class="w"> </span><span class="nx">BeautifulController</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">ArchParser</span><span class="o">:</span><span class="w"> </span><span class="nx">BeautifulArchParser</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">Model</span><span class="o">:</span><span class="w"> </span><span class="nx">BeautifulModel</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">Renderer</span><span class="o">:</span><span class="w"> </span><span class="nx">BeautifulRenderer</span><span class="p">,</span>
+<span class="kr">export</span> <span class="kr">const</span> <span class="nx">beautifulView</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">type</span><span class="o">:</span> <span class="s2">&quot;beautiful&quot;</span><span class="p">,</span>
+    <span class="nx">display_name</span><span class="o">:</span> <span class="s2">&quot;Beautiful&quot;</span><span class="p">,</span>
+    <span class="nx">icon</span><span class="o">:</span> <span class="s2">&quot;fa fa-picture-o&quot;</span><span class="p">,</span> <span class="c1">// the icon that will be displayed in the Layout panel</span>
+    <span class="nx">multiRecord</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nx">Controller</span><span class="o">:</span> <span class="nx">BeautifulController</span><span class="p">,</span>
+    <span class="nx">ArchParser</span><span class="o">:</span> <span class="nx">BeautifulArchParser</span><span class="p">,</span>
+    <span class="nx">Model</span><span class="o">:</span> <span class="nx">BeautifulModel</span><span class="p">,</span>
+    <span class="nx">Renderer</span><span class="o">:</span> <span class="nx">BeautifulRenderer</span><span class="p">,</span>
 
-<span class="w">    </span><span class="nx">props</span><span class="p">(</span><span class="nx">genericProps</span><span class="p">,</span><span class="w"> </span><span class="nx">view</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">ArchParser</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">view</span><span class="p">;</span>
-<span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">arch</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">genericProps</span><span class="p">;</span>
-<span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">archInfo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">ArchParser</span><span class="p">().</span><span class="nx">parse</span><span class="p">(</span><span class="nx">arch</span><span class="p">);</span>
+    <span class="nx">props</span><span class="p">(</span><span class="nx">genericProps</span><span class="p">,</span> <span class="nx">view</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kr">const</span> <span class="p">{</span> <span class="nx">ArchParser</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">view</span><span class="p">;</span>
+        <span class="kr">const</span> <span class="p">{</span> <span class="nx">arch</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">genericProps</span><span class="p">;</span>
+        <span class="kr">const</span> <span class="nx">archInfo</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ArchParser</span><span class="p">().</span><span class="nx">parse</span><span class="p">(</span><span class="nx">arch</span><span class="p">);</span>
 
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="p">...</span><span class="nx">genericProps</span><span class="p">,</span>
-<span class="w">            </span><span class="nx">Model</span><span class="o">:</span><span class="w"> </span><span class="nx">view</span><span class="p">.</span><span class="nx">Model</span><span class="p">,</span>
-<span class="w">            </span><span class="nx">Renderer</span><span class="o">:</span><span class="w"> </span><span class="nx">view</span><span class="p">.</span><span class="nx">Renderer</span><span class="p">,</span>
-<span class="w">            </span><span class="nx">archInfo</span><span class="p">,</span>
-<span class="w">        </span><span class="p">};</span>
-<span class="w">    </span><span class="p">},</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="p">...</span><span class="nx">genericProps</span><span class="p">,</span>
+            <span class="nx">Model</span><span class="o">:</span> <span class="nx">view</span><span class="p">.</span><span class="nx">Model</span><span class="p">,</span>
+            <span class="nx">Renderer</span><span class="o">:</span> <span class="nx">view</span><span class="p">.</span><span class="nx">Renderer</span><span class="p">,</span>
+            <span class="nx">archInfo</span><span class="p">,</span>
+        <span class="p">};</span>
+    <span class="p">},</span>
 <span class="p">};</span>
 
-<span class="nx">registry</span><span class="p">.</span><span class="nx">category</span><span class="p">(</span><span class="s2">&quot;views&quot;</span><span class="p">).</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;beautifulView&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">beautifulView</span><span class="p">);</span>
+<span class="nx">registry</span><span class="p">.</span><span class="nx">category</span><span class="p">(</span><span class="s2">&quot;views&quot;</span><span class="p">).</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;beautifulView&quot;</span><span class="p">,</span> <span class="nx">beautifulView</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
 </li>
 <li><p>Use the view in an arch.</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>...
-<span class="nt">&lt;beautiful</span><span class="w"> </span><span class="na">fieldFromTheArch=</span><span class="s">&quot;res.partner&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;beautiful</span> <span class="na">fieldFromTheArch=</span><span class="s">&quot;res.partner&quot;</span><span class="nt">/&gt;</span>
 ...
 </pre></div>
 </div>

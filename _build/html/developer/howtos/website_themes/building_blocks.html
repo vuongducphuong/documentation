@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/howtos/website_themes/building_blocks.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/howtos/website_themes/building_blocks.html" />
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -2000,14 +2000,14 @@ Demo page</p><p><a class="reference external" href="http://localhost:8069/websit
 <h3>Wrapper<a class="headerlink" href="#wrapper" title="Permalink to this headline">¶</a></h3>
 <p>The standard main container of any snippet is a <code class="o_code docutils literal notranslate"><span class="pre">section</span></code>. Any section element can be edited like a
 block of content that you can move or duplicate.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;section</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;s_snippet_name&quot;</span><span class="w"> </span><span class="na">data-name=</span><span class="s">&quot;...&quot;</span><span class="w"> </span><span class="na">data-snippet=</span><span class="s">&quot;...&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="cm">&lt;!-- Content --&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">&quot;s_snippet_name&quot;</span> <span class="na">data-name=</span><span class="s">&quot;...&quot;</span> <span class="na">data-snippet=</span><span class="s">&quot;...&quot;</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- Content --&gt;</span>
 <span class="nt">&lt;/section&gt;</span>
 </pre></div>
 </div>
 <p>For inner content snippets, any other HTML tag can be used.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;s_snippet_name&quot;</span><span class="w"> </span><span class="na">data-name=</span><span class="s">&quot;...&quot;</span><span class="w"> </span><span class="na">data-snippet=</span><span class="s">&quot;...&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="cm">&lt;!-- Content --&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;s_snippet_name&quot;</span> <span class="na">data-name=</span><span class="s">&quot;...&quot;</span> <span class="na">data-snippet=</span><span class="s">&quot;...&quot;</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- Content --&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
@@ -2049,87 +2049,87 @@ Builder’s options. You can use inner content snippets instead.</p>
 <h3>Columns<a class="headerlink" href="#columns" title="Permalink to this headline">¶</a></h3>
 <p>Any large Bootstrap columns directly descending from a <code class="o_code docutils literal notranslate"><span class="pre">.row</span></code> element (respecting Bootstrap
 structure) will be triggered by the Website Builder to make them resizable.</p>
-<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="p">.</span><span class="nc">row</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="p">.</span><span class="nc">col-lg-</span><span class="o">*</span>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="p">.</span><span class="nc">row</span> <span class="o">&gt;</span> <span class="p">.</span><span class="nc">col-lg-</span><span class="o">*</span>
 </pre></div>
 </div>
 <p>Add padding on columns and sections.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>class=&quot;pt80<span class="w"> </span>pb80&quot;
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>class=&quot;pt80 pb80&quot;
 </pre></div>
 </div>
 <p>Add a background based on the color palette for columns and sections.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>class=&quot;o_cc<span class="w"> </span>o_cc*&quot;
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>class=&quot;o_cc o_cc*&quot;
 </pre></div>
 </div>
 <p>Make an element not editable.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;o_not_editable&quot;</span><span class="nt">&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;o_not_editable&quot;</span><span class="nt">&gt;</span>
 </pre></div>
 </div>
 <p>Enable the columns selector.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;container s_allow_columns&quot;</span><span class="nt">&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;container s_allow_columns&quot;</span><span class="nt">&gt;</span>
 </pre></div>
 </div>
 <p>Disable the columns option.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;row s_nb_column_fixed&quot;</span><span class="nt">&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row s_nb_column_fixed&quot;</span><span class="nt">&gt;</span>
 </pre></div>
 </div>
 <p>Disable the size option of all child columns.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;row s_col_no_resize&quot;</span><span class="nt">&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row s_col_no_resize&quot;</span><span class="nt">&gt;</span>
 </pre></div>
 </div>
 <p>Disable the size option for one column.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;col-lg-* s_col_no_resize&quot;</span><span class="nt">&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-lg-* s_col_no_resize&quot;</span><span class="nt">&gt;</span>
 </pre></div>
 </div>
 <p>Disable the background color option for all columns.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;row s_col_no_bgcolor&quot;</span><span class="nt">&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row s_col_no_bgcolor&quot;</span><span class="nt">&gt;</span>
 </pre></div>
 </div>
 <p>Disable the background color option of one column.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;col-lg-* s_col_no_bgcolor&quot;</span><span class="nt">&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-lg-* s_col_no_bgcolor&quot;</span><span class="nt">&gt;</span>
 </pre></div>
 </div>
 <p>Add parallax effect.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;section</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;parallax s_parallax_is_fixed s_parallax_no_overflow_hidden&quot;</span><span class="w"> </span><span class="na">data-scroll-background-ratio=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;span</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;s_parallax_bg oe_img_bg o_bg_img_center&quot;</span><span class="w"> </span><span class="na">style=</span><span class="s">&quot;background-image: url(&#39;...&#39;); background-position: 50% 75%;&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;container&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="cm">&lt;!-- Content --&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/div&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">&quot;parallax s_parallax_is_fixed s_parallax_no_overflow_hidden&quot;</span> <span class="na">data-scroll-background-ratio=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;s_parallax_bg oe_img_bg o_bg_img_center&quot;</span> <span class="na">style=</span><span class="s">&quot;background-image: url(&#39;...&#39;); background-position: 50% 75%;&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;container&quot;</span><span class="nt">&gt;</span>
+        <span class="c">&lt;!-- Content --&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/section&gt;</span>
 </pre></div>
 </div>
 <p>Add a black color filter with an opacity of 50%.</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;section&gt;</span>
-<span class="w">    </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;o_we_bg_filter bg-black-50&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;container&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="cm">&lt;!-- Content --&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;o_we_bg_filter bg-black-50&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;container&quot;</span><span class="nt">&gt;</span>
+        <span class="c">&lt;!-- Content --&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/section&gt;</span>
 </pre></div>
 </div>
 <p>Add a white color filter with an opacity of 85%.</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;section&gt;</span>
-<span class="w">    </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;o_we_bg_filter bg-white-85&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;container&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="cm">&lt;!-- Content --&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;o_we_bg_filter bg-white-85&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;container&quot;</span><span class="nt">&gt;</span>
+        <span class="c">&lt;!-- Content --&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/section&gt;</span>
 </pre></div>
 </div>
 <p>Add a custom color filter.</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;section&gt;</span>
-<span class="w">    </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;o_we_bg_filter&quot;</span><span class="w"> </span><span class="na">style=</span><span class="s">&quot;background-color: rgba(39, 110, 114, 0.54) !important;&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;container&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="cm">&lt;!-- Content --&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;o_we_bg_filter&quot;</span> <span class="na">style=</span><span class="s">&quot;background-color: rgba(39, 110, 114, 0.54) !important;&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;container&quot;</span><span class="nt">&gt;</span>
+        <span class="c">&lt;!-- Content --&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/section&gt;</span>
 </pre></div>
 </div>
 <p>Add a custom gradient filter.</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;section&gt;</span>
-<span class="w">    </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;o_we_bg_filter&quot;</span><span class="w"> </span><span class="na">style=</span><span class="s">&quot;background-image: linear-gradient(135deg, rgba(255, 204, 51, 0.5) 0%, rgba(226, 51, 255, 0.5) 100%) !important;&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;container&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="cm">&lt;!-- Content --&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;o_we_bg_filter&quot;</span> <span class="na">style=</span><span class="s">&quot;background-image: linear-gradient(135deg, rgba(255, 204, 51, 0.5) 0%, rgba(226, 51, 255, 0.5) 100%) !important;&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;container&quot;</span><span class="nt">&gt;</span>
+        <span class="c">&lt;!-- Content --&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/section&gt;</span>
 </pre></div>
 </div>
@@ -2139,8 +2139,8 @@ structure) will be triggered by the Website Builder to make them resizable.</p>
 <h3>Compatibility system<a class="headerlink" href="#compatibility-system" title="Permalink to this headline">¶</a></h3>
 <p>When a snippet has a <code class="o_code docutils literal notranslate"><span class="pre">data-vcss</span></code> or <code class="o_code docutils literal notranslate"><span class="pre">data-vjs</span></code> attribute, it means it is an updated version, not the
 original one.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;section</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;s_snippet_name&quot;</span><span class="w"> </span><span class="na">data-vcss=</span><span class="s">&quot;...&quot;</span><span class="w"> </span><span class="na">data-js=</span><span class="s">&quot;...&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="cm">&lt;!-- Content --&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">&quot;s_snippet_name&quot;</span> <span class="na">data-vcss=</span><span class="s">&quot;...&quot;</span> <span class="na">data-js=</span><span class="s">&quot;...&quot;</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- Content --&gt;</span>
 <span class="nt">&lt;/section&gt;</span>
 </pre></div>
 </div>
@@ -2155,11 +2155,11 @@ snippet (e.g., <code class="file o_code docutils literal notranslate"><span clas
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
 <span class="nt">&lt;odoo&gt;</span>
 
-<span class="w">    </span><span class="nt">&lt;template</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;s_airproof_snippet&quot;</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;...&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;section</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;s_airproof_snippet&quot;</span><span class="nt">&gt;</span>
-<span class="w">            </span><span class="cm">&lt;!-- Content --&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/section&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/template&gt;</span>
+    <span class="nt">&lt;template</span> <span class="na">id=</span><span class="s">&quot;s_airproof_snippet&quot;</span> <span class="na">name=</span><span class="s">&quot;...&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">&quot;s_airproof_snippet&quot;</span><span class="nt">&gt;</span>
+            <span class="c">&lt;!-- Content --&gt;</span>
+        <span class="nt">&lt;/section&gt;</span>
+    <span class="nt">&lt;/template&gt;</span>
 
 <span class="nt">&lt;/odoo&gt;</span>
 </pre></div>
@@ -2183,19 +2183,19 @@ Tip</p><ul class="simple">
 page, directly from the edit panel.</p>
 <div class="literal-block-wrapper docutils container" id="id5">
 <div class="code-block-caption"><span class="caption-text"><code class="o_code docutils literal notranslate"><span class="pre">/website_airproof/views/snippets/options.xml</span></code></span><a class="headerlink" href="#id5" title="Permalink to this code">¶</a></div>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;template</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;snippets&quot;</span><span class="w"> </span><span class="na">inherit_id=</span><span class="s">&quot;website.snippets&quot;</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Custom Snippets&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;xpath</span><span class="w"> </span><span class="na">expr=</span><span class="s">&quot;//*[@id=&#39;default_snippets&#39;]&quot;</span><span class="w"> </span><span class="na">position=</span><span class="s">&quot;before&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;x_theme_snippets&quot;</span><span class="nt">&gt;</span>
-<span class="w">            </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;x_theme_snippets_category&quot;</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;o_panel&quot;</span><span class="nt">&gt;</span>
-<span class="w">                </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;o_panel_header&quot;</span><span class="nt">&gt;</span>Theme<span class="nt">&lt;/div&gt;</span>
-<span class="w">                </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;o_panel_body&quot;</span><span class="nt">&gt;</span>
-<span class="w">                    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-snippet=</span><span class="s">&quot;website_airproof.s_airproof_snippet&quot;</span><span class="w"> </span><span class="na">t-thumbnail=</span><span class="s">&quot;/website_airproof/static/src/img/wbuilder/s_airproof_snippet.svg&quot;</span><span class="nt">&gt;</span>
-<span class="w">                        </span><span class="nt">&lt;keywords&gt;</span>Snippet<span class="nt">&lt;/keywords&gt;</span>
-<span class="w">                    </span><span class="nt">&lt;/t&gt;</span>
-<span class="w">                </span><span class="nt">&lt;/div&gt;</span>
-<span class="w">            </span><span class="nt">&lt;/div&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/t&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/xpath&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;template</span> <span class="na">id=</span><span class="s">&quot;snippets&quot;</span> <span class="na">inherit_id=</span><span class="s">&quot;website.snippets&quot;</span> <span class="na">name=</span><span class="s">&quot;Custom Snippets&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;xpath</span> <span class="na">expr=</span><span class="s">&quot;//*[@id=&#39;default_snippets&#39;]&quot;</span> <span class="na">position=</span><span class="s">&quot;before&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;t</span> <span class="na">id=</span><span class="s">&quot;x_theme_snippets&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;x_theme_snippets_category&quot;</span> <span class="na">class=</span><span class="s">&quot;o_panel&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;o_panel_header&quot;</span><span class="nt">&gt;</span>Theme<span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;o_panel_body&quot;</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;t</span> <span class="na">t-snippet=</span><span class="s">&quot;website_airproof.s_airproof_snippet&quot;</span> <span class="na">t-thumbnail=</span><span class="s">&quot;/website_airproof/static/src/img/wbuilder/s_airproof_snippet.svg&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;keywords&gt;</span>Snippet<span class="nt">&lt;/keywords&gt;</span>
+                    <span class="nt">&lt;/t&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/t&gt;</span>
+    <span class="nt">&lt;/xpath&gt;</span>
 <span class="nt">&lt;/template&gt;</span>
 </pre></div>
 </div>
@@ -2229,19 +2229,19 @@ snippet options easily and automatically add them to the Website Builder.</p>
 interact with the user interface.</p>
 <p><code class="o_code docutils literal notranslate"><span class="pre">data-selector</span></code> binds all the options included in the group to a particular element. It can be used
 in combination with <code class="o_code docutils literal notranslate"><span class="pre">data-target</span></code> and <code class="o_code docutils literal notranslate"><span class="pre">data-exclude</span></code>.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">data-selector=</span><span class="s">&quot;section, h1, .custom_class, #custom_id&quot;</span><span class="nt">&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span> <span class="na">data-selector=</span><span class="s">&quot;section, h1, .custom_class, #custom_id&quot;</span><span class="nt">&gt;</span>
 </pre></div>
 </div>
 <p><code class="o_code docutils literal notranslate"><span class="pre">data-js</span></code> binds custom JavaScript methods.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">data-js=</span><span class="s">&quot;CustomMethodName&quot;</span><span class="w"> </span><span class="na">data-selector=</span><span class="s">&quot;...&quot;</span><span class="nt">&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span> <span class="na">data-js=</span><span class="s">&quot;CustomMethodName&quot;</span> <span class="na">data-selector=</span><span class="s">&quot;...&quot;</span><span class="nt">&gt;</span>
 </pre></div>
 </div>
 <p><code class="o_code docutils literal notranslate"><span class="pre">data-drop-in</span></code> defines the list of elements where the snippet can be dropped into.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">data-selector=</span><span class="s">&quot;...&quot;</span><span class="w"> </span><span class="na">data-drop-in=</span><span class="s">&quot;...&quot;</span><span class="nt">&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span> <span class="na">data-selector=</span><span class="s">&quot;...&quot;</span> <span class="na">data-drop-in=</span><span class="s">&quot;...&quot;</span><span class="nt">&gt;</span>
 </pre></div>
 </div>
 <p><code class="o_code docutils literal notranslate"><span class="pre">data-drop-near</span></code> defines the list of elements where the snippet can be dropped beside.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">data-selector=</span><span class="s">&quot;...&quot;</span><span class="w"> </span><span class="na">data-drop-near=</span><span class="s">&quot;...&quot;</span><span class="nt">&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span> <span class="na">data-selector=</span><span class="s">&quot;...&quot;</span> <span class="na">data-drop-near=</span><span class="s">&quot;...&quot;</span><span class="nt">&gt;</span>
 </pre></div>
 </div>
 </section><section id="scss-options">
@@ -2253,18 +2253,18 @@ choose, the user interface will behave differently.</p>
 option can be enabled at a time.</p>
 <div class="literal-block-wrapper docutils container" id="id6">
 <div class="code-block-caption"><span class="caption-text"><code class="o_code docutils literal notranslate"><span class="pre">/website_airproof/views/snippets/options.xml</span></code></span><a class="headerlink" href="#id6" title="Permalink to this code">¶</a></div>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;template</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;snippet_options&quot;</span><span class="w"> </span><span class="na">inherit_id=</span><span class="s">&quot;website.snippet_options&quot;</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;...&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;xpath</span><span class="w"> </span><span class="na">expr=</span><span class="s">&quot;.&quot;</span><span class="w"> </span><span class="na">position=</span><span class="s">&quot;inside&quot;</span><span class="nt">&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;template</span> <span class="na">id=</span><span class="s">&quot;snippet_options&quot;</span> <span class="na">inherit_id=</span><span class="s">&quot;website.snippet_options&quot;</span> <span class="na">name=</span><span class="s">&quot;...&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;xpath</span> <span class="na">expr=</span><span class="s">&quot;.&quot;</span> <span class="na">position=</span><span class="s">&quot;inside&quot;</span><span class="nt">&gt;</span>
 
-<span class="w">        </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">data-selector=</span><span class="s">&quot;h1, h2, h3, h4, h5, h6&quot;</span><span class="nt">&gt;</span>
-<span class="w">            </span><span class="nt">&lt;we-select</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Headings&quot;</span><span class="nt">&gt;</span>
-<span class="w">                </span><span class="nt">&lt;we-button</span><span class="w"> </span><span class="na">data-select-class=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Default<span class="nt">&lt;/we-button&gt;</span>
-<span class="w">                </span><span class="nt">&lt;we-button</span><span class="w"> </span><span class="na">data-select-class=</span><span class="s">&quot;x_custom_class_01&quot;</span><span class="nt">&gt;</span>01<span class="nt">&lt;/we-button&gt;</span>
-<span class="w">                </span><span class="nt">&lt;we-button</span><span class="w"> </span><span class="na">data-select-class=</span><span class="s">&quot;x_custom_class_02&quot;</span><span class="nt">&gt;</span>02<span class="nt">&lt;/we-button&gt;</span>
-<span class="w">            </span><span class="nt">&lt;/we-select&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">data-selector=</span><span class="s">&quot;h1, h2, h3, h4, h5, h6&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;we-select</span> <span class="na">string=</span><span class="s">&quot;Headings&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;we-button</span> <span class="na">data-select-class=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Default<span class="nt">&lt;/we-button&gt;</span>
+                <span class="nt">&lt;we-button</span> <span class="na">data-select-class=</span><span class="s">&quot;x_custom_class_01&quot;</span><span class="nt">&gt;</span>01<span class="nt">&lt;/we-button&gt;</span>
+                <span class="nt">&lt;we-button</span> <span class="na">data-select-class=</span><span class="s">&quot;x_custom_class_02&quot;</span><span class="nt">&gt;</span>02<span class="nt">&lt;/we-button&gt;</span>
+            <span class="nt">&lt;/we-select&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
 
-<span class="w">    </span><span class="nt">&lt;/xpath&gt;</span>
+    <span class="nt">&lt;/xpath&gt;</span>
 <span class="nt">&lt;/template&gt;</span>
 </pre></div>
 </div>
@@ -2278,10 +2278,10 @@ See also</p><p><a class="reference external" href="https://github.com/odoo/odoo/
 <p>The <code class="o_code docutils literal notranslate"><span class="pre">data-js</span></code> attribute can be assigned to an options group in order to define a custom method.</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="cm">/** @odoo-module */</span>
 
-<span class="k">import</span><span class="w"> </span><span class="nx">options</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;web_editor.snippets.options&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="nx">options</span> <span class="nx">from</span> <span class="s1">&#39;web_editor.snippets.options&#39;</span><span class="p">;</span>
 
-<span class="nx">options</span><span class="p">.</span><span class="nx">registry</span><span class="p">.</span><span class="nx">CustomMethodName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">options</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
-<span class="w">    </span><span class="c1">//</span>
+<span class="nx">options</span><span class="p">.</span><span class="nx">registry</span><span class="p">.</span><span class="nx">CustomMethodName</span> <span class="o">=</span> <span class="nx">options</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="c1">//</span>
 <span class="p">});</span>
 </pre></div>
 </div>
@@ -2331,11 +2331,11 @@ You can also add your own template to the list.</p>
 <h4>Blog posts<a class="headerlink" href="#blog-posts" title="Permalink to this headline">¶</a></h4>
 <div class="literal-block-wrapper docutils container" id="id7">
 <div class="code-block-caption"><span class="caption-text"><code class="o_code docutils literal notranslate"><span class="pre">/website_airproof/views/snippets/options.xml</span></code></span><a class="headerlink" href="#id7" title="Permalink to this code">¶</a></div>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;template</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;dynamic_filter_template_blog_post_airproof&quot;</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;...&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">t-foreach=</span><span class="s">&quot;records&quot;</span><span class="w"> </span><span class="na">t-as=</span><span class="s">&quot;data&quot;</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;s_blog_posts_post&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set=</span><span class="s">&quot;record&quot;</span><span class="w"> </span><span class="na">t-value=</span><span class="s">&quot;data[&#39;_record&#39;]&quot;</span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="cm">&lt;!-- Content --&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/div&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;template</span> <span class="na">id=</span><span class="s">&quot;dynamic_filter_template_blog_post_airproof&quot;</span> <span class="na">name=</span><span class="s">&quot;...&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">t-foreach=</span><span class="s">&quot;records&quot;</span> <span class="na">t-as=</span><span class="s">&quot;data&quot;</span> <span class="na">class=</span><span class="s">&quot;s_blog_posts_post&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;t</span> <span class="na">t-set=</span><span class="s">&quot;record&quot;</span> <span class="na">t-value=</span><span class="s">&quot;data[&#39;_record&#39;]&quot;</span><span class="nt">/&gt;</span>
+        <span class="c">&lt;!-- Content --&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/template&gt;</span>
 </pre></div>
 </div>
@@ -2363,11 +2363,11 @@ You can also add your own template to the list.</p>
 <h4>Products<a class="headerlink" href="#products" title="Permalink to this headline">¶</a></h4>
 <div class="literal-block-wrapper docutils container" id="id8">
 <div class="code-block-caption"><span class="caption-text"><code class="o_code docutils literal notranslate"><span class="pre">/website_airproof/views/snippets/options.xml</span></code></span><a class="headerlink" href="#id8" title="Permalink to this code">¶</a></div>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;template</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;dynamic_filter_template_product_product_airproof&quot;</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;...&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-foreach=</span><span class="s">&quot;records&quot;</span><span class="w"> </span><span class="na">t-as=</span><span class="s">&quot;data&quot;</span><span class="w"> </span><span class="na">data-number-of-elements=</span><span class="s">&quot;4&quot;</span><span class="w"> </span><span class="na">data-number-of-elements-sm=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="na">data-number-of-elements-fetch=</span><span class="s">&quot;8&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set=</span><span class="s">&quot;record&quot;</span><span class="w"> </span><span class="na">t-value=</span><span class="s">&quot;data[&#39;_record&#39;]&quot;</span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="cm">&lt;!-- Content --&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/t&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;template</span> <span class="na">id=</span><span class="s">&quot;dynamic_filter_template_product_product_airproof&quot;</span> <span class="na">name=</span><span class="s">&quot;...&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-foreach=</span><span class="s">&quot;records&quot;</span> <span class="na">t-as=</span><span class="s">&quot;data&quot;</span> <span class="na">data-number-of-elements=</span><span class="s">&quot;4&quot;</span> <span class="na">data-number-of-elements-sm=</span><span class="s">&quot;1&quot;</span> <span class="na">data-number-of-elements-fetch=</span><span class="s">&quot;8&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;t</span> <span class="na">t-set=</span><span class="s">&quot;record&quot;</span> <span class="na">t-value=</span><span class="s">&quot;data[&#39;_record&#39;]&quot;</span><span class="nt">/&gt;</span>
+        <span class="c">&lt;!-- Content --&gt;</span>
+    <span class="nt">&lt;/t&gt;</span>
 <span class="nt">&lt;/template&gt;</span>
 </pre></div>
 </div>
@@ -2404,11 +2404,11 @@ You can also add your own template to the list.</p>
 <h4>Events<a class="headerlink" href="#events" title="Permalink to this headline">¶</a></h4>
 <div class="literal-block-wrapper docutils container" id="id9">
 <div class="code-block-caption"><span class="caption-text"><code class="o_code docutils literal notranslate"><span class="pre">/website_airproof/views/snippets/options.xml</span></code></span><a class="headerlink" href="#id9" title="Permalink to this code">¶</a></div>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;template</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;dynamic_filter_template_event_event_airproof&quot;</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;...&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">t-foreach=</span><span class="s">&quot;records&quot;</span><span class="w"> </span><span class="na">t-as=</span><span class="s">&quot;data&quot;</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;s_events_event&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set=</span><span class="s">&quot;record&quot;</span><span class="w"> </span><span class="na">t-value=</span><span class="s">&quot;data[&#39;_record&#39;]._set_tz_context()&quot;</span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="cm">&lt;!-- Content --&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/div&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;template</span> <span class="na">id=</span><span class="s">&quot;dynamic_filter_template_event_event_airproof&quot;</span> <span class="na">name=</span><span class="s">&quot;...&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">t-foreach=</span><span class="s">&quot;records&quot;</span> <span class="na">t-as=</span><span class="s">&quot;data&quot;</span> <span class="na">class=</span><span class="s">&quot;s_events_event&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;t</span> <span class="na">t-set=</span><span class="s">&quot;record&quot;</span> <span class="na">t-value=</span><span class="s">&quot;data[&#39;_record&#39;]._set_tz_context()&quot;</span><span class="nt">/&gt;</span>
+        <span class="c">&lt;!-- Content --&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/template&gt;</span>
 </pre></div>
 </div>

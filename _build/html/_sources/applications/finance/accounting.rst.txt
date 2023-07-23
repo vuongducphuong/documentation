@@ -52,7 +52,7 @@ accounts, smart matching suggestions, etc.
 
       Reporting, declarations, and analytic accounting
 
-Double-entry bookkeeping 1
+Double-entry bookkeeping
 ========================
 
 Odoo automatically creates all the underlying journal entries for all accounting transactions (e.g.,

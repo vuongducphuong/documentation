@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/reference/user_interface/scss_inheritance.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/reference/user_interface/scss_inheritance.html" />
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -1953,13 +1953,13 @@ in complex environments like Odoo.</p>
 <p class="alert-title">
 Example</p><div class="literal-block-wrapper docutils container" id="id1">
 <div class="code-block-caption"><span class="caption-text"><code class="file o_code docutils literal notranslate"><span class="pre">library.scss</span></code></span><a class="headerlink" href="#id1" title="Permalink to this code">¶</a></div>
-<div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="nv">$foo</span><span class="o">:</span><span class="w"> </span><span class="ni">red</span><span class="p">;</span>
+<div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="nv">$foo</span><span class="o">:</span> <span class="ni">red</span><span class="p">;</span>
 </pre></div>
 </div>
 </div>
 <div class="literal-block-wrapper docutils container" id="id2">
 <div class="code-block-caption"><span class="caption-text"><code class="file o_code docutils literal notranslate"><span class="pre">customization_layer.scss</span></code></span><a class="headerlink" href="#id2" title="Permalink to this code">¶</a></div>
-<div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="nv">$foo</span><span class="o">:</span><span class="w"> </span><span class="ni">blue</span><span class="p">;</span><span class="w"> </span><span class="c1">// -&gt; Don&#39;t!</span>
+<div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="nv">$foo</span><span class="o">:</span> <span class="ni">blue</span><span class="p">;</span> <span class="c1">// -&gt; Don&#39;t!</span>
 </pre></div>
 </div>
 </div>
@@ -1977,14 +1977,14 @@ loading order.</p>
 <p class="alert-title">
 Example</p><div class="literal-block-wrapper docutils container" id="id3">
 <div class="code-block-caption"><span class="caption-text"><code class="file o_code docutils literal notranslate"><span class="pre">customization_layer.scss</span></code></span><a class="headerlink" href="#id3" title="Permalink to this code">¶</a></div>
-<div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="nv">$foo</span><span class="o">:</span><span class="w"> </span><span class="ni">red</span><span class="w"> </span><span class="nv">!default</span><span class="p">;</span>
+<div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="nv">$foo</span><span class="o">:</span> <span class="ni">red</span> <span class="nv">!default</span><span class="p">;</span>
 </pre></div>
 </div>
 </div>
 <div class="literal-block-wrapper docutils container" id="id4">
 <div class="code-block-caption"><span class="caption-text"><code class="file o_code docutils literal notranslate"><span class="pre">library.scss</span></code></span><a class="headerlink" href="#id4" title="Permalink to this code">¶</a></div>
-<div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="nv">$foo</span><span class="o">:</span><span class="w"> </span><span class="ni">blue</span><span class="w"> </span><span class="nv">!default</span><span class="p">;</span><span class="w"> </span><span class="c1">// -&gt; Already defined, line ignored.</span>
-<span class="nv">$bar</span><span class="o">:</span><span class="w"> </span><span class="ni">black</span><span class="w"> </span><span class="nv">!default</span><span class="p">;</span><span class="w"> </span><span class="c1">// -&gt; Not defined yet, value assigned.</span>
+<div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="nv">$foo</span><span class="o">:</span> <span class="ni">blue</span> <span class="nv">!default</span><span class="p">;</span> <span class="c1">// -&gt; Already defined, line ignored.</span>
+<span class="nv">$bar</span><span class="o">:</span> <span class="ni">black</span> <span class="nv">!default</span><span class="p">;</span> <span class="c1">// -&gt; Not defined yet, value assigned.</span>
 </pre></div>
 </div>
 </div>

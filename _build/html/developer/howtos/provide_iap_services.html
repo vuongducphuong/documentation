@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/howtos/provide_iap_services.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/howtos/provide_iap_services.html" />
     
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -2178,21 +2178,21 @@ local value via your application and additional parts via a remote service.</p>
 <div class="literal-block-wrapper docutils container" id="id16">
 <div class="code-block-caption"><span class="caption-text"><code class="o_code docutils literal notranslate"><span class="pre">coalroller/views/res_partner_views.xml</span></code></span><a class="headerlink" href="#id16" title="Permalink to this code">¶</a></div>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="nt">&lt;odoo&gt;</span>
-</span><span class="hll"><span class="w">    </span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;partner_form_coalroll&quot;</span><span class="nt">&gt;</span>
-</span><span class="hll"><span class="w">        </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>partner.form.coalroll<span class="nt">&lt;/field&gt;</span>
-</span><span class="hll"><span class="w">        </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;model&quot;</span><span class="nt">&gt;</span>res.partner<span class="nt">&lt;/field&gt;</span>
-</span><span class="hll"><span class="w">        </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;inherit_id&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;base.view_partner_form&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-</span><span class="hll"><span class="w">        </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;arch&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;xml&quot;</span><span class="nt">&gt;</span>
-</span><span class="hll"><span class="w">            </span><span class="nt">&lt;xpath</span><span class="w"> </span><span class="na">expr=</span><span class="s">&quot;//div[@name=&#39;button_box&#39;]&quot;</span><span class="nt">&gt;</span>
-</span><span class="hll"><span class="w">                </span><span class="nt">&lt;button</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;object&quot;</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;action_partner_coalroll&quot;</span>
-</span><span class="hll"><span class="w">                        </span><span class="na">class=</span><span class="s">&quot;oe_stat_button&quot;</span><span class="w"> </span><span class="na">icon=</span><span class="s">&quot;fa-gears&quot;</span><span class="nt">&gt;</span>
-</span><span class="hll"><span class="w">                    </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;o_form_field o_stat_info&quot;</span><span class="nt">&gt;</span>
-</span><span class="hll"><span class="w">                        </span><span class="nt">&lt;span</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;o_stat_text&quot;</span><span class="nt">&gt;</span>Roll<span class="w"> </span>Coal<span class="nt">&lt;/span&gt;</span>
-</span><span class="hll"><span class="w">                    </span><span class="nt">&lt;/div&gt;</span>
-</span><span class="hll"><span class="w">                </span><span class="nt">&lt;/button&gt;</span>
-</span><span class="hll"><span class="w">            </span><span class="nt">&lt;/xpath&gt;</span>
-</span><span class="hll"><span class="w">        </span><span class="nt">&lt;/field&gt;</span>
-</span><span class="hll"><span class="w">    </span><span class="nt">&lt;/record&gt;</span>
+</span><span class="hll">    <span class="nt">&lt;record</span> <span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span> <span class="na">id=</span><span class="s">&quot;partner_form_coalroll&quot;</span><span class="nt">&gt;</span>
+</span><span class="hll">        <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>partner.form.coalroll<span class="nt">&lt;/field&gt;</span>
+</span><span class="hll">        <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;model&quot;</span><span class="nt">&gt;</span>res.partner<span class="nt">&lt;/field&gt;</span>
+</span><span class="hll">        <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;inherit_id&quot;</span> <span class="na">ref=</span><span class="s">&quot;base.view_partner_form&quot;</span> <span class="nt">/&gt;</span>
+</span><span class="hll">        <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;arch&quot;</span> <span class="na">type=</span><span class="s">&quot;xml&quot;</span><span class="nt">&gt;</span>
+</span><span class="hll">            <span class="nt">&lt;xpath</span> <span class="na">expr=</span><span class="s">&quot;//div[@name=&#39;button_box&#39;]&quot;</span><span class="nt">&gt;</span>
+</span><span class="hll">                <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;object&quot;</span> <span class="na">name=</span><span class="s">&quot;action_partner_coalroll&quot;</span>
+</span><span class="hll">                        <span class="na">class=</span><span class="s">&quot;oe_stat_button&quot;</span> <span class="na">icon=</span><span class="s">&quot;fa-gears&quot;</span><span class="nt">&gt;</span>
+</span><span class="hll">                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;o_form_field o_stat_info&quot;</span><span class="nt">&gt;</span>
+</span><span class="hll">                        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;o_stat_text&quot;</span><span class="nt">&gt;</span>Roll Coal<span class="nt">&lt;/span&gt;</span>
+</span><span class="hll">                    <span class="nt">&lt;/div&gt;</span>
+</span><span class="hll">                <span class="nt">&lt;/button&gt;</span>
+</span><span class="hll">            <span class="nt">&lt;/xpath&gt;</span>
+</span><span class="hll">        <span class="nt">&lt;/field&gt;</span>
+</span><span class="hll">    <span class="nt">&lt;/record&gt;</span>
 </span><span class="hll"><span class="nt">&lt;/odoo&gt;</span>
 </span></pre></div>
 </div>
@@ -2389,22 +2389,22 @@ they should be interested in your IAP offers.</p>
 <div class="literal-block-wrapper docutils container" id="id22">
 <div class="code-block-caption"><span class="caption-text"><code class="o_code docutils literal notranslate"><span class="pre">coalroller_service/views/no-credit.xml</span></code></span><a class="headerlink" href="#id22" title="Permalink to this code">¶</a></div>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="nt">&lt;odoo&gt;</span>
-</span><span class="hll"><span class="w">    </span><span class="nt">&lt;template</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;no_credit&quot;</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;No credit warning&quot;</span><span class="nt">&gt;</span>
-</span><span class="hll"><span class="w">        </span><span class="nt">&lt;div&gt;</span>
-</span><span class="hll"><span class="w">            </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;container-fluid&quot;</span><span class="nt">&gt;</span>
-</span><span class="hll"><span class="w">                </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
-</span><span class="hll"><span class="w">                    </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;col-md-7 offset-lg-1 mt32 mb32&quot;</span><span class="nt">&gt;</span>
-</span><span class="hll"><span class="w">                    </span><span class="nt">&lt;h2&gt;</span>Consume<span class="w"> </span>electricity<span class="w"> </span>doing<span class="w"> </span>nothing<span class="w"> </span>useful!<span class="nt">&lt;/h2&gt;</span>
-</span><span class="hll"><span class="w">                    </span><span class="nt">&lt;ul&gt;</span>
-</span><span class="hll"><span class="w">                        </span><span class="nt">&lt;li&gt;</span>Heat<span class="w"> </span>our<span class="w"> </span>state<span class="w"> </span>of<span class="w"> </span>the<span class="w"> </span>art<span class="w"> </span>data<span class="w"> </span>center<span class="w"> </span>for<span class="w"> </span>no<span class="w"> </span>reason<span class="nt">&lt;/li&gt;</span>
-</span><span class="hll"><span class="w">                        </span><span class="nt">&lt;li&gt;</span>Use<span class="w"> </span>multiple<span class="w"> </span>watts<span class="w"> </span>for<span class="w"> </span>only<span class="w"> </span>0.1€<span class="nt">&lt;/li&gt;</span>
-</span><span class="hll"><span class="w">                        </span><span class="nt">&lt;li&gt;</span>Roll<span class="w"> </span>coal<span class="w"> </span>without<span class="w"> </span>going<span class="w"> </span>outside<span class="nt">&lt;/li&gt;</span>
-</span><span class="hll"><span class="w">                    </span><span class="nt">&lt;/ul&gt;</span>
-</span><span class="hll"><span class="w">                    </span><span class="nt">&lt;/div&gt;</span>
-</span><span class="hll"><span class="w">                </span><span class="nt">&lt;/div&gt;</span>
-</span><span class="hll"><span class="w">            </span><span class="nt">&lt;/div&gt;</span>
-</span><span class="hll"><span class="w">        </span><span class="nt">&lt;/div&gt;</span>
-</span><span class="hll"><span class="w">    </span><span class="nt">&lt;/template&gt;</span>
+</span><span class="hll">    <span class="nt">&lt;template</span> <span class="na">id=</span><span class="s">&quot;no_credit&quot;</span> <span class="na">name=</span><span class="s">&quot;No credit warning&quot;</span><span class="nt">&gt;</span>
+</span><span class="hll">        <span class="nt">&lt;div&gt;</span>
+</span><span class="hll">            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;container-fluid&quot;</span><span class="nt">&gt;</span>
+</span><span class="hll">                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
+</span><span class="hll">                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-md-7 offset-lg-1 mt32 mb32&quot;</span><span class="nt">&gt;</span>
+</span><span class="hll">                    <span class="nt">&lt;h2&gt;</span>Consume electricity doing nothing useful!<span class="nt">&lt;/h2&gt;</span>
+</span><span class="hll">                    <span class="nt">&lt;ul&gt;</span>
+</span><span class="hll">                        <span class="nt">&lt;li&gt;</span>Heat our state of the art data center for no reason<span class="nt">&lt;/li&gt;</span>
+</span><span class="hll">                        <span class="nt">&lt;li&gt;</span>Use multiple watts for only 0.1€<span class="nt">&lt;/li&gt;</span>
+</span><span class="hll">                        <span class="nt">&lt;li&gt;</span>Roll coal without going outside<span class="nt">&lt;/li&gt;</span>
+</span><span class="hll">                    <span class="nt">&lt;/ul&gt;</span>
+</span><span class="hll">                    <span class="nt">&lt;/div&gt;</span>
+</span><span class="hll">                <span class="nt">&lt;/div&gt;</span>
+</span><span class="hll">            <span class="nt">&lt;/div&gt;</span>
+</span><span class="hll">        <span class="nt">&lt;/div&gt;</span>
+</span><span class="hll">    <span class="nt">&lt;/template&gt;</span>
 </span><span class="hll"><span class="nt">&lt;/odoo&gt;</span>
 </span></pre></div>
 </div>
@@ -2686,7 +2686,7 @@ configuration key</p></li>
   <span class="k">def</span> <span class="nf">superlaser</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">user_account</span><span class="p">,</span>
                  <span class="n">coordinates</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span>
                  <span class="n">factor</span><span class="o">=</span><span class="mf">1.0</span><span class="p">):</span>
-<span class="w">      </span><span class="sd">&quot;&quot;&quot;</span>
+      <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">      :param factor: superlaser power factor,</span>
 <span class="sd">                     0.0 is none, 1.0 is full power</span>
 <span class="sd">      &quot;&quot;&quot;</span>
@@ -2729,7 +2729,7 @@ configuration key</p></li>
   <span class="k">def</span> <span class="nf">superlaser</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">user_account</span><span class="p">,</span>
                  <span class="n">coordinates</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span>
                  <span class="n">factor</span><span class="o">=</span><span class="mf">1.0</span><span class="p">):</span>
-<span class="w">      </span><span class="sd">&quot;&quot;&quot;</span>
+      <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">      :param factor: superlaser power factor,</span>
 <span class="sd">                     0.0 is none, 1.0 is full power</span>
 <span class="sd">      &quot;&quot;&quot;</span>
@@ -2771,7 +2771,7 @@ configuration key</p></li>
   <span class="k">def</span> <span class="nf">superlaser</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">user_account</span><span class="p">,</span>
                  <span class="n">coordinates</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span>
                  <span class="n">factor</span><span class="o">=</span><span class="mf">1.0</span><span class="p">):</span>
-<span class="w">      </span><span class="sd">&quot;&quot;&quot;</span>
+      <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">      :param factor: superlaser power factor,</span>
 <span class="sd">                     0.0 is none, 1.0 is full power</span>
 <span class="sd">      &quot;&quot;&quot;</span>
@@ -2814,7 +2814,7 @@ configuration key</p></li>
   <span class="k">def</span> <span class="nf">superlaser</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">user_account</span><span class="p">,</span>
                  <span class="n">coordinates</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span>
                  <span class="n">factor</span><span class="o">=</span><span class="mf">1.0</span><span class="p">):</span>
-<span class="w">      </span><span class="sd">&quot;&quot;&quot;</span>
+      <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">      :param factor: superlaser power factor,</span>
 <span class="sd">                     0.0 is none, 1.0 is full power</span>
 <span class="sd">      &quot;&quot;&quot;</span>

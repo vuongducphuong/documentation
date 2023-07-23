@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/reference/frontend/registries.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/reference/frontend/registries.html" />
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -1946,11 +1946,11 @@ points: many features provided by the Odoo javascript framework simply look up
 into a registry whenever it needs a definition for some object (such as fields,
 views, client actions or services). Customizing the web client is then simply
 done by adding specific values in the correct registry.</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Registry</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@web/core/registry&quot;</span><span class="p">;</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">Registry</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@web/core/registry&quot;</span><span class="p">;</span>
 
-<span class="kd">const</span><span class="w"> </span><span class="nx">myRegistry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Registry</span><span class="p">();</span>
+<span class="kr">const</span> <span class="nx">myRegistry</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Registry</span><span class="p">();</span>
 
-<span class="nx">myRegistry</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;hello&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;odoo&quot;</span><span class="p">);</span>
+<span class="nx">myRegistry</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;hello&quot;</span><span class="p">,</span> <span class="s2">&quot;odoo&quot;</span><span class="p">);</span>
 
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">myRegistry</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;hello&quot;</span><span class="p">));</span>
 </pre></div>
@@ -1959,11 +1959,11 @@ done by adding specific values in the correct registry.</p>
 obtained by the <code class="o_code docutils literal notranslate"><span class="pre">category</span></code> method. If the sub registry does not exist yet, it
 is created on the fly. All registries used by the web client are obtained
 in such a way from one root registry, exported in <code class="o_code docutils literal notranslate"><span class="pre">@web/core/registry</span></code>.</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">registry</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@web/core/registry&quot;</span><span class="p">;</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">registry</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@web/core/registry&quot;</span><span class="p">;</span>
 
-<span class="kd">const</span><span class="w"> </span><span class="nx">fieldRegistry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">registry</span><span class="p">.</span><span class="nx">category</span><span class="p">(</span><span class="s2">&quot;fields&quot;</span><span class="p">);</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">serviceRegistry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">registry</span><span class="p">.</span><span class="nx">category</span><span class="p">(</span><span class="s2">&quot;services&quot;</span><span class="p">);</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">viewRegistry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">registry</span><span class="p">.</span><span class="nx">category</span><span class="p">(</span><span class="s2">&quot;views&quot;</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">fieldRegistry</span> <span class="o">=</span> <span class="nx">registry</span><span class="p">.</span><span class="nx">category</span><span class="p">(</span><span class="s2">&quot;fields&quot;</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">serviceRegistry</span> <span class="o">=</span> <span class="nx">registry</span><span class="p">.</span><span class="nx">category</span><span class="p">(</span><span class="s2">&quot;services&quot;</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">viewRegistry</span> <span class="o">=</span> <span class="nx">registry</span><span class="p">.</span><span class="nx">category</span><span class="p">(</span><span class="s2">&quot;views&quot;</span><span class="p">);</span>
 </pre></div>
 </div>
 </section><section id="registry-api">
@@ -2161,8 +2161,8 @@ list of components registered in the main components registry.</p>
 </dl>
 <p>For example, the <code class="o_code docutils literal notranslate"><span class="pre">LoadingIndicator</span></code> component can be added in the registry like
 this:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">registry</span><span class="p">.</span><span class="nx">category</span><span class="p">(</span><span class="s2">&quot;main_components&quot;</span><span class="p">).</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;LoadingIndicator&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">Component</span><span class="o">:</span><span class="w"> </span><span class="nx">LoadingIndicator</span><span class="p">,</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">registry</span><span class="p">.</span><span class="nx">category</span><span class="p">(</span><span class="s2">&quot;main_components&quot;</span><span class="p">).</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;LoadingIndicator&quot;</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">Component</span><span class="o">:</span> <span class="nx">LoadingIndicator</span><span class="p">,</span>
 <span class="p">});</span>
 </pre></div>
 </div>
@@ -2199,16 +2199,16 @@ See also</p><ul class="simple">
 <p>The service registry (category: <code class="o_code docutils literal notranslate"><span class="pre">services</span></code>) contains all
 <a class="reference internal" href="services.html#frontend-services"><span class="std std-ref">services</span></a> that should be activated by the Odoo
 framework.</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">registry</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@web/core/registry&quot;</span><span class="p">;</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">registry</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@web/core/registry&quot;</span><span class="p">;</span>
 
-<span class="kd">const</span><span class="w"> </span><span class="nx">myService</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">dependencies</span><span class="o">:</span><span class="w"> </span><span class="p">[...],</span>
-<span class="w">    </span><span class="nx">start</span><span class="p">(</span><span class="nx">env</span><span class="p">,</span><span class="w"> </span><span class="nx">deps</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="c1">// some code here</span>
-<span class="w">    </span><span class="p">}</span>
+<span class="kr">const</span> <span class="nx">myService</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">dependencies</span><span class="o">:</span> <span class="p">[...],</span>
+    <span class="nx">start</span><span class="p">(</span><span class="nx">env</span><span class="p">,</span> <span class="nx">deps</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// some code here</span>
+    <span class="p">}</span>
 <span class="p">};</span>
 
-<span class="nx">registry</span><span class="p">.</span><span class="nx">category</span><span class="p">(</span><span class="s2">&quot;services&quot;</span><span class="p">).</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;myService&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">myService</span><span class="p">);</span>
+<span class="nx">registry</span><span class="p">.</span><span class="nx">category</span><span class="p">(</span><span class="s2">&quot;services&quot;</span><span class="p">).</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;myService&quot;</span><span class="p">,</span> <span class="nx">myService</span><span class="p">);</span>
 </pre></div>
 </div>
 </section><section id="systray-registry">
@@ -2227,22 +2227,22 @@ and returns a boolean. If true, the systray item is displayed. Otherwise it is
 removed.</p></li>
 </ul>
 <p>For example:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">registry</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@web/core/registry&quot;</span><span class="p">;</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">registry</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@web/core/registry&quot;</span><span class="p">;</span>
 
-<span class="kd">class</span><span class="w"> </span><span class="nx">MySystrayItem</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">Component</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="c1">// some component ...</span>
+<span class="kr">class</span> <span class="nx">MySystrayItem</span> <span class="kr">extends</span> <span class="nx">Component</span> <span class="p">{</span>
+    <span class="c1">// some component ...</span>
 <span class="p">}</span>
 
-<span class="nx">registry</span><span class="p">.</span><span class="nx">category</span><span class="p">(</span><span class="s2">&quot;systray&quot;</span><span class="p">).</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;myAddon.myItem&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">Component</span><span class="o">:</span><span class="w"> </span><span class="nx">MySystrayItem</span><span class="p">,</span>
+<span class="nx">registry</span><span class="p">.</span><span class="nx">category</span><span class="p">(</span><span class="s2">&quot;systray&quot;</span><span class="p">).</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;myAddon.myItem&quot;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="nx">Component</span><span class="o">:</span> <span class="nx">MySystrayItem</span><span class="p">,</span>
 <span class="p">});</span>
 </pre></div>
 </div>
 <p>The systray registry is an ordered registry (with the <code class="o_code docutils literal notranslate"><span class="pre">sequence</span></code> number):</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span><span class="w"> </span><span class="nx">item</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">Component</span><span class="o">:</span><span class="w"> </span><span class="nx">MySystrayItem</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kr">const</span> <span class="nx">item</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">Component</span><span class="o">:</span> <span class="nx">MySystrayItem</span>
 <span class="p">};</span>
-<span class="nx">registry</span><span class="p">.</span><span class="nx">category</span><span class="p">(</span><span class="s2">&quot;systray&quot;</span><span class="p">).</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;myaddon.some_description&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">item</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">sequence</span><span class="o">:</span><span class="w"> </span><span class="mf">43</span><span class="w"> </span><span class="p">});</span>
+<span class="nx">registry</span><span class="p">.</span><span class="nx">category</span><span class="p">(</span><span class="s2">&quot;systray&quot;</span><span class="p">).</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;myaddon.some_description&quot;</span><span class="p">,</span> <span class="nx">item</span><span class="p">,</span> <span class="p">{</span> <span class="nx">sequence</span><span class="o">:</span> <span class="mi">43</span> <span class="p">});</span>
 </pre></div>
 </div>
 <p>The sequence number defaults to 50. If given, this number will be used
@@ -2264,14 +2264,14 @@ and returning a plain object, containing the following information:</p>
 </ul>
 <p>The user menu calls all the functions defining items every time it is opened.</p>
 <p>Example:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">registry</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@web/core/registry&quot;</span><span class="p">;</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">registry</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@web/core/registry&quot;</span><span class="p">;</span>
 
-<span class="nx">registry</span><span class="p">.</span><span class="nx">category</span><span class="p">(</span><span class="s2">&quot;user_menuitems&quot;</span><span class="p">).</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;my item&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">env</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">description</span><span class="o">:</span><span class="w"> </span><span class="nx">env</span><span class="p">.</span><span class="nx">_t</span><span class="p">(</span><span class="s2">&quot;Technical Settings&quot;</span><span class="p">),</span>
-<span class="w">        </span><span class="nx">callback</span><span class="o">:</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">env</span><span class="p">.</span><span class="nx">services</span><span class="p">.</span><span class="nx">action_manager</span><span class="p">.</span><span class="nx">doAction</span><span class="p">(</span><span class="mf">3</span><span class="p">);</span><span class="w"> </span><span class="p">},</span>
-<span class="w">        </span><span class="nx">hide</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">0.5</span><span class="p">),</span>
-<span class="w">    </span><span class="p">};</span>
+<span class="nx">registry</span><span class="p">.</span><span class="nx">category</span><span class="p">(</span><span class="s2">&quot;user_menuitems&quot;</span><span class="p">).</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;my item&quot;</span><span class="p">,</span> <span class="p">(</span><span class="nx">env</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="nx">description</span><span class="o">:</span> <span class="nx">env</span><span class="p">.</span><span class="nx">_t</span><span class="p">(</span><span class="s2">&quot;Technical Settings&quot;</span><span class="p">),</span>
+        <span class="nx">callback</span><span class="o">:</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span> <span class="nx">env</span><span class="p">.</span><span class="nx">services</span><span class="p">.</span><span class="nx">action_manager</span><span class="p">.</span><span class="nx">doAction</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span> <span class="p">},</span>
+        <span class="nx">hide</span><span class="o">:</span> <span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mf">0.5</span><span class="p">),</span>
+    <span class="p">};</span>
 <span class="p">});</span>
 </pre></div>
 </div>

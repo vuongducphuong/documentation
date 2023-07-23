@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/reference/frontend/assets.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/reference/frontend/assets.html" />
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -2156,8 +2156,8 @@ result in an error.</p>
 <p>It is sometimes useful to load files and/or asset bundles dynamically, for
 example to only load a library once it is needed. To do that, the Odoo framework
 provides a few helper functions, located in <code class="file o_code docutils literal notranslate"><span class="pre">@web/core/assets</span></code>.</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="k">await</span><span class="w"> </span><span class="nx">loadAssets</span><span class="p">({</span>
-<span class="w">    </span><span class="nx">jsLibs</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;/web/static/lib/stacktracejs/stacktrace.js&quot;</span><span class="p">],</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">await</span> <span class="nx">loadAssets</span><span class="p">({</span>
+    <span class="nx">jsLibs</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;/web/static/lib/stacktracejs/stacktrace.js&quot;</span><span class="p">],</span>
 <span class="p">});</span>
 </pre></div>
 </div>

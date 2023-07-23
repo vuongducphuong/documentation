@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/tutorials/master_odoo_web_framework/04_creating_view_from_scratch.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/tutorials/master_odoo_web_framework/04_creating_view_from_scratch.html" />
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -1956,14 +1956,14 @@ be able to see a set of t-shirts images.</p>
 have our normal kanban view and the gallery view in the same action.</p>
 <p>Let us make a gallery view. Each gallery view will be defined by an <code class="o_code docutils literal notranslate"><span class="pre">image_field</span></code> attribute in its
 arch:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;gallery</span><span class="w"> </span><span class="na">image_field=</span><span class="s">&quot;some_field&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;gallery</span> <span class="na">image_field=</span><span class="s">&quot;some_field&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 <p>To complete the tasks in this chapter, you will need to install the awesome_gallery addon. This
 addon includes the necessary server files to add a new view.</p>
 <div class="admonition-goal alert">
 <p class="alert-title">
-Goal</p><img alt="../../../_images/overview.png" class="align-center" src="../../../_images/overview.png" />
+Goal</p><img alt="../../../_images/overview1.png" class="align-center" src="../../../_images/overview1.png" />
 </div>
 <div class="accordion accordion-flush o_spoiler alert"><div class="accordion-item"><span class="accordion-header" id="o_spoiler_header_0"><button aria-controls="o_spoiler_content_0" aria-expanded="false" class="accordion-button collapsed flex-row-reverse justify-content-end fw-bold p-0 border-bottom-0" data-bs-target="#o_spoiler_content_0" data-bs-toggle="collapse" type="button">Solutions</button></span><div aria-labelledby="o_spoiler_header_0" class="accordion-collapse collapse border-bottom-0" id="o_spoiler_content_0"><div class="accordion-body"><p>The solutions for each exercise of the chapter are hosted on the
 <a class="reference external" href="https://github.com/odoo/tutorials/commits/16.0-solutions/awesome_gallery">official Odoo tutorials repository</a>.</p>
@@ -2006,16 +2006,16 @@ inherits from a generic <code class="o_code docutils literal notranslate"><span 
 <div class="alert alert-success">
 <p class="alert-title">
 Example</p><p>Here is an example of what an ArchParser might look like:</p>
-<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">XMLParser</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@web/core/utils/xml&quot;</span><span class="p">;</span>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">XMLParser</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@web/core/utils/xml&quot;</span><span class="p">;</span>
 
-<span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">GraphArchParser</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">XMLParser</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">parse</span><span class="p">(</span><span class="nx">arch</span><span class="p">,</span><span class="w"> </span><span class="nx">fields</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">       </span><span class="kd">const</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span>
-<span class="w">       </span><span class="k">this</span><span class="p">.</span><span class="nx">visitXML</span><span class="p">(</span><span class="nx">arch</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">node</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">           </span><span class="p">...</span>
-<span class="w">        </span><span class="p">});</span>
-<span class="w">       </span><span class="k">return</span><span class="w"> </span><span class="nx">result</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
+<span class="kr">export</span> <span class="kr">class</span> <span class="nx">GraphArchParser</span> <span class="kr">extends</span> <span class="nx">XMLParser</span> <span class="p">{</span>
+    <span class="nx">parse</span><span class="p">(</span><span class="nx">arch</span><span class="p">,</span> <span class="nx">fields</span><span class="p">)</span> <span class="p">{</span>
+       <span class="kr">const</span> <span class="nx">result</span> <span class="o">=</span> <span class="p">{};</span>
+       <span class="k">this</span><span class="p">.</span><span class="nx">visitXML</span><span class="p">(</span><span class="nx">arch</span><span class="p">,</span> <span class="p">(</span><span class="nx">node</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+           <span class="p">...</span>
+        <span class="p">});</span>
+       <span class="k">return</span> <span class="nx">result</span><span class="p">;</span>
+    <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -2096,7 +2096,7 @@ See also</p><p><a class="reference external" href="https://github.com/odoo/odoo/
 <p class="alert-title">
 Exercise</p><ol class="arabic">
 <li><p>Update the code to allow an optional additional attribute on the arch:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;gallery</span><span class="w"> </span><span class="na">image_field=</span><span class="s">&quot;some_field&quot;</span><span class="w"> </span><span class="na">tooltip_field=</span><span class="s">&quot;some_other_field&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;gallery</span> <span class="na">image_field=</span><span class="s">&quot;some_field&quot;</span> <span class="na">tooltip_field=</span><span class="s">&quot;some_other_field&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 </li>
@@ -2157,7 +2157,7 @@ the current model.</p></li>
 
 <span class="nd">@view_validation</span><span class="o">.</span><span class="n">validate</span><span class="p">(</span><span class="s1">&#39;viewname&#39;</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">schema_viewname</span><span class="p">(</span><span class="n">arch</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot; Check the gallery view against its schema</span>
+    <span class="sd">&quot;&quot;&quot; Check the gallery view against its schema</span>
 
 <span class="sd">    :type arch: etree._Element</span>
 <span class="sd">    &quot;&quot;&quot;</span>

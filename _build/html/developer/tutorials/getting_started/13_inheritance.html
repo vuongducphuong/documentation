@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/tutorials/getting_started/13_inheritance.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/tutorials/getting_started/13_inheritance.html" />
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -2103,17 +2103,17 @@ root views. These extension can both add and remove content from their parent vi
 <p>An extension view references its parent using the <code class="o_code docutils literal notranslate"><span class="pre">inherit_id</span></code> field.
 Instead of a single view, its <code class="o_code docutils literal notranslate"><span class="pre">arch</span></code> field contains a number of
 <code class="o_code docutils literal notranslate"><span class="pre">xpath</span></code> elements that select and alter the content of their parent view:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;inherited_model_view_form&quot;</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>inherited.model.form.inherit.test<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;model&quot;</span><span class="nt">&gt;</span>inherited.model<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;inherit_id&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;inherited.inherited_model_view_form&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;arch&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;xml&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="cm">&lt;!-- find field description and add the field</span>
-<span class="cm">             new_field after it --&gt;</span>
-<span class="w">        </span><span class="nt">&lt;xpath</span><span class="w"> </span><span class="na">expr=</span><span class="s">&quot;//field[@name=&#39;description&#39;]&quot;</span><span class="w"> </span><span class="na">position=</span><span class="s">&quot;after&quot;</span><span class="nt">&gt;</span>
-<span class="w">          </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;new_field&quot;</span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/xpath&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/field&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">&quot;inherited_model_view_form&quot;</span> <span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>inherited.model.form.inherit.test<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;model&quot;</span><span class="nt">&gt;</span>inherited.model<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;inherit_id&quot;</span> <span class="na">ref=</span><span class="s">&quot;inherited.inherited_model_view_form&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;arch&quot;</span> <span class="na">type=</span><span class="s">&quot;xml&quot;</span><span class="nt">&gt;</span>
+        <span class="c">&lt;!-- find field description and add the field</span>
+<span class="c">             new_field after it --&gt;</span>
+        <span class="nt">&lt;xpath</span> <span class="na">expr=</span><span class="s">&quot;//field[@name=&#39;description&#39;]&quot;</span> <span class="na">position=</span><span class="s">&quot;after&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;new_field&quot;</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;/xpath&gt;</span>
+    <span class="nt">&lt;/field&gt;</span>
 <span class="nt">&lt;/record&gt;</span>
 </pre></div>
 </div>
@@ -2140,12 +2140,12 @@ in the new body with the original element</p>
 </dl>
 <p>When matching a single element, the <code class="o_code docutils literal notranslate"><span class="pre">position</span></code> attribute can be set directly
 on the element to be found. Both inheritances below have the same result.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;xpath</span><span class="w"> </span><span class="na">expr=</span><span class="s">&quot;//field[@name=&#39;description&#39;]&quot;</span><span class="w"> </span><span class="na">position=</span><span class="s">&quot;after&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;idea_ids&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;xpath</span> <span class="na">expr=</span><span class="s">&quot;//field[@name=&#39;description&#39;]&quot;</span> <span class="na">position=</span><span class="s">&quot;after&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;idea_ids&quot;</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;/xpath&gt;</span>
 
-<span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;description&quot;</span><span class="w"> </span><span class="na">position=</span><span class="s">&quot;after&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;idea_ids&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;description&quot;</span> <span class="na">position=</span><span class="s">&quot;after&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;idea_ids&quot;</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;/field&gt;</span>
 </pre></div>
 </div>

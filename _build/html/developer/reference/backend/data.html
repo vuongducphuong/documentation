@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/reference/backend/data.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/reference/backend/data.html" />
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -1956,10 +1956,10 @@ of an XML data file is the following:</p>
 <li><p>Any number of operation elements within the root element <code class="o_code docutils literal notranslate"><span class="pre">odoo</span></code></p></li>
 </ul>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
-<span class="cm">&lt;!-- the root elements of the data file --&gt;</span>
+<span class="c">&lt;!-- the root elements of the data file --&gt;</span>
 <span class="nt">&lt;odoo&gt;</span>
-<span class="w">    </span><span class="nt">&lt;operation/&gt;</span>
-<span class="w">    </span>...
+    <span class="nt">&lt;operation/&gt;</span>
+    ...
 <span class="nt">&lt;/odoo&gt;</span>
 </pre></div>
 </div>
@@ -1972,13 +1972,13 @@ can specify the odoo flag <code class="o_code docutils literal notranslate"><spa
 the data in the file is expected to be applied once, you can place this part
 of the file in a &lt;data noupdate=”1”&gt; domain.</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;odoo&gt;</span>
-<span class="w">    </span><span class="nt">&lt;data</span><span class="w"> </span><span class="na">noupdate=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="cm">&lt;!-- Only loaded when installing the module (odoo-bin -i module) --&gt;</span>
-<span class="w">        </span><span class="nt">&lt;operation/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/data&gt;</span>
+    <span class="nt">&lt;data</span> <span class="na">noupdate=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+        <span class="c">&lt;!-- Only loaded when installing the module (odoo-bin -i module) --&gt;</span>
+        <span class="nt">&lt;operation/&gt;</span>
+    <span class="nt">&lt;/data&gt;</span>
 
-<span class="w">    </span><span class="cm">&lt;!-- (Re)Loaded at install and update (odoo-bin -i/-u) --&gt;</span>
-<span class="w">    </span><span class="nt">&lt;operation/&gt;</span>
+    <span class="c">&lt;!-- (Re)Loaded at install and update (odoo-bin -i/-u) --&gt;</span>
+    <span class="nt">&lt;operation/&gt;</span>
 <span class="nt">&lt;/odoo&gt;</span>
 </pre></div>
 </div>
@@ -2092,22 +2092,22 @@ the model and the name of the method to call.</p>
 parameters to call the method with) or <code class="o_code docutils literal notranslate"><span class="pre">value</span></code> elements (see <code class="o_code docutils literal notranslate"><span class="pre">list</span></code>
 values).</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;odoo&gt;</span>
-<span class="w">    </span><span class="nt">&lt;data</span><span class="w"> </span><span class="na">noupdate=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;partner_1&quot;</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;res.partner&quot;</span><span class="nt">&gt;</span>
-<span class="w">            </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>Odude<span class="nt">&lt;/field&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/record&gt;</span>
+    <span class="nt">&lt;data</span> <span class="na">noupdate=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;record</span> <span class="na">name=</span><span class="s">&quot;partner_1&quot;</span> <span class="na">model=</span><span class="s">&quot;res.partner&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>Odude<span class="nt">&lt;/field&gt;</span>
+        <span class="nt">&lt;/record&gt;</span>
 
-<span class="w">        </span><span class="nt">&lt;function</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;res.partner&quot;</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;send_inscription_notice&quot;</span>
-<span class="w">            </span><span class="na">eval=</span><span class="s">&quot;[[ref(&#39;partner_1&#39;), ref(&#39;partner_2&#39;)]]&quot;</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;function</span> <span class="na">model=</span><span class="s">&quot;res.partner&quot;</span> <span class="na">name=</span><span class="s">&quot;send_inscription_notice&quot;</span>
+            <span class="na">eval=</span><span class="s">&quot;[[ref(&#39;partner_1&#39;), ref(&#39;partner_2&#39;)]]&quot;</span><span class="nt">/&gt;</span>
 
-<span class="w">        </span><span class="nt">&lt;function</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;res.users&quot;</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;send_vip_inscription_notice&quot;</span><span class="nt">&gt;</span>
-<span class="w">            </span><span class="nt">&lt;function</span><span class="w"> </span><span class="na">eval=</span><span class="s">&quot;[[(&#39;vip&#39;,&#39;=&#39;,True)]]&quot;</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;res.partner&quot;</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;search&quot;</span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/function&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/data&gt;</span>
+        <span class="nt">&lt;function</span> <span class="na">model=</span><span class="s">&quot;res.users&quot;</span> <span class="na">name=</span><span class="s">&quot;send_vip_inscription_notice&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;function</span> <span class="na">eval=</span><span class="s">&quot;[[(&#39;vip&#39;,&#39;=&#39;,True)]]&quot;</span> <span class="na">model=</span><span class="s">&quot;res.partner&quot;</span> <span class="na">name=</span><span class="s">&quot;search&quot;</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;/function&gt;</span>
+    <span class="nt">&lt;/data&gt;</span>
 
-<span class="w">    </span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;model_form_view&quot;</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span>...
-<span class="w">    </span><span class="nt">&lt;/record&gt;</span>
+    <span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">&quot;model_form_view&quot;</span> <span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span><span class="nt">&gt;</span>
+        ...
+    <span class="nt">&lt;/record&gt;</span>
 <span class="nt">&lt;/odoo&gt;</span>
 </pre></div>
 </div>

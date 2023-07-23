@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/tutorials/getting_started/10_actions.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/tutorials/getting_started/10_actions.html" />
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -1971,12 +1971,12 @@ do this is to:</p>
 <li><p>Add a button in the view, for example in the <code class="o_code docutils literal notranslate"><span class="pre">header</span></code> of the view:</p></li>
 </ul>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;form&gt;</span>
-<span class="w">    </span><span class="nt">&lt;header&gt;</span>
-<span class="w">        </span><span class="nt">&lt;button</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;action_do_something&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;object&quot;</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Do Something&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/header&gt;</span>
-<span class="w">    </span><span class="nt">&lt;sheet&gt;</span>
-<span class="w">        </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/sheet&gt;</span>
+    <span class="nt">&lt;header&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">name=</span><span class="s">&quot;action_do_something&quot;</span> <span class="na">type=</span><span class="s">&quot;object&quot;</span> <span class="na">string=</span><span class="s">&quot;Do Something&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/header&gt;</span>
+    <span class="nt">&lt;sheet&gt;</span>
+        <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/sheet&gt;</span>
 <span class="nt">&lt;/form&gt;</span>
 </pre></div>
 </div>
@@ -2037,7 +2037,7 @@ function. There are plenty of examples in the Odoo source code ;-)</p>
 <p>In <a class="reference internal" href="06_firstui.html#tutorials-getting-started-06-firstui"><span class="std std-ref">Chapter 6: Finally, Some UI To Play With</span></a>, we created an action that was linked to a menu. You
 may be wondering if it is possible to link an action to a button. Good news, it is! One way to do it
 is:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;button</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;action&quot;</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;%(test.test_model_action)d&quot;</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;My Action&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;action&quot;</span> <span class="na">name=</span><span class="s">&quot;%(test.test_model_action)d&quot;</span> <span class="na">string=</span><span class="s">&quot;My Action&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 <p>We use <code class="o_code docutils literal notranslate"><span class="pre">type=&quot;action&quot;</span></code> and we refer to the <a class="reference internal" href="../../glossary.html#term-external-identifier"><span class="xref std std-term">external identifier</span></a> in the <code class="o_code docutils literal notranslate"><span class="pre">name</span></code>.</p>

@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/reference/backend/mixins.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/reference/backend/mixins.html" />
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -1989,20 +1989,20 @@ add support for message exchange on the model.</p>
 </pre></div>
 </div>
 <p>In the form view:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;businness_trip_form&quot;</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>business.trip.form<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;model&quot;</span><span class="nt">&gt;</span>business.trip<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;arch&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;xml&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;form</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Business Trip&quot;</span><span class="nt">&gt;</span>
-<span class="w">            </span><span class="cm">&lt;!-- Your usual form view goes here</span>
-<span class="cm">            ...</span>
-<span class="cm">            Then comes chatter integration --&gt;</span>
-<span class="w">            </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;oe_chatter&quot;</span><span class="nt">&gt;</span>
-<span class="w">                </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;message_follower_ids&quot;</span><span class="w"> </span><span class="na">widget=</span><span class="s">&quot;mail_followers&quot;</span><span class="nt">/&gt;</span>
-<span class="w">                </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;message_ids&quot;</span><span class="w"> </span><span class="na">widget=</span><span class="s">&quot;mail_thread&quot;</span><span class="nt">/&gt;</span>
-<span class="w">            </span><span class="nt">&lt;/div&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/form&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/field&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">&quot;businness_trip_form&quot;</span> <span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>business.trip.form<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;model&quot;</span><span class="nt">&gt;</span>business.trip<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;arch&quot;</span> <span class="na">type=</span><span class="s">&quot;xml&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;form</span> <span class="na">string=</span><span class="s">&quot;Business Trip&quot;</span><span class="nt">&gt;</span>
+            <span class="c">&lt;!-- Your usual form view goes here</span>
+<span class="c">            ...</span>
+<span class="c">            Then comes chatter integration --&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;oe_chatter&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;message_follower_ids&quot;</span> <span class="na">widget=</span><span class="s">&quot;mail_followers&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;message_ids&quot;</span> <span class="na">widget=</span><span class="s">&quot;mail_thread&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/form&gt;</span>
+    <span class="nt">&lt;/field&gt;</span>
 <span class="nt">&lt;/record&gt;</span>
 </pre></div>
 </div>
@@ -2281,11 +2281,11 @@ are present in the dict</p>
 Example</p><p>Let’s add a <code class="o_code docutils literal notranslate"><span class="pre">state</span></code> field on our example class and trigger a notification
 with a specific subtype when this field change values.</p>
 <p>First, let’s define our subtype:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;mt_state_change&quot;</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;mail.message.subtype&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>Trip<span class="w"> </span>confirmed<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;res_model&quot;</span><span class="nt">&gt;</span>business.trip<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;default&quot;</span><span class="w"> </span><span class="na">eval=</span><span class="s">&quot;True&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;description&quot;</span><span class="nt">&gt;</span>Business<span class="w"> </span>Trip<span class="w"> </span>confirmed!<span class="nt">&lt;/field&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">&quot;mt_state_change&quot;</span> <span class="na">model=</span><span class="s">&quot;mail.message.subtype&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>Trip confirmed<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;res_model&quot;</span><span class="nt">&gt;</span>business.trip<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;default&quot;</span> <span class="na">eval=</span><span class="s">&quot;True&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;description&quot;</span><span class="nt">&gt;</span>Business Trip confirmed!<span class="nt">&lt;/field&gt;</span>
 <span class="nt">&lt;/record&gt;</span>
 </pre></div>
 </div>
@@ -2472,7 +2472,7 @@ of the (imaginary) group Travel Manager (<code class="o_code docutils literal no
         <span class="bp">self</span><span class="o">.</span><span class="n">write</span><span class="p">({</span><span class="s1">&#39;state&#39;</span><span class="p">:</span> <span class="s1">&#39;draft&#39;</span><span class="p">})</span>
 
     <span class="k">def</span> <span class="nf">_notify_get_groups</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">,</span> <span class="n">groups</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot; Handle Trip Manager recipients that can cancel the trip at the last</span>
+        <span class="sd">&quot;&quot;&quot; Handle Trip Manager recipients that can cancel the trip at the last</span>
 <span class="sd">        minute and kill all the fun. &quot;&quot;&quot;</span>
         <span class="n">groups</span> <span class="o">=</span> <span class="nb">super</span><span class="p">(</span><span class="n">BusinessTrip</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">_notify_get_groups</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">groups</span><span class="p">)</span>
 
@@ -2683,11 +2683,11 @@ e-mail.</p>
                                <span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">_get_alias_model_name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vals</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot; Specify the model that will get created when the alias receives a message &quot;&quot;&quot;</span>
+    <span class="sd">&quot;&quot;&quot; Specify the model that will get created when the alias receives a message &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="s1">&#39;business.expense&#39;</span>
 
     <span class="k">def</span> <span class="nf">_get_alias_values</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot; Specify some default values that will be set in the alias at its creation &quot;&quot;&quot;</span>
+    <span class="sd">&quot;&quot;&quot; Specify some default values that will be set in the alias at its creation &quot;&quot;&quot;</span>
         <span class="n">values</span> <span class="o">=</span> <span class="nb">super</span><span class="p">(</span><span class="n">BusinessTrip</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">_get_alias_values</span><span class="p">()</span>
         <span class="c1"># alias_defaults holds a dictionary that will be written</span>
         <span class="c1"># to all records created by this alias</span>
@@ -2713,24 +2713,24 @@ e-mail.</p>
 </div>
 <p>We would like our alias to be easily configurable from the form view of our
 business trips, so let’s add the following to our form view:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;page</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Emails&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;group</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;group_alias&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;label</span><span class="w"> </span><span class="na">for=</span><span class="s">&quot;alias_name&quot;</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Email Alias&quot;</span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;alias_def&quot;</span><span class="nt">&gt;</span>
-<span class="w">            </span><span class="cm">&lt;!-- display a link while in view mode and a configurable field</span>
-<span class="cm">            while in edit mode --&gt;</span>
-<span class="w">            </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;alias_id&quot;</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;oe_read_only oe_inline&quot;</span>
-<span class="w">                    </span><span class="na">string=</span><span class="s">&quot;Email Alias&quot;</span><span class="w"> </span><span class="na">required=</span><span class="s">&quot;0&quot;</span><span class="nt">/&gt;</span>
-<span class="w">            </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;oe_edit_only oe_inline&quot;</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;edit_alias&quot;</span>
-<span class="w">                 </span><span class="na">style=</span><span class="s">&quot;display: inline;&quot;</span><span class="w"> </span><span class="nt">&gt;</span>
-<span class="w">                </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;alias_name&quot;</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;oe_inline&quot;</span><span class="nt">/&gt;</span>
-<span class="w">                </span>@
-<span class="w">                </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;alias_domain&quot;</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;oe_inline&quot;</span><span class="w"> </span><span class="na">readonly=</span><span class="s">&quot;1&quot;</span><span class="nt">/&gt;</span>
-<span class="w">            </span><span class="nt">&lt;/div&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/div&gt;</span>
-<span class="w">        </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;alias_contact&quot;</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;oe_inline&quot;</span>
-<span class="w">                </span><span class="na">string=</span><span class="s">&quot;Accept Emails From&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/group&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;page</span> <span class="na">string=</span><span class="s">&quot;Emails&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;group</span> <span class="na">name=</span><span class="s">&quot;group_alias&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;alias_name&quot;</span> <span class="na">string=</span><span class="s">&quot;Email Alias&quot;</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">name=</span><span class="s">&quot;alias_def&quot;</span><span class="nt">&gt;</span>
+            <span class="c">&lt;!-- display a link while in view mode and a configurable field</span>
+<span class="c">            while in edit mode --&gt;</span>
+            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;alias_id&quot;</span> <span class="na">class=</span><span class="s">&quot;oe_read_only oe_inline&quot;</span>
+                    <span class="na">string=</span><span class="s">&quot;Email Alias&quot;</span> <span class="na">required=</span><span class="s">&quot;0&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;oe_edit_only oe_inline&quot;</span> <span class="na">name=</span><span class="s">&quot;edit_alias&quot;</span>
+                 <span class="na">style=</span><span class="s">&quot;display: inline;&quot;</span> <span class="nt">&gt;</span>
+                <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;alias_name&quot;</span> <span class="na">class=</span><span class="s">&quot;oe_inline&quot;</span><span class="nt">/&gt;</span>
+                @
+                <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;alias_domain&quot;</span> <span class="na">class=</span><span class="s">&quot;oe_inline&quot;</span> <span class="na">readonly=</span><span class="s">&quot;1&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;alias_contact&quot;</span> <span class="na">class=</span><span class="s">&quot;oe_inline&quot;</span>
+                <span class="na">string=</span><span class="s">&quot;Accept Emails From&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/group&gt;</span>
 <span class="nt">&lt;/page&gt;</span>
 </pre></div>
 </div>
@@ -2743,7 +2743,7 @@ from our email when the expense will be created:</p>
     <span class="c1"># ...</span>
 
     <span class="k">def</span> <span class="nf">message_new</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">msg</span><span class="p">,</span> <span class="n">custom_values</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot; Override to set values according to the email.</span>
+        <span class="sd">&quot;&quot;&quot; Override to set values according to the email.</span>
 
 <span class="sd">        In this simple example, we simply use the email title as the name</span>
 <span class="sd">        of the expense, try to find a partner with this email address and</span>
@@ -2797,19 +2797,19 @@ in the message history of our trip.</p>
 </pre></div>
 </div>
 <p>We modify the form view of our trips to display their next activities:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;businness_trip_form&quot;</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>business.trip.form<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;model&quot;</span><span class="nt">&gt;</span>business.trip<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;arch&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;xml&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;form</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Business Trip&quot;</span><span class="nt">&gt;</span>
-<span class="w">            </span><span class="cm">&lt;!-- Your usual form view goes here --&gt;</span>
-<span class="w">            </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;oe_chatter&quot;</span><span class="nt">&gt;</span>
-<span class="w">                </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;message_follower_ids&quot;</span><span class="w"> </span><span class="na">widget=</span><span class="s">&quot;mail_followers&quot;</span><span class="nt">/&gt;</span>
-<span class="w">                </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;activity_ids&quot;</span><span class="w"> </span><span class="na">widget=</span><span class="s">&quot;mail_activity&quot;</span><span class="nt">/&gt;</span>
-<span class="w">                </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;message_ids&quot;</span><span class="w"> </span><span class="na">widget=</span><span class="s">&quot;mail_thread&quot;</span><span class="nt">/&gt;</span>
-<span class="w">            </span><span class="nt">&lt;/div&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/form&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/field&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">&quot;businness_trip_form&quot;</span> <span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>business.trip.form<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;model&quot;</span><span class="nt">&gt;</span>business.trip<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;arch&quot;</span> <span class="na">type=</span><span class="s">&quot;xml&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;form</span> <span class="na">string=</span><span class="s">&quot;Business Trip&quot;</span><span class="nt">&gt;</span>
+            <span class="c">&lt;!-- Your usual form view goes here --&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;oe_chatter&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;message_follower_ids&quot;</span> <span class="na">widget=</span><span class="s">&quot;mail_followers&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;activity_ids&quot;</span> <span class="na">widget=</span><span class="s">&quot;mail_activity&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;message_ids&quot;</span> <span class="na">widget=</span><span class="s">&quot;mail_thread&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/form&gt;</span>
+    <span class="nt">&lt;/field&gt;</span>
 <span class="nt">&lt;/record&gt;</span>
 </pre></div>
 </div>
@@ -2915,21 +2915,21 @@ the URL through which the object is accessed</p></li>
 <p>Once the mechanism is in place, you just have to adapt your frontend and backend
 views to make it accessible. In the backend, adding a button in the button box is
 usually the way to go:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;button</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;oe_stat_button&quot;</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;website_publish_button&quot;</span>
-<span class="w">    </span><span class="na">type=</span><span class="s">&quot;object&quot;</span><span class="w"> </span><span class="na">icon=</span><span class="s">&quot;fa-globe&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;website_published&quot;</span><span class="w"> </span><span class="na">widget=</span><span class="s">&quot;website_button&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;oe_stat_button&quot;</span> <span class="na">name=</span><span class="s">&quot;website_publish_button&quot;</span>
+    <span class="na">type=</span><span class="s">&quot;object&quot;</span> <span class="na">icon=</span><span class="s">&quot;fa-globe&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;website_published&quot;</span> <span class="na">widget=</span><span class="s">&quot;website_button&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/button&gt;</span>
 </pre></div>
 </div>
 <p>In the frontend, some security checks are needed to avoid showing ‘Editing’
 buttons to website visitors:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;website_published_button&quot;</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;float-right&quot;</span>
-<span class="w">     </span><span class="na">groups=</span><span class="s">&quot;base.group_website_publisher&quot;</span><span class="nt">&gt;</span><span class="w"> </span><span class="cm">&lt;!-- or any other meaningful group --&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-call=</span><span class="s">&quot;website.publish_management&quot;</span><span class="nt">&gt;</span>
-<span class="w">      </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set=</span><span class="s">&quot;object&quot;</span><span class="w"> </span><span class="na">t-value=</span><span class="s">&quot;blog_post&quot;</span><span class="nt">/&gt;</span>
-<span class="w">      </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set=</span><span class="s">&quot;publish_edit&quot;</span><span class="w"> </span><span class="na">t-value=</span><span class="s">&quot;True&quot;</span><span class="nt">/&gt;</span>
-<span class="w">      </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set=</span><span class="s">&quot;action&quot;</span><span class="w"> </span><span class="na">t-value=</span><span class="s">&quot;&#39;blog.blog_post_action&#39;&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/t&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;website_published_button&quot;</span> <span class="na">class=</span><span class="s">&quot;float-right&quot;</span>
+     <span class="na">groups=</span><span class="s">&quot;base.group_website_publisher&quot;</span><span class="nt">&gt;</span> <span class="c">&lt;!-- or any other meaningful group --&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-call=</span><span class="s">&quot;website.publish_management&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;t</span> <span class="na">t-set=</span><span class="s">&quot;object&quot;</span> <span class="na">t-value=</span><span class="s">&quot;blog_post&quot;</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;t</span> <span class="na">t-set=</span><span class="s">&quot;publish_edit&quot;</span> <span class="na">t-value=</span><span class="s">&quot;True&quot;</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;t</span> <span class="na">t-set=</span><span class="s">&quot;action&quot;</span> <span class="na">t-value=</span><span class="s">&quot;&#39;blog.blog_post_action&#39;&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/t&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
@@ -3013,14 +3013,14 @@ of the user)</p></li>
 <h4>Send rating requests by e-mail<a class="headerlink" href="#send-rating-requests-by-e-mail" title="Permalink to this headline">¶</a></h4>
 <p>If you wish to send emails to request a rating, simply generate an e-mail with
 links to the rating object. A very basic email template could look like this:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;rating_my_model_email_template&quot;</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;mail.template&quot;</span><span class="nt">&gt;</span>
-<span class="w">            </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>My<span class="w"> </span>Model:<span class="w"> </span>Rating<span class="w"> </span>Request<span class="nt">&lt;/field&gt;</span>
-<span class="w">            </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;email_from&quot;</span><span class="nt">&gt;</span>${object.rating_get_rated_partner_id().email<span class="w"> </span>or<span class="w"> </span>&#39;&#39;<span class="w"> </span>|<span class="w"> </span>safe}<span class="nt">&lt;/field&gt;</span>
-<span class="w">            </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;subject&quot;</span><span class="nt">&gt;</span>Service<span class="w"> </span>Rating<span class="w"> </span>Request<span class="nt">&lt;/field&gt;</span>
-<span class="w">            </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;model_id&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;my_module.model_my_model&quot;</span><span class="nt">/&gt;</span>
-<span class="w">            </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;partner_to&quot;</span><span class="w"> </span><span class="nt">&gt;</span>${object.rating_get_partner_id().id}<span class="nt">&lt;/field&gt;</span>
-<span class="w">            </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;auto_delete&quot;</span><span class="w"> </span><span class="na">eval=</span><span class="s">&quot;True&quot;</span><span class="nt">/&gt;</span>
-<span class="w">            </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;body_html&quot;</span><span class="nt">&gt;</span><span class="cp">&lt;![CDATA[</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">&quot;rating_my_model_email_template&quot;</span> <span class="na">model=</span><span class="s">&quot;mail.template&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>My Model: Rating Request<span class="nt">&lt;/field&gt;</span>
+            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;email_from&quot;</span><span class="nt">&gt;</span>${object.rating_get_rated_partner_id().email or &#39;&#39; | safe}<span class="nt">&lt;/field&gt;</span>
+            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;subject&quot;</span><span class="nt">&gt;</span>Service Rating Request<span class="nt">&lt;/field&gt;</span>
+            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;model_id&quot;</span> <span class="na">ref=</span><span class="s">&quot;my_module.model_my_model&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;partner_to&quot;</span> <span class="nt">&gt;</span>${object.rating_get_partner_id().id}<span class="nt">&lt;/field&gt;</span>
+            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;auto_delete&quot;</span> <span class="na">eval=</span><span class="s">&quot;True&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;body_html&quot;</span><span class="nt">&gt;</span><span class="cp">&lt;![CDATA[</span>
 <span class="cp">% set access_token = object.rating_get_access_token()</span>
 <span class="cp">&lt;p&gt;Hi,&lt;/p&gt;</span>
 <span class="cp">&lt;p&gt;How satsified are you?&lt;/p&gt;</span>
@@ -3038,25 +3038,25 @@ them to provide a feedback on their interaction with your users (including a fre
 feedback message).</p>
 <p>You can then quite easily integrate your ratings with your form view by defining
 an action for the ratings:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;rating_rating_action_my_model&quot;</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.actions.act_window&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>Customer<span class="w"> </span>Ratings<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;res_model&quot;</span><span class="nt">&gt;</span>rating.rating<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;view_mode&quot;</span><span class="nt">&gt;</span>kanban,pivot,graph<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;domain&quot;</span><span class="nt">&gt;</span>[(&#39;res_model&#39;,<span class="w"> </span>&#39;=&#39;,<span class="w"> </span>&#39;my_module.my_model&#39;),<span class="w"> </span>(&#39;res_id&#39;,<span class="w"> </span>&#39;=&#39;,<span class="w"> </span>active_id),<span class="w"> </span>(&#39;consumed&#39;,<span class="w"> </span>&#39;=&#39;,<span class="w"> </span>True)]<span class="nt">&lt;/field&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">&quot;rating_rating_action_my_model&quot;</span> <span class="na">model=</span><span class="s">&quot;ir.actions.act_window&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>Customer Ratings<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;res_model&quot;</span><span class="nt">&gt;</span>rating.rating<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;view_mode&quot;</span><span class="nt">&gt;</span>kanban,pivot,graph<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;domain&quot;</span><span class="nt">&gt;</span>[(&#39;res_model&#39;, &#39;=&#39;, &#39;my_module.my_model&#39;), (&#39;res_id&#39;, &#39;=&#39;, active_id), (&#39;consumed&#39;, &#39;=&#39;, True)]<span class="nt">&lt;/field&gt;</span>
 <span class="nt">&lt;/record&gt;</span>
 
-<span class="nt">&lt;record</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;my_module_my_model_view_form_inherit_rating&quot;</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>my_module.my_model.view.form.inherit.rating<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;model&quot;</span><span class="nt">&gt;</span>my_module.my_model<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;inherit_id&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;my_module.my_model_view_form&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;arch&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;xml&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;xpath</span><span class="w"> </span><span class="na">expr=</span><span class="s">&quot;//div[@name=&#39;button_box&#39;]&quot;</span><span class="w"> </span><span class="na">position=</span><span class="s">&quot;inside&quot;</span><span class="nt">&gt;</span>
-<span class="w">            </span><span class="nt">&lt;button</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;%(rating_rating_action_my_model)d&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;action&quot;</span>
-<span class="w">                    </span><span class="na">class=</span><span class="s">&quot;oe_stat_button&quot;</span><span class="w"> </span><span class="na">icon=</span><span class="s">&quot;fa-smile-o&quot;</span><span class="nt">&gt;</span>
-<span class="w">                </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;rating_count&quot;</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Rating&quot;</span><span class="w"> </span><span class="na">widget=</span><span class="s">&quot;statinfo&quot;</span><span class="nt">/&gt;</span>
-<span class="w">            </span><span class="nt">&lt;/button&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/xpath&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/field&gt;</span>
+<span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">&quot;my_module_my_model_view_form_inherit_rating&quot;</span> <span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>my_module.my_model.view.form.inherit.rating<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;model&quot;</span><span class="nt">&gt;</span>my_module.my_model<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;inherit_id&quot;</span> <span class="na">ref=</span><span class="s">&quot;my_module.my_model_view_form&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;arch&quot;</span> <span class="na">type=</span><span class="s">&quot;xml&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;xpath</span> <span class="na">expr=</span><span class="s">&quot;//div[@name=&#39;button_box&#39;]&quot;</span> <span class="na">position=</span><span class="s">&quot;inside&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">name=</span><span class="s">&quot;%(rating_rating_action_my_model)d&quot;</span> <span class="na">type=</span><span class="s">&quot;action&quot;</span>
+                    <span class="na">class=</span><span class="s">&quot;oe_stat_button&quot;</span> <span class="na">icon=</span><span class="s">&quot;fa-smile-o&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;rating_count&quot;</span> <span class="na">string=</span><span class="s">&quot;Rating&quot;</span> <span class="na">widget=</span><span class="s">&quot;statinfo&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;/xpath&gt;</span>
+    <span class="nt">&lt;/field&gt;</span>
 <span class="nt">&lt;/record&gt;</span>
 </pre></div>
 </div>

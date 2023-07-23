@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/administration/maintain/enterprise.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/administration/maintain/enterprise.html" />
     
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -1950,17 +1950,17 @@ In any case the basic guidelines are:</p>
 <ul>
 <li><p>Backup your community database</p></li>
 <li><p>Stop the odoo service</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sudo<span class="w"> </span>service<span class="w"> </span>odoo<span class="w"> </span>stop
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> sudo service odoo stop
 </pre></div>
 </div>
 </li>
 <li><p>Install the enterprise .deb (it should install over the community package)</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sudo<span class="w"> </span>dpkg<span class="w"> </span>-i<span class="w"> </span>&lt;path_to_enterprise_deb&gt;
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> sudo dpkg -i &lt;path_to_enterprise_deb&gt;
 </pre></div>
 </div>
 </li>
 <li><p>Update your database to the enterprise packages using</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>python3<span class="w"> </span>/usr/bin/odoo-bin<span class="w"> </span>-d<span class="w"> </span>&lt;database_name&gt;<span class="w"> </span>-i<span class="w"> </span>web_enterprise<span class="w"> </span>--stop-after-init
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> python3 /usr/bin/odoo-bin -d &lt;database_name&gt; -i web_enterprise --stop-after-init
 </pre></div>
 </div>
 </li>
@@ -1977,7 +1977,7 @@ have your own favourite. You may need to adapt sections to your usual workflow.<
 <li><p>Backup your community database</p></li>
 <li><p>Update the <code class="o_code docutils literal notranslate"><span class="pre">--addons-path</span></code> parameter of your launch command (see <a class="reference internal" href="../install/install.html#setup-install-source"><span class="std std-ref">Source install</span></a>)</p></li>
 <li><p>Install the web_enterprise module by using</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>-d<span class="w"> </span>&lt;database_name&gt;<span class="w"> </span>-i<span class="w"> </span>web_enterprise<span class="w"> </span>--stop-after-init
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> -d &lt;database_name&gt; -i web_enterprise --stop-after-init
 </pre></div>
 </div>
 <p>Depending on the size of your database, this may take some time.</p>
@@ -2002,7 +2002,7 @@ Uncheck <code class="o_code docutils literal notranslate"><span class="pre">Star
 </li>
 <li><p>Using a command window, update your Odoo Database using this command (from the Odoo
 installation path, in the server subfolder)</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>..<span class="se">\p</span>ython<span class="se">\p</span>ython.exe<span class="w"> </span>odoo-bin<span class="w"> </span>-d<span class="w"> </span>&lt;database_name&gt;<span class="w"> </span>-i<span class="w"> </span>web_enterprise<span class="w"> </span>--stop-after-init
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> ..<span class="se">\p</span>ython<span class="se">\p</span>ython.exe odoo-bin -d &lt;database_name&gt; -i web_enterprise --stop-after-init
 </pre></div>
 </div>
 </li>

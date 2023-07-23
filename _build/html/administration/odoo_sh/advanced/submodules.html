@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/administration/odoo_sh/advanced/submodules.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/administration/odoo_sh/advanced/submodules.html" />
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -1981,11 +1981,11 @@ do so <a class="reference internal" href="#odoosh-advanced-submodules-withgit"><
 <span id="odoosh-advanced-submodules-withgit"></span><h3>With Git (advanced)<a class="headerlink" href="#with-git-advanced" title="Permalink to this headline">¶</a></h3>
 <p>In a terminal, in the folder where your Git repository is cloned,
 checkout the branch in which you want to add a submodule:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>checkout<span class="w"> </span>&lt;branch&gt;
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git checkout &lt;branch&gt;
 </pre></div>
 </div>
 <p>Then, add the submodule using the command below:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>submodule<span class="w"> </span>add<span class="w"> </span>-b<span class="w"> </span>&lt;branch&gt;<span class="w"> </span>&lt;git@yourprovider.com&gt;:&lt;username/repository.git&gt;<span class="w"> </span>&lt;path&gt;
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git submodule add -b &lt;branch&gt; &lt;git@yourprovider.com&gt;:&lt;username/repository.git&gt; &lt;path&gt;
 </pre></div>
 </div>
 <p>Replace</p>
@@ -1995,7 +1995,7 @@ checkout the branch in which you want to add a submodule:</p>
 <li><p><em>&lt;path&gt;</em> by the folder in which you want to add this submodule.</p></li>
 </ul>
 <p>Commit and push your changes:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </span>-a<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>&lt;remote&gt;<span class="w"> </span>&lt;branch&gt;
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git commit -a <span class="o">&amp;&amp;</span> git push -u &lt;remote&gt; &lt;branch&gt;
 </pre></div>
 </div>
 <p>Replace</p>

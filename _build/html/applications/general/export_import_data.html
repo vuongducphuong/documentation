@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/applications/general/export_import_data.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/applications/general/export_import_data.html" />
     
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -2201,7 +2201,7 @@ persons. Each person belong to one company, so you will have to recreate the lin
 and the company he work for. (If you want to test this example, here is a <a class="reference download internal" download="" href="../../_downloads/586774d50faaf161e1a9e7ffa33f1036/database_import_test.sql"><code class="xref download o_code docutils literal notranslate"><span class="pre">dump</span> <span class="pre">of</span> <span class="pre">such</span> <span class="pre">a</span>
 <span class="pre">PostgreSQL</span> <span class="pre">database</span></code></a>)</p>
 <p>We will first export all companies and their “External ID”. In PSQL, write the following command:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>&gt;<span class="w"> </span>copy<span class="w"> </span><span class="o">(</span><span class="k">select</span><span class="w"> </span><span class="s1">&#39;company_&#39;</span><span class="o">||</span>id<span class="w"> </span>as<span class="w"> </span><span class="s2">&quot;External ID&quot;</span>,company_name<span class="w"> </span>as<span class="w"> </span><span class="s2">&quot;Name&quot;</span>,<span class="s1">&#39;True&#39;</span><span class="w"> </span>as<span class="w"> </span><span class="s2">&quot;Is a Company&quot;</span><span class="w"> </span>from<span class="w"> </span>companies<span class="o">)</span><span class="w"> </span>TO<span class="w"> </span><span class="s1">&#39;/tmp/company.csv&#39;</span><span class="w"> </span>with<span class="w"> </span>CSV<span class="w"> </span>HEADER<span class="p">;</span>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>&gt; copy <span class="o">(</span><span class="k">select</span> <span class="s1">&#39;company_&#39;</span><span class="o">||</span>id as <span class="s2">&quot;External ID&quot;</span>,company_name as <span class="s2">&quot;Name&quot;</span>,<span class="s1">&#39;True&#39;</span> as <span class="s2">&quot;Is a Company&quot;</span> from companies<span class="o">)</span> TO <span class="s1">&#39;/tmp/company.csv&#39;</span> with CSV HEADER<span class="p">;</span>
 </pre></div>
 </div>
 <p>This SQL command will create the following CSV file:</p>
@@ -2212,7 +2212,7 @@ company_3,Boum,True
 </pre></div>
 </div>
 <p>To create the CSV file for persons, linked to companies, we will use the following SQL command in PSQL:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>&gt;<span class="w"> </span>copy<span class="w"> </span><span class="o">(</span><span class="k">select</span><span class="w"> </span><span class="s1">&#39;person_&#39;</span><span class="o">||</span>id<span class="w"> </span>as<span class="w"> </span><span class="s2">&quot;External ID&quot;</span>,person_name<span class="w"> </span>as<span class="w"> </span><span class="s2">&quot;Name&quot;</span>,<span class="s1">&#39;False&#39;</span><span class="w"> </span>as<span class="w"> </span><span class="s2">&quot;Is a Company&quot;</span>,<span class="s1">&#39;company_&#39;</span><span class="o">||</span>company_id<span class="w"> </span>as<span class="w"> </span><span class="s2">&quot;Related Company/External ID&quot;</span><span class="w"> </span>from<span class="w"> </span>persons<span class="o">)</span><span class="w"> </span>TO<span class="w"> </span><span class="s1">&#39;/tmp/person.csv&#39;</span><span class="w"> </span>with<span class="w"> </span>CSV
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>&gt; copy <span class="o">(</span><span class="k">select</span> <span class="s1">&#39;person_&#39;</span><span class="o">||</span>id as <span class="s2">&quot;External ID&quot;</span>,person_name as <span class="s2">&quot;Name&quot;</span>,<span class="s1">&#39;False&#39;</span> as <span class="s2">&quot;Is a Company&quot;</span>,<span class="s1">&#39;company_&#39;</span><span class="o">||</span>company_id as <span class="s2">&quot;Related Company/External ID&quot;</span> from persons<span class="o">)</span> TO <span class="s1">&#39;/tmp/person.csv&#39;</span> with CSV
 </pre></div>
 </div>
 <p>It will produce the following CSV file:</p>

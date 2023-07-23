@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/reference/backend/views.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/reference/backend/views.html" />
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -1989,14 +1989,14 @@ of views. Each of them represents a mode of visualization: <em>form</em>, <em>li
 <span id="reference-views-structure"></span><h2>Generic structure<a class="headerlink" href="#generic-structure" title="Permalink to this headline">¶</a></h2>
 <p>Basic views generally share the common structure defined below. Placeholders are denoted in all
 caps.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;MODEL_view_TYPE&quot;</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span><span class="nt">&gt;</span>
-<span class="w">  </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>NAME<span class="nt">&lt;/field&gt;</span>
-<span class="w">  </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;model&quot;</span><span class="nt">&gt;</span>MODEL<span class="nt">&lt;/field&gt;</span>
-<span class="w">  </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;arch&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;xml&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;VIEW_TYPE&gt;</span>
-<span class="w">      </span><span class="nt">&lt;VIEW_SPECIFICATIONS/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/VIEW_TYPE&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/field&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">&quot;MODEL_view_TYPE&quot;</span> <span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>NAME<span class="nt">&lt;/field&gt;</span>
+  <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;model&quot;</span><span class="nt">&gt;</span>MODEL<span class="nt">&lt;/field&gt;</span>
+  <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;arch&quot;</span> <span class="na">type=</span><span class="s">&quot;xml&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;VIEW_TYPE&gt;</span>
+      <span class="nt">&lt;VIEW_SPECIFICATIONS/&gt;</span>
+    <span class="nt">&lt;/VIEW_TYPE&gt;</span>
+  <span class="nt">&lt;/field&gt;</span>
 <span class="nt">&lt;/record&gt;</span>
 </pre></div>
 </div>
@@ -2060,10 +2060,10 @@ available in the context:</p>
 <li><p><code class="o_code docutils literal notranslate"><span class="pre">now</span></code>: same as <code class="o_code docutils literal notranslate"><span class="pre">today</span></code> with the addition of the current time.
 This value is formatted as <code class="o_code docutils literal notranslate"><span class="pre">YYYY-MM-DD</span> <span class="pre">hh:mm:ss</span></code>.</p></li>
 </ul>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;tree</span><span class="w"> </span><span class="na">decoration-info=</span><span class="s">&quot;state == &#39;draft&#39;&quot;</span>
-<span class="w">    </span><span class="na">decoration-danger=</span><span class="s">&quot;state == &#39;help_needed&#39;&quot;</span>
-<span class="w">    </span><span class="na">decoration-bf=</span><span class="s">&quot;state=&#39;busy&#39;&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="cm">&lt;!-- TREE_VIEW_CONTENT --&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;tree</span> <span class="na">decoration-info=</span><span class="s">&quot;state == &#39;draft&#39;&quot;</span>
+    <span class="na">decoration-danger=</span><span class="s">&quot;state == &#39;help_needed&#39;&quot;</span>
+    <span class="na">decoration-bf=</span><span class="s">&quot;state=&#39;busy&#39;&quot;</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- TREE_VIEW_CONTENT --&gt;</span>
 <span class="nt">&lt;/tree&gt;</span>
 </pre></div>
 </div>
@@ -2099,7 +2099,7 @@ for more details.</p>
 attribute, like <a class="reference internal" href="#reference-views-form"><span class="std std-ref">Form</span></a>, <a class="reference internal" href="#reference-views-kanban"><span class="std std-ref">Kanban</span></a>,
 <a class="reference internal" href="#reference-views-list"><span class="std std-ref">List</span></a>, …</p>
 <p>Example:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;tree</span><span class="w"> </span><span class="na">banner_route=</span><span class="s">&quot;/module_name/hello&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;tree</span> <span class="na">banner_route=</span><span class="s">&quot;/module_name/hello&quot;</span> <span class="nt">/&gt;</span>
 </pre></div>
 </div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyController</span><span class="p">(</span><span class="n">odoo</span><span class="o">.</span><span class="n">http</span><span class="o">.</span><span class="n">Controller</span><span class="p">):</span>
@@ -2127,7 +2127,7 @@ inherited views.</p>
 <li><p><code class="o_code docutils literal notranslate"><span class="pre">inherit_id</span></code> <code class="xref py py-class o_code docutils literal notranslate"><span class="pre">Many2one</span></code></p>
 <p>the current view’s parent view, unset by default. Specify the parent using
 the <code class="o_code docutils literal notranslate"><span class="pre">ref</span></code> attribute:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;inherit_id&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;library.view_book_form&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;inherit_id&quot;</span> <span class="na">ref=</span><span class="s">&quot;library.view_book_form&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 </li>
@@ -2181,16 +2181,16 @@ with the same <code class="o_code docutils literal notranslate"><span class="pre
 <li><p>any other element: the first element with the same name and identical
 attributes (ignoring <code class="o_code docutils literal notranslate"><span class="pre">position</span></code> and <code class="o_code docutils literal notranslate"><span class="pre">version</span></code> attributes) is matched</p></li>
 </ul>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;xpath</span><span class="w"> </span><span class="na">expr=</span><span class="s">&quot;page[@name=&#39;pg&#39;]/group[@name=&#39;gp&#39;]/field&quot;</span><span class="w"> </span><span class="na">position=</span><span class="s">&quot;inside&quot;</span><span class="nt">&gt;</span>
-<span class="w">  </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;description&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;xpath</span> <span class="na">expr=</span><span class="s">&quot;page[@name=&#39;pg&#39;]/group[@name=&#39;gp&#39;]/field&quot;</span> <span class="na">position=</span><span class="s">&quot;inside&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;description&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/xpath&gt;</span>
 
-<span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;res_id&quot;</span><span class="w"> </span><span class="na">position=</span><span class="s">&quot;after&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;res_id&quot;</span> <span class="na">position=</span><span class="s">&quot;after&quot;</span><span class="nt">/&gt;</span>
 
-<span class="nt">&lt;div</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="w"> </span><span class="na">position=</span><span class="s">&quot;replace&quot;</span><span class="nt">&gt;</span>
-<span class="w">  </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name2&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name2&quot;</span><span class="nt">/&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span> <span class="na">position=</span><span class="s">&quot;replace&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">name=</span><span class="s">&quot;name2&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name2&quot;</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
@@ -2224,12 +2224,12 @@ value of the matched node’s attribute named after <code class="o_code docutils
 value(s) of <code class="o_code docutils literal notranslate"><span class="pre">add</span></code> (separated by <code class="o_code docutils literal notranslate"><span class="pre">separator</span></code>) and delete the value(s) of <code class="o_code docutils literal notranslate"><span class="pre">remove</span></code>
 (separated by <code class="o_code docutils literal notranslate"><span class="pre">separator</span></code>). If <code class="o_code docutils literal notranslate"><span class="pre">separator</span></code> is not provided, <code class="o_code docutils literal notranslate"><span class="pre">,</span></code> is used instead.</p></li>
 </ul>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;sale_information&quot;</span><span class="w"> </span><span class="na">position=</span><span class="s">&quot;attributes&quot;</span><span class="nt">&gt;</span>
-<span class="w">  </span><span class="nt">&lt;attribute</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;invisible&quot;</span><span class="nt">&gt;</span>0<span class="nt">&lt;/attribute&gt;</span>
-<span class="w">  </span><span class="nt">&lt;attribute</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;attrs&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span>{&#39;invisible&#39;:<span class="w"> </span>[(&#39;sale_ok&#39;,<span class="w"> </span>&#39;=&#39;,<span class="w"> </span>False)],<span class="w"> </span>&#39;readonly&#39;:<span class="w"> </span>[(&#39;editable&#39;,<span class="w"> </span>&#39;=&#39;,<span class="w"> </span>False)]}
-<span class="w">  </span><span class="nt">&lt;/attribute&gt;</span>
-<span class="w">  </span><span class="nt">&lt;attribute</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;class&quot;</span><span class="w"> </span><span class="na">add=</span><span class="s">&quot;mt-1 mb-1&quot;</span><span class="w"> </span><span class="na">remove=</span><span class="s">&quot;mt-2 mb-2&quot;</span><span class="w"> </span><span class="na">separator=</span><span class="s">&quot; &quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;sale_information&quot;</span> <span class="na">position=</span><span class="s">&quot;attributes&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;attribute</span> <span class="na">name=</span><span class="s">&quot;invisible&quot;</span><span class="nt">&gt;</span>0<span class="nt">&lt;/attribute&gt;</span>
+  <span class="nt">&lt;attribute</span> <span class="na">name=</span><span class="s">&quot;attrs&quot;</span><span class="nt">&gt;</span>
+    {&#39;invisible&#39;: [(&#39;sale_ok&#39;, &#39;=&#39;, False)], &#39;readonly&#39;: [(&#39;editable&#39;, &#39;=&#39;, False)]}
+  <span class="nt">&lt;/attribute&gt;</span>
+  <span class="nt">&lt;attribute</span> <span class="na">name=</span><span class="s">&quot;class&quot;</span> <span class="na">add=</span><span class="s">&quot;mt-1 mb-1&quot;</span> <span class="na">remove=</span><span class="s">&quot;mt-2 mb-2&quot;</span> <span class="na">separator=</span><span class="s">&quot; &quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/field&gt;</span>
 </pre></div>
 </div>
@@ -2237,12 +2237,12 @@ value(s) of <code class="o_code docutils literal notranslate"><span class="pre">
 <dt><code class="o_code docutils literal notranslate"><span class="pre">move</span></code></dt><dd><p>can be used as a direct child of a inheritance spec
 with a <code class="o_code docutils literal notranslate"><span class="pre">inside</span></code>, <code class="o_code docutils literal notranslate"><span class="pre">replace</span></code>, <code class="o_code docutils literal notranslate"><span class="pre">after</span></code> or <code class="o_code docutils literal notranslate"><span class="pre">before</span></code> <code class="o_code docutils literal notranslate"><span class="pre">position</span></code> attribute
 to move a node.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;xpath</span><span class="w"> </span><span class="na">expr=</span><span class="s">&quot;//@target&quot;</span><span class="w"> </span><span class="na">position=</span><span class="s">&quot;after&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;xpath</span><span class="w"> </span><span class="na">expr=</span><span class="s">&quot;//@node&quot;</span><span class="w"> </span><span class="na">position=</span><span class="s">&quot;move&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;xpath</span> <span class="na">expr=</span><span class="s">&quot;//@target&quot;</span> <span class="na">position=</span><span class="s">&quot;after&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;xpath</span> <span class="na">expr=</span><span class="s">&quot;//@node&quot;</span> <span class="na">position=</span><span class="s">&quot;move&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/xpath&gt;</span>
 
-<span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;target_field&quot;</span><span class="w"> </span><span class="na">position=</span><span class="s">&quot;after&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;my_field&quot;</span><span class="w"> </span><span class="na">position=</span><span class="s">&quot;move&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;target_field&quot;</span> <span class="na">position=</span><span class="s">&quot;after&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;my_field&quot;</span> <span class="na">position=</span><span class="s">&quot;move&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/field&gt;</span>
 </pre></div>
 </div>
@@ -2402,7 +2402,7 @@ to the context of the action in order to set/override the views that will be
 used (the context keys to use being <code class="o_code docutils literal notranslate"><span class="pre">form_view_id</span></code> and <code class="o_code docutils literal notranslate"><span class="pre">list_view_id</span></code>)</p>
 </div>
 <p>For example, here is a very simple cohort view:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;cohort</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Subscription&quot;</span><span class="w"> </span><span class="na">date_start=</span><span class="s">&quot;date_start&quot;</span><span class="w"> </span><span class="na">date_stop=</span><span class="s">&quot;date&quot;</span><span class="w"> </span><span class="na">interval=</span><span class="s">&quot;month&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;cohort</span> <span class="na">string=</span><span class="s">&quot;Subscription&quot;</span> <span class="na">date_start=</span><span class="s">&quot;date_start&quot;</span> <span class="na">date_stop=</span><span class="s">&quot;date&quot;</span> <span class="na">interval=</span><span class="s">&quot;month&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 <p>The root element of the Cohort view is &lt;cohort&gt;, it accepts the following
@@ -2615,31 +2615,31 @@ definition in the model) by default.</p>
 </section><section id="id9">
 <h4>Generic structure<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;form&gt;</span>
-<span class="w">  </span><span class="nt">&lt;header&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;state&quot;</span><span class="w"> </span><span class="na">widget=</span><span class="s">&quot;statusbar&quot;</span><span class="nt">/&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/header&gt;</span>
-<span class="w">  </span><span class="nt">&lt;sheet&gt;</span>
-<span class="w">    </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;oe_button_box&quot;</span><span class="nt">&gt;</span>
-<span class="w">      </span><span class="nt">&lt;BUTTONS/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/div&gt;</span>
-<span class="w">    </span><span class="nt">&lt;group&gt;</span>
-<span class="w">      </span><span class="nt">&lt;group&gt;</span>
-<span class="w">        </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;fname&quot;</span><span class="nt">/&gt;</span>
-<span class="w">      </span><span class="nt">&lt;/group&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/group&gt;</span>
-<span class="w">    </span><span class="nt">&lt;notebook&gt;</span>
-<span class="w">      </span><span class="nt">&lt;page</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Page1&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;group&gt;</span>
-<span class="w">          </span><span class="nt">&lt;CONTENT/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/group&gt;</span>
-<span class="w">      </span><span class="nt">&lt;/page&gt;</span>
-<span class="w">      </span><span class="nt">&lt;page</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Page2&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;group&gt;</span>
-<span class="w">          </span><span class="nt">&lt;CONTENT/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/group&gt;</span>
-<span class="w">      </span><span class="nt">&lt;/page&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/notebook&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/sheet&gt;</span>
+  <span class="nt">&lt;header&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;state&quot;</span> <span class="na">widget=</span><span class="s">&quot;statusbar&quot;</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/header&gt;</span>
+  <span class="nt">&lt;sheet&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;oe_button_box&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;BUTTONS/&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;group&gt;</span>
+      <span class="nt">&lt;group&gt;</span>
+        <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;fname&quot;</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;/group&gt;</span>
+    <span class="nt">&lt;/group&gt;</span>
+    <span class="nt">&lt;notebook&gt;</span>
+      <span class="nt">&lt;page</span> <span class="na">string=</span><span class="s">&quot;Page1&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;group&gt;</span>
+          <span class="nt">&lt;CONTENT/&gt;</span>
+        <span class="nt">&lt;/group&gt;</span>
+      <span class="nt">&lt;/page&gt;</span>
+      <span class="nt">&lt;page</span> <span class="na">string=</span><span class="s">&quot;Page2&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;group&gt;</span>
+          <span class="nt">&lt;CONTENT/&gt;</span>
+        <span class="nt">&lt;/group&gt;</span>
+      <span class="nt">&lt;/page&gt;</span>
+    <span class="nt">&lt;/notebook&gt;</span>
+  <span class="nt">&lt;/sheet&gt;</span>
 <span class="nt">&lt;/form&gt;</span>
 </pre></div>
 </div>
@@ -2793,11 +2793,11 @@ Values are the names of the field holding the thumbnail on the related model.</p
 <p>Example: tasks have a field user_id that reference res.users. The res.users model has a field image that holds the avatar,
 then:</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;gantt</span>
-<span class="w">   </span><span class="na">date_start=</span><span class="s">&quot;date_start&quot;</span>
-<span class="w">   </span><span class="na">date_stop=</span><span class="s">&quot;date_stop&quot;</span>
-<span class="w">   </span><span class="na">thumbnails=</span><span class="s">&quot;{&#39;user_id&#39;: &#39;image_128&#39;}&quot;</span>
-<span class="w"> </span><span class="nt">&gt;</span>
-<span class="w"> </span><span class="nt">&lt;/gantt&gt;</span>
+   <span class="na">date_start=</span><span class="s">&quot;date_start&quot;</span>
+   <span class="na">date_stop=</span><span class="s">&quot;date_stop&quot;</span>
+   <span class="na">thumbnails=</span><span class="s">&quot;{&#39;user_id&#39;: &#39;image_128&#39;}&quot;</span>
+ <span class="nt">&gt;</span>
+ <span class="nt">&lt;/gantt&gt;</span>
 </pre></div>
 </div>
 <p>will display the users avatars next to their names when grouped by user_id.</p>
@@ -3273,8 +3273,8 @@ the <code class="o_code docutils literal notranslate"><span class="pre">multi_ed
 <dt><code class="o_code docutils literal notranslate"><span class="pre">default_order</span></code></dt><dd><p>overrides the ordering of the view, replacing the model’s order (<code class="xref py py-attr o_code docutils literal notranslate"><span class="pre">_order</span></code> model attribute).
 The value is a comma-separated list of fields, postfixed by <code class="o_code docutils literal notranslate"><span class="pre">desc</span></code> to
 sort in reverse order:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;tree</span><span class="w"> </span><span class="na">default_order=</span><span class="s">&quot;sequence,name desc&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span>...
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;tree</span> <span class="na">default_order=</span><span class="s">&quot;sequence,name desc&quot;</span><span class="nt">&gt;</span>
+    ...
 <span class="nt">&lt;/tree&gt;</span>
 </pre></div>
 </div>
@@ -3417,7 +3417,7 @@ be used when setting up the inline form view.</p>
 Note</p><p>In case of list sub-views (One2many/Many2many display in a form view),
 The attribute <code class="o_code docutils literal notranslate"><span class="pre">column_invisible</span></code> can be useful to hide a column
 depending on the parent object.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;product_is_late&quot;</span><span class="w"> </span><span class="na">attrs=</span><span class="s">&quot;{&#39;column_invisible&#39;: [(&#39;parent.has_late_products&#39;, &#39;=&#39;, False)]}&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;product_is_late&quot;</span> <span class="na">attrs=</span><span class="s">&quot;{&#39;column_invisible&#39;: [(&#39;parent.has_late_products&#39;, &#39;=&#39;, False)]}&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -3441,11 +3441,11 @@ many2one comodel. These extra fields will be fetched in batch.</p>
 displayed when grouping the view on this field name.</p>
 </dd>
 </dl>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;groupby</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;partner_id&quot;</span><span class="nt">&gt;</span>
-<span class="w">  </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">/&gt;</span><span class="w"> </span><span class="cm">&lt;!-- name of partner_id --&gt;</span>
-<span class="w">  </span><span class="nt">&lt;button</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;edit&quot;</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;edit&quot;</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Edit&quot;</span><span class="nt">/&gt;</span>
-<span class="w">  </span><span class="nt">&lt;button</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;object&quot;</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;my_method&quot;</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Button1&quot;</span>
-<span class="w">    </span><span class="na">attrs=</span><span class="s">&quot;{&#39;invisible&#39;: [(&#39;name&#39;, &#39;=&#39;, &#39;Georges&#39;)]}&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;groupby</span> <span class="na">name=</span><span class="s">&quot;partner_id&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">/&gt;</span> <span class="c">&lt;!-- name of partner_id --&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;edit&quot;</span> <span class="na">name=</span><span class="s">&quot;edit&quot;</span> <span class="na">string=</span><span class="s">&quot;Edit&quot;</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;object&quot;</span> <span class="na">name=</span><span class="s">&quot;my_method&quot;</span> <span class="na">string=</span><span class="s">&quot;Button1&quot;</span>
+    <span class="na">attrs=</span><span class="s">&quot;{&#39;invisible&#39;: [(&#39;name&#39;, &#39;=&#39;, &#39;Georges&#39;)]}&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/groupby&gt;</span>
 </pre></div>
 </div>
@@ -3479,17 +3479,17 @@ by replacing it with 3 new buttons:
 <p>The two other buttons will set the field ‘display_type’
 to be respectively ‘line_section’ and ‘line_note’.</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;control&gt;</span>
-<span class="w">  </span><span class="nt">&lt;create</span>
-<span class="w">    </span><span class="na">string=</span><span class="s">&quot;Add a product&quot;</span>
-<span class="w">  </span><span class="nt">/&gt;</span>
-<span class="w">  </span><span class="nt">&lt;create</span>
-<span class="w">    </span><span class="na">string=</span><span class="s">&quot;Add a section&quot;</span>
-<span class="w">    </span><span class="na">context=</span><span class="s">&quot;{&#39;default_display_type&#39;: &#39;line_section&#39;}&quot;</span>
-<span class="w">  </span><span class="nt">/&gt;</span>
-<span class="w">  </span><span class="nt">&lt;create</span>
-<span class="w">    </span><span class="na">string=</span><span class="s">&quot;Add a note&quot;</span>
-<span class="w">    </span><span class="na">context=</span><span class="s">&quot;{&#39;default_display_type&#39;: &#39;line_note&#39;}&quot;</span>
-<span class="w">  </span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;create</span>
+    <span class="na">string=</span><span class="s">&quot;Add a product&quot;</span>
+  <span class="nt">/&gt;</span>
+  <span class="nt">&lt;create</span>
+    <span class="na">string=</span><span class="s">&quot;Add a section&quot;</span>
+    <span class="na">context=</span><span class="s">&quot;{&#39;default_display_type&#39;: &#39;line_section&#39;}&quot;</span>
+  <span class="nt">/&gt;</span>
+  <span class="nt">&lt;create</span>
+    <span class="na">string=</span><span class="s">&quot;Add a note&quot;</span>
+    <span class="na">context=</span><span class="s">&quot;{&#39;default_display_type&#39;: &#39;line_note&#39;}&quot;</span>
+  <span class="nt">/&gt;</span>
 <span class="nt">&lt;/control&gt;</span>
 </pre></div>
 </div>
@@ -3540,8 +3540,8 @@ As soon as a valid <a class="reference external" href="https://docs.mapbox.com/a
 </dd>
 <dt><code class="o_code docutils literal notranslate"><span class="pre">string</span></code></dt><dd><p>String to display before the field’s content. It can be used as a description.</p>
 </dd>
-<dt>For example here is a map:</dt><dd><div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;map</span><span class="w"> </span><span class="na">res_partner=</span><span class="s">&quot;partner_id&quot;</span><span class="w"> </span><span class="na">default_order=</span><span class="s">&quot;date_begin&quot;</span><span class="w"> </span><span class="na">routing=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="na">hide_name=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;partner_id&quot;</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Customer Name&quot;</span><span class="nt">/&gt;</span>
+<dt>For example here is a map:</dt><dd><div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;map</span> <span class="na">res_partner=</span><span class="s">&quot;partner_id&quot;</span> <span class="na">default_order=</span><span class="s">&quot;date_begin&quot;</span> <span class="na">routing=</span><span class="s">&quot;1&quot;</span> <span class="na">hide_name=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;partner_id&quot;</span> <span class="na">string=</span><span class="s">&quot;Customer Name&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/map&gt;</span>
 </pre></div>
 </div>
@@ -3558,8 +3558,8 @@ element is <code class="o_code docutils literal notranslate"><span class="pre">&
 </dd>
 <dt><code class="o_code docutils literal notranslate"><span class="pre">default_order</span></code> (optional)</dt><dd><p>The name of the measure and the order (asc or desc) to use as default order
 in the view.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;pivot</span><span class="w"> </span><span class="na">default_order=</span><span class="s">&quot;foo asc&quot;</span><span class="nt">&gt;</span>
-<span class="w">   </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;foo&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;measure&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;pivot</span> <span class="na">default_order=</span><span class="s">&quot;foo asc&quot;</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;foo&quot;</span> <span class="na">type=</span><span class="s">&quot;measure&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/pivot&gt;</span>
 </pre></div>
 </div>
@@ -3732,7 +3732,7 @@ of the filters menu. The filters proposed are time dependent
 but not dynamic in the sense that their domains are evaluated
 at the time of the control panel instantiation.</p>
 <p>Example:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;filter</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;filter_create_date&quot;</span><span class="w"> </span><span class="na">date=</span><span class="s">&quot;create_date&quot;</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Creation Date&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;filter</span> <span class="na">name=</span><span class="s">&quot;filter_create_date&quot;</span> <span class="na">date=</span><span class="s">&quot;create_date&quot;</span> <span class="na">string=</span><span class="s">&quot;Creation Date&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 <p>The example above allows to easily search for records with creation date field
@@ -3763,8 +3763,8 @@ fourth_quarter, third_quarter, second_quarter, first_quarter,
 this_year, last_year, antepenultimate_year.</p>
 <p>The attribute accepts comma separated values.</p>
 <p>Examples:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;filter</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;filter_create_date&quot;</span><span class="w"> </span><span class="na">date=</span><span class="s">&quot;create_date&quot;</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Creation Date&quot;</span><span class="w"> </span><span class="na">default_period=</span><span class="s">&quot;this_week&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;filter</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;filter_create_date&quot;</span><span class="w"> </span><span class="na">date=</span><span class="s">&quot;create_date&quot;</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Creation Date&quot;</span><span class="w"> </span><span class="na">default_period=</span><span class="s">&quot;this_year,last_year&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;filter</span> <span class="na">name=</span><span class="s">&quot;filter_create_date&quot;</span> <span class="na">date=</span><span class="s">&quot;create_date&quot;</span> <span class="na">string=</span><span class="s">&quot;Creation Date&quot;</span> <span class="na">default_period=</span><span class="s">&quot;this_week&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;filter</span> <span class="na">name=</span><span class="s">&quot;filter_create_date&quot;</span> <span class="na">date=</span><span class="s">&quot;create_date&quot;</span> <span class="na">string=</span><span class="s">&quot;Creation Date&quot;</span> <span class="na">default_period=</span><span class="s">&quot;this_year,last_year&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 </dd>
@@ -3772,7 +3772,7 @@ this_year, last_year, antepenultimate_year.</p>
 search domain</p>
 <p>The key <code class="o_code docutils literal notranslate"><span class="pre">group_by</span></code> can be used to define a groupby available in the
 ‘Group By’ menu. The ‘group_by’ value can be a valid field name.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;filter</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;groupby_category&quot;</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Category&quot;</span><span class="w"> </span><span class="na">context=</span><span class="s">&quot;{&#39;group_by&#39;: &#39;category_id&#39;}&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;filter</span> <span class="na">name=</span><span class="s">&quot;groupby_category&quot;</span> <span class="na">string=</span><span class="s">&quot;Category&quot;</span> <span class="na">context=</span><span class="s">&quot;{&#39;group_by&#39;: &#39;category_id&#39;}&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 <p>The groupby defined above allows to group data by category.</p>
@@ -3782,7 +3782,7 @@ menu in which the following interval options are available: day, week, month, qu
 the records are grouped by month by default. This can be changed by using the syntax
 ‘date_field:interval’ as in the following example.</p>
 <p>Example:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;filter</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;groupby_create_date&quot;</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Creation Date&quot;</span><span class="w"> </span><span class="na">context=</span><span class="s">&quot;{&#39;group_by&#39;: &#39;create_date:week&#39;}&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;filter</span> <span class="na">name=</span><span class="s">&quot;groupby_create_date&quot;</span> <span class="na">string=</span><span class="s">&quot;Creation Date&quot;</span> <span class="na">context=</span><span class="s">&quot;{&#39;group_by&#39;: &#39;create_date:week&#39;}&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 <div class="alert alert-primary">
@@ -3900,8 +3900,8 @@ of the search panel. Consider
 /!This attribute is incompatible with a select=”one” with enabled counters; if a select=”multi”
 has a <code class="o_code docutils literal notranslate"><span class="pre">domain</span></code> attribute, all select=”one” will have their counters disabled.</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;searchpanel&gt;</span>
-<span class="w">  </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;department_id&quot;</span><span class="nt">/&gt;</span>
-<span class="w">  </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;manager_id&quot;</span><span class="w"> </span><span class="na">select=</span><span class="s">&quot;multi&quot;</span><span class="w"> </span><span class="na">domain=</span><span class="s">&quot;[(&#39;department_id&#39;, &#39;=&#39;, department_id)]&quot;</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;department_id&quot;</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;manager_id&quot;</span> <span class="na">select=</span><span class="s">&quot;multi&quot;</span> <span class="na">domain=</span><span class="s">&quot;[(&#39;department_id&#39;, &#39;=&#39;, department_id)]&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/searchpanel&gt;</span>
 </pre></div>
 </div>

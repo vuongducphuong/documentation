@@ -23,7 +23,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/contributing/development/coding_guidelines.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/contributing/development/coding_guidelines.html" />
     
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -2207,16 +2207,16 @@ action/menu/views, this convention may not be applicable.</p></li>
 If there is only not-updatable data in the file, the <code class="o_code docutils literal notranslate"><span class="pre">noupdate=1</span></code> can be
 set on the <code class="o_code docutils literal notranslate"><span class="pre">&lt;odoo&gt;</span></code> tag and do not set a <code class="o_code docutils literal notranslate"><span class="pre">&lt;data&gt;</span></code> tag.</p></li>
 </ul>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;view_id&quot;</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>view.name<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;model&quot;</span><span class="nt">&gt;</span>object_name<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;priority&quot;</span><span class="w"> </span><span class="na">eval=</span><span class="s">&quot;16&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;arch&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;xml&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;tree&gt;</span>
-<span class="w">            </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;my_field_1&quot;</span><span class="nt">/&gt;</span>
-<span class="w">            </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;my_field_2&quot;</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;My Label&quot;</span><span class="w"> </span><span class="na">widget=</span><span class="s">&quot;statusbar&quot;</span><span class="w"> </span><span class="na">statusbar_visible=</span><span class="s">&quot;draft,sent,progress,done&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/tree&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/field&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">&quot;view_id&quot;</span> <span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>view.name<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;model&quot;</span><span class="nt">&gt;</span>object_name<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;priority&quot;</span> <span class="na">eval=</span><span class="s">&quot;16&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;arch&quot;</span> <span class="na">type=</span><span class="s">&quot;xml&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;tree&gt;</span>
+            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;my_field_1&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;my_field_2&quot;</span> <span class="na">string=</span><span class="s">&quot;My Label&quot;</span> <span class="na">widget=</span><span class="s">&quot;statusbar&quot;</span> <span class="na">statusbar_visible=</span><span class="s">&quot;draft,sent,progress,done&quot;</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/tree&gt;</span>
+    <span class="nt">&lt;/field&gt;</span>
 <span class="nt">&lt;/record&gt;</span>
 </pre></div>
 </div>
@@ -2250,52 +2250,52 @@ for multi-company rules, …).</p></li>
 </ul>
 <p>Name should be identical to xml id with dots replacing underscores. Actions
 should have a real naming as it is used as display name.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="cm">&lt;!-- views  --&gt;</span>
-<span class="nt">&lt;record</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;model_name_view_form&quot;</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>model.name.view.form<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span>...
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="c">&lt;!-- views  --&gt;</span>
+<span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">&quot;model_name_view_form&quot;</span> <span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>model.name.view.form<span class="nt">&lt;/field&gt;</span>
+    ...
 <span class="nt">&lt;/record&gt;</span>
 
-<span class="nt">&lt;record</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;model_name_view_kanban&quot;</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>model.name.view.kanban<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span>...
+<span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">&quot;model_name_view_kanban&quot;</span> <span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>model.name.view.kanban<span class="nt">&lt;/field&gt;</span>
+    ...
 <span class="nt">&lt;/record&gt;</span>
 
-<span class="cm">&lt;!-- actions --&gt;</span>
-<span class="nt">&lt;record</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;model_name_action&quot;</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.act.window&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>Model<span class="w"> </span>Main<span class="w"> </span>Action<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span>...
+<span class="c">&lt;!-- actions --&gt;</span>
+<span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">&quot;model_name_action&quot;</span> <span class="na">model=</span><span class="s">&quot;ir.act.window&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>Model Main Action<span class="nt">&lt;/field&gt;</span>
+    ...
 <span class="nt">&lt;/record&gt;</span>
 
-<span class="nt">&lt;record</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;model_name_action_child_list&quot;</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.actions.act_window&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>Model<span class="w"> </span>Access<span class="w"> </span>Children<span class="nt">&lt;/field&gt;</span>
+<span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">&quot;model_name_action_child_list&quot;</span> <span class="na">model=</span><span class="s">&quot;ir.actions.act_window&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>Model Access Children<span class="nt">&lt;/field&gt;</span>
 <span class="nt">&lt;/record&gt;</span>
 
-<span class="cm">&lt;!-- menus and sub-menus --&gt;</span>
+<span class="c">&lt;!-- menus and sub-menus --&gt;</span>
 <span class="nt">&lt;menuitem</span>
-<span class="w">    </span><span class="na">id=</span><span class="s">&quot;model_name_menu_root&quot;</span>
-<span class="w">    </span><span class="na">name=</span><span class="s">&quot;Main Menu&quot;</span>
-<span class="w">    </span><span class="na">sequence=</span><span class="s">&quot;5&quot;</span>
+    <span class="na">id=</span><span class="s">&quot;model_name_menu_root&quot;</span>
+    <span class="na">name=</span><span class="s">&quot;Main Menu&quot;</span>
+    <span class="na">sequence=</span><span class="s">&quot;5&quot;</span>
 <span class="nt">/&gt;</span>
 <span class="nt">&lt;menuitem</span>
-<span class="w">    </span><span class="na">id=</span><span class="s">&quot;model_name_menu_action&quot;</span>
-<span class="w">    </span><span class="na">name=</span><span class="s">&quot;Sub Menu 1&quot;</span>
-<span class="w">    </span><span class="na">parent=</span><span class="s">&quot;module_name.module_name_menu_root&quot;</span>
-<span class="w">    </span><span class="na">action=</span><span class="s">&quot;model_name_action&quot;</span>
-<span class="w">    </span><span class="na">sequence=</span><span class="s">&quot;10&quot;</span>
+    <span class="na">id=</span><span class="s">&quot;model_name_menu_action&quot;</span>
+    <span class="na">name=</span><span class="s">&quot;Sub Menu 1&quot;</span>
+    <span class="na">parent=</span><span class="s">&quot;module_name.module_name_menu_root&quot;</span>
+    <span class="na">action=</span><span class="s">&quot;model_name_action&quot;</span>
+    <span class="na">sequence=</span><span class="s">&quot;10&quot;</span>
 <span class="nt">/&gt;</span>
 
-<span class="cm">&lt;!-- security --&gt;</span>
-<span class="nt">&lt;record</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;module_name_group_user&quot;</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;res.groups&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span>...
+<span class="c">&lt;!-- security --&gt;</span>
+<span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">&quot;module_name_group_user&quot;</span> <span class="na">model=</span><span class="s">&quot;res.groups&quot;</span><span class="nt">&gt;</span>
+    ...
 <span class="nt">&lt;/record&gt;</span>
 
-<span class="nt">&lt;record</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;model_name_rule_public&quot;</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.rule&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span>...
+<span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">&quot;model_name_rule_public&quot;</span> <span class="na">model=</span><span class="s">&quot;ir.rule&quot;</span><span class="nt">&gt;</span>
+    ...
 <span class="nt">&lt;/record&gt;</span>
 
-<span class="nt">&lt;record</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;model_name_rule_company&quot;</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.rule&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span>...
+<span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">&quot;model_name_rule_company&quot;</span> <span class="na">model=</span><span class="s">&quot;ir.rule&quot;</span><span class="nt">&gt;</span>
+    ...
 <span class="nt">&lt;/record&gt;</span>
 </pre></div>
 </div>
@@ -2306,20 +2306,20 @@ It helps finding all inheritance at a glance. As final Xml Ids are prefixed
 by the module that creates them there is no overlap.</p>
 <p>Naming should contain an <code class="o_code docutils literal notranslate"><span class="pre">.inherit.{details}</span></code> suffix to ease understanding
 the override purpose when looking at its name.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;model_view_form&quot;</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>model.view.form.inherit.module2<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;inherit_id&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;module1.model_view_form&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span>...
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">&quot;model_view_form&quot;</span> <span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>model.view.form.inherit.module2<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;inherit_id&quot;</span> <span class="na">ref=</span><span class="s">&quot;module1.model_view_form&quot;</span><span class="nt">/&gt;</span>
+    ...
 <span class="nt">&lt;/record&gt;</span>
 </pre></div>
 </div>
 <p>New primary views do not require the inherit suffix as those are new records
 based upon the first one.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;module2.model_view_form&quot;</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>model.view.form.module2<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;inherit_id&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;module1.model_view_form&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;mode&quot;</span><span class="nt">&gt;</span>primary<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span>...
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">&quot;module2.model_view_form&quot;</span> <span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>model.view.form.module2<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;inherit_id&quot;</span> <span class="na">ref=</span><span class="s">&quot;module1.model_view_form&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;mode&quot;</span><span class="nt">&gt;</span>primary<span class="nt">&lt;/field&gt;</span>
+    ...
 <span class="nt">&lt;/record&gt;</span>
 </pre></div>
 </div>
@@ -2899,16 +2899,16 @@ References.</p>
 }
 </pre></div>
 </div>
-</div><div aria-labelledby="tab-0-Q1NT" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-0-Q1NT" name="Q1NT" role="tabpanel" tabindex="0"><div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="p">.</span><span class="nc">o_foo</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">o_foo_bar</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">o_baz</span><span class="w"> </span><span class="p">{</span>
-<span class="w">   </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="mi">32</span><span class="kt">px</span><span class="p">;</span>
+</div><div aria-labelledby="tab-0-Q1NT" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-0-Q1NT" name="Q1NT" role="tabpanel" tabindex="0"><div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="p">.</span><span class="nc">o_foo</span><span class="o">,</span> <span class="p">.</span><span class="nc">o_foo_bar</span><span class="o">,</span> <span class="p">.</span><span class="nc">o_baz</span> <span class="p">{</span>
+   <span class="k">height</span><span class="p">:</span> <span class="mi">32</span><span class="kt">px</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="p">.</span><span class="nc">o_foo</span><span class="w"> </span><span class="p">.</span><span class="nc">o_quux</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">o_foo_bar</span><span class="w"> </span><span class="p">.</span><span class="nc">o_quux</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">o_baz</span><span class="w"> </span><span class="p">.</span><span class="nc">o_qux</span><span class="w"> </span><span class="p">{</span>
-<span class="w">   </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">.</span><span class="nc">o_foo</span> <span class="p">.</span><span class="nc">o_quux</span><span class="o">,</span> <span class="p">.</span><span class="nc">o_foo_bar</span> <span class="p">.</span><span class="nc">o_quux</span><span class="o">,</span> <span class="p">.</span><span class="nc">o_baz</span> <span class="p">.</span><span class="nc">o_qux</span> <span class="p">{</span>
+   <span class="k">height</span><span class="p">:</span> <span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="p">.</span><span class="nc">o_corge</span><span class="w"> </span><span class="p">{</span>
-<span class="w">   </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="mh">#EAEAEA</span><span class="p">;</span>
+<span class="p">.</span><span class="nc">o_corge</span> <span class="p">{</span>
+   <span class="k">background</span><span class="p">:</span> <span class="mh">#EAEAEA</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -3054,9 +3054,9 @@ when changes occur at the DOM.</p>
 </ul>
 <div class="alert alert-success">
 <p class="alert-title">
-Example</p><div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="nv">$o-block-color</span><span class="o">:</span><span class="w"> </span><span class="n">value</span><span class="p">;</span>
-<span class="nv">$o-block-title-color</span><span class="o">:</span><span class="w"> </span><span class="n">value</span><span class="p">;</span>
-<span class="nv">$o-block-title-color-hover</span><span class="o">:</span><span class="w"> </span><span class="n">value</span><span class="p">;</span>
+Example</p><div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="nv">$o-block-color</span><span class="o">:</span> <span class="n">value</span><span class="p">;</span>
+<span class="nv">$o-block-title-color</span><span class="o">:</span> <span class="n">value</span><span class="p">;</span>
+<span class="nv">$o-block-title-color-hover</span><span class="o">:</span> <span class="n">value</span><span class="p">;</span>
 </pre></div>
 </div>
 </div>
@@ -3139,17 +3139,17 @@ design and layout.</p>
 </ul>
 <div class="alert alert-success">
 <p class="alert-title">
-Example</p><div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="nc">.o_kanban_record</span><span class="w"> </span><span class="p">{</span>
-<span class="w">   </span><span class="nt">--KanbanRecord-width</span><span class="nd">:</span><span class="w"> </span><span class="nt">value</span><span class="o">;</span>
-<span class="w">   </span><span class="nt">--KanbanRecord__picture-border</span><span class="nd">:</span><span class="w"> </span><span class="nt">value</span><span class="o">;</span>
-<span class="w">   </span><span class="nt">--KanbanRecord__picture-border--active</span><span class="nd">:</span><span class="w"> </span><span class="nt">value</span><span class="o">;</span>
+Example</p><div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="nc">.o_kanban_record</span> <span class="p">{</span>
+   <span class="nt">--KanbanRecord-width</span><span class="nd">:</span> <span class="nt">value</span><span class="o">;</span>
+   <span class="nt">--KanbanRecord__picture-border</span><span class="nd">:</span> <span class="nt">value</span><span class="o">;</span>
+   <span class="nt">--KanbanRecord__picture-border--active</span><span class="nd">:</span> <span class="nt">value</span><span class="o">;</span>
 <span class="p">}</span>
 
 <span class="c1">// Adapt the component when rendered in another context.</span>
-<span class="nc">.o_form_view</span><span class="w"> </span><span class="p">{</span>
-<span class="w">   </span><span class="nt">--KanbanRecord-width</span><span class="nd">:</span><span class="w"> </span><span class="nt">another-value</span><span class="o">;</span>
-<span class="w">   </span><span class="nt">--KanbanRecord__picture-border</span><span class="nd">:</span><span class="w"> </span><span class="nt">another-value</span><span class="o">;</span>
-<span class="w">   </span><span class="nt">--KanbanRecord__picture-border--active</span><span class="nd">:</span><span class="w"> </span><span class="nt">another-value</span><span class="o">;</span>
+<span class="nc">.o_form_view</span> <span class="p">{</span>
+   <span class="nt">--KanbanRecord-width</span><span class="nd">:</span> <span class="nt">another-value</span><span class="o">;</span>
+   <span class="nt">--KanbanRecord__picture-border</span><span class="nd">:</span> <span class="nt">another-value</span><span class="o">;</span>
+   <span class="nt">--KanbanRecord__picture-border--active</span><span class="nd">:</span> <span class="nt">another-value</span><span class="o">;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -3164,17 +3164,17 @@ when a component’s properties can vary in specific contexts or in other circum
 <p class="alert-title">
 Example</p><div class="literal-block-wrapper docutils container" id="id1">
 <div class="code-block-caption"><span class="caption-text"><code class="file o_code docutils literal notranslate"><span class="pre">my_component.scss</span></code></span><a class="headerlink" href="#id1" title="Permalink to this code">¶</a></div>
-<div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="nc">.o_MyComponent</span><span class="w"> </span><span class="p">{</span>
-<span class="w">   </span><span class="nt">color</span><span class="nd">:</span><span class="w"> </span><span class="nt">var</span><span class="o">(</span><span class="nt">--MyComponent-color</span><span class="o">,</span><span class="w"> </span><span class="nn">#313131</span><span class="o">);</span>
+<div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="nc">.o_MyComponent</span> <span class="p">{</span>
+   <span class="nt">color</span><span class="nd">:</span> <span class="nt">var</span><span class="o">(</span><span class="nt">--MyComponent-color</span><span class="o">,</span> <span class="nn">#313131</span><span class="o">);</span>
 <span class="p">}</span>
 </pre></div>
 </div>
 </div>
 <div class="literal-block-wrapper docutils container" id="id2">
 <div class="code-block-caption"><span class="caption-text"><code class="file o_code docutils literal notranslate"><span class="pre">my_dashboard.scss</span></code></span><a class="headerlink" href="#id2" title="Permalink to this code">¶</a></div>
-<div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="nc">.o_MyDashboard</span><span class="w"> </span><span class="p">{</span>
-<span class="w">   </span><span class="c1">// Adapt the component in this context only</span>
-<span class="w">   </span><span class="nt">--MyComponent-color</span><span class="nd">:</span><span class="w"> </span><span class="nn">#017e84</span><span class="o">;</span>
+<div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="nc">.o_MyDashboard</span> <span class="p">{</span>
+   <span class="c1">// Adapt the component in this context only</span>
+   <span class="nt">--MyComponent-color</span><span class="nd">:</span> <span class="nn">#017e84</span><span class="o">;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -3201,8 +3201,8 @@ gain control at the top-level and ensure consistency with other components.</p>
 <p class="alert-title">
 Example</p><div class="literal-block-wrapper docutils container" id="id3">
 <div class="code-block-caption"><span class="caption-text"><code class="file o_code docutils literal notranslate"><span class="pre">secondary_variables.scss</span></code></span><a class="headerlink" href="#id3" title="Permalink to this code">¶</a></div>
-<div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="nv">$o-component-color</span><span class="o">:</span><span class="w"> </span><span class="nv">$o-main-text-color</span><span class="p">;</span>
-<span class="nv">$o-dashboard-color</span><span class="o">:</span><span class="w"> </span><span class="nv">$o-info</span><span class="p">;</span>
+<div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="nv">$o-component-color</span><span class="o">:</span> <span class="nv">$o-main-text-color</span><span class="p">;</span>
+<span class="nv">$o-dashboard-color</span><span class="o">:</span> <span class="nv">$o-info</span><span class="p">;</span>
 <span class="c1">// [...]</span>
 </pre></div>
 </div>

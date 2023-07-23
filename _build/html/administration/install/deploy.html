@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/administration/install/deploy.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/administration/install/deploy.html" />
     
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -2005,7 +2005,7 @@ correctly.</p>
 </ul>
 <p>in <a class="reference internal" href="../../developer/reference/cli.html#reference-cmdline-config-file"><span class="std std-ref">the configuration file</span></a> set:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[options]</span>
-<span class="na">dbfilter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">^mycompany.*$</span>
+<span class="na">dbfilter</span> <span class="o">=</span> <span class="s">^mycompany.*$</span>
 </pre></div>
 </div>
 <ul class="simple">
@@ -2016,7 +2016,7 @@ for <code class="o_code docutils literal notranslate"><span class="pre">www2.myc
 </ul>
 <p>in <a class="reference internal" href="../../developer/reference/cli.html#reference-cmdline-config-file"><span class="std std-ref">the configuration file</span></a> set:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[options]</span>
-<span class="na">dbfilter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">^%d$</span>
+<span class="na">dbfilter</span> <span class="o">=</span> <span class="s">^%d$</span>
 </pre></div>
 </div>
 <div class="alert alert-primary">
@@ -2100,12 +2100,12 @@ Warning</p><p>the PostgreSQL user <em>must not</em> be a superuser</p>
 </ul>
 <p>in <a class="reference internal" href="../../developer/reference/cli.html#reference-cmdline-config-file"><span class="std std-ref">the configuration file</span></a> set:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[options]</span>
-<span class="na">admin_passwd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">mysupersecretpassword</span>
-<span class="na">db_host</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">192.168.1.2</span>
-<span class="na">db_port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">5432</span>
-<span class="na">db_user</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">odoo</span>
-<span class="na">db_password</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">pwd</span>
-<span class="na">dbfilter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">^mycompany.*$</span>
+<span class="na">admin_passwd</span> <span class="o">=</span> <span class="s">mysupersecretpassword</span>
+<span class="na">db_host</span> <span class="o">=</span> <span class="s">192.168.1.2</span>
+<span class="na">db_port</span> <span class="o">=</span> <span class="s">5432</span>
+<span class="na">db_user</span> <span class="o">=</span> <span class="s">odoo</span>
+<span class="na">db_password</span> <span class="o">=</span> <span class="s">pwd</span>
+<span class="na">dbfilter</span> <span class="o">=</span> <span class="s">^mycompany.*$</span>
 </pre></div>
 </div>
 </section><section id="ssl-between-odoo-and-postgresql">
@@ -2173,13 +2173,13 @@ headers.</p>
 </ul>
 <p>in <a class="reference internal" href="../../developer/reference/cli.html#reference-cmdline-config-file"><span class="std std-ref">the configuration file</span></a>:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[options]</span>
-<span class="na">limit_memory_hard</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">1677721600</span>
-<span class="na">limit_memory_soft</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">629145600</span>
-<span class="na">limit_request</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">8192</span>
-<span class="na">limit_time_cpu</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">600</span>
-<span class="na">limit_time_real</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">1200</span>
-<span class="na">max_cron_threads</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">1</span>
-<span class="na">workers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">8</span>
+<span class="na">limit_memory_hard</span> <span class="o">=</span> <span class="s">1677721600</span>
+<span class="na">limit_memory_soft</span> <span class="o">=</span> <span class="s">629145600</span>
+<span class="na">limit_request</span> <span class="o">=</span> <span class="s">8192</span>
+<span class="na">limit_time_cpu</span> <span class="o">=</span> <span class="s">600</span>
+<span class="na">limit_time_real</span> <span class="o">=</span> <span class="s">1200</span>
+<span class="na">max_cron_threads</span> <span class="o">=</span> <span class="s">1</span>
+<span class="na">workers</span> <span class="o">=</span> <span class="s">8</span>
 </pre></div>
 </div>
 </section><section id="https">
@@ -2202,73 +2202,73 @@ connections to the secure port</p></li>
 <li><p>Proxy requests to odoo</p></li>
 </ul>
 <p>in <a class="reference internal" href="../../developer/reference/cli.html#reference-cmdline-config-file"><span class="std std-ref">the configuration file</span></a> set:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="na">proxy_mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">True</span>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="na">proxy_mode</span> <span class="o">=</span> <span class="s">True</span>
 </pre></div>
 </div>
 <p>in <code class="o_code docutils literal notranslate"><span class="pre">/etc/nginx/sites-enabled/odoo.conf</span></code> set:</p>
 <div class="highlight-nginx notranslate"><div class="highlight"><pre><span></span><span class="c1">#odoo server</span>
-<span class="k">upstream</span><span class="w"> </span><span class="s">odoo</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kn">server</span><span class="w"> </span><span class="n">127.0.0.1</span><span class="p">:</span><span class="mi">8069</span><span class="p">;</span>
+<span class="k">upstream</span> <span class="s">odoo</span> <span class="p">{</span>
+  <span class="kn">server</span> <span class="n">127.0.0.1</span><span class="p">:</span><span class="mi">8069</span><span class="p">;</span>
 <span class="p">}</span>
-<span class="k">upstream</span><span class="w"> </span><span class="s">odoochat</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kn">server</span><span class="w"> </span><span class="n">127.0.0.1</span><span class="p">:</span><span class="mi">8072</span><span class="p">;</span>
+<span class="k">upstream</span> <span class="s">odoochat</span> <span class="p">{</span>
+  <span class="kn">server</span> <span class="n">127.0.0.1</span><span class="p">:</span><span class="mi">8072</span><span class="p">;</span>
 <span class="p">}</span>
-<span class="k">map</span><span class="w"> </span><span class="nv">$http_upgrade</span><span class="w"> </span><span class="nv">$connection_upgrade</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kn">default</span><span class="w"> </span><span class="s">upgrade</span><span class="p">;</span>
-<span class="w">  </span><span class="kn">&#39;&#39;</span><span class="w">      </span><span class="s">close</span><span class="p">;</span>
+<span class="k">map</span> <span class="nv">$http_upgrade</span> <span class="nv">$connection_upgrade</span> <span class="p">{</span>
+  <span class="kn">default</span> <span class="s">upgrade</span><span class="p">;</span>
+  <span class="kn">&#39;&#39;</span>      <span class="s">close</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="c1"># http -&gt; https</span>
-<span class="k">server</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kn">listen</span><span class="w"> </span><span class="mi">80</span><span class="p">;</span>
-<span class="w">  </span><span class="kn">server_name</span><span class="w"> </span><span class="s">odoo.mycompany.com</span><span class="p">;</span>
-<span class="w">  </span><span class="kn">rewrite</span><span class="w"> </span><span class="s">^(.*)</span><span class="w"> </span><span class="s">https://</span><span class="nv">$host$1</span><span class="w"> </span><span class="s">permanent</span><span class="p">;</span>
+<span class="k">server</span> <span class="p">{</span>
+  <span class="kn">listen</span> <span class="mi">80</span><span class="p">;</span>
+  <span class="kn">server_name</span> <span class="s">odoo.mycompany.com</span><span class="p">;</span>
+  <span class="kn">rewrite</span> <span class="s">^(.*)</span> <span class="s">https://</span><span class="nv">$host$1</span> <span class="s">permanent</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="k">server</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kn">listen</span><span class="w"> </span><span class="mi">443</span><span class="w"> </span><span class="s">ssl</span><span class="p">;</span>
-<span class="w">  </span><span class="kn">server_name</span><span class="w"> </span><span class="s">odoo.mycompany.com</span><span class="p">;</span>
-<span class="w">  </span><span class="kn">proxy_read_timeout</span><span class="w"> </span><span class="s">720s</span><span class="p">;</span>
-<span class="w">  </span><span class="kn">proxy_connect_timeout</span><span class="w"> </span><span class="s">720s</span><span class="p">;</span>
-<span class="w">  </span><span class="kn">proxy_send_timeout</span><span class="w"> </span><span class="s">720s</span><span class="p">;</span>
+<span class="k">server</span> <span class="p">{</span>
+  <span class="kn">listen</span> <span class="mi">443</span> <span class="s">ssl</span><span class="p">;</span>
+  <span class="kn">server_name</span> <span class="s">odoo.mycompany.com</span><span class="p">;</span>
+  <span class="kn">proxy_read_timeout</span> <span class="s">720s</span><span class="p">;</span>
+  <span class="kn">proxy_connect_timeout</span> <span class="s">720s</span><span class="p">;</span>
+  <span class="kn">proxy_send_timeout</span> <span class="s">720s</span><span class="p">;</span>
 
-<span class="w">  </span><span class="c1"># SSL parameters</span>
-<span class="w">  </span><span class="kn">ssl_certificate</span><span class="w"> </span><span class="s">/etc/ssl/nginx/server.crt</span><span class="p">;</span>
-<span class="w">  </span><span class="kn">ssl_certificate_key</span><span class="w"> </span><span class="s">/etc/ssl/nginx/server.key</span><span class="p">;</span>
-<span class="w">  </span><span class="kn">ssl_session_timeout</span><span class="w"> </span><span class="mi">30m</span><span class="p">;</span>
-<span class="w">  </span><span class="kn">ssl_protocols</span><span class="w"> </span><span class="s">TLSv1.2</span><span class="p">;</span>
-<span class="w">  </span><span class="kn">ssl_ciphers</span><span class="w"> </span><span class="s">ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384</span><span class="p">;</span>
-<span class="w">  </span><span class="kn">ssl_prefer_server_ciphers</span><span class="w"> </span><span class="no">off</span><span class="p">;</span>
+  <span class="c1"># SSL parameters</span>
+  <span class="kn">ssl_certificate</span> <span class="s">/etc/ssl/nginx/server.crt</span><span class="p">;</span>
+  <span class="kn">ssl_certificate_key</span> <span class="s">/etc/ssl/nginx/server.key</span><span class="p">;</span>
+  <span class="kn">ssl_session_timeout</span> <span class="mi">30m</span><span class="p">;</span>
+  <span class="kn">ssl_protocols</span> <span class="s">TLSv1.2</span><span class="p">;</span>
+  <span class="kn">ssl_ciphers</span> <span class="s">ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384</span><span class="p">;</span>
+  <span class="kn">ssl_prefer_server_ciphers</span> <span class="no">off</span><span class="p">;</span>
 
-<span class="w">  </span><span class="c1"># log</span>
-<span class="w">  </span><span class="kn">access_log</span><span class="w"> </span><span class="s">/var/log/nginx/odoo.access.log</span><span class="p">;</span>
-<span class="w">  </span><span class="kn">error_log</span><span class="w"> </span><span class="s">/var/log/nginx/odoo.error.log</span><span class="p">;</span>
+  <span class="c1"># log</span>
+  <span class="kn">access_log</span> <span class="s">/var/log/nginx/odoo.access.log</span><span class="p">;</span>
+  <span class="kn">error_log</span> <span class="s">/var/log/nginx/odoo.error.log</span><span class="p">;</span>
 
-<span class="w">  </span><span class="c1"># Redirect websocket requests to odoo gevent port</span>
-<span class="w">  </span><span class="kn">location</span><span class="w"> </span><span class="s">/websocket</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kn">proxy_pass</span><span class="w"> </span><span class="s">http://odoochat</span><span class="p">;</span>
-<span class="w">    </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">Upgrade</span><span class="w"> </span><span class="nv">$http_upgrade</span><span class="p">;</span>
-<span class="w">    </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">Connection</span><span class="w"> </span><span class="nv">$connection_upgrade</span><span class="p">;</span>
-<span class="w">    </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">X-Forwarded-Host</span><span class="w"> </span><span class="nv">$host</span><span class="p">;</span>
-<span class="w">    </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">X-Forwarded-For</span><span class="w"> </span><span class="nv">$proxy_add_x_forwarded_for</span><span class="p">;</span>
-<span class="w">    </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">X-Forwarded-Proto</span><span class="w"> </span><span class="nv">$scheme</span><span class="p">;</span>
-<span class="w">    </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">X-Real-IP</span><span class="w"> </span><span class="nv">$remote_addr</span><span class="p">;</span>
-<span class="w">  </span><span class="p">}</span>
+  <span class="c1"># Redirect websocket requests to odoo gevent port</span>
+  <span class="kn">location</span> <span class="s">/websocket</span> <span class="p">{</span>
+    <span class="kn">proxy_pass</span> <span class="s">http://odoochat</span><span class="p">;</span>
+    <span class="kn">proxy_set_header</span> <span class="s">Upgrade</span> <span class="nv">$http_upgrade</span><span class="p">;</span>
+    <span class="kn">proxy_set_header</span> <span class="s">Connection</span> <span class="nv">$connection_upgrade</span><span class="p">;</span>
+    <span class="kn">proxy_set_header</span> <span class="s">X-Forwarded-Host</span> <span class="nv">$host</span><span class="p">;</span>
+    <span class="kn">proxy_set_header</span> <span class="s">X-Forwarded-For</span> <span class="nv">$proxy_add_x_forwarded_for</span><span class="p">;</span>
+    <span class="kn">proxy_set_header</span> <span class="s">X-Forwarded-Proto</span> <span class="nv">$scheme</span><span class="p">;</span>
+    <span class="kn">proxy_set_header</span> <span class="s">X-Real-IP</span> <span class="nv">$remote_addr</span><span class="p">;</span>
+  <span class="p">}</span>
 
-<span class="w">  </span><span class="c1"># Redirect requests to odoo backend server</span>
-<span class="w">  </span><span class="kn">location</span><span class="w"> </span><span class="s">/</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="c1"># Add Headers for odoo proxy mode</span>
-<span class="w">    </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">X-Forwarded-Host</span><span class="w"> </span><span class="nv">$host</span><span class="p">;</span>
-<span class="w">    </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">X-Forwarded-For</span><span class="w"> </span><span class="nv">$proxy_add_x_forwarded_for</span><span class="p">;</span>
-<span class="w">    </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">X-Forwarded-Proto</span><span class="w"> </span><span class="nv">$scheme</span><span class="p">;</span>
-<span class="w">    </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">X-Real-IP</span><span class="w"> </span><span class="nv">$remote_addr</span><span class="p">;</span>
-<span class="w">    </span><span class="kn">proxy_redirect</span><span class="w"> </span><span class="no">off</span><span class="p">;</span>
-<span class="w">    </span><span class="kn">proxy_pass</span><span class="w"> </span><span class="s">http://odoo</span><span class="p">;</span>
-<span class="w">  </span><span class="p">}</span>
+  <span class="c1"># Redirect requests to odoo backend server</span>
+  <span class="kn">location</span> <span class="s">/</span> <span class="p">{</span>
+    <span class="c1"># Add Headers for odoo proxy mode</span>
+    <span class="kn">proxy_set_header</span> <span class="s">X-Forwarded-Host</span> <span class="nv">$host</span><span class="p">;</span>
+    <span class="kn">proxy_set_header</span> <span class="s">X-Forwarded-For</span> <span class="nv">$proxy_add_x_forwarded_for</span><span class="p">;</span>
+    <span class="kn">proxy_set_header</span> <span class="s">X-Forwarded-Proto</span> <span class="nv">$scheme</span><span class="p">;</span>
+    <span class="kn">proxy_set_header</span> <span class="s">X-Real-IP</span> <span class="nv">$remote_addr</span><span class="p">;</span>
+    <span class="kn">proxy_redirect</span> <span class="no">off</span><span class="p">;</span>
+    <span class="kn">proxy_pass</span> <span class="s">http://odoo</span><span class="p">;</span>
+  <span class="p">}</span>
 
-<span class="w">  </span><span class="c1"># common gzip</span>
-<span class="w">  </span><span class="kn">gzip_types</span><span class="w"> </span><span class="s">text/css</span><span class="w"> </span><span class="s">text/scss</span><span class="w"> </span><span class="s">text/plain</span><span class="w"> </span><span class="s">text/xml</span><span class="w"> </span><span class="s">application/xml</span><span class="w"> </span><span class="s">application/json</span><span class="w"> </span><span class="s">application/javascript</span><span class="p">;</span>
-<span class="w">  </span><span class="kn">gzip</span><span class="w"> </span><span class="no">on</span><span class="p">;</span>
+  <span class="c1"># common gzip</span>
+  <span class="kn">gzip_types</span> <span class="s">text/css</span> <span class="s">text/scss</span> <span class="s">text/plain</span> <span class="s">text/xml</span> <span class="s">application/xml</span> <span class="s">application/json</span> <span class="s">application/javascript</span><span class="p">;</span>
+  <span class="kn">gzip</span> <span class="no">on</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -2330,15 +2330,15 @@ Example</p><p>Say Odoo has been installed via the <strong>debian packages</stron
 <a class="reference internal" href="../../developer/reference/cli.html#cmdoption-odoo-bin-addons-path"><code class="xref std std-option o_code docutils literal notranslate"><span class="pre">--addons-path</span></code></a> is <code class="o_code docutils literal notranslate"><span class="pre">'/usr/lib/python3/dist-packages/odoo/addons'</span></code>.</p>
 <p>Using the above NGINX (https) configuration, the following location block should be added to
 serve static files via NGINX.</p>
-<div class="highlight-nginx notranslate"><div class="highlight"><pre><span></span><span class="k">location</span><span class="w"> </span><span class="s">@odoo</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="c1"># copy-paste the content of the / location block</span>
+<div class="highlight-nginx notranslate"><div class="highlight"><pre><span></span><span class="k">location</span> <span class="s">@odoo</span> <span class="p">{</span>
+    <span class="c1"># copy-paste the content of the / location block</span>
 <span class="p">}</span>
 
 <span class="c1"># Serve static files right away</span>
-<span class="k">location</span><span class="w"> </span><span class="p">~</span><span class="w"> </span><span class="sr">^/[^/]+/static/.+$</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kn">root</span><span class="w"> </span><span class="s">/usr/lib/python3/dist-packages/odoo/addons</span><span class="p">;</span>
-<span class="w">    </span><span class="kn">try_files</span><span class="w"> </span><span class="nv">$uri</span><span class="w"> </span><span class="s">@odoo</span><span class="p">;</span>
-<span class="w">    </span><span class="kn">expires</span><span class="w"> </span><span class="s">24h</span><span class="p">;</span>
+<span class="k">location</span> <span class="p">~</span> <span class="sr">^/[^/]+/static/.+$</span> <span class="p">{</span>
+    <span class="kn">root</span> <span class="s">/usr/lib/python3/dist-packages/odoo/addons</span><span class="p">;</span>
+    <span class="kn">try_files</span> <span class="nv">$uri</span> <span class="s">@odoo</span><span class="p">;</span>
+    <span class="kn">expires</span> <span class="s">24h</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -2351,15 +2351,15 @@ respectively and the <a class="reference internal" href="../../developer/referen
 <code class="o_code docutils literal notranslate"><span class="pre">'/opt/odoo/community/odoo/addons,/opt/odoo/community/addons,/opt/odoo/enterprise'</span></code>.</p>
 <p>Using the above NGINX (https) configuration, the following location block should be added to
 serve static files via NGINX.</p>
-<div class="highlight-nginx notranslate"><div class="highlight"><pre><span></span><span class="k">location</span><span class="w"> </span><span class="s">@odoo</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="c1"># copy-paste the content of the / location block</span>
+<div class="highlight-nginx notranslate"><div class="highlight"><pre><span></span><span class="k">location</span> <span class="s">@odoo</span> <span class="p">{</span>
+    <span class="c1"># copy-paste the content of the / location block</span>
 <span class="p">}</span>
 
 <span class="c1"># Serve static files right away</span>
-<span class="k">location</span><span class="w"> </span><span class="p">~</span><span class="w"> </span><span class="sr">^/[^/]+/static/.+$</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kn">root</span><span class="w"> </span><span class="s">/opt/odoo</span><span class="p">;</span>
-<span class="w">    </span><span class="kn">try_files</span><span class="w"> </span><span class="s">/community/odoo/addons</span><span class="nv">$uri</span><span class="w"> </span><span class="s">/community/addons</span><span class="nv">$uri</span><span class="w"> </span><span class="s">/enterprise</span><span class="nv">$uri</span><span class="w"> </span><span class="s">@odoo</span><span class="p">;</span>
-<span class="w">    </span><span class="kn">expires</span><span class="w"> </span><span class="s">24h</span><span class="p">;</span>
+<span class="k">location</span> <span class="p">~</span> <span class="sr">^/[^/]+/static/.+$</span> <span class="p">{</span>
+    <span class="kn">root</span> <span class="s">/opt/odoo</span><span class="p">;</span>
+    <span class="kn">try_files</span> <span class="s">/community/odoo/addons</span><span class="nv">$uri</span> <span class="s">/community/addons</span><span class="nv">$uri</span> <span class="s">/enterprise</span><span class="nv">$uri</span> <span class="s">@odoo</span><span class="p">;</span>
+    <span class="kn">expires</span> <span class="s">24h</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -2388,9 +2388,9 @@ Note</p><ul>
 <li><p>The X-Sendfile extension for apache (and compatible web servers) does not require any
 supplementary configuration.</p></li>
 <li><p>The X-Accel extension for NGINX <strong>does</strong> require the following additionnal configuration:</p>
-<div class="highlight-nginx notranslate"><div class="highlight"><pre><span></span><span class="k">location</span><span class="w"> </span><span class="s">/web/filestore</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kn">internal</span><span class="p">;</span>
-<span class="w">    </span><span class="kn">alias</span><span class="w"> </span><span class="s">/path/to/odoo/data-dir/filestore</span><span class="p">;</span>
+<div class="highlight-nginx notranslate"><div class="highlight"><pre><span></span><span class="k">location</span> <span class="s">/web/filestore</span> <span class="p">{</span>
+    <span class="kn">internal</span><span class="p">;</span>
+    <span class="kn">alias</span> <span class="s">/path/to/odoo/data-dir/filestore</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -2496,11 +2496,11 @@ threat should not be neglected for Odoo servers. Odoo emits a log entry whenever
 is performed, and reports the result: success or failure, along with the target login and source IP.</p>
 <p>The log entries will have the following form.</p>
 <p>Failed login:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2018</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">05</span> <span class="mi">14</span><span class="p">:</span><span class="mi">56</span><span class="p">:</span><span class="mi">31</span><span class="p">,</span><span class="mi">506</span> <span class="mi">24849</span> <span class="n">INFO</span> <span class="n">db_name</span> <span class="n">odoo</span><span class="o">.</span><span class="n">addons</span><span class="o">.</span><span class="n">base</span><span class="o">.</span><span class="n">res</span><span class="o">.</span><span class="n">res_users</span><span class="p">:</span> <span class="n">Login</span> <span class="n">failed</span> <span class="k">for</span> <span class="n">db</span><span class="p">:</span><span class="n">db_name</span> <span class="n">login</span><span class="p">:</span><span class="n">admin</span> <span class="kn">from</span> <span class="mf">127.0.0.1</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2018</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">05</span> <span class="mi">14</span><span class="p">:</span><span class="mi">56</span><span class="p">:</span><span class="mi">31</span><span class="p">,</span><span class="mi">506</span> <span class="mi">24849</span> <span class="n">INFO</span> <span class="n">db_name</span> <span class="n">odoo</span><span class="o">.</span><span class="n">addons</span><span class="o">.</span><span class="n">base</span><span class="o">.</span><span class="n">res</span><span class="o">.</span><span class="n">res_users</span><span class="p">:</span> <span class="n">Login</span> <span class="n">failed</span> <span class="k">for</span> <span class="n">db</span><span class="p">:</span><span class="n">db_name</span> <span class="n">login</span><span class="p">:</span><span class="n">admin</span> <span class="kn">from</span> <span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span>
 </pre></div>
 </div>
 <p>Successful login:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2018</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">05</span> <span class="mi">14</span><span class="p">:</span><span class="mi">56</span><span class="p">:</span><span class="mi">31</span><span class="p">,</span><span class="mi">506</span> <span class="mi">24849</span> <span class="n">INFO</span> <span class="n">db_name</span> <span class="n">odoo</span><span class="o">.</span><span class="n">addons</span><span class="o">.</span><span class="n">base</span><span class="o">.</span><span class="n">res</span><span class="o">.</span><span class="n">res_users</span><span class="p">:</span> <span class="n">Login</span> <span class="n">successful</span> <span class="k">for</span> <span class="n">db</span><span class="p">:</span><span class="n">db_name</span> <span class="n">login</span><span class="p">:</span><span class="n">admin</span> <span class="kn">from</span> <span class="mf">127.0.0.1</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2018</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">05</span> <span class="mi">14</span><span class="p">:</span><span class="mi">56</span><span class="p">:</span><span class="mi">31</span><span class="p">,</span><span class="mi">506</span> <span class="mi">24849</span> <span class="n">INFO</span> <span class="n">db_name</span> <span class="n">odoo</span><span class="o">.</span><span class="n">addons</span><span class="o">.</span><span class="n">base</span><span class="o">.</span><span class="n">res</span><span class="o">.</span><span class="n">res_users</span><span class="p">:</span> <span class="n">Login</span> <span class="n">successful</span> <span class="k">for</span> <span class="n">db</span><span class="p">:</span><span class="n">db_name</span> <span class="n">login</span><span class="p">:</span><span class="n">admin</span> <span class="kn">from</span> <span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span>
 </pre></div>
 </div>
 <p>These logs can be easily analyzed by an intrusion prevention system such as <code class="o_code docutils literal notranslate"><span class="pre">fail2ban</span></code>.</p>
@@ -2552,7 +2552,7 @@ except (maybe) <code class="o_code docutils literal notranslate"><span class="pr
 <code class="o_code docutils literal notranslate"><span class="pre">admin_passwd</span></code> setting must be changed from its <code class="o_code docutils literal notranslate"><span class="pre">admin</span></code> default: this
 password is checked before allowing database-alteration operations.</p>
 <p>It should be stored securely, and should be generated randomly e.g.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>python3<span class="w"> </span>-c<span class="w"> </span><span class="s1">&#39;import base64, os; print(base64.b64encode(os.urandom(24)))&#39;</span>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> python3 -c <span class="s1">&#39;import base64, os; print(base64.b64encode(os.urandom(24)))&#39;</span>
 </pre></div>
 </div>
 <p>which will generate a 32 characters pseudorandom printable string.</p>

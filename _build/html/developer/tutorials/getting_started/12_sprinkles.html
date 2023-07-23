@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/tutorials/getting_started/12_sprinkles.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/tutorials/getting_started/12_sprinkles.html" />
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -1966,7 +1966,7 @@ type view:</p>
 </div>
 <p>In the real estate module we added a list of offers for a property. We simply added the field
 <code class="o_code docutils literal notranslate"><span class="pre">offer_ids</span></code> with:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;offer_ids&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;offer_ids&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 <p>The field uses the specific view for <code class="o_code docutils literal notranslate"><span class="pre">estate.property.offer</span></code>. In some cases we want to define
@@ -1996,13 +1996,13 @@ a form view. For example:</p>
 </pre></div>
 </div>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;form&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;description&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;line_ids&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;tree&gt;</span>
-<span class="w">            </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;field_1&quot;</span><span class="nt">/&gt;</span>
-<span class="w">            </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;field_2&quot;</span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/tree&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;description&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;line_ids&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;tree&gt;</span>
+            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;field_1&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;field_2&quot;</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;/tree&gt;</span>
+    <span class="nt">&lt;/field&gt;</span>
 <span class="nt">&lt;/form&gt;</span>
 </pre></div>
 </div>
@@ -2234,8 +2234,8 @@ to other elements of the view such as <code class="o_code docutils literal notra
 <p>The <code class="o_code docutils literal notranslate"><span class="pre">attrs</span></code> is a dictionary with the property as a key and a domain as a value. The domain gives
 the condition in which the property applies. For example:</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;form&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;description&quot;</span><span class="w"> </span><span class="na">attrs=</span><span class="s">&quot;{&#39;invisible&#39;: [(&#39;is_partner&#39;, &#39;=&#39;, False)]}&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;is_partner&quot;</span><span class="w"> </span><span class="na">invisible=</span><span class="s">&quot;1&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;description&quot;</span> <span class="na">attrs=</span><span class="s">&quot;{&#39;invisible&#39;: [(&#39;is_partner&#39;, &#39;=&#39;, False)]}&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;is_partner&quot;</span> <span class="na">invisible=</span><span class="s">&quot;1&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/form&gt;</span>
 </pre></div>
 </div>
@@ -2290,9 +2290,9 @@ default.</p>
 module we would like to display refused offers in red and accepted offers in green. This can be achieved
 thanks to the <code class="o_code docutils literal notranslate"><span class="pre">decoration-{$name}</span></code> attribute (see <a class="reference internal" href="../../reference/frontend/javascript_reference.html#reference-js-widgets"><span class="std std-ref">Field Widgets</span></a> for a
 complete list):</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;tree</span><span class="w"> </span><span class="na">decoration-success=</span><span class="s">&quot;is_partner==True&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;is_partner&quot;</span><span class="w"> </span><span class="na">invisible=</span><span class="s">&quot;1&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;tree</span> <span class="na">decoration-success=</span><span class="s">&quot;is_partner==True&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;is_partner&quot;</span> <span class="na">invisible=</span><span class="s">&quot;1&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/tree&gt;</span>
 </pre></div>
 </div>
@@ -2351,9 +2351,9 @@ possible to make a custom search, but that’s inconvenient.</p>
 the domain generated for searching on the given field. In the given domain,
 <code class="o_code docutils literal notranslate"><span class="pre">self</span></code> represents the value entered by the user. In the example below, it is
 used to search on both <code class="o_code docutils literal notranslate"><span class="pre">name</span></code> and <code class="o_code docutils literal notranslate"><span class="pre">description</span></code> fields.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;search</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Test&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;description&quot;</span><span class="w"> </span><span class="na">string=</span><span class="s">&quot;Name and description&quot;</span>
-<span class="w">           </span><span class="na">filter_domain=</span><span class="s">&quot;[&#39;|&#39;, (&#39;name&#39;, &#39;ilike&#39;, self), (&#39;description&#39;, &#39;ilike&#39;, self)]&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;search</span> <span class="na">string=</span><span class="s">&quot;Test&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;description&quot;</span> <span class="na">string=</span><span class="s">&quot;Name and description&quot;</span>
+           <span class="na">filter_domain=</span><span class="s">&quot;[&#39;|&#39;, (&#39;name&#39;, &#39;ilike&#39;, self), (&#39;description&#39;, &#39;ilike&#39;, self)]&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/search&gt;</span>
 </pre></div>
 </div>

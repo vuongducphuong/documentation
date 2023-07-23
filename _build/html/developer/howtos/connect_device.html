@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/howtos/connect_device.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/howtos/connect_device.html" />
     
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -2048,11 +2048,11 @@ happen on the browser-side, in JavaScript.</p>
 - From the box to the browser, through <a class="reference internal" href="#longpolling">Longpolling</a></p>
 <p>Both channels are accessed from the same JS object, the <code class="o_code docutils literal notranslate"><span class="pre">DeviceProxy</span></code>, which is
 instantiated using the IP of the IoT Box and the device identifier.</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span><span class="w"> </span><span class="nx">DeviceProxy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;iot.DeviceProxy&#39;</span><span class="p">);</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">DeviceProxy</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;iot.DeviceProxy&#39;</span><span class="p">);</span>
 
-<span class="kd">var</span><span class="w"> </span><span class="nx">iot_device</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">DeviceProxy</span><span class="p">({</span>
-<span class="w">    </span><span class="nx">iot_ip</span><span class="o">:</span><span class="w"> </span><span class="nx">iot_ip</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">identifier</span><span class="o">:</span><span class="w"> </span><span class="nx">device_identifier</span>
+<span class="kd">var</span> <span class="nx">iot_device</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">DeviceProxy</span><span class="p">({</span>
+    <span class="nx">iot_ip</span><span class="o">:</span> <span class="nx">iot_ip</span><span class="p">,</span>
+    <span class="nx">identifier</span><span class="o">:</span> <span class="nx">device_identifier</span>
 <span class="p">});</span>
 </pre></div>
 </div>
@@ -2084,8 +2084,8 @@ passes it a callback function to be called every time the device status
 changes. The callback is called with the new data as argument.</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">iot_device</span><span class="p">.</span><span class="nx">add_listener</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">_onValueChange</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">));</span>
 
-<span class="nx">_onValueChange</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">result</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="p">...</span>
+<span class="nx">_onValueChange</span><span class="o">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">result</span><span class="p">)</span> <span class="p">{</span>
+    <span class="p">...</span>
 <span class="p">}</span>
 </pre></div>
 </div>

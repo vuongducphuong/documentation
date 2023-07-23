@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/reference/backend/orm.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/reference/backend/orm.html" />
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -2465,23 +2465,23 @@ for partners and one for countries:</p>
 <span id="reference-api-decorators"></span><h2>Method decorators<a class="headerlink" href="#method-decorators" title="Permalink to this headline">¶</a></h2>
 </section><section id="environment">
 <span id="reference-orm-environment"></span><h2>Environment<a class="headerlink" href="#environment" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt;<span class="w"> </span>records.env
-&lt;Environment<span class="w"> </span>object<span class="w"> </span>...&gt;
-&gt;&gt;&gt;<span class="w"> </span>records.env.uid
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; records.env
+&lt;Environment object ...&gt;
+&gt;&gt;&gt; records.env.uid
 <span class="m">3</span>
-&gt;&gt;&gt;<span class="w"> </span>records.env.user
+&gt;&gt;&gt; records.env.user
 res.user<span class="o">(</span><span class="m">3</span><span class="o">)</span>
-&gt;&gt;&gt;<span class="w"> </span>records.env.cr
-&lt;Cursor<span class="w"> </span>object<span class="w"> </span>...&gt;
+&gt;&gt;&gt; records.env.cr
+&lt;Cursor object ...&gt;
 </pre></div>
 </div>
 <p>When creating a recordset from an other recordset, the environment is
 inherited. The environment can be used to get an empty recordset in an
 other model, and query that model:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt;<span class="w"> </span>self.env<span class="o">[</span><span class="s1">&#39;res.partner&#39;</span><span class="o">]</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; self.env<span class="o">[</span><span class="s1">&#39;res.partner&#39;</span><span class="o">]</span>
 res.partner<span class="o">()</span>
-&gt;&gt;&gt;<span class="w"> </span>self.env<span class="o">[</span><span class="s1">&#39;res.partner&#39;</span><span class="o">]</span>.search<span class="o">([(</span><span class="s1">&#39;is_company&#39;</span>,<span class="w"> </span><span class="s1">&#39;=&#39;</span>,<span class="w"> </span>True<span class="o">)</span>,<span class="w"> </span><span class="o">(</span><span class="s1">&#39;customer&#39;</span>,<span class="w"> </span><span class="s1">&#39;=&#39;</span>,<span class="w"> </span>True<span class="o">)])</span>
-res.partner<span class="o">(</span><span class="m">7</span>,<span class="w"> </span><span class="m">18</span>,<span class="w"> </span><span class="m">12</span>,<span class="w"> </span><span class="m">14</span>,<span class="w"> </span><span class="m">17</span>,<span class="w"> </span><span class="m">19</span>,<span class="w"> </span><span class="m">8</span>,<span class="w"> </span><span class="m">31</span>,<span class="w"> </span><span class="m">26</span>,<span class="w"> </span><span class="m">16</span>,<span class="w"> </span><span class="m">13</span>,<span class="w"> </span><span class="m">20</span>,<span class="w"> </span><span class="m">30</span>,<span class="w"> </span><span class="m">22</span>,<span class="w"> </span><span class="m">29</span>,<span class="w"> </span><span class="m">15</span>,<span class="w"> </span><span class="m">23</span>,<span class="w"> </span><span class="m">28</span>,<span class="w"> </span><span class="m">74</span><span class="o">)</span>
+&gt;&gt;&gt; self.env<span class="o">[</span><span class="s1">&#39;res.partner&#39;</span><span class="o">]</span>.search<span class="o">([(</span><span class="s1">&#39;is_company&#39;</span>, <span class="s1">&#39;=&#39;</span>, True<span class="o">)</span>, <span class="o">(</span><span class="s1">&#39;customer&#39;</span>, <span class="s1">&#39;=&#39;</span>, True<span class="o">)])</span>
+res.partner<span class="o">(</span><span class="m">7</span>, <span class="m">18</span>, <span class="m">12</span>, <span class="m">14</span>, <span class="m">17</span>, <span class="m">19</span>, <span class="m">8</span>, <span class="m">31</span>, <span class="m">26</span>, <span class="m">16</span>, <span class="m">13</span>, <span class="m">20</span>, <span class="m">30</span>, <span class="m">22</span>, <span class="m">29</span>, <span class="m">15</span>, <span class="m">23</span>, <span class="m">28</span>, <span class="m">74</span><span class="o">)</span>
 </pre></div>
 </div>
 <p>Some lazy properties are available to access the environment (contextual) data:</p>

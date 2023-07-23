@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/tutorials/unit_tests.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/tutorials/unit_tests.html" />
     
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -1959,7 +1959,7 @@ want to start from a clean base.</p>
 </section><section id="running-tests">
 <h2>Running Tests<a class="headerlink" href="#running-tests" title="Permalink to this headline">¶</a></h2>
 <p>Before knowing how to write tests, we need to know how to run them.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>odoo-bin<span class="w"> </span>-h
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> odoo-bin -h
 <span class="go">Usage: odoo-bin [options]</span>
 
 <span class="go">Options:</span>
@@ -1996,15 +1996,15 @@ want to start from a clean base.</p>
 <span class="go">  --screenshots=DIR   Screenshots will go in DIR/{db_name}/screenshots.</span>
 <span class="go">                      Defaults to /tmp/odoo_tests.</span>
 
-<span class="gp">$ </span><span class="c1"># run all the tests of account, and modules installed by account</span>
-<span class="gp">$ </span><span class="c1"># the dependencies already installed are not tested</span>
-<span class="gp">$ </span><span class="c1"># this takes some time because you need to install the modules, but at_install</span>
-<span class="gp">$ </span><span class="c1"># and post_install are respected</span>
-<span class="gp">$ </span>odoo-bin<span class="w"> </span>-i<span class="w"> </span>account<span class="w"> </span>--test-enable
-<span class="gp">$ </span><span class="c1"># run all the tests in this file</span>
-<span class="gp">$ </span>odoo-bin<span class="w"> </span>--test-file<span class="o">=</span>addons/account/tests/test_account_move_entry.py
-<span class="gp">$ </span><span class="c1"># test tags can help you filter quite easily</span>
-<span class="gp">$ </span>odoo-bin<span class="w"> </span>--test-tags<span class="o">=</span>/account:TestAccountMove.test_custom_currency_on_account_1
+<span class="gp">$</span> <span class="c1"># run all the tests of account, and modules installed by account</span>
+<span class="gp">$</span> <span class="c1"># the dependencies already installed are not tested</span>
+<span class="gp">$</span> <span class="c1"># this takes some time because you need to install the modules, but at_install</span>
+<span class="gp">$</span> <span class="c1"># and post_install are respected</span>
+<span class="gp">$</span> odoo-bin -i account --test-enable
+<span class="gp">$</span> <span class="c1"># run all the tests in this file</span>
+<span class="gp">$</span> odoo-bin --test-file<span class="o">=</span>addons/account/tests/test_account_move_entry.py
+<span class="gp">$</span> <span class="c1"># test tags can help you filter quite easily</span>
+<span class="gp">$</span> odoo-bin --test-tags<span class="o">=</span>/account:TestAccountMove.test_custom_currency_on_account_1
 </pre></div>
 </div>
 </section><section id="integration-bots">
@@ -2133,14 +2133,14 @@ in python. This also applies in the tests. If you want to emulate a Form view, y
 should start with <code class="o_code docutils literal notranslate"><span class="pre">test_</span></code> and be imported in the <code class="o_code docutils literal notranslate"><span class="pre">__init__.py</span></code> of the test folder. You shouldn’t
 import the test folder/module in the <code class="o_code docutils literal notranslate"><span class="pre">__init__.py</span></code> of the module.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>estate
-├──<span class="w"> </span>models
-│<span class="w">   </span>├──<span class="w"> </span>*.py
-│<span class="w">   </span>└──<span class="w"> </span>__init__.py
-├──<span class="w"> </span>tests
-│<span class="w">   </span>├──<span class="w"> </span>test_*.py
-│<span class="w">   </span>└──<span class="w"> </span>__init__.py
-├──<span class="w"> </span>__init__.py
-└──<span class="w"> </span>__manifest__.py
+├── models
+│   ├── *.py
+│   └── __init__.py
+├── tests
+│   ├── test_*.py
+│   └── __init__.py
+├── __init__.py
+└── __manifest__.py
 </pre></div>
 </div>
 <p>All the tests should extend <code class="o_code docutils literal notranslate"><span class="pre">odoo.tests.common.TransactionCase</span></code>. You usually define a
@@ -2167,7 +2167,7 @@ class and can start interacting with the ORM.</p>
         <span class="bp">cls</span><span class="o">.</span><span class="n">properties</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">env</span><span class="p">[</span><span class="s1">&#39;estate.property&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">create</span><span class="p">([</span><span class="o">...</span><span class="p">])</span>
 
     <span class="k">def</span> <span class="nf">test_creation_area</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Test that the total_area is computed like it should.&quot;&quot;&quot;</span>
+        <span class="sd">&quot;&quot;&quot;Test that the total_area is computed like it should.&quot;&quot;&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">properties</span><span class="o">.</span><span class="n">living_area</span> <span class="o">=</span> <span class="mi">20</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">assertRecordValues</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">properties</span><span class="p">,</span> <span class="p">[</span>
            <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span> <span class="s1">&#39;total_area&#39;</span><span class="p">:</span> <span class="o">...</span><span class="p">},</span>
@@ -2176,7 +2176,7 @@ class and can start interacting with the ORM.</p>
 
 
     <span class="k">def</span> <span class="nf">test_action_sell</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Test that everything behaves like it should when selling a property.&quot;&quot;&quot;</span>
+        <span class="sd">&quot;&quot;&quot;Test that everything behaves like it should when selling a property.&quot;&quot;&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">properties</span><span class="o">.</span><span class="n">action_sold</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">assertRecordValues</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">properties</span><span class="p">,</span> <span class="p">[</span>
            <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span> <span class="s1">&#39;state&#39;</span><span class="p">:</span> <span class="o">...</span><span class="p">},</span>

@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/tutorials/master_odoo_web_framework/02_miscellaneous.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/tutorials/master_odoo_web_framework/02_miscellaneous.html" />
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -1941,7 +1941,7 @@
 <p>In the previous task, we learned how to create fields and views. There is still much more to
 discover in the feature-rich Odoo web framework, so let’s dive in and explore more in this chapter!</p>
 <div class="figure align-center" id="id1">
-<img alt="../../../_images/previously_learned1.svg" src="../../../_images/previously_learned1.svg" width="70%" /><p class="caption"><span class="caption-text">This is the progress that we have made in discovering the JavaScript web framework at the end of
+<img alt="../../../_images/previously_learned.svg" src="../../../_images/previously_learned.svg" width="70%" /><p class="caption"><span class="caption-text">This is the progress that we have made in discovering the JavaScript web framework at the end of
 <a class="reference internal" href="01_fields_and_views.html"><span class="doc">Chapter 1: Fields and Views</span></a>.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
 </div>
 <div class="admonition-goal alert">
@@ -2065,19 +2065,19 @@ message on click by using <a class="reference external" href="https://github.com
 <a class="reference external" href="https://github.com/odoo/odoo/blob/16.0/addons/web/static/src/core/confirmation_dialog/confirmation_dialog.js">ConfirmationDialog</a>.</p></li>
 <li><p>Add the CSS class <code class="o_code docutils literal notranslate"><span class="pre">blink</span></code> to the element representing the eye and paste the following code in
 a new CSS file located in your patch’s directory.</p>
-<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="p">.</span><span class="nc">blink</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="k">animation</span><span class="p">:</span><span class="w"> </span><span class="kc">blink</span><span class="o">-</span><span class="k">animation</span><span class="w"> </span><span class="mi">1</span><span class="kt">s</span><span class="w"> </span><span class="nb">steps</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="kc">start</span><span class="p">)</span><span class="w"> </span><span class="kc">infinite</span><span class="p">;</span>
-<span class="w">  </span><span class="kp">-webkit-</span><span class="k">animation</span><span class="p">:</span><span class="w"> </span><span class="kc">blink</span><span class="o">-</span><span class="k">animation</span><span class="w"> </span><span class="mi">1</span><span class="kt">s</span><span class="w"> </span><span class="nb">steps</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="kc">start</span><span class="p">)</span><span class="w"> </span><span class="kc">infinite</span><span class="p">;</span>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="p">.</span><span class="nc">blink</span> <span class="p">{</span>
+  <span class="k">animation</span><span class="p">:</span> <span class="kc">blink</span><span class="o">-</span><span class="k">animation</span> <span class="mi">1</span><span class="kt">s</span> <span class="nb">steps</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="kc">start</span><span class="p">)</span> <span class="kc">infinite</span><span class="p">;</span>
+  <span class="kp">-webkit-</span><span class="k">animation</span><span class="p">:</span> <span class="kc">blink</span><span class="o">-</span><span class="k">animation</span> <span class="mi">1</span><span class="kt">s</span> <span class="nb">steps</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="kc">start</span><span class="p">)</span> <span class="kc">infinite</span><span class="p">;</span>
 <span class="p">}</span>
-<span class="p">@</span><span class="k">keyframes</span><span class="w"> </span><span class="nt">blink-animation</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nt">to</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">visibility</span><span class="p">:</span><span class="w"> </span><span class="kc">hidden</span><span class="p">;</span>
-<span class="w">  </span><span class="p">}</span>
+<span class="p">@</span><span class="k">keyframes</span> <span class="nt">blink-animation</span> <span class="p">{</span>
+  <span class="nt">to</span> <span class="p">{</span>
+    <span class="k">visibility</span><span class="p">:</span> <span class="kc">hidden</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">}</span>
-<span class="p">@</span><span class="k">-webkit-keyframes</span><span class="w"> </span><span class="nt">blink-animation</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nt">to</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="k">visibility</span><span class="p">:</span><span class="w"> </span><span class="kc">hidden</span><span class="p">;</span>
-<span class="w">  </span><span class="p">}</span>
+<span class="p">@</span><span class="k">-webkit-keyframes</span> <span class="nt">blink-animation</span> <span class="p">{</span>
+  <span class="nt">to</span> <span class="p">{</span>
+      <span class="k">visibility</span><span class="p">:</span> <span class="kc">hidden</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -2122,14 +2122,14 @@ Exercise</p><ol class="arabic">
 help of the <a class="reference internal" href="../../reference/frontend/services.html#frontend-services-router"><span class="std std-ref">router service</span></a>. If <code class="o_code docutils literal notranslate"><span class="pre">kitten</span></code> is set in the URL,
 add the class <code class="o_code docutils literal notranslate"><span class="pre">o-kitten-mode</span></code> to the document body.</p></li>
 <li><p>Add the following SCSS in <code class="file o_code docutils literal notranslate"><span class="pre">kitten_mode.scss</span></code>:</p>
-<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="p">.</span><span class="nc">o-kitten-mode</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="k">background-image</span><span class="p">:</span><span class="w"> </span><span class="nb">url</span><span class="p">(</span><span class="sx">https://upload.wikimedia.org/wikipedia/commons/5/58/Mellow_kitten_%28Unsplash%29.jpg</span><span class="p">);</span>
-<span class="w">  </span><span class="k">background-size</span><span class="p">:</span><span class="w"> </span><span class="kc">cover</span><span class="p">;</span>
-<span class="w">  </span><span class="k">background-attachment</span><span class="p">:</span><span class="w"> </span><span class="kc">fixed</span><span class="p">;</span>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="p">.</span><span class="nc">o-kitten-mode</span> <span class="p">{</span>
+  <span class="k">background-image</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="sx">https://upload.wikimedia.org/wikipedia/commons/5/58/Mellow_kitten_%28Unsplash%29.jpg</span><span class="p">);</span>
+  <span class="k">background-size</span><span class="p">:</span> <span class="kc">cover</span><span class="p">;</span>
+  <span class="k">background-attachment</span><span class="p">:</span> <span class="kc">fixed</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="p">.</span><span class="nc">o-kitten-mode</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="k">opacity</span><span class="p">:</span><span class="w"> </span><span class="mf">0.9</span><span class="p">;</span>
+<span class="p">.</span><span class="nc">o-kitten-mode</span> <span class="o">&gt;</span> <span class="o">*</span> <span class="p">{</span>
+  <span class="k">opacity</span><span class="p">:</span> <span class="mf">0.9</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 </div>

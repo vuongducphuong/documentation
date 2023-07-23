@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/reference/backend/reports.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/reference/backend/reports.html" />
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -1969,17 +1969,17 @@ converting it to the timezone of the user printing the report</p>
 </section><section id="minimal-viable-template">
 <h3>Minimal viable template<a class="headerlink" href="#minimal-viable-template" title="Permalink to this headline">¶</a></h3>
 <p>A minimal template would look like:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;template</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;report_invoice&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-call=</span><span class="s">&quot;web.html_container&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-foreach=</span><span class="s">&quot;docs&quot;</span><span class="w"> </span><span class="na">t-as=</span><span class="s">&quot;o&quot;</span><span class="nt">&gt;</span>
-<span class="w">            </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-call=</span><span class="s">&quot;web.external_layout&quot;</span><span class="nt">&gt;</span>
-<span class="w">                </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;page&quot;</span><span class="nt">&gt;</span>
-<span class="w">                    </span><span class="nt">&lt;h2&gt;</span>Report<span class="w"> </span>title<span class="nt">&lt;/h2&gt;</span>
-<span class="w">                    </span><span class="nt">&lt;p&gt;</span>This<span class="w"> </span>object&#39;s<span class="w"> </span>name<span class="w"> </span>is<span class="w"> </span><span class="nt">&lt;span</span><span class="w"> </span><span class="na">t-field=</span><span class="s">&quot;o.name&quot;</span><span class="nt">/&gt;&lt;/p&gt;</span>
-<span class="w">                </span><span class="nt">&lt;/div&gt;</span>
-<span class="w">            </span><span class="nt">&lt;/t&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/t&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/t&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;template</span> <span class="na">id=</span><span class="s">&quot;report_invoice&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-call=</span><span class="s">&quot;web.html_container&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;t</span> <span class="na">t-foreach=</span><span class="s">&quot;docs&quot;</span> <span class="na">t-as=</span><span class="s">&quot;o&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;t</span> <span class="na">t-call=</span><span class="s">&quot;web.external_layout&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;page&quot;</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;h2&gt;</span>Report title<span class="nt">&lt;/h2&gt;</span>
+                    <span class="nt">&lt;p&gt;</span>This object&#39;s name is <span class="nt">&lt;span</span> <span class="na">t-field=</span><span class="s">&quot;o.name&quot;</span><span class="nt">/&gt;&lt;/p&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/t&gt;</span>
+        <span class="nt">&lt;/t&gt;</span>
+    <span class="nt">&lt;/t&gt;</span>
 <span class="nt">&lt;/template&gt;</span>
 </pre></div>
 </div>
@@ -2019,31 +2019,31 @@ Warning</p><p>If your report template does not use translatable record fields, r
 in another language is <em>not</em> necessary and will impact performances.</p>
 </div>
 <p>For example, let’s look at the Sale Order report from the Sale module:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="cm">&lt;!-- Main template --&gt;</span>
-<span class="nt">&lt;template</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;report_saleorder&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-call=</span><span class="s">&quot;web.html_container&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-foreach=</span><span class="s">&quot;docs&quot;</span><span class="w"> </span><span class="na">t-as=</span><span class="s">&quot;doc&quot;</span><span class="nt">&gt;</span>
-<span class="w">            </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-call=</span><span class="s">&quot;sale.report_saleorder_document&quot;</span><span class="w"> </span><span class="na">t-lang=</span><span class="s">&quot;doc.partner_id.lang&quot;</span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/t&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/t&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="c">&lt;!-- Main template --&gt;</span>
+<span class="nt">&lt;template</span> <span class="na">id=</span><span class="s">&quot;report_saleorder&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-call=</span><span class="s">&quot;web.html_container&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;t</span> <span class="na">t-foreach=</span><span class="s">&quot;docs&quot;</span> <span class="na">t-as=</span><span class="s">&quot;doc&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;t</span> <span class="na">t-call=</span><span class="s">&quot;sale.report_saleorder_document&quot;</span> <span class="na">t-lang=</span><span class="s">&quot;doc.partner_id.lang&quot;</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;/t&gt;</span>
+    <span class="nt">&lt;/t&gt;</span>
 <span class="nt">&lt;/template&gt;</span>
 
-<span class="cm">&lt;!-- Translatable template --&gt;</span>
-<span class="nt">&lt;template</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;report_saleorder_document&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="cm">&lt;!-- Re-browse of the record with the partner lang --&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set=</span><span class="s">&quot;doc&quot;</span><span class="w"> </span><span class="na">t-value=</span><span class="s">&quot;doc.with_context(lang=doc.partner_id.lang)&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-call=</span><span class="s">&quot;web.external_layout&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;page&quot;</span><span class="nt">&gt;</span>
-<span class="w">            </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;oe_structure&quot;</span><span class="nt">/&gt;</span>
-<span class="w">            </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
-<span class="w">                </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;col-6&quot;</span><span class="nt">&gt;</span>
-<span class="w">                    </span><span class="nt">&lt;strong</span><span class="w"> </span><span class="na">t-if=</span><span class="s">&quot;doc.partner_shipping_id == doc.partner_invoice_id&quot;</span><span class="nt">&gt;</span>Invoice<span class="w"> </span>and<span class="w"> </span>shipping<span class="w"> </span>address:<span class="nt">&lt;/strong&gt;</span>
-<span class="w">                    </span><span class="nt">&lt;strong</span><span class="w"> </span><span class="na">t-if=</span><span class="s">&quot;doc.partner_shipping_id != doc.partner_invoice_id&quot;</span><span class="nt">&gt;</span>Invoice<span class="w"> </span>address:<span class="nt">&lt;/strong&gt;</span>
-<span class="w">                    </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">t-field=</span><span class="s">&quot;doc.partner_invoice_id&quot;</span><span class="w"> </span><span class="na">t-options=</span><span class="s">&quot;{&amp;quot;no_marker&amp;quot;: True}&quot;</span><span class="nt">/&gt;</span>
-<span class="w">                </span><span class="nt">&lt;...&gt;</span>
-<span class="w">            </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;oe_structure&quot;</span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/div&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/t&gt;</span>
+<span class="c">&lt;!-- Translatable template --&gt;</span>
+<span class="nt">&lt;template</span> <span class="na">id=</span><span class="s">&quot;report_saleorder_document&quot;</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- Re-browse of the record with the partner lang --&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-set=</span><span class="s">&quot;doc&quot;</span> <span class="na">t-value=</span><span class="s">&quot;doc.with_context(lang=doc.partner_id.lang)&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-call=</span><span class="s">&quot;web.external_layout&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;page&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;oe_structure&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-6&quot;</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;strong</span> <span class="na">t-if=</span><span class="s">&quot;doc.partner_shipping_id == doc.partner_invoice_id&quot;</span><span class="nt">&gt;</span>Invoice and shipping address:<span class="nt">&lt;/strong&gt;</span>
+                    <span class="nt">&lt;strong</span> <span class="na">t-if=</span><span class="s">&quot;doc.partner_shipping_id != doc.partner_invoice_id&quot;</span><span class="nt">&gt;</span>Invoice address:<span class="nt">&lt;/strong&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">t-field=</span><span class="s">&quot;doc.partner_invoice_id&quot;</span> <span class="na">t-options=</span><span class="s">&quot;{&amp;quot;no_marker&amp;quot;: True}&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;...&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;oe_structure&quot;</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/t&gt;</span>
 <span class="nt">&lt;/template&gt;</span>
 </pre></div>
 </div>
@@ -2052,7 +2052,7 @@ in another language is <em>not</em> necessary and will impact performances.</p>
 each Sale Order will be printed in the language of the corresponding customer. If you wish
 to translate only the body of the document, but keep the header and footer in a default
 language, you could call the report’s external layout this way:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-call=</span><span class="s">&quot;web.external_layout&quot;</span><span class="w"> </span><span class="na">t-lang=</span><span class="s">&quot;en_US&quot;</span><span class="nt">&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span> <span class="na">t-call=</span><span class="s">&quot;web.external_layout&quot;</span> <span class="na">t-lang=</span><span class="s">&quot;en_US&quot;</span><span class="nt">&gt;</span>
 </pre></div>
 </div>
 <div class="alert alert-tip">
@@ -2083,14 +2083,14 @@ template</p></li>
 <li><p>Local CSS can be put directly in the template</p></li>
 <li><p>Global CSS can be inserted in the main report layout by inheriting its
 template and inserting your CSS:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;template</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;report_saleorder_style&quot;</span><span class="w"> </span><span class="na">inherit_id=</span><span class="s">&quot;report.style&quot;</span><span class="nt">&gt;</span>
-<span class="w">  </span><span class="nt">&lt;xpath</span><span class="w"> </span><span class="na">expr=</span><span class="s">&quot;.&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t&gt;</span>
-<span class="w">      </span>.example-css-class<span class="w"> </span>{
-<span class="w">        </span>background-color:<span class="w"> </span>red;
-<span class="w">      </span>}
-<span class="w">    </span><span class="nt">&lt;/t&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/xpath&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;template</span> <span class="na">id=</span><span class="s">&quot;report_saleorder_style&quot;</span> <span class="na">inherit_id=</span><span class="s">&quot;report.style&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;xpath</span> <span class="na">expr=</span><span class="s">&quot;.&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;t&gt;</span>
+      .example-css-class {
+        background-color: red;
+      }
+    <span class="nt">&lt;/t&gt;</span>
+  <span class="nt">&lt;/xpath&gt;</span>
 <span class="nt">&lt;/template&gt;</span>
 </pre></div>
 </div>
@@ -2126,20 +2126,20 @@ format if you define the page dimensions.</p>
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;paperformat_frenchcheck&quot;</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;report.paperformat&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>French<span class="w"> </span>Bank<span class="w"> </span>Check<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;default&quot;</span><span class="w"> </span><span class="na">eval=</span><span class="s">&quot;True&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;format&quot;</span><span class="nt">&gt;</span>custom<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;page_height&quot;</span><span class="nt">&gt;</span>80<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;page_width&quot;</span><span class="nt">&gt;</span>175<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;orientation&quot;</span><span class="nt">&gt;</span>Portrait<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;margin_top&quot;</span><span class="nt">&gt;</span>3<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;margin_bottom&quot;</span><span class="nt">&gt;</span>3<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;margin_left&quot;</span><span class="nt">&gt;</span>3<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;margin_right&quot;</span><span class="nt">&gt;</span>3<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;header_line&quot;</span><span class="w"> </span><span class="na">eval=</span><span class="s">&quot;False&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;header_spacing&quot;</span><span class="nt">&gt;</span>3<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;dpi&quot;</span><span class="nt">&gt;</span>80<span class="nt">&lt;/field&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">&quot;paperformat_frenchcheck&quot;</span> <span class="na">model=</span><span class="s">&quot;report.paperformat&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>French Bank Check<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;default&quot;</span> <span class="na">eval=</span><span class="s">&quot;True&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;format&quot;</span><span class="nt">&gt;</span>custom<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;page_height&quot;</span><span class="nt">&gt;</span>80<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;page_width&quot;</span><span class="nt">&gt;</span>175<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;orientation&quot;</span><span class="nt">&gt;</span>Portrait<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;margin_top&quot;</span><span class="nt">&gt;</span>3<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;margin_bottom&quot;</span><span class="nt">&gt;</span>3<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;margin_left&quot;</span><span class="nt">&gt;</span>3<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;margin_right&quot;</span><span class="nt">&gt;</span>3<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;header_line&quot;</span> <span class="na">eval=</span><span class="s">&quot;False&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;header_spacing&quot;</span><span class="nt">&gt;</span>3<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;dpi&quot;</span><span class="nt">&gt;</span>80<span class="nt">&lt;/field&gt;</span>
 <span class="nt">&lt;/record&gt;</span>
 </pre></div>
 </div>
@@ -2182,24 +2182,24 @@ as well as the <code class="o_code docutils literal notranslate"><span class="pr
 <p>If you want to use custom fonts you will need to add your custom font and the related less/CSS to the <code class="o_code docutils literal notranslate"><span class="pre">web.reports_assets_common</span></code> assets bundle.
 Adding your custom font(s) to <code class="o_code docutils literal notranslate"><span class="pre">web.assets_common</span></code> or <code class="o_code docutils literal notranslate"><span class="pre">web.assets_backend</span></code> will not make your font available in QWeb reports.</p>
 <p>Example:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;template</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;report_assets_common_custom_fonts&quot;</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Custom QWeb fonts&quot;</span><span class="w"> </span><span class="na">inherit_id=</span><span class="s">&quot;web.report_assets_common&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;xpath</span><span class="w"> </span><span class="na">expr=</span><span class="s">&quot;.&quot;</span><span class="w"> </span><span class="na">position=</span><span class="s">&quot;inside&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;link</span><span class="w"> </span><span class="na">href=</span><span class="s">&quot;/your_module/static/src/less/fonts.less&quot;</span><span class="w"> </span><span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;text/less&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/xpath&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;template</span> <span class="na">id=</span><span class="s">&quot;report_assets_common_custom_fonts&quot;</span> <span class="na">name=</span><span class="s">&quot;Custom QWeb fonts&quot;</span> <span class="na">inherit_id=</span><span class="s">&quot;web.report_assets_common&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;xpath</span> <span class="na">expr=</span><span class="s">&quot;.&quot;</span> <span class="na">position=</span><span class="s">&quot;inside&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;/your_module/static/src/less/fonts.less&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/less&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/xpath&gt;</span>
 <span class="nt">&lt;/template&gt;</span>
 </pre></div>
 </div>
 <p>You will need to define your <code class="o_code docutils literal notranslate"><span class="pre">@font-face</span></code> within this less file, even if you’ve used in another assets bundle (other than <code class="o_code docutils literal notranslate"><span class="pre">web.reports_assets_common</span></code>).</p>
 <p>Example:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>@font-face<span class="w"> </span>{
-<span class="w">    </span>font-family:<span class="w"> </span>&#39;MonixBold&#39;;
-<span class="w">    </span>src:<span class="w"> </span>local(&#39;MonixBold&#39;),<span class="w"> </span>local(&#39;MonixBold&#39;),<span class="w"> </span>url(/your_module/static/fonts/MonixBold-Regular.otf)<span class="w"> </span>format(&#39;opentype&#39;);
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>@font-face {
+    font-family: &#39;MonixBold&#39;;
+    src: local(&#39;MonixBold&#39;), local(&#39;MonixBold&#39;), url(/your_module/static/fonts/MonixBold-Regular.otf) format(&#39;opentype&#39;);
 }
 
-.h1-title-big<span class="w"> </span>{
-<span class="w">    </span>font-family:<span class="w"> </span>MonixBold;
-<span class="w">    </span>font-size:<span class="w"> </span>60px;
-<span class="w">    </span>color:<span class="w"> </span>#3399cc;
+.h1-title-big {
+    font-family: MonixBold;
+    font-size: 60px;
+    color: #3399cc;
 }
 </pre></div>
 </div>

@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/howtos/company.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/howtos/company.html" />
     
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -2075,21 +2075,21 @@ multiple companies (i.e., when the user does not have the group <code class="o_c
 <p>As stated in <a class="reference internal" href="#howto-company-default-company"><span class="std std-ref">above</span></a>, the company is usually hidden
 from view if the user does not have access to multiple companies. This is assessed with the group
 <code class="o_code docutils literal notranslate"><span class="pre">base.group_multi_company</span></code>.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;record_form_view&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>record.restricted.form<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;model&quot;</span><span class="nt">&gt;</span>record.restricted<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;arch&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;xml&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;form&gt;</span>
-<span class="w">            </span><span class="nt">&lt;sheet&gt;</span>
-<span class="w">                </span><span class="nt">&lt;group&gt;</span>
-<span class="w">                    </span><span class="nt">&lt;group&gt;</span>
-<span class="w">                        </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;company_id&quot;</span><span class="w"> </span><span class="na">groups=</span><span class="s">&quot;base.group_multi_company&quot;</span><span class="nt">/&gt;</span>
-<span class="w">                        </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;other_record_id&quot;</span><span class="nt">/&gt;</span>
-<span class="w">                    </span><span class="nt">&lt;/group&gt;</span>
-<span class="w">                </span><span class="nt">&lt;/group&gt;</span>
-<span class="w">            </span><span class="nt">&lt;/sheet&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/form&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/field&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span> <span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span> <span class="na">id=</span><span class="s">&quot;record_form_view&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>record.restricted.form<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;model&quot;</span><span class="nt">&gt;</span>record.restricted<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;arch&quot;</span> <span class="na">type=</span><span class="s">&quot;xml&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;form&gt;</span>
+            <span class="nt">&lt;sheet&gt;</span>
+                <span class="nt">&lt;group&gt;</span>
+                    <span class="nt">&lt;group&gt;</span>
+                        <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;company_id&quot;</span> <span class="na">groups=</span><span class="s">&quot;base.group_multi_company&quot;</span><span class="nt">/&gt;</span>
+                        <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;other_record_id&quot;</span><span class="nt">/&gt;</span>
+                    <span class="nt">&lt;/group&gt;</span>
+                <span class="nt">&lt;/group&gt;</span>
+            <span class="nt">&lt;/sheet&gt;</span>
+        <span class="nt">&lt;/form&gt;</span>
+    <span class="nt">&lt;/field&gt;</span>
 <span class="nt">&lt;/record&gt;</span>
 </pre></div>
 </div>
@@ -2099,25 +2099,25 @@ from view if the user does not have access to multiple companies. This is assess
 care that a user does not have access to records belonging to other companies.</p>
 <p>This is achieved with security rules based on <code class="o_code docutils literal notranslate"><span class="pre">company_ids</span></code>, which contain the current companies of
 the user (the companies the user checked in the multi-company widget).</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="cm">&lt;!-- Shareable Records --&gt;</span>
-<span class="nt">&lt;record</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.rule&quot;</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;record_shared_company_rule&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>Shared<span class="w"> </span>Record:<span class="w"> </span>multi-company<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;model_id&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;model_record_shared&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;global&quot;</span><span class="w"> </span><span class="na">eval=</span><span class="s">&quot;True&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;domain_force&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span>[&#39;|&#39;,<span class="w"> </span>(&#39;company_id&#39;,<span class="w"> </span>&#39;=&#39;,<span class="w"> </span>False),<span class="w"> </span>(&#39;company_id&#39;,<span class="w"> </span>&#39;in&#39;,<span class="w"> </span>company_ids)]
-<span class="w">    </span><span class="nt">&lt;/field&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="c">&lt;!-- Shareable Records --&gt;</span>
+<span class="nt">&lt;record</span> <span class="na">model=</span><span class="s">&quot;ir.rule&quot;</span> <span class="na">id=</span><span class="s">&quot;record_shared_company_rule&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>Shared Record: multi-company<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;model_id&quot;</span> <span class="na">ref=</span><span class="s">&quot;model_record_shared&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;global&quot;</span> <span class="na">eval=</span><span class="s">&quot;True&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;domain_force&quot;</span><span class="nt">&gt;</span>
+        [&#39;|&#39;, (&#39;company_id&#39;, &#39;=&#39;, False), (&#39;company_id&#39;, &#39;in&#39;, company_ids)]
+    <span class="nt">&lt;/field&gt;</span>
 <span class="nt">&lt;/record&gt;</span>
 </pre></div>
 </div>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="cm">&lt;!-- Company-restricted Records --&gt;</span>
-<span class="nt">&lt;record</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.rule&quot;</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;record_restricted_company_rule&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>Restricted<span class="w"> </span>Record:<span class="w"> </span>multi-company<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;model_id&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;model_record_restricted&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;global&quot;</span><span class="w"> </span><span class="na">eval=</span><span class="s">&quot;True&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;domain_force&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span>[(&#39;company_id&#39;,<span class="w"> </span>&#39;in&#39;,<span class="w"> </span>company_ids)]
-<span class="w">    </span><span class="nt">&lt;/field&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="c">&lt;!-- Company-restricted Records --&gt;</span>
+<span class="nt">&lt;record</span> <span class="na">model=</span><span class="s">&quot;ir.rule&quot;</span> <span class="na">id=</span><span class="s">&quot;record_restricted_company_rule&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>Restricted Record: multi-company<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;model_id&quot;</span> <span class="na">ref=</span><span class="s">&quot;model_record_restricted&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;global&quot;</span> <span class="na">eval=</span><span class="s">&quot;True&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;domain_force&quot;</span><span class="nt">&gt;</span>
+        [(&#39;company_id&#39;, &#39;in&#39;, company_ids)]
+    <span class="nt">&lt;/field&gt;</span>
 <span class="nt">&lt;/record&gt;</span>
 </pre></div>
 </div>

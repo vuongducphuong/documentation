@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/reference/frontend/qweb.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/reference/frontend/qweb.html" />
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -1992,8 +1992,8 @@ and other attributes being rendered directly.</p>
 <p>To avoid element rendering, a placeholder element <code class="o_code docutils literal notranslate"><span class="pre">&lt;t&gt;</span></code> is also available,
 which executes its directive but doesn’t generate any output in and of
 itself:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-if=</span><span class="s">&quot;condition&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;p&gt;</span>Test<span class="nt">&lt;/p&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span> <span class="na">t-if=</span><span class="s">&quot;condition&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Test<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/t&gt;</span>
 </pre></div>
 </div>
@@ -2002,14 +2002,14 @@ itself:</p>
 </pre></div>
 </div>
 <p>if <code class="o_code docutils literal notranslate"><span class="pre">condition</span></code> is true, but:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">t-if=</span><span class="s">&quot;condition&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;p&gt;</span>Test<span class="nt">&lt;/p&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span> <span class="na">t-if=</span><span class="s">&quot;condition&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Test<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
 <p>will result in:</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div&gt;</span>
-<span class="w">    </span><span class="nt">&lt;p&gt;</span>Test<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Test<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
@@ -2018,7 +2018,7 @@ itself:</p>
 <p>QWeb’s output directive <code class="o_code docutils literal notranslate"><span class="pre">out</span></code> will automatically HTML-escape its input,
 limiting <a class="reference external" href="https://en.wikipedia.org/wiki/Cross-site_scripting">XSS</a> risks when displaying user-provided content.</p>
 <p><code class="o_code docutils literal notranslate"><span class="pre">out</span></code> takes an expression, evaluates it and injects the result in the document:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;p&gt;&lt;t</span><span class="w"> </span><span class="na">t-out=</span><span class="s">&quot;value&quot;</span><span class="nt">/&gt;&lt;/p&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;p&gt;&lt;t</span> <span class="na">t-out=</span><span class="s">&quot;value&quot;</span><span class="nt">/&gt;&lt;/p&gt;</span>
 </pre></div>
 </div>
 <p>rendered with the value <code class="o_code docutils literal notranslate"><span class="pre">value</span></code> set to <code class="o_code docutils literal notranslate"><span class="pre">42</span></code> yields:</p>
@@ -2032,15 +2032,15 @@ injecting raw HTML, etc…).</p>
 <p>QWeb has a conditional directive <code class="o_code docutils literal notranslate"><span class="pre">if</span></code>, which evaluates an expression given
 as attribute value:</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-if=</span><span class="s">&quot;condition&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;p&gt;</span>ok<span class="nt">&lt;/p&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/t&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-if=</span><span class="s">&quot;condition&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p&gt;</span>ok<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/t&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
 <p>The element is rendered if the condition is true:</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div&gt;</span>
-<span class="w">    </span><span class="nt">&lt;p&gt;</span>ok<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p&gt;</span>ok<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
@@ -2052,7 +2052,7 @@ as attribute value:</p>
 <p>The conditional rendering applies to the bearer of the directive, which does
 not have to be <code class="o_code docutils literal notranslate"><span class="pre">&lt;t&gt;</span></code>:</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div&gt;</span>
-<span class="w">    </span><span class="nt">&lt;p</span><span class="w"> </span><span class="na">t-if=</span><span class="s">&quot;condition&quot;</span><span class="nt">&gt;</span>ok<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">t-if=</span><span class="s">&quot;condition&quot;</span><span class="nt">&gt;</span>ok<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
@@ -2060,9 +2060,9 @@ not have to be <code class="o_code docutils literal notranslate"><span class="pr
 <p>Extra conditional branching directives <code class="o_code docutils literal notranslate"><span class="pre">t-elif</span></code> and <code class="o_code docutils literal notranslate"><span class="pre">t-else</span></code> are also
 available:</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div&gt;</span>
-<span class="w">    </span><span class="nt">&lt;p</span><span class="w"> </span><span class="na">t-if=</span><span class="s">&quot;user.birthday == today()&quot;</span><span class="nt">&gt;</span>Happy<span class="w"> </span>birthday!<span class="nt">&lt;/p&gt;</span>
-<span class="w">    </span><span class="nt">&lt;p</span><span class="w"> </span><span class="na">t-elif=</span><span class="s">&quot;user.login == &#39;root&#39;&quot;</span><span class="nt">&gt;</span>Welcome<span class="w"> </span>master!<span class="nt">&lt;/p&gt;</span>
-<span class="w">    </span><span class="nt">&lt;p</span><span class="w"> </span><span class="na">t-else=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Welcome!<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">t-if=</span><span class="s">&quot;user.birthday == today()&quot;</span><span class="nt">&gt;</span>Happy birthday!<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">t-elif=</span><span class="s">&quot;user.login == &#39;root&#39;&quot;</span><span class="nt">&gt;</span>Welcome master!<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">t-else=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Welcome!<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
@@ -2071,8 +2071,8 @@ available:</p>
 <p>QWeb has an iteration directive <code class="o_code docutils literal notranslate"><span class="pre">foreach</span></code> which take an expression returning
 the collection to iterate on, and a second parameter <code class="o_code docutils literal notranslate"><span class="pre">t-as</span></code> providing the
 name to use for the “current item” of the iteration:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-foreach=</span><span class="s">&quot;[1, 2, 3]&quot;</span><span class="w"> </span><span class="na">t-as=</span><span class="s">&quot;i&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;p&gt;&lt;t</span><span class="w"> </span><span class="na">t-out=</span><span class="s">&quot;i&quot;</span><span class="nt">/&gt;&lt;/p&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span> <span class="na">t-foreach=</span><span class="s">&quot;[1, 2, 3]&quot;</span> <span class="na">t-as=</span><span class="s">&quot;i&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;&lt;t</span> <span class="na">t-out=</span><span class="s">&quot;i&quot;</span><span class="nt">/&gt;&lt;/p&gt;</span>
 <span class="nt">&lt;/t&gt;</span>
 </pre></div>
 </div>
@@ -2084,8 +2084,8 @@ name to use for the “current item” of the iteration:</p>
 </div>
 <p>Like conditions, <code class="o_code docutils literal notranslate"><span class="pre">foreach</span></code> applies to the element bearing the directive’s
 attribute, and</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;p</span><span class="w"> </span><span class="na">t-foreach=</span><span class="s">&quot;[1, 2, 3]&quot;</span><span class="w"> </span><span class="na">t-as=</span><span class="s">&quot;i&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-out=</span><span class="s">&quot;i&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;p</span> <span class="na">t-foreach=</span><span class="s">&quot;[1, 2, 3]&quot;</span> <span class="na">t-as=</span><span class="s">&quot;i&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-out=</span><span class="s">&quot;i&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/p&gt;</span>
 </pre></div>
 </div>
@@ -2134,17 +2134,17 @@ index</p>
 <code class="o_code docutils literal notranslate"><span class="pre">foreach</span></code> are only available in the scope of the <code class="o_code docutils literal notranslate"><span class="pre">foreach</span></code>. If the
 variable exists outside the context of the <code class="o_code docutils literal notranslate"><span class="pre">foreach</span></code>, the value is copied
 at the end of the foreach into the global context.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set=</span><span class="s">&quot;existing_variable&quot;</span><span class="w"> </span><span class="na">t-value=</span><span class="s">&quot;False&quot;</span><span class="nt">/&gt;</span>
-<span class="cm">&lt;!-- existing_variable now False --&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span> <span class="na">t-set=</span><span class="s">&quot;existing_variable&quot;</span> <span class="na">t-value=</span><span class="s">&quot;False&quot;</span><span class="nt">/&gt;</span>
+<span class="c">&lt;!-- existing_variable now False --&gt;</span>
 
-<span class="nt">&lt;p</span><span class="w"> </span><span class="na">t-foreach=</span><span class="s">&quot;[1, 2, 3]&quot;</span><span class="w"> </span><span class="na">t-as=</span><span class="s">&quot;i&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set=</span><span class="s">&quot;existing_variable&quot;</span><span class="w"> </span><span class="na">t-value=</span><span class="s">&quot;True&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set=</span><span class="s">&quot;new_variable&quot;</span><span class="w"> </span><span class="na">t-value=</span><span class="s">&quot;True&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="cm">&lt;!-- existing_variable and new_variable now True --&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">t-foreach=</span><span class="s">&quot;[1, 2, 3]&quot;</span> <span class="na">t-as=</span><span class="s">&quot;i&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-set=</span><span class="s">&quot;existing_variable&quot;</span> <span class="na">t-value=</span><span class="s">&quot;True&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-set=</span><span class="s">&quot;new_variable&quot;</span> <span class="na">t-value=</span><span class="s">&quot;True&quot;</span><span class="nt">/&gt;</span>
+    <span class="c">&lt;!-- existing_variable and new_variable now True --&gt;</span>
 <span class="nt">&lt;/p&gt;</span>
 
-<span class="cm">&lt;!-- existing_variable always True --&gt;</span>
-<span class="cm">&lt;!-- new_variable undefined --&gt;</span>
+<span class="c">&lt;!-- existing_variable always True --&gt;</span>
+<span class="c">&lt;!-- new_variable undefined --&gt;</span>
 </pre></div>
 </div>
 </section><section id="attributes">
@@ -2155,28 +2155,28 @@ exists in 3 different forms:</p>
 <dl class="o-definition-list">
 <dt><code class="samp o_code docutils literal notranslate"><span class="pre">t-att-</span><em><span class="pre">$name</span></em></code></dt><dd><p>an attribute called <code class="o_code docutils literal notranslate"><span class="pre">$name</span></code> is created, the attribute value is evaluated
 and the result is set as the attribute’s value:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">t-att-a=</span><span class="s">&quot;42&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span> <span class="na">t-att-a=</span><span class="s">&quot;42&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 <p>will be rendered as:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">a=</span><span class="s">&quot;42&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span> <span class="na">a=</span><span class="s">&quot;42&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
 </pre></div>
 </div>
 </dd>
 <dt><code class="samp o_code docutils literal notranslate"><span class="pre">t-attf-</span><em><span class="pre">$name</span></em></code></dt><dd><p>same as previous, but the parameter is a <a class="reference internal" href="../../glossary.html#term-format-string"><span class="xref std std-term">format string</span></a>
 instead of just an expression, often useful to mix literal and non-literal
 string (e.g. classes):</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-foreach=</span><span class="s">&quot;[1, 2, 3]&quot;</span><span class="w"> </span><span class="na">t-as=</span><span class="s">&quot;item&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;li</span><span class="w"> </span><span class="na">t-attf-class=</span><span class="s">&quot;row {{ (item_index % 2 === 0) ? &#39;even&#39; : &#39;odd&#39; }}&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-out=</span><span class="s">&quot;item&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/li&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span> <span class="na">t-foreach=</span><span class="s">&quot;[1, 2, 3]&quot;</span> <span class="na">t-as=</span><span class="s">&quot;item&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">t-attf-class=</span><span class="s">&quot;row {{ (item_index % 2 === 0) ? &#39;even&#39; : &#39;odd&#39; }}&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;t</span> <span class="na">t-out=</span><span class="s">&quot;item&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
 <span class="nt">&lt;/t&gt;</span>
 </pre></div>
 </div>
 <p>will be rendered as:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;li</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;row even&quot;</span><span class="nt">&gt;</span>1<span class="nt">&lt;/li&gt;</span>
-<span class="nt">&lt;li</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;row odd&quot;</span><span class="nt">&gt;</span>2<span class="nt">&lt;/li&gt;</span>
-<span class="nt">&lt;li</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;row even&quot;</span><span class="nt">&gt;</span>3<span class="nt">&lt;/li&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;row even&quot;</span><span class="nt">&gt;</span>1<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;row odd&quot;</span><span class="nt">&gt;</span>2<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;row even&quot;</span><span class="nt">&gt;</span>3<span class="nt">&lt;/li&gt;</span>
 </pre></div>
 </div>
 <div class="alert alert-tip">
@@ -2187,22 +2187,22 @@ jinja-style) and <code class="o_code docutils literal notranslate"><span class="
 </dd>
 <dt><code class="samp o_code docutils literal notranslate"><span class="pre">t-att=mapping</span></code></dt><dd><p>if the parameter is a mapping, each (key, value) pair generates a new
 attribute and its value:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">t-att=</span><span class="s">&quot;{&#39;a&#39;: 1, &#39;b&#39;: 2}&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span> <span class="na">t-att=</span><span class="s">&quot;{&#39;a&#39;: 1, &#39;b&#39;: 2}&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 <p>will be rendered as:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">a=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="na">b=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span> <span class="na">a=</span><span class="s">&quot;1&quot;</span> <span class="na">b=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
 </pre></div>
 </div>
 </dd>
 <dt><code class="samp o_code docutils literal notranslate"><span class="pre">t-att=pair</span></code></dt><dd><p>if the parameter is a pair (tuple or array of 2 element), the first
 item of the pair is the name of the attribute and the second item is the
 value:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">t-att=</span><span class="s">&quot;[&#39;a&#39;, &#39;b&#39;]&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span> <span class="na">t-att=</span><span class="s">&quot;[&#39;a&#39;, &#39;b&#39;]&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 <p>will be rendered as:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">a=</span><span class="s">&quot;b&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span> <span class="na">a=</span><span class="s">&quot;b&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
 </pre></div>
 </div>
 </dd>
@@ -2216,18 +2216,18 @@ to create. The value to set can be provided in two ways:</p>
 <ul>
 <li><p>a <code class="o_code docutils literal notranslate"><span class="pre">t-value</span></code> attribute containing an expression, and the result of its
 evaluation will be set:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set=</span><span class="s">&quot;foo&quot;</span><span class="w"> </span><span class="na">t-value=</span><span class="s">&quot;2 + 1&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-out=</span><span class="s">&quot;foo&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span> <span class="na">t-set=</span><span class="s">&quot;foo&quot;</span> <span class="na">t-value=</span><span class="s">&quot;2 + 1&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;t</span> <span class="na">t-out=</span><span class="s">&quot;foo&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 <p>will print <code class="o_code docutils literal notranslate"><span class="pre">3</span></code></p>
 </li>
 <li><p>if there is no <code class="o_code docutils literal notranslate"><span class="pre">t-value</span></code> attribute, the node’s body is rendered and set
 as the variable’s value:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set=</span><span class="s">&quot;foo&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;li&gt;</span>ok<span class="nt">&lt;/li&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span> <span class="na">t-set=</span><span class="s">&quot;foo&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li&gt;</span>ok<span class="nt">&lt;/li&gt;</span>
 <span class="nt">&lt;/t&gt;</span>
-<span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-out=</span><span class="s">&quot;foo&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;t</span> <span class="na">t-out=</span><span class="s">&quot;foo&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 </li>
@@ -2237,48 +2237,48 @@ as the variable’s value:</p>
 <p>QWeb templates can be used for top-level rendering, but they can also be used
 from within another template (to avoid duplication or give names to parts of
 templates) using the <code class="o_code docutils literal notranslate"><span class="pre">t-call</span></code> directive:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-call=</span><span class="s">&quot;other-template&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span> <span class="na">t-call=</span><span class="s">&quot;other-template&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 <p>This calls the named template with the execution context of the parent, if
 <code class="o_code docutils literal notranslate"><span class="pre">other_template</span></code> is defined as:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;p&gt;&lt;t</span><span class="w"> </span><span class="na">t-value=</span><span class="s">&quot;var&quot;</span><span class="nt">/&gt;&lt;/p&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;p&gt;&lt;t</span> <span class="na">t-value=</span><span class="s">&quot;var&quot;</span><span class="nt">/&gt;&lt;/p&gt;</span>
 </pre></div>
 </div>
 <p>the call above will be rendered as <code class="o_code docutils literal notranslate"><span class="pre">&lt;p/&gt;</span></code> (no content), but:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set=</span><span class="s">&quot;var&quot;</span><span class="w"> </span><span class="na">t-value=</span><span class="s">&quot;1&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-call=</span><span class="s">&quot;other-template&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span> <span class="na">t-set=</span><span class="s">&quot;var&quot;</span> <span class="na">t-value=</span><span class="s">&quot;1&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;t</span> <span class="na">t-call=</span><span class="s">&quot;other-template&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 <p>will be rendered as <code class="o_code docutils literal notranslate"><span class="pre">&lt;p&gt;1&lt;/p&gt;</span></code>.</p>
 <p>However, this has the problem of being visible from outside the <code class="o_code docutils literal notranslate"><span class="pre">t-call</span></code>.
 Alternatively, content set in the body of the <code class="o_code docutils literal notranslate"><span class="pre">call</span></code> directive will be
 evaluated <em>before</em> calling the sub-template, and can alter a local context:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-call=</span><span class="s">&quot;other-template&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set=</span><span class="s">&quot;var&quot;</span><span class="w"> </span><span class="na">t-value=</span><span class="s">&quot;1&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span> <span class="na">t-call=</span><span class="s">&quot;other-template&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-set=</span><span class="s">&quot;var&quot;</span> <span class="na">t-value=</span><span class="s">&quot;1&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/t&gt;</span>
-<span class="cm">&lt;!-- &quot;var&quot; does not exist here --&gt;</span>
+<span class="c">&lt;!-- &quot;var&quot; does not exist here --&gt;</span>
 </pre></div>
 </div>
 <p>The body of the <code class="o_code docutils literal notranslate"><span class="pre">call</span></code> directive can be arbitrarily complex (not just
 <code class="o_code docutils literal notranslate"><span class="pre">set</span></code> directives), and its rendered form will be available within the called
 template as a magical <code class="o_code docutils literal notranslate"><span class="pre">0</span></code> variable:</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div&gt;</span>
-<span class="w">    </span>This<span class="w"> </span>template<span class="w"> </span>was<span class="w"> </span>called<span class="w"> </span>with<span class="w"> </span>content:
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-out=</span><span class="s">&quot;0&quot;</span><span class="nt">/&gt;</span>
+    This template was called with content:
+    <span class="nt">&lt;t</span> <span class="na">t-out=</span><span class="s">&quot;0&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
 <p>being called thus:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-call=</span><span class="s">&quot;other-template&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;em&gt;</span>content<span class="nt">&lt;/em&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span> <span class="na">t-call=</span><span class="s">&quot;other-template&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;em&gt;</span>content<span class="nt">&lt;/em&gt;</span>
 <span class="nt">&lt;/t&gt;</span>
 </pre></div>
 </div>
 <p>will result in:</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div&gt;</span>
-<span class="w">    </span>This<span class="w"> </span>template<span class="w"> </span>was<span class="w"> </span>called<span class="w"> </span>with<span class="w"> </span>content:
-<span class="w">    </span><span class="nt">&lt;em&gt;</span>content<span class="nt">&lt;/em&gt;</span>
+    This template was called with content:
+    <span class="nt">&lt;em&gt;</span>content<span class="nt">&lt;/em&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
@@ -2409,7 +2409,7 @@ is <code class="o_code docutils literal notranslate"><span class="pre">widget</s
 <dl class="o-definition-list">
 <dt><code class="o_code docutils literal notranslate"><span class="pre">t-debug</span></code></dt><dd><p>invokes a debugger using PDB’s <code class="o_code docutils literal notranslate"><span class="pre">set_trace</span></code> API. The parameter should
 be the name of a module, on which a <code class="o_code docutils literal notranslate"><span class="pre">set_trace</span></code> method is called:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-debug=</span><span class="s">&quot;pdb&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span> <span class="na">t-debug=</span><span class="s">&quot;pdb&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 <p>is equivalent to <code class="o_code docutils literal notranslate"><span class="pre">importlib.import_module(&quot;pdb&quot;).set_trace()</span></code></p>
@@ -2476,9 +2476,9 @@ expression</strong>, then the model, ids and their corresponding write_date will
 used to generate the <strong>cache key</strong>. Special case: If the <strong>key expression</strong>
 returns a Falsy value, then the content will not be cached.</p>
 <p>Example:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">t-cache=</span><span class="s">&quot;record,bool(condition)&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;span</span><span class="w"> </span><span class="na">t-if=</span><span class="s">&quot;condition&quot;</span><span class="w"> </span><span class="na">t-field=</span><span class="s">&quot;record.partner_id.name&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;span</span><span class="w"> </span><span class="na">t-else=</span><span class="s">&quot;&quot;</span><span class="w"> </span><span class="na">t-field=</span><span class="s">&quot;record.partner_id&quot;</span><span class="w"> </span><span class="na">t-options-widget=</span><span class="s">&quot;contact&quot;</span><span class="nt">&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span> <span class="na">t-cache=</span><span class="s">&quot;record,bool(condition)&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">t-if=</span><span class="s">&quot;condition&quot;</span> <span class="na">t-field=</span><span class="s">&quot;record.partner_id.name&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">t-else=</span><span class="s">&quot;&quot;</span> <span class="na">t-field=</span><span class="s">&quot;record.partner_id&quot;</span> <span class="na">t-options-widget=</span><span class="s">&quot;contact&quot;</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
@@ -2496,29 +2496,29 @@ template that you do not see when editing.
 (<code class="o_code docutils literal notranslate"><span class="pre">t-foreach</span></code> it’s like a <code class="o_code docutils literal notranslate"><span class="pre">t-set</span></code> for each iteration)</p>
 <p>Example:</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set=</span><span class="s">&quot;a&quot;</span><span class="w"> </span><span class="na">t-value=</span><span class="s">&quot;1&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;inside&gt;</span>
-<span class="w">        </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set=</span><span class="s">&quot;a&quot;</span><span class="w"> </span><span class="na">t-value=</span><span class="s">&quot;2&quot;</span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-out=</span><span class="s">&quot;a&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/inside&gt;</span>
-<span class="w">    </span><span class="nt">&lt;outside</span><span class="w"> </span><span class="na">t-out=</span><span class="s">&quot;a&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-set=</span><span class="s">&quot;a&quot;</span> <span class="na">t-value=</span><span class="s">&quot;1&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;inside&gt;</span>
+        <span class="nt">&lt;t</span> <span class="na">t-set=</span><span class="s">&quot;a&quot;</span> <span class="na">t-value=</span><span class="s">&quot;2&quot;</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;t</span> <span class="na">t-out=</span><span class="s">&quot;a&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/inside&gt;</span>
+    <span class="nt">&lt;outside</span> <span class="na">t-out=</span><span class="s">&quot;a&quot;</span><span class="nt">/&gt;</span>
 
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set=</span><span class="s">&quot;b&quot;</span><span class="w"> </span><span class="na">t-value=</span><span class="s">&quot;1&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;inside</span><span class="w"> </span><span class="na">t-cache=</span><span class="s">&quot;True&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set=</span><span class="s">&quot;b&quot;</span><span class="w"> </span><span class="na">t-value=</span><span class="s">&quot;2&quot;</span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-out=</span><span class="s">&quot;b&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/inside&gt;</span>
-<span class="w">    </span><span class="nt">&lt;outside</span><span class="w"> </span><span class="na">t-out=</span><span class="s">&quot;b&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-set=</span><span class="s">&quot;b&quot;</span> <span class="na">t-value=</span><span class="s">&quot;1&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;inside</span> <span class="na">t-cache=</span><span class="s">&quot;True&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;t</span> <span class="na">t-set=</span><span class="s">&quot;b&quot;</span> <span class="na">t-value=</span><span class="s">&quot;2&quot;</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;t</span> <span class="na">t-out=</span><span class="s">&quot;b&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/inside&gt;</span>
+    <span class="nt">&lt;outside</span> <span class="na">t-out=</span><span class="s">&quot;b&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
 <p>Will render:</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div&gt;</span>
-<span class="w">    </span><span class="nt">&lt;inside&gt;</span>2<span class="nt">&lt;/inside&gt;</span>
-<span class="w">    </span><span class="nt">&lt;outside&gt;</span>2<span class="nt">&lt;/inside&gt;</span>
+    <span class="nt">&lt;inside&gt;</span>2<span class="nt">&lt;/inside&gt;</span>
+    <span class="nt">&lt;outside&gt;</span>2<span class="nt">&lt;/inside&gt;</span>
 
-<span class="w">    </span><span class="nt">&lt;inside&gt;</span>2<span class="nt">&lt;/inside&gt;</span>
-<span class="w">    </span><span class="nt">&lt;outside&gt;</span>1<span class="nt">&lt;/inside&gt;</span>
+    <span class="nt">&lt;inside&gt;</span>2<span class="nt">&lt;/inside&gt;</span>
+    <span class="nt">&lt;outside&gt;</span>1<span class="nt">&lt;/inside&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
@@ -2530,19 +2530,19 @@ However the available values are those provided by the controller (when
 calling the <code class="o_code docutils literal notranslate"><span class="pre">_render</span></code> method).</p>
 <p>Example:</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;section&gt;</span>
-<span class="w">    </span><span class="nt">&lt;article</span><span class="w"> </span><span class="na">t-cache=</span><span class="s">&quot;record&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;title&gt;&lt;t</span><span class="w"> </span><span class="na">t-out=</span><span class="s">&quot;record.name&quot;</span><span class="nt">/&gt;</span><span class="w"> </span><span class="nt">&lt;i</span><span class="w"> </span><span class="na">t-nocache=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>(views:<span class="w"> </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-out=</span><span class="s">&quot;counter&quot;</span><span class="nt">/&gt;</span>)<span class="nt">&lt;/i&gt;&lt;/titlle&gt;</span>
-<span class="w">        </span><span class="nt">&lt;content</span><span class="w"> </span><span class="na">t-out=</span><span class="s">&quot;record.description&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/article&gt;</span>
+    <span class="nt">&lt;article</span> <span class="na">t-cache=</span><span class="s">&quot;record&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;title&gt;&lt;t</span> <span class="na">t-out=</span><span class="s">&quot;record.name&quot;</span><span class="nt">/&gt;</span> <span class="nt">&lt;i</span> <span class="na">t-nocache=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>(views: <span class="nt">&lt;t</span> <span class="na">t-out=</span><span class="s">&quot;counter&quot;</span><span class="nt">/&gt;</span>)<span class="nt">&lt;/i&gt;&lt;/titlle&gt;</span>
+        <span class="nt">&lt;content</span> <span class="na">t-out=</span><span class="s">&quot;record.description&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/article&gt;</span>
 <span class="nt">&lt;/section&gt;</span>
 </pre></div>
 </div>
 <p>Will render (counter = 1):</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;section&gt;</span>
-<span class="w">    </span><span class="nt">&lt;article&gt;</span>
-<span class="w">        </span><span class="nt">&lt;title&gt;</span>The<span class="w"> </span>record<span class="w"> </span>name<span class="w"> </span><span class="nt">&lt;i&gt;</span>(views:<span class="w"> </span>1)<span class="nt">&lt;/i&gt;&lt;/titlle&gt;</span>
-<span class="w">        </span><span class="nt">&lt;content&gt;</span>Record<span class="w"> </span>description<span class="nt">&lt;/content&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/article&gt;</span>
+    <span class="nt">&lt;article&gt;</span>
+        <span class="nt">&lt;title&gt;</span>The record name <span class="nt">&lt;i&gt;</span>(views: 1)<span class="nt">&lt;/i&gt;&lt;/titlle&gt;</span>
+        <span class="nt">&lt;content&gt;</span>Record description<span class="nt">&lt;/content&gt;</span>
+    <span class="nt">&lt;/article&gt;</span>
 <span class="nt">&lt;/section&gt;</span>
 </pre></div>
 </div>
@@ -2558,29 +2558,29 @@ of <code class="o_code docutils literal notranslate"><span class="pre">ir.qweb</
 available elsewhere.</p>
 <p>Example:</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;section&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set=</span><span class="s">&quot;counter&quot;</span><span class="w"> </span><span class="na">t-value=</span><span class="s">&quot;counter * 10&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;header</span><span class="w"> </span><span class="na">t-nocache=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set=</span><span class="s">&quot;counter&quot;</span><span class="w"> </span><span class="na">t-value=</span><span class="s">&quot;counter + 5&quot;</span><span class="nt">/&gt;</span>
-<span class="w">        </span>(views:<span class="w"> </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-out=</span><span class="s">&quot;counter&quot;</span><span class="nt">/&gt;</span>)
-<span class="w">    </span><span class="nt">&lt;/header&gt;</span>
-<span class="w">    </span><span class="nt">&lt;article</span><span class="w"> </span><span class="na">t-cache=</span><span class="s">&quot;record&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;title&gt;&lt;t</span><span class="w"> </span><span class="na">t-out=</span><span class="s">&quot;record.name&quot;</span><span class="nt">/&gt;</span><span class="w"> </span><span class="nt">&lt;i</span><span class="w"> </span><span class="na">t-nocache=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>(views:<span class="w"> </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-out=</span><span class="s">&quot;counter&quot;</span><span class="nt">/&gt;</span>)<span class="nt">&lt;/i&gt;&lt;/titlle&gt;</span>
-<span class="w">        </span><span class="nt">&lt;content</span><span class="w"> </span><span class="na">t-out=</span><span class="s">&quot;record.description&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/article&gt;</span>
-<span class="w">    </span><span class="nt">&lt;footer&gt;</span>(views:<span class="w"> </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-out=</span><span class="s">&quot;counter&quot;</span><span class="nt">/&gt;</span>)<span class="nt">&lt;/footer&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-set=</span><span class="s">&quot;counter&quot;</span> <span class="na">t-value=</span><span class="s">&quot;counter * 10&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;header</span> <span class="na">t-nocache=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;t</span> <span class="na">t-set=</span><span class="s">&quot;counter&quot;</span> <span class="na">t-value=</span><span class="s">&quot;counter + 5&quot;</span><span class="nt">/&gt;</span>
+        (views: <span class="nt">&lt;t</span> <span class="na">t-out=</span><span class="s">&quot;counter&quot;</span><span class="nt">/&gt;</span>)
+    <span class="nt">&lt;/header&gt;</span>
+    <span class="nt">&lt;article</span> <span class="na">t-cache=</span><span class="s">&quot;record&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;title&gt;&lt;t</span> <span class="na">t-out=</span><span class="s">&quot;record.name&quot;</span><span class="nt">/&gt;</span> <span class="nt">&lt;i</span> <span class="na">t-nocache=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>(views: <span class="nt">&lt;t</span> <span class="na">t-out=</span><span class="s">&quot;counter&quot;</span><span class="nt">/&gt;</span>)<span class="nt">&lt;/i&gt;&lt;/titlle&gt;</span>
+        <span class="nt">&lt;content</span> <span class="na">t-out=</span><span class="s">&quot;record.description&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/article&gt;</span>
+    <span class="nt">&lt;footer&gt;</span>(views: <span class="nt">&lt;t</span> <span class="na">t-out=</span><span class="s">&quot;counter&quot;</span><span class="nt">/&gt;</span>)<span class="nt">&lt;/footer&gt;</span>
 <span class="nt">&lt;/section&gt;</span>
 </pre></div>
 </div>
 <p>Will render (counter = 1):</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;section&gt;</span>
-<span class="w">    </span><span class="nt">&lt;header&gt;</span>
-<span class="w">        </span>(views:<span class="w"> </span>6)
-<span class="w">    </span><span class="nt">&lt;/header&gt;</span>
-<span class="w">    </span><span class="nt">&lt;article&gt;</span>
-<span class="w">        </span><span class="nt">&lt;title&gt;</span>The<span class="w"> </span>record<span class="w"> </span>name<span class="w"> </span><span class="nt">&lt;i&gt;</span>(views:<span class="w"> </span>1)<span class="nt">&lt;/i&gt;&lt;/titlle&gt;</span>
-<span class="w">        </span><span class="nt">&lt;content&gt;</span>Record<span class="w"> </span>description<span class="nt">&lt;/content&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/article&gt;</span>
-<span class="w">    </span><span class="nt">&lt;footer&gt;</span>(views:<span class="w"> </span>10)<span class="nt">&lt;/footer&gt;</span>
+    <span class="nt">&lt;header&gt;</span>
+        (views: 6)
+    <span class="nt">&lt;/header&gt;</span>
+    <span class="nt">&lt;article&gt;</span>
+        <span class="nt">&lt;title&gt;</span>The record name <span class="nt">&lt;i&gt;</span>(views: 1)<span class="nt">&lt;/i&gt;&lt;/titlle&gt;</span>
+        <span class="nt">&lt;content&gt;</span>Record description<span class="nt">&lt;/content&gt;</span>
+    <span class="nt">&lt;/article&gt;</span>
+    <span class="nt">&lt;footer&gt;</span>(views: 10)<span class="nt">&lt;/footer&gt;</span>
 <span class="nt">&lt;/section&gt;</span>
 </pre></div>
 </div>
@@ -2594,16 +2594,16 @@ cache them. The directive is used as <code class="o_code docutils literal notran
 name of the chosen value and <code class="o_code docutils literal notranslate"><span class="pre">expr</span></code> the python expression so the result will
 be cached. The cached value must be primitive type.</p>
 <p>Example:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;section</span><span class="w"> </span><span class="na">t-cache=</span><span class="s">&quot;records&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;article</span><span class="w"> </span><span class="na">t-foreach=</span><span class="s">&quot;records&quot;</span><span class="w"> </span><span class="na">t-as=</span><span class="s">&quot;record&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;header&gt;</span>
-<span class="w">            </span><span class="nt">&lt;title</span><span class="w"> </span><span class="na">t-field=</span><span class="s">&quot;record.get_method_title()&quot;</span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/header&gt;</span>
-<span class="w">        </span><span class="nt">&lt;footer</span><span class="w"> </span><span class="na">t-nocache=</span><span class="s">&quot;This part has a dynamic counter and must be rendered all the time.&quot;</span>
-<span class="w">                </span><span class="na">t-nocache-cached_value=</span><span class="s">&quot;record.get_base_counter()&quot;</span><span class="nt">&gt;</span>
-<span class="w">            </span><span class="nt">&lt;span</span><span class="w"> </span><span class="na">t-out=</span><span class="s">&quot;counter + cached_value&quot;</span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/footer&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/article&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;section</span> <span class="na">t-cache=</span><span class="s">&quot;records&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;article</span> <span class="na">t-foreach=</span><span class="s">&quot;records&quot;</span> <span class="na">t-as=</span><span class="s">&quot;record&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;header&gt;</span>
+            <span class="nt">&lt;title</span> <span class="na">t-field=</span><span class="s">&quot;record.get_method_title()&quot;</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;/header&gt;</span>
+        <span class="nt">&lt;footer</span> <span class="na">t-nocache=</span><span class="s">&quot;This part has a dynamic counter and must be rendered all the time.&quot;</span>
+                <span class="na">t-nocache-cached_value=</span><span class="s">&quot;record.get_base_counter()&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">t-out=</span><span class="s">&quot;counter + cached_value&quot;</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;/footer&gt;</span>
+    <span class="nt">&lt;/article&gt;</span>
 <span class="nt">&lt;/section&gt;</span>
 </pre></div>
 </div>
@@ -2687,9 +2687,9 @@ a “new” qweb based on <code class="o_code docutils literal notranslate"><spa
 <p>The <code class="o_code docutils literal notranslate"><span class="pre">t-name</span></code> directive can only be placed at the top-level of a template
 file (direct children to the document root):</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;templates&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-name=</span><span class="s">&quot;template-name&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="cm">&lt;!-- template code --&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/t&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-name=</span><span class="s">&quot;template-name&quot;</span><span class="nt">&gt;</span>
+        <span class="c">&lt;!-- template code --&gt;</span>
+    <span class="nt">&lt;/t&gt;</span>
 <span class="nt">&lt;/templates&gt;</span>
 </pre></div>
 </div>
@@ -2723,18 +2723,18 @@ comment on the transformed template to help retrace inheritances.</p>
 <p>For the inheritance itself, the changes are done using xpaths directives.
 See the <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/XPath">XPATH</a> documentation for the complete set of available instructions.</p>
 <p>Primary inheritance (child template):</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-name=</span><span class="s">&quot;child.template&quot;</span><span class="w"> </span><span class="na">t-inherit=</span><span class="s">&quot;base.template&quot;</span><span class="w"> </span><span class="na">t-inherit-mode=</span><span class="s">&quot;primary&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;xpath</span><span class="w"> </span><span class="na">expr=</span><span class="s">&quot;//ul&quot;</span><span class="w"> </span><span class="na">position=</span><span class="s">&quot;inside&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;li&gt;</span>new<span class="w"> </span>element<span class="nt">&lt;/li&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/xpath&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span> <span class="na">t-name=</span><span class="s">&quot;child.template&quot;</span> <span class="na">t-inherit=</span><span class="s">&quot;base.template&quot;</span> <span class="na">t-inherit-mode=</span><span class="s">&quot;primary&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;xpath</span> <span class="na">expr=</span><span class="s">&quot;//ul&quot;</span> <span class="na">position=</span><span class="s">&quot;inside&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li&gt;</span>new element<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/xpath&gt;</span>
 <span class="nt">&lt;/t&gt;</span>
 </pre></div>
 </div>
 <p>Extension inheritance (in-place transformation):</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-inherit=</span><span class="s">&quot;base.template&quot;</span><span class="w"> </span><span class="na">t-inherit-mode=</span><span class="s">&quot;extension&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;xpath</span><span class="w"> </span><span class="na">expr=</span><span class="s">&quot;//tr[1]&quot;</span><span class="w"> </span><span class="na">position=</span><span class="s">&quot;after&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;tr&gt;&lt;td&gt;</span>new<span class="w"> </span>cell<span class="nt">&lt;/td&gt;&lt;/tr&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/xpath&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span> <span class="na">t-inherit=</span><span class="s">&quot;base.template&quot;</span> <span class="na">t-inherit-mode=</span><span class="s">&quot;extension&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;xpath</span> <span class="na">expr=</span><span class="s">&quot;//tr[1]&quot;</span> <span class="na">position=</span><span class="s">&quot;after&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;tr&gt;&lt;td&gt;</span>new cell<span class="nt">&lt;/td&gt;&lt;/tr&gt;</span>
+    <span class="nt">&lt;/xpath&gt;</span>
 <span class="nt">&lt;/t&gt;</span>
 </pre></div>
 </div>
@@ -2746,10 +2746,10 @@ the name of the template to alter as parameter.</p>
 <code class="o_code docutils literal notranslate"><span class="pre">t-name</span></code> and as an extension one when used alone.</p>
 <p>In both cases the alteration is then performed with any number of <code class="o_code docutils literal notranslate"><span class="pre">t-jquery</span></code>
 sub-directives:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-extend=</span><span class="s">&quot;base.template&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-jquery=</span><span class="s">&quot;ul&quot;</span><span class="w"> </span><span class="na">t-operation=</span><span class="s">&quot;append&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;li&gt;</span>new<span class="w"> </span>element<span class="nt">&lt;/li&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/t&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span> <span class="na">t-extend=</span><span class="s">&quot;base.template&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-jquery=</span><span class="s">&quot;ul&quot;</span> <span class="na">t-operation=</span><span class="s">&quot;append&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li&gt;</span>new element<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/t&gt;</span>
 <span class="nt">&lt;/t&gt;</span>
 </pre></div>
 </div>
@@ -2792,15 +2792,15 @@ avoid it</p>
 <dl class="o-definition-list">
 <dt><code class="o_code docutils literal notranslate"><span class="pre">t-log</span></code></dt><dd><p>takes an expression parameter, evaluates the expression during rendering
 and logs its result with <code class="o_code docutils literal notranslate"><span class="pre">console.log</span></code>:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set=</span><span class="s">&quot;foo&quot;</span><span class="w"> </span><span class="na">t-value=</span><span class="s">&quot;42&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-log=</span><span class="s">&quot;foo&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span> <span class="na">t-set=</span><span class="s">&quot;foo&quot;</span> <span class="na">t-value=</span><span class="s">&quot;42&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;t</span> <span class="na">t-log=</span><span class="s">&quot;foo&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 <p>will print <code class="o_code docutils literal notranslate"><span class="pre">42</span></code> to the console</p>
 </dd>
 <dt><code class="o_code docutils literal notranslate"><span class="pre">t-debug</span></code></dt><dd><p>triggers a debugger breakpoint during template rendering:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-if=</span><span class="s">&quot;a_test&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-debug=</span><span class="s">&quot;&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span> <span class="na">t-if=</span><span class="s">&quot;a_test&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-debug=</span><span class="s">&quot;&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/t&gt;</span>
 </pre></div>
 </div>
@@ -2810,9 +2810,9 @@ browser and its development tools)</p>
 <dt><code class="o_code docutils literal notranslate"><span class="pre">t-js</span></code></dt><dd><p>the node’s body is javascript code executed during template rendering.
 Takes a <code class="o_code docutils literal notranslate"><span class="pre">context</span></code> parameter, which is the name under which the rendering
 context will be available in the <code class="o_code docutils literal notranslate"><span class="pre">t-js</span></code>’s body:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set=</span><span class="s">&quot;foo&quot;</span><span class="w"> </span><span class="na">t-value=</span><span class="s">&quot;42&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-js=</span><span class="s">&quot;ctx&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span>console.log(&quot;Foo<span class="w"> </span>is&quot;,<span class="w"> </span>ctx.foo);
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span> <span class="na">t-set=</span><span class="s">&quot;foo&quot;</span> <span class="na">t-value=</span><span class="s">&quot;42&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;t</span> <span class="na">t-js=</span><span class="s">&quot;ctx&quot;</span><span class="nt">&gt;</span>
+    console.log(&quot;Foo is&quot;, ctx.foo);
 <span class="nt">&lt;/t&gt;</span>
 </pre></div>
 </div>

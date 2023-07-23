@@ -23,7 +23,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/howtos/scss_tips.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/howtos/scss_tips.html" />
     
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -1967,9 +1967,9 @@ reasons).</p>
 <div class="alert alert-success">
 <p class="alert-title">
 Example</p><p>Applying <code class="o_code docutils literal notranslate"><span class="pre">display:</span> <span class="pre">block;</span></code> to a <code class="o_code docutils literal notranslate"><span class="pre">&lt;div/&gt;</span></code> is normally not necessary.</p>
-<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="nt">div</span><span class="p">.</span><span class="nc">element</span><span class="w"> </span><span class="p">{</span>
-<span class="w">   </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">block</span><span class="p">;</span>
-<span class="w">   </span><span class="c">/* not needed 99% of the time */</span>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="nt">div</span><span class="p">.</span><span class="nc">element</span> <span class="p">{</span>
+   <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
+   <span class="c">/* not needed 99% of the time */</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -1977,9 +1977,9 @@ Example</p><p>Applying <code class="o_code docutils literal notranslate"><span c
 <div class="alert alert-success">
 <p class="alert-title">
 Example</p><p>In this instance, you may opt to switching the HTML tag rather than adding a new CSS rule.</p>
-<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="nt">span</span><span class="p">.</span><span class="nc">element</span><span class="w"> </span><span class="p">{</span>
-<span class="w">   </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">block</span><span class="p">;</span>
-<span class="w">   </span><span class="c">/* replace &lt;span&gt; with &lt;div&gt; instead</span>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="nt">span</span><span class="p">.</span><span class="nc">element</span> <span class="p">{</span>
+   <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
+   <span class="c">/* replace &lt;span&gt; with &lt;div&gt; instead</span>
 <span class="c">      to get &#39;display: block&#39; by default */</span>
 <span class="p">}</span>
 </pre></div>
@@ -2047,18 +2047,18 @@ Example</p><div class="alert alert-danger docutils container">
 <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
 </pre></div>
 </div>
-</div><div aria-labelledby="tab-0-U0NTUw==" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-0-U0NTUw==" name="U0NTUw==" role="tabpanel" tabindex="0"><div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="p">.</span><span class="nc">o_module_custom_title</span><span class="w"> </span><span class="p">{</span>
-<span class="w">   </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">block</span><span class="p">;</span>
-<span class="w">   </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">120</span><span class="kt">%</span><span class="p">;</span>
-<span class="w">   </span><span class="k">font-weight</span><span class="p">:</span><span class="w"> </span><span class="kc">bold</span><span class="p">;</span>
-<span class="w">   </span><span class="k">animation</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">s</span><span class="w"> </span><span class="kc">linear</span><span class="w"> </span><span class="mi">1</span><span class="kt">s</span><span class="w"> </span><span class="n">mycustomAnimation</span><span class="p">;</span>
+</div><div aria-labelledby="tab-0-U0NTUw==" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-0-U0NTUw==" name="U0NTUw==" role="tabpanel" tabindex="0"><div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="p">.</span><span class="nc">o_module_custom_title</span> <span class="p">{</span>
+   <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
+   <span class="k">font-size</span><span class="p">:</span> <span class="mi">120</span><span class="kt">%</span><span class="p">;</span>
+   <span class="k">font-weight</span><span class="p">:</span> <span class="kc">bold</span><span class="p">;</span>
+   <span class="k">animation</span><span class="p">:</span> <span class="mi">1</span><span class="kt">s</span> <span class="kc">linear</span> <span class="mi">1</span><span class="kt">s</span> <span class="n">mycustomAnimation</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="p">.</span><span class="nc">o_module_custom_subtitle</span><span class="w"> </span><span class="p">{</span>
-<span class="w">   </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">block</span><span class="p">;</span>
-<span class="w">   </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="kt">px</span><span class="p">;</span>
-<span class="w">   </span><span class="k">font-weight</span><span class="p">:</span><span class="w"> </span><span class="kc">bold</span><span class="p">;</span>
-<span class="w">   </span><span class="k">animation</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="kt">s</span><span class="w"> </span><span class="kc">linear</span><span class="w"> </span><span class="mi">1</span><span class="kt">s</span><span class="w"> </span><span class="n">mycustomAnimation</span><span class="p">;</span>
+<span class="p">.</span><span class="nc">o_module_custom_subtitle</span> <span class="p">{</span>
+   <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
+   <span class="k">font-size</span><span class="p">:</span> <span class="mi">12</span><span class="kt">px</span><span class="p">;</span>
+   <span class="k">font-weight</span><span class="p">:</span> <span class="kc">bold</span><span class="p">;</span>
+   <span class="k">animation</span><span class="p">:</span> <span class="mi">2</span><span class="kt">s</span> <span class="kc">linear</span> <span class="mi">1</span><span class="kt">s</span> <span class="n">mycustomAnimation</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -2076,12 +2076,12 @@ Example</p><div class="alert alert-danger docutils container">
 <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </pre></div>
 </div>
-</div><div aria-labelledby="tab-1-U0NTUw==" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-1-U0NTUw==" name="U0NTUw==" role="tabpanel" tabindex="0"><div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="p">.</span><span class="nc">o_module_custom_title</span><span class="w"> </span><span class="p">{</span>
-<span class="w">   </span><span class="k">animation</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">s</span><span class="w"> </span><span class="kc">linear</span><span class="w"> </span><span class="mi">1</span><span class="kt">s</span><span class="w"> </span><span class="n">mycustomAnimation</span><span class="p">;</span>
+</div><div aria-labelledby="tab-1-U0NTUw==" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-1-U0NTUw==" name="U0NTUw==" role="tabpanel" tabindex="0"><div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="p">.</span><span class="nc">o_module_custom_title</span> <span class="p">{</span>
+   <span class="k">animation</span><span class="p">:</span> <span class="mi">1</span><span class="kt">s</span> <span class="kc">linear</span> <span class="mi">1</span><span class="kt">s</span> <span class="n">mycustomAnimation</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="p">.</span><span class="nc">o_module_custom_subtitle</span><span class="w"> </span><span class="p">{</span>
-<span class="w">   </span><span class="k">animation</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="kt">s</span><span class="w"> </span><span class="kc">linear</span><span class="w"> </span><span class="mi">1</span><span class="kt">s</span><span class="w"> </span><span class="n">mycustomAnimation</span><span class="p">;</span>
+<span class="p">.</span><span class="nc">o_module_custom_subtitle</span> <span class="p">{</span>
+   <span class="k">animation</span><span class="p">:</span> <span class="mi">2</span><span class="kt">s</span> <span class="kc">linear</span> <span class="mi">1</span><span class="kt">s</span> <span class="n">mycustomAnimation</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -2101,8 +2101,8 @@ keeps the visual result consistent and easily <strong>maintainable</strong>.</p>
 layout/design/interaction needs. The simple fact that a class already exists justifies its use over
 custom CSS whenever possible.</p>
 <p>Take the example of <code class="o_code docutils literal notranslate"><span class="pre">position-relative</span></code>.</p>
-<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="nt">position-relative</span><span class="w"> </span><span class="p">{</span>
-<span class="w">   </span><span class="k">position</span><span class="p">:</span><span class="w"> </span><span class="kc">relative</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="nt">position-relative</span> <span class="p">{</span>
+   <span class="k">position</span><span class="p">:</span> <span class="kc">relative</span> <span class="cp">!important</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 </div>

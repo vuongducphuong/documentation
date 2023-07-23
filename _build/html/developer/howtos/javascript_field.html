@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/howtos/javascript_field.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/howtos/javascript_field.html" />
     
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -1941,12 +1941,12 @@ displaying “Late!” in red whenever the checkbox is checked.</p>
 <div class="code-block-caption"><span class="caption-text"><code class="file o_code docutils literal notranslate"><span class="pre">late_order_boolean_field.js</span></code></span><a class="headerlink" href="#id1" title="Permalink to this code">¶</a></div>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="cm">/** @odoo-module */</span>
 
-<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">registry</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@web/core/registry&quot;</span><span class="p">;</span>
-<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">BooleanField</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@web/views/fields/boolean/boolean_field&quot;</span><span class="p">;</span>
-<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Component</span><span class="p">,</span><span class="w"> </span><span class="nx">xml</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@odoo/owl&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">registry</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@web/core/registry&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">BooleanField</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@web/views/fields/boolean/boolean_field&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">Component</span><span class="p">,</span> <span class="nx">xml</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@odoo/owl&quot;</span><span class="p">;</span>
 
-<span class="kd">class</span><span class="w"> </span><span class="nx">LateOrderBooleanField</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">BooleanField</span><span class="w"> </span><span class="p">{}</span>
-<span class="nx">LateOrderBooleanField</span><span class="p">.</span><span class="nx">template</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;my_module.LateOrderBooleanField&quot;</span><span class="p">;</span>
+<span class="kr">class</span> <span class="nx">LateOrderBooleanField</span> <span class="kr">extends</span> <span class="nx">BooleanField</span> <span class="p">{}</span>
+<span class="nx">LateOrderBooleanField</span><span class="p">.</span><span class="nx">template</span> <span class="o">=</span> <span class="s2">&quot;my_module.LateOrderBooleanField&quot;</span><span class="p">;</span>
 </pre></div>
 </div>
 </div>
@@ -1957,12 +1957,12 @@ inheriting the current template of the <code class="o_code docutils literal notr
 <div class="literal-block-wrapper docutils container" id="id2">
 <div class="code-block-caption"><span class="caption-text"><code class="file o_code docutils literal notranslate"><span class="pre">late_order_boolean_field.xml</span></code></span><a class="headerlink" href="#id2" title="Permalink to this code">¶</a></div>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span>
-<span class="nt">&lt;templates</span><span class="w"> </span><span class="na">xml:space=</span><span class="s">&quot;preserve&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-name=</span><span class="s">&quot;my_module.LateOrderBooleanField&quot;</span><span class="w"> </span><span class="na">t-inherit=</span><span class="s">&quot;web.BooleanField&quot;</span><span class="w"> </span><span class="na">owl=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;xpath</span><span class="w"> </span><span class="na">expr=</span><span class="s">&quot;//CheckBox&quot;</span><span class="w"> </span><span class="na">position=</span><span class="s">&quot;after&quot;</span><span class="nt">&gt;</span>
-<span class="w">              </span><span class="nt">&lt;span</span><span class="w"> </span><span class="na">t-if=</span><span class="s">&quot;props.value&quot;</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;text-danger&quot;</span><span class="nt">&gt;</span><span class="w"> </span>Late!<span class="w"> </span><span class="nt">&lt;/span&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/xpath&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/t&gt;</span>
+<span class="nt">&lt;templates</span> <span class="na">xml:space=</span><span class="s">&quot;preserve&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-name=</span><span class="s">&quot;my_module.LateOrderBooleanField&quot;</span> <span class="na">t-inherit=</span><span class="s">&quot;web.BooleanField&quot;</span> <span class="na">owl=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;xpath</span> <span class="na">expr=</span><span class="s">&quot;//CheckBox&quot;</span> <span class="na">position=</span><span class="s">&quot;after&quot;</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;span</span> <span class="na">t-if=</span><span class="s">&quot;props.value&quot;</span> <span class="na">class=</span><span class="s">&quot;text-danger&quot;</span><span class="nt">&gt;</span> Late! <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/xpath&gt;</span>
+    <span class="nt">&lt;/t&gt;</span>
 <span class="nt">&lt;/templates&gt;</span>
 </pre></div>
 </div>
@@ -1977,7 +1977,7 @@ inheriting the current template of the <code class="o_code docutils literal notr
 </div>
 </li>
 <li><p>Add the widget in the view arch as an attribute of the field.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;somefield&quot;</span><span class="w"> </span><span class="na">widget=</span><span class="s">&quot;late_boolean&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;somefield&quot;</span> <span class="na">widget=</span><span class="s">&quot;late_boolean&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 </li>
@@ -1991,27 +1991,27 @@ inheriting the current template of the <code class="o_code docutils literal notr
 <div class="code-block-caption"><span class="caption-text"><code class="file o_code docutils literal notranslate"><span class="pre">my_text_field.js</span></code></span><a class="headerlink" href="#id4" title="Permalink to this code">¶</a></div>
 <div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="cm">/** @odoo-module */</span>
 
-<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">standardFieldProps</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@web/views/fields/standard_field_props&quot;</span><span class="p">;</span>
-<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Component</span><span class="p">,</span><span class="w"> </span><span class="nx">xml</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@odoo/owl&quot;</span><span class="p">;</span>
-<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">registry</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@web/core/registry&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">standardFieldProps</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@web/views/fields/standard_field_props&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">Component</span><span class="p">,</span> <span class="nx">xml</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@odoo/owl&quot;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">registry</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@web/core/registry&quot;</span><span class="p">;</span>
 
-<span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">MyTextField</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">Component</span><span class="w"> </span><span class="p">{</span>
+<span class="kr">export</span> <span class="kr">class</span> <span class="nx">MyTextField</span> <span class="kr">extends</span> <span class="nx">Component</span> <span class="p">{</span>
 
-<span class="w">    </span><span class="cm">/**</span>
+    <span class="cm">/**</span>
 <span class="cm">    * @param {boolean} newValue</span>
 <span class="cm">    */</span>
-<span class="w">    </span><span class="nx">onChange</span><span class="p">(</span><span class="nx">newValue</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">update</span><span class="p">(</span><span class="nx">newValue</span><span class="p">);</span>
-<span class="w">    </span><span class="p">}</span>
+    <span class="nx">onChange</span><span class="p">(</span><span class="nx">newValue</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">update</span><span class="p">(</span><span class="nx">newValue</span><span class="p">);</span>
+    <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="nx">MyTextField</span><span class="p">.</span><span class="nx">template</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">xml</span><span class="sb">`</span>
+<span class="nx">MyTextField</span><span class="p">.</span><span class="nx">template</span> <span class="o">=</span> <span class="nx">xml</span><span class="sb">`</span>
 <span class="sb">    &lt;input t-att-id=&quot;props.id&quot; class=&quot;text-danger&quot; t-att-value=&quot;props.value&quot; onChange.bind=&quot;onChange&quot; /&gt;</span>
 <span class="sb">`</span><span class="p">;</span>
-<span class="nx">MyTextField</span><span class="p">.</span><span class="nx">props</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="p">...</span><span class="nx">standardFieldProps</span><span class="p">,</span>
+<span class="nx">MyTextField</span><span class="p">.</span><span class="nx">props</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="p">...</span><span class="nx">standardFieldProps</span><span class="p">,</span>
 <span class="p">};</span>
-<span class="nx">MyTextField</span><span class="p">.</span><span class="nx">supportedTypes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;char&quot;</span><span class="p">];</span>
+<span class="nx">MyTextField</span><span class="p">.</span><span class="nx">supportedTypes</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;char&quot;</span><span class="p">];</span>
 </pre></div>
 </div>
 </div>
@@ -2022,14 +2022,14 @@ the <code class="o_code docutils literal notranslate"><span class="pre">update</
 <li><p>In the same file, register the component to the fields registry.</p>
 <div class="literal-block-wrapper docutils container" id="id5">
 <div class="code-block-caption"><span class="caption-text"><code class="file o_code docutils literal notranslate"><span class="pre">my_text_field.js</span></code></span><a class="headerlink" href="#id5" title="Permalink to this code">¶</a></div>
-<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">registry</span><span class="p">.</span><span class="nx">category</span><span class="p">(</span><span class="s2">&quot;fields&quot;</span><span class="p">).</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;my_text_field&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">MyTextField</span><span class="p">);</span>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">registry</span><span class="p">.</span><span class="nx">category</span><span class="p">(</span><span class="s2">&quot;fields&quot;</span><span class="p">).</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;my_text_field&quot;</span><span class="p">,</span> <span class="nx">MyTextField</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
 <p>This maps the widget name in the arch to its actual component.</p>
 </li>
 <li><p>Add the widget in the view arch as an attribute of the field.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;somefield&quot;</span><span class="w"> </span><span class="na">widget=</span><span class="s">&quot;my_text_field&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;somefield&quot;</span> <span class="na">widget=</span><span class="s">&quot;my_text_field&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 </li>

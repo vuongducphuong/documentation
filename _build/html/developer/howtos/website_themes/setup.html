@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/howtos/website_themes/setup.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/howtos/website_themes/setup.html" />
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -2097,17 +2097,17 @@ Note</p><p><code class="o_code docutils literal notranslate"><span class="pre">/
 </section><section id="database-setup">
 <h4>Database setup<a class="headerlink" href="#database-setup" title="Permalink to this headline">¶</a></h4>
 <p>Create an empty database.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>createdb<span class="w"> </span><span class="nt">&lt;database_name&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>createdb <span class="nt">&lt;database_name&gt;</span>
 </pre></div>
 </div>
 <p>Import the SQL file in the database that you just created.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>psql<span class="w"> </span><span class="nt">&lt;database_name&gt;</span><span class="w"> </span><span class="nt">&lt; dump.sql</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>psql <span class="nt">&lt;database_name&gt;</span> <span class="nt">&lt; dump.sql</span>
 </pre></div>
 </div>
 <p>Reset the admin user password.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>psql<span class="w"> </span>\c
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>psql \c
 <span class="nt">&lt;database_name&gt;</span>
-update<span class="w"> </span>res_users<span class="w"> </span>set<span class="w"> </span>login=&#39;admin&#39;,<span class="w"> </span>password=&#39;admin&#39;<span class="w"> </span>where<span class="w"> </span>id=2;
+update res_users set login=&#39;admin&#39;, password=&#39;admin&#39; where id=2;
 </pre></div>
 </div>
 </section><section id="getting-started">
@@ -2130,7 +2130,7 @@ count the number of lines of code.</p>
 <p>A typical way to <a class="reference internal" href="../../reference/cli.html#reference-cmdline-server"><span class="std std-ref">run the server</span></a> would be to add all command line arguments to a <code class="o_code docutils literal notranslate"><span class="pre">.sh</span></code> script.</p>
 <div class="alert alert-success">
 <p class="alert-title">
-Example</p><div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>./odoo-bin<span class="w"> </span>--addons-path=../enterprise,addons<span class="w"> </span>--db-filter=<span class="nt">&lt;database&gt;</span><span class="w"> </span>-d<span class="w"> </span><span class="nt">&lt;database&gt;</span><span class="w"> </span>--without-demo=all<span class="w"> </span>-i<span class="w"> </span>website<span class="w"> </span>--dev=xml
+Example</p><div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>./odoo-bin --addons-path=../enterprise,addons --db-filter=<span class="nt">&lt;database&gt;</span> -d <span class="nt">&lt;database&gt;</span> --without-demo=all -i website --dev=xml
 </pre></div>
 </div>
 </div>

@@ -23,7 +23,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/contributing/development.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/contributing/development.html" />
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -1974,8 +1974,8 @@ with the installation path of Git (by default <code class="file o_code docutils 
 </li>
 <li><p>Configure Git to identify yourself as the author of your future contributions. Enter the same email
 address you used to register on GitHub.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span>“Your<span class="w"> </span>Name”
-<span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span>“youremail@example.com”
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git config --global user.name “Your Name”
+<span class="gp">$</span> git config --global user.email “youremail@example.com”
 </pre></div>
 </div>
 </li>
@@ -1986,22 +1986,22 @@ Odoo, configure Git to push changes to the shared forks created on the account <
 <div class="sphinx-tabs docutils container">
 <div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-1-1-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-1-1-0" name="1-0" role="tab" tabindex="0">Link Git with your fork(s)</button><button aria-controls="panel-1-1-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-1-1-1" name="1-1" role="tab" tabindex="-1">Link Git with odoo-dev</button></div><div aria-labelledby="tab-1-1-0" class="sphinx-tabs-panel" id="panel-1-1-0" name="1-0" role="tabpanel" tabindex="0"><p>In the command below, replace <code class="o_code docutils literal notranslate"><span class="pre">&lt;your_github_account&gt;</span></code> with the name of the GitHub account
 on which you created the fork(s).</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>/CommunityPath
-<span class="gp">$ </span>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>dev<span class="w"> </span>git@github.com:&lt;your_github_account&gt;/odoo.git
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">cd</span> /CommunityPath
+<span class="gp">$</span> git remote add dev git@github.com:&lt;your_github_account&gt;/odoo.git
 </pre></div>
 </div>
 <p>If you have access to <code class="o_code docutils literal notranslate"><span class="pre">odoo/enterprise</span></code>, configure the related remote too.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>/EnterprisePath
-<span class="gp">$ </span>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>dev<span class="w"> </span>git@github.com:&lt;your_github_account&gt;/enterprise.git
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">cd</span> /EnterprisePath
+<span class="gp">$</span> git remote add dev git@github.com:&lt;your_github_account&gt;/enterprise.git
 </pre></div>
 </div>
-</div><div aria-labelledby="tab-1-1-1" class="sphinx-tabs-panel" hidden="true" id="panel-1-1-1" name="1-1" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>/CommunityPath
-<span class="gp">$ </span>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>dev<span class="w"> </span>git@github.com:odoo-dev/odoo.git
-<span class="gp">$ </span>git<span class="w"> </span>remote<span class="w"> </span>set-url<span class="w"> </span>--push<span class="w"> </span>origin<span class="w"> </span>you_should_not_push_on_this_repository
+</div><div aria-labelledby="tab-1-1-1" class="sphinx-tabs-panel" hidden="true" id="panel-1-1-1" name="1-1" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">cd</span> /CommunityPath
+<span class="gp">$</span> git remote add dev git@github.com:odoo-dev/odoo.git
+<span class="gp">$</span> git remote set-url --push origin you_should_not_push_on_this_repository
 
-<span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>/EnterprisePath
-<span class="gp">$ </span>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>dev<span class="w"> </span>git@github.com:odoo-dev/enterprise.git
-<span class="gp">$ </span>git<span class="w"> </span>remote<span class="w"> </span>set-url<span class="w"> </span>--push<span class="w"> </span>origin<span class="w"> </span>you_should_not_push_on_this_repository
+<span class="gp">$</span> <span class="nb">cd</span> /EnterprisePath
+<span class="gp">$</span> git remote add dev git@github.com:odoo-dev/enterprise.git
+<span class="gp">$</span> git remote set-url --push origin you_should_not_push_on_this_repository
 </pre></div>
 </div>
 </div></div>
@@ -2031,10 +2031,10 @@ branch: <code class="o_code docutils literal notranslate"><span class="pre">16.0
 handle: <code class="o_code docutils literal notranslate"><span class="pre">16.0-...-xyz</span></code>.</p>
 <div class="alert alert-success">
 <p class="alert-title">
-Example</p><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>switch<span class="w"> </span>-c<span class="w"> </span><span class="m">16</span>.0-fix-invoices
+Example</p><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git switch -c <span class="m">16</span>.0-fix-invoices
 </pre></div>
 </div>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>switch<span class="w"> </span>-c<span class="w"> </span><span class="m">16</span>.0-fix-invoices-xyz
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git switch -c <span class="m">16</span>.0-fix-invoices-xyz
 </pre></div>
 </div>
 </div>
@@ -2054,15 +2054,15 @@ consequences.</p></li>
 </ul>
 </li>
 <li><p>Commit your changes. Write a clear commit message as instructed in the <a class="reference internal" href="development/git_guidelines.html"><span class="doc">Git guidelines</span></a>.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>add<span class="w"> </span>.
-<span class="gp">$ </span>git<span class="w"> </span>commit
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git add .
+<span class="gp">$</span> git commit
 </pre></div>
 </div>
 </li>
 <li><p>Push your change to your fork, for which we added the remote alias <code class="o_code docutils literal notranslate"><span class="pre">dev</span></code>.</p>
 <div class="alert alert-success">
 <p class="alert-title">
-Example</p><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>dev<span class="w"> </span><span class="m">16</span>.0-fix-invoices-xyz
+Example</p><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git push -u dev <span class="m">16</span>.0-fix-invoices-xyz
 </pre></div>
 </div>
 </div>

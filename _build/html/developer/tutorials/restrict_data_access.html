@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/tutorials/restrict_data_access.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/tutorials/restrict_data_access.html" />
     
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -2167,15 +2167,15 @@ more specific: while an agent can interact with properties in general we may not
 want them to update or even see properties managed by one of their colleagues.</p>
 <p>Record <em>rules</em> provide that precision: they can grant or reject access to
 individual records:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;rule_id&quot;</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.rule&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>A<span class="w"> </span>description<span class="w"> </span>of<span class="w"> </span>the<span class="w"> </span>rule&#39;s<span class="w"> </span>role<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;model_id&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;model_to_manage&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;perm_read&quot;</span><span class="w"> </span><span class="na">eval=</span><span class="s">&quot;False&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;groups&quot;</span><span class="w"> </span><span class="na">eval=</span><span class="s">&quot;[Command.link(ref(&#39;base.group_user&#39;))]&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;domain_force&quot;</span><span class="nt">&gt;</span>[
-<span class="w">        </span>&#39;|&#39;,<span class="w"> </span>(&#39;user_id&#39;,<span class="w"> </span>&#39;=&#39;,<span class="w"> </span>user.id),
-<span class="w">             </span>(&#39;user_id&#39;,<span class="w"> </span>&#39;=&#39;,<span class="w"> </span>False)
-<span class="w">    </span>]<span class="nt">&lt;/field&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">&quot;rule_id&quot;</span> <span class="na">model=</span><span class="s">&quot;ir.rule&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>A description of the rule&#39;s role<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;model_id&quot;</span> <span class="na">ref=</span><span class="s">&quot;model_to_manage&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;perm_read&quot;</span> <span class="na">eval=</span><span class="s">&quot;False&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;groups&quot;</span> <span class="na">eval=</span><span class="s">&quot;[Command.link(ref(&#39;base.group_user&#39;))]&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;domain_force&quot;</span><span class="nt">&gt;</span>[
+        &#39;|&#39;, (&#39;user_id&#39;, &#39;=&#39;, user.id),
+             (&#39;user_id&#39;, &#39;=&#39;, False)
+    ]<span class="nt">&lt;/field&gt;</span>
 <span class="nt">&lt;/record&gt;</span>
 </pre></div>
 </div>
@@ -2360,13 +2360,13 @@ working in / for).</p></li>
 </ul>
 <p>Multi-company rules will <em>usually</em> use the former i.e. check if the record is
 associated with <em>one</em> of the companies the user has access to:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.rule&quot;</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;hr_appraisal_plan_comp_rule&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>Appraisal<span class="w"> </span>Plan<span class="w"> </span>multi-company<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;model_id&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;model_hr_appraisal_plan&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;domain_force&quot;</span><span class="nt">&gt;</span>[
-<span class="w">        </span>&#39;|&#39;,<span class="w"> </span>(&#39;company_id&#39;,<span class="w"> </span>&#39;=&#39;,<span class="w"> </span>False),
-<span class="w">             </span>(&#39;company_id&#39;,<span class="w"> </span>&#39;in&#39;,<span class="w"> </span>company_ids)
-<span class="w">    </span>]<span class="nt">&lt;/field&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span> <span class="na">model=</span><span class="s">&quot;ir.rule&quot;</span> <span class="na">id=</span><span class="s">&quot;hr_appraisal_plan_comp_rule&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>Appraisal Plan multi-company<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;model_id&quot;</span> <span class="na">ref=</span><span class="s">&quot;model_hr_appraisal_plan&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;domain_force&quot;</span><span class="nt">&gt;</span>[
+        &#39;|&#39;, (&#39;company_id&#39;, &#39;=&#39;, False),
+             (&#39;company_id&#39;, &#39;in&#39;, company_ids)
+    ]<span class="nt">&lt;/field&gt;</span>
 <span class="nt">&lt;/record&gt;</span>
 </pre></div>
 </div>

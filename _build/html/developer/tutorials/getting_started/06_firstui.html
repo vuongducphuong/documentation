@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/tutorials/getting_started/06_firstui.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/tutorials/getting_started/06_firstui.html" />
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -1994,10 +1994,10 @@ advanced topic. In our Real Estate example, we would like to link a menu to the 
 model, so we are able to create a new record. The action can be viewed as the link between the menu
 and the model.</p>
 <p>A basic action for our <code class="o_code docutils literal notranslate"><span class="pre">test.model</span></code> is:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;test_model_action&quot;</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.actions.act_window&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>Test<span class="w"> </span>action<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;res_model&quot;</span><span class="nt">&gt;</span>test.model<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;view_mode&quot;</span><span class="nt">&gt;</span>tree,form<span class="nt">&lt;/field&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">&quot;test_model_action&quot;</span> <span class="na">model=</span><span class="s">&quot;ir.actions.act_window&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>Test action<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;res_model&quot;</span><span class="nt">&gt;</span>test.model<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;view_mode&quot;</span><span class="nt">&gt;</span>tree,form<span class="nt">&lt;/field&gt;</span>
 <span class="nt">&lt;/record&gt;</span>
 </pre></div>
 </div>
@@ -2037,7 +2037,7 @@ displayed:</p>
 <p>To reduce the complexity in declaring a menu (<code class="o_code docutils literal notranslate"><span class="pre">ir.ui.menu</span></code>) and connecting it to the corresponding action,
 we can use the <code class="o_code docutils literal notranslate"><span class="pre">&lt;menuitem&gt;</span></code> shortcut .</p>
 <p>A basic menu for our <code class="o_code docutils literal notranslate"><span class="pre">test_model_action</span></code> is:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;menuitem</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;test_model_menu_action&quot;</span><span class="w"> </span><span class="na">action=</span><span class="s">&quot;test_model_action&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;menuitem</span> <span class="na">id=</span><span class="s">&quot;test_model_menu_action&quot;</span> <span class="na">action=</span><span class="s">&quot;test_model_action&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 <p>The menu <code class="o_code docutils literal notranslate"><span class="pre">test_model_menu_action</span></code> is linked to the action <code class="o_code docutils literal notranslate"><span class="pre">test_model_action</span></code>, and the action
@@ -2055,10 +2055,10 @@ dropdown menu)</p></li>
 </ol>
 <p>The easiest way to define the structure is to create it in the XML file. A basic
 structure for our <code class="o_code docutils literal notranslate"><span class="pre">test_model_action</span></code> is:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;menuitem</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;test_menu_root&quot;</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Test&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;menuitem</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;test_first_level_menu&quot;</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;First Level&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;menuitem</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;test_model_menu_action&quot;</span><span class="w"> </span><span class="na">action=</span><span class="s">&quot;test_model_action&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/menuitem&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;menuitem</span> <span class="na">id=</span><span class="s">&quot;test_menu_root&quot;</span> <span class="na">name=</span><span class="s">&quot;Test&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;menuitem</span> <span class="na">id=</span><span class="s">&quot;test_first_level_menu&quot;</span> <span class="na">name=</span><span class="s">&quot;First Level&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;menuitem</span> <span class="na">id=</span><span class="s">&quot;test_model_menu_action&quot;</span> <span class="na">action=</span><span class="s">&quot;test_model_action&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/menuitem&gt;</span>
 <span class="nt">&lt;/menuitem&gt;</span>
 </pre></div>
 </div>

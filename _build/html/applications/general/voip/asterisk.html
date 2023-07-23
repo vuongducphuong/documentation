@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/applications/general/voip/asterisk.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/applications/general/voip/asterisk.html" />
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -1968,33 +1968,33 @@
 <ul class="simple">
 <li><p><strong>Change to the pjproject source directory:</strong></p></li>
 </ul>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp"># </span><span class="nb">cd</span><span class="w"> </span>pjproject
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">#</span> <span class="nb">cd</span> pjproject
 </pre></div>
 </div>
 <ul class="simple">
 <li><p><strong>run:</strong></p></li>
 </ul>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp"># </span>./configure<span class="w"> </span>--prefix<span class="o">=</span>/usr<span class="w"> </span>--enable-shared<span class="w"> </span>--disable-sound<span class="w"> </span>--disable-resample<span class="w"> </span>--disable-video<span class="w"> </span>--disable-opencore-amr<span class="w"> </span><span class="nv">CFLAGS</span><span class="o">=</span><span class="s1">&#39;-O2 -DNDEBUG&#39;</span>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">#</span> ./configure --prefix<span class="o">=</span>/usr --enable-shared --disable-sound --disable-resample --disable-video --disable-opencore-amr <span class="nv">CFLAGS</span><span class="o">=</span><span class="s1">&#39;-O2 -DNDEBUG&#39;</span>
 </pre></div>
 </div>
 <ul class="simple">
 <li><p><strong>Build and install pjproject:</strong></p></li>
 </ul>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp"># </span>make<span class="w"> </span>dep
-<span class="gp"># </span>make
-<span class="gp"># </span>make<span class="w"> </span>install
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">#</span> make dep
+<span class="gp">#</span> make
+<span class="gp">#</span> make install
 </pre></div>
 </div>
 <ul class="simple">
 <li><p><strong>Update shared library links:</strong></p></li>
 </ul>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp"># </span>ldconfig
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">#</span> ldconfig
 </pre></div>
 </div>
 <ul class="simple">
 <li><p><strong>Verify that pjproject is installed:</strong></p></li>
 </ul>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp"># </span>ldconfig<span class="w"> </span>-p<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>pj
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">#</span> ldconfig -p <span class="p">|</span> grep pj
 </pre></div>
 </div>
 <ul class="simple">

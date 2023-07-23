@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/reference/frontend/owl_components.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/reference/frontend/owl_components.html" />
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -1998,20 +1998,20 @@ Note</p><p>Currently, all Odoo versions (starting in version 14) share the same 
 <p>The <a class="reference external" href="https://github.com/odoo/owl/blob/master/doc/readme.md">Owl documentation</a> already documents in detail the Owl framework, so this
 page will only provide Odoo specific information. But first, let us see how we
 can make a simple component in Odoo.</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useState</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">owl</span><span class="p">.</span><span class="nx">hooks</span><span class="p">;</span>
-<span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">xml</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">owl</span><span class="p">.</span><span class="nx">tags</span><span class="p">;</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kr">const</span> <span class="p">{</span> <span class="nx">useState</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">owl</span><span class="p">.</span><span class="nx">hooks</span><span class="p">;</span>
+<span class="kr">const</span> <span class="p">{</span> <span class="nx">xml</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">owl</span><span class="p">.</span><span class="nx">tags</span><span class="p">;</span>
 
-<span class="kd">class</span><span class="w"> </span><span class="nx">MyComponent</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">Component</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">({</span><span class="w"> </span><span class="nx">value</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="p">});</span>
-<span class="w">    </span><span class="p">}</span>
+<span class="kr">class</span> <span class="nx">MyComponent</span> <span class="kr">extends</span> <span class="nx">Component</span> <span class="p">{</span>
+    <span class="nx">setup</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">state</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">({</span> <span class="nx">value</span><span class="o">:</span> <span class="mi">1</span> <span class="p">});</span>
+    <span class="p">}</span>
 
-<span class="w">    </span><span class="nx">increment</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">value</span><span class="o">++</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
+    <span class="nx">increment</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">value</span><span class="o">++</span><span class="p">;</span>
+    <span class="p">}</span>
 <span class="p">}</span>
-<span class="nx">MyComponent</span><span class="p">.</span><span class="nx">template</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">xml</span>
-<span class="w">    </span><span class="sb">`&lt;div t-on-click=&quot;increment&quot;&gt;</span>
+<span class="nx">MyComponent</span><span class="p">.</span><span class="nx">template</span> <span class="o">=</span> <span class="nx">xml</span>
+    <span class="sb">`&lt;div t-on-click=&quot;increment&quot;&gt;</span>
 <span class="sb">        &lt;t t-esc=&quot;state.value&quot;&gt;</span>
 <span class="sb">    &lt;/div&gt;`</span><span class="p">;</span>
 </pre></div>
@@ -2031,22 +2031,22 @@ and optionally a scss (or css) file (<code class="o_code docutils literal notran
 then be added to some assets bundle. The web framework will take care of
 loading the javascript/css files, and loading the templates into Owl.</p>
 <p>Here is how the component above should be defined:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useState</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">owl</span><span class="p">.</span><span class="nx">hooks</span><span class="p">;</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kr">const</span> <span class="p">{</span> <span class="nx">useState</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">owl</span><span class="p">.</span><span class="nx">hooks</span><span class="p">;</span>
 
-<span class="kd">class</span><span class="w"> </span><span class="nx">MyComponent</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">Component</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="p">...</span>
+<span class="kr">class</span> <span class="nx">MyComponent</span> <span class="kr">extends</span> <span class="nx">Component</span> <span class="p">{</span>
+    <span class="p">...</span>
 <span class="p">}</span>
-<span class="nx">MyComponent</span><span class="p">.</span><span class="nx">template</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;myaddon.MyComponent&#39;</span><span class="p">;</span>
+<span class="nx">MyComponent</span><span class="p">.</span><span class="nx">template</span> <span class="o">=</span> <span class="s1">&#39;myaddon.MyComponent&#39;</span><span class="p">;</span>
 </pre></div>
 </div>
 <p>And the template is now located in the corresponding xml file:</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span>
-<span class="nt">&lt;templates</span><span class="w"> </span><span class="na">xml:space=</span><span class="s">&quot;preserve&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;templates</span> <span class="na">xml:space=</span><span class="s">&quot;preserve&quot;</span><span class="nt">&gt;</span>
 
-<span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-name=</span><span class="s">&quot;myaddon.MyComponent&quot;</span><span class="w"> </span><span class="na">owl=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
-<span class="w">  </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">t-on-click=</span><span class="s">&quot;increment&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-esc=</span><span class="s">&quot;state.value&quot;</span><span class="nt">/&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;t</span> <span class="na">t-name=</span><span class="s">&quot;myaddon.MyComponent&quot;</span> <span class="na">owl=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">t-on-click=</span><span class="s">&quot;increment&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-esc=</span><span class="s">&quot;state.value&quot;</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/t&gt;</span>
 
 <span class="nt">&lt;/templates&gt;</span>
@@ -2078,17 +2078,17 @@ is an occasionally useful pattern in Odoo, we need to make sure that no componen
 in Odoo directly uses the constructor method. Instead, components should use the
 <code class="o_code docutils literal notranslate"><span class="pre">setup</span></code> method:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// correct:</span>
-<span class="kd">class</span><span class="w"> </span><span class="nx">MyComponent</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">Component</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="c1">// initialize component here</span>
-<span class="w">    </span><span class="p">}</span>
+<span class="kr">class</span> <span class="nx">MyComponent</span> <span class="kr">extends</span> <span class="nx">Component</span> <span class="p">{</span>
+    <span class="nx">setup</span><span class="p">()</span> <span class="p">{</span>
+        <span class="c1">// initialize component here</span>
+    <span class="p">}</span>
 <span class="p">}</span>
 
 <span class="c1">// incorrect. Do not do that!</span>
-<span class="kd">class</span><span class="w"> </span><span class="nx">IncorrectComponent</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">Component</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kr">constructor</span><span class="p">(</span><span class="nx">parent</span><span class="p">,</span><span class="w"> </span><span class="nx">props</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="c1">// initialize component here</span>
-<span class="w">    </span><span class="p">}</span>
+<span class="kr">class</span> <span class="nx">IncorrectComponent</span> <span class="kr">extends</span> <span class="nx">Component</span> <span class="p">{</span>
+    <span class="nx">constructor</span><span class="p">(</span><span class="nx">parent</span><span class="p">,</span> <span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// initialize component here</span>
+    <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -2142,8 +2142,8 @@ checkboxes or datepickers. This page explains how to use these generic component
 horizontally. The swiper is wrapping a target element to add actions to it.
 The action is executed once the user has released the swiper passed
 a portion of its width.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;ActionSwiper</span><span class="w"> </span><span class="na">onLeftSwipe=</span><span class="s">&quot;Object&quot;</span><span class="w"> </span><span class="na">onRightSwipe=</span><span class="s">&quot;Object&quot;</span><span class="nt">&gt;</span>
-<span class="w">  </span><span class="nt">&lt;SomeElement/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;ActionSwiper</span> <span class="na">onLeftSwipe=</span><span class="s">&quot;Object&quot;</span> <span class="na">onRightSwipe=</span><span class="s">&quot;Object&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;SomeElement/&gt;</span>
 <span class="nt">&lt;/ActionSwiper&gt;</span>
 </pre></div>
 </div>
@@ -2158,22 +2158,22 @@ element might be swipable, its animation and the minimum portion to swipe to per
 <p>The following example creates a basic ActionSwiper component.
 Here, the swipe is enabled in both directions.</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;ActionSwiper</span>
-<span class="w">  </span><span class="na">onRightSwipe=</span><span class="s">&quot;</span>
+  <span class="na">onRightSwipe=</span><span class="s">&quot;</span>
 <span class="s">    {</span>
 <span class="s">      action: &#39;() =&gt; Delete item&#39;,</span>
 <span class="s">      icon: &#39;fa-delete&#39;,</span>
 <span class="s">      bgColor: &#39;bg-danger&#39;,</span>
 <span class="s">    }&quot;</span>
-<span class="w">  </span><span class="na">onLeftSwipe=</span><span class="s">&quot;</span>
+  <span class="na">onLeftSwipe=</span><span class="s">&quot;</span>
 <span class="s">    {</span>
 <span class="s">      action: &#39;() =&gt; Star item&#39;,</span>
 <span class="s">      icon: &#39;fa-star&#39;,</span>
 <span class="s">      bgColor: &#39;bg-warning&#39;,</span>
 <span class="s">    }&quot;</span>
 <span class="nt">&gt;</span>
-<span class="w">  </span><span class="nt">&lt;div&gt;</span>
-<span class="w">    </span>Swipable<span class="w"> </span>item
-<span class="w">  </span><span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div&gt;</span>
+    Swipable item
+  <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/ActionSwiper&gt;</span>
 </pre></div>
 </div>
@@ -2239,18 +2239,18 @@ of the swiper.</p>
 <p>In the following example, you can use <code class="o_code docutils literal notranslate"><span class="pre">xpath</span></code>’s to wrap an existing element
 in the ActionSwiper component. Here, a swiper has been added to mark
 a message as read in mail.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;xpath</span><span class="w"> </span><span class="na">expr=</span><span class="s">&quot;//*[hasclass(&#39;o_Message&#39;)]&quot;</span><span class="w"> </span><span class="na">position=</span><span class="s">&quot;after&quot;</span><span class="nt">&gt;</span>
-<span class="w">  </span><span class="nt">&lt;ActionSwiper</span>
-<span class="w">    </span><span class="na">onRightSwipe=</span><span class="s">&quot;messaging.device.isMobile and messageView.message.isNeedaction ?</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;xpath</span> <span class="na">expr=</span><span class="s">&quot;//*[hasclass(&#39;o_Message&#39;)]&quot;</span> <span class="na">position=</span><span class="s">&quot;after&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ActionSwiper</span>
+    <span class="na">onRightSwipe=</span><span class="s">&quot;messaging.device.isMobile and messageView.message.isNeedaction ?</span>
 <span class="s">      {</span>
 <span class="s">        action: () =&gt; messageView.message.markAsRead(),</span>
 <span class="s">        icon: &#39;fa-check-circle&#39;,</span>
 <span class="s">        bgColor: &#39;bg-success&#39;,</span>
 <span class="s">      } : undefined&quot;</span>
-<span class="w">  </span><span class="nt">/&gt;</span>
+  <span class="nt">/&gt;</span>
 <span class="nt">&lt;/xpath&gt;</span>
-<span class="nt">&lt;xpath</span><span class="w"> </span><span class="na">expr=</span><span class="s">&quot;//ActionSwiper&quot;</span><span class="w"> </span><span class="na">position=</span><span class="s">&quot;inside&quot;</span><span class="nt">&gt;</span>
-<span class="w">  </span><span class="nt">&lt;xpath</span><span class="w"> </span><span class="na">expr=</span><span class="s">&quot;//*[hasclass(&#39;o_Message&#39;)]&quot;</span><span class="w"> </span><span class="na">position=</span><span class="s">&quot;move&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;xpath</span> <span class="na">expr=</span><span class="s">&quot;//ActionSwiper&quot;</span> <span class="na">position=</span><span class="s">&quot;inside&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;xpath</span> <span class="na">expr=</span><span class="s">&quot;//*[hasclass(&#39;o_Message&#39;)]&quot;</span> <span class="na">position=</span><span class="s">&quot;move&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/xpath&gt;</span>
 </pre></div>
 </div>
@@ -2263,8 +2263,8 @@ a message as read in mail.</p>
 <h4>Description<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
 <p>This is a simple checkbox component with a label next to it. The checkbox is
 linked to the label: the checkbox is toggled whenever the label is clicked.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;CheckBox</span><span class="w"> </span><span class="na">value=</span><span class="s">&quot;boolean&quot;</span><span class="w"> </span><span class="na">disabled=</span><span class="s">&quot;boolean&quot;</span><span class="w"> </span><span class="na">t-on-change=</span><span class="s">&quot;onValueChange&quot;</span><span class="nt">&gt;</span>
-<span class="w">  </span>Some<span class="w"> </span>Text
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;CheckBox</span> <span class="na">value=</span><span class="s">&quot;boolean&quot;</span> <span class="na">disabled=</span><span class="s">&quot;boolean&quot;</span> <span class="na">t-on-change=</span><span class="s">&quot;onValueChange&quot;</span><span class="nt">&gt;</span>
+  Some Text
 <span class="nt">&lt;/CheckBox&gt;</span>
 </pre></div>
 </div>
@@ -2421,13 +2421,13 @@ features such as:</p>
 components: a <code class="o_code docutils literal notranslate"><span class="pre">Dropdown</span></code> component (the actual dropdown), and <code class="o_code docutils literal notranslate"><span class="pre">DropdownItem</span></code>,
 for each element in the item list.</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;Dropdown&gt;</span>
-<span class="w">  </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set-slot=</span><span class="s">&quot;toggler&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="cm">&lt;!-- &quot;toggler&quot; slot content is rendered inside a button --&gt;</span>
-<span class="w">    </span>Click<span class="w"> </span>me<span class="w"> </span>to<span class="w"> </span>toggle<span class="w"> </span>the<span class="w"> </span>dropdown<span class="w"> </span>menu<span class="w"> </span>!
-<span class="w">  </span><span class="nt">&lt;/t&gt;</span>
-<span class="w">  </span><span class="cm">&lt;!-- &quot;default&quot; slot content is rendered inside a div --&gt;</span>
-<span class="w">  </span><span class="nt">&lt;DropdownItem</span><span class="w"> </span><span class="na">onSelected=</span><span class="s">&quot;selectItem1&quot;</span><span class="nt">&gt;</span>Menu<span class="w"> </span>Item<span class="w"> </span>1<span class="nt">&lt;/DropdownItem&gt;</span>
-<span class="w">  </span><span class="nt">&lt;DropdownItem</span><span class="w"> </span><span class="na">onSelected=</span><span class="s">&quot;selectItem2&quot;</span><span class="nt">&gt;</span>Menu<span class="w"> </span>Item<span class="w"> </span>2<span class="nt">&lt;/DropdownItem&gt;</span>
+  <span class="nt">&lt;t</span> <span class="na">t-set-slot=</span><span class="s">&quot;toggler&quot;</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- &quot;toggler&quot; slot content is rendered inside a button --&gt;</span>
+    Click me to toggle the dropdown menu !
+  <span class="nt">&lt;/t&gt;</span>
+  <span class="c">&lt;!-- &quot;default&quot; slot content is rendered inside a div --&gt;</span>
+  <span class="nt">&lt;DropdownItem</span> <span class="na">onSelected=</span><span class="s">&quot;selectItem1&quot;</span><span class="nt">&gt;</span>Menu Item 1<span class="nt">&lt;/DropdownItem&gt;</span>
+  <span class="nt">&lt;DropdownItem</span> <span class="na">onSelected=</span><span class="s">&quot;selectItem2&quot;</span><span class="nt">&gt;</span>Menu Item 2<span class="nt">&lt;/DropdownItem&gt;</span>
 <span class="nt">&lt;/Dropdown&gt;</span>
 </pre></div>
 </div>
@@ -2541,7 +2541,7 @@ none, closest or all (default = <code class="o_code docutils literal notranslate
 <p>The rendered DOM is structured like this:</p>
 <div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;dropdown&quot;</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;dropdown-toggle&quot;</span><span class="p">&gt;</span>Click me !<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-    <span class="cm">&lt;!-- following &lt;div/&gt; will or won&#39;t appear in the DOM depending on the state controlled by the preceding button --&gt;</span>
+    <span class="c">&lt;!-- following &lt;div/&gt; will or won&#39;t appear in the DOM depending on the state controlled by the preceding button --&gt;</span>
     <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;dropdown-menu&quot;</span><span class="p">&gt;</span>
         <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;dropdown-item&quot;</span><span class="p">&gt;</span>Menu Item 1<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
         <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;dropdown-item&quot;</span><span class="p">&gt;</span>Menu Item 2<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
@@ -2567,23 +2567,23 @@ open themselves on mouse hover, without the need for a click.</p>
 <p>When one dropdown toggler is clicked (<strong>File</strong> , <strong>Edit</strong> or <strong>About</strong>), the
 others will open themselves on hover.</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div&gt;</span>
-<span class="w">  </span><span class="nt">&lt;Dropdown&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set-slot=</span><span class="s">&quot;toggler&quot;</span><span class="nt">&gt;</span>File<span class="nt">&lt;/t&gt;</span>
-<span class="w">    </span><span class="nt">&lt;DropdownItem</span><span class="w"> </span><span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;file-open&#39;)&quot;</span><span class="nt">&gt;</span>Open<span class="nt">&lt;/DropdownItem&gt;</span>
-<span class="w">    </span><span class="nt">&lt;DropdownItem</span><span class="w"> </span><span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;file-new-document&#39;)&quot;</span><span class="nt">&gt;</span>New<span class="w"> </span>Document<span class="nt">&lt;/DropdownItem&gt;</span>
-<span class="w">    </span><span class="nt">&lt;DropdownItem</span><span class="w"> </span><span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;file-new-spreadsheet&#39;)&quot;</span><span class="nt">&gt;</span>New<span class="w"> </span>Spreadsheet<span class="nt">&lt;/DropdownItem&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/Dropdown&gt;</span>
-<span class="w">  </span><span class="nt">&lt;Dropdown&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set-slot=</span><span class="s">&quot;toggler&quot;</span><span class="nt">&gt;</span>Edit<span class="nt">&lt;/t&gt;</span>
-<span class="w">    </span><span class="nt">&lt;DropdownItem</span><span class="w"> </span><span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;edit-undo&#39;)&quot;</span><span class="nt">&gt;</span>Undo<span class="nt">&lt;/DropdownItem&gt;</span>
-<span class="w">    </span><span class="nt">&lt;DropdownItem</span><span class="w"> </span><span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;edit-redo&#39;)&quot;</span><span class="nt">&gt;</span>Redo<span class="nt">&lt;/DropdownItem&gt;</span>
-<span class="w">    </span><span class="nt">&lt;DropdownItem</span><span class="w"> </span><span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;edit-find&#39;)&quot;</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/DropdownItem&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/Dropdown&gt;</span>
-<span class="w">  </span><span class="nt">&lt;Dropdown&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set-slot=</span><span class="s">&quot;toggler&quot;</span><span class="nt">&gt;</span>About<span class="nt">&lt;/t&gt;</span>
-<span class="w">    </span><span class="nt">&lt;DropdownItem</span><span class="w"> </span><span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;about-help&#39;)&quot;</span><span class="nt">&gt;</span>Help<span class="nt">&lt;/DropdownItem&gt;</span>
-<span class="w">    </span><span class="nt">&lt;DropdownItem</span><span class="w"> </span><span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;about-update&#39;)&quot;</span><span class="nt">&gt;</span>Check<span class="w"> </span>update<span class="nt">&lt;/DropdownItem&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/Dropdown&gt;</span>
+  <span class="nt">&lt;Dropdown&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-set-slot=</span><span class="s">&quot;toggler&quot;</span><span class="nt">&gt;</span>File<span class="nt">&lt;/t&gt;</span>
+    <span class="nt">&lt;DropdownItem</span> <span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;file-open&#39;)&quot;</span><span class="nt">&gt;</span>Open<span class="nt">&lt;/DropdownItem&gt;</span>
+    <span class="nt">&lt;DropdownItem</span> <span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;file-new-document&#39;)&quot;</span><span class="nt">&gt;</span>New Document<span class="nt">&lt;/DropdownItem&gt;</span>
+    <span class="nt">&lt;DropdownItem</span> <span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;file-new-spreadsheet&#39;)&quot;</span><span class="nt">&gt;</span>New Spreadsheet<span class="nt">&lt;/DropdownItem&gt;</span>
+  <span class="nt">&lt;/Dropdown&gt;</span>
+  <span class="nt">&lt;Dropdown&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-set-slot=</span><span class="s">&quot;toggler&quot;</span><span class="nt">&gt;</span>Edit<span class="nt">&lt;/t&gt;</span>
+    <span class="nt">&lt;DropdownItem</span> <span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;edit-undo&#39;)&quot;</span><span class="nt">&gt;</span>Undo<span class="nt">&lt;/DropdownItem&gt;</span>
+    <span class="nt">&lt;DropdownItem</span> <span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;edit-redo&#39;)&quot;</span><span class="nt">&gt;</span>Redo<span class="nt">&lt;/DropdownItem&gt;</span>
+    <span class="nt">&lt;DropdownItem</span> <span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;edit-find&#39;)&quot;</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/DropdownItem&gt;</span>
+  <span class="nt">&lt;/Dropdown&gt;</span>
+  <span class="nt">&lt;Dropdown&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-set-slot=</span><span class="s">&quot;toggler&quot;</span><span class="nt">&gt;</span>About<span class="nt">&lt;/t&gt;</span>
+    <span class="nt">&lt;DropdownItem</span> <span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;about-help&#39;)&quot;</span><span class="nt">&gt;</span>Help<span class="nt">&lt;/DropdownItem&gt;</span>
+    <span class="nt">&lt;DropdownItem</span> <span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;about-update&#39;)&quot;</span><span class="nt">&gt;</span>Check update<span class="nt">&lt;/DropdownItem&gt;</span>
+  <span class="nt">&lt;/Dropdown&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
@@ -2591,82 +2591,82 @@ others will open themselves on hover.</p>
 <h4>Example: Multi-level Dropdown (with <code class="o_code docutils literal notranslate"><span class="pre">t-call</span></code>)<a class="headerlink" href="#example-multi-level-dropdown-with-t-call" title="Permalink to this headline">¶</a></h4>
 <p>This example shows how one could make a <code class="o_code docutils literal notranslate"><span class="pre">File</span></code> dropdown menu, with submenus for
 the <code class="o_code docutils literal notranslate"><span class="pre">New</span></code> and <code class="o_code docutils literal notranslate"><span class="pre">Save</span> <span class="pre">as...</span></code> sub elements.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-name=</span><span class="s">&quot;addon.Dropdown.File&quot;</span><span class="w"> </span><span class="na">owl=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
-<span class="w">  </span><span class="nt">&lt;Dropdown&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set-slot=</span><span class="s">&quot;toggler&quot;</span><span class="nt">&gt;</span>File<span class="nt">&lt;/t&gt;</span>
-<span class="w">    </span><span class="nt">&lt;DropdownItem</span><span class="w"> </span><span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;file-open&#39;)&quot;</span><span class="nt">&gt;</span>Open<span class="nt">&lt;/DropdownItem&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-call=</span><span class="s">&quot;addon.Dropdown.File.New&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;DropdownItem</span><span class="w"> </span><span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;file-save&#39;)&quot;</span><span class="nt">&gt;</span>Save<span class="nt">&lt;/DropdownItem&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-call=</span><span class="s">&quot;addon.Dropdown.File.Save.As&quot;</span><span class="nt">/&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/Dropdown&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span> <span class="na">t-name=</span><span class="s">&quot;addon.Dropdown.File&quot;</span> <span class="na">owl=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;Dropdown&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-set-slot=</span><span class="s">&quot;toggler&quot;</span><span class="nt">&gt;</span>File<span class="nt">&lt;/t&gt;</span>
+    <span class="nt">&lt;DropdownItem</span> <span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;file-open&#39;)&quot;</span><span class="nt">&gt;</span>Open<span class="nt">&lt;/DropdownItem&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-call=</span><span class="s">&quot;addon.Dropdown.File.New&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;DropdownItem</span> <span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;file-save&#39;)&quot;</span><span class="nt">&gt;</span>Save<span class="nt">&lt;/DropdownItem&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-call=</span><span class="s">&quot;addon.Dropdown.File.Save.As&quot;</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/Dropdown&gt;</span>
 <span class="nt">&lt;/t&gt;</span>
 
-<span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-name=</span><span class="s">&quot;addon.Dropdown.File.New&quot;</span><span class="w"> </span><span class="na">owl=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
-<span class="w">  </span><span class="nt">&lt;Dropdown&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set-slot=</span><span class="s">&quot;toggler&quot;</span><span class="nt">&gt;</span>New<span class="nt">&lt;/t&gt;</span>
-<span class="w">    </span><span class="nt">&lt;DropdownItem</span><span class="w"> </span><span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;file-new-document&#39;)&quot;</span><span class="nt">&gt;</span>Document<span class="nt">&lt;/DropdownItem&gt;</span>
-<span class="w">    </span><span class="nt">&lt;DropdownItem</span><span class="w"> </span><span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;file-new-spreadsheet&#39;)&quot;</span><span class="nt">&gt;</span>Spreadsheet<span class="nt">&lt;/DropdownItem&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/Dropdown&gt;</span>
+<span class="nt">&lt;t</span> <span class="na">t-name=</span><span class="s">&quot;addon.Dropdown.File.New&quot;</span> <span class="na">owl=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;Dropdown&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-set-slot=</span><span class="s">&quot;toggler&quot;</span><span class="nt">&gt;</span>New<span class="nt">&lt;/t&gt;</span>
+    <span class="nt">&lt;DropdownItem</span> <span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;file-new-document&#39;)&quot;</span><span class="nt">&gt;</span>Document<span class="nt">&lt;/DropdownItem&gt;</span>
+    <span class="nt">&lt;DropdownItem</span> <span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;file-new-spreadsheet&#39;)&quot;</span><span class="nt">&gt;</span>Spreadsheet<span class="nt">&lt;/DropdownItem&gt;</span>
+  <span class="nt">&lt;/Dropdown&gt;</span>
 <span class="nt">&lt;/t&gt;</span>
 
-<span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-name=</span><span class="s">&quot;addon.Dropdown.File.Save.As&quot;</span><span class="w"> </span><span class="na">owl=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
-<span class="w">  </span><span class="nt">&lt;Dropdown&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set-slot=</span><span class="s">&quot;toggler&quot;</span><span class="nt">&gt;</span>Save<span class="w"> </span>as...<span class="nt">&lt;/t&gt;</span>
-<span class="w">    </span><span class="nt">&lt;DropdownItem</span><span class="w"> </span><span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;file-save-as-csv&#39;)&quot;</span><span class="nt">&gt;</span>CSV<span class="nt">&lt;/DropdownItem&gt;</span>
-<span class="w">    </span><span class="nt">&lt;DropdownItem</span><span class="w"> </span><span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;file-save-as-pdf&#39;)&quot;</span><span class="nt">&gt;</span>PDF<span class="nt">&lt;/DropdownItem&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/Dropdown&gt;</span>
+<span class="nt">&lt;t</span> <span class="na">t-name=</span><span class="s">&quot;addon.Dropdown.File.Save.As&quot;</span> <span class="na">owl=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;Dropdown&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-set-slot=</span><span class="s">&quot;toggler&quot;</span><span class="nt">&gt;</span>Save as...<span class="nt">&lt;/t&gt;</span>
+    <span class="nt">&lt;DropdownItem</span> <span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;file-save-as-csv&#39;)&quot;</span><span class="nt">&gt;</span>CSV<span class="nt">&lt;/DropdownItem&gt;</span>
+    <span class="nt">&lt;DropdownItem</span> <span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;file-save-as-pdf&#39;)&quot;</span><span class="nt">&gt;</span>PDF<span class="nt">&lt;/DropdownItem&gt;</span>
+  <span class="nt">&lt;/Dropdown&gt;</span>
 <span class="nt">&lt;/t&gt;</span>
 </pre></div>
 </div>
 </section><section id="example-multi-level-dropdown-nested">
 <h4>Example: Multi-level Dropdown (nested)<a class="headerlink" href="#example-multi-level-dropdown-nested" title="Permalink to this headline">¶</a></h4>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;Dropdown&gt;</span>
-<span class="w">  </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set-slot=</span><span class="s">&quot;toggler&quot;</span><span class="nt">&gt;</span>File<span class="nt">&lt;/t&gt;</span>
-<span class="w">  </span><span class="nt">&lt;DropdownItem</span><span class="w"> </span><span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;file-open&#39;)&quot;</span><span class="nt">&gt;</span>Open<span class="nt">&lt;/DropdownItem&gt;</span>
-<span class="w">  </span><span class="nt">&lt;Dropdown&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set-slot=</span><span class="s">&quot;toggler&quot;</span><span class="nt">&gt;</span>New<span class="nt">&lt;/t&gt;</span>
-<span class="w">    </span><span class="nt">&lt;DropdownItem</span><span class="w"> </span><span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;file-new-document&#39;)&quot;</span><span class="nt">&gt;</span>Document<span class="nt">&lt;/DropdownItem&gt;</span>
-<span class="w">    </span><span class="nt">&lt;DropdownItem</span><span class="w"> </span><span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;file-new-spreadsheet&#39;)&quot;</span><span class="nt">&gt;</span>Spreadsheet<span class="nt">&lt;/DropdownItem&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/Dropdown&gt;</span>
-<span class="w">  </span><span class="nt">&lt;DropdownItem</span><span class="w"> </span><span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;file-save&#39;)&quot;</span><span class="nt">&gt;</span>Save<span class="nt">&lt;/DropdownItem&gt;</span>
-<span class="w">  </span><span class="nt">&lt;Dropdown&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set-slot=</span><span class="s">&quot;toggler&quot;</span><span class="nt">&gt;</span>Save<span class="w"> </span>as...<span class="nt">&lt;/t&gt;</span>
-<span class="w">    </span><span class="nt">&lt;DropdownItem</span><span class="w"> </span><span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;file-save-)as-csv&#39;&quot;</span><span class="nt">&gt;</span>CSV<span class="nt">&lt;/DropdownItem&gt;</span>
-<span class="w">    </span><span class="nt">&lt;DropdownItem</span><span class="w"> </span><span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;file-save-)as-pdf&#39;&quot;</span><span class="nt">&gt;</span>PDF<span class="nt">&lt;/DropdownItem&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/Dropdown&gt;</span>
+  <span class="nt">&lt;t</span> <span class="na">t-set-slot=</span><span class="s">&quot;toggler&quot;</span><span class="nt">&gt;</span>File<span class="nt">&lt;/t&gt;</span>
+  <span class="nt">&lt;DropdownItem</span> <span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;file-open&#39;)&quot;</span><span class="nt">&gt;</span>Open<span class="nt">&lt;/DropdownItem&gt;</span>
+  <span class="nt">&lt;Dropdown&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-set-slot=</span><span class="s">&quot;toggler&quot;</span><span class="nt">&gt;</span>New<span class="nt">&lt;/t&gt;</span>
+    <span class="nt">&lt;DropdownItem</span> <span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;file-new-document&#39;)&quot;</span><span class="nt">&gt;</span>Document<span class="nt">&lt;/DropdownItem&gt;</span>
+    <span class="nt">&lt;DropdownItem</span> <span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;file-new-spreadsheet&#39;)&quot;</span><span class="nt">&gt;</span>Spreadsheet<span class="nt">&lt;/DropdownItem&gt;</span>
+  <span class="nt">&lt;/Dropdown&gt;</span>
+  <span class="nt">&lt;DropdownItem</span> <span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;file-save&#39;)&quot;</span><span class="nt">&gt;</span>Save<span class="nt">&lt;/DropdownItem&gt;</span>
+  <span class="nt">&lt;Dropdown&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-set-slot=</span><span class="s">&quot;toggler&quot;</span><span class="nt">&gt;</span>Save as...<span class="nt">&lt;/t&gt;</span>
+    <span class="nt">&lt;DropdownItem</span> <span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;file-save-)as-csv&#39;&quot;</span><span class="nt">&gt;</span>CSV<span class="nt">&lt;/DropdownItem&gt;</span>
+    <span class="nt">&lt;DropdownItem</span> <span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(&#39;file-save-)as-pdf&#39;&quot;</span><span class="nt">&gt;</span>PDF<span class="nt">&lt;/DropdownItem&gt;</span>
+  <span class="nt">&lt;/Dropdown&gt;</span>
 <span class="nt">&lt;/Dropdown&gt;</span>
 </pre></div>
 </div>
 </section><section id="example-recursive-multi-level-dropdown">
 <h4>Example: Recursive Multi-level Dropdown<a class="headerlink" href="#example-recursive-multi-level-dropdown" title="Permalink to this headline">¶</a></h4>
 <p>In this example, we recursively call a template to display a tree-like structure.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-name=</span><span class="s">&quot;addon.MainTemplate&quot;</span><span class="w"> </span><span class="na">owl=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
-<span class="w">  </span><span class="nt">&lt;div&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-call=</span><span class="s">&quot;addon.RecursiveDropdown&quot;</span><span class="nt">&gt;</span>
-<span class="w">      </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set=</span><span class="s">&quot;name&quot;</span><span class="w"> </span><span class="na">t-value=</span><span class="s">&quot;&#39;Main Menu&#39;&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">      </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set=</span><span class="s">&quot;items&quot;</span><span class="w"> </span><span class="na">t-value=</span><span class="s">&quot;state.menuItems&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/t&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/div&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span> <span class="na">t-name=</span><span class="s">&quot;addon.MainTemplate&quot;</span> <span class="na">owl=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-call=</span><span class="s">&quot;addon.RecursiveDropdown&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;t</span> <span class="na">t-set=</span><span class="s">&quot;name&quot;</span> <span class="na">t-value=</span><span class="s">&quot;&#39;Main Menu&#39;&quot;</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;t</span> <span class="na">t-set=</span><span class="s">&quot;items&quot;</span> <span class="na">t-value=</span><span class="s">&quot;state.menuItems&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/t&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/t&gt;</span>
 
-<span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-name=</span><span class="s">&quot;addon.RecursiveDropdown&quot;</span><span class="w"> </span><span class="na">owl=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
-<span class="w">  </span><span class="nt">&lt;Dropdown&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set-slot=</span><span class="s">&quot;toggler&quot;</span><span class="nt">&gt;&lt;t</span><span class="w"> </span><span class="na">t-esc=</span><span class="s">&quot;name&quot;</span><span class="nt">/&gt;&lt;/t&gt;</span>
-<span class="w">      </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-foreach=</span><span class="s">&quot;items&quot;</span><span class="w"> </span><span class="na">t-as=</span><span class="s">&quot;item&quot;</span><span class="w"> </span><span class="na">t-key=</span><span class="s">&quot;item.id&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;t</span> <span class="na">t-name=</span><span class="s">&quot;addon.RecursiveDropdown&quot;</span> <span class="na">owl=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;Dropdown&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-set-slot=</span><span class="s">&quot;toggler&quot;</span><span class="nt">&gt;&lt;t</span> <span class="na">t-esc=</span><span class="s">&quot;name&quot;</span><span class="nt">/&gt;&lt;/t&gt;</span>
+      <span class="nt">&lt;t</span> <span class="na">t-foreach=</span><span class="s">&quot;items&quot;</span> <span class="na">t-as=</span><span class="s">&quot;item&quot;</span> <span class="na">t-key=</span><span class="s">&quot;item.id&quot;</span><span class="nt">&gt;</span>
 
-<span class="w">        </span><span class="cm">&lt;!-- If this item has no child: make it a &lt;DropdownItem/&gt; --&gt;</span>
-<span class="w">        </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-if=</span><span class="s">&quot;!item.childrenTree.length&quot;</span><span class="nt">&gt;</span>
-<span class="w">          </span><span class="nt">&lt;DropdownItem</span><span class="w"> </span><span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(item)&quot;</span><span class="w"> </span><span class="na">t-esc=</span><span class="s">&quot;item.name&quot;</span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/t&gt;</span>
-<span class="w">        </span><span class="cm">&lt;!-- Else: recursively call the current dropdown template. --&gt;</span>
-<span class="w">        </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-else=</span><span class="s">&quot;&quot;</span><span class="w"> </span><span class="na">t-call=</span><span class="s">&quot;addon.RecursiveDropdown&quot;</span><span class="nt">&gt;</span>
-<span class="w">          </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set=</span><span class="s">&quot;name&quot;</span><span class="w"> </span><span class="na">t-value=</span><span class="s">&quot;item.name&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">          </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set=</span><span class="s">&quot;items&quot;</span><span class="w"> </span><span class="na">t-value=</span><span class="s">&quot;item.childrenTree&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/t&gt;</span>
+        <span class="c">&lt;!-- If this item has no child: make it a &lt;DropdownItem/&gt; --&gt;</span>
+        <span class="nt">&lt;t</span> <span class="na">t-if=</span><span class="s">&quot;!item.childrenTree.length&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;DropdownItem</span> <span class="na">onSelected=</span><span class="s">&quot;() =&gt; this.onItemSelected(item)&quot;</span> <span class="na">t-esc=</span><span class="s">&quot;item.name&quot;</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;/t&gt;</span>
+        <span class="c">&lt;!-- Else: recursively call the current dropdown template. --&gt;</span>
+        <span class="nt">&lt;t</span> <span class="na">t-else=</span><span class="s">&quot;&quot;</span> <span class="na">t-call=</span><span class="s">&quot;addon.RecursiveDropdown&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;t</span> <span class="na">t-set=</span><span class="s">&quot;name&quot;</span> <span class="na">t-value=</span><span class="s">&quot;item.name&quot;</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;t</span> <span class="na">t-set=</span><span class="s">&quot;items&quot;</span> <span class="na">t-value=</span><span class="s">&quot;item.childrenTree&quot;</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/t&gt;</span>
 
-<span class="w">      </span><span class="nt">&lt;/t&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/t&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/Dropdown&gt;</span>
+      <span class="nt">&lt;/t&gt;</span>
+    <span class="nt">&lt;/t&gt;</span>
+  <span class="nt">&lt;/Dropdown&gt;</span>
 <span class="nt">&lt;/t&gt;</span>
 </pre></div>
 </div>
@@ -2726,52 +2726,52 @@ or by passing a dedicated <code class="o_code docutils literal notranslate"><spa
 <p class="alert-title">
 Example</p><blockquote>
 <div><p>The first approach is to set the pages in the slots of the component.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;Notebook</span><span class="w"> </span><span class="na">orientation=</span><span class="s">&quot;&#39;vertical&#39;&quot;</span><span class="nt">&gt;</span>
-<span class="w">  </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set-slot=</span><span class="s">&quot;page_1&quot;</span><span class="w"> </span><span class="na">title=</span><span class="s">&quot;&#39;Page 1&#39;&quot;</span><span class="w"> </span><span class="na">isVisible=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;h1&gt;</span>My<span class="w"> </span>First<span class="w"> </span>Page<span class="nt">&lt;/h1&gt;</span>
-<span class="w">    </span><span class="nt">&lt;p&gt;</span>It&#39;s<span class="w"> </span>time<span class="w"> </span>to<span class="w"> </span>build<span class="w"> </span>Owl<span class="w"> </span>components.<span class="w"> </span>Did<span class="w"> </span>you<span class="w"> </span>read<span class="w"> </span>the<span class="w"> </span>documentation?<span class="nt">&lt;/p&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/t&gt;</span>
-<span class="w">  </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set-slot=</span><span class="s">&quot;page_2&quot;</span><span class="w"> </span><span class="na">title=</span><span class="s">&quot;&#39;2nd page&#39;&quot;</span><span class="w"> </span><span class="na">isVisible=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;p&gt;</span>Wise<span class="w"> </span>owl&#39;s<span class="w"> </span>silent<span class="w"> </span>flight.<span class="w"> </span>Through<span class="w"> </span>the<span class="w"> </span>moonlit<span class="w"> </span>forest<span class="w"> </span>deep,<span class="w"> </span>guides<span class="w"> </span>my<span class="w"> </span>path<span class="w"> </span>to<span class="w"> </span>code<span class="nt">&lt;/p&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/t&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;Notebook</span> <span class="na">orientation=</span><span class="s">&quot;&#39;vertical&#39;&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;t</span> <span class="na">t-set-slot=</span><span class="s">&quot;page_1&quot;</span> <span class="na">title=</span><span class="s">&quot;&#39;Page 1&#39;&quot;</span> <span class="na">isVisible=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>My First Page<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;p&gt;</span>It&#39;s time to build Owl components. Did you read the documentation?<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/t&gt;</span>
+  <span class="nt">&lt;t</span> <span class="na">t-set-slot=</span><span class="s">&quot;page_2&quot;</span> <span class="na">title=</span><span class="s">&quot;&#39;2nd page&#39;&quot;</span> <span class="na">isVisible=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Wise owl&#39;s silent flight. Through the moonlit forest deep, guides my path to code<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/t&gt;</span>
 <span class="nt">&lt;/Notebook&gt;</span>
 </pre></div>
 </div>
 <p>The other way to define your pages is by passing the props. This can be useful if some pages share
 the same structure. Create first a component for each page template that you may use.</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Notebook</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@web/core/notebook/notebook&quot;</span><span class="p">;</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">Notebook</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@web/core/notebook/notebook&quot;</span><span class="p">;</span>
 
-<span class="kd">class</span><span class="w"> </span><span class="nx">MyTemplateComponent</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">owl</span><span class="p">.</span><span class="nx">Component</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="k">static</span><span class="w"> </span><span class="nx">template</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">owl</span><span class="p">.</span><span class="nx">tags</span><span class="p">.</span><span class="nx">xml</span><span class="sb">`</span>
+<span class="kr">class</span> <span class="nx">MyTemplateComponent</span> <span class="kr">extends</span> <span class="nx">owl</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
+  <span class="kr">static</span> <span class="nx">template</span> <span class="o">=</span> <span class="nx">owl</span><span class="p">.</span><span class="nx">tags</span><span class="p">.</span><span class="nx">xml</span><span class="sb">`</span>
 <span class="sb">    &lt;h1 t-esc=&quot;props.title&quot; /&gt;</span>
 <span class="sb">    &lt;p t-esc=&quot;props.text&quot; /&gt;</span>
 <span class="sb">  `</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="kd">class</span><span class="w"> </span><span class="nx">MyComponent</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">owl</span><span class="p">.</span><span class="nx">Component</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">get</span><span class="w"> </span><span class="nx">pages</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">[</span>
-<span class="w">      </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">Component</span><span class="o">:</span><span class="w"> </span><span class="nx">MyTemplateComponent</span><span class="p">,</span>
-<span class="w">        </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Page 1&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nx">props</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">          </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;My First Page&quot;</span><span class="p">,</span>
-<span class="w">          </span><span class="nx">text</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;This page is not visible&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="p">},</span>
-<span class="w">      </span><span class="p">},</span>
-<span class="w">      </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">Component</span><span class="o">:</span><span class="w"> </span><span class="nx">MyTemplateComponent</span><span class="p">,</span>
-<span class="w">        </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;page_2&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Page 2&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nx">props</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">          </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;My second page&quot;</span><span class="p">,</span>
-<span class="w">          </span><span class="nx">text</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;You&#39;re at the right place!&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="p">},</span>
-<span class="w">      </span><span class="p">},</span>
-<span class="w">    </span><span class="p">]</span>
-<span class="w">  </span><span class="p">}</span>
+<span class="kr">class</span> <span class="nx">MyComponent</span> <span class="kr">extends</span> <span class="nx">owl</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
+  <span class="nx">get</span> <span class="nx">pages</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="nx">Component</span><span class="o">:</span> <span class="nx">MyTemplateComponent</span><span class="p">,</span>
+        <span class="nx">title</span><span class="o">:</span> <span class="s2">&quot;Page 1&quot;</span><span class="p">,</span>
+        <span class="nx">props</span><span class="o">:</span> <span class="p">{</span>
+          <span class="nx">title</span><span class="o">:</span> <span class="s2">&quot;My First Page&quot;</span><span class="p">,</span>
+          <span class="nx">text</span><span class="o">:</span> <span class="s2">&quot;This page is not visible&quot;</span><span class="p">,</span>
+        <span class="p">},</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nx">Component</span><span class="o">:</span> <span class="nx">MyTemplateComponent</span><span class="p">,</span>
+        <span class="nx">id</span><span class="o">:</span> <span class="s2">&quot;page_2&quot;</span><span class="p">,</span>
+        <span class="nx">title</span><span class="o">:</span> <span class="s2">&quot;Page 2&quot;</span><span class="p">,</span>
+        <span class="nx">props</span><span class="o">:</span> <span class="p">{</span>
+          <span class="nx">title</span><span class="o">:</span> <span class="s2">&quot;My second page&quot;</span><span class="p">,</span>
+          <span class="nx">text</span><span class="o">:</span> <span class="s2">&quot;You&#39;re at the right place!&quot;</span><span class="p">,</span>
+        <span class="p">},</span>
+      <span class="p">},</span>
+    <span class="p">]</span>
+  <span class="p">}</span>
 <span class="p">}</span>
-<span class="nx">MyComponent</span><span class="p">.</span><span class="nx">template</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">owl</span><span class="p">.</span><span class="nx">tags</span><span class="p">.</span><span class="nx">xml</span><span class="sb">`</span>
+<span class="nx">MyComponent</span><span class="p">.</span><span class="nx">template</span> <span class="o">=</span> <span class="nx">owl</span><span class="p">.</span><span class="nx">tags</span><span class="p">.</span><span class="nx">xml</span><span class="sb">`</span>
 <span class="sb">  &lt;Notebook defaultPage=&quot;&#39;page_2&#39;&quot; pages=&quot;pages&quot; /&gt;</span>
 <span class="sb">`</span><span class="p">;</span>
 </pre></div>
@@ -2792,7 +2792,7 @@ the same structure. Create first a component for each page template that you may
 <p class="alert-title">
 Note</p><p>The pager can be used anywhere but its main use is in the control panel. See the <a class="reference internal" href="hooks.html#frontend-hooks-usepager"><span class="std std-ref">usePager</span></a> hook in order to manipulate the pager of the control panel.</p>
 </div>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;Pager</span><span class="w"> </span><span class="na">offset=</span><span class="s">&quot;0&quot;</span><span class="w"> </span><span class="na">limit=</span><span class="s">&quot;80&quot;</span><span class="w"> </span><span class="na">total=</span><span class="s">&quot;50&quot;</span><span class="w"> </span><span class="na">onUpdate=</span><span class="s">&quot;doSomething&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;Pager</span> <span class="na">offset=</span><span class="s">&quot;0&quot;</span> <span class="na">limit=</span><span class="s">&quot;80&quot;</span> <span class="na">total=</span><span class="s">&quot;50&quot;</span> <span class="na">onUpdate=</span><span class="s">&quot;doSomething&quot;</span> <span class="nt">/&gt;</span>
 </pre></div>
 </div>
 </section><section id="id15">

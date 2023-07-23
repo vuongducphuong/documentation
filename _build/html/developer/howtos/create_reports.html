@@ -23,7 +23,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/howtos/create_reports.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/howtos/create_reports.html" />
     
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -1983,9 +1983,9 @@ use. It requires the import of <code class="o_code docutils literal notranslate"
     <span class="n">tools</span><span class="o">.</span><span class="n">drop_view_if_exists</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">cr</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_table</span><span class="p">)</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">cr</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;CREATE or REPLACE VIEW </span><span class="si">%s</span><span class="s2"> as (</span>
 <span class="s2">                           SELECT</span>
-<span class="s2">                              </span><span class="si">%s</span>
+<span class="s2">                              </span><span class="si">%s</span><span class="s2"></span>
 <span class="s2">                           FROM</span>
-<span class="s2">                              </span><span class="si">%s</span>
+<span class="s2">                              </span><span class="si">%s</span><span class="s2"></span>
 <span class="s2">        )&quot;&quot;&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_table</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_select</span><span class="p">(),</span> <span class="bp">self</span><span class="o">.</span><span class="n">_from</span><span class="p">()))</span>
 </pre></div>
 </div>

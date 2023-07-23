@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/howtos/website_themes/theming.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/howtos/website_themes/theming.html" />
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -2151,11 +2151,11 @@ bundle.</p>
 </div>
 </div>
 <p>By reading the source code, variables related to options are easily noticeable.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;we-button</span><span class="w"> </span><span class="na">title=</span><span class="s">&quot;...&quot;</span>
-<span class="w">   </span><span class="na">data-name=</span><span class="s">&quot;...&quot;</span>
-<span class="w">   </span><span class="na">data-customize-website-views=</span><span class="s">&quot;...&quot;</span>
-<span class="w">   </span><span class="na">data-customize-website-variable=</span><span class="s">&quot;&#39;Sidebar&#39;&quot;</span>
-<span class="w">   </span><span class="na">data-img=</span><span class="s">&quot;...&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;we-button</span> <span class="na">title=</span><span class="s">&quot;...&quot;</span>
+   <span class="na">data-name=</span><span class="s">&quot;...&quot;</span>
+   <span class="na">data-customize-website-views=</span><span class="s">&quot;...&quot;</span>
+   <span class="na">data-customize-website-variable=</span><span class="s">&quot;&#39;Sidebar&#39;&quot;</span>
+   <span class="na">data-img=</span><span class="s">&quot;...&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 <p>These variables can be overridden through the <code class="o_code docutils literal notranslate"><span class="pre">$o-website-value-palettes</span></code> map, for example.</p>
@@ -2164,14 +2164,14 @@ bundle.</p>
 <p><strong>Declaration</strong></p>
 <div class="literal-block-wrapper docutils container" id="id3">
 <div class="code-block-caption"><span class="caption-text"><code class="o_code docutils literal notranslate"><span class="pre">/website_airproof/static/src/scss/primary_variables.scss</span></code></span><a class="headerlink" href="#id3" title="Permalink to this code">¶</a></div>
-<div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="nv">$o-website-values-palettes</span><span class="o">:</span><span class="w"> </span><span class="p">(</span>
-<span class="w">   </span><span class="p">(</span>
-<span class="w">      </span><span class="c1">// Templates</span>
-<span class="w">      </span><span class="c1">// Colors</span>
-<span class="w">      </span><span class="c1">// Fonts</span>
-<span class="w">      </span><span class="c1">// Buttons</span>
-<span class="w">      </span><span class="c1">// ...</span>
-<span class="w">   </span><span class="p">)</span><span class="o">,</span>
+<div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="nv">$o-website-values-palettes</span><span class="o">:</span> <span class="p">(</span>
+   <span class="p">(</span>
+      <span class="c1">// Templates</span>
+      <span class="c1">// Colors</span>
+      <span class="c1">// Fonts</span>
+      <span class="c1">// Buttons</span>
+      <span class="c1">// ...</span>
+   <span class="p">)</span><span class="o">,</span>
 <span class="p">);</span>
 </pre></div>
 </div>
@@ -2191,17 +2191,17 @@ the font selector.</p>
 <p><strong>Declaration</strong></p>
 <div class="literal-block-wrapper docutils container" id="id4">
 <div class="code-block-caption"><span class="caption-text"><code class="o_code docutils literal notranslate"><span class="pre">/website_airproof/static/src/scss/primary_variables.scss</span></code></span><a class="headerlink" href="#id4" title="Permalink to this code">¶</a></div>
-<div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="nv">$o-theme-font-configs</span><span class="o">:</span><span class="w"> </span><span class="p">(</span>
-<span class="w">   </span><span class="o">&lt;</span><span class="no">font</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;:</span><span class="w"> </span><span class="p">(</span>
-<span class="w">      </span><span class="s1">&#39;family&#39;</span><span class="o">:</span><span class="w"> </span><span class="o">&lt;</span><span class="n">css</span><span class="w"> </span><span class="no">font</span><span class="w"> </span><span class="n">family</span><span class="w"> </span><span class="n">list</span><span class="o">&gt;,</span>
-<span class="w">      </span><span class="s1">&#39;url&#39;</span><span class="w"> </span><span class="p">(</span><span class="n">optional</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="o">&lt;</span><span class="n">related</span><span class="w"> </span><span class="n">part</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">Google</span><span class="w"> </span><span class="n">fonts</span><span class="w"> </span><span class="no">URL</span><span class="o">&gt;,</span>
-<span class="w">      </span><span class="s1">&#39;properties&#39;</span><span class="w"> </span><span class="p">(</span><span class="n">optional</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="p">(</span>
-<span class="w">         </span><span class="o">&lt;</span><span class="no">font</span><span class="o">-</span><span class="n">alias</span><span class="o">&gt;:</span><span class="w"> </span><span class="p">(</span>
-<span class="w">            </span><span class="o">&lt;</span><span class="n">website-value-key</span><span class="o">&gt;:</span><span class="w"> </span><span class="o">&lt;</span><span class="n">value</span><span class="o">&gt;,</span>
-<span class="w">            </span><span class="o">...,</span>
-<span class="w">         </span><span class="p">)</span><span class="o">,</span>
-<span class="w">      </span><span class="o">...,</span>
-<span class="w">   </span><span class="p">)</span>
+<div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="nv">$o-theme-font-configs</span><span class="o">:</span> <span class="p">(</span>
+   <span class="o">&lt;</span><span class="no">font</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;:</span> <span class="p">(</span>
+      <span class="s1">&#39;family&#39;</span><span class="o">:</span> <span class="o">&lt;</span><span class="n">css</span> <span class="no">font</span> <span class="n">family</span> <span class="n">list</span><span class="o">&gt;,</span>
+      <span class="s1">&#39;url&#39;</span> <span class="p">(</span><span class="n">optional</span><span class="p">)</span><span class="o">:</span> <span class="o">&lt;</span><span class="n">related</span> <span class="n">part</span> <span class="n">of</span> <span class="n">Google</span> <span class="n">fonts</span> <span class="no">URL</span><span class="o">&gt;,</span>
+      <span class="s1">&#39;properties&#39;</span> <span class="p">(</span><span class="n">optional</span><span class="p">)</span><span class="o">:</span> <span class="p">(</span>
+         <span class="o">&lt;</span><span class="no">font</span><span class="o">-</span><span class="n">alias</span><span class="o">&gt;:</span> <span class="p">(</span>
+            <span class="o">&lt;</span><span class="n">website-value-key</span><span class="o">&gt;:</span> <span class="o">&lt;</span><span class="n">value</span><span class="o">&gt;,</span>
+            <span class="o">...,</span>
+         <span class="p">)</span><span class="o">,</span>
+      <span class="o">...,</span>
+   <span class="p">)</span>
 <span class="p">)</span>
 </pre></div>
 </div>
@@ -2209,13 +2209,13 @@ the font selector.</p>
 <p><strong>Use</strong></p>
 <div class="literal-block-wrapper docutils container" id="id5">
 <div class="code-block-caption"><span class="caption-text"><code class="o_code docutils literal notranslate"><span class="pre">/website_airproof/static/src/scss/primary_variables.scss</span></code></span><a class="headerlink" href="#id5" title="Permalink to this code">¶</a></div>
-<div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="nv">$o-website-values-palettes</span><span class="o">:</span><span class="w"> </span><span class="p">(</span>
-<span class="w">   </span><span class="p">(</span>
-<span class="w">      </span><span class="s1">&#39;font&#39;</span><span class="o">:</span><span class="w">                             </span><span class="s1">&#39;&lt;font-name&gt;&#39;</span><span class="o">,</span>
-<span class="w">      </span><span class="s1">&#39;headings-font&#39;</span><span class="o">:</span><span class="w">                    </span><span class="s1">&#39;&lt;font-name&gt;&#39;</span><span class="o">,</span>
-<span class="w">      </span><span class="s1">&#39;navbar-font&#39;</span><span class="o">:</span><span class="w">                      </span><span class="s1">&#39;&lt;font-name&gt;&#39;</span><span class="o">,</span>
-<span class="w">      </span><span class="s1">&#39;buttons-font&#39;</span><span class="o">:</span><span class="w">                     </span><span class="s1">&#39;&lt;font-name&gt;&#39;</span><span class="o">,</span>
-<span class="w">   </span><span class="p">)</span><span class="o">,</span>
+<div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="nv">$o-website-values-palettes</span><span class="o">:</span> <span class="p">(</span>
+   <span class="p">(</span>
+      <span class="s1">&#39;font&#39;</span><span class="o">:</span>                             <span class="s1">&#39;&lt;font-name&gt;&#39;</span><span class="o">,</span>
+      <span class="s1">&#39;headings-font&#39;</span><span class="o">:</span>                    <span class="s1">&#39;&lt;font-name&gt;&#39;</span><span class="o">,</span>
+      <span class="s1">&#39;navbar-font&#39;</span><span class="o">:</span>                      <span class="s1">&#39;&lt;font-name&gt;&#39;</span><span class="o">,</span>
+      <span class="s1">&#39;buttons-font&#39;</span><span class="o">:</span>                     <span class="s1">&#39;&lt;font-name&gt;&#39;</span><span class="o">,</span>
+   <span class="p">)</span><span class="o">,</span>
 <span class="p">);</span>
 </pre></div>
 </div>
@@ -2224,16 +2224,16 @@ the font selector.</p>
 <h5>Google fonts<a class="headerlink" href="#google-fonts" title="Permalink to this headline">¶</a></h5>
 <div class="literal-block-wrapper docutils container" id="id6">
 <div class="code-block-caption"><span class="caption-text"><code class="o_code docutils literal notranslate"><span class="pre">/website_airproof/static/src/scss/primary_variables.scss</span></code></span><a class="headerlink" href="#id6" title="Permalink to this code">¶</a></div>
-<div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="nv">$o-theme-font-configs</span><span class="o">:</span><span class="w"> </span><span class="p">(</span>
-<span class="w">   </span><span class="s1">&#39;Poppins&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">(</span>
-<span class="w">      </span><span class="s1">&#39;family&#39;</span><span class="o">:</span><span class="w">                         </span><span class="p">(</span><span class="s1">&#39;Poppins&#39;</span><span class="o">,</span><span class="w"> </span><span class="no">sans-serif</span><span class="p">)</span><span class="o">,</span>
-<span class="w">      </span><span class="s1">&#39;url&#39;</span><span class="o">:</span><span class="w">                            </span><span class="s1">&#39;Poppins:400,500&#39;</span><span class="o">,</span>
-<span class="w">      </span><span class="s1">&#39;properties&#39;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">(</span>
-<span class="w">         </span><span class="s1">&#39;base&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">(</span>
-<span class="w">            </span><span class="s1">&#39;font-size-base&#39;</span><span class="o">:</span><span class="w">           </span><span class="mi">1</span><span class="kt">rem</span><span class="o">,</span>
-<span class="w">         </span><span class="p">)</span><span class="o">,</span>
-<span class="w">      </span><span class="p">)</span><span class="o">,</span>
-<span class="w">   </span><span class="p">)</span><span class="o">,</span>
+<div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="nv">$o-theme-font-configs</span><span class="o">:</span> <span class="p">(</span>
+   <span class="s1">&#39;Poppins&#39;</span><span class="o">:</span> <span class="p">(</span>
+      <span class="s1">&#39;family&#39;</span><span class="o">:</span>                         <span class="p">(</span><span class="s1">&#39;Poppins&#39;</span><span class="o">,</span> <span class="no">sans-serif</span><span class="p">)</span><span class="o">,</span>
+      <span class="s1">&#39;url&#39;</span><span class="o">:</span>                            <span class="s1">&#39;Poppins:400,500&#39;</span><span class="o">,</span>
+      <span class="s1">&#39;properties&#39;</span> <span class="o">:</span> <span class="p">(</span>
+         <span class="s1">&#39;base&#39;</span><span class="o">:</span> <span class="p">(</span>
+            <span class="s1">&#39;font-size-base&#39;</span><span class="o">:</span>           <span class="mi">1</span><span class="kt">rem</span><span class="o">,</span>
+         <span class="p">)</span><span class="o">,</span>
+      <span class="p">)</span><span class="o">,</span>
+   <span class="p">)</span><span class="o">,</span>
 <span class="p">);</span>
 </pre></div>
 </div>
@@ -2254,24 +2254,24 @@ the font selector.</p>
 <p>Then, use the <code class="o_code docutils literal notranslate"><span class="pre">@font-face</span></code> rule to allow you custom font(s) to be loaded on your website.</p>
 <div class="literal-block-wrapper docutils container" id="id8">
 <div class="code-block-caption"><span class="caption-text"><code class="o_code docutils literal notranslate"><span class="pre">/website_airproof/static/src/scss/font.scss</span></code></span><a class="headerlink" href="#id8" title="Permalink to this code">¶</a></div>
-<div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="k">@font-face</span><span class="w"> </span><span class="p">{</span>
-<span class="w">   </span><span class="nt">font-family</span><span class="nd">:</span><span class="w"> </span><span class="s1">&#39;&lt;font-name&gt;&#39;</span><span class="o">;</span>
-<span class="w">   </span><span class="nc">...</span>
+<div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="k">@font-face</span> <span class="p">{</span>
+   <span class="nt">font-family</span><span class="nd">:</span> <span class="s1">&#39;&lt;font-name&gt;&#39;</span><span class="o">;</span>
+   <span class="nc">...</span>
 <span class="p">}</span>
 </pre></div>
 </div>
 </div>
 <div class="literal-block-wrapper docutils container" id="id9">
 <div class="code-block-caption"><span class="caption-text"><code class="o_code docutils literal notranslate"><span class="pre">/website_airproof/static/src/scss/primary_variables.scss</span></code></span><a class="headerlink" href="#id9" title="Permalink to this code">¶</a></div>
-<div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="nv">$o-theme-font-configs</span><span class="o">:</span><span class="w"> </span><span class="p">(</span>
-<span class="w">   </span><span class="s1">&#39;Proxima Nova&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">(</span>
-<span class="w">      </span><span class="s1">&#39;family&#39;</span><span class="o">:</span><span class="w">                         </span><span class="p">(</span><span class="s1">&#39;Proxima Nova&#39;</span><span class="o">,</span><span class="w"> </span><span class="no">sans-serif</span><span class="p">)</span><span class="o">,</span>
-<span class="w">      </span><span class="s1">&#39;properties&#39;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">(</span>
-<span class="w">         </span><span class="s1">&#39;base&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">(</span>
-<span class="w">            </span><span class="s1">&#39;font-size-base&#39;</span><span class="o">:</span><span class="w">           </span><span class="mi">1</span><span class="kt">rem</span><span class="o">,</span>
-<span class="w">         </span><span class="p">)</span><span class="o">,</span>
-<span class="w">      </span><span class="p">)</span><span class="o">,</span>
-<span class="w">   </span><span class="p">)</span><span class="o">,</span>
+<div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="nv">$o-theme-font-configs</span><span class="o">:</span> <span class="p">(</span>
+   <span class="s1">&#39;Proxima Nova&#39;</span><span class="o">:</span> <span class="p">(</span>
+      <span class="s1">&#39;family&#39;</span><span class="o">:</span>                         <span class="p">(</span><span class="s1">&#39;Proxima Nova&#39;</span><span class="o">,</span> <span class="no">sans-serif</span><span class="p">)</span><span class="o">,</span>
+      <span class="s1">&#39;properties&#39;</span> <span class="o">:</span> <span class="p">(</span>
+         <span class="s1">&#39;base&#39;</span><span class="o">:</span> <span class="p">(</span>
+            <span class="s1">&#39;font-size-base&#39;</span><span class="o">:</span>           <span class="mi">1</span><span class="kt">rem</span><span class="o">,</span>
+         <span class="p">)</span><span class="o">,</span>
+      <span class="p">)</span><span class="o">,</span>
+   <span class="p">)</span><span class="o">,</span>
 <span class="p">);</span>
 </pre></div>
 </div>
@@ -2316,31 +2316,31 @@ ensures it stays consistent.</p>
 <p><strong>Declaration</strong></p>
 <div class="literal-block-wrapper docutils container" id="id10">
 <div class="code-block-caption"><span class="caption-text"><code class="o_code docutils literal notranslate"><span class="pre">/website_airproof/static/src/scss/primary_variables.scss</span></code></span><a class="headerlink" href="#id10" title="Permalink to this code">¶</a></div>
-<div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="nv">$o-color-palettes</span><span class="o">:</span><span class="w"> </span><span class="nf">map-merge</span><span class="p">(</span><span class="nv">$o-color-palettes</span><span class="o">,</span>
-<span class="w">   </span><span class="p">(</span>
-<span class="w">      </span><span class="s1">&#39;airproof&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">(</span>
-<span class="w">         </span><span class="s1">&#39;o-color-1&#39;</span><span class="o">:</span><span class="w">                    </span><span class="mh">#bedb39</span><span class="o">,</span>
-<span class="w">         </span><span class="s1">&#39;o-color-2&#39;</span><span class="o">:</span><span class="w">                    </span><span class="mh">#2c3e50</span><span class="o">,</span>
-<span class="w">         </span><span class="s1">&#39;o-color-3&#39;</span><span class="o">:</span><span class="w">                    </span><span class="mh">#f2f2f2</span><span class="o">,</span>
-<span class="w">         </span><span class="s1">&#39;o-color-4&#39;</span><span class="o">:</span><span class="w">                    </span><span class="mh">#ffffff</span><span class="o">,</span>
-<span class="w">         </span><span class="s1">&#39;o-color-5&#39;</span><span class="o">:</span><span class="w">                    </span><span class="mh">#000000</span><span class="o">,</span>
-<span class="w">      </span><span class="p">)</span><span class="o">,</span>
-<span class="w">   </span><span class="p">)</span>
+<div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="nv">$o-color-palettes</span><span class="o">:</span> <span class="nf">map-merge</span><span class="p">(</span><span class="nv">$o-color-palettes</span><span class="o">,</span>
+   <span class="p">(</span>
+      <span class="s1">&#39;airproof&#39;</span><span class="o">:</span> <span class="p">(</span>
+         <span class="s1">&#39;o-color-1&#39;</span><span class="o">:</span>                    <span class="mh">#bedb39</span><span class="o">,</span>
+         <span class="s1">&#39;o-color-2&#39;</span><span class="o">:</span>                    <span class="mh">#2c3e50</span><span class="o">,</span>
+         <span class="s1">&#39;o-color-3&#39;</span><span class="o">:</span>                    <span class="mh">#f2f2f2</span><span class="o">,</span>
+         <span class="s1">&#39;o-color-4&#39;</span><span class="o">:</span>                    <span class="mh">#ffffff</span><span class="o">,</span>
+         <span class="s1">&#39;o-color-5&#39;</span><span class="o">:</span>                    <span class="mh">#000000</span><span class="o">,</span>
+      <span class="p">)</span><span class="o">,</span>
+   <span class="p">)</span>
 <span class="p">);</span>
 </pre></div>
 </div>
 </div>
 <p>Add the created palette to the list of palettes offered by the Website Builder.</p>
-<div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="nv">$o-selected-color-palettes-names</span><span class="o">:</span><span class="w"> </span><span class="nf">append</span><span class="p">(</span><span class="nv">$o-selected-color-palettes-names</span><span class="o">,</span><span class="w"> </span><span class="s1">&#39;airproof&#39;</span><span class="p">);</span>
+<div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="nv">$o-selected-color-palettes-names</span><span class="o">:</span> <span class="nf">append</span><span class="p">(</span><span class="nv">$o-selected-color-palettes-names</span><span class="o">,</span> <span class="s1">&#39;airproof&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
 <p><strong>Use</strong></p>
 <div class="literal-block-wrapper docutils container" id="id11">
 <div class="code-block-caption"><span class="caption-text"><code class="o_code docutils literal notranslate"><span class="pre">/website_airproof/static/src/scss/primary_variables.scss</span></code></span><a class="headerlink" href="#id11" title="Permalink to this code">¶</a></div>
-<div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="nv">$o-website-values-palettes</span><span class="o">:</span><span class="w"> </span><span class="p">(</span>
-<span class="w">   </span><span class="p">(</span>
-<span class="w">      </span><span class="s1">&#39;color-palettes-name&#39;</span><span class="o">:</span><span class="w">              </span><span class="s1">&#39;airproof&#39;</span><span class="o">,</span>
-<span class="w">   </span><span class="p">)</span><span class="o">,</span>
+<div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="nv">$o-website-values-palettes</span><span class="o">:</span> <span class="p">(</span>
+   <span class="p">(</span>
+      <span class="s1">&#39;color-palettes-name&#39;</span><span class="o">:</span>              <span class="s1">&#39;airproof&#39;</span><span class="o">,</span>
+   <span class="p">)</span><span class="o">,</span>
 <span class="p">);</span>
 </pre></div>
 </div>
@@ -2355,26 +2355,26 @@ buttons, and secondary buttons. These colors can be customized later by the user
 <code class="o_code docutils literal notranslate"><span class="pre">$colors</span> <span class="pre">map</span></code> using a specific prefix (<code class="o_code docutils literal notranslate"><span class="pre">o-cc</span></code> for <code class="o_code docutils literal notranslate"><span class="pre">color</span> <span class="pre">combination</span></code>).</p>
 <div class="literal-block-wrapper docutils container" id="id12">
 <div class="code-block-caption"><span class="caption-text"><code class="o_code docutils literal notranslate"><span class="pre">/website_airproof/static/src/scss/primary_variables.scss</span></code></span><a class="headerlink" href="#id12" title="Permalink to this code">¶</a></div>
-<div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="nv">$o-color-palettes</span><span class="o">:</span><span class="w"> </span><span class="nf">map-merge</span><span class="p">(</span><span class="nv">$o-color-palettes</span><span class="o">,</span>
-<span class="w">   </span><span class="p">(</span>
-<span class="w">      </span><span class="s1">&#39;airproof&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">(</span>
+<div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="nv">$o-color-palettes</span><span class="o">:</span> <span class="nf">map-merge</span><span class="p">(</span><span class="nv">$o-color-palettes</span><span class="o">,</span>
+   <span class="p">(</span>
+      <span class="s1">&#39;airproof&#39;</span><span class="o">:</span> <span class="p">(</span>
 
-<span class="w">         </span><span class="s1">&#39;o-cc*-bg&#39;</span><span class="o">:</span><span class="w">                     </span><span class="s1">&#39;o-color-*&#39;</span><span class="o">,</span>
-<span class="w">         </span><span class="s1">&#39;o-cc*-text&#39;</span><span class="o">:</span><span class="w">                   </span><span class="s1">&#39;o-color-*&#39;</span><span class="o">,</span>
-<span class="w">         </span><span class="s1">&#39;o-cc*-headings&#39;</span><span class="o">:</span><span class="w">               </span><span class="s1">&#39;o-color-*&#39;</span><span class="o">,</span>
-<span class="w">         </span><span class="s1">&#39;o-cc*-h2&#39;</span><span class="o">:</span><span class="w">                     </span><span class="s1">&#39;o-color-*&#39;</span><span class="o">,</span>
-<span class="w">         </span><span class="s1">&#39;o-cc*-h3&#39;</span><span class="o">:</span><span class="w">                     </span><span class="s1">&#39;o-color-*&#39;</span><span class="o">,</span>
-<span class="w">         </span><span class="s1">&#39;o-cc*-h4&#39;</span><span class="o">:</span><span class="w">                     </span><span class="s1">&#39;o-color-*&#39;</span><span class="o">,</span>
-<span class="w">         </span><span class="s1">&#39;o-cc*-h5&#39;</span><span class="o">:</span><span class="w">                     </span><span class="s1">&#39;o-color-*&#39;</span><span class="o">,</span>
-<span class="w">         </span><span class="s1">&#39;o-cc*-h6&#39;</span><span class="o">:</span><span class="w">                     </span><span class="s1">&#39;o-color-*&#39;</span><span class="o">,</span>
-<span class="w">         </span><span class="s1">&#39;o-cc*-link&#39;</span><span class="o">:</span><span class="w">                   </span><span class="s1">&#39;o-color-*&#39;</span><span class="o">,</span>
-<span class="w">         </span><span class="s1">&#39;o-cc*-btn-primary&#39;</span><span class="o">:</span><span class="w">            </span><span class="s1">&#39;o-color-*&#39;</span><span class="o">,</span>
-<span class="w">         </span><span class="s1">&#39;o-cc*-btn-primary-border&#39;</span><span class="o">:</span><span class="w">     </span><span class="s1">&#39;o-color-*&#39;</span><span class="o">,</span>
-<span class="w">         </span><span class="s1">&#39;o-cc*-btn-secondary&#39;</span><span class="o">:</span><span class="w">          </span><span class="s1">&#39;o-color-*&#39;</span><span class="o">,</span>
-<span class="w">         </span><span class="s1">&#39;o-cc*-btn-secondary-border&#39;</span><span class="o">:</span><span class="w">   </span><span class="s1">&#39;o-color-*&#39;</span><span class="o">,</span>
+         <span class="s1">&#39;o-cc*-bg&#39;</span><span class="o">:</span>                     <span class="s1">&#39;o-color-*&#39;</span><span class="o">,</span>
+         <span class="s1">&#39;o-cc*-text&#39;</span><span class="o">:</span>                   <span class="s1">&#39;o-color-*&#39;</span><span class="o">,</span>
+         <span class="s1">&#39;o-cc*-headings&#39;</span><span class="o">:</span>               <span class="s1">&#39;o-color-*&#39;</span><span class="o">,</span>
+         <span class="s1">&#39;o-cc*-h2&#39;</span><span class="o">:</span>                     <span class="s1">&#39;o-color-*&#39;</span><span class="o">,</span>
+         <span class="s1">&#39;o-cc*-h3&#39;</span><span class="o">:</span>                     <span class="s1">&#39;o-color-*&#39;</span><span class="o">,</span>
+         <span class="s1">&#39;o-cc*-h4&#39;</span><span class="o">:</span>                     <span class="s1">&#39;o-color-*&#39;</span><span class="o">,</span>
+         <span class="s1">&#39;o-cc*-h5&#39;</span><span class="o">:</span>                     <span class="s1">&#39;o-color-*&#39;</span><span class="o">,</span>
+         <span class="s1">&#39;o-cc*-h6&#39;</span><span class="o">:</span>                     <span class="s1">&#39;o-color-*&#39;</span><span class="o">,</span>
+         <span class="s1">&#39;o-cc*-link&#39;</span><span class="o">:</span>                   <span class="s1">&#39;o-color-*&#39;</span><span class="o">,</span>
+         <span class="s1">&#39;o-cc*-btn-primary&#39;</span><span class="o">:</span>            <span class="s1">&#39;o-color-*&#39;</span><span class="o">,</span>
+         <span class="s1">&#39;o-cc*-btn-primary-border&#39;</span><span class="o">:</span>     <span class="s1">&#39;o-color-*&#39;</span><span class="o">,</span>
+         <span class="s1">&#39;o-cc*-btn-secondary&#39;</span><span class="o">:</span>          <span class="s1">&#39;o-color-*&#39;</span><span class="o">,</span>
+         <span class="s1">&#39;o-cc*-btn-secondary-border&#39;</span><span class="o">:</span>   <span class="s1">&#39;o-color-*&#39;</span><span class="o">,</span>
 
-<span class="w">      </span><span class="p">)</span><span class="o">,</span>
-<span class="w">   </span><span class="p">)</span>
+      <span class="p">)</span><span class="o">,</span>
+   <span class="p">)</span>
 <span class="p">);</span>
 </pre></div>
 </div>
@@ -2419,16 +2419,16 @@ values and <em>not</em> the <code class="file o_code docutils literal notranslat
 <div class="literal-block-wrapper docutils container" id="id14">
 <div class="code-block-caption"><span class="caption-text"><code class="o_code docutils literal notranslate"><span class="pre">/website_airproof/static/src/scss/bootstrap_overridden.scss</span></code></span><a class="headerlink" href="#id14" title="Permalink to this code">¶</a></div>
 <div class="highlight-scss notranslate"><div class="highlight"><pre><span></span><span class="c1">// Typography</span>
-<span class="nv">$h1-font-size</span><span class="o">:</span><span class="w">                 </span><span class="mi">4</span><span class="kt">rem</span><span class="w"> </span><span class="nv">!default</span><span class="p">;</span>
+<span class="nv">$h1-font-size</span><span class="o">:</span>                 <span class="mi">4</span><span class="kt">rem</span> <span class="nv">!default</span><span class="p">;</span>
 
 <span class="c1">// Navbar</span>
-<span class="nv">$navbar-nav-link-padding-x</span><span class="o">:</span><span class="w">    </span><span class="mi">1</span><span class="kt">rem</span><span class="nv">!default</span><span class="p">;</span>
+<span class="nv">$navbar-nav-link-padding-x</span><span class="o">:</span>    <span class="mi">1</span><span class="kt">rem</span><span class="nv">!default</span><span class="p">;</span>
 
 <span class="c1">// Buttons + Forms</span>
-<span class="nv">$input-placeholder-color</span><span class="o">:</span><span class="w">      </span><span class="nf">o-color</span><span class="p">(</span><span class="s1">&#39;o-color-1&#39;</span><span class="p">)</span><span class="w"> </span><span class="nv">!default</span><span class="p">;</span>
+<span class="nv">$input-placeholder-color</span><span class="o">:</span>      <span class="nf">o-color</span><span class="p">(</span><span class="s1">&#39;o-color-1&#39;</span><span class="p">)</span> <span class="nv">!default</span><span class="p">;</span>
 
 <span class="c1">// Cards</span>
-<span class="nv">$card-border-width</span><span class="o">:</span><span class="w">            </span><span class="mi">0</span><span class="w"> </span><span class="nv">!default</span><span class="p">;</span>
+<span class="nv">$card-border-width</span><span class="o">:</span>            <span class="mi">0</span> <span class="nv">!default</span><span class="p">;</span>
 </pre></div>
 </div>
 </div>
@@ -2454,15 +2454,15 @@ Demo page</p><p><a class="reference external" href="http://localhost:8069/websit
 <p>For some options, in addition to the Website Builder variable, you also have to activate a specific
 view.</p>
 <p>By reading the source code, templates related to options are easily found.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;we-button</span><span class="w"> </span><span class="na">title=</span><span class="s">&quot;...&quot;</span>
-<span class="w">   </span><span class="na">data-name=</span><span class="s">&quot;...&quot;</span>
-<span class="w">   </span><span class="na">data-customize-website-views=</span><span class="s">&quot;website.template_header_default&quot;</span>
-<span class="w">   </span><span class="na">data-customize-website-variable=</span><span class="s">&quot;&#39;...&#39;&quot;</span>
-<span class="w">   </span><span class="na">data-img=</span><span class="s">&quot;...&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;we-button</span> <span class="na">title=</span><span class="s">&quot;...&quot;</span>
+   <span class="na">data-name=</span><span class="s">&quot;...&quot;</span>
+   <span class="na">data-customize-website-views=</span><span class="s">&quot;website.template_header_default&quot;</span>
+   <span class="na">data-customize-website-variable=</span><span class="s">&quot;&#39;...&#39;&quot;</span>
+   <span class="na">data-img=</span><span class="s">&quot;...&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;template</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;...&quot;</span><span class="w"> </span><span class="na">inherit_id=</span><span class="s">&quot;...&quot;</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;...&quot;</span><span class="w"> </span><span class="na">active=</span><span class="s">&quot;True&quot;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;template</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;...&quot;</span><span class="w"> </span><span class="na">inherit_id=</span><span class="s">&quot;...&quot;</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;...&quot;</span><span class="w"> </span><span class="na">active=</span><span class="s">&quot;False&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;template</span> <span class="na">id=</span><span class="s">&quot;...&quot;</span> <span class="na">inherit_id=</span><span class="s">&quot;...&quot;</span> <span class="na">name=</span><span class="s">&quot;...&quot;</span> <span class="na">active=</span><span class="s">&quot;True&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;template</span> <span class="na">id=</span><span class="s">&quot;...&quot;</span> <span class="na">inherit_id=</span><span class="s">&quot;...&quot;</span> <span class="na">name=</span><span class="s">&quot;...&quot;</span> <span class="na">active=</span><span class="s">&quot;False&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 <div class="alert alert-success">
@@ -2470,22 +2470,22 @@ view.</p>
 Example</p><p><strong>Changing the menu items’ horizontal alignment</strong></p>
 <div class="literal-block-wrapper docutils container" id="id15">
 <div class="code-block-caption"><span class="caption-text"><code class="o_code docutils literal notranslate"><span class="pre">/website_airproof/data/presets.xml</span></code></span><a class="headerlink" href="#id15" title="Permalink to this code">¶</a></div>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;website.template_header_default_align_center&quot;</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span><span class="nt">&gt;</span>
-<span class="w">   </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;active&quot;</span><span class="w"> </span><span class="na">eval=</span><span class="s">&quot;True&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">&quot;website.template_header_default_align_center&quot;</span> <span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;active&quot;</span> <span class="na">eval=</span><span class="s">&quot;True&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/record&gt;</span>
 </pre></div>
 </div>
 </div>
 <p>The same logic can be used for others Odoo apps as well.</p>
 <p><strong>eCommerce - Display products categories</strong></p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;website_sale.products_categories&quot;</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span><span class="nt">&gt;</span>
-<span class="w">   </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;active&quot;</span><span class="w"> </span><span class="na">eval=</span><span class="s">&quot;False&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">&quot;website_sale.products_categories&quot;</span> <span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;active&quot;</span> <span class="na">eval=</span><span class="s">&quot;False&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/record&gt;</span>
 </pre></div>
 </div>
 <p><strong>Portal - Disable the language selector</strong></p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;portal.footer_language_selector&quot;</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span><span class="nt">&gt;</span>
-<span class="w">   </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;active&quot;</span><span class="w"> </span><span class="na">eval=</span><span class="s">&quot;False&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">&quot;portal.footer_language_selector&quot;</span> <span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;active&quot;</span> <span class="na">eval=</span><span class="s">&quot;False&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/record&gt;</span>
 </pre></div>
 </div>
@@ -2517,11 +2517,11 @@ file to your theme.</p>
 <p class="alert-title">
 Example</p><div class="literal-block-wrapper docutils container" id="id17">
 <div class="code-block-caption"><span class="caption-text"><code class="o_code docutils literal notranslate"><span class="pre">/website_airproof/static/src/scss/theme.scss</span></code></span><a class="headerlink" href="#id17" title="Permalink to this code">¶</a></div>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="w"> </span><span class="nx">blockquote</span><span class="w"> </span><span class="p">{</span>
-<span class="w">   </span><span class="nx">border</span><span class="o">-</span><span class="nx">radius</span><span class="o">:</span><span class="w"> </span><span class="nx">$rounded</span><span class="o">-</span><span class="nx">pill</span><span class="p">;</span>
-<span class="w">   </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="nx">o</span><span class="o">-</span><span class="nx">color</span><span class="p">(</span><span class="s1">&#39;o-color-3&#39;</span><span class="p">);</span>
-<span class="w">   </span><span class="nx">font</span><span class="o">-</span><span class="nx">family</span><span class="o">:</span><span class="w"> </span><span class="nx">o</span><span class="o">-</span><span class="nx">website</span><span class="o">-</span><span class="nx">value</span><span class="p">(</span><span class="s1">&#39;headings-font&#39;</span><span class="p">);</span>
-<span class="w"> </span><span class="p">}</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span> <span class="nx">blockquote</span> <span class="p">{</span>
+   <span class="nx">border</span><span class="o">-</span><span class="nx">radius</span><span class="o">:</span> <span class="nx">$rounded</span><span class="o">-</span><span class="nx">pill</span><span class="p">;</span>
+   <span class="nx">color</span><span class="o">:</span> <span class="nx">o</span><span class="o">-</span><span class="nx">color</span><span class="p">(</span><span class="s1">&#39;o-color-3&#39;</span><span class="p">);</span>
+   <span class="nx">font</span><span class="o">-</span><span class="nx">family</span><span class="o">:</span> <span class="nx">o</span><span class="o">-</span><span class="nx">website</span><span class="o">-</span><span class="nx">value</span><span class="p">(</span><span class="s1">&#39;headings-font&#39;</span><span class="p">);</span>
+ <span class="p">}</span>
 </pre></div>
 </div>
 </div>

@@ -11,7 +11,7 @@ then be processed and disbursed back to the employee for reimbursement(s).
 .. seealso::
    `Odoo Expenses: product page <https://www.odoo.com/app/expenses>`_
 
-Set expense categories
+Set expense categories 1123
 ======================
 
 The first step to track expenses is to configure the different types of expenses for the company

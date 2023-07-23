@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/administration/odoo_sh/getting_started/branches.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/administration/odoo_sh/getting_started/branches.html" />
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -2261,7 +2261,7 @@ such as <code class="o_code docutils literal notranslate"><span class="pre">&lt;
 </section><section id="clone">
 <h3>Clone<a class="headerlink" href="#clone" title="Permalink to this headline">¶</a></h3>
 <p>Download the Git repository.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>--recurse-submodules<span class="w"> </span>--branch<span class="w"> </span>master<span class="w"> </span>git@github.com:odoo/odoo.git
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git clone --recurse-submodules --branch master git@github.com:odoo/odoo.git
 </pre></div>
 </div>
 <p>Clones the repository <em>odoo/odoo</em>.</p>
@@ -2273,22 +2273,22 @@ such as <code class="o_code docutils literal notranslate"><span class="pre">&lt;
 </section><section id="fork">
 <h3>Fork<a class="headerlink" href="#fork" title="Permalink to this headline">¶</a></h3>
 <p>Create a new branch based on the current branch.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>feature-1<span class="w"> </span>master
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git checkout -b feature-1 master
 </pre></div>
 </div>
 <p>Creates a new branch called <em>feature-1</em> based on the branch <em>master</em>, and then checkouts it.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>feature-1
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git push -u origin feature-1
 </pre></div>
 </div>
 <p>Uploads the new branch <em>feature-1</em> on your remote repository.</p>
 </section><section id="merge">
 <h3>Merge<a class="headerlink" href="#merge" title="Permalink to this headline">¶</a></h3>
 <p>Merge the current branch in another branch.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>merge<span class="w"> </span>staging-1
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git merge staging-1
 </pre></div>
 </div>
 <p>Merges the branch <em>staging-1</em> in the current branch.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>master
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git push -u origin master
 </pre></div>
 </div>
 <p>Uploads the changes you just added in the <em>master</em> branch on your remote repository.</p>
@@ -2312,7 +2312,7 @@ To do so, follow these steps:</p>
 </section><section id="connection">
 <h4>Connection<a class="headerlink" href="#connection" title="Permalink to this headline">¶</a></h4>
 <p>To connect to your builds using ssh use the following command in a terminal:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>ssh<span class="w"> </span>&lt;build_id&gt;@&lt;domain&gt;
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ ssh &lt;build_id&gt;@&lt;domain&gt;
 </pre></div>
 </div>
 <p>You will find a shortcut for this command into the SSH tab in the upper right corner.</p>
@@ -2330,26 +2330,26 @@ disconnected in order to free up resources.</p>
 <p><em>Submodules</em> allows you to use modules from other repositories in your project.</p>
 <p>The submodules feature is detailed in the chapter
 <a class="reference internal" href="../advanced/submodules.html#odoosh-advanced-submodules"><span class="std std-ref">Submodules</span></a> of this documentation.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>submodule<span class="w"> </span>add<span class="w"> </span>-b<span class="w"> </span>master<span class="w"> </span>&lt;URL&gt;<span class="w"> </span>&lt;PATH&gt;
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git submodule add -b master &lt;URL&gt; &lt;PATH&gt;
 </pre></div>
 </div>
 <p>Adds the branch <em>master</em> of the repository <em>&lt;URL&gt;</em> as a submodule under the path <em>&lt;PATH&gt;</em> in your current branch.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </span>-a
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git commit -a
 </pre></div>
 </div>
 <p>Commits all your current changes.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>master
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git push -u origin master
 </pre></div>
 </div>
 <p>Uploads the changes you just added in the <em>master</em> branch on your remote repository.</p>
 </section><section id="delete">
 <h3>Delete<a class="headerlink" href="#delete" title="Permalink to this headline">¶</a></h3>
 <p>Delete a branch from your repository.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>:master
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git push origin :master
 </pre></div>
 </div>
 <p>Deletes the branch in your remote repository.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>branch<span class="w"> </span>-D<span class="w"> </span>master
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git branch -D master
 </pre></div>
 </div>
 <p>Deletes the branch in your local copy of the repository.</p>

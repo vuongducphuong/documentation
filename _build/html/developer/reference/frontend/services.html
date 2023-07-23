@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/reference/frontend/services.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/reference/frontend/services.html" />
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -1997,19 +1997,19 @@ provides a way to display a notification, or the <code class="o_code docutils li
 way to perform a request to the Odoo server.</p>
 <p>The following example registers a simple service that displays a notification
 every 5 seconds:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">registry</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@web/core/registry&quot;</span><span class="p">;</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">registry</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@web/core/registry&quot;</span><span class="p">;</span>
 
-<span class="kd">const</span><span class="w"> </span><span class="nx">myService</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">dependencies</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;notification&quot;</span><span class="p">],</span>
-<span class="w">    </span><span class="nx">start</span><span class="p">(</span><span class="nx">env</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">notification</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="nx">counter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1</span><span class="p">;</span>
-<span class="w">        </span><span class="nx">setInterval</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="nx">notification</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="sb">`Tick Tock </span><span class="si">${</span><span class="nx">counter</span><span class="o">++</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
-<span class="w">        </span><span class="p">},</span><span class="w"> </span><span class="mf">5000</span><span class="p">);</span>
-<span class="w">    </span><span class="p">}</span>
+<span class="kr">const</span> <span class="nx">myService</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">dependencies</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;notification&quot;</span><span class="p">],</span>
+    <span class="nx">start</span><span class="p">(</span><span class="nx">env</span><span class="p">,</span> <span class="p">{</span> <span class="nx">notification</span> <span class="p">})</span> <span class="p">{</span>
+        <span class="kd">let</span> <span class="nx">counter</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="nx">setInterval</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+            <span class="nx">notification</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="sb">`Tick Tock </span><span class="si">${</span><span class="nx">counter</span><span class="o">++</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+        <span class="p">},</span> <span class="mi">5000</span><span class="p">);</span>
+    <span class="p">}</span>
 <span class="p">};</span>
 
-<span class="nx">registry</span><span class="p">.</span><span class="nx">category</span><span class="p">(</span><span class="s2">&quot;services&quot;</span><span class="p">).</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;myService&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">myService</span><span class="p">);</span>
+<span class="nx">registry</span><span class="p">.</span><span class="nx">category</span><span class="p">(</span><span class="s2">&quot;services&quot;</span><span class="p">).</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;myService&quot;</span><span class="p">,</span> <span class="nx">myService</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>At startup, the web client starts all services present in the <code class="o_code docutils literal notranslate"><span class="pre">services</span></code>
@@ -2077,16 +2077,16 @@ in the second argument of the <code class="o_code docutils literal notranslate">
 <p>The <code class="o_code docutils literal notranslate"><span class="pre">useService</span></code> hook is the proper way to use a service in a component. It
 simply returns a reference to the service value, that can then be used by the
 component later. For example:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useService</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@web/core/utils/hooks&quot;</span><span class="p">;</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">useService</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@web/core/utils/hooks&quot;</span><span class="p">;</span>
 
-<span class="kd">class</span><span class="w"> </span><span class="nx">MyComponent</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">Component</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">rpc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useService</span><span class="p">(</span><span class="s2">&quot;rpc&quot;</span><span class="p">);</span>
+<span class="kr">class</span> <span class="nx">MyComponent</span> <span class="kr">extends</span> <span class="nx">Component</span> <span class="p">{</span>
+  <span class="nx">setup</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kr">const</span> <span class="nx">rpc</span> <span class="o">=</span> <span class="nx">useService</span><span class="p">(</span><span class="s2">&quot;rpc&quot;</span><span class="p">);</span>
 
-<span class="w">    </span><span class="nx">onWillStart</span><span class="p">(</span><span class="k">async</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="k">this</span><span class="p">.</span><span class="nx">someValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">rpc</span><span class="p">(...);</span>
-<span class="w">    </span><span class="p">});</span>
-<span class="w">  </span><span class="p">}</span>
+    <span class="nx">onWillStart</span><span class="p">(</span><span class="nx">async</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">someValue</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">rpc</span><span class="p">(...);</span>
+    <span class="p">});</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -2141,7 +2141,7 @@ component later. For example:</p>
 <li><p>Dependencies: none</p></li>
 </ul>
 <p>Provides a way to manipulate cookies. For example:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">cookieService</span><span class="p">.</span><span class="nx">setCookie</span><span class="p">(</span><span class="s2">&quot;hello&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;odoo&quot;</span><span class="p">);</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">cookieService</span><span class="p">.</span><span class="nx">setCookie</span><span class="p">(</span><span class="s2">&quot;hello&quot;</span><span class="p">,</span> <span class="s2">&quot;odoo&quot;</span><span class="p">);</span>
 </pre></div>
 </div>
 </section><section id="api">
@@ -2192,10 +2192,10 @@ component later. For example:</p>
 <p>A good example would be the rainbow man:</p>
 <img alt="The rainbow man effect" class="align-center" src="../../../_images/rainbow_man.png" style="width: 600px;" />
 <p>Here’s how this can be displayed:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span><span class="w"> </span><span class="nx">effectService</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useService</span><span class="p">(</span><span class="s2">&quot;effect&quot;</span><span class="p">);</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kr">const</span> <span class="nx">effectService</span> <span class="o">=</span> <span class="nx">useService</span><span class="p">(</span><span class="s2">&quot;effect&quot;</span><span class="p">);</span>
 <span class="nx">effectService</span><span class="p">.</span><span class="nx">add</span><span class="p">({</span>
-<span class="w">  </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;rainbow_man&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// can be omitted, default type is already &quot;rainbow_man&quot;</span>
-<span class="w">  </span><span class="nx">message</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Boom! Team record for the past 30 days.&quot;</span><span class="p">,</span>
+  <span class="nx">type</span><span class="o">:</span> <span class="s2">&quot;rainbow_man&quot;</span><span class="p">,</span> <span class="c1">// can be omitted, default type is already &quot;rainbow_man&quot;</span>
+  <span class="nx">message</span><span class="o">:</span> <span class="s2">&quot;Boom! Team record for the past 30 days.&quot;</span><span class="p">,</span>
 <span class="p">});</span>
 </pre></div>
 </div>
@@ -2219,10 +2219,10 @@ Warning</p><p>The hook <code class="o_code docutils literal notranslate"><span c
 </dd></dl>
 
 <p>The options are defined by:</p>
-<div class="highlight-ts notranslate"><div class="highlight"><pre><span></span><span class="kd">interface</span><span class="w"> </span><span class="nx">EffectOptions</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="c1">// The name of the desired effect</span>
-<span class="w">  </span><span class="kr">type</span><span class="nx">?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
-<span class="w">  </span><span class="p">[</span><span class="nx">paramName</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">any</span><span class="p">;</span>
+<div class="highlight-ts notranslate"><div class="highlight"><pre><span></span><span class="kr">interface</span> <span class="nx">EffectOptions</span> <span class="p">{</span>
+  <span class="c1">// The name of the desired effect</span>
+  <span class="nx">type?</span>: <span class="kt">string</span><span class="p">;</span>
+  <span class="p">[</span><span class="nx">paramName</span>: <span class="kt">string</span><span class="p">]</span><span class="o">:</span> <span class="nx">any</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -2231,7 +2231,7 @@ Warning</p><p>The hook <code class="o_code docutils literal notranslate"><span c
 <p>Currently, the only effect is the rainbow man.</p>
 </section><section id="rainbowman">
 <h5>RainbowMan<a class="headerlink" href="#rainbowman" title="Permalink to this headline">¶</a></h5>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">effectService</span><span class="p">.</span><span class="nx">add</span><span class="p">({</span><span class="w"> </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;rainbow_man&quot;</span><span class="w"> </span><span class="p">});</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">effectService</span><span class="p">.</span><span class="nx">add</span><span class="p">({</span> <span class="nx">type</span><span class="o">:</span> <span class="s2">&quot;rainbow_man&quot;</span> <span class="p">});</span>
 </pre></div>
 </div>
 <table class="colwidths-given table docutils">
@@ -2287,8 +2287,8 @@ will get displayed as a fallback.</p>
 <h4>How to add an effect<a class="headerlink" href="#how-to-add-an-effect" title="Permalink to this headline">¶</a></h4>
 <p id="frontend-services-effect-registry">The effects are stored in a registry called <code class="o_code docutils literal notranslate"><span class="pre">effects</span></code>.
 You can add new effects by providing a name and a function.</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span><span class="w"> </span><span class="nx">effectRegistry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">registry</span><span class="p">.</span><span class="nx">category</span><span class="p">(</span><span class="s2">&quot;effects&quot;</span><span class="p">);</span>
-<span class="nx">effectRegistry</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;rainbow_man&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">rainbowManEffectFunction</span><span class="p">);</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kr">const</span> <span class="nx">effectRegistry</span> <span class="o">=</span> <span class="nx">registry</span><span class="p">.</span><span class="nx">category</span><span class="p">(</span><span class="s2">&quot;effects&quot;</span><span class="p">);</span>
+<span class="nx">effectRegistry</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;rainbow_man&quot;</span><span class="p">,</span> <span class="nx">rainbowManEffectFunction</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>The function must follow this API:</p>
@@ -2315,11 +2315,11 @@ effect component container.</p>
 <p>Let’s say we want to add an effect that add a sepia look at the page.</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="cm">/** @odoo-module **/</span>
 
-<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">registry</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@web/core/registry&quot;</span><span class="p">;</span>
-<span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Component</span><span class="p">,</span><span class="w"> </span><span class="nx">tags</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">owl</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">registry</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@web/core/registry&quot;</span><span class="p">;</span>
+<span class="kr">const</span> <span class="p">{</span> <span class="nx">Component</span><span class="p">,</span> <span class="nx">tags</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">owl</span><span class="p">;</span>
 
-<span class="kd">class</span><span class="w"> </span><span class="nx">SepiaEffect</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">Component</span><span class="w"> </span><span class="p">{}</span>
-<span class="nx">SepiaEffect</span><span class="p">.</span><span class="nx">template</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">tags</span><span class="p">.</span><span class="nx">xml</span><span class="sb">`</span>
+<span class="kr">class</span> <span class="nx">SepiaEffect</span> <span class="kr">extends</span> <span class="nx">Component</span> <span class="p">{}</span>
+<span class="nx">SepiaEffect</span><span class="p">.</span><span class="nx">template</span> <span class="o">=</span> <span class="nx">tags</span><span class="p">.</span><span class="nx">xml</span><span class="sb">`</span>
 <span class="sb">    &lt;div style=&quot;</span>
 <span class="sb">        position: absolute;</span>
 <span class="sb">        left: 0;</span>
@@ -2331,20 +2331,20 @@ effect component container.</p>
 <span class="sb">    &quot;&gt;&lt;/div&gt;</span>
 <span class="sb">`</span><span class="p">;</span>
 
-<span class="k">export</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">sepiaEffectProvider</span><span class="p">(</span><span class="nx">env</span><span class="p">,</span><span class="w"> </span><span class="nx">params</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{})</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">Component</span><span class="o">:</span><span class="w"> </span><span class="nx">SepiaEffect</span><span class="p">,</span>
-<span class="w">    </span><span class="p">};</span>
+<span class="kr">export</span> <span class="kd">function</span> <span class="nx">sepiaEffectProvider</span><span class="p">(</span><span class="nx">env</span><span class="p">,</span> <span class="nx">params</span> <span class="o">=</span> <span class="p">{})</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="nx">Component</span><span class="o">:</span> <span class="nx">SepiaEffect</span><span class="p">,</span>
+    <span class="p">};</span>
 <span class="p">}</span>
 
-<span class="kd">const</span><span class="w"> </span><span class="nx">effectRegistry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">registry</span><span class="p">.</span><span class="nx">category</span><span class="p">(</span><span class="s2">&quot;effects&quot;</span><span class="p">);</span>
-<span class="nx">effectRegistry</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;sepia&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">sepiaEffectProvider</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">effectRegistry</span> <span class="o">=</span> <span class="nx">registry</span><span class="p">.</span><span class="nx">category</span><span class="p">(</span><span class="s2">&quot;effects&quot;</span><span class="p">);</span>
+<span class="nx">effectRegistry</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;sepia&quot;</span><span class="p">,</span> <span class="nx">sepiaEffectProvider</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>And then, call it somewhere you want and you will see the result.
 Here, it is called in webclient.js to make it visible everywhere for the example.</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span><span class="w"> </span><span class="nx">effectService</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useService</span><span class="p">(</span><span class="s2">&quot;effect&quot;</span><span class="p">);</span>
-<span class="nx">effectService</span><span class="p">.</span><span class="nx">add</span><span class="p">({</span><span class="w"> </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;sepia&quot;</span><span class="w"> </span><span class="p">});</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kr">const</span> <span class="nx">effectService</span> <span class="o">=</span> <span class="nx">useService</span><span class="p">(</span><span class="s2">&quot;effect&quot;</span><span class="p">);</span>
+<span class="nx">effectService</span><span class="p">.</span><span class="nx">add</span><span class="p">({</span> <span class="nx">type</span><span class="o">:</span> <span class="s2">&quot;sepia&quot;</span> <span class="p">});</span>
 </pre></div>
 </div>
 <img alt="Odoo in sepia" class="align-center" src="../../../_images/odoo_sepia.png" style="width: 600px;" />
@@ -2398,10 +2398,10 @@ control on requests may sometimes be required.</p>
 
 </section><section id="id5">
 <h4>Example<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span><span class="w"> </span><span class="nx">httpService</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useService</span><span class="p">(</span><span class="s2">&quot;http&quot;</span><span class="p">);</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">httpService</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;https://something.com/posts/1&quot;</span><span class="p">);</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kr">const</span> <span class="nx">httpService</span> <span class="o">=</span> <span class="nx">useService</span><span class="p">(</span><span class="s2">&quot;http&quot;</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">data</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">httpService</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;https://something.com/posts/1&quot;</span><span class="p">);</span>
 <span class="c1">// ...</span>
-<span class="k">await</span><span class="w"> </span><span class="nx">httpService</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="s2">&quot;https://something.com/posts/1&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;new title&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">content</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;new content&quot;</span><span class="w"> </span><span class="p">});</span>
+<span class="nx">await</span> <span class="nx">httpService</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="s2">&quot;https://something.com/posts/1&quot;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">title</span><span class="o">:</span> <span class="s2">&quot;new title&quot;</span><span class="p">,</span> <span class="nx">content</span><span class="o">:</span> <span class="s2">&quot;new content&quot;</span> <span class="p">});</span>
 </pre></div>
 </div>
 </section><section id="notification-service">
@@ -2413,7 +2413,7 @@ control on requests may sometimes be required.</p>
 <li><p>Dependencies: None</p></li>
 </ul>
 <p>The <code class="o_code docutils literal notranslate"><span class="pre">notification</span></code> service allows to display notifications on the screen.</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span><span class="w"> </span><span class="nx">notificationService</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useService</span><span class="p">(</span><span class="s2">&quot;notification&quot;</span><span class="p">);</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kr">const</span> <span class="nx">notificationService</span> <span class="o">=</span> <span class="nx">useService</span><span class="p">(</span><span class="s2">&quot;notification&quot;</span><span class="p">);</span>
 <span class="nx">notificationService</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;I&#39;m a very simple notification&quot;</span><span class="p">);</span>
 </pre></div>
 </div>
@@ -2508,29 +2508,29 @@ control on requests may sometimes be required.</p>
 <h4>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h4>
 <p>A notification for when a sale deal is made with a button to go some kind of commission page.</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// in setup</span>
-<span class="k">this</span><span class="p">.</span><span class="nx">notificationService</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useService</span><span class="p">(</span><span class="s2">&quot;notification&quot;</span><span class="p">);</span>
-<span class="k">this</span><span class="p">.</span><span class="nx">actionService</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useService</span><span class="p">(</span><span class="s2">&quot;action&quot;</span><span class="p">);</span>
+<span class="k">this</span><span class="p">.</span><span class="nx">notificationService</span> <span class="o">=</span> <span class="nx">useService</span><span class="p">(</span><span class="s2">&quot;notification&quot;</span><span class="p">);</span>
+<span class="k">this</span><span class="p">.</span><span class="nx">actionService</span> <span class="o">=</span> <span class="nx">useService</span><span class="p">(</span><span class="s2">&quot;action&quot;</span><span class="p">);</span>
 
 <span class="c1">// later</span>
-<span class="k">this</span><span class="p">.</span><span class="nx">notificationService</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;You closed a deal!&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Congrats&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;success&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nx">buttons</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">      </span><span class="p">{</span>
-<span class="w">          </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;See your Commission&quot;</span><span class="p">,</span>
-<span class="w">          </span><span class="nx">onClick</span><span class="o">:</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">              </span><span class="k">this</span><span class="p">.</span><span class="nx">actionService</span><span class="p">.</span><span class="nx">doAction</span><span class="p">(</span><span class="s2">&quot;commission_action&quot;</span><span class="p">);</span>
-<span class="w">          </span><span class="p">},</span>
-<span class="w">      </span><span class="p">},</span>
-<span class="w">  </span><span class="p">],</span>
+<span class="k">this</span><span class="p">.</span><span class="nx">notificationService</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;You closed a deal!&quot;</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">title</span><span class="o">:</span> <span class="s2">&quot;Congrats&quot;</span><span class="p">,</span>
+  <span class="nx">type</span><span class="o">:</span> <span class="s2">&quot;success&quot;</span><span class="p">,</span>
+  <span class="nx">buttons</span><span class="o">:</span> <span class="p">[</span>
+      <span class="p">{</span>
+          <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;See your Commission&quot;</span><span class="p">,</span>
+          <span class="nx">onClick</span><span class="o">:</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+              <span class="k">this</span><span class="p">.</span><span class="nx">actionService</span><span class="p">.</span><span class="nx">doAction</span><span class="p">(</span><span class="s2">&quot;commission_action&quot;</span><span class="p">);</span>
+          <span class="p">},</span>
+      <span class="p">},</span>
+  <span class="p">],</span>
 <span class="p">});</span>
 </pre></div>
 </div>
 <img alt="Example of notification" class="align-center" src="../../../_images/notification_service.png" style="width: 600px;" />
 <p>A notification that closes after a second:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span><span class="w"> </span><span class="nx">notificationService</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useService</span><span class="p">(</span><span class="s2">&quot;notification&quot;</span><span class="p">);</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">close</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">notificationService</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;I will be quickly closed&quot;</span><span class="p">);</span>
-<span class="nx">setTimeout</span><span class="p">(</span><span class="nx">close</span><span class="p">,</span><span class="w"> </span><span class="mf">1000</span><span class="p">);</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kr">const</span> <span class="nx">notificationService</span> <span class="o">=</span> <span class="nx">useService</span><span class="p">(</span><span class="s2">&quot;notification&quot;</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">close</span> <span class="o">=</span> <span class="nx">notificationService</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;I will be quickly closed&quot;</span><span class="p">);</span>
+<span class="nx">setTimeout</span><span class="p">(</span><span class="nx">close</span><span class="p">,</span> <span class="mi">1000</span><span class="p">);</span>
 </pre></div>
 </div>
 </section><section id="router-service">
@@ -2565,10 +2565,10 @@ explicitely given</p></li>
 
 <p>For example:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// url = /web?debug=assets#action=123&amp;owl&amp;menu_id=174</span>
-<span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">pathname</span><span class="p">,</span><span class="w"> </span><span class="nx">search</span><span class="p">,</span><span class="w"> </span><span class="nx">hash</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">env</span><span class="p">.</span><span class="nx">services</span><span class="p">.</span><span class="nx">router</span><span class="p">.</span><span class="nx">current</span><span class="p">;</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">pathname</span><span class="p">);</span><span class="w"> </span><span class="c1">//   /web</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">search</span><span class="p">);</span><span class="w"> </span><span class="c1">//   { debug=&quot;assets&quot; }</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">hash</span><span class="p">);</span><span class="w"> </span><span class="c1">//   { action:123, owl: &quot;&quot;, menu_id: 174 }</span>
+<span class="kr">const</span> <span class="p">{</span> <span class="nx">pathname</span><span class="p">,</span> <span class="nx">search</span><span class="p">,</span> <span class="nx">hash</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">env</span><span class="p">.</span><span class="nx">services</span><span class="p">.</span><span class="nx">router</span><span class="p">.</span><span class="nx">current</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">pathname</span><span class="p">);</span> <span class="c1">//   /web</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">search</span><span class="p">);</span> <span class="c1">//   { debug=&quot;assets&quot; }</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">hash</span><span class="p">);</span> <span class="c1">//   { action:123, owl: &quot;&quot;, menu_id: 174 }</span>
 </pre></div>
 </div>
 <p>Updating the URL is done with the  <code class="o_code docutils literal notranslate"><span class="pre">pushState</span></code> method:</p>
@@ -2598,9 +2598,9 @@ well.</p>
 
 <p>For example:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// url = /web#action_id=123</span>
-<span class="nx">routerService</span><span class="p">.</span><span class="nx">pushState</span><span class="p">({</span><span class="w"> </span><span class="nx">menu_id</span><span class="o">:</span><span class="w"> </span><span class="mf">321</span><span class="w"> </span><span class="p">});</span>
+<span class="nx">routerService</span><span class="p">.</span><span class="nx">pushState</span><span class="p">({</span> <span class="nx">menu_id</span><span class="o">:</span> <span class="mi">321</span> <span class="p">});</span>
 <span class="c1">// url is now /web#action_id=123&amp;menu_id=321</span>
-<span class="nx">routerService</span><span class="p">.</span><span class="nx">pushState</span><span class="p">({</span><span class="w"> </span><span class="nx">yipyip</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="w"> </span><span class="p">},</span><span class="w"> </span><span class="nx">replace</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">);</span>
+<span class="nx">routerService</span><span class="p">.</span><span class="nx">pushState</span><span class="p">({</span> <span class="nx">yipyip</span><span class="o">:</span> <span class="s2">&quot;&quot;</span> <span class="p">},</span> <span class="nx">replace</span><span class="o">:</span> <span class="kc">true</span><span class="p">);</span>
 <span class="c1">// url is now /web#yipyip</span>
 </pre></div>
 </div>
@@ -2639,10 +2639,10 @@ whenever the current route has changed.</p>
 the server. Calling a controller is very simple: the route should be the first
 argument and optionally, a <code class="o_code docutils literal notranslate"><span class="pre">params</span></code> object can be given as a second argument.</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// in setup</span>
-<span class="k">this</span><span class="p">.</span><span class="nx">rpc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useService</span><span class="p">(</span><span class="s2">&quot;rpc&quot;</span><span class="p">);</span>
+<span class="k">this</span><span class="p">.</span><span class="nx">rpc</span> <span class="o">=</span> <span class="nx">useService</span><span class="p">(</span><span class="s2">&quot;rpc&quot;</span><span class="p">);</span>
 
 <span class="c1">// somewhere else, in an async function:</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">rpc</span><span class="p">(</span><span class="s2">&quot;/my/route&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">some</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;value&quot;</span><span class="w"> </span><span class="p">});</span>
+<span class="kr">const</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">await</span> <span class="k">this</span><span class="p">.</span><span class="nx">rpc</span><span class="p">(</span><span class="s2">&quot;/my/route&quot;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">some</span><span class="o">:</span> <span class="s2">&quot;value&quot;</span> <span class="p">});</span>
 </pre></div>
 </div>
 <div class="alert alert-primary">
@@ -2782,16 +2782,16 @@ to the listener so that you can implement your own behavior correctly from the l
 title. For example, if the current document title is “Odoo”, we can change it
 to “Odoo 15 - Apple” by using the following command:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// in some component setup method</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">titleService</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useService</span><span class="p">(</span><span class="s2">&quot;title&quot;</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">titleService</span> <span class="o">=</span> <span class="nx">useService</span><span class="p">(</span><span class="s2">&quot;title&quot;</span><span class="p">);</span>
 
-<span class="nx">titleService</span><span class="p">.</span><span class="nx">setParts</span><span class="p">({</span><span class="w"> </span><span class="nx">odoo</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Odoo 15&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">fruit</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Apple&quot;</span><span class="w"> </span><span class="p">});</span>
+<span class="nx">titleService</span><span class="p">.</span><span class="nx">setParts</span><span class="p">({</span> <span class="nx">odoo</span><span class="o">:</span> <span class="s2">&quot;Odoo 15&quot;</span><span class="p">,</span> <span class="nx">fruit</span><span class="o">:</span> <span class="s2">&quot;Apple&quot;</span> <span class="p">});</span>
 </pre></div>
 </div>
 </section><section id="id15">
 <h4>API<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h4>
 <p>The <code class="o_code docutils literal notranslate"><span class="pre">title</span></code> service manipulates the following interface:</p>
-<div class="highlight-ts notranslate"><div class="highlight"><pre><span></span><span class="kd">interface</span><span class="w"> </span><span class="nx">Parts</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="p">[</span><span class="nx">key</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
+<div class="highlight-ts notranslate"><div class="highlight"><pre><span></span><span class="kr">interface</span> <span class="nx">Parts</span> <span class="p">{</span>
+    <span class="p">[</span><span class="nx">key</span>: <span class="kt">string</span><span class="p">]</span><span class="o">:</span> <span class="kt">string</span> <span class="o">|</span> <span class="kc">null</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -2830,12 +2830,12 @@ value found in the <code class="o_code docutils literal notranslate"><span class
 Delete a part (a value) is done by setting the associated key value to <code class="o_code docutils literal notranslate"><span class="pre">null</span></code>.</p>
 <p>Note that one can only modify a single part without affecting the other
 parts. For example, if the title is composed of the following parts:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"> </span><span class="nx">odoo</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Odoo&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">action</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Import&quot;</span><span class="w"> </span><span class="p">}</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span> <span class="nx">odoo</span><span class="o">:</span> <span class="s2">&quot;Odoo&quot;</span><span class="p">,</span> <span class="nx">action</span><span class="o">:</span> <span class="s2">&quot;Import&quot;</span> <span class="p">}</span>
 </pre></div>
 </div>
 <p>with <code class="o_code docutils literal notranslate"><span class="pre">current</span></code> value being <code class="o_code docutils literal notranslate"><span class="pre">Odoo</span> <span class="pre">-</span> <span class="pre">Import</span></code> , then</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">setParts</span><span class="p">({</span>
-<span class="w">  </span><span class="nx">action</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+  <span class="nx">action</span><span class="o">:</span> <span class="kc">null</span><span class="p">,</span>
 <span class="p">});</span>
 </pre></div>
 </div>
@@ -2924,7 +2924,7 @@ the connected user.</p>
 </dd>
 </dl>
 <p>update the <a class="reference internal" href="framework_overview.html#frontend-framework-user-context"><span class="std std-ref">user context</span></a> with the given object.</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">userService</span><span class="p">.</span><span class="nx">updateContext</span><span class="p">({</span><span class="w"> </span><span class="nx">isFriend</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="p">})</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">userService</span><span class="p">.</span><span class="nx">updateContext</span><span class="p">({</span> <span class="nx">isFriend</span><span class="o">:</span> <span class="kc">true</span> <span class="p">})</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -2959,7 +2959,7 @@ the connected user.</p>
 </dd>
 </dl>
 <p>check if the user is part of a group</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span><span class="w"> </span><span class="nx">isInSalesGroup</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">userService</span><span class="p">.</span><span class="nx">hasGroup</span><span class="p">(</span><span class="s2">&quot;sale.group_sales&quot;</span><span class="p">)</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kr">const</span> <span class="nx">isInSalesGroup</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">userService</span><span class="p">.</span><span class="nx">hasGroup</span><span class="p">(</span><span class="s2">&quot;sale.group_sales&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </dd></dl>

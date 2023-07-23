@@ -23,7 +23,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/contributing/documentation.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/contributing/documentation.html" />
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -2011,32 +2011,32 @@ with the installation path of Git (by default <code class="file o_code docutils 
 </li>
 <li><p>Configure Git to identify yourself as the author of your future contributions. Enter the same email
 address you used to register on GitHub.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span>“Your<span class="w"> </span>Name”
-<span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span>“youremail@example.com”
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git config --global user.name “Your Name”
+<span class="gp">$</span> git config --global user.email “youremail@example.com”
 </pre></div>
 </div>
 </li>
 <li><p>Clone the sources with Git and navigate into the local repository.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>clone<span class="w"> </span>git@github.com:odoo/documentation.git
-<span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>documentation
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git clone git@github.com:odoo/documentation.git
+<span class="gp">$</span> <span class="nb">cd</span> documentation
 </pre></div>
 </div>
 </li>
 <li><p>Configure Git to push changes to your fork rather than to the main codebase. In the commands
 below, replace <code class="o_code docutils literal notranslate"><span class="pre">&lt;your_github_account&gt;</span></code> with the name of the GitHub account on which you created
 the fork. Skip this step if you work at Odoo.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>dev<span class="w"> </span>git@github.com:&lt;your_github_account&gt;/documentation.git
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git remote add dev git@github.com:&lt;your_github_account&gt;/documentation.git
 </pre></div>
 </div>
 </li>
 <li><p>Configure Git to ease the collaboration between writers coming from different systems.</p>
 <div class="sphinx-tabs docutils container">
-<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-1-TGludXggYW5kIG1hY09T" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-1-TGludXggYW5kIG1hY09T" name="TGludXggYW5kIG1hY09T" role="tab" tabindex="0">Linux and macOS</button><button aria-controls="panel-1-V2luZG93cw==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-1-V2luZG93cw==" name="V2luZG93cw==" role="tab" tabindex="-1">Windows</button></div><div aria-labelledby="tab-1-TGludXggYW5kIG1hY09T" class="sphinx-tabs-panel group-tab" id="panel-1-TGludXggYW5kIG1hY09T" name="TGludXggYW5kIG1hY09T" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.autocrlf<span class="w"> </span>input
-<span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>commit.template<span class="w"> </span><span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>/commit_template.txt
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-1-TGludXggYW5kIG1hY09T" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-1-TGludXggYW5kIG1hY09T" name="TGludXggYW5kIG1hY09T" role="tab" tabindex="0">Linux and macOS</button><button aria-controls="panel-1-V2luZG93cw==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-1-V2luZG93cw==" name="V2luZG93cw==" role="tab" tabindex="-1">Windows</button></div><div aria-labelledby="tab-1-TGludXggYW5kIG1hY09T" class="sphinx-tabs-panel group-tab" id="panel-1-TGludXggYW5kIG1hY09T" name="TGludXggYW5kIG1hY09T" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git config --global core.autocrlf input
+<span class="gp">$</span> git config commit.template <span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>/commit_template.txt
 </pre></div>
 </div>
-</div><div aria-labelledby="tab-1-V2luZG93cw==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-1-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.autocrlf<span class="w"> </span><span class="nb">true</span>
-<span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>commit.template<span class="w"> </span>%CD%<span class="se">\c</span>ommit_template.txt
+</div><div aria-labelledby="tab-1-V2luZG93cw==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-1-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git config --global core.autocrlf <span class="nb">true</span>
+<span class="gp">$</span> git config commit.template %CD%<span class="se">\c</span>ommit_template.txt
 </pre></div>
 </div>
 </div></div>
@@ -2044,7 +2044,7 @@ the fork. Skip this step if you work at Odoo.</p>
 <li><p>Install the latest release of <a class="reference external" href="https://wiki.python.org/moin/BeginnersGuide/Download">Python</a>
 and <a class="reference external" href="https://pip.pypa.io/en/stable/installation/">pip</a> on your machine.</p></li>
 <li><p>Install the Python dependencies of the documentation with pip.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> pip install -r requirements.txt
 </pre></div>
 </div>
 <p>Verify that the installation directory of the Python dependencies is included in your system’s
@@ -2058,7 +2058,7 @@ with the installation path of the Python dependencies.</p>
 </li>
 <li><p>Install Make.</p>
 <div class="sphinx-tabs docutils container">
-<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-3-TGludXggYW5kIG1hY09T" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-3-TGludXggYW5kIG1hY09T" name="TGludXggYW5kIG1hY09T" role="tab" tabindex="0">Linux and macOS</button><button aria-controls="panel-3-V2luZG93cw==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-3-V2luZG93cw==" name="V2luZG93cw==" role="tab" tabindex="-1">Windows</button></div><div aria-labelledby="tab-3-TGludXggYW5kIG1hY09T" class="sphinx-tabs-panel group-tab" id="panel-3-TGludXggYW5kIG1hY09T" name="TGludXggYW5kIG1hY09T" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>make<span class="w"> </span>-y
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-3-TGludXggYW5kIG1hY09T" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-3-TGludXggYW5kIG1hY09T" name="TGludXggYW5kIG1hY09T" role="tab" tabindex="0">Linux and macOS</button><button aria-controls="panel-3-V2luZG93cw==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-3-V2luZG93cw==" name="V2luZG93cw==" role="tab" tabindex="-1">Windows</button></div><div aria-labelledby="tab-3-TGludXggYW5kIG1hY09T" class="sphinx-tabs-panel group-tab" id="panel-3-TGludXggYW5kIG1hY09T" name="TGludXggYW5kIG1hY09T" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> sudo apt install make -y
 </pre></div>
 </div>
 </div><div aria-labelledby="tab-3-V2luZG93cw==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-3-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><p>Follow the <a class="reference external" href="https://www.technewstoday.com/install-and-use-make-in-windows">guide to install Make on Windows</a>.</p>
@@ -2123,10 +2123,10 @@ base branch: <code class="o_code docutils literal notranslate"><span class="pre"
 Odoo handle: <code class="o_code docutils literal notranslate"><span class="pre">16.0-...-xyz</span></code>.</p>
 <div class="alert alert-success">
 <p class="alert-title">
-Example</p><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>switch<span class="w"> </span>-c<span class="w"> </span><span class="m">16</span>.0-explain-pricelists
+Example</p><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git switch -c <span class="m">16</span>.0-explain-pricelists
 </pre></div>
 </div>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>switch<span class="w"> </span>-c<span class="w"> </span><span class="m">16</span>.0-explain-pricelists-xyz
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git switch -c <span class="m">16</span>.0-explain-pricelists-xyz
 </pre></div>
 </div>
 </div>
@@ -2134,8 +2134,8 @@ Example</p><div class="highlight-console notranslate"><div class="highlight"><pr
 <li><p>Make the desired changes while taking care of following the <a class="reference internal" href="documentation/content_guidelines.html"><span class="doc">content</span></a> and <a class="reference internal" href="documentation/rst_guidelines.html"><span class="doc">RST</span></a>
 guidelines.</p></li>
 <li><p>Compress all PNG images that you added or modified.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pngquant<span class="w"> </span>path/to/image.png
-<span class="gp">$ </span>mv<span class="w"> </span>path/to/image-fs8.png<span class="w"> </span>path/to/image.png
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> pngquant path/to/image.png
+<span class="gp">$</span> mv path/to/image-fs8.png path/to/image.png
 </pre></div>
 </div>
 </li>
@@ -2149,15 +2149,15 @@ Tip</p><p>Use <strong class="command o_code">make help</strong> to learn about o
 </div>
 </li>
 <li><p>Commit your changes. Write a clear commit message as instructed in the <a class="reference internal" href="development/git_guidelines.html"><span class="doc">Git guidelines</span></a>.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>add<span class="w"> </span>.
-<span class="gp">$ </span>git<span class="w"> </span>commit
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git add .
+<span class="gp">$</span> git commit
 </pre></div>
 </div>
 </li>
 <li><p>Push your change to your fork, for which we added the remote alias <code class="o_code docutils literal notranslate"><span class="pre">dev</span></code>.</p>
 <div class="alert alert-success">
 <p class="alert-title">
-Example</p><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>dev<span class="w"> </span><span class="m">16</span>.0-explain-pricelists
+Example</p><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git push -u dev <span class="m">16</span>.0-explain-pricelists
 </pre></div>
 </div>
 </div>
@@ -2165,7 +2165,7 @@ Example</p><div class="highlight-console notranslate"><div class="highlight"><pr
 <code class="o_code docutils literal notranslate"><span class="pre">origin</span></code>.</p>
 <div class="alert alert-success">
 <p class="alert-title">
-Example</p><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span><span class="m">16</span>.0-explain-pricelists-xyz
+Example</p><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git push -u origin <span class="m">16</span>.0-explain-pricelists-xyz
 </pre></div>
 </div>
 </div>

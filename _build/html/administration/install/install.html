@@ -23,7 +23,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/administration/install/install.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/administration/install/install.html" />
     
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -2041,16 +2041,16 @@ Warning</p><div class="line-block">
 <div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-0-RGViaWFuL1VidW50dQ==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-0-RGViaWFuL1VidW50dQ==" name="RGViaWFuL1VidW50dQ==" role="tab" tabindex="0">Debian/Ubuntu</button><button aria-controls="panel-0-RmVkb3Jh" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-RmVkb3Jh" name="RmVkb3Jh" role="tab" tabindex="-1">Fedora</button></div><div aria-labelledby="tab-0-RGViaWFuL1VidW50dQ==" class="sphinx-tabs-panel group-tab" id="panel-0-RGViaWFuL1VidW50dQ==" name="RGViaWFuL1VidW50dQ==" role="tabpanel" tabindex="0"><p>Odoo needs a <a class="reference external" href="https://www.postgresql.org">PostgreSQL</a> server to run properly. The default configuration for
 the Odoo ‘deb’ package is to use the PostgreSQL server on the same host as your
 Odoo instance. Execute the following command in order to install the PostgreSQL server:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>postgresql<span class="w"> </span>-y
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> sudo apt install postgresql -y
 </pre></div>
 </div>
 </div><div aria-labelledby="tab-0-RmVkb3Jh" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-RmVkb3Jh" name="RmVkb3Jh" role="tabpanel" tabindex="0"><p>Odoo needs a <a class="reference external" href="https://www.postgresql.org">PostgreSQL</a> server to run properly. Make sure that the <code class="o_code docutils literal notranslate"><span class="pre">sudo</span></code> command is
 available and well configured and, only then, execute the following command in order to
 install the PostgreSQL server:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>postgresql-server
-<span class="gp">$ </span>sudo<span class="w"> </span>postgresql-setup<span class="w"> </span>--initdb<span class="w"> </span>--unit<span class="w"> </span>postgresql
-<span class="gp">$ </span>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>postgresql
-<span class="gp">$ </span>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>postgresql
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> sudo dnf install -y postgresql-server
+<span class="gp">$</span> sudo postgresql-setup --initdb --unit postgresql
+<span class="gp">$</span> sudo systemctl <span class="nb">enable</span> postgresql
+<span class="gp">$</span> sudo systemctl start postgresql
 </pre></div>
 </div>
 </div></div>
@@ -2063,18 +2063,18 @@ Warning</p><p><code class="o_code docutils literal notranslate"><span class="pre
 <div class="sphinx-tabs docutils container">
 <div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-1-RGViaWFuL1VidW50dQ==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-1-RGViaWFuL1VidW50dQ==" name="RGViaWFuL1VidW50dQ==" role="tab" tabindex="0">Debian/Ubuntu</button><button aria-controls="panel-1-RmVkb3Jh" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-1-RmVkb3Jh" name="RmVkb3Jh" role="tab" tabindex="-1">Fedora</button></div><div aria-labelledby="tab-1-RGViaWFuL1VidW50dQ==" class="sphinx-tabs-panel group-tab" id="panel-1-RGViaWFuL1VidW50dQ==" name="RGViaWFuL1VidW50dQ==" role="tabpanel" tabindex="0"><p>Odoo S.A. provides a repository that can be used with Debian and Ubuntu distributions. It can
 be used to install <em>Odoo Community Edition</em> by executing the following commands:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>wget<span class="w"> </span>-q<span class="w"> </span>-O<span class="w"> </span>-<span class="w"> </span>https://nightly.odoo.com/odoo.key<span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>gpg<span class="w"> </span>--dearmor<span class="w"> </span>-o<span class="w"> </span>/usr/share/keyrings/odoo-archive-keyring.gpg
-<span class="gp">$ </span><span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;deb [signed-by=/usr/share/keyrings/odoo-archive-keyring.gpg] https://nightly.odoo.com/16.0/nightly/deb/ ./&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>/etc/apt/sources.list.d/odoo.list
-<span class="gp">$ </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>odoo
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> wget -q -O - https://nightly.odoo.com/odoo.key <span class="p">|</span> sudo gpg --dearmor -o /usr/share/keyrings/odoo-archive-keyring.gpg
+<span class="gp">$</span> <span class="nb">echo</span> <span class="s1">&#39;deb [signed-by=/usr/share/keyrings/odoo-archive-keyring.gpg] https://nightly.odoo.com/16.0/nightly/deb/ ./&#39;</span> <span class="p">|</span> sudo tee /etc/apt/sources.list.d/odoo.list
+<span class="gp">$</span> sudo apt-get update <span class="o">&amp;&amp;</span> sudo apt-get install odoo
 </pre></div>
 </div>
 <p>You can then use the usual <code class="o_code docutils literal notranslate"><span class="pre">apt-get</span> <span class="pre">upgrade</span></code> command to keep your installation up-to-date.</p>
 </div><div aria-labelledby="tab-1-RmVkb3Jh" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-1-RmVkb3Jh" name="RmVkb3Jh" role="tabpanel" tabindex="0"><p>Odoo S.A. provides a repository that can be used with the Fedora distributions. It can be used
 to install <em>Odoo Community Edition</em> by executing the following commands:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sudo<span class="w"> </span>dnf<span class="w"> </span>config-manager<span class="w"> </span>--add-repo<span class="o">=</span>https://nightly.odoo.com/16.0/nightly/rpm/odoo.repo
-<span class="gp">$ </span>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>odoo
-<span class="gp">$ </span>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>odoo
-<span class="gp">$ </span>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>odoo
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> sudo dnf config-manager --add-repo<span class="o">=</span>https://nightly.odoo.com/16.0/nightly/rpm/odoo.repo
+<span class="gp">$</span> sudo dnf install -y odoo
+<span class="gp">$</span> sudo systemctl <span class="nb">enable</span> odoo
+<span class="gp">$</span> sudo systemctl start odoo
 </pre></div>
 </div>
 </div></div>
@@ -2093,9 +2093,9 @@ Note</p><p>Odoo 16 ‘deb’ package currently supports <a class="reference exte
 <a class="reference external" href="https://releases.ubuntu.com/22.04/">Ubuntu 22.04 (Jammy)</a> or above.</p>
 </div>
 <p>Next, execute the following commands <strong>as root</strong>:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp"># </span>dpkg<span class="w"> </span>-i<span class="w"> </span>&lt;path_to_installation_package&gt;<span class="w"> </span><span class="c1"># this probably fails with missing dependencies</span>
-<span class="gp"># </span>apt-get<span class="w"> </span>install<span class="w"> </span>-f<span class="w"> </span><span class="c1"># should install the missing dependencies</span>
-<span class="gp"># </span>dpkg<span class="w"> </span>-i<span class="w"> </span>&lt;path_to_installation_package&gt;
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">#</span> dpkg -i &lt;path_to_installation_package&gt; <span class="c1"># this probably fails with missing dependencies</span>
+<span class="gp">#</span> apt-get install -f <span class="c1"># should install the missing dependencies</span>
+<span class="gp">#</span> dpkg -i &lt;path_to_installation_package&gt;
 </pre></div>
 </div>
 <p>This will install Odoo as a service, create the necessary <a class="reference external" href="https://www.postgresql.org">PostgreSQL</a> user
@@ -2106,7 +2106,7 @@ Warning</p><ul>
 <li><p>The <code class="o_code docutils literal notranslate"><span class="pre">python3-xlwt</span></code> Debian package does not exists in Debian Buster nor Ubuntu 18.04. This
 python module is needed to export into xls format.</p>
 <p>If you need the feature, you can install it manually with:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sudo<span class="w"> </span>pip3<span class="w"> </span>install<span class="w"> </span>xlwt
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> sudo pip3 install xlwt
 </pre></div>
 </div>
 </li>
@@ -2114,7 +2114,7 @@ python module is needed to export into xls format.</p>
 amounts will not be rendered by Odoo and this could cause problems with the <code class="o_code docutils literal notranslate"><span class="pre">l10n_mx_edi</span></code>
 module.</p>
 <p>If you need this feature, you can install manually with:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sudo<span class="w"> </span>pip3<span class="w"> </span>install<span class="w"> </span>num2words
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> sudo pip3 install num2words
 </pre></div>
 </div>
 </li>
@@ -2127,9 +2127,9 @@ module.</p>
 Note</p><p>Odoo 16 ‘rpm’ package supports Fedora 36.</p>
 </div>
 <p>Once downloaded, the package can be installed using the ‘dnf’ package manager:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sudo<span class="w"> </span>dnf<span class="w"> </span>localinstall<span class="w"> </span>odoo_16.0.latest.noarch.rpm
-<span class="gp">$ </span>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>odoo
-<span class="gp">$ </span>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>odoo
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> sudo dnf localinstall odoo_16.0.latest.noarch.rpm
+<span class="gp">$</span> sudo systemctl <span class="nb">enable</span> odoo
+<span class="gp">$</span> sudo systemctl start odoo
 </pre></div>
 </div>
 </div></div>
@@ -2179,22 +2179,22 @@ or plan on contributing to Odoo source code, choose SSH.</p>
 </div>
 </div></div>
 </div><div aria-labelledby="tab-3-TGludXg=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-3-TGludXg=" name="TGludXg=" role="tabpanel" tabindex="0"><div class="sphinx-tabs docutils container">
-<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-5-5-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-5-5-0" name="5-0" role="tab" tabindex="0">Clone with HTTPS</button><button aria-controls="panel-5-5-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-5-5-1" name="5-1" role="tab" tabindex="-1">Clone with SSH</button></div><div aria-labelledby="tab-5-5-0" class="sphinx-tabs-panel" id="panel-5-5-0" name="5-0" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/odoo/odoo.git
-<span class="gp">$ </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/odoo/enterprise.git
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-5-5-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-5-5-0" name="5-0" role="tab" tabindex="0">Clone with HTTPS</button><button aria-controls="panel-5-5-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-5-5-1" name="5-1" role="tab" tabindex="-1">Clone with SSH</button></div><div aria-labelledby="tab-5-5-0" class="sphinx-tabs-panel" id="panel-5-5-0" name="5-0" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git clone https://github.com/odoo/odoo.git
+<span class="gp">$</span> git clone https://github.com/odoo/enterprise.git
 </pre></div>
 </div>
-</div><div aria-labelledby="tab-5-5-1" class="sphinx-tabs-panel" hidden="true" id="panel-5-5-1" name="5-1" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>clone<span class="w"> </span>git@github.com:odoo/odoo.git
-<span class="gp">$ </span>git<span class="w"> </span>clone<span class="w"> </span>git@github.com:odoo/enterprise.git
+</div><div aria-labelledby="tab-5-5-1" class="sphinx-tabs-panel" hidden="true" id="panel-5-5-1" name="5-1" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git clone git@github.com:odoo/odoo.git
+<span class="gp">$</span> git clone git@github.com:odoo/enterprise.git
 </pre></div>
 </div>
 </div></div>
 </div><div aria-labelledby="tab-3-TWFjIE9T" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-3-TWFjIE9T" name="TWFjIE9T" role="tabpanel" tabindex="0"><div class="sphinx-tabs docutils container">
-<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-6-6-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-6-6-0" name="6-0" role="tab" tabindex="0">Clone with HTTPS</button><button aria-controls="panel-6-6-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-6-6-1" name="6-1" role="tab" tabindex="-1">Clone with SSH</button></div><div aria-labelledby="tab-6-6-0" class="sphinx-tabs-panel" id="panel-6-6-0" name="6-0" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/odoo/odoo.git
-<span class="gp">$ </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/odoo/enterprise.git
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-6-6-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-6-6-0" name="6-0" role="tab" tabindex="0">Clone with HTTPS</button><button aria-controls="panel-6-6-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-6-6-1" name="6-1" role="tab" tabindex="-1">Clone with SSH</button></div><div aria-labelledby="tab-6-6-0" class="sphinx-tabs-panel" id="panel-6-6-0" name="6-0" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git clone https://github.com/odoo/odoo.git
+<span class="gp">$</span> git clone https://github.com/odoo/enterprise.git
 </pre></div>
 </div>
-</div><div aria-labelledby="tab-6-6-1" class="sphinx-tabs-panel" hidden="true" id="panel-6-6-1" name="6-1" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>clone<span class="w"> </span>git@github.com:odoo/odoo.git
-<span class="gp">$ </span>git<span class="w"> </span>clone<span class="w"> </span>git@github.com:odoo/enterprise.git
+</div><div aria-labelledby="tab-6-6-1" class="sphinx-tabs-panel" hidden="true" id="panel-6-6-1" name="6-1" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git clone git@github.com:odoo/odoo.git
+<span class="gp">$</span> git clone git@github.com:odoo/enterprise.git
 </pre></div>
 </div>
 </div></div>
@@ -2235,11 +2235,11 @@ on your machine if it is not already done.</p>
 <p class="alert-title">
 Note</p><p>If Python 3 is already installed, make sure that the version is 3.7 or above, as previous
 versions are not compatible with Odoo.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>python3<span class="w"> </span>--version
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> python3 --version
 </pre></div>
 </div>
 <p>Verify also that <a class="reference external" href="https://pip.pypa.io">pip</a> is installed for this version.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip3<span class="w"> </span>--version
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> pip3 --version
 </pre></div>
 </div>
 </div>
@@ -2249,11 +2249,11 @@ to download and install Python 3 on your machine if it is not already done.</p>
 <p class="alert-title">
 Note</p><p>If Python 3 is already installed, make sure that the version is 3.7 or above, as previous
 versions are not compatible with Odoo.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>python3<span class="w"> </span>--version
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> python3 --version
 </pre></div>
 </div>
 <p>Verify also that <a class="reference external" href="https://pip.pypa.io">pip</a> is installed for this version.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip3<span class="w"> </span>--version
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> pip3 --version
 </pre></div>
 </div>
 </div>
@@ -2282,13 +2282,13 @@ to <code class="o_code docutils literal notranslate"><span class="pre">Yes</span
 </div><div aria-labelledby="tab-8-TGludXg=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-8-TGludXg=" name="TGludXg=" role="tabpanel" tabindex="0"><p>Odoo uses PostgreSQL as database management system. Use your package manager to download and
 install PostgreSQL (supported version: 12.0 and later).</p>
 <p>It can be achieved by executing the following:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>postgresql<span class="w"> </span>postgresql-client
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> sudo apt install postgresql postgresql-client
 </pre></div>
 </div>
 <p>By default, the only user is <code class="o_code docutils literal notranslate"><span class="pre">postgres</span></code> but Odoo forbids connecting as <code class="o_code docutils literal notranslate"><span class="pre">postgres</span></code>, so you need
 to create a new PostgreSQL user:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sudo<span class="w"> </span>-u<span class="w"> </span>postgres<span class="w"> </span>createuser<span class="w"> </span>-s<span class="w"> </span><span class="nv">$USER</span>
-<span class="gp">$ </span>createdb<span class="w"> </span><span class="nv">$USER</span>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> sudo -u postgres createuser -s <span class="nv">$USER</span>
+<span class="gp">$</span> createdb <span class="nv">$USER</span>
 </pre></div>
 </div>
 <div class="alert alert-primary">
@@ -2305,8 +2305,8 @@ Tip</p><p>To make the command line tools bundled with <code class="o_code docuti
 </div>
 <p>By default, the only user is <code class="o_code docutils literal notranslate"><span class="pre">postgres</span></code> but Odoo forbids connecting as <code class="o_code docutils literal notranslate"><span class="pre">postgres</span></code>, so you need
 to create a new PostgreSQL user:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sudo<span class="w"> </span>-u<span class="w"> </span>postgres<span class="w"> </span>createuser<span class="w"> </span>-s<span class="w"> </span><span class="nv">$USER</span>
-<span class="gp">$ </span>createdb<span class="w"> </span><span class="nv">$USER</span>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> sudo -u postgres createuser -s <span class="nv">$USER</span>
+<span class="gp">$</span> createdb <span class="nv">$USER</span>
 </pre></div>
 </div>
 <div class="alert alert-primary">
@@ -2352,15 +2352,15 @@ Alternatively, you can install the python dependencies with <strong>pip</strong>
 <div class="sphinx-tabs docutils container">
 <div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-10-10-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-10-10-0" name="10-0" role="tab" tabindex="0">Debian/Ubuntu</button><button aria-controls="panel-10-10-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-10-10-1" name="10-1" role="tab" tabindex="-1">Install with pip</button></div><div aria-labelledby="tab-10-10-0" class="sphinx-tabs-panel" id="panel-10-10-0" name="10-0" role="tabpanel" tabindex="0"><p>For Debian-based systems, the packages are listed in the <a class="reference external" href="https://github.com/odoo/odoo/blob/16.0/debian/control">debian/control</a> file of the Odoo sources.</p>
 <p>On Debian/Ubuntu, the following commands should install the required packages:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>/CommunityPath
-<span class="gp">$ </span>sed<span class="w"> </span>-n<span class="w"> </span>-e<span class="w"> </span><span class="s1">&#39;/^Depends:/,/^Pre/ s/ python3-\(.*\),/python3-\1/p&#39;</span><span class="w"> </span>debian/control<span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>xargs<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>-y
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">cd</span> /CommunityPath
+<span class="gp">$</span> sed -n -e <span class="s1">&#39;/^Depends:/,/^Pre/ s/ python3-\(.*\),/python3-\1/p&#39;</span> debian/control <span class="p">|</span> sudo xargs apt-get install -y
 </pre></div>
 </div>
 </div><div aria-labelledby="tab-10-10-1" class="sphinx-tabs-panel" hidden="true" id="panel-10-10-1" name="10-1" role="tabpanel" tabindex="0"><p>As some of the python packages need a compilation step, they require system libraries to
 be installed.</p>
 <p>On Debian/Ubuntu-based systems, the following command should install these required
 libraries:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>python3-pip<span class="w"> </span>libldap2-dev<span class="w"> </span>libpq-dev<span class="w"> </span>libsasl2-dev
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> sudo apt install python3-pip libldap2-dev libpq-dev libsasl2-dev
 </pre></div>
 </div>
 <p>Odoo dependencies are listed in the <code class="file o_code docutils literal notranslate"><span class="pre">requirements.txt</span></code> file located at the root of
@@ -2383,8 +2383,8 @@ environments.</p>
 </div>
 <p>Navigate to the path of your Odoo Community installation (<code class="file o_code docutils literal notranslate"><span class="pre">CommunityPath</span></code>) and run
 <strong>pip</strong> on the requirements file to install the requirements for the current user.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>/CommunityPath
-<span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">cd</span> /CommunityPath
+<span class="gp">$</span> pip install -r requirements.txt
 </pre></div>
 </div>
 </div></div>
@@ -2393,7 +2393,7 @@ needed:</p>
 <ol class="arabic">
 <li><p>Download and install <strong>nodejs</strong> and <strong>npm</strong> with your package manager.</p></li>
 <li><p>Install <code class="o_code docutils literal notranslate"><span class="pre">rtlcss</span></code>:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sudo<span class="w"> </span>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>rtlcss
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> sudo npm install -g rtlcss
 </pre></div>
 </div>
 </li>
@@ -2407,9 +2407,9 @@ or with your system. You can use <a class="reference external" href="https://pyp
 </div>
 <p>Navigate to the path of your Odoo Community installation (<code class="o_code docutils literal notranslate"><span class="pre">CommunityPath</span></code>) and run <strong>pip</strong> on
 the requirements file:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>/CommunityPath
-<span class="gp">$ </span>pip3<span class="w"> </span>install<span class="w"> </span>setuptools<span class="w"> </span>wheel
-<span class="gp">$ </span>pip3<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">cd</span> /CommunityPath
+<span class="gp">$</span> pip3 install setuptools wheel
+<span class="gp">$</span> pip3 install -r requirements.txt
 </pre></div>
 </div>
 <div class="alert alert-warning">
@@ -2417,7 +2417,7 @@ the requirements file:</p>
 Warning</p><p>Non-Python dependencies need to be installed with a package manager:</p>
 <ol class="arabic">
 <li><p>Download and install the <strong>Command Line Tools</strong>:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>xcode-select<span class="w"> </span>--install
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> xcode-select --install
 </pre></div>
 </div>
 </li>
@@ -2430,7 +2430,7 @@ needed:</p>
 <ol class="arabic">
 <li><p>Download and install <strong>nodejs</strong> with your preferred package manager (<a class="reference external" href="https://brew.sh">homebrew</a>, <a class="reference external" href="https://www.macports.org">macports</a>).</p></li>
 <li><p>Install <code class="o_code docutils literal notranslate"><span class="pre">rtlcss</span></code>:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sudo<span class="w"> </span>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>rtlcss
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> sudo npm install -g rtlcss
 </pre></div>
 </div>
 </li>
@@ -2465,14 +2465,14 @@ correctly.</p>
 <p>Where <code class="o_code docutils literal notranslate"><span class="pre">CommunityPath</span></code> is the path of the Odoo Community installation, <code class="o_code docutils literal notranslate"><span class="pre">dbuser</span></code> is the
 PostgreSQL login, <code class="o_code docutils literal notranslate"><span class="pre">dbpassword</span></code> is the PostgreSQL password, and <code class="o_code docutils literal notranslate"><span class="pre">mydb</span></code> is the name of the
 PostgreSQL database.</p>
-</div><div aria-labelledby="tab-11-TGludXg=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-11-TGludXg=" name="TGludXg=" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>/CommunityPath
-<span class="gp">$ </span>python3<span class="w"> </span>odoo-bin<span class="w"> </span>--addons-path<span class="o">=</span>addons<span class="w"> </span>-d<span class="w"> </span>mydb
+</div><div aria-labelledby="tab-11-TGludXg=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-11-TGludXg=" name="TGludXg=" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">cd</span> /CommunityPath
+<span class="gp">$</span> python3 odoo-bin --addons-path<span class="o">=</span>addons -d mydb
 </pre></div>
 </div>
 <p>Where <code class="o_code docutils literal notranslate"><span class="pre">CommunityPath</span></code> is the path of the Odoo Community installation, and <code class="o_code docutils literal notranslate"><span class="pre">mydb</span></code> is the name
 of the PostgreSQL database.</p>
-</div><div aria-labelledby="tab-11-TWFjIE9T" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-11-TWFjIE9T" name="TWFjIE9T" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>/CommunityPath
-<span class="gp">$ </span>python3<span class="w"> </span>odoo-bin<span class="w"> </span>--addons-path<span class="o">=</span>addons<span class="w"> </span>-d<span class="w"> </span>mydb
+</div><div aria-labelledby="tab-11-TWFjIE9T" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-11-TWFjIE9T" name="TWFjIE9T" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">cd</span> /CommunityPath
+<span class="gp">$</span> python3 odoo-bin --addons-path<span class="o">=</span>addons -d mydb
 </pre></div>
 </div>
 <p>Where <code class="o_code docutils literal notranslate"><span class="pre">CommunityPath</span></code> is the path of the Odoo Community installation, and <code class="o_code docutils literal notranslate"><span class="pre">mydb</span></code> is the name

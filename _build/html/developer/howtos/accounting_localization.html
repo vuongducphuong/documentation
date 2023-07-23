@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/howtos/accounting_localization.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/howtos/accounting_localization.html" />
     
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -2082,14 +2082,14 @@ See also</p><ul class="simple">
 <p>To add taxes you first need to specify tax groups. You normally need just one tax group for every tax rate, except for the 0% as you need to often distinguish between exempt, 0%, not subject, … taxes.
 This model only has two required fields: <em>name</em> and <em>country</em>. Create the file <code class="file o_code docutils literal notranslate"><span class="pre">data/account_tax_group_data.xml</span></code> and list the groups:</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;odoo&gt;</span>
-<span class="w">    </span><span class="nt">&lt;data</span><span class="w"> </span><span class="na">noupdate=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;tax_group_tva_0&quot;</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;account.tax.group&quot;</span><span class="nt">&gt;</span>
-<span class="w">            </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>TVA<span class="w"> </span>0%<span class="nt">&lt;/field&gt;</span>
-<span class="w">            </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;country_id&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;base.ch&quot;</span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/record&gt;</span>
+    <span class="nt">&lt;data</span> <span class="na">noupdate=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">&quot;tax_group_tva_0&quot;</span> <span class="na">model=</span><span class="s">&quot;account.tax.group&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>TVA 0%<span class="nt">&lt;/field&gt;</span>
+            <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;country_id&quot;</span> <span class="na">ref=</span><span class="s">&quot;base.ch&quot;</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;/record&gt;</span>
 
-<span class="w">        </span>...
-<span class="w">    </span><span class="nt">&lt;/data&gt;</span>
+        ...
+    <span class="nt">&lt;/data&gt;</span>
 <span class="nt">&lt;/odoo&gt;</span>
 </pre></div>
 </div>
@@ -2124,13 +2124,13 @@ See also</p><ul class="simple">
 It becomes clear also when you check the tax configuration in the Odoo interface (or check the docs <a class="reference internal" href="../reference/standard_modules/account/account_tax.html#reference-account-tax"><span class="std std-ref">Tax References</span></a>, <a class="reference internal" href="../reference/standard_modules/account/account_tax_repartition.html#reference-account-tax-repartition"><span class="std std-ref">Tax Repartition References</span></a>).</p>
 <p>So, once you have properly configured taxes, you just need to add the <code class="file o_code docutils literal notranslate"><span class="pre">data/account_tax_report_data.xml</span></code> file with a record for your <code class="o_code docutils literal notranslate"><span class="pre">account.report</span></code>. For it to be considered as a tax report, you need to provide it with the right <code class="o_code docutils literal notranslate"><span class="pre">root_report_id</span></code>.</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;odoo&gt;</span>
-<span class="w">    </span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;tax_report&quot;</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;account.report&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>Tax<span class="w"> </span>Report<span class="nt">&lt;/field&gt;</span>
-<span class="w">        </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;root_report_id&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;account.generic_tax_report&quot;</span><span class="nt">/&gt;</span>
-<span class="w">        </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;country_id&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;base.XX&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/record&gt;</span>
+    <span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">&quot;tax_report&quot;</span> <span class="na">model=</span><span class="s">&quot;account.report&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>Tax Report<span class="nt">&lt;/field&gt;</span>
+        <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;root_report_id&quot;</span> <span class="na">ref=</span><span class="s">&quot;account.generic_tax_report&quot;</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;country_id&quot;</span> <span class="na">ref=</span><span class="s">&quot;base.XX&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/record&gt;</span>
 
-<span class="w">    </span>...
+    ...
 <span class="nt">&lt;/odoo&gt;</span>
 </pre></div>
 </div>

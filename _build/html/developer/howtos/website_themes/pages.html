@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/howtos/website_themes/pages.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/howtos/website_themes/pages.html" />
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -1946,55 +1946,55 @@
 <h2>Default pages<a class="headerlink" href="#default-pages" title="Permalink to this headline">¶</a></h2>
 <p>In Odoo, websites come with a few default static pages (Home, Contact us, 404, …). They are built
 the following way.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;template</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;website.homepage&quot;</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Homepage&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-call=</span><span class="s">&quot;website.layout&quot;</span><span class="nt">&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;template</span> <span class="na">id=</span><span class="s">&quot;website.homepage&quot;</span> <span class="na">name=</span><span class="s">&quot;Homepage&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;t</span> <span class="na">t-call=</span><span class="s">&quot;website.layout&quot;</span><span class="nt">&gt;</span>
 
-<span class="w">        </span><span class="cm">&lt;!-- Variables --&gt;</span>
-<span class="w">        </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set=</span><span class="s">&quot;additional_title&quot;</span><span class="w"> </span><span class="na">t-value=</span><span class="s">&quot;&#39;Home&#39;&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+        <span class="c">&lt;!-- Variables --&gt;</span>
+        <span class="nt">&lt;t</span> <span class="na">t-set=</span><span class="s">&quot;additional_title&quot;</span> <span class="na">t-value=</span><span class="s">&quot;&#39;Home&#39;&quot;</span> <span class="nt">/&gt;</span>
 
-<span class="w">        </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;wrap&quot;</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;oe_structure oe_empty&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;wrap&quot;</span> <span class="na">class=</span><span class="s">&quot;oe_structure oe_empty&quot;</span><span class="nt">&gt;</span>
 
-<span class="w">            </span><span class="cm">&lt;!-- Content --&gt;</span>
+            <span class="c">&lt;!-- Content --&gt;</span>
 
-<span class="w">        </span><span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
 
-<span class="w">    </span><span class="nt">&lt;/t&gt;</span>
+    <span class="nt">&lt;/t&gt;</span>
 <span class="nt">&lt;/template&gt;</span>
 </pre></div>
 </div>
 <p>Define the meta title.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set=</span><span class="s">&quot;additional_title&quot;</span><span class="w"> </span><span class="na">t-value=</span><span class="s">&quot;&#39;...&#39;&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span> <span class="na">t-set=</span><span class="s">&quot;additional_title&quot;</span> <span class="na">t-value=</span><span class="s">&quot;&#39;...&#39;&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 <p>Define the meta description.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set=</span><span class="s">&quot;meta_description&quot;</span><span class="w"> </span><span class="na">t-value=</span><span class="s">&quot;&#39;...&#39;&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span> <span class="na">t-set=</span><span class="s">&quot;meta_description&quot;</span> <span class="na">t-value=</span><span class="s">&quot;&#39;...&#39;&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 <p>Add a CSS class to the page.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set=</span><span class="s">&quot;pageName&quot;</span><span class="w"> </span><span class="na">t-value=</span><span class="s">&quot;&#39;...&#39;&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span> <span class="na">t-set=</span><span class="s">&quot;pageName&quot;</span> <span class="na">t-value=</span><span class="s">&quot;&#39;...&#39;&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 <p>Hide the header.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set=</span><span class="s">&quot;no_header&quot;</span><span class="w"> </span><span class="na">t-value=</span><span class="s">&quot;true&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span> <span class="na">t-set=</span><span class="s">&quot;no_header&quot;</span> <span class="na">t-value=</span><span class="s">&quot;true&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 <p>Hide the footer.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set=</span><span class="s">&quot;no_footer&quot;</span><span class="w"> </span><span class="na">t-value=</span><span class="s">&quot;true&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;t</span> <span class="na">t-set=</span><span class="s">&quot;no_footer&quot;</span> <span class="na">t-value=</span><span class="s">&quot;true&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 <p>If needed, deactivate default pages.</p>
 <div class="literal-block-wrapper docutils container" id="id4">
 <div class="code-block-caption"><span class="caption-text"><code class="o_code docutils literal notranslate"><span class="pre">/website_airproof/data/pages/home.xml</span></code></span><a class="headerlink" href="#id4" title="Permalink to this code">¶</a></div>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;website.homepage&quot;</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;active&quot;</span><span class="w"> </span><span class="na">eval=</span><span class="s">&quot;False&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">&quot;website.homepage&quot;</span> <span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;active&quot;</span> <span class="na">eval=</span><span class="s">&quot;False&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/record&gt;</span>
 </pre></div>
 </div>
 </div>
 <div class="literal-block-wrapper docutils container" id="id5">
 <div class="code-block-caption"><span class="caption-text"><code class="o_code docutils literal notranslate"><span class="pre">/website_airproof/data/pages/contactus.xml</span></code></span><a class="headerlink" href="#id5" title="Permalink to this code">¶</a></div>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;website.contactus&quot;</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;active&quot;</span><span class="w"> </span><span class="na">eval=</span><span class="s">&quot;False&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">&quot;website.contactus&quot;</span> <span class="na">model=</span><span class="s">&quot;ir.ui.view&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;active&quot;</span> <span class="na">eval=</span><span class="s">&quot;False&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/record&gt;</span>
 </pre></div>
 </div>
@@ -2002,16 +2002,16 @@ the following way.</p>
 <p>Alternatively, replace the default content of these pages using XPath.</p>
 <div class="literal-block-wrapper docutils container" id="id6">
 <div class="code-block-caption"><span class="caption-text"><code class="o_code docutils literal notranslate"><span class="pre">/website_airproof/data/pages/404.xml</span></code></span><a class="headerlink" href="#id6" title="Permalink to this code">¶</a></div>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;template</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;404&quot;</span><span class="w"> </span><span class="na">inherit_id=</span><span class="s">&quot;http_routing.404&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;xpath</span><span class="w"> </span><span class="na">expr=</span><span class="s">&quot;//*[@id=&#39;wrap&#39;]&quot;</span><span class="w"> </span><span class="na">position=</span><span class="s">&quot;replace&quot;</span><span class="nt">&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;template</span> <span class="na">id=</span><span class="s">&quot;404&quot;</span> <span class="na">inherit_id=</span><span class="s">&quot;http_routing.404&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;xpath</span> <span class="na">expr=</span><span class="s">&quot;//*[@id=&#39;wrap&#39;]&quot;</span> <span class="na">position=</span><span class="s">&quot;replace&quot;</span><span class="nt">&gt;</span>
 
-<span class="w">        </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-set=</span><span class="s">&quot;additional_title&quot;</span><span class="w"> </span><span class="na">t-value=</span><span class="s">&quot;&#39;404 - Not found&#39;&quot;</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;t</span> <span class="na">t-set=</span><span class="s">&quot;additional_title&quot;</span> <span class="na">t-value=</span><span class="s">&quot;&#39;404 - Not found&#39;&quot;</span><span class="nt">/&gt;</span>
 
-<span class="w">        </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;wrap&quot;</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;oe_structure&quot;</span><span class="nt">&gt;</span>
-<span class="w">            </span><span class="cm">&lt;!-- Content --&gt;</span>
-<span class="w">        </span><span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;wrap&quot;</span> <span class="na">class=</span><span class="s">&quot;oe_structure&quot;</span><span class="nt">&gt;</span>
+            <span class="c">&lt;!-- Content --&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
 
-<span class="w">    </span><span class="nt">&lt;/xpath&gt;</span>
+    <span class="nt">&lt;/xpath&gt;</span>
 <span class="nt">&lt;/template&gt;</span>
 </pre></div>
 </div>
@@ -2030,25 +2030,25 @@ page object.</p>
 <p><strong>Declaration</strong></p>
 <div class="literal-block-wrapper docutils container" id="id7">
 <div class="code-block-caption"><span class="caption-text"><code class="o_code docutils literal notranslate"><span class="pre">/website_airproof/data/pages/about_us.xml</span></code></span><a class="headerlink" href="#id7" title="Permalink to this code">¶</a></div>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;page_about_us&quot;</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;website.page&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>About<span class="w"> </span>us<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;is_published&quot;</span><span class="w"> </span><span class="na">eval=</span><span class="s">&quot;True&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;key&quot;</span><span class="nt">&gt;</span>website_airproof.page_about_us<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>/about-us<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;type&quot;</span><span class="nt">&gt;</span>qweb<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;arch&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;xml&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-name=</span><span class="s">&quot;website_airproof.page_about_us&quot;</span><span class="nt">&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">&quot;page_about_us&quot;</span> <span class="na">model=</span><span class="s">&quot;website.page&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>About us<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;is_published&quot;</span> <span class="na">eval=</span><span class="s">&quot;True&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;key&quot;</span><span class="nt">&gt;</span>website_airproof.page_about_us<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;url&quot;</span><span class="nt">&gt;</span>/about-us<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;type&quot;</span><span class="nt">&gt;</span>qweb<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;arch&quot;</span> <span class="na">type=</span><span class="s">&quot;xml&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;t</span> <span class="na">t-name=</span><span class="s">&quot;website_airproof.page_about_us&quot;</span><span class="nt">&gt;</span>
 
-<span class="w">            </span><span class="nt">&lt;t</span><span class="w"> </span><span class="na">t-call=</span><span class="s">&quot;website.layout&quot;</span><span class="nt">&gt;</span>
-<span class="w">                </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;wrap&quot;</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;oe_structure&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;t</span> <span class="na">t-call=</span><span class="s">&quot;website.layout&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;wrap&quot;</span> <span class="na">class=</span><span class="s">&quot;oe_structure&quot;</span><span class="nt">&gt;</span>
 
-<span class="w">                    </span><span class="cm">&lt;!-- Content --&gt;</span>
+                    <span class="c">&lt;!-- Content --&gt;</span>
 
-<span class="w">                </span><span class="nt">&lt;/div&gt;</span>
-<span class="w">            </span><span class="nt">&lt;/t&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/t&gt;</span>
 
-<span class="w">        </span><span class="nt">&lt;/t&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/field&gt;</span>
+        <span class="nt">&lt;/t&gt;</span>
+    <span class="nt">&lt;/field&gt;</span>
 <span class="nt">&lt;/record&gt;</span>
 </pre></div>
 </div>
@@ -2088,7 +2088,7 @@ page object.</p>
 </section><section id="header-overlay">
 <span id="id2"></span><h3>Header overlay<a class="headerlink" href="#header-overlay" title="Permalink to this headline">¶</a></h3>
 <p>Make the header background transparent and stand on top of the page content.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;header_overlay&quot;</span><span class="w"> </span><span class="na">eval=</span><span class="s">&quot;True&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;header_overlay&quot;</span> <span class="na">eval=</span><span class="s">&quot;True&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 <img alt="Header overlay" src="../../../_images/header-overlay.png" />
@@ -2103,11 +2103,11 @@ available for the end user through the <em>media dialog</em>.</p>
 <p><strong>Declaration</strong></p>
 <div class="literal-block-wrapper docutils container" id="id8">
 <div class="code-block-caption"><span class="caption-text"><code class="o_code docutils literal notranslate"><span class="pre">/website_airproof/data/images.xml</span></code></span><a class="headerlink" href="#id8" title="Permalink to this code">¶</a></div>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;img_about_01&quot;</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.attachment&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>About<span class="w"> </span>Image<span class="w"> </span>01<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;datas&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;base64&quot;</span><span class="w"> </span><span class="na">file=</span><span class="s">&quot;website_airproof/static/src/img/content/img_about_01.jpg&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;res_model&quot;</span><span class="nt">&gt;</span>ir.ui.view<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;public&quot;</span><span class="w"> </span><span class="na">eval=</span><span class="s">&quot;True&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span> <span class="na">id=</span><span class="s">&quot;img_about_01&quot;</span> <span class="na">model=</span><span class="s">&quot;ir.attachment&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>About Image 01<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;datas&quot;</span> <span class="na">type=</span><span class="s">&quot;base64&quot;</span> <span class="na">file=</span><span class="s">&quot;website_airproof/static/src/img/content/img_about_01.jpg&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;res_model&quot;</span><span class="nt">&gt;</span>ir.ui.view<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;public&quot;</span> <span class="na">eval=</span><span class="s">&quot;True&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/record&gt;</span>
 </pre></div>
 </div>
@@ -2135,18 +2135,18 @@ available for the end user through the <em>media dialog</em>.</p>
 </tbody>
 </table>
 <p>Use it as a background image.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;section</span><span class="w"> </span><span class="na">style=</span><span class="s">&quot;background-image: url(&#39;/web/image/website_airproof.img_about_01&#39;);&quot;</span><span class="nt">&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;section</span> <span class="na">style=</span><span class="s">&quot;background-image: url(&#39;/web/image/website_airproof.img_about_01&#39;);&quot;</span><span class="nt">&gt;</span>
 </pre></div>
 </div>
 <p>Use it as a regular image.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;img</span><span class="w"> </span><span class="na">src=</span><span class="s">&quot;/web/image/website_airproof.img_about_01&quot;</span><span class="w"> </span><span class="na">alt=</span><span class="s">&quot;&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;/web/image/website_airproof.img_about_01&quot;</span> <span class="na">alt=</span><span class="s">&quot;&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 <p>Use as a regular image with a color filter.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;img</span><span class="w"> </span><span class="na">src=</span><span class="s">&quot;/web/image/website.s_media_list_default_image_1&quot;</span>
-<span class="w">    </span><span class="na">class=</span><span class="s">&quot;img img-fluid mx-auto&quot;</span><span class="w"> </span><span class="na">alt=</span><span class="s">&quot;&quot;</span>
-<span class="w">    </span><span class="na">data-gl-filter=</span><span class="s">&quot;custom&quot;</span>
-<span class="w">    </span><span class="na">data-filter-options=</span><span class="s">&quot;{&#39;filterColor&#39;: &#39;rgba(0, 0, 0, 0.5)&#39;}&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;/web/image/website.s_media_list_default_image_1&quot;</span>
+    <span class="na">class=</span><span class="s">&quot;img img-fluid mx-auto&quot;</span> <span class="na">alt=</span><span class="s">&quot;&quot;</span>
+    <span class="na">data-gl-filter=</span><span class="s">&quot;custom&quot;</span>
+    <span class="na">data-filter-options=</span><span class="s">&quot;{&#39;filterColor&#39;: &#39;rgba(0, 0, 0, 0.5)&#39;}&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 <div class="alert alert-tip">
@@ -2157,8 +2157,8 @@ website performance. So, be sure to size your images correctly.</p>
 </section><section id="videos">
 <h3>Videos<a class="headerlink" href="#videos" title="Permalink to this headline">¶</a></h3>
 <p>Add videos as background.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;section</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;o_background_video&quot;</span><span class="w"> </span><span class="na">data-bg-video-src=</span><span class="s">&quot;...&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="cm">&lt;!-- Content --&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">&quot;o_background_video&quot;</span> <span class="na">data-bg-video-src=</span><span class="s">&quot;...&quot;</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- Content --&gt;</span>
 <span class="nt">&lt;/section&gt;</span>
 </pre></div>
 </div>
@@ -2179,13 +2179,13 @@ website performance. So, be sure to size your images correctly.</p>
 </tbody>
 </table>
 <p>Add videos as content.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;media_iframe_video&quot;</span><span class="w"> </span><span class="na">data-oe-expression=</span><span class="s">&quot;...&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;css_editable_mode_display&quot;</span><span class="nt">&gt;</span><span class="ni">&amp;nbsp;</span><span class="nt">&lt;/div&gt;</span>
-<span class="w">    </span><span class="nt">&lt;div</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;media_iframe_video_size&quot;</span><span class="w"> </span><span class="na">contenteditable=</span><span class="s">&quot;false&quot;</span><span class="nt">&gt;</span><span class="ni">&amp;nbsp;</span><span class="nt">&lt;/div&gt;</span>
-<span class="w">    </span><span class="nt">&lt;iframe</span><span class="w"> </span><span class="na">src=</span><span class="s">&quot;...&quot;</span>
-<span class="w">        </span><span class="na">frameborder=</span><span class="s">&quot;0&quot;</span>
-<span class="w">        </span><span class="na">contenteditable=</span><span class="s">&quot;false&quot;</span>
-<span class="w">        </span><span class="na">allowfullscreen=</span><span class="s">&quot;allowfullscreen&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;media_iframe_video&quot;</span> <span class="na">data-oe-expression=</span><span class="s">&quot;...&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;css_editable_mode_display&quot;</span><span class="nt">&gt;</span><span class="ni">&amp;nbsp;</span><span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;media_iframe_video_size&quot;</span> <span class="na">contenteditable=</span><span class="s">&quot;false&quot;</span><span class="nt">&gt;</span><span class="ni">&amp;nbsp;</span><span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;iframe</span> <span class="na">src=</span><span class="s">&quot;...&quot;</span>
+        <span class="na">frameborder=</span><span class="s">&quot;0&quot;</span>
+        <span class="na">contenteditable=</span><span class="s">&quot;false&quot;</span>
+        <span class="na">allowfullscreen=</span><span class="s">&quot;allowfullscreen&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>
 </div>
@@ -2214,7 +2214,7 @@ website performance. So, be sure to size your images correctly.</p>
 anywhere using the CSS Prefix <code class="o_code docutils literal notranslate"><span class="pre">fa</span></code> and the icon’s name. Font Awesome is designed to be used with
 inline elements. You can use <code class="o_code docutils literal notranslate"><span class="pre">&lt;i&gt;</span></code> tag for brevity, but using a <code class="o_code docutils literal notranslate"><span class="pre">&lt;span&gt;</span></code> is more semantically
 correct.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;span</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;fa fa-picture-o&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;fa fa-picture-o&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 <div class="alert alert-secondary">
@@ -2222,11 +2222,11 @@ correct.</p>
 See also</p><p><a class="reference external" href="https://fontawesome.com/v4/icons/">Font Awesome v4 icons</a></p>
 </div>
 <p>Enable the Website Builder style options.</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;span</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;fa fa-2x fa-picture-o rounded-circle&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;fa fa-2x fa-picture-o rounded-circle&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 <p>Increase the icon size (fa-2x, fa-3x, fa-4x, or fa-5x classes).</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;span</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;fa fa-2x fa-picture-o&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;fa fa-2x fa-picture-o&quot;</span><span class="nt">/&gt;</span>
 </pre></div>
 </div>
 <img alt="Icon options" src="../../../_images/icon-options.png" />

@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/reference/backend/actions.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/reference/backend/actions.html" />
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -2078,11 +2078,11 @@ present in the generated <code class="o_code docutils literal notranslate"><span
 Note</p><p>Act_window views can also be defined cleanly through <code class="o_code docutils literal notranslate"><span class="pre">ir.actions.act_window.view</span></code>.</p>
 <p>If you plan to allow multiple views for your model, prefer using
 ir.actions.act_window.view instead of the action <code class="o_code docutils literal notranslate"><span class="pre">view_ids</span></code></p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.actions.act_window.view&quot;</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;test_action_tree&quot;</span><span class="nt">&gt;</span>
-<span class="w">   </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;sequence&quot;</span><span class="w"> </span><span class="na">eval=</span><span class="s">&quot;1&quot;</span><span class="nt">/&gt;</span>
-<span class="w">   </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;view_mode&quot;</span><span class="nt">&gt;</span>tree<span class="nt">&lt;/field&gt;</span>
-<span class="w">   </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;view_id&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;view_test_tree&quot;</span><span class="nt">/&gt;</span>
-<span class="w">   </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;act_window_id&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;test_action&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span> <span class="na">model=</span><span class="s">&quot;ir.actions.act_window.view&quot;</span> <span class="na">id=</span><span class="s">&quot;test_action_tree&quot;</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;sequence&quot;</span> <span class="na">eval=</span><span class="s">&quot;1&quot;</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;view_mode&quot;</span><span class="nt">&gt;</span>tree<span class="nt">&lt;/field&gt;</span>
+   <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;view_id&quot;</span> <span class="na">ref=</span><span class="s">&quot;view_test_tree&quot;</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;act_window_id&quot;</span> <span class="na">ref=</span><span class="s">&quot;test_action&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/record&gt;</span>
 </pre></div>
 </div>
@@ -2094,11 +2094,11 @@ ir.actions.act_window.view instead of the action <code class="o_code docutils li
 </dd>
 </dl>
 <p>These are mostly used when defining actions from <a class="reference internal" href="data.html#reference-data"><span class="std std-ref">Data Files</span></a>:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.actions.act_window&quot;</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;test_action&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>A<span class="w"> </span>Test<span class="w"> </span>Action<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;res_model&quot;</span><span class="nt">&gt;</span>some.model<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;view_mode&quot;</span><span class="nt">&gt;</span>graph<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;view_id&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;my_specific_view&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span> <span class="na">model=</span><span class="s">&quot;ir.actions.act_window&quot;</span> <span class="na">id=</span><span class="s">&quot;test_action&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>A Test Action<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;res_model&quot;</span><span class="nt">&gt;</span>some.model<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;view_mode&quot;</span><span class="nt">&gt;</span>graph<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;view_id&quot;</span> <span class="na">ref=</span><span class="s">&quot;my_specific_view&quot;</span><span class="nt">/&gt;</span>
 <span class="nt">&lt;/record&gt;</span>
 </pre></div>
 </div>
@@ -2166,13 +2166,13 @@ corresponding behaviors) are shared between states:</p>
 The concerned state is given after each field.</p>
 <dl>
 <dt><code class="o_code docutils literal notranslate"><span class="pre">code</span></code> (code)</dt><dd><p>Specify a piece of Python code to execute when the action is called</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.actions.server&quot;</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;print_instance&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>Res<span class="w"> </span>Partner<span class="w"> </span>Server<span class="w"> </span>Action<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;model_id&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;model_res_partner&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;state&quot;</span><span class="nt">&gt;</span>code<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;code&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span>raise<span class="w"> </span>Warning(record.name)
-<span class="w">    </span><span class="nt">&lt;/field&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span> <span class="na">model=</span><span class="s">&quot;ir.actions.server&quot;</span> <span class="na">id=</span><span class="s">&quot;print_instance&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>Res Partner Server Action<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;model_id&quot;</span> <span class="na">ref=</span><span class="s">&quot;model_res_partner&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;state&quot;</span><span class="nt">&gt;</span>code<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;code&quot;</span><span class="nt">&gt;</span>
+        raise Warning(record.name)
+    <span class="nt">&lt;/field&gt;</span>
 <span class="nt">&lt;/record&gt;</span>
 </pre></div>
 </div>
@@ -2180,19 +2180,19 @@ The concerned state is given after each field.</p>
 <p class="alert-title">
 Note</p><p>The code segment can define a variable called <code class="o_code docutils literal notranslate"><span class="pre">action</span></code>, which will be
 returned to the client as the next action to execute:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span><span class="w"> </span><span class="na">model=</span><span class="s">&quot;ir.actions.server&quot;</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;print_instance&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>Res<span class="w"> </span>Partner<span class="w"> </span>Server<span class="w"> </span>Action<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;model_id&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;model_res_partner&quot;</span><span class="nt">/&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;state&quot;</span><span class="nt">&gt;</span>code<span class="nt">&lt;/field&gt;</span>
-<span class="w">    </span><span class="nt">&lt;field</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;code&quot;</span><span class="nt">&gt;</span>
-<span class="w">        </span>if<span class="w"> </span>record.some_condition():
-<span class="w">            </span>action<span class="w"> </span>=<span class="w"> </span>{
-<span class="w">                </span>&quot;type&quot;:<span class="w"> </span>&quot;ir.actions.act_window&quot;,
-<span class="w">                </span>&quot;view_mode&quot;:<span class="w"> </span>&quot;form&quot;,
-<span class="w">                </span>&quot;res_model&quot;:<span class="w"> </span>record._name,
-<span class="w">                </span>&quot;res_id&quot;:<span class="w"> </span>record.id,
-<span class="w">            </span>}
-<span class="w">    </span><span class="nt">&lt;/field&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;record</span> <span class="na">model=</span><span class="s">&quot;ir.actions.server&quot;</span> <span class="na">id=</span><span class="s">&quot;print_instance&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>Res Partner Server Action<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;model_id&quot;</span> <span class="na">ref=</span><span class="s">&quot;model_res_partner&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;state&quot;</span><span class="nt">&gt;</span>code<span class="nt">&lt;/field&gt;</span>
+    <span class="nt">&lt;field</span> <span class="na">name=</span><span class="s">&quot;code&quot;</span><span class="nt">&gt;</span>
+        if record.some_condition():
+            action = {
+                &quot;type&quot;: &quot;ir.actions.act_window&quot;,
+                &quot;view_mode&quot;: &quot;form&quot;,
+                &quot;res_model&quot;: record._name,
+                &quot;res_id&quot;: record.id,
+            }
+    <span class="nt">&lt;/field&gt;</span>
 <span class="nt">&lt;/record&gt;</span>
 </pre></div>
 </div>

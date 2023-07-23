@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/administration/odoo_sh/advanced/containers.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/administration/odoo_sh/advanced/containers.html" />
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -2001,10 +2001,10 @@ explains the main directories.</p>
 </section><section id="database-shell">
 <h2>Database shell<a class="headerlink" href="#database-shell" title="Permalink to this headline">¶</a></h2>
 <p>While accessing a container with the shell, you can access the database using <em>psql</em>.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>odoo@odoo-addons-master-1.odoo.sh:~$<span class="w"> </span>psql
-psql<span class="w"> </span><span class="o">(</span><span class="m">9</span>.5.2,<span class="w"> </span>server<span class="w"> </span><span class="m">9</span>.5.11<span class="o">)</span>
-SSL<span class="w"> </span>connection<span class="w"> </span><span class="o">(</span>protocol:<span class="w"> </span>TLSv1.2,<span class="w"> </span>cipher:<span class="w"> </span>ECDHE-RSA-AES256-GCM-SHA384,<span class="w"> </span>bits:<span class="w"> </span><span class="m">256</span>,<span class="w"> </span>compression:<span class="w"> </span>off<span class="o">)</span>
-Type<span class="w"> </span><span class="s2">&quot;help&quot;</span><span class="w"> </span><span class="k">for</span><span class="w"> </span>help.
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>odoo@odoo-addons-master-1.odoo.sh:~$ psql
+psql <span class="o">(</span><span class="m">9</span>.5.2, server <span class="m">9</span>.5.11<span class="o">)</span>
+SSL connection <span class="o">(</span>protocol: TLSv1.2, cipher: ECDHE-RSA-AES256-GCM-SHA384, bits: <span class="m">256</span>, compression: off<span class="o">)</span>
+Type <span class="s2">&quot;help&quot;</span> <span class="k">for</span> help.
 
 odoo-addons-master-1<span class="o">=</span>&gt;
 </pre></div>
@@ -2016,20 +2016,20 @@ for every <em>sql</em> statements leading to changes
 <p>The transaction mechanism is your safety net in case of mistake.
 You simply have to rollback your changes to revert your database to its previous state.</p>
 <p>For example, it may happen that you forget to set your <em>WHERE</em> condition.</p>
-<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="n">odoo</span><span class="o">-</span><span class="n">addons</span><span class="o">-</span><span class="n">master</span><span class="o">-</span><span class="mi">1</span><span class="o">=&gt;</span><span class="w"> </span><span class="k">BEGIN</span><span class="p">;</span>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="n">odoo</span><span class="o">-</span><span class="n">addons</span><span class="o">-</span><span class="n">master</span><span class="o">-</span><span class="mi">1</span><span class="o">=&gt;</span> <span class="k">BEGIN</span><span class="p">;</span>
 <span class="k">BEGIN</span>
-<span class="n">odoo</span><span class="o">-</span><span class="n">addons</span><span class="o">-</span><span class="n">master</span><span class="o">-</span><span class="mi">1</span><span class="o">=&gt;</span><span class="w"> </span><span class="k">UPDATE</span><span class="w"> </span><span class="n">res_users</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">password</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;***&#39;</span><span class="p">;</span>
-<span class="k">UPDATE</span><span class="w"> </span><span class="mi">457</span>
-<span class="n">odoo</span><span class="o">-</span><span class="n">addons</span><span class="o">-</span><span class="n">master</span><span class="o">-</span><span class="mi">1</span><span class="o">=&gt;</span><span class="w"> </span><span class="k">ROLLBACK</span><span class="p">;</span>
+<span class="n">odoo</span><span class="o">-</span><span class="n">addons</span><span class="o">-</span><span class="n">master</span><span class="o">-</span><span class="mi">1</span><span class="o">=&gt;</span> <span class="k">UPDATE</span> <span class="n">res_users</span> <span class="k">SET</span> <span class="n">password</span> <span class="o">=</span> <span class="s1">&#39;***&#39;</span><span class="p">;</span>
+<span class="k">UPDATE</span> <span class="mi">457</span>
+<span class="n">odoo</span><span class="o">-</span><span class="n">addons</span><span class="o">-</span><span class="n">master</span><span class="o">-</span><span class="mi">1</span><span class="o">=&gt;</span> <span class="k">ROLLBACK</span><span class="p">;</span>
 <span class="k">ROLLBACK</span>
 </pre></div>
 </div>
 <p>In such a case, you can rollback to revert the unwanted changes that you just mistakenly did, and rewrite the statement:</p>
-<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="n">odoo</span><span class="o">-</span><span class="n">addons</span><span class="o">-</span><span class="n">master</span><span class="o">-</span><span class="mi">1</span><span class="o">=&gt;</span><span class="w"> </span><span class="k">BEGIN</span><span class="p">;</span>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="n">odoo</span><span class="o">-</span><span class="n">addons</span><span class="o">-</span><span class="n">master</span><span class="o">-</span><span class="mi">1</span><span class="o">=&gt;</span> <span class="k">BEGIN</span><span class="p">;</span>
 <span class="k">BEGIN</span>
-<span class="n">odoo</span><span class="o">-</span><span class="n">addons</span><span class="o">-</span><span class="n">master</span><span class="o">-</span><span class="mi">1</span><span class="o">=&gt;</span><span class="w"> </span><span class="k">UPDATE</span><span class="w"> </span><span class="n">res_users</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">password</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;***&#39;</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
-<span class="k">UPDATE</span><span class="w"> </span><span class="mi">1</span>
-<span class="n">odoo</span><span class="o">-</span><span class="n">addons</span><span class="o">-</span><span class="n">master</span><span class="o">-</span><span class="mi">1</span><span class="o">=&gt;</span><span class="w"> </span><span class="k">COMMIT</span><span class="p">;</span>
+<span class="n">odoo</span><span class="o">-</span><span class="n">addons</span><span class="o">-</span><span class="n">master</span><span class="o">-</span><span class="mi">1</span><span class="o">=&gt;</span> <span class="k">UPDATE</span> <span class="n">res_users</span> <span class="k">SET</span> <span class="n">password</span> <span class="o">=</span> <span class="s1">&#39;***&#39;</span> <span class="k">WHERE</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="k">UPDATE</span> <span class="mi">1</span>
+<span class="n">odoo</span><span class="o">-</span><span class="n">addons</span><span class="o">-</span><span class="n">master</span><span class="o">-</span><span class="mi">1</span><span class="o">=&gt;</span> <span class="k">COMMIT</span><span class="p">;</span>
 <span class="k">COMMIT</span>
 </pre></div>
 </div>
@@ -2044,31 +2044,31 @@ with a browser, but you can for instance:</p>
 <ul class="simple">
 <li><p>use the Odoo shell,</p></li>
 </ul>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w">  </span>odoo-bin<span class="w"> </span>shell
-&gt;&gt;&gt;<span class="w"> </span><span class="nv">partner</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>env<span class="o">[</span><span class="s1">&#39;res.partner&#39;</span><span class="o">]</span>.search<span class="o">([(</span><span class="s1">&#39;email&#39;</span>,<span class="w"> </span><span class="s1">&#39;=&#39;</span>,<span class="w"> </span><span class="s1">&#39;asusteK@yourcompany.example.com&#39;</span><span class="o">)]</span>,<span class="w"> </span><span class="nv">limit</span><span class="o">=</span><span class="m">1</span><span class="o">)</span>
-&gt;&gt;&gt;<span class="w"> </span>partner.name
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$  odoo-bin shell
+&gt;&gt;&gt; <span class="nv">partner</span> <span class="o">=</span> env<span class="o">[</span><span class="s1">&#39;res.partner&#39;</span><span class="o">]</span>.search<span class="o">([(</span><span class="s1">&#39;email&#39;</span>, <span class="s1">&#39;=&#39;</span>, <span class="s1">&#39;asusteK@yourcompany.example.com&#39;</span><span class="o">)]</span>, <span class="nv">limit</span><span class="o">=</span><span class="m">1</span><span class="o">)</span>
+&gt;&gt;&gt; partner.name
 <span class="s1">&#39;ASUSTeK&#39;</span>
-&gt;&gt;&gt;<span class="w"> </span>partner.name<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Odoo&#39;</span>
-&gt;&gt;&gt;<span class="w"> </span>env<span class="o">[</span><span class="s1">&#39;res.partner&#39;</span><span class="o">]</span>.search<span class="o">([(</span><span class="s1">&#39;email&#39;</span>,<span class="w"> </span><span class="s1">&#39;=&#39;</span>,<span class="w"> </span><span class="s1">&#39;asusteK@yourcompany.example.com&#39;</span><span class="o">)]</span>,<span class="w"> </span><span class="nv">limit</span><span class="o">=</span><span class="m">1</span><span class="o">)</span>.name
+&gt;&gt;&gt; partner.name <span class="o">=</span> <span class="s1">&#39;Odoo&#39;</span>
+&gt;&gt;&gt; env<span class="o">[</span><span class="s1">&#39;res.partner&#39;</span><span class="o">]</span>.search<span class="o">([(</span><span class="s1">&#39;email&#39;</span>, <span class="s1">&#39;=&#39;</span>, <span class="s1">&#39;asusteK@yourcompany.example.com&#39;</span><span class="o">)]</span>, <span class="nv">limit</span><span class="o">=</span><span class="m">1</span><span class="o">)</span>.name
 <span class="s1">&#39;Odoo&#39;</span>
 </pre></div>
 </div>
 <ul class="simple">
 <li><p>install a module,</p></li>
 </ul>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w">  </span>odoo-bin<span class="w"> </span>-i<span class="w"> </span>sale<span class="w"> </span>--without-demo<span class="o">=</span>all<span class="w"> </span>--stop-after-init
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$  odoo-bin -i sale --without-demo<span class="o">=</span>all --stop-after-init
 </pre></div>
 </div>
 <ul class="simple">
 <li><p>update a module,</p></li>
 </ul>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w">  </span>odoo-bin<span class="w"> </span>-u<span class="w"> </span>sale<span class="w"> </span>--stop-after-init
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$  odoo-bin -u sale --stop-after-init
 </pre></div>
 </div>
 <ul class="simple">
 <li><p>run the tests for a module,</p></li>
 </ul>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w">  </span>odoo-bin<span class="w"> </span>-i<span class="w"> </span>sale<span class="w"> </span>--test-enable<span class="w"> </span>--log-level<span class="o">=</span><span class="nb">test</span><span class="w"> </span>--stop-after-init
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$  odoo-bin -i sale --test-enable --log-level<span class="o">=</span><span class="nb">test</span> --stop-after-init
 </pre></div>
 </div>
 <p>In the above commands, the argument:</p>
@@ -2104,11 +2104,11 @@ As the server is run outside a shell, you cannot launch the debugger directly fr
 <blockquote>
 <div><ul>
 <li><p>temporary (only in the current build):</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w">  </span>pip<span class="w"> </span>install<span class="w"> </span>pudb<span class="w"> </span>--user
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$  pip install pudb --user
 </pre></div>
 </div>
 <p>or</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w">  </span>pip<span class="w"> </span>install<span class="w"> </span>ipdb<span class="w"> </span>--user
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$  pip install ipdb --user
 </pre></div>
 </div>
 </li>
@@ -2125,7 +2125,7 @@ As the server is run outside a shell, you cannot launch the debugger directly fr
 </div>
 <p>The condition <code class="code o_code docutils literal notranslate"><span class="pre">sys.__stdin__.isatty()</span></code> is a hack that detects if you run Odoo from a shell.</p>
 <p>Save the file and then run the Odoo Shell:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>odoo-bin<span class="w"> </span>shell
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ odoo-bin shell
 </pre></div>
 </div>
 <p>Finally, <em>via</em> the Odoo Shell, you can trigger the piece of code/function/method

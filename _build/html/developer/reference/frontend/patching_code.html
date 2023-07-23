@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/reference/frontend/patching_code.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/reference/frontend/patching_code.html" />
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -1974,19 +1974,19 @@ does not bind the <code class="o_code docutils literal notranslate"><span class=
 </section><section id="patching-a-simple-object">
 <h2>Patching a simple object<a class="headerlink" href="#patching-a-simple-object" title="Permalink to this headline">¶</a></h2>
 <p>Here is a simple example of how an object can be patched:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">patch</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@web/core/utils/patch&quot;</span><span class="p">;</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">patch</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@web/core/utils/patch&quot;</span><span class="p">;</span>
 
-<span class="kd">const</span><span class="w"> </span><span class="nx">object</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">field</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;a field&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nx">fn</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="c1">// do something</span>
-<span class="w">  </span><span class="p">},</span>
+<span class="kr">const</span> <span class="nx">object</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">field</span><span class="o">:</span> <span class="s2">&quot;a field&quot;</span><span class="p">,</span>
+  <span class="nx">fn</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// do something</span>
+  <span class="p">},</span>
 <span class="p">};</span>
 
-<span class="nx">patch</span><span class="p">(</span><span class="nx">object</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;patch name&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">fn</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="c1">// do things</span>
-<span class="w">  </span><span class="p">},</span>
+<span class="nx">patch</span><span class="p">(</span><span class="nx">object</span><span class="p">,</span> <span class="s2">&quot;patch name&quot;</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">fn</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// do things</span>
+  <span class="p">},</span>
 <span class="p">});</span>
 </pre></div>
 </div>
@@ -1994,11 +1994,11 @@ does not bind the <code class="o_code docutils literal notranslate"><span class=
 function.  Since we are working with patch objects, not ES6 classes, we cannot
 use the native <code class="o_code docutils literal notranslate"><span class="pre">super</span></code> keyword. So, Odoo provides a special method to simulate
 this behaviour: <code class="o_code docutils literal notranslate"><span class="pre">this._super</span></code>:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">patch</span><span class="p">(</span><span class="nx">object</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;_super patch&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">fn</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">_super</span><span class="p">(...</span><span class="nx">arguments</span><span class="p">);</span>
-<span class="w">    </span><span class="c1">// do other things</span>
-<span class="w">  </span><span class="p">},</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">patch</span><span class="p">(</span><span class="nx">object</span><span class="p">,</span> <span class="s2">&quot;_super patch&quot;</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">fn</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">_super</span><span class="p">(...</span><span class="nx">arguments</span><span class="p">);</span>
+    <span class="c1">// do other things</span>
+  <span class="p">},</span>
 <span class="p">});</span>
 </pre></div>
 </div>
@@ -2009,25 +2009,25 @@ This means that if you use an asynchronous function in the patch then you
 cannot call <code class="o_code docutils literal notranslate"><span class="pre">this._super</span></code> after an <code class="o_code docutils literal notranslate"><span class="pre">await</span></code>, because it may or may not be
 the function that you expect.  The correct way to do that is to keep a reference
 to the initial <code class="o_code docutils literal notranslate"><span class="pre">_super</span></code> method:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">patch</span><span class="p">(</span><span class="nx">object</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;async _super patch&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="k">async</span><span class="w"> </span><span class="nx">myAsyncFn</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">_super</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">_super</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
-<span class="w">    </span><span class="k">await</span><span class="w"> </span><span class="nb">Promise</span><span class="p">.</span><span class="nx">resolve</span><span class="p">();</span>
-<span class="w">    </span><span class="k">await</span><span class="w"> </span><span class="nx">_super</span><span class="p">(...</span><span class="nx">arguments</span><span class="p">);</span>
-<span class="w">    </span><span class="c1">// await this._super(...arguments); // this._super is undefined.</span>
-<span class="w">  </span><span class="p">},</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">patch</span><span class="p">(</span><span class="nx">object</span><span class="p">,</span> <span class="s2">&quot;async _super patch&quot;</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">async</span> <span class="nx">myAsyncFn</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kr">const</span> <span class="nx">_super</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">_super</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+    <span class="nx">await</span> <span class="nb">Promise</span><span class="p">.</span><span class="nx">resolve</span><span class="p">();</span>
+    <span class="nx">await</span> <span class="nx">_super</span><span class="p">(...</span><span class="nx">arguments</span><span class="p">);</span>
+    <span class="c1">// await this._super(...arguments); // this._super is undefined.</span>
+  <span class="p">},</span>
 <span class="p">});</span>
 </pre></div>
 </div>
 </div>
 <p>Getters and setters are supported too:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">patch</span><span class="p">(</span><span class="nx">object</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;getter/setter patch&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">get</span><span class="w"> </span><span class="nx">number</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">_super</span><span class="p">()</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">2</span><span class="p">;</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="nx">set</span><span class="w"> </span><span class="nx">number</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">_super</span><span class="p">(</span><span class="nx">value</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">2</span><span class="p">);</span>
-<span class="w">  </span><span class="p">},</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">patch</span><span class="p">(</span><span class="nx">object</span><span class="p">,</span> <span class="s2">&quot;getter/setter patch&quot;</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">get</span> <span class="nx">number</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">_super</span><span class="p">()</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
+  <span class="p">},</span>
+  <span class="nx">set</span> <span class="nx">number</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">_super</span><span class="p">(</span><span class="nx">value</span> <span class="o">*</span> <span class="mi">2</span><span class="p">);</span>
+  <span class="p">},</span>
 <span class="p">});</span>
 </pre></div>
 </div>
@@ -2037,39 +2037,39 @@ to the initial <code class="o_code docutils literal notranslate"><span class="pr
 <p>However, since javascript classes work with the prototypal inheritance, when
 one wishes to patch a standard method from a class, then we actually need to patch
 the <code class="o_code docutils literal notranslate"><span class="pre">prototype</span></code>:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">class</span><span class="w"> </span><span class="nx">MyClass</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="k">static</span><span class="w"> </span><span class="nx">myStaticFn</span><span class="p">()</span><span class="w"> </span><span class="p">{...}</span>
-<span class="w">  </span><span class="nx">myPrototypeFn</span><span class="p">()</span><span class="w"> </span><span class="p">{...}</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kr">class</span> <span class="nx">MyClass</span> <span class="p">{</span>
+  <span class="kr">static</span> <span class="nx">myStaticFn</span><span class="p">()</span> <span class="p">{...}</span>
+  <span class="nx">myPrototypeFn</span><span class="p">()</span> <span class="p">{...}</span>
 <span class="p">}</span>
 
 <span class="c1">// this will patch static properties!!!</span>
-<span class="nx">patch</span><span class="p">(</span><span class="nx">MyClass</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;static patch&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">myStaticFn</span><span class="p">()</span><span class="w"> </span><span class="p">{...},</span>
+<span class="nx">patch</span><span class="p">(</span><span class="nx">MyClass</span><span class="p">,</span> <span class="s2">&quot;static patch&quot;</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">myStaticFn</span><span class="p">()</span> <span class="p">{...},</span>
 <span class="p">});</span>
 
 <span class="c1">// this is probably the usual case: patching a class method</span>
-<span class="nx">patch</span><span class="p">(</span><span class="nx">MyClass</span><span class="p">.</span><span class="nx">prototype</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;prototype patch&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">myPrototypeFn</span><span class="p">()</span><span class="w"> </span><span class="p">{...},</span>
+<span class="nx">patch</span><span class="p">(</span><span class="nx">MyClass</span><span class="p">.</span><span class="nx">prototype</span><span class="p">,</span> <span class="s2">&quot;prototype patch&quot;</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">myPrototypeFn</span><span class="p">()</span> <span class="p">{...},</span>
 <span class="p">});</span>
 </pre></div>
 </div>
 <p>Also, Javascript handles the constructor in a special native way which makes it
 impossible to be patched. The only workaround is to call a method in the original
 constructor and patch that method instead:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">class</span><span class="w"> </span><span class="nx">MyClass</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kr">constructor</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">setup</span><span class="p">();</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="w">  </span><span class="nx">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1</span><span class="p">;</span>
-<span class="w">  </span><span class="p">}</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kr">class</span> <span class="nx">MyClass</span> <span class="p">{</span>
+  <span class="nx">constructor</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">setup</span><span class="p">();</span>
+  <span class="p">}</span>
+  <span class="nx">setup</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">number</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="nx">patch</span><span class="p">(</span><span class="nx">MyClass</span><span class="p">.</span><span class="nx">prototype</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;constructor&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">_super</span><span class="p">(...</span><span class="nx">arguments</span><span class="p">);</span>
-<span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">doubleNumber</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">number</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">2</span><span class="p">;</span>
-<span class="w">  </span><span class="p">},</span>
+<span class="nx">patch</span><span class="p">(</span><span class="nx">MyClass</span><span class="p">.</span><span class="nx">prototype</span><span class="p">,</span> <span class="s2">&quot;constructor&quot;</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">setup</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">_super</span><span class="p">(...</span><span class="nx">arguments</span><span class="p">);</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">doubleNumber</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">number</span> <span class="o">*</span> <span class="mi">2</span><span class="p">;</span>
+  <span class="p">},</span>
 <span class="p">});</span>
 </pre></div>
 </div>
@@ -2082,10 +2082,10 @@ Warning</p><p>It is impossible to patch directly the <code class="o_code docutil
 <p>Components are defined by javascript classes, so all the information above still
 holds.  For these reasons, Owl components should use the <code class="o_code docutils literal notranslate"><span class="pre">setup</span></code> method, so they
 can easily be patched as well (see the section on <a class="reference internal" href="owl_components.html#frontend-owl-best-practices"><span class="std std-ref">best practices</span></a>.</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">patch</span><span class="p">(</span><span class="nx">MyComponent</span><span class="p">.</span><span class="nx">prototype</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;my patch&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">useMyHook</span><span class="p">();</span>
-<span class="w">  </span><span class="p">},</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">patch</span><span class="p">(</span><span class="nx">MyComponent</span><span class="p">.</span><span class="nx">prototype</span><span class="p">,</span> <span class="s2">&quot;my patch&quot;</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">setup</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">useMyHook</span><span class="p">();</span>
+  <span class="p">},</span>
 <span class="p">});</span>
 </pre></div>
 </div>
@@ -2106,9 +2106,9 @@ can easily be patched as well (see the section on <a class="reference internal" 
 <p>Removes an existing patch from an object <code class="o_code docutils literal notranslate"><span class="pre">obj</span></code>. This is mostly useful for
 testing purposes, when we patch something at the beginning of a test, and
 unpatch it at the end.</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">patch</span><span class="p">(</span><span class="nx">object</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;patch name&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">});</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">patch</span><span class="p">(</span><span class="nx">object</span><span class="p">,</span> <span class="s2">&quot;patch name&quot;</span><span class="p">,</span> <span class="p">{</span> <span class="p">...</span> <span class="p">});</span>
 <span class="c1">// test stuff here</span>
-<span class="nx">unpatch</span><span class="p">(</span><span class="nx">object</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;patch name&quot;</span><span class="p">);</span>
+<span class="nx">unpatch</span><span class="p">(</span><span class="nx">object</span><span class="p">,</span> <span class="s2">&quot;patch name&quot;</span><span class="p">);</span>
 </pre></div>
 </div>
 </dd></dl>

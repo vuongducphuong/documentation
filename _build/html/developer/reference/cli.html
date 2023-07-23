@@ -23,7 +23,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/reference/cli.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/reference/cli.html" />
     
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -2003,9 +2003,9 @@ all occurrences of <strong class="command o_code">odoo-bin</strong> with <strong
 <div class="alert alert-tip">
 <p class="alert-title">
 Tip</p><p>You can enable auto-completion in your shell by running</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;complete -W &#39;`./odoo-bin --help | \</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;complete -W &#39;`./odoo-bin --help | \</span>
 <span class="s2">  sed -e &#39;s/[^a-z_-]\(-\+[a-z0-9_-]\+\)/\n\1\n/&#39; | \</span>
-<span class="s2">  grep -- &#39;^-&#39; | sort | uniq | tr &#39;\n&#39; &#39; &#39;`&#39; odoo-bin&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>~/.bash_completion
+<span class="s2">  grep -- &#39;^-&#39; | sort | uniq | tr &#39;\n&#39; &#39; &#39;`&#39; odoo-bin&quot;</span> &gt;&gt; ~/.bash_completion
 </pre></div>
 </div>
 </div>
@@ -2211,22 +2211,22 @@ list of databases</p>
 <p>When combining the two parameters, db-filter supersedes the comma-separated
 database list for restricting database list, while the comma-separated list
 is used for performing requested operations like upgrade of modules.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>odoo-bin<span class="w"> </span>--db-filter<span class="w"> </span>^11.*$
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ odoo-bin --db-filter ^11.*$
 </pre></div>
 </div>
 <p>Restrict access to databases whose name starts with 11</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>odoo-bin<span class="w"> </span>--database<span class="w"> </span>11firstdatabase,11seconddatabase
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ odoo-bin --database 11firstdatabase,11seconddatabase
 </pre></div>
 </div>
 <p>Restrict access to only two databases, 11firstdatabase and 11seconddatabase</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>odoo-bin<span class="w"> </span>--database<span class="w"> </span>11firstdatabase,11seconddatabase<span class="w"> </span>-u<span class="w"> </span>base
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ odoo-bin --database 11firstdatabase,11seconddatabase -u base
 </pre></div>
 </div>
 <p>Restrict access to only two databases, 11firstdatabase and 11seconddatabase,
 and update base module on one database: 11firstdatabase.
 If database 11seconddatabase doesn’t exist, the database is created and base modules
 is installed</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>odoo-bin<span class="w"> </span>--db-filter<span class="w"> </span>^11.*$<span class="w"> </span>--database<span class="w"> </span>11firstdatabase,11seconddatabase<span class="w"> </span>-u<span class="w"> </span>base
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ odoo-bin --db-filter ^11.*$ --database 11firstdatabase,11seconddatabase -u base
 </pre></div>
 </div>
 <p>Restrict access to databases whose name starts with 11,
@@ -2502,7 +2502,7 @@ e.g. <code class="o_code docutils literal notranslate"><span class="pre">odoo.mo
 <li><p>If the level is omitted, the logger is set to <code class="o_code docutils literal notranslate"><span class="pre">INFO</span></code></p></li>
 </ul>
 <p>The option can be repeated to configure multiple loggers e.g.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>odoo-bin<span class="w"> </span>--log-handler<span class="w"> </span>:DEBUG<span class="w"> </span>--log-handler<span class="w"> </span>werkzeug:CRITICAL<span class="w"> </span>--log-handler<span class="w"> </span>odoo.fields:WARNING
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> odoo-bin --log-handler :DEBUG --log-handler werkzeug:CRITICAL --log-handler odoo.fields:WARNING
 </pre></div>
 </div>
 </dd></dl>
@@ -2648,7 +2648,7 @@ specified in the section <code class="o_code docutils literal notranslate"><span
 <span id="reference-cmdline-shell"></span><h2>Shell<a class="headerlink" href="#shell" title="Permalink to this headline">¶</a></h2>
 <p>Odoo command-line also allows to launch odoo as a python console environment.
 This enables direct interaction with the <a class="reference internal" href="backend/orm.html#reference-orm"><span class="std std-ref">orm</span></a> and its functionalities.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>odoo-bin<span class="w"> </span>shell
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> odoo-bin shell
 </pre></div>
 </div>
 <dl class="std option">
@@ -2664,7 +2664,7 @@ bootstrapping (of new modules, in the case of Odoo). While not necessary it
 avoids the tedium of setting up basic structures and looking up what all
 starting requirements are.</p>
 <p>Scaffolding is available via the <strong class="command o_code">odoo-bin scaffold</strong> subcommand.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>odoo-bin<span class="w"> </span>scaffold<span class="w"> </span>my_module<span class="w"> </span>/addons/
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> odoo-bin scaffold my_module /addons/
 </pre></div>
 </div>
 <dl class="std option">
@@ -2695,7 +2695,7 @@ the <code class="o_code docutils literal notranslate"><span class="pre">destinat
 <a class="reference internal" href="backend/performance.html#reference-performance-populate-methods"><span class="std std-ref">implemented on a given model</span></a>, it allows automatic
 data generation of the model’s records to test your modules in databases containing non-trivial
 amounts of records.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>odoo-bin<span class="w"> </span>populate
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> odoo-bin populate
 </pre></div>
 </div>
 <dl class="std option">
@@ -2738,7 +2738,7 @@ module folder(s).</div>
 options’ results (with possible overlaps). At least one of these two options is
 required to specify which code to process.</div>
 </div>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>odoo-bin<span class="w"> </span>cloc<span class="w"> </span>--addons-path<span class="o">=</span>addons<span class="w"> </span>-d<span class="w"> </span>my_database
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> odoo-bin cloc --addons-path<span class="o">=</span>addons -d my_database
 </pre></div>
 </div>
 <div class="alert alert-secondary">
@@ -2758,11 +2758,11 @@ See also</p><ul class="simple">
 options’ results (with possible overlaps). At least one of these two options is
 required to specify which code to process.</div>
 </div>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>odoo-bin<span class="w"> </span>cloc<span class="w"> </span>-p<span class="w"> </span>addons/account
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> odoo-bin cloc -p addons/account
 </pre></div>
 </div>
 <p>Multiple paths can be provided by repeating the option.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>odoo-bin<span class="w"> </span>cloc<span class="w"> </span>-p<span class="w"> </span>addons/account<span class="w"> </span>-p<span class="w"> </span>addons/sale
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> odoo-bin cloc -p addons/account -p addons/sale
 </pre></div>
 </div>
 <div class="alert alert-secondary">
@@ -2787,7 +2787,7 @@ are scanned for modules.</div>
 <dd></dd></dl>
 
 <p>Specify a configuration file to use in place of the <a class="reference internal" href="#cmdoption-odoo-bin-cloc-addons-path"><code class="xref std std-option o_code docutils literal notranslate"><span class="pre">--addons-path</span></code></a> option.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>odoo-bin<span class="w"> </span>cloc<span class="w"> </span>-c<span class="w"> </span>config.conf<span class="w"> </span>-d<span class="w"> </span>my_database
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> odoo-bin cloc -c config.conf -d my_database
 </pre></div>
 </div>
 <dl class="std option">
@@ -2866,7 +2866,7 @@ With this config file, you will now have full auto-completion across modules.</p
 <p>The command to generate this files takes as many unnamed arguments as you need. Those are relative paths
 to your addon directories. In the example below, we move up one folder to save the tsconfig file in the folder
 containing community and enterprise.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>community/odoo-bin<span class="w"> </span>tsconfig<span class="w"> </span>--addons-path<span class="w"> </span>community/addons,community/odoo/addons,enterprise<span class="w"> </span>&gt;<span class="w"> </span>tsconfig.json
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> community/odoo-bin tsconfig --addons-path community/addons,community/odoo/addons,enterprise &gt; tsconfig.json
 </pre></div>
 </div>
 </section>

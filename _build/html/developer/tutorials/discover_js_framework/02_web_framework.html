@@ -22,7 +22,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-    <link rel="canonical" href="/home/name/Data/documentation/_build/html/developer/tutorials/discover_js_framework/02_web_framework.html" />
+    <link rel="canonical" href="/mnt/d/Data/documentation/_build/html/developer/tutorials/discover_js_framework/02_web_framework.html" />
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -1939,7 +1939,7 @@
 <p>The first part of this tutorial introduced you to most of Owl ideas. It is now time to learn
 about the Odoo JavaScript framework in its entirety, as used by the web client.</p>
 <div class="figure align-center">
-<img alt="../../../_images/previously_learned.svg" src="../../../_images/previously_learned.svg" width="50%" /></div>
+<img alt="../../../_images/previously_learned1.svg" src="../../../_images/previously_learned1.svg" width="50%" /></div>
 <p>For this chapter, we will start from the empty dashboard provided by the <code class="o_code docutils literal notranslate"><span class="pre">awesome_tshirt</span></code>
 addon. We will progressively add features to it, using the Odoo JavaScript framework.</p>
 <div class="admonition-goal alert">
@@ -1979,13 +1979,13 @@ services, and components can import a service with the <code class="o_code docut
 <div class="alert alert-success">
 <p class="alert-title">
 Example</p><p>This shows how to open the settings view from a component using the action service.</p>
-<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useService</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@web/core/utils/hooks&quot;</span><span class="p">;</span>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">useService</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@web/core/utils/hooks&quot;</span><span class="p">;</span>
 <span class="p">...</span>
-<span class="nx">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">action</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useService</span><span class="p">(</span><span class="s2">&quot;action&quot;</span><span class="p">);</span>
+<span class="nx">setup</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">action</span> <span class="o">=</span> <span class="nx">useService</span><span class="p">(</span><span class="s2">&quot;action&quot;</span><span class="p">);</span>
 <span class="p">}</span>
-<span class="nx">openSettings</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">action</span><span class="p">.</span><span class="nx">doAction</span><span class="p">(</span><span class="s2">&quot;base_setup.action_general_configuration&quot;</span><span class="p">);</span>
+<span class="nx">openSettings</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">action</span><span class="p">.</span><span class="nx">doAction</span><span class="p">(</span><span class="s2">&quot;base_setup.action_general_configuration&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 <span class="p">...</span>
 </pre></div>
@@ -2036,12 +2036,12 @@ instance. (optional)</p></li>
 <div class="alert alert-success">
 <p class="alert-title">
 Example</p><p>A basic request could look like this:</p>
-<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">rpc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useService</span><span class="p">(</span><span class="s2">&quot;rpc&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">onWillStart</span><span class="p">(</span><span class="k">async</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">rpc</span><span class="p">(</span><span class="s2">&quot;/my/controller&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="nx">a</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="o">:</span><span class="w"> </span><span class="mf">2</span><span class="p">});</span>
-<span class="w">        </span><span class="c1">// ...</span>
-<span class="w">    </span><span class="p">});</span>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">setup</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">rpc</span> <span class="o">=</span> <span class="nx">useService</span><span class="p">(</span><span class="s2">&quot;rpc&quot;</span><span class="p">);</span>
+    <span class="nx">onWillStart</span><span class="p">(</span><span class="nx">async</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+        <span class="kr">const</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">await</span> <span class="k">this</span><span class="p">.</span><span class="nx">rpc</span><span class="p">(</span><span class="s2">&quot;/my/controller&quot;</span><span class="p">,</span> <span class="p">{</span><span class="nx">a</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">b</span><span class="o">:</span> <span class="mi">2</span><span class="p">});</span>
+        <span class="c1">// ...</span>
+    <span class="p">});</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -2080,17 +2080,17 @@ would prefer to do it only the first time, so we actually need to maintain some 
 <div class="alert alert-success">
 <p class="alert-title">
 Example</p><p>The following example registers a simple service that displays a notification every 5 seconds.</p>
-<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">registry</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@web/core/registry&quot;</span><span class="p">;</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">myService</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">dependencies</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;notification&quot;</span><span class="p">],</span>
-<span class="w">    </span><span class="nx">start</span><span class="p">(</span><span class="nx">env</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">notification</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="nx">counter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1</span><span class="p">;</span>
-<span class="w">        </span><span class="nx">setInterval</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="nx">notification</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="sb">`Tick Tock </span><span class="si">${</span><span class="nx">counter</span><span class="o">++</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
-<span class="w">        </span><span class="p">},</span><span class="w"> </span><span class="mf">5000</span><span class="p">);</span>
-<span class="w">    </span><span class="p">},</span>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">registry</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@web/core/registry&quot;</span><span class="p">;</span>
+<span class="kr">const</span> <span class="nx">myService</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">dependencies</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;notification&quot;</span><span class="p">],</span>
+    <span class="nx">start</span><span class="p">(</span><span class="nx">env</span><span class="p">,</span> <span class="p">{</span> <span class="nx">notification</span> <span class="p">})</span> <span class="p">{</span>
+        <span class="kd">let</span> <span class="nx">counter</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="nx">setInterval</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+            <span class="nx">notification</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="sb">`Tick Tock </span><span class="si">${</span><span class="nx">counter</span><span class="o">++</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+        <span class="p">},</span> <span class="mi">5000</span><span class="p">);</span>
+    <span class="p">},</span>
 <span class="p">};</span>
-<span class="nx">registry</span><span class="p">.</span><span class="nx">category</span><span class="p">(</span><span class="s2">&quot;services&quot;</span><span class="p">).</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;myService&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">myService</span><span class="p">);</span>
+<span class="nx">registry</span><span class="p">.</span><span class="nx">category</span><span class="p">(</span><span class="s2">&quot;services&quot;</span><span class="p">).</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;myService&quot;</span><span class="p">,</span> <span class="nx">myService</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
