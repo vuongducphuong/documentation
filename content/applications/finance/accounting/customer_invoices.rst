@@ -1,8 +1,8 @@
 :show-content:
 
-=================
-Customer invoices
-=================
+==================
+Hóa đơn khách hàng
+==================
 
 From Customer Invoice to Payments Collection
 ============================================
@@ -237,7 +237,7 @@ the material has been shipped to the customer.
    customer_invoices/credit_notes
    customer_invoices/cash_rounding
    customer_invoices/deferred_revenues
-   customer_invoices/electronic_invoicing
-   customer_invoices/snailmail
-   customer_invoices/epc_qr_code
+   .. customer_invoices/electronic_invoicing
+   .. customer_invoices/snailmail
+   .. customer_invoices/epc_qr_code
    customer_invoices/incoterms

@@ -55,7 +55,7 @@ the terminal automatically restarts.
 Configure the payment method
 ----------------------------
 
-From the Point of Sale application, go to :menuselection:`Configuration --> Settings --> Payment
+From the Điểm bán hàng application, go to :menuselection:`Configuration --> Settings --> Payment
 terminals` and activate the *Worldline* payment terminal.
 
 .. image:: worldline/worldline-payment-terminals.png

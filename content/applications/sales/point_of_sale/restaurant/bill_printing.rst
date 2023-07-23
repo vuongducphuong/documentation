@@ -9,7 +9,7 @@ seamlessly: **Bill Printing** and **Bill Splitting**.
 Configuration
 =============
 
-To activate the features, go to :menuselection:`Point of Sale --> Configuration --> Settings`,
+To activate the features, go to :menuselection:`Điểm bán hàng --> Configuration --> Settings`,
 select the POS, and activate :guilabel:`Early Receipt Printing` and :guilabel:`Allow Bill Splitting`
 in the :guilabel:`Restaurant & Bar` section.
 

@@ -16,9 +16,9 @@ convenient.
 Set up Pricelists
 =================
 
-To set up a *Pricelist*, go to :menuselection:`Point of Sale --> Configuration --> Configuration`
-and enable the *Pricelist* feature. Then, go to :menuselection:`Point of Sale --> Configuration
---> Point of Sale` and enable *Pricelist* for the *PoS*.
+To set up a *Pricelist*, go to :menuselection:`Điểm bán hàng --> Configuration --> Configuration`
+and enable the *Pricelist* feature. Then, go to :menuselection:`Điểm bán hàng --> Configuration
+--> Điểm bán hàng` and enable *Pricelist* for the *PoS*.
 
 .. image:: pricelists/pricelists_01.png
    :align: center

@@ -41,7 +41,7 @@ via :menuselection:`Sales --> Configuration --> Products --> Attributes`.
 
 .. note::
    The order of attributes on the :guilabel:`Attributes` page dictates how they appear on the
-   :guilabel:`Product Configurator`, :guilabel:`Point of Sale` dashboard, and :guilabel:`eCommerce`
+   :guilabel:`Product Configurator`, :guilabel:`Điểm bán hàng` dashboard, and :guilabel:`eCommerce`
    pages.
 
 To create a new attribute, click :guilabel:`Create`. First, choose an attribute name, such as
@@ -52,7 +52,7 @@ To create a new attribute, click :guilabel:`Create`. First, choose an attribute 
    :alt: Attribute creation window.
 
 Then, select a :guilabel:`Display Type`, which determines how this product will be shown on the
-:guilabel:`eCommerce` page, :guilabel:`Point of Sale` dashboard, and :guilabel:`Product
+:guilabel:`eCommerce` page, :guilabel:`Điểm bán hàng` dashboard, and :guilabel:`Product
 Configurator`.
 
 - :guilabel:`Radio`: options appear in a bullet style list.

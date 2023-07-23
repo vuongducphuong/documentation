@@ -1,6 +1,6 @@
-=============
-Cash register
-=============
+===============
+Sổ quỹ tiền mặt
+===============
 
 The cash register is a journal to register receivings and payments transactions.
 It calculates the total money in and out, computing the total balance.

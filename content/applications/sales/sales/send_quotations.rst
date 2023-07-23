@@ -1,7 +1,7 @@
 :nosearch:
 
 ===============
-Send Quotations
+Gửi báo giá
 ===============
 
 .. toctree::

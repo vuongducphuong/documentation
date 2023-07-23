@@ -2,7 +2,7 @@
 Tips
 ====
 
-Tipping is customary in multiple countries. Point of Sale allows tipping in :ref:`shops <pos/sell>`,
+Tipping is customary in multiple countries. Điểm bán hàng allows tipping in :ref:`shops <pos/sell>`,
 :doc:`bars <../restaurant>`, or :doc:`restaurants <../restaurant>`.
 
 .. _configuration:
@@ -10,7 +10,7 @@ Tipping is customary in multiple countries. Point of Sale allows tipping in :ref
 Configuration
 =============
 
-To allow tipping in your POS, activate the :guilabel:`Tips` feature in :menuselection:`Point of Sale
+To allow tipping in your POS, activate the :guilabel:`Tips` feature in :menuselection:`Điểm bán hàng
 --> Configuration --> Settings`. At the top of the page, select the POS in which you wish to allow
 **tipping**, scroll down to the :guilabel:`Payment` section and check :guilabel:`Tips`. Once
 enabled, add a :guilabel:`Tip Product` in the corresponding field, and save. The designated product

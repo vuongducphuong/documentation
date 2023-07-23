@@ -1,6 +1,6 @@
-====
-Sign
-====
+======
+Chữ ký
+======
 
 **Leansoft Sign** allows you to send, sign and approve documents online, using electronic signatures.
 

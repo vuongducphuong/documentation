@@ -2,7 +2,7 @@
 :hide-page-toc:
 
 ===========
-Spreadsheet
+Bảng tính
 ===========
 
 .. toctree::

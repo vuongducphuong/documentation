@@ -1,7 +1,7 @@
 :show-content:
 
 ===========
-Get started
+Bắt đầu
 ===========
 
 When you first open your Odoo Accounting app, the *Accounting Overview* page welcomes you with a

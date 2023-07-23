@@ -14,7 +14,7 @@ Configuration
 Enable and create printers
 --------------------------
 
-To enable sending orders to a kitchen or bar printer, go to :menuselection:`Point of Sale -->
+To enable sending orders to a kitchen or bar printer, go to :menuselection:`Điểm bán hàng -->
 Configuration --> Settings`, scroll down to the :guilabel:`Restaurant & Bar` section, and enable
 :guilabel:`Kitchen Printers`. Type in a name for the printer in the :guilabel:`Printers` field and
 click :guilabel:`Create and edit...` to open a setup form.

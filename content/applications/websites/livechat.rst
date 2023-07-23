@@ -1,9 +1,9 @@
 :show-content:
 :show-toc:
 
-=========
+================
 Chat trực tuyến
-=========
+================
 
 Odoo *Live Chat* allows users to communicate with website visitors in real time. With *Live Chat*,
 leads can be qualified for their sales potential, support questions can be answered quickly, and

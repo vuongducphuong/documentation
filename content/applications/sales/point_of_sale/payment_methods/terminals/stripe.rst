@@ -12,12 +12,12 @@ Configuration
 Configure the payment method
 ----------------------------
 
-Activate **Stripe** in the settings by going to :menuselection:`Point of Sale --> Configuration -->
+Activate **Stripe** in the settings by going to :menuselection:`Điểm bán hàng --> Configuration -->
 Settings --> Payment Terminals` and enabling :guilabel:`Stripe`.
 
 Then, create the payment method:
 
-- Go to :menuselection:`Point of Sale --> Configuration --> Payment Methods`, click
+- Go to :menuselection:`Điểm bán hàng --> Configuration --> Payment Methods`, click
   :guilabel:`Create`, and complete the :guilabel:`Method` field with your payment method's name;
 - Set the :guilabel:`Journal` field as :guilabel:`Bank` and the :guilabel:`Use a Payment Terminal`
   field as :guilabel:`Stripe`;
@@ -52,7 +52,7 @@ ready to be configured in a POS.
    :alt: stripe connection form
 
 .. note::
-   - When you use **Stripe** exclusively in Point of Sale, you only need the **Secret Key** to use
+   - When you use **Stripe** exclusively in Điểm bán hàng, you only need the **Secret Key** to use
      your terminal.
    - When you use Stripe as **payment provider**, the :guilabel:`State` can stay set as
      :guilabel:`Disabled`.
@@ -76,7 +76,7 @@ and select your network.
 Link the payment method to a POS
 --------------------------------
 
-To add a **payment method** to your point of sale, go to :menuselection:`Point of Sale -->
+To add a **payment method** to your Điểm bán hàng, go to :menuselection:`Điểm bán hàng -->
 Configuration --> Settings`. Select the POS, scroll down to the :guilabel:`Payments` section, and
 add your payment method for **Stripe** in the :guilabel:`Payment Methods` field.
 

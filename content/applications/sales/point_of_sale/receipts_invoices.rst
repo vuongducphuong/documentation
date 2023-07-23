@@ -5,7 +5,7 @@ Receipts and invoices
 Receipts
 ========
 
-Set up receipts by going to :menuselection:`Point of Sale --> Configuration --> Point of Sale`,
+Set up receipts by going to :menuselection:`Điểm bán hàng --> Configuration --> Điểm bán hàng`,
 selecting a POS, and scrolling down to the :guilabel:`Bills & Receipts` section.
 
 To **customize** the **header** and **footer**, activate :guilabel:`Header & Footer` and fill in
@@ -39,14 +39,14 @@ select the corresponding order and click :guilabel:`Print Receipt`.
 Invoices
 ========
 
-In Point of Sale, you can issue and print invoices upon payment at the cash register or retrieve all
+In Điểm bán hàng, you can issue and print invoices upon payment at the cash register or retrieve all
 the past invoiced orders.
 
 Set a customer
 --------------
 
 First, you need to open a session and set your customer. Open the **POS interface** by going to
-:menuselection:`Point of Sale --> New session --> Open session`. Then, click :guilabel:`Customer` to
+:menuselection:`Điểm bán hàng --> New session --> Open session`. Then, click :guilabel:`Customer` to
 access the list of **customers**.
 
 .. image:: receipts_invoices/select-customer-ui.png
@@ -79,7 +79,7 @@ Retrieve invoices
 
 To retrieve invoices from the **POS dashboard**,
 
-#. access all orders made through your POS by going to :menuselection:`Point of Sale --> Orders -->
+#. access all orders made through your POS by going to :menuselection:`Điểm bán hàng --> Orders -->
    Orders`;
 #. to access an order's invoice, open the **order form** by selecting the order, then click
    :guilabel:`Invoice`.
@@ -106,6 +106,6 @@ Odoo backend.
    :alt: order status change
 
 To use this feature, you have to enable QR codes on receipts by going to :menuselection:`Point of
-Sale --> Configuration --> Settings`. Then, select the POS in the :guilabel:`Point of Sale` field,
+Sale --> Configuration --> Settings`. Then, select the POS in the :guilabel:`Điểm bán hàng` field,
 scroll down to the :guilabel:`Bills & Receipts` section and enable :guilabel:`Use QR code on
 ticket`.

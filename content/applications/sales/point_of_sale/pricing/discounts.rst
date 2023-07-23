@@ -13,7 +13,7 @@ Apply manual discounts
 ======================
 
 If you seldom use discounts, applying manual ones might be the easiest
-solution for your Point of Sale.
+solution for your Điểm bán hàng.
 
 You can either apply a discount on the whole order or on specific
 products inside an order.
@@ -34,7 +34,7 @@ Apply a global discount
 -----------------------
 
 To apply a discount on the whole order, go to :menuselection:`Point of
-Sales --> Configuration --> Point of Sale` and select your PoS.
+Sales --> Configuration --> Điểm bán hàng` and select your PoS.
 
 Once on your PoS form, select *Global Discounts*, under the *Pricing* category.
 
@@ -62,8 +62,8 @@ Apply time-limited discounts
 ============================
 
 To activate time-limited discounts, you must activate the *Pricelists*
-feature. To do so, go to :menuselection:`Point of Sales -->
-Configuration --> Point of Sale` and open your PoS. Then, enable the
+feature. To do so, go to :menuselection:`Điểm bán hàngs -->
+Configuration --> Điểm bán hàng` and open your PoS. Then, enable the
 pricelist feature.
 
 .. image:: discounts/discounts_05.png
@@ -77,7 +77,7 @@ Create a pricelist
 ------------------
 
 By default, Odoo has a *Public Pricelist* configured. To create more,
-go to :menuselection:`Point of Sale --> Products --> Pricelists`. Then
+go to :menuselection:`Điểm bán hàng --> Products --> Pricelists`. Then
 click on create.
 
 When creating a pricelist, you can set several criteria to use a

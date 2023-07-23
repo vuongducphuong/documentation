@@ -1,5 +1,5 @@
 =========
-Documents
+Tài liệu
 =========
 
 **Leansoft Documents** allows you to store, view and manage files within Odoo.

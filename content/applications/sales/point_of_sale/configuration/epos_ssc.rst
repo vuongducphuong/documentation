@@ -4,7 +4,7 @@
 Self-signed certificate for ePOS printers
 =========================================
 
-ePOS printers are designed to work seamlessly with Point of Sale systems. Once connected, the two
+ePOS printers are designed to work seamlessly with Điểm bán hàng systems. Once connected, the two
 devices automatically share information, enabling the direct printing of tickets from the POS system
 to the ePOS printer.
 

@@ -3,9 +3,9 @@
 :hide-page-toc:
 :show-toc:
 
-=====
+=========
 Bán hàng
-=====
+=========
 
 **Leansoft Sales** is the application to run your sales process (from quotation to sales order) and
 deliver and invoice what has been sold.

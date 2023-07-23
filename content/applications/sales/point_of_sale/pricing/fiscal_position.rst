@@ -15,7 +15,7 @@ taxes and accounts used for each transaction.
 Configuration
 =============
 
-To enable the feature, go to :menuselection:`Point of Sale --> Configuration --> Settings`, scroll
+To enable the feature, go to :menuselection:`Điểm bán hàng --> Configuration --> Settings`, scroll
 down to the :guilabel:`Accounting` section, and enable :guilabel:`Flexible Taxes`.
 
 Then, set a default fiscal position that should be applied to all sales in the selected POS in the

@@ -10,8 +10,8 @@ Configuration
 Access POS settings
 ===================
 
-To access the general POS settings, go to :menuselection:`Point of Sale --> Configuration -->
-Settings`. Then, open the dropdown menu in the :guilabel:`Point of Sale` field and select the POS to
+To access the general POS settings, go to :menuselection:`Điểm bán hàng --> Configuration -->
+Settings`. Then, open the dropdown menu in the :guilabel:`Điểm bán hàng` field and select the POS to
 configure.
 
 .. image:: configuration/select-pos-dropdown.png
@@ -33,13 +33,13 @@ You can also configure some settings from the dashboard by clicking the vertical
 
 .. note::
    These settings are available to users with the :doc:`access rights
-   </applications/general/users/manage_users>` :guilabel:`Point of Sale` set as
+   </applications/general/users/manage_users>` :guilabel:`Điểm bán hàng` set as
    :guilabel:`Administrator`.
 
 Make products available
 =======================
 
-To make products available for sale, go to :menuselection:`Point of Sale --> Products --> Products`,
+To make products available for sale, go to :menuselection:`Điểm bán hàng --> Products --> Products`,
 and select a product to open the product form. In the :guilabel:`Sales` tab, enable
 :guilabel:`Available in POS`.
 

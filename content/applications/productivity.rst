@@ -11,4 +11,4 @@ Hiệu suất
     productivity/calendar
     productivity/knowledge    
     productivity/mail_plugins
-    productivity/studio
+    .. productivity/studio

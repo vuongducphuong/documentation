@@ -35,7 +35,7 @@ Ingenico setting.
 .. image:: ingenico/payment_terminal_03.png
    :align: center
 
-Go back in :menuselection:`Point of Sale --> Configuration --> Point of Sale`,
+Go back in :menuselection:`Điểm bán hàng --> Configuration --> Điểm bán hàng`,
 go in the payments section and access your payment methods. Create a new
 payment method for Ingenico, select the payment terminal option Ingenico, and
 select your payment terminal device.

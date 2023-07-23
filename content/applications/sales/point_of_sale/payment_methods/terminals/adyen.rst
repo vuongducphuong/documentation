@@ -22,7 +22,7 @@ your terminal following the steps described on your terminal's screen.
 Configure the payment method
 ----------------------------
 
-First, go to :menuselection:`Point of Sale --> Configuration --> Settings --> Payment Terminals`,
+First, go to :menuselection:`Điểm bán hàng --> Configuration --> Settings --> Payment Terminals`,
 and enable :guilabel:`Adyen`.
 Then, go to :menuselection:`Configuration --> Payment Methods` and create a new payment method.
 Select :guilabel:`Adyen` in the :guilabel:`Use a Payment Terminal` field.
@@ -55,7 +55,7 @@ Locate the Adyen terminal identifier
 The **Adyen Terminal Identifier** is your terminal's serial number, which is used to identify the
 hardware.
 
-To find this number, go to your **Adyen account**. Then, go to :menuselection:`Point of Sale
+To find this number, go to your **Adyen account**. Then, go to :menuselection:`Điểm bán hàng
 --> Terminals`, select the terminal to link, and copy-paste its serial number onto the Odoo
 mandatory field.
 
@@ -65,7 +65,7 @@ Set the Event URLs
 For Odoo to know when a payment is made, you must set the terminal **Event URLs**. To do so,
 
 #. log in to `Adyen's website <https://www.adyen.com/>`_;
-#. go to :menuselection:`Adyen's dashboard --> Point of Sale --> Terminals` and select the connected
+#. go to :menuselection:`Adyen's dashboard --> Điểm bán hàng --> Terminals` and select the connected
    terminal;
 #. from the terminal settings, click :guilabel:`Integrations`;
 #. set the :guilabel:`Switch to decrypted mode to edit this setting` field as :guilabel:`Decrypted`;
@@ -76,8 +76,8 @@ For Odoo to know when a payment is made, you must set the terminal **Event URLs*
 Add a new payment method
 ========================
 
-To add a new **payment method** to a point of sale, go to :menuselection:`Point of Sale -->
-Configuration --> Point of Sale`. Then, select the POS and go to :menuselection:`Payments -->
+To add a new **payment method** to a Điểm bán hàng, go to :menuselection:`Điểm bán hàng -->
+Configuration --> Điểm bán hàng`. Then, select the POS and go to :menuselection:`Payments -->
 Payment Methods`, and add your new method for Adyen.
 
 Pay with a payment terminal

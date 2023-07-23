@@ -2,15 +2,15 @@
 :show-toc:
 
 =============
-Point of Sale
+Điểm bán hàng
 =============
 
-With **Leansoft Point of Sale**, run your shops and restaurants easily. The app works on any device with
+With **Leansoft Điểm bán hàng**, run your shops and restaurants easily. The app works on any device with
 a web browser, even if you are temporarily offline. Product moves are automatically registered in
 your stock, you get real-time statistics, and your data is consolidated across all shops.
 
 .. seealso::
-   - `Leansoft Tutorials: Point of Sale Tutorials <https://leansoft.vn/slides/point-of-sale-28>`_   
+   - `Leansoft Tutorials: Điểm bán hàng Tutorials <https://leansoft.vn/slides/point-of-sale-28>`_   
 
 .. _pos/session-start:
 
@@ -141,7 +141,7 @@ the **POS dashboard**.
 
 .. tip::
    - It is strongly advised to close your POS session at the end of each day.
-   - To look at all your previous sessions, go to :menuselection:`Point of Sale --> Orders -->
+   - To look at all your previous sessions, go to :menuselection:`Điểm bán hàng --> Orders -->
      Sessions`.
 
 .. toctree::

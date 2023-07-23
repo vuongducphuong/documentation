@@ -1,7 +1,7 @@
 :show-content:
 
 =====
-Taxes
+Thuế
 =====
 
 There are numerous types of **taxes**, and their application varies greatly, depending mostly on

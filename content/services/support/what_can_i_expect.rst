@@ -3,7 +3,7 @@
 .. _support-expectations:
 
 ===========================================
-What can I expect from the support service?
+Tôi có thể mong đợi gì từ dịch vụ hỗ trợ?
 ===========================================
 
 
@@ -24,7 +24,7 @@ What kind of support is included?
 - Providing you with relevant material (guidelines, product documentation,
   etc...)
 - Answers to issues that you may encounter in your standard Odoo database (eg.
-  “I cannot close my Point of Sale” or “I cannot find my sales KPIs?”)
+  “I cannot close my Điểm bán hàng” or “I cannot find my sales KPIs?”)
 - Questions related to your account, subscription, or billing
 - Bug resolution (blocking issues or unexpected behaviour not due to
   misconfiguration or customization)

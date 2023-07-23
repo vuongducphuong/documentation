@@ -1,7 +1,7 @@
 :show-content:
 
 =========
-Reporting
+Báo cáo
 =========
 
 Main reports available

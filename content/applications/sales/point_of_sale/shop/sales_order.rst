@@ -2,20 +2,20 @@
 Sales orders
 ============
 
-When working in retail, you might need to order products directly from your Point of sale.
-Fortunately, Odoo Point of Sale is fully integrated with Odoo Sales, meaning that you can create a
-sales order and pay for it directly from your point of sale.
+When working in retail, you might need to order products directly from your Điểm bán hàng.
+Fortunately, Odoo Điểm bán hàng is fully integrated with Odoo Sales, meaning that you can create a
+sales order and pay for it directly from your Điểm bán hàng.
 
 Select a sales order
 ====================
 
-From the **Point of Sale** application, open a new session. Then, click on
+From the **Điểm bán hàng** application, open a new session. Then, click on
 :guilabel:`Quotations/Orders` to get the complete list of quotations and sales orders created on the
 sales application.
 
 .. image:: sales_order/pos-interface.png
    :align: center
-   :alt: Quotations and sales order button on the Point of Sale interface
+   :alt: Quotations and sales order button on the Điểm bán hàng interface
 
 .. note::
    To ease finding the right sales order, you can filter that list on the **customer** or on the

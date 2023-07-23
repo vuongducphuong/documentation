@@ -1,6 +1,6 @@
-============================
-Deleting an leansoft.vn Account
-============================
+==============
+Xóa tài khoản
+==============
 
 To delete your leansoft.vn account, access the delete option by clicking on the user icon. The delete
 option can be accessed by going to :menuselection:`My Account --> Edit Security Settings --> Delete

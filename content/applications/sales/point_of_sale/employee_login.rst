@@ -2,7 +2,7 @@
 Multi-employee management
 =========================
 
-Odoo Point of Sale allows you to manage access to a specific POS by enabling the **Multi Employees
+Odoo Điểm bán hàng allows you to manage access to a specific POS by enabling the **Multi Employees
 per Session** feature. When activated, :ref:`you can select which users can log into the POS
 <employee_login/use>` and :ref:`keep track of the employees involved in each order
 <employee_login/analytics>`.
@@ -41,7 +41,7 @@ at the top-right of the screen and select the employee to swap with from the lis
 You can also require your employees to enter a pin code every time they log into a POS to prevent
 them from logging in as someone else. To define the code, go to the **Employees** app, open the
 employee form, and click the :guilabel:`HR settings` tab. Then, enter a pin code of your choice in
-the :guilabel:`PIN Code` field of the :guilabel:`Attendance/Point of Sale` category.
+the :guilabel:`PIN Code` field of the :guilabel:`Attendance/Điểm bán hàng` category.
 
 .. image:: employee_login/pin-and-badgeid.png
    :alt: setting on the employee form to assign a badge ID and a PIN code.
@@ -54,7 +54,7 @@ Log in using badges
 For your employees to be able to log in by scanning their badge, they must have a badge ID assigned.
 To do so, go to the **Employees** app, open the employee form, and click the :guilabel:`HR settings`
 tab. Then, enter the badge ID of your choice in the :guilabel:`Badge ID` field of the
-:guilabel:`Attendance/Point of Sale` category or click :guilabel:`Generate`.
+:guilabel:`Attendance/Điểm bán hàng` category or click :guilabel:`Generate`.
 
 To switch to another user, lock the session by clicking the lock-shaped icon (:guilabel:`🔓`) at the
 top-right of the screen and scan your badge.

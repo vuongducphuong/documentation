@@ -1,7 +1,7 @@
 :show-content:
 
 ========================
-Accounting and Invoicing
+Kế toán và Hóa đơn
 ========================
 
 **Leansoft Invoicing** is a standalone invoicing app to create invoices, send them to your customers,

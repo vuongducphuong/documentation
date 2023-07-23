@@ -2,14 +2,14 @@
 Loyalty programs
 ================
 
-Encourage your customers to continue to shop at your point of sale with
+Encourage your customers to continue to shop at your Điểm bán hàng with
 a *Loyalty Program*.
 
 Configuration
 =============
 
 To activate the *Loyalty Program* feature, go to
-:menuselection:`Point of Sale --> Configuration --> Point of sale` and
+:menuselection:`Điểm bán hàng --> Configuration --> Điểm bán hàng` and
 select your PoS interface. Under the Pricing features, select *Loyalty
 Program*
 

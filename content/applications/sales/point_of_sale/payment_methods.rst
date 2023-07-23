@@ -4,7 +4,7 @@
 Payment methods
 ===============
 
-To add a payment method, you first need to create it. Go to :menuselection:`Point of Sale -->
+To add a payment method, you first need to create it. Go to :menuselection:`Điểm bán hàng -->
 Configuration --> Payment Methods --> New`, and set a name. Check :guilabel:`Identify Customer` to
 allow this payment method *exclusively* for registered customers.
 

@@ -3,7 +3,7 @@ Overview
 ========
 
 There are different situations in which barcode nomenclatures can be
-useful. A well-known use case is the one of a point of sale which sells
+useful. A well-known use case is the one of a Điểm bán hàng which sells
 products in bulk, in which the customers will scale their products
 themselves and get the printed barcode to stick on the product. This
 barcode will contain the weight of the product and help compute the
@@ -60,7 +60,7 @@ In case you weight 1,5 Kg of pasta, the balance will print you the
 following barcode 2112345015002. If you scan this barcode in your POS or
 when receiving products in your barcode application, Odoo will
 automatically create a new line for the Pasta product for a quantity of
-1.5 Kg. For the point of sale, a price depending on the quantity will
+1.5 Kg. For the Điểm bán hàng, a price depending on the quantity will
 also be computed.
 
 .. image:: barcode_nomenclature/barcode_nomenclature_04.png

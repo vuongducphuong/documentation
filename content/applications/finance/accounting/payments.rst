@@ -1,8 +1,8 @@
 :show-content:
 
-========
-Payments
-========
+==========
+Thanh toán
+==========
 
 In Odoo, payments can either be linked automatically to an invoice or bill or be stand-alone records
 for use at a later date.

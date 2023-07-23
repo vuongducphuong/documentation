@@ -1,8 +1,8 @@
 :nosearch:
 
-=====
+=========
 Bán hàng
-=====
+=========
 
 
 .. toctree::
@@ -10,5 +10,5 @@ Bán hàng
     sales/crm
     sales/sales
     sales/point_of_sale
-    sales/subscriptions
-    sales/rental
+    .. sales/subscriptions
+    .. sales/rental

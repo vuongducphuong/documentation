@@ -5,7 +5,7 @@ Serial numbers and lots
 Working with **serial numbers** and **lots** allows tracking your products' movements. When products
 are tracked, the system identifies their location based on their last movement.
 
-To enable traceability, go to :menuselection:`Point of Sale --> Products --> Products`. Then,
+To enable traceability, go to :menuselection:`Điểm bán hàng --> Products --> Products`. Then,
 select a product and check the :guilabel:`Tracking By Unique Serial Number` or the
 :guilabel:`Tracking By Lots` box in the :guilabel:`Inventory` tab.
 
@@ -16,7 +16,7 @@ select a product and check the :guilabel:`Tracking By Unique Serial Number` or t
 Serial numbers and lots importation
 ===================================
 
-You can import serial numbers in Point of Sale. To do so, select a **sales order** or a
+You can import serial numbers in Điểm bán hàng. To do so, select a **sales order** or a
 **quotation** containing tracked products. Then, agree to load the **Lots or Serial Numbers** linked
 to the :abbr:`SO (sales order)`.
 

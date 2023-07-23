@@ -1,7 +1,7 @@
 :show-content:
 
 ========
-Expenses
+Chi phí
 ========
 
 Odoo **Expenses** streamlines the management of expenses. After an employee submits their expenses

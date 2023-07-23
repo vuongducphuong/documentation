@@ -1,8 +1,8 @@
 :show-content:
 
-======================
-Bank and cash accounts
-======================
+===============================
+Tài khoản ngân hàng và tiền mặt
+===============================
 
 You can manage as many bank or cash accounts as needed on your database. Configuring them well
 allows you to have all your banking data up-to-date and ready for :doc:`reconciliation
@@ -184,7 +184,7 @@ Payments` tab. To display the outstanding accounts column, click on the toggle b
 .. toctree::
    :titlesonly:
 
-   bank/bank_synchronization
+   .. bank/bank_synchronization
    bank/transactions
    bank/reconciliation
    bank/reconciliation_models

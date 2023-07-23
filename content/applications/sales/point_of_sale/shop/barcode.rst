@@ -21,7 +21,7 @@ To use a barcode scanner, you must enable the feature in the Inventory app. Go t
    - :doc:`Set up a barcode scanner<../../../inventory_and_mrp/inventory/barcode/setup/hardware>`
    - :doc:`Activate barcode scanners<../../../inventory_and_mrp/inventory/barcode/setup/software>`
 
-Once enabled in **Inventory**, you can use the barcode feature in **Point of Sale** with products
+Once enabled in **Inventory**, you can use the barcode feature in **Điểm bán hàng** with products
 that have a barcode number assigned.
 
 Assign barcodes
@@ -31,7 +31,7 @@ To your products
 ----------------
 
 To use this feature in POS, your products must have barcodes assigned. To do so, go to
-:menuselection:`Point of Sale --> Products --> Products` and open a **product form**. Add a barcode
+:menuselection:`Điểm bán hàng --> Products --> Products` and open a **product form**. Add a barcode
 number in the :guilabel:`Barcode` field in the :guilabel:`General Information` tab.
 
 To your employees

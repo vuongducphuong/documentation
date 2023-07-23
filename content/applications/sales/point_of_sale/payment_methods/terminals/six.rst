@@ -25,7 +25,7 @@ First, make sure that the :guilabel:`POS Six` module is installed. For this, go 
    :align: center
    :alt: The POS Six module.
 
-Back in :menuselection:`Point of Sale --> Configuration --> Payment Methods`, click
+Back in :menuselection:`Điểm bán hàng --> Configuration --> Payment Methods`, click
 :guilabel:`Create` to create a new payment method for SIX, select the payment terminal option
 :guilabel:`SIX`, and enter the payment terminal IP address.
 
@@ -36,7 +36,7 @@ Back in :menuselection:`Point of Sale --> Configuration --> Payment Methods`, cl
 Pay with a Payment Terminal
 ===========================
 
-In the :abbr:`PoS (Point of Sale)` interface, at the moment of the payment, select a payment method
+In the :abbr:`PoS (Điểm bán hàng)` interface, at the moment of the payment, select a payment method
 using a payment terminal. Verify that the amount in the tendered column is the one that has to be
 sent to the payment terminal and click on :guilabel:`Send`. To cancel the payment request, click on
 :guilabel:`Cancel`.

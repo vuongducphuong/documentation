@@ -1,6 +1,6 @@
-===================================
-Website analytics with Plausible.io
-===================================
+====================================
+Phân tích trang web với Plausible.io
+====================================
 
 To follow your website's traffic with Plausible.io:
 

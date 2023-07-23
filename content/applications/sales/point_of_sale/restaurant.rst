@@ -4,7 +4,7 @@
 Restaurant features
 ===================
 
-Managing a restaurant or a bar comes with specific needs. The Point of Sale application provides
+Managing a restaurant or a bar comes with specific needs. The Điểm bán hàng application provides
 various features that allow performing all the required tasks in such businesses.
 
 Once the POS is set to be used in a restaurant or a bar, you can:
@@ -19,7 +19,7 @@ Once the POS is set to be used in a restaurant or a bar, you can:
 Configuration
 =============
 
-To enable the restaurant and bar-specific features, go to :menuselection:`Point of Sale -->
+To enable the restaurant and bar-specific features, go to :menuselection:`Điểm bán hàng -->
 Configuration --> Settings`, select the POS, and activate :guilabel:`Is a Bar/Restaurant`.
 
 These features are displayed in the :guilabel:`Restaurant & Bar` section.

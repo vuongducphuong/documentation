@@ -1,5 +1,5 @@
 ================================
-Cash discounts and tax reduction
+Chiết khấu tiền mặt và giảm thuế
 ================================
 
 **Cash discounts** are reductions in the amount a customer must pay for goods or services offered as

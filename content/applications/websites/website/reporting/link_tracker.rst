@@ -1,6 +1,6 @@
-=============
-Link trackers
-=============
+=======================
+Trình theo dõi liên kết
+=======================
 
 Link Trackers allow you to track your marketing campaigns (emails, banner ads, blog posts, social
 media posts, affiliate links, etc.). This way, you are able to identify your best traffic sources

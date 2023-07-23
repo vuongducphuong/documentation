@@ -2,13 +2,13 @@
 Secure connection (HTTPS)
 =========================
 
-If **Direct Devices** is enabled in a Point of Sale settings (for example, if you use an ePos
+If **Direct Devices** is enabled in a Điểm bán hàng settings (for example, if you use an ePos
 printer), HTTP becomes the default protocol.
 
-Force your Point of Sale to use a secure connection (HTTPS)
+Force your Điểm bán hàng to use a secure connection (HTTPS)
 ===========================================================
 
-Add a new **key** in the **System Parameters** to force your Point of Sale to use a secure
+Add a new **key** in the **System Parameters** to force your Điểm bán hàng to use a secure
 connection with the HTTPS protocol.
 
 To do so, activate the :ref:`developer mode <developer-mode>`, go to :menuselection:`Settings -->

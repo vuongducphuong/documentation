@@ -2,7 +2,7 @@
 Discount and loyalty programs
 =============================
 
-The Odoo *Sales*, *eCommerce*, and *Point of Sale* applications allow users to create discount and
+The Odoo *Sales*, *eCommerce*, and *Điểm bán hàng* applications allow users to create discount and
 loyalty programs that customers can use for online and in-store shopping. These programs offer more
 varied, public, and time-sensitive pricing options than :doc:`pricelists
 </applications/sales/sales/products_prices/prices/pricing>`.
@@ -56,8 +56,8 @@ The program form contains the following options:
 - :guilabel:`Available On`: Select the app(s) on which the program is available.
 - :guilabel:`Website`: Select the website(s) on which the program is available. Leave this field
   blank to make it available on all websites.
-- :guilabel:`Point of Sale`: Select the point(s) of sale at which the program is available. Leave
-  this field blank to make it available at all :abbr:`PoS (Point of Sale)`.
+- :guilabel:`Điểm bán hàng`: Select the point(s) of sale at which the program is available. Leave
+  this field blank to make it available at all :abbr:`PoS (Điểm bán hàng)`.
 
 .. image:: loyalty_discount/price-programs.png
    :align: center

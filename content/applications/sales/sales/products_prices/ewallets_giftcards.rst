@@ -4,7 +4,7 @@ Use eWallets and gift cards
 
 With Odoo, customers can use **eWallets** and **gift cards** for online and in-store shopping.
 
-To enable eWallets and gift cards for eCommerce and Point of Sale (PoS), first enable
+To enable eWallets and gift cards for eCommerce and Điểm bán hàng (PoS), first enable
 :guilabel:`Discounts, Loyalty & Gift Card` under :menuselection:`Sales app --> Configuration -->
 Settings --> Pricing section`. Once enabled, go to :menuselection:`Sales app --> Products --> Gift
 cards & eWallet` and :guilabel:`Create` a new eWallet or gift card program.
@@ -19,7 +19,7 @@ to centralize multiple :ref:`gift cards <ewallet_gift/gift-cards>`.
 Before creating an eWallet program, it is necessary to create an eWallet **top-up** product. Top-ups
 are pre-defined digital credit values added to an eWallet in exchange for its equivalent in real
 currency. These credits can then be used as a payment method in the eCommerce shop or :abbr:`PoS
-(Point of Sale)`. Top-up values can be of different amounts.
+(Điểm bán hàng)`. Top-up values can be of different amounts.
 
 .. example::
    A $50 top-up can be bought for $50, and adds that same amount of credits to the eWallet.
@@ -53,8 +53,8 @@ to :guilabel:`Create` an eWallet program. The following configuration options ar
 - :guilabel:`Available On`: select the applications on which the program is valid and available
 - :guilabel:`Website`: select the website on which the program is valid and available. Leave this
   field empty to include all websites.
-- :guilabel:`Point of Sale`: select the :abbr:`PoS (Point of Sale)` in which the program is valid
-  and available. Leave this field empty to include all :abbr:`PoS (Point of Sale)`.
+- :guilabel:`Điểm bán hàng`: select the :abbr:`PoS (Điểm bán hàng)` in which the program is valid
+  and available. Leave this field empty to include all :abbr:`PoS (Điểm bán hàng)`.
 
 .. image:: ewallets_giftcards/ewallet-configuration.png
    :align: center
@@ -82,7 +82,7 @@ Gift cards
 ==========
 
 Gift cards can be purchased by customers, and in turn used as a payment method upon checkout at an
-eCommerce shop or :abbr:`PoS (Point of Sale)`.
+eCommerce shop or :abbr:`PoS (Điểm bán hàng)`.
 
 Before creating a new gift card program, it is necessary to first create gift cards as products. To
 do so, go to :menuselection:`Sales app --> Products --> Products` and :guilabel:`Create` a product.
@@ -116,8 +116,8 @@ available:
 - :guilabel:`Available On`: select the applications on which the program is valid and available
 - :guilabel:`Website`: select the website on which the program is valid and available. Leave this
   field empty to include all websites.
-- :guilabel:`Point of Sale`: select the :abbr:`PoS (Point of Sale)` in which the program is valid
-  and available. Leave this field empty to include all :abbr:`PoS (Point of Sale)`.
+- :guilabel:`Điểm bán hàng`: select the :abbr:`PoS (Điểm bán hàng)` in which the program is valid
+  and available. Leave this field empty to include all :abbr:`PoS (Điểm bán hàng)`.
 
 .. image:: ewallets_giftcards/giftcard-configuration.png
    :align: center

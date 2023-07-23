@@ -5,9 +5,9 @@ Floors and tables management
 Add a floor
 ===========
 
-Once your *Point of Sale* has been configured, select *Table
-Management* under :menuselection:`Point of Sale --> Configuration -->
-Point of Sale`. Then, click on *Floors* to create and name your floor and tables.
+Once your *Điểm bán hàng* has been configured, select *Table
+Management* under :menuselection:`Điểm bán hàng --> Configuration -->
+Điểm bán hàng`. Then, click on *Floors* to create and name your floor and tables.
 
 .. image:: floors_tables/restaurant_03.png
     :align: center
@@ -18,7 +18,7 @@ Point of Sale`. Then, click on *Floors* to create and name your floor and tables
     :alt: Backend view of a restaurant floor. Table name and number of sits for each table
 
 .. note::
-   Don’t forget to link your floor to your point of sale.
+   Don’t forget to link your floor to your Điểm bán hàng.
 
 Add tables
 ==========
