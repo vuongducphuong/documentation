@@ -2,7 +2,7 @@
 Getting started with Helpdesk
 =============================
 
-Odoo :guilabel:`Helpdesk` is a ticket-based customer support application. Teams can track,
+Leansoft :guilabel:`Helpdesk` is a ticket-based customer support application. Teams can track,
 prioritize, and solve customer issues from their pipeline, which is organized in customizable
 stages. Multiple teams can be configured and managed in one dashboard.
 

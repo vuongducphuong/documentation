@@ -2,7 +2,7 @@
 Manage users
 ============
 
-Odoo defines a **user** as someone who has access to a database to perform daily tasks. You can add
+Leansoft defines a **user** as someone who has access to a database to perform daily tasks. You can add
 as many users as you need and, in order to restrict the type of information each user can access,
 rules can be applied. Users and access rights can be added and changed at any point.
 
@@ -20,7 +20,7 @@ Go to :menuselection:`Settings --> Manage Users` and click on *Create*.
 .. image:: manage_users/manage-users.png
    :align: center
    :height: 280
-   :alt: View of the settings page emphasizing the manage users field in Odoo
+   :alt: View of the settings page emphasizing the manage users field in Leansoft
 
 | Fill in the form with the needed information. Under the tab
   :doc:`Access Rights <access_rights>` choose the group within each application the user can
@@ -29,14 +29,14 @@ Go to :menuselection:`Settings --> Manage Users` and click on *Create*.
 
 .. image:: manage_users/new_user.png
    :align: center
-   :alt: View of a user’s form emphasizing the access rights tab in Odoo
+   :alt: View of a user’s form emphasizing the access rights tab in Leansoft
 
 When you are done editing the page and have *Saved* it, an invitation email is automatically sent to
 the user. The user must click on it to accept the invitation and create a login.
 
 .. image:: manage_users/invitation-email.png
    :align: center
-   :alt: View of a user’s form with a notification that the invitation email has been sent in Odoo
+   :alt: View of a user’s form with a notification that the invitation email has been sent in Leansoft
 
 .. note::
    Remember that subscription prices follow the number of users. Refer to our
@@ -48,10 +48,10 @@ With the :ref:`developer mode <developer-mode>` activated, *User Types* can be s
 .. image:: manage_users/user-type.png
    :align: center
    :height: 300
-   :alt: View of a user’s form in developer mode emphasizing the user type field in Odoo
+   :alt: View of a user’s form in developer mode emphasizing the user type field in Leansoft
 
 The *Portal* and *Public* options do not allow you to choose access rights. Members have specific
-ones (such as record rules and restricted menus) and usually do not belong to the usual Odoo
+ones (such as record rules and restricted menus) and usually do not belong to the usual Leansoft
 groups.
 
 .. _users/deactivate:
@@ -118,7 +118,7 @@ form. Click on the *Action* button and select *Change Password*.
 
 .. image:: manage_users/change-password.png
    :align: center
-   :alt: Change another user's password on Odoo
+   :alt: Change another user's password on Leansoft
 
 Enter a new password and confirm by clicking on *Change Password*.
 
@@ -142,7 +142,7 @@ the user can have access.
 .. image:: manage_users/multi-companies.png
    :align: center
    :height: 300
-   :alt: View of a user’s form emphasizing the multi companies field in Odoo
+   :alt: View of a user’s form emphasizing the multi companies field in Leansoft
 
 .. seealso::
    - :doc:`companies`

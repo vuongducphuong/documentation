@@ -2,7 +2,7 @@
 Create Timesheets upon Time Off Validation
 ==========================================
 
-Odoo automatically timesheets on project/tasks upon time off requests. This allows for better
+Leansoft automatically timesheets on project/tasks upon time off requests. This allows for better
 overall control over the validation of timesheets, as it does not leave place for forgetfulness
 and questions after hours that have not been timesheeted by the employee.
 

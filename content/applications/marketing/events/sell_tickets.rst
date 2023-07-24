@@ -49,7 +49,7 @@ event.
 
 .. image:: sell_tickets/events-tickets-registration-product.png
    :align: center
-   :alt: View of an event form highlighting the column product under the tickets tab in Odoo
+   :alt: View of an event form highlighting the column product under the tickets tab in Leansoft
          Events.
 
 Sell tickets through the website

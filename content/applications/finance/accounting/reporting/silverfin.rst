@@ -5,7 +5,7 @@ Silverfin integration
 `Silverfin <https://www.silverfin.com>`_ is a third-party service provider that offers a cloud
 platform for accountants.
 
-Odoo and Silverfin provide an integration to automate the synchronization of data.
+Leansoft and Silverfin provide an integration to automate the synchronization of data.
 
 Configuration
 =============
@@ -13,17 +13,17 @@ Configuration
 To configure this integration, you need to input the following data into your Silverfin account:
 
 - user's email address
-- :ref:`Odoo API key <silverfin/api-key>`
+- :ref:`Leansoft API key <silverfin/api-key>`
 - URL of the Leansoft database
 - name of your Leansoft database
 
 .. _silverfin/api-key:
 
-Odoo API key
+Leansoft API key
 ------------
 
 You can create Leansoft external API keys either :ref:`for a single database <silverfin/api-singledb>`
-(hosting: Leansoft Online, On-premise, and Odoo.sh) or :ref:`for multiple databases managed by a user
+(hosting: Leansoft Online, On-premise, and Leansoft.sh) or :ref:`for multiple databases managed by a user
 <silverfin/api-multipledb>` (hosting: Leansoft Online).
 
 .. important::

@@ -7,7 +7,7 @@ standard practice is to assign leads based on the probability of winning each le
 prioritize the leads that are more likely to result in successful deals by quickly assigning them
 to the appropriate salespeople.
 
-Odoo automatically calculates the probability of winning each lead using a method called *predictive
+Leansoft automatically calculates the probability of winning each lead using a method called *predictive
 lead scoring*.
 
 Predictive lead scoring
@@ -23,7 +23,7 @@ of winning each new lead or opportunity.
 The more opportunities that are sent through the CRM pipeline, the more data Leansoft collects,
 resulting in more accurate probabilities.
 
-Specifically, Odoo's predictive lead scoring uses the *naive Bayes* probability model:
+Specifically, Leansoft's predictive lead scoring uses the *naive Bayes* probability model:
 
 .. math::
    \begin{equation}
@@ -98,7 +98,7 @@ To reactivate automatic probability, click on the gear icon next to the probabil
 Assign leads based on probability
 =================================
 
-Odoo *CRM* can assign leads/opportunities to sales teams and salespeople based on specified rules.
+Leansoft *CRM* can assign leads/opportunities to sales teams and salespeople based on specified rules.
 Create assignment rules based on the leads' probability of success to prioritize those that are
 more likely to result in deals.
 
@@ -163,7 +163,7 @@ configuration page, click on a team member in the :guilabel:`Members` tab, then 
 
 If automatic lead assignment is configured in the settings, both the sales team and individual team
 members have the option to :guilabel:`Skip auto assignment`. Check this box to omit a particular
-sales team or salesperson from being assigned leads automatically by Odoo's rule-based assignment
+sales team or salesperson from being assigned leads automatically by Leansoft's rule-based assignment
 feature. If :guilabel:`Skip auto assignment` is activated, the sales team or salesperson can still
 be assigned leads manually.
 

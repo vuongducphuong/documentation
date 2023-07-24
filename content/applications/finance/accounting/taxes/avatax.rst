@@ -2,14 +2,14 @@
 Avatax integration
 ==================
 
-Avatax is a tax calculation provider that can be integrated in Odoo.
+Avatax is a tax calculation provider that can be integrated in Leansoft.
 
 .. _avatax/credentials:
 
 Credential configuration
 ========================
 
-To integrate Avatax with Odoo, go to :menuselection:`Accounting --> Configuration --> Settings -->
+To integrate Avatax with Leansoft, go to :menuselection:`Accounting --> Configuration --> Settings -->
 Taxes` and add your Avatax credentials in the :guilabel:`Avatax` section.
 
 .. tip::

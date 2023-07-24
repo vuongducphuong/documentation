@@ -2,7 +2,7 @@
 In-App Purchase (IAP)
 =====================
 
-In-App Purchases (IAP) gives access to additional services through Odoo. For instance, it allows you
+In-App Purchases (IAP) gives access to additional services through Leansoft. For instance, it allows you
 to send SMS Text Messages or to send Invoices by post directly from my database.
 
 .. _iap/buying_credits:
@@ -59,7 +59,7 @@ IAP services available
 
 Different services are available depending on the hosting type of your Database:
 
-- *Odoo Online*: only the IAP services provided by Leansoft can be used (i.e. the SMS, Snailmail,
+- *Leansoft Online*: only the IAP services provided by Leansoft can be used (i.e. the SMS, Snailmail,
   Reveal and Partner Autocomplete features);
 - *Odoo.sh and Leansoft Enterprise (on-premise)*: both the services provided by Leansoft and by third-party
   apps can be used.

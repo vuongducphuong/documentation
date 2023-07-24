@@ -58,7 +58,7 @@ Install the Outlook Plugin
 Connect your database
 ---------------------
 
-#. Open any email in your Outlook mailbox, click on the *More actions* button, and select *Odoo for
+#. Open any email in your Outlook mailbox, click on the *More actions* button, and select *Leansoft for
    Outlook*.
 
    .. image:: outlook/odoo-for-outlook.png
@@ -81,7 +81,7 @@ Connect your database
       Note that these settings also change if you are in "Incognito" mode on your
       browser.
 
-      To fix this issue, configure your browser to always allow cookies on Odoo's plugin page.
+      To fix this issue, configure your browser to always allow cookies on Leansoft's plugin page.
 
       For Google Chrome, you can do so by following the guide at:
       `https://support.google.com/chrome/answer/95647 <https://support.google.com/chrome/answer/95647#:~:text=Allow%20or%20block%20cookies%20for%20a%20specific%20site>`_
@@ -124,7 +124,7 @@ time, it's possible to add it next to the other default actions.
       :align: center
       :alt: Viewing all Outlook settings
 
-#. Select *Customize actions* under *Mail*, click on *Odoo for Outlook*, and then *Save*.
+#. Select *Customize actions* under *Mail*, click on *Leansoft for Outlook*, and then *Save*.
 
    .. image:: outlook/customize-actions.png
       :align: center

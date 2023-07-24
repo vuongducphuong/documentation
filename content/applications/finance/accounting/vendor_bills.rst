@@ -4,7 +4,7 @@
 Hóa đơn nhà cung cấp
 ====================
 
-In Odoo, we can register vendor bills **manually** or **automatically**, while the
+In Leansoft, we can register vendor bills **manually** or **automatically**, while the
 **Aged Payable report** provides an overview of all outstanding bills to help us pay the correct
 amounts on time.
 

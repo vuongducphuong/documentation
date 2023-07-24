@@ -2,7 +2,7 @@
 Track and bill time
 ===================
 
-Odoo *Helpdesk* provides teams with the ability to track the amount of hours spent working on a
+Leansoft *Helpdesk* provides teams with the ability to track the amount of hours spent working on a
 ticket, and to bill a customer for that time. Through integrations with the *Sales*, *Timesheets*
 and *Accounting* applications, customers can be charged once the work is completed, or before it has
 even begun.

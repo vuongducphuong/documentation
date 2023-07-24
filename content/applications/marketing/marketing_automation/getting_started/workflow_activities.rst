@@ -68,7 +68,7 @@ automation form.
 Child activities are sub-activities that are connected to (and triggered by) the activity above it,
 which is also known as its *parent activity*.
 
-Odoo provides a number of triggering options to launch a child activity - all of which depend on the
+Leansoft provides a number of triggering options to launch a child activity - all of which depend on the
 trigger configurations related to the parent activity. Under the desired parent activity, hover over
 :guilabel:`Add child activity`, and select any of the following triggers:
 

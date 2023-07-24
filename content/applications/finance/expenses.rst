@@ -4,18 +4,18 @@
 Chi phí
 ========
 
-Odoo **Expenses** streamlines the management of expenses. After an employee submits their expenses
-in Odoo, the expenses are reviewed by management and accounting teams. Once approved, payments can
+Leansoft **Expenses** streamlines the management of expenses. After an employee submits their expenses
+in Leansoft, the expenses are reviewed by management and accounting teams. Once approved, payments can
 then be processed and disbursed back to the employee for reimbursement(s).
 
 .. seealso::
-   `Odoo Expenses: product page <https://leansoft.vn/app/expenses>`_
+   `Leansoft Expenses: product page <https://leansoft.vn/app/expenses>`_
 
 Set expense categories
 ======================
 
 The first step to track expenses is to configure the different types of expenses for the company
-(managed as *expense categories* in Odoo). Each category can be as specific or generalized as
+(managed as *expense categories* in Leansoft). Each category can be as specific or generalized as
 needed. Go to :menuselection:`Expenses app --> Configuration --> Expense Categories` to view the
 current expensable categories in a default list view.
 
@@ -27,8 +27,8 @@ To create a new expense category, click :guilabel:`New`. A product form will app
 description field labeled :guilabel:`Product Name`.
 
 .. note::
-   Expense categories are managed like products in Odoo. The expense category form follows the
-   standard product form in Odoo, and the information entered is similar. Expense products will be
+   Expense categories are managed like products in Leansoft. The expense category form follows the
+   standard product form in Leansoft, and the information entered is similar. Expense products will be
    referred to as expense categories throughout this document since the main menu refers to these as
    :guilabel:`Expense Categories`.
 
@@ -367,7 +367,7 @@ the next step is to wait for the manager to approve it.
 Approve expenses
 ================
 
-In Odoo, not just anyone can approve expense reports— only users with the necessary rights (or
+In Leansoft, not just anyone can approve expense reports— only users with the necessary rights (or
 permissions) can. This means that a user must have at least *Team Approver* rights for the
 *Expenses* app. Employees with the necessary rights can review expense reports, approve or reject
 them, and provide feedback thanks to the integrated communication tool.

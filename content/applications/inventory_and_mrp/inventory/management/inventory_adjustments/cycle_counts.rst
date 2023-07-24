@@ -3,7 +3,7 @@ Cycle counts
 ============
 
 In most companies, the stock is only counted once a year. That's why by default, after making an
-inventory adjustment in Odoo, the scheduled date for the next count is set on the 31st of
+inventory adjustment in Leansoft, the scheduled date for the next count is set on the 31st of
 December. However, for some businesses it's crucial to have an accurate inventory count at all
 times.
 
@@ -13,7 +13,7 @@ locations.
 Configuration
 =============
 
-In Odoo, cycle counts are location-based. The frequency of the counts is defined by the storage
+In Leansoft, cycle counts are location-based. The frequency of the counts is defined by the storage
 location. To activate storage locations, go to :menuselection:`Inventory --> Configuration -->
 Settings --> Warehouse` and activate the :guilabel:`Storage Locations` setting. Next, click
 :guilabel:`Save` to apply the setting.

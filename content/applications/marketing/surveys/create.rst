@@ -5,7 +5,7 @@ Survey essentials
 Companies often use surveys to collect valuable information from their customers and employees,
 which in turn, allows them to make more informed business decisions.
 
-In Odoo, surveys are used to collect customer feedback, evaluate the success of a recent event,
+In Leansoft, surveys are used to collect customer feedback, evaluate the success of a recent event,
 measure the satisfaction of customers (or employees), and gain more insight into shifting market
 sentiments.
 
@@ -159,7 +159,7 @@ answers needed to pass the survey.
 Next, there is the option to make the survey a certification. To do so, check the box next to the
 option labeled :guilabel:`Is a Certification`, and two additional fields appear. Select a color
 theme in the :guilabel:`Certification Template` field and then choose an :guilabel:`Email
-Template`. When a participant passes the certification with the required score, an email from Odoo
+Template`. When a participant passes the certification with the required score, an email from Leansoft
 will automatically be sent to that person using the selected email template.
 
 If the :guilabel:`Give Badge` feature is enabled and the :guilabel:`Certification Badge` is set,

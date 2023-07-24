@@ -105,7 +105,7 @@ Closing the fiscal year
 In Leansoft there is no need to do a specific year end closing entry in order to
 close out income statement accounts. The reports are created in
 real-time, meaning that the **Income statement** corresponds directly with
-the year-end date you specify in Odoo. Therefore, any time you generate
+the year-end date you specify in Leansoft. Therefore, any time you generate
 the **Income Statement**, the beginning date will correspond with the
 beginning of the **Fiscal Year** and the account balances will all be 0.
 

@@ -23,10 +23,10 @@ social media outlets to choose from.
 
 .. image:: social_essentials/social-add-streams.png
    :align: center
-   :alt: View of the pop-up that appears when 'Add a Stream' is selected in Odoo.
+   :alt: View of the pop-up that appears when 'Add a Stream' is selected in Leansoft.
 
 .. note::
-   Additional social media outlet options are available depending on your version of Odoo.
+   Additional social media outlet options are available depending on your version of Leansoft.
 
 From this pop-up, select a social media option: :guilabel:`Facebook`, :guilabel:`LinkedIn`, or
 :guilabel:`Twitter`.
@@ -56,9 +56,9 @@ From here, new accounts and/or streams can be added and managed at any time.
 
    .. image:: social_essentials/insights.png
       :align: center
-      :alt: The insights link that can be accessed for each social media stream added in Odoo.
+      :alt: The insights link that can be accessed for each social media stream added in Leansoft.
 
-Create and publish social media posts in Odoo
+Create and publish social media posts in Leansoft
 =============================================
 
 To create content for social media accounts in the :menuselection:`Social Marketing` application,
@@ -70,7 +70,7 @@ of different ways.
 
 .. image:: social_essentials/social-create-post.png
    :align: center
-   :alt: How to create a social media post directly through Odoo
+   :alt: How to create a social media post directly through Leansoft
 
 Post template
 -------------
@@ -89,7 +89,7 @@ media account(s), or on which website(s) via push notification, this post will b
    :menuselection:`Website --> Configuration --> Settings`, activate :guilabel:`Enable Web Push
    Notifications`, fill out the corresponding fields, and click :guilabel:`Save`.
 
-Odoo automatically provides every available social media account that's been linked to the database
+Leansoft automatically provides every available social media account that's been linked to the database
 as an option in this section, as well.
 
 .. note::
@@ -171,7 +171,7 @@ appears beside the push notification. By default, Leansoft uses a "smiley face" 
 
 To upload a new image, click the :guilabel:`Edit (pencil) icon` when the :guilabel:`Push Icon Image`
 field is hovered over with the cursor. Then, proceed to locate and upload the desired image, and
-Odoo automatically displays a preview of how the icon will appear on the push notification.
+Leansoft automatically displays a preview of how the icon will appear on the push notification.
 
 Next, there is the option to :guilabel:`Send at Visitors' Timezone`. If enabled, Leansoft will send it
 at the appropriate, pre-determined time, taking the visitor's location into consideration.
@@ -207,7 +207,7 @@ Posts page
 
 To see a complete overview of posts, go to Leansoft :menuselection:`Social Marketing`, and click
 :menuselection:`Posts` in the header menu. Here, every post that has been created and posted with
-Odoo is available.
+Leansoft is available.
 
 There are four different view options for :guilabel:`Posts` page data: *kanban*, *calendar*, *list*,
 and *pivot*. The view options are located in the upper right corner of the :guilabel:`Posts` page,

@@ -4,7 +4,7 @@
 Thanh toán
 ==========
 
-In Odoo, payments can either be linked automatically to an invoice or bill or be stand-alone records
+In Leansoft, payments can either be linked automatically to an invoice or bill or be stand-alone records
 for use at a later date.
 
 If a payment is **linked to an invoice or bill**, it reduces the amount due of the invoice. You can

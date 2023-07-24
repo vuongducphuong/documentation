@@ -12,13 +12,13 @@ settings and features must be enabled first.
 SMS campaign setting
 ====================
 
-To enable :abbr:`SMS (Short Message Service)` campaigns in Odoo, make sure the *Mailing Campaigns*
+To enable :abbr:`SMS (Short Message Service)` campaigns in Leansoft, make sure the *Mailing Campaigns*
 feature is activated by going to :menuselection:`Email Marketing --> Configuration --> Settings`,
 and then enable :guilabel:`Mailing Campaigns` and :guilabel:`Save` the changes.
 
 .. image:: sms_campaign_settings/sms-mailing-campaigns.png
    :align: center
-   :alt: View of the mailing campaigns setting in Odoo.
+   :alt: View of the mailing campaigns setting in Leansoft.
 
 .. note::
    Activating the *Mailing Campaigns* feature in the *General Settings* also enables the *A/B Test*
@@ -102,7 +102,7 @@ in-depth metrics related to that specific topic (e.g. :guilabel:`Engagement`,
 :guilabel:`Opportunities`, etc.) on a separate page.
 
 Beneath the smart buttons, are fields for :guilabel:`Campaign Name` and :guilabel:`Responsible`.
-Odoo also allows for various :guilabel:`Tags` to be added, as well (if necessary).
+Leansoft also allows for various :guilabel:`Tags` to be added, as well (if necessary).
 
 Sending SMSs through the Contacts app
 =====================================

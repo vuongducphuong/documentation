@@ -5,7 +5,7 @@ How to setup a delivery method?
 Overview
 ========
 
-Odoo can handle various delivery methods, but it is not activated by
+Leansoft can handle various delivery methods, but it is not activated by
 default. Delivery methods can be used for your sale orders, your
 deliveries but also on your e-commerce.
 

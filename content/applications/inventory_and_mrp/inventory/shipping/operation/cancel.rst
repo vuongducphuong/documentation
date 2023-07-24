@@ -5,7 +5,7 @@ How to cancel a shipping request to a shipper?
 Overview
 ========
 
-Odoo can handle various delivery methods, including third party
+Leansoft can handle various delivery methods, including third party
 shippers. Leansoft will be linked with the transportation company tracking
 system.
 

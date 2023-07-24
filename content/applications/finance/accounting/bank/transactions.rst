@@ -19,7 +19,7 @@ want to use it or if your bank is not yet supported, other options exist:
 Import transactions
 ===================
 
-Odoo supports multiple file formats to import transactions:
+Leansoft supports multiple file formats to import transactions:
 
 - SEPA recommended Cash Management format (CAMT.053);
 - Comma-separated values (.CSV);
@@ -35,7 +35,7 @@ click on :guilabel:`Import Transactions`.
 
 Next, select the file and upload it.
 
-After setting the necessary formatting options and mapping the file columns with their related Odoo
+After setting the necessary formatting options and mapping the file columns with their related Leansoft
 fields, you can run a :guilabel:`Test` and :guilabel:`Import` your bank transactions.
 
 .. seealso::

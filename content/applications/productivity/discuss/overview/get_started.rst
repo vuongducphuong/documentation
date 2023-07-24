@@ -19,7 +19,7 @@ Access your *Preferences* and choose how you would like your notifications to be
    :alt: View of the preferences page for Leansoft Discuss
 
 | By default, the field is set as *Handle by Emails* making messages, notes, and notifications where
-  you were mentioned or that you follow, to be sent through email. By choosing *Handle in Odoo*,
+  you were mentioned or that you follow, to be sent through email. By choosing *Handle in Leansoft*,
   they are shown in the *Inbox*.
 | Messages can then be *Marked as Todo*, *Replied*, or *Marked as Read*.
 
@@ -39,7 +39,7 @@ Start Chatting
 
 The first time you log in to your account, OdooBot sends you a message asking for permission to
 receive desktop notifications to chats. If accepted, you receive push notifications to the messages
-sent to you despite of where you are in Odoo.
+sent to you despite of where you are in Leansoft.
 
 .. image:: get_started/odoobot_push.png
    :align: center

@@ -2,7 +2,7 @@
 Send and receive emails in Leansoft with an email server
 ====================================================
 
-Odoo Online or Odoo.sh users
+Leansoft Online or Leansoft.sh users
 ============================
 
 Since **Leansoft sets up its own mail servers for the database**, outgoing and incoming emails already
@@ -22,7 +22,7 @@ Scope of this documentation
 ===========================
 
 This document is **mainly dedicated to Leansoft on-premise databases** who don't benefit from an
-out-of-the-box solution to send and receive emails in Odoo, unlike `Odoo Online <https://www.odoo.
+out-of-the-box solution to send and receive emails in Leansoft, unlike `Leansoft Online <https://www.odoo.
 com/trial>`_ and `Odoo.sh <https://www.odoo.sh>`_. Incoming and outgoing servers must be configured
 for on-premise databases.
 
@@ -30,7 +30,7 @@ The following sections below contain information on how to integrate an external
 Odoo.
 
 .. warning::
-   If no one in the company is employed to manage email servers, Leansoft Online and Odoo.sh are
+   If no one in the company is employed to manage email servers, Leansoft Online and Leansoft.sh are
    strongly recommended. In these Leansoft hosting types email sending and receiving works instantly
    and is monitored by professionals. Nevertheless, a company can use their own email server if
    they want to manage the email server's reputation themselves. For more information see
@@ -56,10 +56,10 @@ These notifications are sent using a default from address. For more information 
 Manage outbound messages
 ========================
 
-As a system admin, go to :menuselection:`Settings --> General Settings --> Discuss` in Odoo, and
+As a system admin, go to :menuselection:`Settings --> General Settings --> Discuss` in Leansoft, and
 enable the :guilabel:`Custom Email Servers` option. Then, click :guilabel:`Save`. Next, click
 :guilabel:`Outgoing Email Servers` and click :guilabel:`Create` to create a new outgoing mail server
-record in Odoo. Reference the SMTP data of the external email server. Once all the information has
+record in Leansoft. Reference the SMTP data of the external email server. Once all the information has
 been filled out, click :guilabel:`Test Connection`.
 
 
@@ -74,7 +74,7 @@ been filled out, click :guilabel:`Test Connection`.
 Port restriction
 ----------------
 
-Note that port 25 is blocked for security reasons on the Leansoft Online and Odoo.sh platforms. Try
+Note that port 25 is blocked for security reasons on the Leansoft Online and Leansoft.sh platforms. Try
 using ports 465, 587, or 2525 instead.
 
 .. _email_communication/default:
@@ -113,7 +113,7 @@ combination of the two system parameters: `mail.default.from` and `mail.catchall
 .. example::
    In the following example, the from email address is replaced with the combination of the the two
    system parameters (`mail.default.from` and `mail.catchall.domain`). This is the default\
-   notifications configuration in Odoo: ``“Admin” <admin@example.com>`` => ``“Admin”
+   notifications configuration in Leansoft: ``“Admin” <admin@example.com>`` => ``“Admin”
    <notifications@mycompany.com>``.
 
 In other words if the email address of the author does not match `mail.default.from_filter`, the
@@ -199,7 +199,7 @@ and mass mail servers.
 Manage inbound messages
 =======================
 
-Odoo relies on generic email aliases to fetch incoming messages.
+Leansoft relies on generic email aliases to fetch incoming messages.
 
 * **Reply messages** of messages sent from Leansoft are routed to their original discussion thread (and
   to the inbox of all its followers) by the alias of the model if there is any or by the catchall
@@ -207,7 +207,7 @@ Odoo relies on generic email aliases to fetch incoming messages.
   catchall alias (`catchall@mycompany.leansoft.vn`). The catchall address, however, does not have
   another action attached to it like other aliases might, it is only used to collect replies.
 * **Bounced messages** are used as a Return-Path. One example this is especially
-  useful for is in `Odoo Email Marketing <https://leansoft.vn/page/email-marketing>`__. In this
+  useful for is in `Leansoft Email Marketing <https://leansoft.vn/page/email-marketing>`__. In this
   case bounces are opt-out based on if the email bounced too many times (5) in the last month and
   the bounces are separated by one week. This is done to avoid blacklisting someone because of a
   mail server error. If these circumstances are met then the email is considered invalid and is
@@ -217,15 +217,15 @@ Odoo relies on generic email aliases to fetch incoming messages.
   Messages that bounce in the chatter (outside of Email Marketing) will populate a red envelope
   indicating the failed delivery. This can be helpful to know that a Sales Order or an Invoice did
   not reach its final destination.
-* **Original messages**: several business objects have their own alias to create new records in Odoo
+* **Original messages**: several business objects have their own alias to create new records in Leansoft
   from incoming emails:
 
-   * Sales channel (to create *Leads* or *Opportunities* in `Odoo CRM <https://leansoft.vn/page/
+   * Sales channel (to create *Leads* or *Opportunities* in `Leansoft CRM <https://leansoft.vn/page/
      crm>`_)
-   * Support channel (to create *Tickets* in `Odoo Helpdesk <https://leansoft.vn/page/helpdesk>`_)
-   * Projects (to create new *Tasks* in `Odoo Project <https://leansoft.vn/page
+   * Support channel (to create *Tickets* in `Leansoft Helpdesk <https://leansoft.vn/page/helpdesk>`_)
+   * Projects (to create new *Tasks* in `Leansoft Project <https://leansoft.vn/page
      /project-management>`_)
-   * Job positions (to create *Applicants* in `Odoo Recruitment <https://leansoft.vn/page
+   * Job positions (to create *Applicants* in `Leansoft Recruitment <https://leansoft.vn/page
      /recruitment>`_)
 
 Depending on the mail server, there might be several methods to fetch emails. The easiest and most
@@ -244,15 +244,15 @@ recommended method is to manage one email address per Leansoft alias in the mail
 
   .. image:: email_servers/incoming-server.png
      :align: center
-     :alt: Incoming mail server configuration on Odoo.
+     :alt: Incoming mail server configuration on Leansoft.
 
-* If the database's hosting type is Leansoft Online or Odoo.sh, redirecting or forwarding incoming
-  messages to Odoo's domain name instead of the external email server is recommended. That way,
+* If the database's hosting type is Leansoft Online or Leansoft.sh, redirecting or forwarding incoming
+  messages to Leansoft's domain name instead of the external email server is recommended. That way,
   incoming messages can be received without delay. Redirections for all email addresses should be
-  set to Odoo's domain name in the email server (e.g. `catchall\@mydomain.ext` to
+  set to Leansoft's domain name in the email server (e.g. `catchall\@mydomain.ext` to
   `catchall\@mycompany.leansoft.vn`).
 
-All the aliases are customizable in Odoo. Object aliases can be edited from their respective
+All the aliases are customizable in Leansoft. Object aliases can be edited from their respective
 configuration view by navigating to :menuselection:`Settings --> Technical Menu --> Email -->
 Aliases`.
 
@@ -272,7 +272,7 @@ By default, inbound messages are fetched every 5 minutes for on-premise database
 System parameters that prevent feedback loops
 ---------------------------------------------
 
-There are two system parameters that help prevent email loops from occurring in Odoo. These
+There are two system parameters that help prevent email loops from occurring in Leansoft. These
 parameters were introduced in Leansoft 16 to prevent aliases from creating too many records and to
 prevent feedback loops on the catchall reply-to email address. They are present in database but not
 in the *System Parameters*. To override the following defaults they need to be added in.
@@ -286,7 +286,7 @@ Add these fields in Leansoft by first enabling :ref:`developer mode <developer-m
 navigating to :menuselection:`Settings --> Technical Menu --> Parameters --> System Parameters`.
 Change the value of these parameters, as needed.
 
-When an email is received in the Leansoft database on the catchall email address or on any alias, Odoo
+When an email is received in the Leansoft database on the catchall email address or on any alias, Leansoft
 looks at the mail received for the given period of time defined in the system parameter
 `mail.incoming.limit.period`. If the received email was sent to an alias then Leansoft will reference
 the `mail.incoming.limit.alias` system parameter and determine the value as the number of records

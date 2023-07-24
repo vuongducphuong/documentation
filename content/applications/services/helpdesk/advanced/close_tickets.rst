@@ -2,7 +2,7 @@
 Closing tickets
 ===============
 
-Once work has been completed on a *Helpdesk* ticket in Odoo, there are several ways it can be
+Once work has been completed on a *Helpdesk* ticket in Leansoft, there are several ways it can be
 closed. Manually closing solved tickets keeps the pipeline up to date, while automatically closing
 inactive tickets prevents unnecessary blocking issues. Allowing customers to close their own tickets
 minimizes confusion around whether an issue is considered solved or not. This results in increased

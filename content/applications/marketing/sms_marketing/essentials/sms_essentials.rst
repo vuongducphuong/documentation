@@ -99,7 +99,7 @@ Writing SMS messages
 --------------------
 
 Enter the content of the :abbr:`SMS (Short Message Service)` in the text field, found in the
-:guilabel:`SMS Content` tab. Links and emojis can also be included. Beneath the text field, Odoo
+:guilabel:`SMS Content` tab. Links and emojis can also be included. Beneath the text field, Leansoft
 displays how many characters are used in the message, along with how many :abbr:`SMS (Short Message
 Service)` mailings it will take to deliver the complete message.
 
@@ -116,7 +116,7 @@ Service)` mailings it will take to deliver the complete message.
    :abbr:`SMS (Short Message Service)` messages will not be sent without credits.
 
 .. seealso::
-   `Odoo SMS - FAQ <https://iap-services.leansoft.vn/iap/sms/pricing>`_
+   `Leansoft SMS - FAQ <https://iap-services.leansoft.vn/iap/sms/pricing>`_
 
 Track links used in SMS messages
 --------------------------------

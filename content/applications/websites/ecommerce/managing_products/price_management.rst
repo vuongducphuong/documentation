@@ -2,7 +2,7 @@
 Price management
 ================
 
-Odoo offers multiple options to select the price displayed on your website, as well as
+Leansoft offers multiple options to select the price displayed on your website, as well as
 condition-specific prices based on set criteria.
 
 Taxes

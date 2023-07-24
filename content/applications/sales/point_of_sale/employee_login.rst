@@ -2,7 +2,7 @@
 Quản lý nhiều nhân viên
 =========================
 
-Odoo Điểm bán hàng allows you to manage access to a specific POS by enabling the **Multi Employees
+Leansoft Điểm bán hàng allows you to manage access to a specific POS by enabling the **Multi Employees
 per Session** feature. When activated, :ref:`you can select which users can log into the POS
 <employee_login/use>` and :ref:`keep track of the employees involved in each order
 <employee_login/analytics>`.

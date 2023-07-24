@@ -14,7 +14,7 @@ From the *General Settings*, activate *Google Drive* and *Google Spreadsheet*. T
 
 .. image:: google_spreadsheets/authori.png
    :align: center
-   :alt: Enable the Google Drive and Google Spreadsheet features in Odoo
+   :alt: Enable the Google Drive and Google Spreadsheet features in Leansoft
 
 Now, link your Google account with Leansoft by following these steps:
 
@@ -31,7 +31,7 @@ From the *CRM* app, for example, go to *Favorites* and click on *Add to Google S
 
 .. image:: google_spreadsheets/add_to_google_spread.png
    :align: center
-   :alt: From the CRM application, for example, click on add to Google Spreadsheet in Odoo
+   :alt: From the CRM application, for example, click on add to Google Spreadsheet in Leansoft
 
 A new spreadsheet will be automatically created in your Google Drive.
 
@@ -39,11 +39,11 @@ A new spreadsheet will be automatically created in your Google Drive.
    When you opening this new file, a second sheet is created automatically by Leansoft with a
    tutorial/documentation on *How to use Google Spreadsheet*.
 
-Link a Spreadsheet with Odoo
+Link a Spreadsheet with Leansoft
 ----------------------------
 
 | From this new file, configure your database.
-| Go to :menuselection:`Odoo --> Server Settings --> Database Name --> Username --> Password`.
+| Go to :menuselection:`Leansoft --> Server Settings --> Database Name --> Username --> Password`.
 
 .. image:: google_spreadsheets/odoo_menu.png
    :align: center
@@ -52,7 +52,7 @@ Link a Spreadsheet with Odoo
 Applications
 ============
 
-You have two different formulas available when using Google Spreadsheet in Odoo: *retrieve data* and
+You have two different formulas available when using Google Spreadsheet in Leansoft: *retrieve data* and
 *retrieve grouped sums*.
 
 .. warning::
@@ -72,7 +72,7 @@ Retrieve Data
 
 .. image:: google_spreadsheets/retrieve_data.png
    :align: center
-   :alt: Table with examples of arguments to use in Odoo
+   :alt: Table with examples of arguments to use in Leansoft
 
 Retrieve Grouped Sums
 ---------------------
@@ -83,7 +83,7 @@ Retrieve Grouped Sums
 
 .. image:: google_spreadsheets/retrieve_sums.png
    :align: center
-   :alt: Table with examples of grouped sum arguments to use in Odoo
+   :alt: Table with examples of grouped sum arguments to use in Leansoft
 
 Other uses
 ----------

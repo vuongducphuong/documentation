@@ -8,7 +8,7 @@ due to theft, damages, human errors, or other factors. As such, inventory adjust
 to reconcile the differences, and ensure that the recorded counts in the database match the actual
 counts in the warehouse.
 
-In Odoo, inventory adjustments can be accessed through :menuselection:`Inventory --> Operations -->
+In Leansoft, inventory adjustments can be accessed through :menuselection:`Inventory --> Operations -->
 Inventory Adjustments`.
 
 The :guilabel:`Inventory Adjustments` page shows all products that are currently in stock. Each

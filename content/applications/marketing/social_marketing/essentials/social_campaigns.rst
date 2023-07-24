@@ -7,7 +7,7 @@ are helpful when introducing a new product to customers, explaining the value of
 service, or when advertising an upcoming event or product release.
 
 The most effective social marketing campaigns typically involve multiple channels to maximize
-content distribution, and Odoo's *Social Marketing* application acts as a singular control center to
+content distribution, and Leansoft's *Social Marketing* application acts as a singular control center to
 monitor, plan, post, track, and analyze all of the various content and content channels within a
 single dashboard.
 

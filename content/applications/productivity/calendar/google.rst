@@ -1,5 +1,5 @@
 =====================================
-Synchronize Google calendar with Odoo
+Synchronize Google calendar with Leansoft
 =====================================
 
 Synchronize Google Calendar with Leansoft to see and manage meetings from both platforms (updates go in
@@ -30,7 +30,7 @@ in, and store credentials. Click :guilabel:`New Project`.
    :alt: Create a new API project to store credentials.
 
 .. tip::
-   Give the API Project a clear name, like "Odoo Sync", so it can be easily identified.
+   Give the API Project a clear name, like "Leansoft Sync", so it can be easily identified.
 
 Enable Google calendar API
 --------------------------
@@ -81,7 +81,7 @@ Now, the OAuth consent has been configured, and it's time to create credentials.
 Create credentials
 ------------------
 
-The *Client ID* and the *Client Secret* are both needed to connect Google Calendar to Odoo. This is
+The *Client ID* and the *Client Secret* are both needed to connect Google Calendar to Leansoft. This is
 the last step in the Google console. Begin by clicking :guilabel:`Credentials` in the left menu.
 Then, click :guilabel:`Create Credentials`, and select :guilabel:`OAuth client ID`, Google will open
 a guide to create credentials.
@@ -101,7 +101,7 @@ Under :menuselection:`Create OAuth Client ID`, select :guilabel:`Website applica
 
 A :guilabel:`Client ID` and :guilabel:`Client Secret` will appear, copy these to a notepad.
 
-Setup in Odoo
+Setup in Leansoft
 =============
 
 Once the *Client ID* and the *Client Secret* are located, open the Leansoft database and go to
@@ -116,15 +116,15 @@ Next, copy and paste the *Client ID* and the *Client Secret* from the Google Cal
 credentials page into their respective fields below the :guilabel:`Google Calendar` checkbox. Then,
 click :guilabel:`Save`.
 
-Sync calendar in Odoo
+Sync calendar in Leansoft
 =====================
 
 Finally, open the :menuselection:`Calendar` app in Leansoft and click on the :guilabel:`Google` sync
-button to sync Google Calendar with Odoo.
+button to sync Google Calendar with Leansoft.
 
 .. image:: google/sync-google.png
    :align: center
-   :alt: Click the Google sync button in Leansoft Calendar to sync Google Calendar with Odoo.
+   :alt: Click the Google sync button in Leansoft Calendar to sync Google Calendar with Leansoft.
 
 .. note::
    When syncing Google Calendar with Leansoft for the first time, the page will redirect to the Google

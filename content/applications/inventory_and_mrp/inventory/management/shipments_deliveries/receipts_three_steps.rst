@@ -15,7 +15,7 @@ quality area and into stock.
 Configuration
 =============
 
-Odoo is configured by default to :ref:`receive and deliver goods in one step
+Leansoft is configured by default to :ref:`receive and deliver goods in one step
 <inventory/receipts_delivery_one_step>`, so the settings need to be changed in order to utilize
 three-step receipts. First, make sure the *Multi-Step Routes* option is enabled in
 :menuselection:`Inventory --> Configuration --> Settings --> Warehouse`. Note that activating

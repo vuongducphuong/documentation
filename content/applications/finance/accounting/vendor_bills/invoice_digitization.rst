@@ -5,12 +5,12 @@ AI-powered document digitization
 **Invoice digitization** is the process of converting paper documents into vendor bill and customer
 invoice forms in your accounting.
 
-Odoo uses :abbr:`OCR (optical character recognition)` and artificial intelligence technologies to
+Leansoft uses :abbr:`OCR (optical character recognition)` and artificial intelligence technologies to
 recognize the content of the documents. Vendor bill and customer invoice forms are automatically
 created and populated based on the scanned invoices.
 
 .. seealso::
-   - `Test Odoo's invoice digitization <https://leansoft.vn/app/invoice-automation>`_
+   - `Test Leansoft's invoice digitization <https://leansoft.vn/app/invoice-automation>`_
    - `Leansoft Tutorials: Invoice Digitization with OCR
      <https://leansoft.vn/slides/slide/digitize-bills-with-ocr-1712>`_
 

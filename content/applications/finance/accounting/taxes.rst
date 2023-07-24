@@ -5,7 +5,7 @@ Thuế
 =====
 
 There are numerous types of **taxes**, and their application varies greatly, depending mostly on
-your company's localization. To make sure they are recorded with accuracy, Odoo's tax engine
+your company's localization. To make sure they are recorded with accuracy, Leansoft's tax engine
 supports all kinds of uses and computations.
 
 .. _taxes/default:
@@ -25,7 +25,7 @@ To change your **Default Taxes**, go to :menuselection:`Accounting --> Configura
 **Purchase Tax**, and click on *Save*.
 
 .. image:: taxes/default-configuration.png
-   :alt: Define which taxes to use by default on Odoo
+   :alt: Define which taxes to use by default on Leansoft
 
 
 Activate Sales Taxes from the List view

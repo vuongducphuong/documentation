@@ -12,7 +12,7 @@ With Sign, you can upload any PDF file and add fields to it. These fields are au
 in with the user's details present in your database.
 
 .. seealso::
-   - `Odoo Sign: product page <https://leansoft.vn/app/sign>`_
+   - `Leansoft Sign: product page <https://leansoft.vn/app/sign>`_
    - `Leansoft Tutorials: Sign <https://leansoft.vn/slides/sign-61>`_
 
 Validity of electronic signatures
@@ -36,7 +36,7 @@ electronic signatures:
 #. Advanced electronic signatures
 #. Qualified electronic signatures
 
-Odoo generates the first type, **simple electronic signatures**; these signatures are legally valid
+Leansoft generates the first type, **simple electronic signatures**; these signatures are legally valid
 in the EU, as stated in the eIDAS regulation.
 
 Electronic signatures may not be automatically recognized as valid. You may need to bring
@@ -68,7 +68,7 @@ Overall, to be recognized as valid, electronic signatures have to meet five crit
 #. The signer must show a clear **intent to sign**. For example, using a mouse to draw a signature
    can show intent. The signer must also have the option to opt out of the electronic document.
 #. The signer must first express or imply their **consent to conduct business electronically**.
-#. **The signature must be clearly attributed**. In Odoo, metadata, such as the signer's IP address,
+#. **The signature must be clearly attributed**. In Leansoft, metadata, such as the signer's IP address,
    is added to the signature, which can be used as supporting evidence.
 #. **The signature must be associated with the signed document**, for example, by keeping a record
    detailing how the signature was captured.

@@ -16,7 +16,7 @@ and fields:
 
 .. image:: first_campaign/marketing-template-sample.png
    :align: center
-   :alt: A dashboard showing the creation of a new marketing automation campaign in Odoo.
+   :alt: A dashboard showing the creation of a new marketing automation campaign in Leansoft.
 
 - :guilabel:`Templates`: represents the number of pre-configured mail templates being used in this
   particular campaign. (Templates can always be created on-the-fly as well).

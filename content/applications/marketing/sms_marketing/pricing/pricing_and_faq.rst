@@ -34,7 +34,7 @@ How much does it cost to send an SMS?
 =====================================
 
 The price of an SMS depends on the destination and the length (number of characters) of the
-message. To see the **price per country, please consult**: `Odoo SMS - FAQ
+message. To see the **price per country, please consult**: `Leansoft SMS - FAQ
 <https://iap-services.leansoft.vn/iap/sms/pricing#sms_faq_01>`_.
 
 The number of SMSs a message represents will always be available in the database.

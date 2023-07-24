@@ -101,7 +101,7 @@ Message Service)` mailing promotions a certain customer has received (or not rec
 Blacklist
 =========
 
-Odoo *SMS Marketing* has a :guilabel:`Blacklist` feature that provides recipients with the power to
+Leansoft *SMS Marketing* has a :guilabel:`Blacklist` feature that provides recipients with the power to
 add their phone number to a list of people who no longer want to receieve communications or
 mailings.
 

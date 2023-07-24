@@ -5,7 +5,7 @@
 Chat trực tuyến
 ================
 
-Odoo *Live Chat* allows users to communicate with website visitors in real time. With *Live Chat*,
+Leansoft *Live Chat* allows users to communicate with website visitors in real time. With *Live Chat*,
 leads can be qualified for their sales potential, support questions can be answered quickly, and
 issues can be directed to the appropriate team for further investigation (or follow up). *Live Chat*
 also provides the opportunity for instant feedback from customers.
@@ -183,7 +183,7 @@ Fill out the fields on the :guilabel:`Open: Rules` pop-up as instructed below, t
 
 .. note::
    In order to track the geographical location of visitors, :guilabel:`GeoIP` must be installed on
-   the database. While this feature is installed by default on *Odoo Online*, *On-Premise* databases
+   the database. While this feature is installed by default on *Leansoft Online*, *On-Premise* databases
    will require additional :doc:`setup steps
    </applications/websites/website/configuration/on-premise_geo-ip-installation>`.
 
@@ -229,7 +229,7 @@ preferred name.
 
 .. image:: livechat/my-profile.png
    :align: center
-   :alt: View of the My Profile option in Odoo.
+   :alt: View of the My Profile option in Leansoft.
 
 If a users :guilabel:`Online Chat Name` is not set, the name displayed will default to the
 :guilabel:`User Name`.
@@ -241,7 +241,7 @@ If a users :guilabel:`Online Chat Name` is not set, the name displayed will defa
 
    .. image:: livechat/online-chat-name.png
       :align: center
-      :alt: View of user profile in Odoo, emphasizing the Online Chat name field.
+      :alt: View of user profile in Leansoft, emphasizing the Online Chat name field.
 
 Join or leave a channel
 -----------------------
@@ -280,7 +280,7 @@ New conversations will appear in bold under the :guilabel:`LIVECHAT` heading alo
 
 .. image:: livechat/managing-chat-responses.png
    :align: center
-   :alt: View of the discuss application with a message sent through live chat in Odoo.
+   :alt: View of the discuss application with a message sent through live chat in Leansoft.
 
 Click on a conversation in the left panel to select it. This will open the conversation. From this
 view, an operator can participate in the chat the same as they would in the normal chat window.

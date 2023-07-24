@@ -2,7 +2,7 @@
 Performance monitoring
 ======================
 
-Odoo integrates a variety of tools to analyze and improve the performance of your eCommerce
+Leansoft integrates a variety of tools to analyze and improve the performance of your eCommerce
 website.
 
 Performance analysis tools
@@ -39,7 +39,7 @@ Then, enter your **ID** in the :guilabel:`Measurement ID` field.
 
 If you are still using **Universal Analytics**, it can directly be added by injecting the code in
 the HTML header and body using the website builder. All metrics from Google Analytics and Universal
-Analytics can be seen directly within Odoo.
+Analytics can be seen directly within Leansoft.
 
 Alternatively, Leansoft offers the possibility to use another service, **Plausible.io**. Plausible.io is
 a simple and privacy-friendly alternative to Google Analytics. Everything can be managed directly in

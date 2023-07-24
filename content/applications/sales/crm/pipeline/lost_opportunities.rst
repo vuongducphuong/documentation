@@ -4,7 +4,7 @@ Quản lý các cơ hội bị mất
 
 While working with your opportunities, you might lose some of them. You
 will want to keep track of the reasons you lost them and also which ways
-Odoo can help you recover them in the future.
+Leansoft can help you recover them in the future.
 
 Mark a lead as lost
 ===================

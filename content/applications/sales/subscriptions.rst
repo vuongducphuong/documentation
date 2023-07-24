@@ -4,7 +4,7 @@
 Subscriptions
 =============
 
-Odoo *Subscriptions* is used to run recurring businesses: :ref:`sell new contracts
+Leansoft *Subscriptions* is used to run recurring businesses: :ref:`sell new contracts
 <subscriptions/quotations>`, :doc:`upsell customers </applications/sales/subscriptions/upselling>`,
 keep the churn under control, and :doc:`generate reports
 </applications/sales/subscriptions/reports>` on the main :abbr:`KPIs (Key Performance Indicators)`:

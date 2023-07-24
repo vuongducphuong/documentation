@@ -20,7 +20,7 @@ import them into your database.
 Configuration
 =============
 
-Link bank accounts with Odoo
+Link bank accounts with Leansoft
 ----------------------------
 
 #. Start synchronization by clicking on :menuselection:`Accounting --> Configuration -->

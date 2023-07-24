@@ -4,14 +4,14 @@
 Bank synchronization
 ====================
 
-Odoo can synchronize directly with your bank institution to get all bank statements imported
+Leansoft can synchronize directly with your bank institution to get all bank statements imported
 automatically into your database.
 
-To check if your bank is compatible with Odoo, go to `Odoo Accounting Features
+To check if your bank is compatible with Leansoft, go to `Leansoft Accounting Features
 <https://leansoft.vn/page/accounting-features>`_, and click on
 :guilabel:`See list of supported institutions`.
 
-Odoo supports more than 25,000 institutions around the world.
+Leansoft supports more than 25,000 institutions around the world.
 
 To connect to the banks, Leansoft uses multiple web-services:
 
@@ -63,7 +63,7 @@ you need to reactivate it using that phone number.
 
 The third-party provider may request more information in order to connect with your
 bank institution.
-This information is not stored on Odoo's servers.
+This information is not stored on Leansoft's servers.
 
 By default, transactions fetched from an online source are grouped inside the same statement, and
 one bank statement is created per month. You can change the bank statement creation periodicity
@@ -95,7 +95,7 @@ Issues
 Synchronization in error
 ------------------------
 
-To report a connection error to the `Odoo support <https://leansoft.vn/help>`_, go to
+To report a connection error to the `Leansoft support <https://leansoft.vn/help>`_, go to
 :menuselection:`Accounting Dashboard--> Configuration --> Accounting: Online Synchronization`,
 select the connection that failed, and copy the error description and the reference.
 
@@ -116,7 +116,7 @@ Migration process for users having installed Leansoft before December 2020
 ======================================================================
 
 If you are on-premise, please first make sure that your source is up-to-date with the latest version
-of Odoo.
+of Leansoft.
 
 Users who have created a database before December 2020 need to install the new module manually to
 use the new functionalities.
@@ -176,7 +176,7 @@ Some banks have additional security measures and require extra steps, such as an
 authentication code or another type of MFA. Because of this, the integrator cannot pull transactions
 until the security code is provided.
 
-Not all of my past transactions are in Odoo, why?
+Not all of my past transactions are in Leansoft, why?
 -------------------------------------------------
 
 For some institutions, transactions can only be fetched up to 3 months in the past.

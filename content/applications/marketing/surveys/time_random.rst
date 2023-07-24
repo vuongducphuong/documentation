@@ -2,7 +2,7 @@
 Timed and randomized questions
 ==============================
 
-When creating a survey in Odoo, there are options to set a time limit on the survey and randomize
+When creating a survey in Leansoft, there are options to set a time limit on the survey and randomize
 the questions.
 
 Time limit

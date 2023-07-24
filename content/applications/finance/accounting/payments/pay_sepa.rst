@@ -30,7 +30,7 @@ Non-EEA territories:
 - Jersey;
 - Isle of Man.
 
-When paying a bill in Odoo, you can select SEPA mandates as a payment option. At the day's end,
+When paying a bill in Leansoft, you can select SEPA mandates as a payment option. At the day's end,
 you can generate the SEPA file containing all bank wire transfers and send it to the bank.
 
 By default, the file follows the SEPA Credit Transfer **'pain.001.001.03'** specifications. This is

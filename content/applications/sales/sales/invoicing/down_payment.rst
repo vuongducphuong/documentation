@@ -102,7 +102,7 @@ On this form, select the appropriate :guilabel:`Journal` and confirm that the do
 is correct in the :guilabel:`Amount` field. Then, make any other modifications to the other fields,
 if necessary, before clicking :guilabel:`Create Payment`.
 
-Odoo returns to the invoice, which now has a green :guilabel:`In Payment` banner visible in the
+Leansoft returns to the invoice, which now has a green :guilabel:`In Payment` banner visible in the
 upper-right corner.
 
 .. image:: down_payment/paid-banner-invoice-1.png

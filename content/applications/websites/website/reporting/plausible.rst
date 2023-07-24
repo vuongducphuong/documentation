@@ -19,14 +19,14 @@ To follow your website's traffic with Plausible.io:
      :align: center
      :alt: Adding a shared link in the Visibility tab
 
-- Choose a name (and NO password - it is not supported to embed it in Odoo) and click on the button
+- Choose a name (and NO password - it is not supported to embed it in Leansoft) and click on the button
   `Create Shared Link`.
 
   .. image:: plausible/create-sharedlink.png
      :align: center
      :alt: Credentials creation for the new shared link
 
-- Copy the new Shared Link URL from Plausible.io and paste it into the Settings of Odoo.
+- Copy the new Shared Link URL from Plausible.io and paste it into the Settings of Leansoft.
 
   .. image:: plausible/copy-sharedlink.png
      :align: center

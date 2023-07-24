@@ -1,5 +1,5 @@
 =============================
-Activate the Barcodes in Odoo
+Activate the Barcodes in Leansoft
 =============================
 
 The barcode scanning features can save you a lot of time usually lost

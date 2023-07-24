@@ -3,7 +3,7 @@ Process Batch Transfers
 =======================
 
 Batch picking allows a single picker to handle a batch of orders,
-reducing the number of times he must visit the same location. In Odoo,
+reducing the number of times he must visit the same location. In Leansoft,
 it means you can regroup several transfers into the same batch
 transfer, then process it, either via the barcode application or in the form view.
 
@@ -87,7 +87,7 @@ which couldn’t be completely processed.
 
 .. image:: batch_transfers/batch_transfers_10.png
     :align: center
-    :alt: View of how backorders are handled in Odoo's batch transfers
+    :alt: View of how backorders are handled in Leansoft's batch transfers
 
 Process a Batch Transfer from the Barcode app
 =============================================

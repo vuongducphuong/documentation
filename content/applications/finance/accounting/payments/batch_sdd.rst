@@ -7,7 +7,7 @@ simplification of bank transfers denominated in euros. With **SEPA Direct Debit*
 customers can sign a mandate that authorizes you to collect future payments from their bank
 accounts. This is particularly useful for recurring payments based on a subscription.
 
-You can record customer mandates in Odoo, and generate `.xml` files containing pending payments made
+You can record customer mandates in Leansoft, and generate `.xml` files containing pending payments made
 with an SDD mandate.
 
 .. note::

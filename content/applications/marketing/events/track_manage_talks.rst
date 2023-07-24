@@ -121,13 +121,13 @@ canceled altogether via the :guilabel:`Cancel Registration` button.
 
 .. image:: track_manage_talks/events-send-email-button.png
    :align: center
-   :alt: View of an attendee form emphasizing the send by email and cancel registration in Odoo
+   :alt: View of an attendee form emphasizing the send by email and cancel registration in Leansoft
          Events.
 
 Lead Generation Rules
 ---------------------
 
-With Odoo, leads can be generated from events.
+With Leansoft, leads can be generated from events.
 
 To create and configure a :guilabel:`Lead Generation Rule` related to events, navigate to
 :menuselection:`Events app --> Configuration --> Lead Generation`.

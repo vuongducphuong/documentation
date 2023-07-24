@@ -16,7 +16,7 @@ the organization to connect to Leansoft using their Google Accounts.
 Configuration
 =============
 
-The integration of the Google sign-in function requires configuration both on Google *and* Odoo.
+The integration of the Google sign-in function requires configuration both on Google *and* Leansoft.
 
 .. _google-sign-in/api:
 
@@ -95,11 +95,11 @@ Credentials
 
 #. Now that the *OAuth client* has been created, a screen will appear with the :guilabel:`Client ID`
    and :guilabel:`Client Secret`. Copy the :guilabel:`Client ID` for later, as it will be necessary
-   for the configuration in Odoo, which will be covered in the following steps.
+   for the configuration in Leansoft, which will be covered in the following steps.
 
 .. _google-sign-in/auth-odoo:
 
-Google Authentication on Odoo
+Google Authentication on Leansoft
 -----------------------------
 
 .. _google-sign-in/client-id:
@@ -116,10 +116,10 @@ Once the previous steps are complete, two keys are generated on the Google API D
 
 .. _google-sign-in/odoo-activation:
 
-Odoo activation
+Leansoft activation
 ~~~~~~~~~~~~~~~
 
-#. Go to :menuselection:`Odoo General Settings --> Integrations` and activate :guilabel:`OAuth
+#. Go to :menuselection:`Leansoft General Settings --> Integrations` and activate :guilabel:`OAuth
    Authentication`.
 
    .. note::
@@ -144,7 +144,7 @@ Log in to Leansoft with Google
 ==========================
 
 To link the Google account to the Leansoft profile, click on :guilabel:`Log in with Google` when first
-logging into Odoo.
+logging into Leansoft.
 
    .. image:: google/first-login.png
       :align: center

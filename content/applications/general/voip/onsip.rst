@@ -5,7 +5,7 @@ Use VoIP services in Leansoft with OnSIP
 Introduction
 ============
 
-Odoo VoIP can be set up to work together with OnSIP (www.onsip.com). In that case, the installation and setup of an Asterisk server is not necessary as the whole infrastructure is hosted and managed by OnSIP.
+Leansoft VoIP can be set up to work together with OnSIP (www.onsip.com). In that case, the installation and setup of an Asterisk server is not necessary as the whole infrastructure is hosted and managed by OnSIP.
 
 You will need to open an account with OnSIP to use this service. Before doing so, make sure that your area and the areas you wish to call are covered by the service. After opening an OnSIP account, follow the configuration procedure below.
 

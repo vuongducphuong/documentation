@@ -2,7 +2,7 @@
 Automatically get product images with Google Images
 ===================================================
 
-The product images are very useful in Odoo, for example, to quickly find a product or check if you
+The product images are very useful in Leansoft, for example, to quickly find a product or check if you
 scanned the right one, but it can be a bit painful to set up especially if you have a lot of
 products. **Google Custom Search** allows finding images automatically for your product, based on
 their barcode, keeping your focus on what matters in your business.
@@ -12,7 +12,7 @@ their barcode, keeping your focus on what matters in your business.
 Configuration
 =============
 
-This functionnality requires configuration both on Google and on Odoo.
+This functionnality requires configuration both on Google and on Leansoft.
 
 With a free Google account, you can get up to 100 free images per day. If you need a higher rate,
 you'll have to upgrade to a billing account.
@@ -34,7 +34,7 @@ Google API dashboard
       :align: center
       :alt: API & Services page on Google Cloud Platform
 
-#. Save your **API Key**. You'll need it for the next step in Odoo!
+#. Save your **API Key**. You'll need it for the next step in Leansoft!
 
 #. Use the search bar to look for **Google Custom Search API** and select it.
 
@@ -80,7 +80,7 @@ Google Programmable Search dashboard
       Once **Search the entire web** is enabled, you can safely delete the site that you put at the
       previous step.
 
-#. Save your **Search Engine Id**. You’ll need it for the next step in Odoo!
+#. Save your **Search Engine Id**. You’ll need it for the next step in Leansoft!
 
 .. _product_images/setup-in-odoo:
 
@@ -95,7 +95,7 @@ Odoo
 
 .. _product_images/get-product-images:
 
-Automatically get your product images in Odoo
+Automatically get your product images in Leansoft
 =============================================
 
 The action to automatically get your product images in Leansoft appears in any Products or Product

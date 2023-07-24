@@ -10,7 +10,7 @@ Consider the following example:
 
 .. image:: understanding_metrics/commercial-prospection-campaign-example.png
    :align: center
-   :alt: An example of a marketing automation campaign in Odoo.
+   :alt: An example of a marketing automation campaign in Leansoft.
 
 In this case, the :guilabel:`Target` of this campaign is set to :guilabel:`Lead/Opportunity` and
 was narrowed down to only focus on the Leads (or Opportunities) whose :guilabel:`Tag Name` contain
@@ -22,7 +22,7 @@ match the criteria.
 
 .. image:: understanding_metrics/marketing-automation-lead-filters.png
    :align: center
-   :alt: Lead generation filters used to refine records on marketing automation campaigns in Odoo.
+   :alt: Lead generation filters used to refine records on marketing automation campaigns in Leansoft.
 
 At the top of the marketing automation form, there are a series of smart buttons. The
 :guilabel:`Participations` smart button in this example indicates that, out of those 18 records, 25

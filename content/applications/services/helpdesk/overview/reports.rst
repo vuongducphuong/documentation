@@ -2,7 +2,7 @@
 Reporting
 =========
 
-Odoo *Helpdesk* includes several reports that provide the opportunity to track trends for customer
+Leansoft *Helpdesk* includes several reports that provide the opportunity to track trends for customer
 support tickets, identify areas for improvement, manage employee workloads, and confirm when
 customer expectations are met.
 
@@ -224,4 +224,4 @@ To create and save new *Favorites* on a report, follow the steps below:
 
 .. seealso::
    - :doc:`Start receiving tickets </applications/services/helpdesk/overview/receiving_tickets>`
-   - :doc:`Odoo reporting </applications/general/reporting>`
+   - :doc:`Leansoft reporting </applications/general/reporting>`

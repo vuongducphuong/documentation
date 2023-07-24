@@ -8,7 +8,7 @@ From a single view, you can send out quotations, confirm orders, schedule rental
 products are picked up and returned, and invoice your customers.
 
 .. seealso::
-   - `Odoo Rental: product page <https://leansoft.vn/app/rental>`_
+   - `Leansoft Rental: product page <https://leansoft.vn/app/rental>`_
    - `Leansoft Tutorials: Rental <https://leansoft.vn/slides/rental-48>`_
 
 .. _rental/pricing:
@@ -41,7 +41,7 @@ usually to give out discounts for longer rental durations.
 Computing
 ---------
 
-Odoo always uses two rules to compute the price of a product when you create a rental order:
+Leansoft always uses two rules to compute the price of a product when you create a rental order:
 
 #. Only one price line is used.
 #. The cheapest line is selected.

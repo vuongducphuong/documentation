@@ -2,7 +2,7 @@
 Project management
 ==================
 
-Odoo Project uses the **Kanban** project management system. This means all projects are broken down
+Leansoft Project uses the **Kanban** project management system. This means all projects are broken down
 into tasks, which are categorized on a whiteboard according to what production phase they are in.
 
 .. admonition:: Did you know?

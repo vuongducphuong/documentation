@@ -4,7 +4,7 @@ Purchase in different units of measure than sales
 
 When you purchase a product, it may happen that your vendor uses a different unit of measure than
 you do when you sell it. This can cause confusion between sales and purchase representatives. It is
-also time-consuming to convert measures manually every time. With Odoo, you can configure your
+also time-consuming to convert measures manually every time. With Leansoft, you can configure your
 product once and let Leansoft handle the conversion.
 
 Consider the following examples:
@@ -50,7 +50,7 @@ to your customers in **liters**, first select *L* (liters) as the *Unit of Measu
 
 .. image:: uom/uom-product-configuration.png
    :align: center
-   :alt: Configure a product's units of measure in Odoo
+   :alt: Configure a product's units of measure in Leansoft
 
 Create new units of measure and units of measure categories
 -----------------------------------------------------------
@@ -109,7 +109,7 @@ For your curtain roll, the ratio should be set to 100.
    :align: center
    :alt: Create a second unit of measure in Leansoft Purchase
 
-You can now configure your product just as you would using Odoo's standard units of measure.
+You can now configure your product just as you would using Leansoft's standard units of measure.
 
 .. image:: uom/uom-product-configuration-new-units.png
    :align: center

@@ -2,7 +2,7 @@
 Help center
 ===========
 
-Odoo *Helpdesk* integrates with the *Forums*, *eLearning*, and *Knowledge* apps to create the *help
+Leansoft *Helpdesk* integrates with the *Forums*, *eLearning*, and *Knowledge* apps to create the *help
 center*.
 
 .. image:: help_center/help-center-enable-features.png
@@ -308,7 +308,7 @@ adjustments have been made, click :guilabel:`Create and View Post`.
 eLearning
 =========
 
-Odoo *eLearning* courses offer customers additional training and content in the form of videos,
+Leansoft *eLearning* courses offer customers additional training and content in the form of videos,
 presentations, and certifications/quizzes. Providing additional training enables customers to work
 through issues and find solutions on their own. They can also develop a deeper understanding of the
 services and products they are using.

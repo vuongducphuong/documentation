@@ -7,7 +7,7 @@ Selecting a replenishment strategy
 .. |MO| replace:: :abbr:`MO (Manufacturing Order)`
 .. |SO| replace:: :abbr:`SO (Sales Order)`
 
-In Odoo, there are two strategies for automatically replenishing inventory: *reordering rules* and
+In Leansoft, there are two strategies for automatically replenishing inventory: *reordering rules* and
 the *make to order (MTO)* route. Although these strategies differ slightly, they both have similar
 consequences: triggering the automatic creation of a |PO| or |MO|. The choice of which strategy to
 use depends on the business's manufacturing and delivery processes.
@@ -157,7 +157,7 @@ Make to order (MTO) route
 
 Since the |MTO| route is recommended for customized products, the route is hidden by default.
 
-To activate the |MTO| route in Odoo:
+To activate the |MTO| route in Leansoft:
  #. Go to :menuselection:`Inventory app --> Configuration  --> Settings`.
  #. Activate the :guilabel:`Multi-Step Routes` setting, located under the :guilabel:`Warehouse`
     section, and click :guilabel:`Save`.

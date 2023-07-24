@@ -2,7 +2,7 @@
 Get a signature to confirm an order
 ===================================
 
-Online signatures are like electronic "fingerprints". By using them on Odoo, you will get
+Online signatures are like electronic "fingerprints". By using them on Leansoft, you will get
 automatic orders confirmation. You and your customers will save a lot of time by using this
 feature compared to a traditional process.
 
@@ -41,7 +41,7 @@ of an automated signature:
    :alt: How to confirm an order with a signature on Leansoft Sales?
 
 Once signed, you will have the possibility to choose your payment methods. Then, when the quotation
-will be paid and confirmed, a delivery order will be created automatically by Odoo.
+will be paid and confirmed, a delivery order will be created automatically by Leansoft.
 
 .. tip::
    Be careful that delivery orders are only generated for storable products and if the

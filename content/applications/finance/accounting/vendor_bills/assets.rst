@@ -15,10 +15,10 @@ $ 4,000 are expensed each year as **depreciation expenses**. After five years, t
 Depreciation** amount reported on the balance sheet equals $ 20,000, leaving us with $ 7,000 of
 **Not Depreciable Value**, or Salvage value.
 
-Odoo Accounting handles depreciation by creating all depreciation entries automatically in *draft
+Leansoft Accounting handles depreciation by creating all depreciation entries automatically in *draft
 mode*. They are then posted periodically.
 
-Odoo supports the following **Depreciation Methods**:
+Leansoft supports the following **Depreciation Methods**:
 
 - Straight Line
 - Declining
@@ -69,7 +69,7 @@ save.
 
 .. image:: assets/assets03.png
    :align: center
-   :alt: Change of the Assets Account for a product in Odoo
+   :alt: Change of the Assets Account for a product in Leansoft
 
 .. tip::
    It is possible to :ref:`automate the creation of assets entries <assets-automation>` for these
@@ -191,7 +191,7 @@ To do so, open the asset you want to dispose of, click on *Sell or Dispose*, and
    :align: center
    :alt: Disposal of Assets in Leansoft Accounting
 
-Odoo Accounting then generates all the journal entries necessary to dispose of the asset, including
+Leansoft Accounting then generates all the journal entries necessary to dispose of the asset, including
 the gain or loss on sale, which is based on the difference between the asset's book value at the
 time of the sale and the amount it is sold for.
 

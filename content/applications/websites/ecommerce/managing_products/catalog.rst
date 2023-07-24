@@ -9,7 +9,7 @@ you structure it efficiently.
 Categorize the product catalog
 ==============================
 
-In Odoo, there is a **specific category model** for your eCommerce. Using eCommerce categories for
+In Leansoft, there is a **specific category model** for your eCommerce. Using eCommerce categories for
 your products allows you to add a navigation menu on your eCommerce page. Visitors can then use it
 to view all products under the category they select.
 

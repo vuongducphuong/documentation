@@ -2,7 +2,7 @@
 Testing/running campaigns
 =========================
 
-Odoo gives users the ability to test marketing campaigns (and mailings) before officially running
+Leansoft gives users the ability to test marketing campaigns (and mailings) before officially running
 them.
 
 First, open the :menuselection:`Marketing Automation` application, and select the desired campaign,
@@ -24,7 +24,7 @@ existing record (or create a new one) to run the test on. To create a brand new 
 :guilabel:`Create` button.
 
 Doing so reveals a blank contact form, in which the :guilabel:`Name` and :guilabel:`Email` **must**
-be entered. When all the necessary information has been entered, click :guilabel:`Save`, and Odoo
+be entered. When all the necessary information has been entered, click :guilabel:`Save`, and Leansoft
 returns to the :guilabel:`Launch a test` pop-up, with that new record in the :guilabel:`Choose an
 existing record or create a new one to test` field.
 

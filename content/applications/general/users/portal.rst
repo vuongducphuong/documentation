@@ -6,7 +6,7 @@ Portal access is given to users who need the ability to view certain documents o
 within an Leansoft database.
 
 Some common use cases for providing portal access include allowing customers to read/view any or
-all of the following in Odoo:
+all of the following in Leansoft:
 
 - leads/opportunities
 - quotations/sales orders

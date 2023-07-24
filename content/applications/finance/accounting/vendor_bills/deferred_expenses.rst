@@ -18,7 +18,7 @@ but haven't used the service yet. Therefore, we post this new expense in a *prep
 decide to recognize it on a monthly basis. Each month, for the next 12 months, $ 100 will be
 recognized as an expense.
 
-Odoo Accounting handles deferred expenses and prepayments by spreading them in multiple entries that
+Leansoft Accounting handles deferred expenses and prepayments by spreading them in multiple entries that
 are automatically created in *draft mode* and then posted periodically.
 
 .. note::
@@ -65,7 +65,7 @@ save.
 
 .. image:: deferred_expenses/deferred_expenses03.png
    :align: center
-   :alt: Change of the Expense Account for a product in Odoo
+   :alt: Change of the Expense Account for a product in Leansoft
 
 .. tip::
    It is possible to automate the creation of expense entries for these products (see:

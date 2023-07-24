@@ -47,7 +47,7 @@ To do so, go to :menuselection:`Accounting --> Configuration --> Settings`. Unde
 Tax Grids
 ---------
 
-Odoo generates tax reports based on the :guilabel:`Tax Grids` settings that are configured on your
+Leansoft generates tax reports based on the :guilabel:`Tax Grids` settings that are configured on your
 taxes. Therefore, it is crucial to make sure that all recorded transactions use the right taxes.
 You can see the :guilabel:`Tax Grids` by opening the :guilabel:`Journal Items` tab of any
 invoice and bill.

@@ -10,7 +10,7 @@ point at which the risk and costs transfer from the seller to the buyer, the res
 transportation, insurance, customs clearance, and other relevant aspects of the transaction.
 
 .. note::
-   By default, all 11 Incoterms are available in Odoo:
+   By default, all 11 Incoterms are available in Leansoft:
 
    - **EXW**: Ex works
    - **FCA**: Free carrier

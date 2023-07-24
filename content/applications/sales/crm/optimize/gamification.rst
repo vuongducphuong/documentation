@@ -15,7 +15,7 @@ Install the *Gamification* module, or the *CRM gamification* one, which adds som
 
 .. image:: gamification/gamification_module_install.png
    :align: center
-   :alt: View of the gamification module being installed in Odoo
+   :alt: View of the gamification module being installed in Leansoft
 
 Create a challenge
 ==================
@@ -83,4 +83,4 @@ To create and grant badges to your employees based on their performance, go to
 
 .. image:: gamification/badges.png
    :align: center
-   :alt: View of the badges page in Odoo
+   :alt: View of the badges page in Leansoft

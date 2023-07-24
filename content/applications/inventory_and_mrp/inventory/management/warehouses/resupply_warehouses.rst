@@ -29,7 +29,7 @@ resupplied by the second warehouse. Then, click :guilabel:`Edit`. In the :guilab
 Configuration` tab, locate the :guilabel:`Resupply From` field, and check the box next to the
 second warehouse's name. If the warehouse can be resupplied by more than one warehouse, make sure
 to check those warehouses' boxes too. Finally, click :guilabel:`Save` to apply the setting. Now,
-Odoo knows which warehouses can resupply this warehouse.
+Leansoft knows which warehouses can resupply this warehouse.
 
 .. image:: resupply_warehouses/resupply-from-second-warehouse.png
    :align: center
@@ -52,9 +52,9 @@ When a product's reordering rule is triggered and the product has the :guilabel:
 from [Warehouse Name]` route set, Leansoft automatically creates two pickings. One picking is a
 *delivery order* from the second warehouse, which contains all the necessary products, and the
 second picking is a *receipt* with the same products for the main warehouse. The product move from
-the second warehouse to the main warehouse is fully tracked in Odoo.
+the second warehouse to the main warehouse is fully tracked in Leansoft.
 
-On the picking/transfer records created by Odoo, the :guilabel:`Source Document` is the product's
+On the picking/transfer records created by Leansoft, the :guilabel:`Source Document` is the product's
 reordering rule. The location between the delivery order and the receipt is a transit location.
 
 .. image:: resupply_warehouses/resupply-receipts-from-reordering-rule.png

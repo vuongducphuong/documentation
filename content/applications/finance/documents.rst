@@ -2,13 +2,13 @@
 Tài liệu
 =========
 
-**Leansoft Documents** allows you to store, view and manage files within Odoo.
+**Leansoft Documents** allows you to store, view and manage files within Leansoft.
 
 You can upload any type of file (max 64MB per file on Leansoft Online), and organize them in various
 workspaces.
 
 .. seealso::
-   - `Odoo Documents: product page <https://leansoft.vn/app/documents>`_
+   - `Leansoft Documents: product page <https://leansoft.vn/app/documents>`_
    - `Leansoft Tutorials: Documents basics <https://leansoft.vn/slides/slide/documents-basics-674>`_
    - `Leansoft Tutorials: Using Documents with your Accounting App
      <https://leansoft.vn/slides/slide/using-documents-with-your-accounting-app-675?fullscreen=1#>`_

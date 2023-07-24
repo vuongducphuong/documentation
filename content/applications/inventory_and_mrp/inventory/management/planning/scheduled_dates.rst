@@ -82,7 +82,7 @@ Date*, a warning message is displayed.
 .. image:: scheduled_dates/scheduled_dates_03.png
     :align: center
     :alt: View of the error that occurs when trying to choose an earlier date than what calculated
-          by Odoo
+          by Leansoft
 
 But, for all of this properly working, it is still necessary to
 configure all the lead times that could occur.

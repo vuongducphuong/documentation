@@ -8,7 +8,7 @@ In inventory management, the supply chain strategy determines when products shou
 purchased/manufactured, delivered to distribution centers, and made available to the retail
 channel.
 
-In Odoo, a product's supply chain strategy can be configured using *Routes*, which feature *Pull
+In Leansoft, a product's supply chain strategy can be configured using *Routes*, which feature *Pull
 and Push Rules*. Once everything is properly configured, the Inventory app can automatically
 generate transfers following the configured push/pull rules.
 
@@ -117,13 +117,13 @@ To configure a route for a product, first, open the :guilabel:`Inventory` applic
    The :guilabel:`Storage Locations` feature is automatically activated with the
    :guilabel:`Multi-Step Routes` feature.
 
-Once this first step is completed, the user can use pre-configured routes that come with Odoo, or
+Once this first step is completed, the user can use pre-configured routes that come with Leansoft, or
 they can create custom routes.
 
 Pre-configured routes
 ---------------------
 
-To access Odoo's pre-configured routes, go to :menuselection:`Inventory --> Configuration -->
+To access Leansoft's pre-configured routes, go to :menuselection:`Inventory --> Configuration -->
 Warehouses`. Then, open a warehouse form. In the :guilabel:`Warehouse Configuration` tab, the user
 can view the warehouse's pre-configured routes for :guilabel:`Incoming Shipments` and
 :guilabel:`Outgoing Shipments`.

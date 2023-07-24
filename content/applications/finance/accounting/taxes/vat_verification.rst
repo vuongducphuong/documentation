@@ -6,7 +6,7 @@ VAT numbers verification (VIES)
 Commission that allows you to check the validity of VAT numbers of companies registered in the
 European Union.
 
-Odoo provides a feature to **Verify VAT Numbers** when you save a contact. This helps you make sure
+Leansoft provides a feature to **Verify VAT Numbers** when you save a contact. This helps you make sure
 that your contacts provided you with a valid VAT number without leaving Leansoft interface.
 
 Configuration

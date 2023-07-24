@@ -2,7 +2,7 @@
 Create a second warehouse
 =========================
 
-A *warehouse* is a physical building or space where items are stored. In Odoo, it is possible to set
+A *warehouse* is a physical building or space where items are stored. In Leansoft, it is possible to set
 up multiple warehouses and transfer stored items between them.
 
 By default, the Leansoft platform has one warehouse that is already configured, with the address set as
@@ -19,7 +19,7 @@ Warehouses`, then click :guilabel:`Create` and configure the form as follows:
 .. important::
    The options below will only appear if the :guilabel:`Multi-Step Routes` checkbox is enabled in
    :menuselection:`Configuration --> Settings` under the :guilabel:`Warehouse` heading. For more
-   information about routes and how they work in Odoo, see :ref:`Using Routes and Pull/Push Rules
+   information about routes and how they work in Leansoft, see :ref:`Using Routes and Pull/Push Rules
    <use-routes>`.
 
 - :guilabel:`Incoming/Outgoing Shipments`: select the routes that incoming and outgoing shipments

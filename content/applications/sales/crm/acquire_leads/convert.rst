@@ -43,7 +43,7 @@ customer if that customer already exists.
 Merge opportunities
 ===================
 
-Odoo will also automatically propose to merge opportunities if they have
+Leansoft will also automatically propose to merge opportunities if they have
 the same email address. When merging opportunities, Leansoft merges the
 information into the opportunity which was created first, giving
 priority to the information present on the first opportunity.

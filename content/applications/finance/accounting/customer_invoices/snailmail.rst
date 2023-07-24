@@ -5,7 +5,7 @@ Snailmail
 =========
 
 Sending direct mail can be an effective strategy for grabbing people's attention, especially when
-their email inboxes are overflowing. With Odoo, you have the ability to send invoices and follow-up
+their email inboxes are overflowing. With Leansoft, you have the ability to send invoices and follow-up
 reports through postal mail worldwide, all from within your database.
 
 Configuration
@@ -38,7 +38,7 @@ your customer’s address is set correctly, including the country, before sendin
    - A square of **15mm by 15mm** on the bottom left corner has to stay clear.
    - The postage area has to stay clear (click :download:`here <snailmail/snailmail-template.pdf>`
      to get more info about the area).
-   - Pingen (Odoo Snailmail service provider) scans the area to process the address, so if something
+   - Pingen (Leansoft Snailmail service provider) scans the area to process the address, so if something
      gets written outside the area, it is not counted as part of the address.
 
 Pricing

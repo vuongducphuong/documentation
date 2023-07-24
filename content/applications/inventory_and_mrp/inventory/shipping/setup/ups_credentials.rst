@@ -1,5 +1,5 @@
 =====================================================
-How to get UPS credentials for integration with Odoo?
+How to get UPS credentials for integration with Leansoft?
 =====================================================
 
 In order to use the Leansoft UPS API, you will need:

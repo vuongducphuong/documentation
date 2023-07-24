@@ -2,7 +2,7 @@
 Event essentials
 ================
 
-Odoo Events provides event coordinators with an arsenal of planning, communications, and reporting
+Leansoft Events provides event coordinators with an arsenal of planning, communications, and reporting
 tools to create immersive and engaging experiences for customers. Namely, staff can create and
 publish events on their website, sell tickets online, scan tickets with Leansoft barcode, send out
 automated emails, and generate rich reporting data once the event accepts registrations.
@@ -39,7 +39,7 @@ To create an event, click :guilabel:`Create` from the Events dashboard. Leansoft
 page to a blank event template form.
 
 From the event form, fill out the necessary fields, either by choosing from existing data in the
-Odoo database or by creating and editing new field data. Key information to enter for the event
+Leansoft database or by creating and editing new field data. Key information to enter for the event
 includes:
 
 - :guilabel:`Event Name`: give the event a title.
@@ -201,7 +201,7 @@ Build a custom event invite
 ---------------------------
 
 In the :guilabel:`Mail Body` tab, there are a number of pre-configured message templates to choose
-from. Select the desired template, and modify every element of its design details with Odoo's
+from. Select the desired template, and modify every element of its design details with Leansoft's
 drag-and-drop web builder, located on the right sidebar.
 
 .. image:: event_essentials/event-email-builder-block.gif
@@ -266,7 +266,7 @@ Publish events
 ==============
 
 Until an event is published, it will remain hidden from public view on the website and registering
-for it will not be possible. To publish an event, navigate to it either from the back end of Odoo
+for it will not be possible. To publish an event, navigate to it either from the back end of Leansoft
 through the :guilabel:`Events` application, or access the hidden event page through the front end
 as either a priveliged user or administrator.
 

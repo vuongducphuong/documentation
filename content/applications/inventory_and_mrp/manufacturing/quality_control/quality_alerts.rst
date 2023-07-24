@@ -53,7 +53,7 @@ The tabs at the bottom of the form can be used to provide additional information
 Add quality alerts during the manufacturing process
 ===================================================
 
-Odoo enables manufacturing employees to create quality alerts within a work order without accessing
+Leansoft enables manufacturing employees to create quality alerts within a work order without accessing
 the *Quality* module. From the work order tablet view, click the :guilabel:` ☰ ` hamburger menu
 icon in the top left corner and select :guilabel:`Quality Alert`.
 

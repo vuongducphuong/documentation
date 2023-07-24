@@ -22,7 +22,7 @@ the **government** and the **customer** owes $10 of taxes to the **government**.
 Configuration
 =============
 
-In Odoo, a withholding tax is defined by creating a negative tax. For a
+In Leansoft, a withholding tax is defined by creating a negative tax. For a
 retention of 10%, you would configure the following tax (accessible
 through :menuselection:`Configuration --> Taxes`):
 

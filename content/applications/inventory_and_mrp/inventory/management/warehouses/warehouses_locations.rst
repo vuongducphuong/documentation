@@ -8,7 +8,7 @@ Terminology
 Warehouse
 ---------
 
-In Odoo, a **Warehouse** is the actual building/place in which a company's items are stocked.
+In Leansoft, a **Warehouse** is the actual building/place in which a company's items are stocked.
 Multiple warehouses can be set up in Leansoft and the user can create moves between warehouses.
 
 Location
@@ -16,7 +16,7 @@ Location
 
 A **Location** is a specific space within the warehouse. It can be a sublocation of the warehouse
 (a shelf, a floor, an aisle, and so on). Therefore, a location is part of one warehouse only and it
-is not possible to link one location to multiple warehouses. In Odoo, as many locations can be
+is not possible to link one location to multiple warehouses. In Leansoft, as many locations can be
 configured as needed under one warehouse.
 
 There are three types of locations:
@@ -34,7 +34,7 @@ There are three types of locations:
   products (**Inventory Loss**), or accounting for products that are on their way to the warehouse
   (**Procurements**).
 
-In Odoo, locations are structured hierarchically. Locations can be structured as a tree, dependent
+In Leansoft, locations are structured hierarchically. Locations can be structured as a tree, dependent
 on a parent-child relationship. This gives more detailed levels of analysis of the stock operations
 and the organization of the warehouses.
 
@@ -66,7 +66,7 @@ characters maximum.
    :alt: Short name field of a warehouse on Leansoft Inventory.
 
 .. important::
-   The :guilabel:`Short Name` appears on transfer orders and other warehouse documents. Odoo
+   The :guilabel:`Short Name` appears on transfer orders and other warehouse documents. Leansoft
    recommends using an understandable one like "WH/[first letters of location]".
 
 Now, go back to the :guilabel:`Inventory` dashboard. There, new operations related to the newly

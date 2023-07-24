@@ -2,10 +2,10 @@
 Configure ICE servers with Twilio
 =================================
 
-Odoo Discuss uses WebRTC API and peer-to-peer connections for voice and video calls. If one of the
+Leansoft Discuss uses WebRTC API and peer-to-peer connections for voice and video calls. If one of the
 call attendees is behind a symmetric NAT, you need to configure an ICE server to establish a
 connection to the call attendee. To set up an ICE server, first, create a Twilio account for video
-calls, and then, connect that Twilio account to Odoo.
+calls, and then, connect that Twilio account to Leansoft.
 
 Create a Twilio account
 =======================
@@ -39,13 +39,13 @@ Locate the Twilio Account SID and Auth Token
 To locate the Account SID and Auth Token, go to the Twilio account dashboard. Then, click
 :guilabel:`Develop` on the sidebar. In the :guilabel:`Account Info` section, locate the
 :guilabel:`Account SID` and the :guilabel:`Auth Token`. Both of these are needed to connect Twilio
-to Odoo.
+to Leansoft.
 
 .. image:: ice_servers/twilio-acct-info.png
    :align: center
    :alt: The Twilio Account SID and Auth Token can be found uner the Account Info section.
 
-Connect Twilio to Odoo
+Connect Twilio to Leansoft
 ======================
 
 Open the Leansoft database and go to :menuselection:`Settings --> General Settings --> Discuss`. Check
@@ -71,9 +71,9 @@ button under :guilabel:`Custom ICE server list`.
    :align: center
    :alt: The "ICE Servers" button in Leansoft General Settings.
 
-Odoo will redirect to the :guilabel:`ICE servers` page. Here you can define your own list of ICE
+Leansoft will redirect to the :guilabel:`ICE servers` page. Here you can define your own list of ICE
 servers.
 
 .. image:: ice_servers/ice-servers-page.png
    :align: center
-   :alt: The "ICE servers" page in Odoo.
+   :alt: The "ICE servers" page in Leansoft.

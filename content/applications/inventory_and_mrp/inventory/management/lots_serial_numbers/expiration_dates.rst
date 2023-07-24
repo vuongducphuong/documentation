@@ -2,11 +2,11 @@
 Expiration dates
 ================
 
-In Odoo, *expiration dates* can be used to manage and track the lifecycles of perishable products,
+In Leansoft, *expiration dates* can be used to manage and track the lifecycles of perishable products,
 from purchase to sale. Using expiration dates reduces product loss due to unexpected expiry, and
 helps to avoid sending expired products to customers.
 
-In Odoo, only products that are tracked using *lots* and *serial numbers* can be assigned expiration
+In Leansoft, only products that are tracked using *lots* and *serial numbers* can be assigned expiration
 information. Once a lot or serial number has been assigned, an expiration date can be set. This is
 especially helpful for companies (such as food manufacturers) that consistently, or exclusively, buy
 and sell perishable products.

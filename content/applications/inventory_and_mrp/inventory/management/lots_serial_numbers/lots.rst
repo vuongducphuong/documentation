@@ -2,7 +2,7 @@
 Use lots to manage groups of products
 =====================================
 
-*Lots* are one of the two ways to identify and track products in Odoo. A lot usually indicates a
+*Lots* are one of the two ways to identify and track products in Leansoft. A lot usually indicates a
 specific batch of an item that was received, is currently stored, or was shipped from a warehouse,
 but can also pertain to a batch of products manufactured in-house, as well.
 
@@ -227,7 +227,7 @@ previous purchase order, if the product quantities shared the same lot number.
 Manage lots for different operations types
 ==========================================
 
-In Odoo, the creation of new lots is only allowed upon **receiving** products from a purchase order,
+In Leansoft, the creation of new lots is only allowed upon **receiving** products from a purchase order,
 by default. **Existing** lot numbers cannot be used.
 
 For sales orders, the opposite is true: new lot numbers cannot be created on the delivery order,

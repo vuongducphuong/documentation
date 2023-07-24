@@ -5,7 +5,7 @@ When Should you Use Packages, Units of Measure or Special Packaging?
 Units of measure
 ================
 
-Units of measure specify the unit used to handle a product. In Odoo, you have the possibility to
+Units of measure specify the unit used to handle a product. In Leansoft, you have the possibility to
 specify the unit of measure in which you manage your stock and the one which is used when
 purchasing the product to your supplier.
 
@@ -20,7 +20,7 @@ be in the *same category* (Unit, Weight, Volume, Length, etc.).
 
 For example, a product can have its :guilabel:`Unit of Measure` set to `feet (ft)` and its
 :guilabel:`Purchase UoM` set to `centimeters (cm)`. When a purchase order (PO) is created for that
-product, it will list the quantity in centimeters. Then, when the PO is confirmed, Odoo
+product, it will list the quantity in centimeters. Then, when the PO is confirmed, Leansoft
 automatically generates a receipt and converts the centimeters to feet. The receipt will list the
 quantity in feet.
 
@@ -29,7 +29,7 @@ Packages
 
 A package refers to the physical container that holds one or several products from a picking. For
 example, when a product is ready for delivery, its quantities can be separated into two different
-packages. In Odoo, the quantity of products in each package can be recorded in the database. Make
+packages. In Leansoft, the quantity of products in each package can be recorded in the database. Make
 sure the :guilabel:`Packages` option is enabled in :menuselection:`Inventory --> Configuration -->
 Settings --> Operations`.
 
@@ -51,7 +51,7 @@ Packagings
 Packaging refers to a standard container that holds several unit of a product. For example, cans of
 soda can be in a 6-pack, 15-pack, or even a pallet for the packaging.
 
-In Odoo, packagings are used for indicative purposes on sales/purchase orders and inventory
+In Leansoft, packagings are used for indicative purposes on sales/purchase orders and inventory
 transfers. The main difference between packagings and units of measure is that packagings are
 defined at the product level while UoMs are generic.
 

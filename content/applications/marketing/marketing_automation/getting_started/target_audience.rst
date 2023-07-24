@@ -99,7 +99,7 @@ Click the default :guilabel:`🟰 (equal sign)` icon in the second portion of th
 reveals a drop-down menu. From this drop-down menu, select :guilabel:`contains`.
 
 In the third (and final) empty portion of the filter equation, type in the name of the event(s) that
-Odoo should consider for this campaign filter.
+Leansoft should consider for this campaign filter.
 
 Then, add another node to this filter by clicking the :guilabel:`➕ (plus sign)` icon to the right of
 the equation.

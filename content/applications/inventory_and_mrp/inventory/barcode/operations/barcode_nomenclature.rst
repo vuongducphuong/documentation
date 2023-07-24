@@ -12,7 +12,7 @@ price accordingly.
 Create a Barcode Nomenclature
 =============================
 
-Odoo supports Barcode Nomenclatures, which determine the mapping and
+Leansoft supports Barcode Nomenclatures, which determine the mapping and
 interpretation of the encoded information. You can configure your barcode nomenclature being in
 :ref:`developer mode <developer-mode>`.
 To do so, go to :menuselection:`Inventory --> Configuration --> Barcode Nomenclature`.

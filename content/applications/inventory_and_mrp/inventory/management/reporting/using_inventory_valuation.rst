@@ -6,7 +6,7 @@ Using inventory valuation
 stock. Once determined, the inventory valuation amount is then incorporated into a company's overall
 value.
 
-In Odoo, this process can be conducted manually— by warehouse employees physically counting the
+In Leansoft, this process can be conducted manually— by warehouse employees physically counting the
 products— or automatically through the database.
 
 Automatic inventory valuation
@@ -143,7 +143,7 @@ unit price of each product.
 Inventory valuation journal entries
 -----------------------------------
 
-In Odoo, automatic inventory valuation records are also recorded in the :menuselection:`Accounting
+In Leansoft, automatic inventory valuation records are also recorded in the :menuselection:`Accounting
 app --> Accounting --> Journal Entries` dashboard. On this comprehensive list of accounting entries,
 inventory valuation records are identified by checking values in the :guilabel:`Journal` column, or
 looking for the :guilabel:`Reference` column value which matches the warehouse operation reference
@@ -171,4 +171,4 @@ moved in and out of the warehouse.
       :alt: Accounting entry for the inventory valuation of 10 tables.
 
 .. seealso::
-   `Odoo Tutorial: Inventory Valuation <https://leansoft.vn/slides/slide/2795/share>`_
+   `Leansoft Tutorial: Inventory Valuation <https://leansoft.vn/slides/slide/2795/share>`_

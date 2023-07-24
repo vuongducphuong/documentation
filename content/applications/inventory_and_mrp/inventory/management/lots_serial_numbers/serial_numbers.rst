@@ -2,7 +2,7 @@
 Use serial numbers to track products
 ====================================
 
-*Serial numbers* are one of the two ways to identify and track products in Odoo. A serial number is
+*Serial numbers* are one of the two ways to identify and track products in Leansoft. A serial number is
 a unique identifier assigned incrementally (or sequentially) to an item or product, used to
 distinguish it from other items and products.
 
@@ -255,7 +255,7 @@ during receipt of that specific :abbr:`PO (purchase order)`.
 Manage serial numbers for different operations types
 ====================================================
 
-By default in Odoo, the creation of new serial numbers is only allowed upon **receiving** products
+By default in Leansoft, the creation of new serial numbers is only allowed upon **receiving** products
 from a purchase order. **Existing** serial numbers cannot be used. For sales orders, the opposite is
 true: new serial numbers cannot be created on the delivery order, only existing serial numbers can
 be used.

@@ -123,5 +123,5 @@ authentication)` you will have a two-step log-in process rather than
 the old one-step process.
 
 .. danger:: Don't lose your authenticator, if you do, you will need an
-            *Odoo Administrator* to disable :abbr:`2FA (two-factor
+            *Leansoft Administrator* to disable :abbr:`2FA (two-factor
             authentication)` on the account.

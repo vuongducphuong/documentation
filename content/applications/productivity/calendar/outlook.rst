@@ -11,7 +11,7 @@ appointments across all related applications.
 Register the application with Microsoft Azure
 =============================================
 
-To sync the Outlook Calendar with Odoo's Calendar, a Microsoft Azure account is needed. Creating an
+To sync the Outlook Calendar with Leansoft's Calendar, a Microsoft Azure account is needed. Creating an
 account is free for users who have never tried or paid for Azure. For more information, `click here
 <https://azure.microsoft.com/en-us/free/?WT.mc_id=A261C142F>`_.
 
@@ -51,7 +51,7 @@ Since resetting the synchronization can be tricky, Leansoft recommends setting t
 expiration date for the client secret (24 months), so there is no need to re-synchronize soon.
 Finally, click :guilabel:`Add` to generate the client secret (:guilabel:`Secret ID`).
 
-Configuration in Odoo
+Configuration in Leansoft
 =====================
 
 In the Leansoft database, go to :menuselection:`Settings --> General Settings --> Integrations` and
@@ -59,21 +59,21 @@ activate the :guilabel:`Outlook Calendar` setting.
 
 .. image:: outlook/outlook-calendar-setting.png
    :align: center
-   :alt: The "Outlook Calendar" setting activated in Odoo.
+   :alt: The "Outlook Calendar" setting activated in Leansoft.
 
 From the Microsoft Azure portal, under the :guilabel:`Overview` section of the application, copy
-the :guilabel:`Application (Client) ID`, and paste it into the :guilabel:`Client ID` field in Odoo.
+the :guilabel:`Application (Client) ID`, and paste it into the :guilabel:`Client ID` field in Leansoft.
 
 .. image:: outlook/client-id.png
    :align: center
    :alt: The "Client ID" in the Microsoft Azure portal.
 
 In the Microsoft Azure portal, under the :guilabel:`Certificates & secrets` section, copy the
-:guilabel:`Client Secret Value` and paste it into the :guilabel:`Client Secret` field in Odoo.
+:guilabel:`Client Secret Value` and paste it into the :guilabel:`Client Secret` field in Leansoft.
 
 .. image:: outlook/client-secret-value.png
    :align: center
-   :alt: The "Client Secret" token to be copied from Microsoft to Odoo.
+   :alt: The "Client Secret" token to be copied from Microsoft to Leansoft.
 
 Finally, on the Leansoft :menuselection:`Settings --> General Settings` page, click :guilabel:`Save`.
 
@@ -89,17 +89,17 @@ Sync with Outlook
    desired Outlook Calendar with the user's production database.
 
    If the user has any past, present, or future events on their Leansoft calendar before syncing their
-   Outlook calendar, Outlook will treat the events pulled from Odoo's calendar during the sync as
+   Outlook calendar, Outlook will treat the events pulled from Leansoft's calendar during the sync as
    new events, causing an email notification to be sent from Outlook to all the event attendees.
 
    To avoid unwanted emails being sent to all past, present, and future event attendees, the user
    must add the events from the Leansoft calendar to the Outlook calendar before the first ever sync,
-   delete the events from Odoo, and then start the sync.
+   delete the events from Leansoft, and then start the sync.
 
    Even after synchronizing the Leansoft Calendar with the Outlook calendar, Outlook will still send a
    notification to all event participants every time an event is edited (created, deleted,
    unarchived, or event date/time changed), with no exceptions. This is a limitation that cannot be
-   fixed from Odoo's side.
+   fixed from Leansoft's side.
 
    After one user syncs their Outlook calendar to the Leansoft database, unwanted email notifications
    are unavoidable because the first synchronized user's events will be in the Leansoft Calendar. If
@@ -129,7 +129,7 @@ their account, if they are not already, and grant the required permissions.
    :alt: The "Outlook" sync button in Leansoft Calendar.
 
 The synchronization is a two-way process, meaning that events are reconciled in both accounts
-(Outlook and Odoo).
+(Outlook and Leansoft).
 
 .. note::
    All users that want to use the synchronization simply need to :ref:`sync their calendar with

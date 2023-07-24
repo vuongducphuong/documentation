@@ -17,7 +17,7 @@ now but haven't earned it yet. Therefore, we post this new income in a deferred 
 decide to recognize it on a yearly basis. Each year, for the next 5 years, $ 70 will be recognized
 as revenue.
 
-Odoo Accounting handles deferred revenues by spreading them in multiple entries that are
+Leansoft Accounting handles deferred revenues by spreading them in multiple entries that are
 automatically created in *draft mode* and then posted periodically.
 
 .. note::
@@ -64,7 +64,7 @@ save.
 
 .. image:: deferred_revenues/deferred_revenues03.png
    :align: center
-   :alt: Change of the Income Account for a product in Odoo
+   :alt: Change of the Income Account for a product in Leansoft
 
 .. tip::
    It is possible to automate the creation of revenue entries for these products (see:
@@ -192,4 +192,4 @@ You have three choices for the **Automate Deferred Revenue** field:
 
 .. seealso::
    * :doc:`../get_started/chart_of_accounts`
-   * `Odoo Academy: Deferred Revenues (Recognition) <https://leansoft.vn/r/EWO>`_
+   * `Leansoft Academy: Deferred Revenues (Recognition) <https://leansoft.vn/r/EWO>`_

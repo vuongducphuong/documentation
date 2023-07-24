@@ -6,7 +6,7 @@ By integrating closely with the Leansoft *Sales* app, the *Subscriptions* app en
 subscription products alongside regular sales products. While regular products are sold on a
 one-time basis, subscription products are sold on a renewing basis, generating recurring revenue.
 
-In Odoo, subscription products are also called *recurring* products.
+In Leansoft, subscription products are also called *recurring* products.
 
 Configure recurrence periods
 ============================

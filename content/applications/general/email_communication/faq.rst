@@ -35,12 +35,12 @@ You reached your daily limit:
    :alt: Warning in Leansoft upon email limit reached
 
 Each email service provider has its own email sending limits. The limits may be daily, hourly,
-and sometimes even per minute. This is the same for Odoo, we have to limit our customers to prevent
+and sometimes even per minute. This is the same for Leansoft, we have to limit our customers to prevent
 our e-mail servers from being blacklisted.
 
 Here are the default limits for new databases:
 
-- 200 emails/day for Leansoft Online and Odoo.sh databases with an active subscription,
+- 200 emails/day for Leansoft Online and Leansoft.sh databases with an active subscription,
 
 - 50 emails/day for one-app free and trial databases,
 
@@ -57,7 +57,7 @@ In case you hit the limit, you can:
     it was returned by a mail server on its way to the final recipient. You can contact the `support
     <https://leansoft.vn/help>`_.
 
-- Use your own outgoing email server to be independent of Odoo’s mail limit (please refer
+- Use your own outgoing email server to be independent of Leansoft’s mail limit (please refer
   to :doc:`the corresponding documentation </applications/general/email_communication/email_servers>`),
 - Wait until 11pm UTC for the reset and click on the retry button: The :ref:`Developer mode <developer-mode>`
   must be activated. Then, go to :menuselection:`Settings --> Technical --> Emails`
@@ -84,12 +84,12 @@ tools to diagnose and troubleshoot email problems.
 No Error
 ********
 
-Odoo is not always capable of providing information for the reason it failed. The different
+Leansoft is not always capable of providing information for the reason it failed. The different
 providers implement a personalized policy of the bounce emails and it is not always possible
 for Leansoft to interpret it correctly.
 
 If you have this problem on a recurring basis with the same client or the same domain, please
-do not hesitate to contact `Odoo Support <https://leansoft.vn/help>`_ for help in finding a reason.
+do not hesitate to contact `Leansoft Support <https://leansoft.vn/help>`_ for help in finding a reason.
 
 Note: in such case, one of the most common reasons is related to :ref:`SPF <email_communication/spf_compliant>`
 and/or :ref:`DKIM <email_communication/DKIM_compliant>` configuration.
@@ -116,7 +116,7 @@ before the campaign is actually sent.
 Incoming emails
 ===============
 
-When you have an issue with incoming emails, there might not be an indication per se in Odoo.
+When you have an issue with incoming emails, there might not be an indication per se in Leansoft.
 This is the client who tries to contact a database who will get a bounce (most of the
 time 550: mailbox unavailable).
 
@@ -127,16 +127,16 @@ Depending on the platform you are using:
 
 - The **Odoo.sh** users can find their live logs on the folder :file:`~/logs/`.
 
-- The folder :file:`~/logs/` (preferably accessed by the command line) of an Odoo.sh contains
+- The folder :file:`~/logs/` (preferably accessed by the command line) of an Leansoft.sh contains
   a list of files containing the logs of the database. The log files are created everyday
   at 5:00 AM UTC. The two last days are not compressed, while the older ones are, in order
   to gain space. The naming of the files for Today and Yesterday are :file:`odoo.log` and
   :file:`odoo.log.1`. For the following, they are named with their dates and compressed.
-  See the Odoo.sh documentation about :ref:`logs <odoosh/logs>`. Use the command ``grep`` and
+  See the Leansoft.sh documentation about :ref:`logs <odoosh/logs>`. Use the command ``grep`` and
   ``zgrep`` (for the compressed ones) to search through the files.
 
 - **Leansoft Online** users won’t have access to their logs. However you can still contact
-  `Odoo Support <https://leansoft.vn/help>`_ , if you have a recurring issue
+  `Leansoft Support <https://leansoft.vn/help>`_ , if you have a recurring issue
   with the same client or domain.
 
 Get help from support
@@ -157,7 +157,7 @@ of what can be helpful:
      - `Outlook documentation
        <https://support.microsoft.com/en-us/office/view-internet-message-headers-in-outlook-cd039382-dc6e-4264-ac74-c048563d212c#tab=Web>`_
 
-- The exact flow you are following in order to normally receive those emails in Odoo. Here are
+- The exact flow you are following in order to normally receive those emails in Leansoft. Here are
   examples of questions whose answers can be useful:
 
   - Is this simply a reply from an email going out from Leansoft ?
@@ -170,5 +170,5 @@ of what can be helpful:
 
   - Is it a generic issue or is it specific to a use case? If yes, which one exactly?
 
-  - Is it working as expected? In case the email is sent using Odoo, the bounce email should reach
+  - Is it working as expected? In case the email is sent using Leansoft, the bounce email should reach
     the Leansoft database and display the :ref:`red envelope <red_envelop>`.

@@ -6,7 +6,7 @@ When working with consumers, prices are usually expressed with taxes
 included in the price (e.g., in most eCommerce). But, when you work in a
 B2B environment, companies usually negotiate prices with taxes excluded.
 
-Odoo manages both use cases easily, as long as you register your prices
+Leansoft manages both use cases easily, as long as you register your prices
 on the product with taxes excluded or included, but not both together.
 If you manage all your prices with tax included (or excluded) only, you
 can still easily do sales order with a price having taxes excluded (or

@@ -25,7 +25,7 @@ get even more insights on your purchases.
 Use filters to select the data you need
 ---------------------------------------
 
-Odoo offers several default filters you can use and combine by clicking on *Filters*. When you
+Leansoft offers several default filters you can use and combine by clicking on *Filters*. When you
 select one or several filters, Leansoft looks for all the orders that match at least one of the filters
 you have chosen and populates the chart, key metrics, and pivot table with the data. The
 pre-configured filters are:

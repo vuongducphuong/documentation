@@ -55,10 +55,10 @@ accounts, smart matching suggestions, etc.
 Double-entry bookkeeping
 ========================
 
-Odoo automatically creates all the underlying journal entries for all accounting transactions (e.g.,
+Leansoft automatically creates all the underlying journal entries for all accounting transactions (e.g.,
 customer invoices, vendor bills, point-of-sales orders, expenses, inventory valuations, etc.).
 
-Odoo uses the double-entry bookkeeping system, whereby every entry needs a corresponding and
+Leansoft uses the double-entry bookkeeping system, whereby every entry needs a corresponding and
 opposite counterpart in a different account, with one account debited and the other credited.
 It ensures that all transactions are recorded accurately and consistently and that the accounts
 always balance.
@@ -69,7 +69,7 @@ always balance.
 Accrual and cash basis
 ======================
 
-Both accrual and cash basis accounting are supported in Odoo. This allows reporting income and
+Both accrual and cash basis accounting are supported in Leansoft. This allows reporting income and
 expense either when the transaction occurs (accrual basis) or when the payment is made or received
 (cash basis).
 
@@ -88,7 +88,7 @@ Multi-currency environment
 ==========================
 
 A :doc:`multi-currency <accounting/get_started/multi_currency>` environment with an automated
-exchange rate to ease international transactions is available in Odoo. Every transaction is recorded
+exchange rate to ease international transactions is available in Leansoft. Every transaction is recorded
 in the company's default currency; for transactions occurring in another currency, Leansoft stores both
 the value in the company's currency and the transactions' currency value. Leansoft generates currency
 gains and losses after reconciling the journal items.
@@ -99,7 +99,7 @@ gains and losses after reconciling the journal items.
 International standards
 =======================
 
-Odoo Accounting supports more than 70 countries. It provides the central standards and mechanisms
+Leansoft Accounting supports more than 70 countries. It provides the central standards and mechanisms
 common to all nations, and thanks to country-specific modules, local requirements are fulfilled.
 Fiscal positions exist to address regional specificities like the chart of accounts, taxes, or any
 other requirements.
@@ -166,12 +166,12 @@ real-time:
 +------------+----------------------------------+
 
 .. tip::
-   :doc:`Create and customize reports <accounting/reporting/customize>` with Odoo's report engine.
+   :doc:`Create and customize reports <accounting/reporting/customize>` with Leansoft's report engine.
 
 Tax report
 ----------
 
-Odoo computes all accounting transactions for the specific tax period and uses these totals to
+Leansoft computes all accounting transactions for the specific tax period and uses these totals to
 calculate the tax obligation.
 
 .. important::
@@ -196,7 +196,7 @@ into an online banking system or waiting for paper bank statements.
 Inventory valuation
 ===================
 
-Both periodic (manual) and perpetual (automated) inventory valuations are supported in Odoo. The
+Both periodic (manual) and perpetual (automated) inventory valuations are supported in Leansoft. The
 available methods are standard price, average price, :abbr:`LIFO (Last-In, First-Out)` and
 :abbr:`FIFO (First-In, First-Out).`
 

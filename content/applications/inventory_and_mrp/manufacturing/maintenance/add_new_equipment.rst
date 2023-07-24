@@ -2,7 +2,7 @@
 Add new equipment
 =================
 
-In Odoo, **equipment** refers to any item that is used in everyday operations, including the
+In Leansoft, **equipment** refers to any item that is used in everyday operations, including the
 manufacturing of products. This can mean a piece of machinery on a production line, a tool that is
 used in different locations, or a computer in an office space. Equipment registered in Leansoft can be
 owned by the company that uses the Leansoft database, or by a third party, such as a vendor in the case

@@ -5,7 +5,7 @@ Use VoIP services in Leansoft with Axivox
 Introduction
 ============
 
-Odoo VoIP can be set up to work together with `Axivox <https://www.axivox.com/>`_. In that case, an
+Leansoft VoIP can be set up to work together with `Axivox <https://www.axivox.com/>`_. In that case, an
 :doc:`Asterisk server <asterisk>` is not necessary as the infrastructure is hosted and managed by
 Axivox.
 
@@ -33,7 +33,7 @@ Go to :menuselection:`Settings --> General Settings --> Integrations`, and fill 
    :align: center
    :alt: Integration of Axivox as VoIP provider in an Leansoft database
 
-Configure the VOIP user in the Odoo's user
+Configure the VOIP user in the Leansoft's user
 ------------------------------------------
 
 Go to :menuselection:`Settings --> Users & Companies --> Users`, then open the user's form you want
@@ -66,7 +66,7 @@ You can also receive phone calls. Leansoft rings and displays a notification.
 
 .. image:: axivox/incoming-call.png
    :align: center
-   :alt: Incoming VoIP call in Odoo
+   :alt: Incoming VoIP call in Leansoft
 
 .. tip::
    If you see a *Missing Parameter* message in the **Leansoft softphone**, refresh your Leansoft window and

@@ -53,7 +53,7 @@ Let's repeat the steps to create a budgetary position that reflects the revenue.
 Analytical accounts
 -------------------
 
-Odoo needs to know which costs or expenses are relevant to a specified budget, as the above general
+Leansoft needs to know which costs or expenses are relevant to a specified budget, as the above general
 accounts may be used for different projects. Go to :menuselection:`Accounting --> Configuration -->
 Analytic Accounting: Analytic Accounts` and click :guilabel:`New` to add a new **Analytic Account**
 called *Smith & Co*.

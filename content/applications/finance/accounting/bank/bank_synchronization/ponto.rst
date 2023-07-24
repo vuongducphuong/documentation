@@ -4,7 +4,7 @@ Ponto
 
 **Ponto** is a service that allows companies and professionals to aggregate their accounts in one
 place and directly see all their transactions within one app. It is a third-party solution that is
-continuously expanding the number of bank institutions that can be synchronized with Odoo.
+continuously expanding the number of bank institutions that can be synchronized with Leansoft.
 
 .. image:: ponto/ponto-logo.png
    :align: center
@@ -14,7 +14,7 @@ continuously expanding the number of bank institutions that can be synchronized 
 into your database.
 
 Ponto is a paid third-party provider that can handle the synchronization between your bank accounts
-and Odoo. `Its pricing is 4€/month per account/integration <https://myponto.com/en#pricing>`_.
+and Leansoft. `Its pricing is 4€/month per account/integration <https://myponto.com/en#pricing>`_.
 
 .. seealso::
    - :doc:`../bank_synchronization`
@@ -53,18 +53,18 @@ Link your Ponto account with your Leansoft database
 #. Search your institution, make sure to select the right institution. By selecting the institution,
    you can verify that the third party provider is Ponto.
 #. Click on *Connect* and follow the steps.
-#. At some point, you will have to authorize the accounts you want to access in Odoo. Please select
+#. At some point, you will have to authorize the accounts you want to access in Leansoft. Please select
    **all the accounts** you want to synchronize. Even the ones coming from other banking
    institutions.
 
    .. image:: ponto/ponto-select-accounts.png
       :align: center
-      :alt: Selection of the accounts you wish to synchronize with Odoo.
+      :alt: Selection of the accounts you wish to synchronize with Leansoft.
 
 #. Finish the flow.
 
 .. note::
-   You have to authorize all the accounts you want to access in Odoo, but Leansoft will filter the
+   You have to authorize all the accounts you want to access in Leansoft, but Leansoft will filter the
    accounts based on the institution you selected in the second step.
 
 Update your synchronization credentials
@@ -109,7 +109,7 @@ do this, the synchronization will stop for these accounts.
 I have some errors with my beta institution
 -------------------------------------------
 
-Ponto provides institutions in *beta*, these institutions are not directly supported by Odoo
+Ponto provides institutions in *beta*, these institutions are not directly supported by Leansoft
 and we advise you to contact Ponto directly.
 
 .. important::

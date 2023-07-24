@@ -1,13 +1,13 @@
 ============================================
-Configure DNS records to send emails in Odoo
+Configure DNS records to send emails in Leansoft
 ============================================
 
 SPAM labels overview
 ====================
 
 Sometimes, emails from Leansoft are misclassified by the different email providers and end up in spam
-folders. At the moment, some settings are out of Odoo's control, notably the way the different email
-providers classify Odoo's emails according to their own restriction policy and/or limitations.
+folders. At the moment, some settings are out of Leansoft's control, notably the way the different email
+providers classify Leansoft's emails according to their own restriction policy and/or limitations.
 
 It is standard in Leansoft that emails are received from ``"name of the author"
 <notifications@mycompany.leansoft.vn>``. In other words this can be translated to: ``"name of the
@@ -44,7 +44,7 @@ the sender's :abbr:`SPF (Sender Policy Framework)` record.
 
 .. note::
    The :abbr:`SPF (Sender Policy Framework)` verification is performed on the domain mentioned in
-   the `Return-Path` field of the email. In the case of an email sent by Odoo, this domain
+   the `Return-Path` field of the email. In the case of an email sent by Leansoft, this domain
    corresponds to the value of the `mail.catchall.domain` key in the database system parameters.
 
 The :abbr:`SPF (Sender Policy Framework)` policy of a domain is set using a TXT record. The way to

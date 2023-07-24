@@ -22,7 +22,7 @@ Configuration --> Sales Teams`.
 Use Contact Forms on your website
 =================================
 
-By default, your website's *Contact Us* page displays Odoo's ready-to-use Contact Form. Whenever
+By default, your website's *Contact Us* page displays Leansoft's ready-to-use Contact Form. Whenever
 someone submits this form, a lead or an opportunity is generated in your database.
 
 .. image:: generate_leads/default-contact-us-page.png
@@ -65,7 +65,7 @@ the Website Builder. It can also be installed manually from the :guilabel:`Apps`
    :alt: Form Builder building blocks
 
 .. tip::
-   Forms can be created from scratch to serve a wide variety of purposes. However, Odoo's default
+   Forms can be created from scratch to serve a wide variety of purposes. However, Leansoft's default
    *Contact Us* page is designed to fit most users' needs. Start with the default form and modify
    from there.
 

@@ -10,7 +10,7 @@ scanner.
 Find the barcode scanner that suits your needs
 ==============================================
 
-The 3 recommended type of barcode scanners to work with the Odoo
+The 3 recommended type of barcode scanners to work with the Leansoft
 **Inventory** and **Barcode Scanning** apps are the **USB scanner**, **the bluetooth
 scanner** and the **mobile computer scanner**.
 

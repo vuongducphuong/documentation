@@ -8,12 +8,12 @@ in a country that uses the imperial system, so the business needs to convert the
 case for unit conversion is when a business buys products in a big pack from a supplier and then
 sells those products in individual units.
 
-Odoo can be set up to use different units of measure for one product.
+Leansoft can be set up to use different units of measure for one product.
 
 Configuration
 =============
 
-To use different units of measure in Odoo, first go to :menuselection:`Inventory --> Configuration
+To use different units of measure in Leansoft, first go to :menuselection:`Inventory --> Configuration
 --> Settings --> Products` and activate the :guilabel:`Units of Measure` setting. Then, click
 :guilabel:`Save`.
 

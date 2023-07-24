@@ -12,7 +12,7 @@ should have one and only one title ``<h1>``, meta tags
 consistent with the content, your website should have a
 ``/sitemap.xml`` file, etc.
 
-To guarantee Leansoft Website and Odoo
+To guarantee Leansoft Website and Leansoft
 eCommerce users have a great SEO, Leansoft abstracts all the technical
 complexities of SEO and handles everything for you, in the best possible
 way. This will be explained here below.
@@ -75,7 +75,7 @@ modules to help you build your website content:
 
 .. note::
   The 404 page is a regular page, that you can edit like any other
-  page in Odoo. That way, you can build a great 404 page to redirect to
+  page in Leansoft. That way, you can build a great 404 page to redirect to
   the top content of your website when visitors get lost in invalid URLs.
 
 Use Social Networks
@@ -85,12 +85,12 @@ Social media is built for mass sharing. If lots of people share your content
 on social media, then it's likely more people will link to it,
 and links are a huge factor for SEO ranking.
 
-Odoo embeds several tools to share content through social media:
+Leansoft embeds several tools to share content through social media:
 
 Social Network
 --------------
 
-Odoo allows to link all your social network accounts in your website footer.
+Leansoft allows to link all your social network accounts in your website footer.
 All you have to do is to refer all your accounts in your company settings.
 
 .. image:: seo/seo03.png
@@ -107,7 +107,7 @@ wall.
    :align: center
 
 Most social media use a picture of the picture to decorate the share post.
-Odoo uses the website logo by default but you can choose any other image
+Leansoft uses the website logo by default but you can choose any other image
 of your page in the Promote tool.
 
 .. image:: seo/seo05.png
@@ -129,7 +129,7 @@ This will increase the number of tweets and shares.
 Test Your Website
 =================
 
-You can compare how your website rank, in terms of SEO, against Odoo
+You can compare how your website rank, in terms of SEO, against Leansoft
 using WooRank free services:
 `woorank.com <https://www.woorank.com>`_
 
@@ -368,7 +368,7 @@ When you click on this link, the following window will appear:
 
 Odoo's pictograms are implemented using a font (`Font
 Awesome <https://fortawesome.github.io/Font-Awesome/icons/>`__ in most
-Odoo themes). Thus, you can use as many pictograms as you want in your
+Leansoft themes). Thus, you can use as many pictograms as you want in your
 page, they will not result in extra requests to load the page.
 
 .. image:: seo/seo10.png
@@ -466,7 +466,7 @@ Static Resources: Javascript
 As with CSS resources, Javascript resources are also concatenated,
 minified, compressed and cached (server-side and browser-side).
 
-Odoo creates three Javascript bundles:
+Leansoft creates three Javascript bundles:
 
 - One for all pages of the website (including code for parallax
   effects, form validation, etc.)
@@ -474,8 +474,8 @@ Odoo creates three Javascript bundles:
 - One for common Javascript code shared among frontend and backend
   (Bootstrap)
 
-- One for backend specific Javascript code (Odoo Web Client interface
-  for your employees using Odoo)
+- One for backend specific Javascript code (Leansoft Web Client interface
+  for your employees using Leansoft)
 
 Most visitors of your website will only need the first two bundles,
 resulting in a maximum of two Javascript files to load to render one
@@ -490,7 +490,7 @@ same visitor will not load any other Javascript resource.
 CDN
 ---
 
-If you activate the CDN feature in Odoo, static resources (Javascript,
+If you activate the CDN feature in Leansoft, static resources (Javascript,
 CSS, images) are loaded from a Content Delivery Network. Using a Content
 Delivery Network has three advantages:
 
@@ -576,7 +576,7 @@ Sitemap
 -------
 
 The sitemap points out pages to index to search engine robots.
-Odoo generates a ``/sitemap.xml`` file automatically for you. For
+Leansoft generates a ``/sitemap.xml`` file automatically for you. For
 performance reasons, this file is cached and updated every 12 hours.
 
 By default, all URLs will be in a single ``/sitemap.xml`` file, but if you
@@ -611,7 +611,7 @@ create well-presented search results.
 Google supports a number of rich snippets for content types, including:
 Reviews, People, Products, Businesses, Events and Organizations.
 
-Odoo implements micro data as defined in the
+Leansoft implements micro data as defined in the
 `schema.org <http://schema.org>`__ specification for events, eCommerce
 products, forum posts and contact addresses. This allows your product
 pages to be displayed in Google using extra information like the price

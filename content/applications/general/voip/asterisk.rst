@@ -1,5 +1,5 @@
 ============================================
-Configure your VoIP Asterisk server for Odoo
+Configure your VoIP Asterisk server for Leansoft
 ============================================
 
 Installing Asterisk server
@@ -212,7 +212,7 @@ Lastly, set up extensions.conf:
 Configure Leansoft VOIP
 ===================
 
-In Odoo, the configuration should be done in the user's preferences.
+In Leansoft, the configuration should be done in the user's preferences.
 
 
 .. image:: asterisk/voip_config01.png

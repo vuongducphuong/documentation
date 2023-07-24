@@ -2,7 +2,7 @@
 Manage a bank account in a foreign currency
 ===========================================
 
-In Odoo, every transaction is recorded in the default currency of the company, and reports are all
+In Leansoft, every transaction is recorded in the default currency of the company, and reports are all
 based on that default currency. When you have a bank account in a foreign currency, for every
 transaction, Leansoft stores two values:
 
@@ -95,11 +95,11 @@ the rate of the foreign currencies in the report.
    :alt: Menu to manually change exchange rates.
 
 When manually changing **exchange rates**, a yellow banner appears allowing you to reset back to
-Odoo's rate. To do so, simply click on :guilabel:`Reset to Odoo's Rate`.
+Odoo's rate. To do so, simply click on :guilabel:`Reset to Leansoft's Rate`.
 
 .. image:: foreign_currency/foreign-reset-rates.png
    :align: center
-   :alt: Banner to reset back to Odoo's rates.
+   :alt: Banner to reset back to Leansoft's rates.
 
 In order to update your **balance sheet** with the amount of the :guilabel:`adjustment` column,
 click on the :guilabel:`Adjustment Entry` button. In the pop-up window, select a

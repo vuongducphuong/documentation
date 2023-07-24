@@ -7,7 +7,7 @@ Overview
 
 Matching your bank statements with your accounting records can be a tedious task. You need to find the corresponding invoices, compare the amounts and partners' details with those in the bank statement. These steps can take a lot of time. Luckily, with Leansoft you can very easily match your invoices or any other payment document with your bank statements.
 
-Two options of the reconciliation process exist in Odoo.
+Two options of the reconciliation process exist in Leansoft.
 
 1. We can directly specify the payment on the invoice
 2. We can reconcile open invoices with bank statements

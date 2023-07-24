@@ -100,11 +100,11 @@ generated. To view and manage :abbr:`MOs (Manufacturing Orders)`, navigate to
 Set a preferred route for reordering
 ====================================
 
-Odoo allows for multiple routes to be selected under the :guilabel:`Inventory` tab on each product
+Leansoft allows for multiple routes to be selected under the :guilabel:`Inventory` tab on each product
 form. For instance, it is possible to select both :guilabel:`Buy` and :guilabel:`Manufacture`, thus
 enabling the functionality of both routes.
 
-Odoo also enables users to set a preferred route for a product's reordering rule. This is the route
+Leansoft also enables users to set a preferred route for a product's reordering rule. This is the route
 that the rule defaults to if multiple are selected. To select a preferred route, begin by navigating
 to :menuselection:`Inventory --> Configuration --> Reordering Rules`.
 

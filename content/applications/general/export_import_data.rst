@@ -4,14 +4,14 @@ Nhập và xuất dữ liệu
 
 .. _export-data:
 
-Export data from Odoo
+Export data from Leansoft
 =====================
 
 When working with a database, it sometimes is necessary to export your data in a distinct file.
 Doing so can help to do reporting over your activities (even if Leansoft offers a precise and easy
 reporting tool with each available application).
 
-With Odoo, you can export the values from any field in any record. To do so,
+With Leansoft, you can export the values from any field in any record. To do so,
 activate the list view on the items that need to be exported, click on *Action*, and, then,
 on *Export*.
 
@@ -25,7 +25,7 @@ options for the data to export:
 
 .. image:: export_import_data/export-data-overview.png
    :align: center
-   :alt: overview of all the options to take into account when exporting data in Odoo
+   :alt: overview of all the options to take into account when exporting data in Leansoft
 
 #. With the *I want to update data* option ticked, the system only
    shows the fields which can be imported. This is very helpful in
@@ -59,13 +59,13 @@ options for the data to export:
 
 .. _import-data:
 
-Import data into Odoo
+Import data into Leansoft
 =====================
 
 How to start
 ------------
 
-You can import data on any Odoo's business object using either Excel
+You can import data on any Leansoft's business object using either Excel
 (.xlsx) or CSV (.csv) formats:
 contacts, products, bank statements, journal entries and even orders!
 
@@ -90,7 +90,7 @@ How to adapt the template
    :align: center
 
 * When you add a new column, Leansoft might not be able to map it automatically if its
-  label doesn't fit any field in Odoo. Don't worry! You can map
+  label doesn't fit any field in Leansoft. Don't worry! You can map
   new columns manually when you test the import. Search the list for the
   corresponding field.
 
@@ -105,7 +105,7 @@ How to import from another application
 
 In order to re-create relationships between different records,
 you should use the unique identifier from the original application
-and map it to the **ID** (External ID) column in Odoo.
+and map it to the **ID** (External ID) column in Leansoft.
 When you import another record that links to the first one,
 use **XXX/ID** (XXX/External ID) to the original unique identifier.
 You can also find this record using its name but you will be stuck
@@ -119,7 +119,7 @@ it's thus good practice to specify it whenever possible.
 I cannot find the field I want to map my column to
 --------------------------------------------------
 
-Odoo tries to find with some heuristic, based on the first ten lines of
+Leansoft tries to find with some heuristic, based on the first ten lines of
 the files, the type of field for each column inside your file.
 For example if you have a column only containing numbers,
 only the fields that are of type *Integer* will be displayed for you
@@ -138,7 +138,7 @@ you will then be able to choose from the complete list of fields for each column
 Where can I change the date import format?
 ------------------------------------------
 
-Odoo can automatically detect if a column is a date, and it will try to guess the date format from a
+Leansoft can automatically detect if a column is a date, and it will try to guess the date format from a
 set of most commonly used date formats. While this process can work for many date formats, some date
 formats will not be recognized. This can cause confusion due to day-month inversions; it is
 difficult to guess which part of a date format is the day and which part is the month in a date such
@@ -301,14 +301,14 @@ If you do not set all fields in your CSV file, Leansoft will assign the default 
 defined fields. But if you set fields with empty values in your CSV file, Leansoft will set the EMPTY
 value in the field, instead of assigning the default value.
 
-How to export/import different tables from an SQL application to Odoo?
+How to export/import different tables from an SQL application to Leansoft?
 ----------------------------------------------------------------------
 
 If you need to import data from different tables, you will have to recreate relations between
 records belonging to different tables. (e.g. if you import companies and persons, you will have to
 recreate the link between each person and the company they work for).
 
-To manage relations between tables, you can use the "External ID" facilities of Odoo. The "External
+To manage relations between tables, you can use the "External ID" facilities of Leansoft. The "External
 ID" of a record is the unique identifier of this record in another application. This "External ID"
 must be unique across all the records of all objects, so it's a good practice to prefix this
 "External ID" with the name of the application or table. (like 'company_1', 'person_1' instead of
@@ -392,7 +392,7 @@ Why an “ID” column
 ==================
 
 The **ID** (External ID) is an unique identifier for the line item.
-Feel free to use the one of your previous software to ease the transition to Odoo.
+Feel free to use the one of your previous software to ease the transition to Leansoft.
 
 Setting an ID is not mandatory when importing but it helps in many cases:
 

@@ -45,11 +45,11 @@ you can set new ones going to :menuselection:`Settings --> Activity types`.
 Recommend next activities
 -------------------------
 
-Odoo helps you to plan a flow of activities by allowing you to set *Recommended Next Activities*.
+Leansoft helps you to plan a flow of activities by allowing you to set *Recommended Next Activities*.
 
 .. image:: plan_activities/recommended_activities.png
    :align: center
-   :alt: View of an activity type form emphasizing the field recommended next activities for Odoo
+   :alt: View of an activity type form emphasizing the field recommended next activities for Leansoft
          Discuss
 
 Once the respective activity is completed, select *Done & Schedule Next* and next steps are

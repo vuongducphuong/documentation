@@ -26,7 +26,7 @@ underneathe the :guilabel:`Product Name` field. Finally, set the :guilabel:`Prod
 
 .. image:: reordering/product-configured-for-reordering.png
    :align: center
-   :alt: Configure a product for reordering in Odoo.
+   :alt: Configure a product for reordering in Leansoft.
 
 Add a reordering rule to a product
 ==================================
@@ -37,7 +37,7 @@ visible :guilabel:`Reordering Rules` tab at the top of that product's form, and 
 
 .. image:: reordering/reordering-rules-tab.png
    :align: center
-   :alt: Access reordering rules for a product from the product page in Odoo.
+   :alt: Access reordering rules for a product from the product page in Leansoft.
 
 Once created, the reordering rule can be configured to generate purchase orders automatically by
 defining the following fields:
@@ -68,7 +68,7 @@ defining the following fields:
 
 .. image:: reordering/reordering-rule-configuration.png
    :align: center
-   :alt: Configure the reordering rule in Odoo.
+   :alt: Configure the reordering rule in Leansoft.
 
 Manually trigger reordering rules using the scheduler
 =====================================================

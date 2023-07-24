@@ -15,7 +15,7 @@ How to customize the file
 * Set a unique ID to every single record by dragging down the ID sequencing.
 * Don't change the labels of columns you want to import. Otherwise, Leansoft won't recognize
   them anymore, and you will have to map them on your own in the import screen.
-* Feel free to add new columns, but the fields need to exist in Odoo. If Leansoft fails
+* Feel free to add new columns, but the fields need to exist in Leansoft. If Leansoft fails
   in matching the column name with a field, you can match it manually when importing
   by browsing a list of available fields.
 
@@ -24,7 +24,7 @@ Why an “ID” column?
 ===================
 
 The ID is a truly unique identifier for the line item. Feel free to use one from your
-previous software to ease the transition into Odoo.
+previous software to ease the transition into Leansoft.
 
 Setting an ID is not mandatory when importing, but it helps in many cases:
 

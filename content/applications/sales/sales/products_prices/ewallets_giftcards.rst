@@ -2,7 +2,7 @@
 Use eWallets and gift cards
 ===========================
 
-With Odoo, customers can use **eWallets** and **gift cards** for online and in-store shopping.
+With Leansoft, customers can use **eWallets** and **gift cards** for online and in-store shopping.
 
 To enable eWallets and gift cards for eCommerce and Điểm bán hàng (PoS), first enable
 :guilabel:`Discounts, Loyalty & Gift Card` under :menuselection:`Sales app --> Configuration -->

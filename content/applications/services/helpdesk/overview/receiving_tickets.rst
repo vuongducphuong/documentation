@@ -2,7 +2,7 @@
 Start receiving tickets
 =======================
 
-Odoo *Helpdesk* offers multiple channels where customers can reach out for assistance, such as
+Leansoft *Helpdesk* offers multiple channels where customers can reach out for assistance, such as
 email, live chat, and through a website's submission form. The variety of these contact options
 provides customers with multiple opportunities to receive support quickly, while also giving the
 support team the ability to manage multi-channel support tickets from one central location.
@@ -40,7 +40,7 @@ can be changed in the :guilabel:`Alias` field.
 
 .. image:: receiving_tickets/receiving-tickets-email-alias.png
    :align: center
-   :alt: View of the settings page of a helpdesk team emphasizing the email alias feature in Odoo
+   :alt: View of the settings page of a helpdesk team emphasizing the email alias feature in Leansoft
          Helpdesk.
 
 When an email is received, the subject line from the email becomes the title of a new *Helpdesk*
@@ -64,7 +64,7 @@ check the box.
 
 After the feature is activated, click the :guilabel:`Go to Website` smart button at the top of the
 that :guilabel:`Teams` settings page to view and edit the new website form, which is created
-automatically by Odoo.
+automatically by Leansoft.
 
 .. note::
    After enabling the website form, the *Teams* settings page may need to be refreshed before the
@@ -138,7 +138,7 @@ selected, additional options await on the channel's form.
 Customize the live chat channel
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-When an individual channel is clicked on the :guilabel:`Website Live Chat Channels` dashboard, Odoo
+When an individual channel is clicked on the :guilabel:`Website Live Chat Channels` dashboard, Leansoft
 directs the page to the channel form. From there, the :guilabel:`Channel Name` can be edited,
 however Leansoft names this to match the *Helpdesk* team's kanban pipeline, by default.
 

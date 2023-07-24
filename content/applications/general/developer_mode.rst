@@ -4,7 +4,7 @@
 Developer Mode (debug mode)
 ===========================
 
-The developer mode (or debug mode) unlocks access to extra and advanced tools in Odoo. There are
+The developer mode (or debug mode) unlocks access to extra and advanced tools in Leansoft. There are
 several ways to activate the developer mode: through the
 :ref:`settings <general/developer_mode/settings>`, the
 :ref:`browser extension <general/developer_mode/browser-extension>`, through
@@ -23,7 +23,7 @@ in the :guilabel:`Settings` module.
 
 .. image:: developer_mode/settings.png
    :align: center
-   :alt: Overview of the debug options under settings in Odoo.
+   :alt: Overview of the debug options under settings in Leansoft.
 
 .. note::
    :guilabel:`Activate the developer mode (with assets)` is used by developers; :guilabel:`Activate
@@ -40,19 +40,19 @@ Within a web browser, navigate to the browser settings and extensions and search
 Debug` extension. Once the extension is installed, a new icon will be shown on the browser's
 toolbar.
 
-For the *Odoo Debug* extension, a single click enables a normal version of the mode, while a
+For the *Leansoft Debug* extension, a single click enables a normal version of the mode, while a
 double click enables it with assets. To deactivate it, use a single click.
 
 .. image:: developer_mode/developer-mode-monkey.png
    :align: center
-   :alt: View of Odoo's debug icon in a Google Chrome toolbar.
+   :alt: View of Leansoft's debug icon in a Google Chrome toolbar.
 
 .. _general/developer_mode/command-palette:
 
 Activate through the command palette
 ====================================
 
-In Odoo, the command palette tool has a command to activate the debug mode. First, open the command
+In Leansoft, the command palette tool has a command to activate the debug mode. First, open the command
 palette tool with the keyboard shortcut `ctrl+k` and then type `debug`. A command will show up to
 activate the debug mode.
 
@@ -90,7 +90,7 @@ Developer Tools` button, the bug icon located in the header of the Leansoft data
 
 .. image:: developer_mode/button-location.png
    :align: center
-   :alt: Overview of a console page and the debug icon being shown in Odoo.
+   :alt: Overview of a console page and the debug icon being shown in Leansoft.
 
 This menu contains additional tools that are useful to understand or edit technical data, such as
 the views or actions of a page. On a page that has filters, actions, and view options, the

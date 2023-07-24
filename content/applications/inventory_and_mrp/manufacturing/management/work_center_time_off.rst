@@ -2,7 +2,7 @@
 Make work centers unavailable using Time Off
 ============================================
 
-In Odoo, *work centers* are used to carry out manufacturing operations at specific locations.
+In Leansoft, *work centers* are used to carry out manufacturing operations at specific locations.
 However, if a work center cannot be used for some reason, work orders begin to pile up at the work
 center until it is operational again.
 
@@ -27,7 +27,7 @@ and clicking :guilabel:`Activate the developer mode` under the :guilabel:`Develo
    :alt: The "Activate the developer mode" button.
 
 Next, install the *Time Off* app. This is the app used for assigning time off to all resources
-within Odoo, including employees and work centers. Navigate to :menuselection:`Apps`, then type
+within Leansoft, including employees and work centers. Navigate to :menuselection:`Apps`, then type
 `Time Off` in the :guilabel:`Search...` bar. The card for the :guilabel:`Time Off` module should be
 the only one that appears on the page. Click the green :guilabel:`Install` button on the card to
 install the app.
@@ -84,7 +84,7 @@ On this page, click :guilabel:`Create` to configure a new time-off entry. On the
 the :guilabel:`Reason` for the work center closure (broken, maintenance, etc.), select the affected
 work center as the :guilabel:`Resource`, and choose a :guilabel:`Start Date` and :guilabel:`End
 Date` to specify the period during which the work center will be unavailable. Click :guilabel:`Save`
-and the time off for the work center is logged in Odoo.
+and the time off for the work center is logged in Leansoft.
 
 .. image:: work_center_time_off/time-off-form.png
    :align: center

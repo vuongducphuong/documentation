@@ -23,14 +23,14 @@ Receive the vendor bill
 -----------------------
 
 After a vendor fulfills a purchase order and sends a bill, click :guilabel:`Create Bill` on the
-purchase order to create a vendor bill in Odoo. If the vendor bill includes landed costs, such as
+purchase order to create a vendor bill in Leansoft. If the vendor bill includes landed costs, such as
 custom duties, tick the box in the :guilabel:`Landed Costs` column on the vendor bill invoice line.
 
 .. image:: integrating_landed_costs/landed-costs-field-vendor-bill.png
    :align: center
    :alt: Enable Landed Costs option on vendor bill line.
 
-For charges that are always landed costs, create a landed cost product in Odoo. That way, the
+For charges that are always landed costs, create a landed cost product in Leansoft. That way, the
 landed cost product can be quickly added to the vendor bill as an invoice line instead of manually
 entering the landed cost information every time a vendor bill comes in.
 

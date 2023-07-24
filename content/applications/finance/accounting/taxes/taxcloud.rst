@@ -33,7 +33,7 @@ Enable TaxCloud
 
    .. image:: taxcloud/taxcloud-settings.png
       :align: center
-      :alt: Filling in TaxCloud API Keys in Odoo
+      :alt: Filling in TaxCloud API Keys in Leansoft
 
 Set TaxCloud categories on products
 ===================================
@@ -143,7 +143,7 @@ of the lines it impacts.
 Another unexpected behavior is possible. For example, you sell a product for which you have a
 promotion program that provides a 50% discount. If the product's tax rate is 7%, the tax rate
 computed from the TaxCloud integration displays 3.5%. This happens because the discount is included
-in the price sent to TaxCloud. However, in Odoo, the discount is on another line entirely. Still,
+in the price sent to TaxCloud. However, in Leansoft, the discount is on another line entirely. Still,
 the tax computation is correct. Indeed, a 3.5% tax on the full price is the equivalent of a 7% tax
 on half the price, but this might be unexpected from a user point of view.
 

@@ -7,7 +7,7 @@ Hóa đơn khách hàng
 From Customer Invoice to Payments Collection
 ============================================
 
-Odoo supports multiple invoicing and payment workflows, so you can
+Leansoft supports multiple invoicing and payment workflows, so you can
 choose and use the ones that match your business needs. Whether you want
 to accept a single payment for a single invoice, or process a payment
 spanning multiple invoices and taking discounts for early payments, you
@@ -116,7 +116,7 @@ like as follows:
 Payment
 -------
 
-In Odoo, an invoice is considered to be paid when the associated
+In Leansoft, an invoice is considered to be paid when the associated
 accounting entry has been reconciled with the payment entries. If there
 has not been a reconciliation, the invoice will remain in the Open state
 until you have entered the payment.
@@ -135,7 +135,7 @@ follows:
 Receive a partial payment through the bank statement
 ----------------------------------------------------
 
-You can manually enter your bank statements in Odoo, or you can import
+You can manually enter your bank statements in Leansoft, or you can import
 them in from a csv file or from several other predefined formats
 according to your accounting localisation.
 
@@ -173,7 +173,7 @@ There's a growing trend of customers paying bills later and later.
 Therefore, collectors must make every effort to collect money and
 collect it faster.
 
-Odoo will help you define your follow-up strategy. To remind customers
+Leansoft will help you define your follow-up strategy. To remind customers
 to pay their outstanding invoices, you can define different actions
 depending on how severely overdue the customer is. These actions are
 bundled into follow-up levels that are triggered when the due date of an

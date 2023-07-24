@@ -1,9 +1,9 @@
 ==========================================
-Set up Sendcloud shipping services in Odoo
+Set up Sendcloud shipping services in Leansoft
 ==========================================
 
 Sendcloud is a shipping service aggregator that facilitates the integration of European
-shipping carriers with Odoo. Once integrated, users can select shipping carriers on inventory
+shipping carriers with Leansoft. Once integrated, users can select shipping carriers on inventory
 operations in their Leansoft database.
 
 .. seealso::
@@ -43,7 +43,7 @@ Addresses`, and fill in the field for :guilabel:`Warehouse address`.
 
 To allow Sendcloud to process returns as well, a :guilabel:`Return Address` is required. Under the
 :guilabel:`Miscellaneous section`, there is a field called :guilabel:`Address Name (optional)`. The
-Odoo warehouse name should be entered here, and the characters should be exactly the same.
+Leansoft warehouse name should be entered here, and the characters should be exactly the same.
 
 .. example::
 
@@ -65,12 +65,12 @@ Generate Sendcloud credentials
 ------------------------------
 
 In the Sendcloud account, navigate to :menuselection:`Settings --> Integrations` in the menu on the
-right. Next, search for :guilabel:`Odoo Native`. Then, click on :guilabel:`Connect`.
+right. Next, search for :guilabel:`Leansoft Native`. Then, click on :guilabel:`Connect`.
 
 After clicking on :guilabel:`Connect`, the page redirects to the :guilabel:`Sendcloud API` settings
 page, where the :guilabel:`Public and Secret Keys` are produced. The next step is to name the
-:guilabel:`Integration`. The naming convention is as follows: `Odoo CompanyName`, with the user's
-company name replacing `CompanyName` (e.g. `Odoo StealthyWood`).
+:guilabel:`Integration`. The naming convention is as follows: `Leansoft CompanyName`, with the user's
+company name replacing `CompanyName` (e.g. `Leansoft StealthyWood`).
 
 Then, check the box next to :guilabel:`Service Points` and select the shipping services for this
 integration. After saving, the :guilabel:`Public and Secret Keys` are generated.
@@ -79,14 +79,14 @@ integration. After saving, the :guilabel:`Public and Secret Keys` are generated.
    :align: center
    :alt: Configuring the Sendcloud integration and receiving the credentials.
 
-Setup in Odoo
+Setup in Leansoft
 =============
 
 Install the Sendcloud shipping module
 -------------------------------------
 
 After the Sendcloud account is set up and configured, it's time to configure the Leansoft database.
-To get started, go to Odoo's :guilabel:`Apps` module,  search for the :guilabel:`Sendcloud
+To get started, go to Leansoft's :guilabel:`Apps` module,  search for the :guilabel:`Sendcloud
 Shipping` integration, and install it.
 
 .. image:: sendcloud_shipping/sendcloud-mod.png
@@ -127,7 +127,7 @@ After configuring and saving the form, follow these steps to load the shipping p
 - Click :guilabel:`Select`.
 
 .. example::
-   Sample Sendcloud shipping products configured in Odoo:
+   Sample Sendcloud shipping products configured in Leansoft:
 
    | :guilabel:`DELIVERY`
    | :guilabel:`Shipping Product`: `DPD Home 0-31.5kg`
@@ -150,10 +150,10 @@ After configuring and saving the form, follow these steps to load the shipping p
 
 .. image:: sendcloud_shipping/sendcloud-example.png
    :align: center
-   :alt: Example of shipping products configured in Odoo.
+   :alt: Example of shipping products configured in Leansoft.
 
 .. tip::
-   Sendcloud does not provide test keys when a company tests the sending of a package in Odoo. This
+   Sendcloud does not provide test keys when a company tests the sending of a package in Leansoft. This
    means if a package is created, the configured Sendcloud account will be charged, unless the
    associated package is canceled within 24 hours of creation.
 
@@ -165,7 +165,7 @@ After configuring and saving the form, follow these steps to load the shipping p
 Generate a label with Sendcloud
 -------------------------------
 
-When creating a quotation in Odoo, add shipping and a :guilabel:`Sendcloud shipping product`. Then,
+When creating a quotation in Leansoft, add shipping and a :guilabel:`Sendcloud shipping product`. Then,
 :guilabel:`Validate` the delivery. Shipping label documents are automatically generated in the
 chatter, which include the following:
 
@@ -197,7 +197,7 @@ When using a personal carrier contract
 --------------------------------------
 
 When using a personal carrier contract in Sendcloud, if the the price is not accurately reflected
-when creating a quotation in Odoo, then the pricing information needs to be updated in Sendcloud.
+when creating a quotation in Leansoft, then the pricing information needs to be updated in Sendcloud.
 
 Measuring volumetric weight
 ---------------------------

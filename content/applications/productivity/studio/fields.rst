@@ -7,7 +7,7 @@ are the columns where data is stored in the records (i.e., the rows). Fields als
 data that is stored within them. How the data is presented and formatted on the :abbr:`UI (User
 Interface)` is defined by their widget.
 
-From a technical point of view, there are 15 field types in Odoo. However, you can choose from 20
+From a technical point of view, there are 15 field types in Leansoft. However, you can choose from 20
 fields in Studio, as some field types are available more than once with a different default widget.
 
 .. tip::

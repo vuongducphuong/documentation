@@ -10,7 +10,7 @@ to the ePOS printer.
 
 .. note::
    These `Epson ePOS printers
-   <https://c4b.epson-biz.com/modules/community/index.php?content_id=91>`_ are compatible with Odoo:
+   <https://c4b.epson-biz.com/modules/community/index.php?content_id=91>`_ are compatible with Leansoft:
 
    - TM-H6000IV-DT (Receipt printer only)
    - TM-T70II-DT
@@ -29,7 +29,7 @@ to the ePOS printer.
    - TM-P60II (Peeler: Wi-Fi® model)
    - TM-P80 (Wi-Fi® model)
 
-To work with Odoo, some models that can be used without an
+To work with Leansoft, some models that can be used without an
 <https>` to establish a secure connection between the browser and the printer. However, trying to
 reach the printer's IP address using HTTPS leads to a warning page on most web browsers. In that
 case, you can temporarily :ref:`force the connection <epos_ssc/instructions>`, which allows you to

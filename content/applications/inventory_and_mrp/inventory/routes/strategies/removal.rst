@@ -31,7 +31,7 @@ date. After that, products are stored in their respective locations.
 
 Next, several orders for the same product are made, but in this example, the goods weren't received
 on the same day and they don't have the same expiration date. In that situation, logically, sending
-those with the closest date first is preferred. Depending on the chosen removal strategy, Odoo
+those with the closest date first is preferred. Depending on the chosen removal strategy, Leansoft
 generates a transfer with the products that fit the settings the best.
 
 .. image:: removal/packing-products.png
@@ -63,7 +63,7 @@ the five boxes of :guilabel:`00001` and one of the boxes in :guilabel:`00002`, b
 because it has the oldest reception date after :guilabel:`00001`.
 
 So, for every order of a product with the :abbr:`FIFO (First In, First Out)` strategy selected,
-Odoo requests a transfer for the products that have been in the stock for the longest period.
+Leansoft requests a transfer for the products that have been in the stock for the longest period.
 
 Last In, First Out (LIFO)
 -------------------------

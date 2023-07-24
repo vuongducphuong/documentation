@@ -2,7 +2,7 @@
 Bill control policies
 =====================
 
-In Odoo, the *bill control* policy determines the quantities billed by vendors on every purchase
+In Leansoft, the *bill control* policy determines the quantities billed by vendors on every purchase
 order, for ordered or received quantities. The policy selected in the settings will act as the
 default value and will be applied to any new product created.
 
@@ -98,7 +98,7 @@ Once payment has been registered for a vendor bill and displays the green :guila
 the :guilabel:`Should Be Paid` field status will be set to :guilabel:`No`.
 
 .. tip::
-   The :guilabel:`Should Be Paid` status on bills is set automatically by Odoo. However, the status
+   The :guilabel:`Should Be Paid` status on bills is set automatically by Leansoft. However, the status
    can be changed manually by clicking the field's drop-down menu inside the :guilabel:`Other Info`
    tab.
 

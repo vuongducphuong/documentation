@@ -56,11 +56,11 @@ If your Bank Institution can’t be synchronized automatically, or if you prefer
 your database, you may also configure your bank account manually by clicking on *Create it*, and
 filling out the form.
 
-- **Name**: the bank account's name, as displayed on Odoo.
+- **Name**: the bank account's name, as displayed on Leansoft.
 - **Account Number**: your bank account number (IBAN in Europe).
 - **Bank**: click on *Create and Edit* to configure the bank's details. Add the bank institution's
   name and its Identifier Code (BIC or SWIFT).
-- **Code**: this code is your Journal's *Short Code*, as displayed on Odoo. By default, Leansoft creates
+- **Code**: this code is your Journal's *Short Code*, as displayed on Leansoft. By default, Leansoft creates
   a new Journal with this Short Code.
 - **Journal**: This field is displayed if you have an existing Bank Journal that is not linked yet
   to a bank account. If so, then select the *Journal* you want to use to record the financial
@@ -142,7 +142,7 @@ Invoice Layout
 With this tool, you can design the appearance of your documents by selecting which layout template,
 paper format, colors, font, and logo you want to use.
 
-You can also add your *Company Tagline* and the content of the documents’ *footer*. Note that Odoo
+You can also add your *Company Tagline* and the content of the documents’ *footer*. Note that Leansoft
 automatically adds the company's phone number, email, website URL, and Tax ID (or VAT number) to the
 footer, according to the values you previously configured in the :ref:`Company Data
 <accounting-setup-company>`.

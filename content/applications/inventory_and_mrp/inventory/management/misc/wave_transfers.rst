@@ -9,7 +9,7 @@ situation, one method may be a better fit than the other.
 To handle orders of a specific product category, or fetch products that are at the same location,
 wave transfers are the ideal method.
 
-In Odoo, wave transfers are actually batch transfers with an extra step: transfers are split before
+In Leansoft, wave transfers are actually batch transfers with an extra step: transfers are split before
 being grouped in a batch.
 
 Configuration

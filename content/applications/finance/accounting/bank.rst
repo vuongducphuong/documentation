@@ -39,7 +39,7 @@ follow the instructions.
 Create a bank account
 ---------------------
 
-If your banking institution is not available in Odoo, or if you don't want to connect your bank
+If your banking institution is not available in Leansoft, or if you don't want to connect your bank
 account to your database, you can configure your bank account manually.
 
 To manually add a bank account, go to :menuselection:`Accounting --> Configuration --> Banks:
