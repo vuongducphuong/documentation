@@ -9,7 +9,7 @@ Leansoft can handle various delivery methods, including third party shippers
 linked with the transportation company tracking system. It allows you to
 manage the transport company, the real prices and the destination. And
 finally, you will be able to print the shipping labels directly from
-Odoo.
+Leansoft.
 
 Configuration
 =============

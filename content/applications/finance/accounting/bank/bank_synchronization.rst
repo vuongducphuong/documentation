@@ -185,7 +185,7 @@ Why don't I see any transactions?
 ---------------------------------
 
 During your first synchronization, you selected the bank accounts you decided to synchronize with
-Odoo. If you didn't synchronize any of your accounts, you can go to
+Leansoft. If you didn't synchronize any of your accounts, you can go to
 :menuselection:`Accounting Dashboard --> Configuration --> Accounting: Online Synchronization` to
 click on the :guilabel:`Fetch Account` button on the connection.
 

@@ -63,7 +63,7 @@ Now that the API project has been created, OAuth should be configured. To do tha
    Note, as well, that while the API connection is in the *External* testing mode, then no approval is
    necessary from Google. User limits in this testing mode is set to 100 users.
 
-In the second step, :guilabel:`OAuth Consent Screen`, type `Odoo` in the :guilabel:`App name` field,
+In the second step, :guilabel:`OAuth Consent Screen`, type `Leansoft` in the :guilabel:`App name` field,
 select the email address for the :guilabel:`User support email` field, and type the email address
 for the :guilabel:`Developer contact information` section. Then, click :guilabel:`Save and
 Continue`.

@@ -30,7 +30,7 @@ detailed information about products and services.
 Knowledge
 =========
 
-Odoo's *Knowledge* application is a collaborative library where users can store, edit, and share
+Leansoft's *Knowledge* application is a collaborative library where users can store, edit, and share
 information. The *Knowledge* app is represented throughout the database by a *book* icon.
 
 .. image:: help_center/help-center-knowledge-book-icon.png

@@ -6,7 +6,7 @@ Utilizing :abbr:`SMS (Short Message Service)` outreach in communication strategi
 companies expand their market reach, especially in some countries, where emails might not be very
 common, or even used at all.
 
-Odoo's *SMS Marketing* application can also help boost conversion rates around valuable actions,
+Leansoft's *SMS Marketing* application can also help boost conversion rates around valuable actions,
 such as event registrations, free trials, purchases, etc., since text and mobile-based marketing
 channels typically yield higher :abbr:`CTOR (click-to-open rate)` and :abbr:`CTR (click-through
 rate)` outcomes.

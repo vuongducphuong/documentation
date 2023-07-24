@@ -36,7 +36,7 @@ Once activated, the :guilabel:`Deactivate the developer mode` option becomes ava
 Activate through the browser extension
 ======================================
 
-Within a web browser, navigate to the browser settings and extensions and search for the `Odoo
+Within a web browser, navigate to the browser settings and extensions and search for the `Leansoft
 Debug` extension. Once the extension is installed, a new icon will be shown on the browser's
 toolbar.
 

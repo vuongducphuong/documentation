@@ -159,7 +159,7 @@ Can I import numbers with currency sign (e.g.: $32.00)?
 Yes, we fully support numbers with parenthesis to represent negative sign as well as numbers with
 currency sign attached to them. Leansoft also automatically detect which thousand/decimal separator you
 use (you can change those under **options**). If you use a currency symbol that is not known to
-Odoo, it might not be recognized as a number though and it will crash.
+Leansoft, it might not be recognized as a number though and it will crash.
 
 Examples of supported numbers (using thirty-two thousands as an example):
 

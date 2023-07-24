@@ -2,7 +2,7 @@
 Social marketing essentials
 ===========================
 
-Odoo's *Social Marketing* helps content marketers create and schedule posts, manage various social
+Leansoft's *Social Marketing* helps content marketers create and schedule posts, manage various social
 media accounts, analyze content effectiveness, and engage directly with social media followers in
 one, centralized location.
 

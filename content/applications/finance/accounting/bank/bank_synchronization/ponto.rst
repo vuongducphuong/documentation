@@ -10,7 +10,7 @@ continuously expanding the number of bank institutions that can be synchronized 
    :align: center
    :alt: Logo of the Ponto brand
 
-**Odoo** can synchronize directly with your bank to get all bank statements imported automatically
+**Leansoft** can synchronize directly with your bank to get all bank statements imported automatically
 into your database.
 
 Ponto is a paid third-party provider that can handle the synchronization between your bank accounts

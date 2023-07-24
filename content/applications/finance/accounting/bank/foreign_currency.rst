@@ -95,7 +95,7 @@ the rate of the foreign currencies in the report.
    :alt: Menu to manually change exchange rates.
 
 When manually changing **exchange rates**, a yellow banner appears allowing you to reset back to
-Odoo's rate. To do so, simply click on :guilabel:`Reset to Leansoft's Rate`.
+Leansoft's rate. To do so, simply click on :guilabel:`Reset to Leansoft's Rate`.
 
 .. image:: foreign_currency/foreign-reset-rates.png
    :align: center

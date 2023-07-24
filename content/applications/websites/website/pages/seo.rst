@@ -366,7 +366,7 @@ When you click on this link, the following window will appear:
 .. image:: seo/seo09.png
   :align: center
 
-Odoo's pictograms are implemented using a font (`Font
+Leansoft's pictograms are implemented using a font (`Font
 Awesome <https://fortawesome.github.io/Font-Awesome/icons/>`__ in most
 Leansoft themes). Thus, you can use as many pictograms as you want in your
 page, they will not result in extra requests to load the page.
@@ -389,7 +389,7 @@ cached (server-side and browser-side). The result:
 - this CSS file is optimized to be small
 
 **Pre-processed:** The CSS framework used by Leansoft is Bootstrap.
-Although a theme might use another framework, most of `Odoo
+Although a theme might use another framework, most of `Leansoft
 themes <https://leansoft.vn/apps/themes>`__ extend and customize
 Bootstrap directly. Since Leansoft supports Less and Sass, you can modify
 CSS rules instead of overwriting them through extra CSS lines,

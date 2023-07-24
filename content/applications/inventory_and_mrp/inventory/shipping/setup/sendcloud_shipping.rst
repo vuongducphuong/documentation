@@ -8,7 +8,7 @@ operations in their Leansoft database.
 
 .. seealso::
    `Sendcloud integration documentation <https://support.sendcloud.com/hc/en-us/articles
-   /360059470491-Odoo-integration>`_
+   /360059470491-Leansoft-integration>`_
 
 Setup in Sendcloud
 ==================

@@ -38,7 +38,7 @@ a well-defined standard among banks. However, for Swiss and German companies, ot
 **'pain.001.001.03.ch.02'** for Switzerland and **'pain.001.003.03'** for Germany.
 
 Once the payments are processed by your bank, you can directly import the account statement in
-Odoo. The bank reconciliation process will seamlessly match the SEPA orders you sent to your bank
+Leansoft. The bank reconciliation process will seamlessly match the SEPA orders you sent to your bank
 with actual bank statements.
 
 Configuration

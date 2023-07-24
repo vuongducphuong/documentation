@@ -3,7 +3,7 @@ Order handling
 ==============
 
 When a customer orders on your eCommerce, there are **three** record types required to be handle in
-Odoo:
+Leansoft:
 
 - :ref:`Sales orders <handling/sales>`;
 - :ref:`Delivery orders <handling/delivery>`;

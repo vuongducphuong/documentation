@@ -43,7 +43,7 @@ Analytics can be seen directly within Leansoft.
 
 Alternatively, Leansoft offers the possibility to use another service, **Plausible.io**. Plausible.io is
 a simple and privacy-friendly alternative to Google Analytics. Everything can be managed directly in
-Odoo, there is no need to visit Plausible.io's website to access your metrics.
+Leansoft, there is no need to visit Plausible.io's website to access your metrics.
 
 .. seealso::
    - :doc:`/applications/websites/website/reporting/google_analytics`

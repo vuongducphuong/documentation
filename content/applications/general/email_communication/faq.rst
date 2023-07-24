@@ -125,7 +125,7 @@ Emails are not received
 
 Depending on the platform you are using:
 
-- The **Odoo.sh** users can find their live logs on the folder :file:`~/logs/`.
+- The **Leansoft.sh** users can find their live logs on the folder :file:`~/logs/`.
 
 - The folder :file:`~/logs/` (preferably accessed by the command line) of an Leansoft.sh contains
   a list of files containing the logs of the database. The log files are created everyday

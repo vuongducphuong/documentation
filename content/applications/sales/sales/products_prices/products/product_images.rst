@@ -84,7 +84,7 @@ Google Programmable Search dashboard
 
 .. _product_images/setup-in-leansoft:
 
-Odoo
+Leansoft
 ----
 
 #. Go to :menuselection:`Settings --> General Settings --> Integrations`,

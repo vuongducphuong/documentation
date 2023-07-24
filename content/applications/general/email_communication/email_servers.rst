@@ -6,7 +6,7 @@ Leansoft Online or Leansoft.sh users
 ============================
 
 Since **Leansoft sets up its own mail servers for the database**, outgoing and incoming emails already
-work out-of-the-box. So for **Leansoft Online** and **Odoo.sh** customers, nothing needs to be
+work out-of-the-box. So for **Leansoft Online** and **Leansoft.sh** customers, nothing needs to be
 configured!
 
 Unless an external mail server is required to send large batches of mass emails, simply use the
@@ -23,11 +23,11 @@ Scope of this documentation
 
 This document is **mainly dedicated to Leansoft on-premise databases** who don't benefit from an
 out-of-the-box solution to send and receive emails in Leansoft, unlike `Leansoft Online <https://www.leansoft.
-com/trial>`_ and `Odoo.sh <https://www.leansoft.sh>`_. Incoming and outgoing servers must be configured
+com/trial>`_ and `Leansoft.sh <https://www.leansoft.sh>`_. Incoming and outgoing servers must be configured
 for on-premise databases.
 
 The following sections below contain information on how to integrate an external email server with
-Odoo.
+Leansoft.
 
 .. warning::
    If no one in the company is employed to manage email servers, Leansoft Online and Leansoft.sh are

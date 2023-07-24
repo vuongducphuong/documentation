@@ -10,7 +10,7 @@ storing data.
    :align: center
    :alt:   Enable Banking logo
 
-**Odoo** synchronizes directly with banks to get access to all bank transactions and automatically
+**Leansoft** synchronizes directly with banks to get access to all bank transactions and automatically
 import them into your database.
 
 .. seealso::

@@ -26,7 +26,7 @@ Generate an Unsplash access key for non-Leansoft Online users
    :align: center
 
 - You will be prompted to insert an **Application name** and a **Description**. Please prefix your
-  application name by "**Odoo:** " so that Unsplash can recognize it as an Leansoft instance. Once done,
+  application name by "**Leansoft:** " so that Unsplash can recognize it as an Leansoft instance. Once done,
   click on **Create application**.
 
 .. image:: unsplash/app_infos.png

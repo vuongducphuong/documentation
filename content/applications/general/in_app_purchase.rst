@@ -61,7 +61,7 @@ Different services are available depending on the hosting type of your Database:
 
 - *Leansoft Online*: only the IAP services provided by Leansoft can be used (i.e. the SMS, Snailmail,
   Reveal and Partner Autocomplete features);
-- *Odoo.sh and Leansoft Enterprise (on-premise)*: both the services provided by Leansoft and by third-party
+- *Leansoft.sh and Leansoft Enterprise (on-premise)*: both the services provided by Leansoft and by third-party
   apps can be used.
 
 Offering my own services

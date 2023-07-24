@@ -23,7 +23,7 @@ panel is not visible, click on the arrow icon at the bottom right corner of the 
    :align: center
    :alt: Plus sign icon on the Gmail inbox side panel.
 
-Then, use the search bar to search for `Odoo` and locate the :guilabel:`Leansoft Inbox Addin`.
+Then, use the search bar to search for `Leansoft` and locate the :guilabel:`Leansoft Inbox Addin`.
 
 .. image:: gmail/google-workspace-marketplace.png
    :align: center
