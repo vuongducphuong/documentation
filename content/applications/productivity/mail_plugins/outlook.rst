@@ -17,44 +17,6 @@ First, you need to enable the *Mail Plugin* feature in your database. Go to :men
 
 .. _mail-plugin/outlook/install-plugin:
 
-Install the Outlook Plugin
---------------------------
-
-#. Open your Outlook mailbox and select any email.
-
-#. Click on the *More actions* button and select *Get Add-ins*.
-
-   .. image:: outlook/more-actions.png
-      :align: center
-      :alt: More actions button in Outlook
-
-#. Select the *My add-ins* tab.
-
-   .. image:: outlook/my-add-ins.png
-      :align: center
-      :alt: My add-ins in Outlook
-
-#. Under *Custom add-ins*, click on *+ Add a custom add-in*, and then on *Add from URL...*
-
-   .. image:: outlook/custom-add-ins.png
-      :align: center
-      :alt: Custom add-ins in Outlook
-
-#. Enter the following URL `https://download.odoocdn.com/plugins/v15/outlook/manifest.xml` and press
-   *OK*.
-
-   .. image:: outlook/enter-add-in-url.png
-      :align: center
-      :alt: Entering the add-in URL in Outlook
-
-#. Read the warning and click on *Install*.
-
-   .. image:: outlook/add-in-warning.png
-      :align: center
-      :alt: Custom add-in installation warning in Outlook
-
-.. _mail-plugin/outlook/connect-database:
-
 Connect your database
 ---------------------
 

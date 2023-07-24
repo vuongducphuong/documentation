@@ -29,9 +29,6 @@ Then, use the search bar to search for `Leansoft` and locate the :guilabel:`Lean
    :align: center
    :alt: Leansoft Inbox Addin on Google Workspace Marketplace.
 
-Or, go directly to the :guilabel:`Leansoft Inbox Addin` page on the `Google Workspace Marketplace
-<https://workspace.google.com/marketplace/app/odoo_inbox_addin/873497133275>`_.
-
 Once the plugin is located, click :guilabel:`Install`. Then, click :guilabel:`Continue` to start
 the installation.
 

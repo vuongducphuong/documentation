@@ -27,16 +27,6 @@ To connect to the banks, Leansoft uses multiple web-services:
 Configuration
 =============
 
-On-Premise users
-----------------
-
-To be able to use this service, you need to have a valid Leansoft Enterprise subscription.
-So make sure that your database is registered with your Leansoft Enterprise contract.
-We also use a proxy between your database and the third party provider so, in case of
-a connection error, please check that you don't have a firewall or a proxy blocking the
-following address:
-
-- https://production.odoofin.com/
 
 First synchronization
 ---------------------

@@ -37,7 +37,7 @@ are moved to *History*.
 Start Chatting
 ==============
 
-The first time you log in to your account, OdooBot sends you a message asking for permission to
+The first time you log in to your account, LeansoftBot sends you a message asking for permission to
 receive desktop notifications to chats. If accepted, you receive push notifications to the messages
 sent to you despite of where you are in Leansoft.
 
