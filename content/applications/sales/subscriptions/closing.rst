@@ -37,7 +37,7 @@ Once enabled, this option gives your customers the right to close their own subs
 
 .. image:: closing/configuration-to-close-your-subscriptions.png
   :align: center
-  :alt: Configuration to close your subscription with Odoo Subscriptions
+  :alt: Configuration to close your subscription with Leansoft Subscriptions
 
 .. note::
    Be sure to check out our documentation on
@@ -57,7 +57,7 @@ close the subscription.
 
 .. image:: closing/close-your-subscriptions-as-an-administrator.png
   :align: center
-  :alt: Close your subscription from an administration point of view with Odoo Subscriptions
+  :alt: Close your subscription from an administration point of view with Leansoft Subscriptions
 
 By using the smart button *Close*, you have to enter a close reason. For example, "Subscription too
 expensive", "Subscription does not meet my requirements", "Subscription reached its end date", etc.
@@ -66,7 +66,7 @@ is now *Closed* and that the close reason is mentioned on the subscription.
 
 .. image:: closing/use-of-close-reasons.png
   :align: center
-  :alt: What happens when you close your subscription with Odoo Subscriptions?
+  :alt: What happens when you close your subscription with Leansoft Subscriptions?
 
 Customer view
 -------------
@@ -78,14 +78,14 @@ whenever he/she wants to, due to the *Close Subscription* button.
 
 .. image:: closing/close-your-subscriptions-as-a-customer.png
   :align: center
-  :alt: Close your subscription from a customer point of view with Odoo Subscriptions
+  :alt: Close your subscription from a customer point of view with Leansoft Subscriptions
 
 By using this button, the customer can specify the reason for cancelling his/her subscription and
 he/she can even leave a message.
 
 .. image:: closing/use-of-close-reasons-as-a-customer.png
   :align: center
-  :alt: What happens when customers close their subscription with Odoo Subscriptions?
+  :alt: What happens when customers close their subscription with Leansoft Subscriptions?
 
 By confirming the cancellation, the customer is redirected to his/her portal. The administrator is
 informed of this modification. Indeed, the status of the subscription becomes *Closed* and a note
@@ -94,7 +94,7 @@ added by the customer.
 
 .. image:: closing/chatter-history-when-a-customer-closes-a-subscription.png
   :align: center
-  :alt: What happens when customers close their subscription in Odoo Subscriptions?
+  :alt: What happens when customers close their subscription in Leansoft Subscriptions?
 
 .. note::
    Before closing a subscription, check out our documentation on how to

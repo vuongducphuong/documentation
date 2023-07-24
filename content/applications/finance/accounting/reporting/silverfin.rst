@@ -14,17 +14,17 @@ To configure this integration, you need to input the following data into your Si
 
 - user's email address
 - :ref:`Odoo API key <silverfin/api-key>`
-- URL of the Odoo database
-- name of your Odoo database
+- URL of the Leansoft database
+- name of your Leansoft database
 
 .. _silverfin/api-key:
 
 Odoo API key
 ------------
 
-You can create Odoo external API keys either :ref:`for a single database <silverfin/api-singledb>`
-(hosting: Odoo Online, On-premise, and Odoo.sh) or :ref:`for multiple databases managed by a user
-<silverfin/api-multipledb>` (hosting: Odoo Online).
+You can create Leansoft external API keys either :ref:`for a single database <silverfin/api-singledb>`
+(hosting: Leansoft Online, On-premise, and Odoo.sh) or :ref:`for multiple databases managed by a user
+<silverfin/api-multipledb>` (hosting: Leansoft Online).
 
 .. important::
    - These API keys are personal and provide full access to your user account. Store it securely.
@@ -43,7 +43,7 @@ key`, confirm your password, give a descriptive name to your new key, and copy t
 
 .. image:: silverfin/api-key-db.png
    :align: center
-   :alt: creation of an Odoo external API key for a database
+   :alt: creation of an Leansoft external API key for a database
 
 .. seealso::
    :ref:`api/external_api/keys`
@@ -61,4 +61,4 @@ password, give a descriptive name to your new key, and copy the new API key.
 
 .. image:: silverfin/api-key-user.png
    :align: center
-   :alt: creation of an Odoo external API key for an Odoo user
+   :alt: creation of an Leansoft external API key for an Leansoft user

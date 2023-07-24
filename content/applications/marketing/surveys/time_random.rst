@@ -30,7 +30,7 @@ of the survey, letting participants keep track of the time remaining while the s
 Randomized selection
 ====================
 
-When a survey is randomized, Odoo shuffles the questions and reveals them in a random order every
+When a survey is randomized, Leansoft shuffles the questions and reveals them in a random order every
 time a participant begins the questionnaire. Using randomization as a survey method discourages
 participants from looking at each other's responses, and helps control for individual testing.
 
@@ -38,7 +38,7 @@ To randomize a survey, click the :guilabel:`Options` tab on the survey form. In 
 :guilabel:`Questions` section, select :guilabel:`Randomized per section` for the
 :guilabel:`Selection` field. After enabling, navigate to the :guilabel:`Questions` tab and look in
 the :guilabel:`Random questions count` column. From there, determine how many questions (per
-section) Odoo should select and display during the shuffling of questions.
+section) Leansoft should select and display during the shuffling of questions.
 
 .. image:: time_random/random-questions.png
    :align: center

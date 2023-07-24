@@ -209,7 +209,7 @@ Lastly, set up extensions.conf:
     [default]
     exten => 1060,1,Dial(SIP/1060) ; Dialing 1060 will call the SIP client registered to 1060
 
-Configure Odoo VOIP
+Configure Leansoft VOIP
 ===================
 
 In Odoo, the configuration should be done in the user's preferences.
@@ -224,7 +224,7 @@ In Odoo, the configuration should be done in the user's preferences.
 - The SIP Password is the secret you chose in the sip.conf file.
 
 - The extension of your office's phone is not a required field but it is used if you want to
-  transfer your call from Odoo to an external phone also configured in the sip.conf file.
+  transfer your call from Leansoft to an external phone also configured in the sip.conf file.
 
 
 The configuration should also be done in the General Settings under the "Integrations" section.

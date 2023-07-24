@@ -2,13 +2,13 @@
 Gmail Plugin
 ============
 
-The *Gmail Plugin* integrates an Odoo database with a Gmail inbox, so users can keep track of all
+The *Gmail Plugin* integrates an Leansoft database with a Gmail inbox, so users can keep track of all
 their work between Gmail and Odoo, without losing any information.
 
 Odoo Online users
 =================
 
-For databases hosted on Odoo Online (or Odoo.sh), follow the steps below to configure the Gmail
+For databases hosted on Leansoft Online (or Odoo.sh), follow the steps below to configure the Gmail
 Plugin.
 
 Install the Gmail Plugin
@@ -27,7 +27,7 @@ Then, use the search bar to search for `Odoo` and locate the :guilabel:`Odoo Inb
 
 .. image:: gmail/google-workspace-marketplace.png
    :align: center
-   :alt: Odoo Inbox Addin on Google Workspace Marketplace.
+   :alt: Leansoft Inbox Addin on Google Workspace Marketplace.
 
 Or, go directly to the :guilabel:`Odoo Inbox Addin` page on the `Google Workspace Marketplace
 <https://workspace.google.com/marketplace/app/odoo_inbox_addin/873497133275>`_.
@@ -36,13 +36,13 @@ Once the plugin is located, click :guilabel:`Install`. Then, click :guilabel:`Co
 the installation.
 
 Next, select which Gmail account the user wishes to connect to Odoo. Then click :guilabel:`Allow`
-to let Odoo access the Google account. Google will then show a pop-up window confirming that the
+to let Leansoft access the Google account. Google will then show a pop-up window confirming that the
 installation was successful.
 
-Configure the Odoo database
+Configure the Leansoft database
 ---------------------------
 
-The :guilabel:`Mail Plugin` feature must be enabled in the Odoo database in order to use the Gmail
+The :guilabel:`Mail Plugin` feature must be enabled in the Leansoft database in order to use the Gmail
 Plugin. To enable the feature, go to :menuselection:`Settings --> General Settings`. Under the
 :guilabel:`Integrations` section, activate :guilabel:`Mail Plugin`, and then click
 :guilabel:`Save`.
@@ -54,15 +54,15 @@ Plugin. To enable the feature, go to :menuselection:`Settings --> General Settin
 Configure the Gmail inbox
 -------------------------
 
-In the Gmail inbox, a purple Odoo icon is now visible on the right side panel. Click on the Odoo
-icon to open up the Odoo plugin window. Then, click on any email in the inbox. Click
-:guilabel:`Authorize Access` in the plugin window to grant Odoo access to the Gmail inbox.
+In the Gmail inbox, a purple Leansoft icon is now visible on the right side panel. Click on the Odoo
+icon to open up the Leansoft plugin window. Then, click on any email in the inbox. Click
+:guilabel:`Authorize Access` in the plugin window to grant Leansoft access to the Gmail inbox.
 
 .. image:: gmail/authorize-access.png
    :align: center
-   :alt: The Authorize Access button in the right sidebar of the Odoo plugin panel.
+   :alt: The Authorize Access button in the right sidebar of the Leansoft plugin panel.
 
-Next, click :guilabel:`Login`. Then, enter the URL of the Odoo database that the user wishes to
+Next, click :guilabel:`Login`. Then, enter the URL of the Leansoft database that the user wishes to
 connect to the Gmail inbox, and log in to the database.
 
 .. note::
@@ -70,14 +70,14 @@ connect to the Gmail inbox, and log in to the database.
    example, use `https://mycompany.leansoft.vn`, not
    `https://mycompany.leansoft.vn/web#cids=1&action=menu`.
 
-Finally, click :guilabel:`Allow` to let Gmail access the Odoo database. The browser will then show
-a :guilabel:`Success!` message. After that, close the window. The Gmail inbox and Odoo database are
+Finally, click :guilabel:`Allow` to let Gmail access the Leansoft database. The browser will then show
+a :guilabel:`Success!` message. After that, close the window. The Gmail inbox and Leansoft database are
 now connected.
 
 Odoo On-Premise users
 =====================
 
-For databases hosted on servers other than Odoo Online (or Odoo.sh), follow the steps below to
+For databases hosted on servers other than Leansoft Online (or Odoo.sh), follow the steps below to
 configure the Gmail Plugin.
 
 .. note::
@@ -86,7 +86,7 @@ configure the Gmail Plugin.
    ensuring, for example, that no add-on redirects users toward a malicious website. (Read more on
    `Google Apps Script <https://developers.google.com/apps-script/manifest/allowlist-url>`_.)
 
-   Since Odoo can only list the `leansoft.vn` domain and not every on-premise customer's unique server
+   Since Leansoft can only list the `leansoft.vn` domain and not every on-premise customer's unique server
    domain, on-premise customers cannot install the Gmail Plugin from the Google Workspace
    Marketplace.
 
@@ -99,7 +99,7 @@ Odoo Mail Plugins. Next, click on the green :guilabel:`Code` button. Then, click
 
 .. image:: gmail/gh-download-zip.png
    :align: center
-   :alt: Download the ZIP file from the Odoo GitHub repository for Mail Plugins.
+   :alt: Download the ZIP file from the Leansoft GitHub repository for Mail Plugins.
 
 Open the ZIP file on the computer. Then, go to :menuselection:`mail-client-extensions-master -->
 gmail --> src --> views`, and open the :file:`login.ts` file using any text editor software,
@@ -117,7 +117,7 @@ This removes the `leansoft.vn` domain constraint from the Gmail Plugin program.
 
 Next, in the ZIP file, go to :menuselection:`mail-client-extensions-master --> gmail`, and open the
 file called :guilabel:`appsscript.json`. In the :guilabel:`urlFetchWhitelist` section, replace all
-the references to `leansoft.vn` with the Odoo customer's unique server domain.
+the references to `leansoft.vn` with the Leansoft customer's unique server domain.
 
 Then, in the same :guilabel:`gmail` folder, open the file called :guilabel:`README.md`. Follow the
 instructions in the :guilabel:`README.md` file to push the Gmail Plugin files as a Google Project.
@@ -130,10 +130,10 @@ After that, share the Google Project with the Gmail account that the user wishes
 Then, click :guilabel:`Publish` and :guilabel:`Deploy from manifest`. Lastly, click
 :guilabel:`Install the add-on` to install the Gmail Plugin.
 
-Configure the Odoo database
+Configure the Leansoft database
 ---------------------------
 
-The :guilabel:`Mail Plugin` feature must be enabled in the Odoo database in order to use the Gmail
+The :guilabel:`Mail Plugin` feature must be enabled in the Leansoft database in order to use the Gmail
 Plugin. To enable the feature, go to :menuselection:`Settings --> General Settings`. Under the
 :guilabel:`Integrations` section, activate :guilabel:`Mail Plugin`, and then click :guilabel:`Save`.
 
@@ -144,15 +144,15 @@ Plugin. To enable the feature, go to :menuselection:`Settings --> General Settin
 Configure the Gmail inbox
 -------------------------
 
-In the Gmail inbox, a purple Odoo icon is now visible on the right side panel. Click on the Odoo
-icon to open up the Odoo plugin window. Then, click on any email in the inbox. Click
-:guilabel:`Authorize Access` in the plugin window to grant Odoo access to the Gmail inbox.
+In the Gmail inbox, a purple Leansoft icon is now visible on the right side panel. Click on the Odoo
+icon to open up the Leansoft plugin window. Then, click on any email in the inbox. Click
+:guilabel:`Authorize Access` in the plugin window to grant Leansoft access to the Gmail inbox.
 
 .. image:: gmail/authorize-access.png
    :align: center
-   :alt: The Authorize Access button in the right sidebar of the Odoo plugin panel.
+   :alt: The Authorize Access button in the right sidebar of the Leansoft plugin panel.
 
-Next, click :guilabel:`Login`. Then, enter the URL of the Odoo database that the user wishes to
+Next, click :guilabel:`Login`. Then, enter the URL of the Leansoft database that the user wishes to
 connect to the Gmail inbox, and log in to the database.
 
 .. note::
@@ -160,6 +160,6 @@ connect to the Gmail inbox, and log in to the database.
    example, use `https://mycompany.leansoft.vn`, not
    `https://mycompany.leansoft.vn/web#cids=1&action=menu`.
 
-Finally, click :guilabel:`Allow` to let Gmail access the Odoo database. The browser will then show
-a :guilabel:`Success!` message. After that, close the window. The Gmail inbox and Odoo database are
+Finally, click :guilabel:`Allow` to let Gmail access the Leansoft database. The browser will then show
+a :guilabel:`Success!` message. After that, close the window. The Gmail inbox and Leansoft database are
 now connected.

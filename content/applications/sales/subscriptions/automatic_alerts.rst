@@ -25,7 +25,7 @@ customers, by email, after one month of subscription. To do so, go to :menuselec
 
 .. image:: automatic_alerts/create-a-new-automatic-alert.png
   :align: center
-  :alt: New automatic alert in Odoo Subscriptions
+  :alt: New automatic alert in Leansoft Subscriptions
 
 1. On the *Apply on* section, first give the alert a name. Then, you can choose to apply this alert
    on a subscription template, on a specific customer, or even on a specific product. If you want
@@ -57,16 +57,16 @@ subscription.
 
 .. image:: automatic_alerts/rating-satisfaction-survey.png
   :align: center
-  :alt: Satisfaction survey in Odoo Subscriptions
+  :alt: Satisfaction survey in Leansoft Subscriptions
 
 Modify an existing automatic alert
 ==================================
 
-By default, Odoo suggests you an automatic alert called *Take action on less satisfied clients*.
+By default, Leansoft suggests you an automatic alert called *Take action on less satisfied clients*.
 
 .. image:: automatic_alerts/modify-an-existing-automatic-alert.png
   :align: center
-  :alt: Modify an existing automatic alert in Odoo Subscriptions
+  :alt: Modify an existing automatic alert in Leansoft Subscriptions
 
 This alert is applied to the *Rating Satisfaction* of your customers, and the action is triggered
 on *Timed condition*. If their satisfaction rate is lower than 50%, a salesperson contacts the

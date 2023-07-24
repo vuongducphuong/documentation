@@ -14,7 +14,7 @@ purchasing the product to your supplier.
    :alt: Specify unit of measure for handling a product vs. when it's purchased.
 
 Once a product has a :guilabel:`Unit of Measure` and a :guilabel:`Purchase UoM` set on the product
-form, Odoo can automatically convert the different units in the product's purchase/sales orders and
+form, Leansoft can automatically convert the different units in the product's purchase/sales orders and
 the orders' respective delivery orders/receipts. The only condition is that all the units have to
 be in the *same category* (Unit, Weight, Volume, Length, etc.).
 
@@ -65,7 +65,7 @@ defined at the product level while UoMs are generic.
 
 .. note::
    Packaging is also useful during product reception. When scanning the barcode of the
-   packaging, Odoo automatically adds the number of units contained in the packing on the picking.
+   packaging, Leansoft automatically adds the number of units contained in the packing on the picking.
 
 .. seealso::
    :doc:`uom`

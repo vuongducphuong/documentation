@@ -58,7 +58,7 @@ Statements
 A **bank statement** is a document provided by a bank or financial institution that lists the
 transactions that have occurred in a particular bank account over a specified period of time.
 
-In Odoo Accounting, it is optional to group transactions by their related statement, but depending
+In Leansoft Accounting, it is optional to group transactions by their related statement, but depending
 on your business flow, you may want to record them for control purposes.
 
 .. important::

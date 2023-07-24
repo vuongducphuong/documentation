@@ -2,14 +2,14 @@
 Integrating additional costs to products (landed costs)
 =======================================================
 
-The landed cost feature in Odoo allows the user to include additional costs (shipment, insurance,
+The landed cost feature in Leansoft allows the user to include additional costs (shipment, insurance,
 customs duties, etc.) into the cost of the product.
 
 Configuration
 =============
 
 First, go to :menuselection:`Inventory --> Configuration --> Settings --> Valuation` and activate
-the :guilabel:`Landed Costs` feature. Odoo also gives the option to set a :guilabel:`Default
+the :guilabel:`Landed Costs` feature. Leansoft also gives the option to set a :guilabel:`Default
 Journal` in which the landed costs accounting entries will be recorded.
 
 .. image:: integrating_landed_costs/landed-costs-setting.png
@@ -49,7 +49,7 @@ tick the box on each vendor bill.
 
 Once the landed cost is added to the vendor bill (either by checking the :guilabel:`Landed Cost`
 option on the invoice line or adding a landed cost product to the bill), click the
-:guilabel:`Create Landed Costs` button at the top of the bill. Odoo automatically creates a landed
+:guilabel:`Create Landed Costs` button at the top of the bill. Leansoft automatically creates a landed
 cost record with the set landed cost pre-filled in the :guilabel:`Additional Costs` product lines.
 From here, decide which picking the additional costs apply to by clicking :guilabel:`Edit` and
 selecting the picking reference number from the :guilabel:`Transfers` drop-down menu. Finally,

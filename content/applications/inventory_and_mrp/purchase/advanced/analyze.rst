@@ -17,7 +17,7 @@ and a pivot table.
 
 .. image:: analyze/analyze-reporting-dashboard.png
    :align: center
-   :alt: Reporting dashboard in Odoo Purchase
+   :alt: Reporting dashboard in Leansoft Purchase
 
 While the data initially presented is useful, there are several tools and features you can use to
 get even more insights on your purchases.
@@ -26,7 +26,7 @@ Use filters to select the data you need
 ---------------------------------------
 
 Odoo offers several default filters you can use and combine by clicking on *Filters*. When you
-select one or several filters, Odoo looks for all the orders that match at least one of the filters
+select one or several filters, Leansoft looks for all the orders that match at least one of the filters
 you have chosen and populates the chart, key metrics, and pivot table with the data. The
 pre-configured filters are:
 
@@ -53,7 +53,7 @@ pre-configured filters are:
 
 .. image:: analyze/analyze-filters.png
    :align: center
-   :alt: Reporting filters in Odoo Purchase
+   :alt: Reporting filters in Leansoft Purchase
 
 Add custom filters
 ~~~~~~~~~~~~~~~~~~
@@ -68,7 +68,7 @@ filtering options, click on *Apply*.
 
 .. image:: analyze/analyze-custom-filter.png
    :align: center
-   :alt: Custom reporting filter in Odoo Purchase
+   :alt: Custom reporting filter in Leansoft Purchase
 
 .. tip::
    To avoid having to recreate custom filters every time, save them by clicking on
@@ -86,7 +86,7 @@ at the top right of the dashboard.
 
 .. image:: analyze/analyze-switch-view.png
    :align: center
-   :alt: Switch reporting view in Odoo Purchase
+   :alt: Switch reporting view in Leansoft Purchase
 
 Visualize your data
 ~~~~~~~~~~~~~~~~~~~
@@ -97,7 +97,7 @@ group the measure using one or several of the 19 *Groups*.
 
 .. image:: analyze/analyze-graph-view.png
    :align: center
-   :alt: Reporting graph view in Odoo Purchase
+   :alt: Reporting graph view in Leansoft Purchase
 
 For bar and line charts, the selected measure is your y-axis, and the first group you select is used
 to create the x-axis. Adding more group adds additional lines (line chart) or transforms your bar
@@ -115,7 +115,7 @@ group's **+** sign, you can add a sub-group, and so on.
 
 .. image:: analyze/analyze-pivot-view.png
    :align: center
-   :alt: Pivot table view in Odoo Purchase
+   :alt: Pivot table view in Leansoft Purchase
 
 .. tip::
    You can insert your pivot table's data directly in the Spreadsheet app or export it as an Excel

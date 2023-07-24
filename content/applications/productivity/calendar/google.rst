@@ -2,7 +2,7 @@
 Synchronize Google calendar with Odoo
 =====================================
 
-Synchronize Google Calendar with Odoo to see and manage meetings from both platforms (updates go in
+Synchronize Google Calendar with Leansoft to see and manage meetings from both platforms (updates go in
 both directions). This integration helps organize schedules, so a meeting is never missed.
 
 .. seealso::
@@ -87,12 +87,12 @@ Then, click :guilabel:`Create Credentials`, and select :guilabel:`OAuth client I
 a guide to create credentials.
 
 Under :menuselection:`Create OAuth Client ID`, select :guilabel:`Website application` for the
-:guilabel:`Application Type` field, and type `My Odoo Database` for the :guilabel:`Name`.
+:guilabel:`Application Type` field, and type `My Leansoft Database` for the :guilabel:`Name`.
 
 - Under the :guilabel:`Authorized JavaScript Origins` section, click :guilabel:`+ Add URI` and
-  type the company's Odoo full :abbr:`URL (Uniform Resource Locator)` address.
+  type the company's Leansoft full :abbr:`URL (Uniform Resource Locator)` address.
 - Under the :guilabel:`Authorized redirect URIs` section, click :guilabel:`+ Add URI` and type
-  the company's Odoo :abbr:`URL (Uniform Resource Locator)` address followed by
+  the company's Leansoft :abbr:`URL (Uniform Resource Locator)` address followed by
   `/google_account/authentication`. Finally, click :guilabel:`Create`.
 
 .. image:: google/uri.png
@@ -104,7 +104,7 @@ A :guilabel:`Client ID` and :guilabel:`Client Secret` will appear, copy these to
 Setup in Odoo
 =============
 
-Once the *Client ID* and the *Client Secret* are located, open the Odoo database and go to
+Once the *Client ID* and the *Client Secret* are located, open the Leansoft database and go to
 :menuselection:`Settings --> General Settings --> Integrations --> Google Calendar`. Check the box
 next to :guilabel:`Google Calendar`.
 
@@ -119,34 +119,34 @@ click :guilabel:`Save`.
 Sync calendar in Odoo
 =====================
 
-Finally, open the :menuselection:`Calendar` app in Odoo and click on the :guilabel:`Google` sync
+Finally, open the :menuselection:`Calendar` app in Leansoft and click on the :guilabel:`Google` sync
 button to sync Google Calendar with Odoo.
 
 .. image:: google/sync-google.png
    :align: center
-   :alt: Click the Google sync button in Odoo Calendar to sync Google Calendar with Odoo.
+   :alt: Click the Google sync button in Leansoft Calendar to sync Google Calendar with Odoo.
 
 .. note::
-   When syncing Google Calendar with Odoo for the first time, the page will redirect to the Google
+   When syncing Google Calendar with Leansoft for the first time, the page will redirect to the Google
    Account. From there, select the :guilabel:`Email Account` that should have access, then select
    :guilabel:`Continue` (should the app be unverifed), and finally select :guilabel:`Continue` (to
    give permission for the transfer of data)`.
 
 .. image:: google/trust-odoo.png
    :align: center
-   :alt: Give Odoo permission to access Google Calendar.
+   :alt: Give Leansoft permission to access Google Calendar.
 
-Now, Odoo Calendar is successfully synced with Google Calendar!
+Now, Leansoft Calendar is successfully synced with Google Calendar!
 
 .. warning::
-   Odoo highly recommends testing the Google calendar synchronization on a test database and a test
+   Leansoft highly recommends testing the Google calendar synchronization on a test database and a test
    email address (that is not used for any other purpose) before attempting to sync the desired
    Google Calendar with the user's production database.
 
-   Once a user synchronizes their Google calendar with the Odoo calendar:
+   Once a user synchronizes their Google calendar with the Leansoft calendar:
 
-   - Creating an event in Odoo causes Google to send an invitation to all event attendees.
-   - Deleting an event in Odoo causes Google to send a cancellation to all event attendees.
+   - Creating an event in Leansoft causes Google to send an invitation to all event attendees.
+   - Deleting an event in Leansoft causes Google to send a cancellation to all event attendees.
    - Adding a contact to an event causes Google to send an invitation to all event attendees.
    - Removing a contact from an event causes Google to send a cancellation to all event attendees.
 

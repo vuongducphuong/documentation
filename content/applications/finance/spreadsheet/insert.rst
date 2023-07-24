@@ -1,5 +1,5 @@
 ==============
-Link Odoo data
+Link Leansoft data
 ==============
 
 You can insert and link several elements from your database in your spreadsheets, namely:

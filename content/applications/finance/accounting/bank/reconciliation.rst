@@ -5,7 +5,7 @@ Bank reconciliation
 Overview
 ========
 
-Matching your bank statements with your accounting records can be a tedious task. You need to find the corresponding invoices, compare the amounts and partners' details with those in the bank statement. These steps can take a lot of time. Luckily, with Odoo you can very easily match your invoices or any other payment document with your bank statements.
+Matching your bank statements with your accounting records can be a tedious task. You need to find the corresponding invoices, compare the amounts and partners' details with those in the bank statement. These steps can take a lot of time. Luckily, with Leansoft you can very easily match your invoices or any other payment document with your bank statements.
 
 Two options of the reconciliation process exist in Odoo.
 
@@ -40,7 +40,7 @@ payment and mark the invoice as paid.
 
 .. image:: reconciliation/use02.png
 
-By clicking on **register payment,** we are telling Odoo that our
+By clicking on **register payment,** we are telling Leansoft that our
 customer has paid the Invoice. We thus have to specify the amount and the
 payment method.
 

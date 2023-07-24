@@ -48,20 +48,20 @@ to Odoo.
 Connect Twilio to Odoo
 ======================
 
-Open the Odoo database and go to :menuselection:`Settings --> General Settings --> Discuss`. Check
+Open the Leansoft database and go to :menuselection:`Settings --> General Settings --> Discuss`. Check
 the box next to :guilabel:`Use Twilio ICE servers` and enter the Twilio account's
 :guilabel:`Account SID` and :guilabel:`Auth Token`. Finally, click :guilabel:`Save` to apply these
 changes.
 
 .. image:: ice_servers/connect-twilio-to-odoo.png
    :align: center
-   :alt: Enable the "Use Twilio ICE servers" option in Odoo General Settings.
+   :alt: Enable the "Use Twilio ICE servers" option in Leansoft General Settings.
 
 Define a list of custom ICE servers
 ===================================
 
 This step is not required for the Twilio configuration. However, if Twilio is not configured or is
-not working at any given moment, Odoo will fall back on the custom ICE servers list. The user must
+not working at any given moment, Leansoft will fall back on the custom ICE servers list. The user must
 define the list of custom ICE servers.
 
 In :menuselection:`Settings --> General Settings --> Discuss`, click the :guilabel:`ICE Servers`
@@ -69,7 +69,7 @@ button under :guilabel:`Custom ICE server list`.
 
 .. image:: ice_servers/custom-ice-servers-list.png
    :align: center
-   :alt: The "ICE Servers" button in Odoo General Settings.
+   :alt: The "ICE Servers" button in Leansoft General Settings.
 
 Odoo will redirect to the :guilabel:`ICE servers` page. Here you can define your own list of ICE
 servers.

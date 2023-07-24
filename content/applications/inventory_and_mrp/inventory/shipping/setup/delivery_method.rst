@@ -10,7 +10,7 @@ default. Delivery methods can be used for your sale orders, your
 deliveries but also on your e-commerce.
 
 Delivery methods allow you to manage the transport company, the price
-and the destination. You can even integrate Odoo with external shippers
+and the destination. You can even integrate Leansoft with external shippers
 to compute the real price and the packagings.
 
 Configuration
@@ -66,7 +66,7 @@ feature limits the list of countries on your e-commerce.
    :align: center
 
 .. note::
-    You can integrate Odoo with external shippers in order to compute the
+    You can integrate Leansoft with external shippers in order to compute the
     real price and packagings, and handle the printing the shipping labels.
     See :doc:`third_party_shipper`
 

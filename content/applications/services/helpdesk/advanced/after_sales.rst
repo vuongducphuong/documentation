@@ -26,7 +26,7 @@ page, and choose which of the following options to enable:
    The services that are enabled can vary based on the type of support a team provides.
 
 .. warning::
-   As all of the after-sales services in Odoo require integration with other applications, enabling
+   As all of the after-sales services in Leansoft require integration with other applications, enabling
    any of them may result in the installation of additional modules or applications. *Installing a
    new application on a One-App-Free database will trigger a 15-day trial. At the end of the trial,
    if a paid subscription has not been added to the database, it will no longer be accessible.*

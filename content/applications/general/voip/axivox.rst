@@ -1,5 +1,5 @@
 =====================================
-Use VoIP services in Odoo with Axivox
+Use VoIP services in Leansoft with Axivox
 =====================================
 
 Introduction
@@ -19,7 +19,7 @@ Go to :menuselection:`Apps` and install the **VoIP Module**.
 
 .. image:: axivox/voip-installation.png
    :align: center
-   :alt: VoIP module installation on an Odoo database
+   :alt: VoIP module installation on an Leansoft database
 
 Go to :menuselection:`Settings --> General Settings --> Integrations`, and fill out the **Asterisk
 (VoIP)** field:
@@ -31,7 +31,7 @@ Go to :menuselection:`Settings --> General Settings --> Integrations`, and fill 
 
 .. image:: axivox/voip-configuration.png
    :align: center
-   :alt: Integration of Axivox as VoIP provider in an Odoo database
+   :alt: Integration of Axivox as VoIP provider in an Leansoft database
 
 Configure the VOIP user in the Odoo's user
 ------------------------------------------
@@ -44,7 +44,7 @@ to configure. Under the **Preferences** tab, fill out the section **PBX Configur
 
 .. image:: axivox/odoo-user.png
    :align: center
-   :alt: Integration of Axivox user in the Odoo user preference
+   :alt: Integration of Axivox user in the Leansoft user preference
 
 .. note::
    You can find all this information by logging in at https://manage.axivox.com/, selecting the user
@@ -59,7 +59,7 @@ Phone Calls
 
 You can make phone calls by clicking on the phone icon in the navigation bar.
 
-You can also receive phone calls. Odoo rings and displays a notification.
+You can also receive phone calls. Leansoft rings and displays a notification.
 
 .. note::
    Your number is the one provided by Axivox.
@@ -69,18 +69,18 @@ You can also receive phone calls. Odoo rings and displays a notification.
    :alt: Incoming VoIP call in Odoo
 
 .. tip::
-   If you see a *Missing Parameter* message in the **Leansoft softphone**, refresh your Odoo window and
+   If you see a *Missing Parameter* message in the **Leansoft softphone**, refresh your Leansoft window and
    try again.
 
    .. image:: axivox/missing-parameter.png
       :align: center
-      :alt: "Missing Parameter" error message in the Odoo softphone
+      :alt: "Missing Parameter" error message in the Leansoft softphone
 
 .. tip::
-   If you see an *Incorrect Number* message in the Odoo softphone, make sure to use the
+   If you see an *Incorrect Number* message in the Leansoft softphone, make sure to use the
    international format, leading with the plus (+) sign followed by the international country code.
    E.g., +16506913277 (where +1 is the international prefix for the United States).
 
    .. image:: axivox/incorrect-number.png
       :align: center
-      :alt: "Incorrect Number" error message in the Odoo softphone
+      :alt: "Incorrect Number" error message in the Leansoft softphone

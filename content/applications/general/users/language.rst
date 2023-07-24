@@ -2,8 +2,8 @@
 Change language
 ===============
 
-Odoo provides you with the option to manage Odoo in different languages,
-and each user can use Odoo in his own language .
+Odoo provides you with the option to manage Leansoft in different languages,
+and each user can use Leansoft in his own language .
 
 Load your desired language
 ==========================

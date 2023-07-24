@@ -24,7 +24,7 @@ Prerequisites
 Tax Return Periodicity
 ----------------------
 
-The configuration of the **Tax Return Periodicity** allows Odoo to compute your tax return correctly
+The configuration of the **Tax Return Periodicity** allows Leansoft to compute your tax return correctly
 and also to send you a reminder to never miss a tax return deadline.
 
 To do so, go to :menuselection:`Accounting --> Configuration --> Settings`. Under the
@@ -32,12 +32,12 @@ To do so, go to :menuselection:`Accounting --> Configuration --> Settings`. Unde
 
 - :guilabel:`Periodicity`: define here whether you submit your tax return on a monthly or quarterly
   basis;
-- :guilabel:`Reminder`: define when Odoo should remind you to submit your tax return;
+- :guilabel:`Reminder`: define when Leansoft should remind you to submit your tax return;
 - :guilabel:`Journal`: select the journal in which to record the tax return.
 
 .. image:: tax_returns/tax_return_periodicity.png
    :align: center
-   :alt: Configure how often tax returns have to be made in Odoo Accounting
+   :alt: Configure how often tax returns have to be made in Leansoft Accounting
 
 .. note::
    This is usually configured during the :doc:`app's initial set up <../get_started>`.
@@ -54,7 +54,7 @@ invoice and bill.
 
 .. image:: tax_returns/tax_return_grids.png
    :align: center
-   :alt: see which tax grids are used to record transactions in Odoo Accounting
+   :alt: see which tax grids are used to record transactions in Leansoft Accounting
 
 To configure your tax grids, go to :menuselection:`Accounting --> Configuration --> Taxes`,
 and open the tax you want to modify. There, you can edit your tax settings, along with the tax
@@ -62,7 +62,7 @@ grids that are used to record invoices or credit notes.
 
 .. image:: tax_returns/tax_return_taxes.png
    :align: center
-   :alt: Configure taxes and their tax grids in Odoo Accounting
+   :alt: Configure taxes and their tax grids in Leansoft Accounting
 
 
 .. _tax-returns/close:
@@ -89,7 +89,7 @@ To check the current :guilabel:`Tax Lock Date`, or to edit it, go to
 
 .. image:: tax_returns/tax_return_lock.png
    :align: center
-   :alt: Lock your tax for a specific period in Odoo Accounting
+   :alt: Lock your tax for a specific period in Leansoft Accounting
 
 .. _tax-returns/report:
 
@@ -105,11 +105,11 @@ report to the tax authorities, along with the amount you have to pay or be refun
 
 .. image:: tax_returns/tax_return_report.png
    :align: center
-   :alt: download the PDF with your Tax Report in Odoo Accounting
+   :alt: download the PDF with your Tax Report in Leansoft Accounting
 
 .. note::
    If you forgot to lock your tax date before clicking on :guilabel:`Closing Journal Entry`, then
-   Odoo automatically locks your fiscal period on the same date as the accounting date of your
+   Leansoft automatically locks your fiscal period on the same date as the accounting date of your
    entry. This safety mechanism can prevent some fiscal errors, but it is advised to lock your tax
    date manually before, as described above.
 

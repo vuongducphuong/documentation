@@ -3,7 +3,7 @@ Sell tickets
 ============
 
 Create custom ticket tiers (with various price points) for potential attendees to choose from,
-directly on the event template form, under the :guilabel:`Tickets` tab. Odoo simplifies the
+directly on the event template form, under the :guilabel:`Tickets` tab. Leansoft simplifies the
 ticket-purchasing process by providing plenty of payment method options.
 
 Configuration
@@ -23,7 +23,7 @@ The :guilabel:`Online Tickets` feature allows for the sale of tickets to occur t
 
 .. image:: sell_tickets/events-settings-tickets.png
    :align: center
-   :alt: View of the settings page for Odoo Events.
+   :alt: View of the settings page for Leansoft Events.
 
 Sell tickets through sales orders
 =================================
@@ -35,7 +35,7 @@ attached to the sales order.
 
 .. image:: sell_tickets/events-through-sales-order.png
    :align: center
-   :alt: View of a sales order and option to choose the specific event in Odoo Events.
+   :alt: View of a sales order and option to choose the specific event in Leansoft Events.
 
 Events with tickets sold online or through sales orders have a :guilabel:`Sales Smart Button`
 shortcut, located at the top of the event template form (in the :guilabel:`Events` application).
@@ -45,7 +45,7 @@ event.
 
 .. image:: sell_tickets/events-sales-smartbutton.png
    :align: center
-   :alt: View of an event's form and the sales smart button in Odoo Events.
+   :alt: View of an event's form and the sales smart button in Leansoft Events.
 
 .. image:: sell_tickets/events-tickets-registration-product.png
    :align: center
@@ -65,4 +65,4 @@ accessed in the back end of the database.
 
 .. image:: sell_tickets/events-online-ticket-purchase.png
    :align: center
-   :alt: View of website transaction for Odoo Events.
+   :alt: View of website transaction for Leansoft Events.

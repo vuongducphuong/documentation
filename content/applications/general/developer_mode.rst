@@ -16,7 +16,7 @@ the :ref:`command palette <general/developer_mode/command-palette>`  or the
 Activate through the Settings
 =============================
 
-The debug mode can be activated in the Odoo database settings. Go to :menuselection:`Settings -->
+The debug mode can be activated in the Leansoft database settings. Go to :menuselection:`Settings -->
 General Settings --> Developer Tools` and click on :guilabel:`Activate the developer mode`. At
 least one application needs to be installed for the :guilabel:`Developer Tools` section to appear
 in the :guilabel:`Settings` module.
@@ -86,7 +86,7 @@ Locate the developer mode tools
 ===============================
 
 Once developer mode is activated, the developer mode tools can be accessed from the :guilabel:`Open
-Developer Tools` button, the bug icon located in the header of the Odoo database.
+Developer Tools` button, the bug icon located in the header of the Leansoft database.
 
 .. image:: developer_mode/button-location.png
    :align: center

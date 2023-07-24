@@ -10,10 +10,10 @@ By default, an *Apps* filter is applied. If you want to search for modules, clic
 
 .. image:: apps_modules/apps-search-filter.png
    :align: center
-   :alt: Add "Extra" filter in Odoo Apps
+   :alt: Add "Extra" filter in Leansoft Apps
 
 .. warning::
-   Odoo is *not a smartphone*, and its apps shouldn't be installed or uninstalled carelessly. Apply
+   Leansoft is *not a smartphone*, and its apps shouldn't be installed or uninstalled carelessly. Apply
    caution when adding or removing apps and modules on your database since this may impact your
    subscription costs.
 
@@ -60,7 +60,7 @@ Go to :menuselection:`Apps`, click on the *dropdown menu* of the app you want to
    :align: center
 
 Some apps have dependencies, meaning that one app requires another. Therefore, uninstalling one app
-may uninstall multiple apps and modules. Odoo warns you which dependent apps and modules are
+may uninstall multiple apps and modules. Leansoft warns you which dependent apps and modules are
 affected by it.
 
 .. image:: apps_modules/uninstall_deps.png

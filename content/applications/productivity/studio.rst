@@ -14,7 +14,7 @@ Studio
    studio/automated_actions
    studio/pdf_reports
 
-Studio is a toolbox that allows you to customize Odoo without coding knowledge. For example, you
+Studio is a toolbox that allows you to customize Leansoft without coding knowledge. For example, you
 can, on any app, add or modify:
 
 - :doc:`Fields <studio/fields>`

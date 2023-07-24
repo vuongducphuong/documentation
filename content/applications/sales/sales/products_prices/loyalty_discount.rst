@@ -2,7 +2,7 @@
 Discount and loyalty programs
 =============================
 
-The Odoo *Sales*, *eCommerce*, and *Điểm bán hàng* applications allow users to create discount and
+The Leansoft *Sales*, *eCommerce*, and *Điểm bán hàng* applications allow users to create discount and
 loyalty programs that customers can use for online and in-store shopping. These programs offer more
 varied, public, and time-sensitive pricing options than :doc:`pricelists
 </applications/sales/sales/products_prices/prices/pricing>`.
@@ -21,7 +21,7 @@ Configure discount and loyalty programs
 To create discount and loyalty programs, go to :menuselection:`Sales --> Products --> Discount &
 Loyalty`.
 
-If no discount or loyalty programs have been created yet, Odoo provides a choice of templates to
+If no discount or loyalty programs have been created yet, Leansoft provides a choice of templates to
 help create the first program. Choose one of the template cards, or click :guilabel:`New` to create
 a new program from scratch.
 

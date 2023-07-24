@@ -182,7 +182,7 @@ delivery order will only change to :guilabel:`Ready` once the picking has been m
    :alt: Ready status for the pick operation while the delivery operation is Waiting Another
          Operation.
 
-Click on the picking delivery order to begin processing it. If the product is in stock, Odoo will
+Click on the picking delivery order to begin processing it. If the product is in stock, Leansoft will
 automatically reserve the product. Click :guilabel:`Validate` to mark the picking as
 :guilabel:`Done`, then the delivery order will be ready for processing. Since the documents are
 linked, the products which have been previously picked are automatically reserved on the delivery

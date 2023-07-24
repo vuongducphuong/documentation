@@ -74,10 +74,10 @@ Vendors --> Payments`. When creating your payment, select :guilabel:`SEPA Credit
 :guilabel:`Payment Method`.
 
 The first time you pay a vendor with SEPA, you have to fill in the :guilabel:`Recipient Bank
-Account` field with the bank name, IBAN, and BIC (Bank Identifier Code). Odoo automatically verifies
+Account` field with the bank name, IBAN, and BIC (Bank Identifier Code). Leansoft automatically verifies
 if the IBAN format is respected.
 
-For future payments to this vendor, Odoo will automatically suggest you the bank account, but it
+For future payments to this vendor, Leansoft will automatically suggest you the bank account, but it
 remains possible to select a new one.
 
 Once your payment is registered, do not forget to confirm it. You can also pay vendor bills from the

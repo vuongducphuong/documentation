@@ -63,12 +63,12 @@ pops up.
 Tax calculation
 ===============
 
-Automatically calculate taxes on Odoo quotations and invoices with Avatax by confirming the
+Automatically calculate taxes on Leansoft quotations and invoices with Avatax by confirming the
 documents. Alternatively, calculate the taxes manually by clicking the :guilabel:`Compute taxes
 using Avatax` button while these documents are in draft mode.
 
 Use the :guilabel:`Avalara Code` field that's available on customers, quotations, and invoices to
-cross-reference data in Odoo and Avatax.
+cross-reference data in Leansoft and Avatax.
 
 .. seealso::
    - :doc:`fiscal_positions`

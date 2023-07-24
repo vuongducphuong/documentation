@@ -6,8 +6,8 @@ Usually, *Removal Strategies* are defined in picking operations to select the be
 optimize the distance for the worker, for quality control purposes, or to first move products
 with the closest expiration date.
 
-When a product movement needs to be done, Odoo finds available products that can be assigned to
-the transfer. The way Odoo assigns these products depends on the *Removal Strategy* defined in
+When a product movement needs to be done, Leansoft finds available products that can be assigned to
+the transfer. The way Leansoft assigns these products depends on the *Removal Strategy* defined in
 the *Product Category* or on the *Location*.
 
 What happens inside the warehouse?
@@ -247,7 +247,7 @@ For this particular case, the stock has hand cream. There are three lots of them
 | 0000003               | Hand Cream    | 10/31/2019            |
 +-----------------------+---------------+-----------------------+
 
-When a sales order for 25 units of Hand Cream is created, Odoo automatically reserves the lots with
+When a sales order for 25 units of Hand Cream is created, Leansoft automatically reserves the lots with
 the closest expiration date, :guilabel:`0000001` and :guilabel:`0000003`.
 
 .. image:: removal/reserved-hand-cream.png

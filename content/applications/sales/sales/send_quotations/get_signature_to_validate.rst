@@ -15,7 +15,7 @@ feature.
 .. image:: get_signature_to_validate/signature_1.png
    :align: center
    :class: img-thumbnail
-   :alt: How to enable online signature on Odoo Sales?
+   :alt: How to enable online signature on Leansoft Sales?
 
 .. note::
    If you are familiar with this documentation: :doc:`quote_template`, you can activate or not the
@@ -25,7 +25,7 @@ feature.
    .. image:: get_signature_to_validate/signature_2.png
       :align: center
       :class: img-thumbnail
-      :alt: How to enable online signature on Odoo Sales?
+      :alt: How to enable online signature on Leansoft Sales?
 
 Confirm an order with a signature
 =================================
@@ -38,7 +38,7 @@ of an automated signature:
 .. image:: get_signature_to_validate/signature_3.png
    :align: center
    :class: img-thumbnail
-   :alt: How to confirm an order with a signature on Odoo Sales?
+   :alt: How to confirm an order with a signature on Leansoft Sales?
 
 Once signed, you will have the possibility to choose your payment methods. Then, when the quotation
 will be paid and confirmed, a delivery order will be created automatically by Odoo.

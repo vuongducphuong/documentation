@@ -65,7 +65,7 @@ Introduction
 The best way to avoid this complexity is to choose only one way of
 managing your prices and stick to it: price without taxes or price with
 taxes included. Define which one is the default stored on the product
-form (on the default tax related to the product), and let Odoo compute
+form (on the default tax related to the product), and let Leansoft compute
 the other one automatically, based on the pricelist and fiscal position.
 Negotiate your contracts with customers accordingly. This perfectly
 works out-of-the-box and you have no specific configuration to do.

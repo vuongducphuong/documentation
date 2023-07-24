@@ -32,7 +32,7 @@ You reached your daily limit:
 
 .. image:: faq/email-limit.png
    :align: center
-   :alt: Warning in Odoo upon email limit reached
+   :alt: Warning in Leansoft upon email limit reached
 
 Each email service provider has its own email sending limits. The limits may be daily, hourly,
 and sometimes even per minute. This is the same for Odoo, we have to limit our customers to prevent
@@ -40,7 +40,7 @@ our e-mail servers from being blacklisted.
 
 Here are the default limits for new databases:
 
-- 200 emails/day for Odoo Online and Odoo.sh databases with an active subscription,
+- 200 emails/day for Leansoft Online and Odoo.sh databases with an active subscription,
 
 - 50 emails/day for one-app free and trial databases,
 
@@ -70,7 +70,7 @@ In case you hit the limit, you can:
    The daily limit is global to your database and can rise quickly! By default an internal message,
    a notification, a note, etc. counts as an email in your daily limit if it notifies someone.
 
-You can mitigate this by receiving your :ref:`notifications in Odoo <discuss_app/notification_preferences>`
+You can mitigate this by receiving your :ref:`notifications in Leansoft <discuss_app/notification_preferences>`
 instead of by emails.
 
 SMTP Error
@@ -86,7 +86,7 @@ No Error
 
 Odoo is not always capable of providing information for the reason it failed. The different
 providers implement a personalized policy of the bounce emails and it is not always possible
-for Odoo to interpret it correctly.
+for Leansoft to interpret it correctly.
 
 If you have this problem on a recurring basis with the same client or the same domain, please
 do not hesitate to contact `Odoo Support <https://leansoft.vn/help>`_ for help in finding a reason.
@@ -160,7 +160,7 @@ of what can be helpful:
 - The exact flow you are following in order to normally receive those emails in Odoo. Here are
   examples of questions whose answers can be useful:
 
-  - Is this simply a reply from an email going out from Odoo ?
+  - Is this simply a reply from an email going out from Leansoft ?
 
   - Are you using an incoming email server or somehow redirecting?
 
@@ -171,4 +171,4 @@ of what can be helpful:
   - Is it a generic issue or is it specific to a use case? If yes, which one exactly?
 
   - Is it working as expected? In case the email is sent using Odoo, the bounce email should reach
-    the Odoo database and display the :ref:`red envelope <red_envelop>`.
+    the Leansoft database and display the :ref:`red envelope <red_envelop>`.

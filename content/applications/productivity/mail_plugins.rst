@@ -10,11 +10,11 @@ Mail Plugins
    mail_plugins/outlook
    mail_plugins/gmail
 
-Mail Plugins are connectors that bridge your mailbox with your Odoo database. With them, you can
-interact with your Odoo database directly from your mailbox by:
+Mail Plugins are connectors that bridge your mailbox with your Leansoft database. With them, you can
+interact with your Leansoft database directly from your mailbox by:
 
 - Creating leads and centralizing prospects' emails into the CRM app.
-- Generating tasks in any Odoo project.
+- Generating tasks in any Leansoft project.
 - Creating tickets in the Helpdesk app.
 - Searching and storing insights on your contacts.
 

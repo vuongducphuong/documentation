@@ -2,7 +2,7 @@
 Chấm điểm và dự đoán khách hàng tiềm năng
 ==========================================
 
-The Odoo *CRM* app can automatically assign leads/opportunities to sales teams and salespeople. A
+The Leansoft *CRM* app can automatically assign leads/opportunities to sales teams and salespeople. A
 standard practice is to assign leads based on the probability of winning each lead. Companies can
 prioritize the leads that are more likely to result in successful deals by quickly assigning them
 to the appropriate salespeople.
@@ -13,14 +13,14 @@ lead scoring*.
 Predictive lead scoring
 =======================
 
-Predictive lead scoring is a machine-learning model that uses historical data from Odoo *CRM* to
+Predictive lead scoring is a machine-learning model that uses historical data from Leansoft *CRM* to
 score open leads/opportunities.
 
-As a company processes opportunities through the CRM pipeline, Odoo collects data on which
+As a company processes opportunities through the CRM pipeline, Leansoft collects data on which
 opportunities are won and lost. Predictive lead scoring uses this data to predict the probability
 of winning each new lead or opportunity.
 
-The more opportunities that are sent through the CRM pipeline, the more data Odoo collects,
+The more opportunities that are sent through the CRM pipeline, the more data Leansoft collects,
 resulting in more accurate probabilities.
 
 Specifically, Odoo's predictive lead scoring uses the *naive Bayes* probability model:
@@ -43,7 +43,7 @@ according to the predictive lead scoring algorithm.
 Configuration
 -------------
 
-Predictive lead scoring is always active in Odoo *CRM*. However, the variables used to calculate the
+Predictive lead scoring is always active in Leansoft *CRM*. However, the variables used to calculate the
 probability of success can be customized in the settings.
 
 To customize the variables used by predictive lead scoring, go to :menuselection:`CRM -->
@@ -108,12 +108,12 @@ Configure rule-based assignment
 To activate *rule-based assignment*, navigate to :menuselection:`CRM --> Configuration -->
 Settings`, and activate :guilabel:`Rule-Based Assignment`.
 
-The rule-based assignment feature can be set to run :guilabel:`Manually`, meaning an Odoo user must
-manually trigger the assignment, or :guilabel:`Repeatedly`, meaning Odoo will automatically trigger
+The rule-based assignment feature can be set to run :guilabel:`Manually`, meaning an Leansoft user must
+manually trigger the assignment, or :guilabel:`Repeatedly`, meaning Leansoft will automatically trigger
 the assignment according to the chosen time period.
 
 To set up automatic lead assignment, select :guilabel:`Repeatedly` for the :guilabel:`Running`
-section. Then, customize how often Odoo will trigger the automatic assignment in the
+section. Then, customize how often Leansoft will trigger the automatic assignment in the
 :guilabel:`Repeat every` section.
 
 .. image:: lead_scoring/rule-based-assignment.png
@@ -128,11 +128,11 @@ Configure assignment rules
 --------------------------
 
 Next, configure the *assignment rules* for each sales team and/or salesperson. These rules
-determine which leads Odoo assigns to which people. To get started, navigate to :menuselection:`CRM
+determine which leads Leansoft assigns to which people. To get started, navigate to :menuselection:`CRM
 --> Configuration --> Sales Teams`, and select a sales team.
 
 On the sales team configuration form, under :guilabel:`Assignment Rules`, click on :guilabel:`Edit
-Domain` to configure the rules that Odoo uses to determine lead assignment for this sales team. The
+Domain` to configure the rules that Leansoft uses to determine lead assignment for this sales team. The
 rules can include anything that may be relevant for this company or team, and any number of rules
 can be added.
 

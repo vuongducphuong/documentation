@@ -86,7 +86,7 @@ Pricelists are the primary tool to manage prices on your eCommerce. They allow y
 website-specific prices - different from the price on the product template - based on the **country
 group**, **currency**, **minimum quantity**, **period**, or **variant**. You can create as many
 pricelists as needed, but it is mandatory to have at least one pricelist configured per website. If
-no custom pricelists are added, Odoo defaults to the **Public Pricelist** for all websites.
+no custom pricelists are added, Leansoft defaults to the **Public Pricelist** for all websites.
 
 .. seealso::
    :doc:`/applications/sales/sales/products_prices/prices/pricing`

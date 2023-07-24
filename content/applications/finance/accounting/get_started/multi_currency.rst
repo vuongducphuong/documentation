@@ -78,7 +78,7 @@ the :guilabel:`Journal`, :guilabel:`Gain Account`, and :guilabel:`Loss Account`.
 .. example::
    If you receive a payment for a customer invoice one month after it was issued, the exchange rate
    has likely changed since. Therefore, this fluctuation implies some profit or loss due to the
-   exchange difference, which Odoo automatically records in the default **Exchange Difference**
+   exchange difference, which Leansoft automatically records in the default **Exchange Difference**
    journal.
 
 .. _multi-currency/config-coa:
@@ -151,7 +151,7 @@ currency in the :guilabel:`Amount in Currency field`.
   :align: center
   :alt: The extra fields related to foreign currencies.
 
-When reconciling, Odoo displays both the foreign currency amount and the equivalent amount in your
+When reconciling, Leansoft displays both the foreign currency amount and the equivalent amount in your
 company's main currency.
 
 .. _multi-currency/mca-exch-entries:

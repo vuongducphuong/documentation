@@ -16,7 +16,7 @@ Access your *Preferences* and choose how you would like your notifications to be
 
 .. image:: get_started/change_preferences.png
    :align: center
-   :alt: View of the preferences page for Odoo Discuss
+   :alt: View of the preferences page for Leansoft Discuss
 
 | By default, the field is set as *Handle by Emails* making messages, notes, and notifications where
   you were mentioned or that you follow, to be sent through email. By choosing *Handle in Odoo*,
@@ -25,14 +25,14 @@ Access your *Preferences* and choose how you would like your notifications to be
 
 .. image:: get_started/inbox_actions.png
    :align: center
-   :alt: View of an inbox message and its action options in Odoo Discuss
+   :alt: View of an inbox message and its action options in Leansoft Discuss
 
 The messages tagged as *Mark as Todo* are also shown in *Starred*, while the ones *Marked as Read*
 are moved to *History*.
 
 .. image:: get_started/starred_messages.png
    :align: center
-   :alt: View of messages marked as todo in Odoo Discuss
+   :alt: View of messages marked as todo in Leansoft Discuss
 
 Start Chatting
 ==============
@@ -44,7 +44,7 @@ sent to you despite of where you are in Odoo.
 .. image:: get_started/odoobot_push.png
    :align: center
    :alt: View of the messages under the messaging menu emphasizing the request for push
-         notifications for Odoo Discuss
+         notifications for Leansoft Discuss
 
 .. tip::
    To stop receiving desktop notifications, reset the notifications settings of your browser.
@@ -55,7 +55,7 @@ To start a chat, click on *New Message* on the *Messaging Menu*, or go to *Discu
 .. image:: get_started/channels_direct_messages.png
    :align: center
    :height: 400
-   :alt: View of discuss’s panel emphasizing the titles channels and direct messages in Odoo Discuss
+   :alt: View of discuss’s panel emphasizing the titles channels and direct messages in Leansoft Discuss
 
 You can also create :doc:`public and private channels <team_communication>`.
 
@@ -69,7 +69,7 @@ Mentions in the chat and on the Chatter
 
 .. image:: get_started/chat_windows.png
    :align: center
-   :alt: View of a couple of chat window messages for Odoo Discuss
+   :alt: View of a couple of chat window messages for Leansoft Discuss
 
 .. tip::
    When a user is mentioned, the search list (list of names) suggests values first based on the
@@ -91,7 +91,7 @@ sidebar and on the *Messaging menu*.
 .. image:: get_started/status.png
    :align: center
    :height: 300
-   :alt: View of the contacts’ status for Odoo Discuss
+   :alt: View of the contacts’ status for Leansoft Discuss
 
 .. seealso::
    - :doc:`team_communication`

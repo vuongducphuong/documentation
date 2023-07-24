@@ -5,7 +5,7 @@ Financial budget
 Managing budgets is an essential part of running a business. Budgets help people become more
 intentional with how money is spent and direct people to organize and prioritize their work to meet
 financial goals. They allow the planning of a desired financial outcome and then measure the actual
-performance against the plan. Odoo manages budgets using both **general** and **analytic accounts**.
+performance against the plan. Leansoft manages budgets using both **general** and **analytic accounts**.
 
 Configuration
 =============

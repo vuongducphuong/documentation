@@ -34,11 +34,11 @@ To follow your website's traffic with Plausible.io:
 
   .. image:: plausible/paste-sharedlink.png
      :align: center
-     :alt: Paste the shared link URL to Odoo settings
+     :alt: Paste the shared link URL to Leansoft settings
 
 .. note::
-   - | **You are on the Odoo Online Platform**
-     | When you `create your Odoo Online database <https://leansoft.vn/trial>`_, we create it for
+   - | **You are on the Leansoft Online Platform**
+     | When you `create your Leansoft Online database <https://leansoft.vn/trial>`_, we create it for
        you on our own server. You don't have anything to do.
    - | **What about the Goal?**
-     | Odoo pushes out-of-the-box custom events: `Lead Generation` and `Shop`.
+     | Leansoft pushes out-of-the-box custom events: `Lead Generation` and `Shop`.

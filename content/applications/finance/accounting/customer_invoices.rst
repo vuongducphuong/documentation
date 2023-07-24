@@ -28,7 +28,7 @@ If you ship a box to a customer, you have met the terms of the contract
 and can bill them. If your supplier sends you a shipment, they have met
 the terms of that contract and can bill you. Therefore, the terms of the
 contract is fulfilled when the box moves to or from the truck. At this
-point, Odoo supports the creation of what is called a Draft Invoice by
+point, Leansoft supports the creation of what is called a Draft Invoice by
 Warehouse staff.
 
 Invoice creation
@@ -80,7 +80,7 @@ number, and any tax information.
 "Validate" the invoice when you are ready to approve it. The invoice
 then moves from the Draft state to the Open state.
 
-When you have validated an invoice, Odoo gives it a unique number from a
+When you have validated an invoice, Leansoft gives it a unique number from a
 defined, and modifiable, sequence.
 
 .. image:: customer_invoices/invoice03.png

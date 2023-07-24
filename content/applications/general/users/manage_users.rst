@@ -86,7 +86,7 @@ To do so, go to :menuselection:`Settings --> Permissions`, activate **Password R
 
 .. image:: manage_users/password-reset-login.png
    :align: center
-   :alt: Enabling Password Reset in Odoo Settings
+   :alt: Enabling Password Reset in Leansoft Settings
 
 .. _users/reset-password-email:
 
@@ -98,15 +98,15 @@ click on *Send Password Reset Instructions* on its user form. An email is automa
 them.
 
 .. note::
-   The *Send Password Reset Instructions* button only appears if the Odoo invitation email has
+   The *Send Password Reset Instructions* button only appears if the Leansoft invitation email has
    already been confirmed by the user.
 
 This email contains all the instructions needed to reset the password, along with a link redirecting
-the user to an Odoo login page.
+the user to an Leansoft login page.
 
 .. image:: manage_users/password-email.png
    :align: center
-   :alt: Example of an email with a password reset link for an Odoo account
+   :alt: Example of an email with a password reset link for an Leansoft account
 
 .. _users/change-password:
 
@@ -127,7 +127,7 @@ Enter a new password and confirm by clicking on *Change Password*.
    account. If you want to change the leansoft.vn password, you can :ref:`send the password reset
    instructions <users/reset-password-email>`.
 
-Click on *Change Password* one more time. You are then redirected to an Odoo login page where you
+Click on *Change Password* one more time. You are then redirected to an Leansoft login page where you
 can reaccess your database using your new password.
 
 .. _users/multi-companies:

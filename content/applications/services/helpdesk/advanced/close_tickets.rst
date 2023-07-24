@@ -97,14 +97,14 @@ the team's settings page, scroll to the :guilabel:`Self-Service` section and che
 
 .. image:: close_tickets/closing-by-customer-setting.png
    :align: center
-   :alt: Customer closing setting in Odoo Helpdesk.
+   :alt: Customer closing setting in Leansoft Helpdesk.
 
 Once the ticket closing settings are enabled, a :guilabel:`Close Ticket` button will be available
 for customers when they view their ticket through the customer portal.
 
 .. image:: close_tickets/closing-customer-view.png
    :align: center
-   :alt: Customer view of ticket closing in Odoo Helpdesk.
+   :alt: Customer view of ticket closing in Leansoft Helpdesk.
 
 .. note::
    Customers are able to view their tickets by clicking the :guilabel:`View the ticket` link they

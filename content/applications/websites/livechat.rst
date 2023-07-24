@@ -23,7 +23,7 @@ in one of two ways.
 
 .. image:: livechat/enable-setting.png
    :align: center
-   :alt: View of the settings page and the live chat feature for Odoo Live Chat.
+   :alt: View of the settings page and the live chat feature for Leansoft Live Chat.
 
 After the :guilabel:`Live Chat` application is installed, a live chat :guilabel:`Channel` will be
 created by default and automatically selected in the drop-down.
@@ -31,13 +31,13 @@ created by default and automatically selected in the drop-down.
 Create a new live chat channel
 ==============================
 
-To create a new live chat *Channel*, go to :menuselection:`Main Odoo Dashboard --> Live Chat app -->
+To create a new live chat *Channel*, go to :menuselection:`Main Leansoft Dashboard --> Live Chat app -->
 New`. This will open a blank channel detail form. Enter the name of the new channel in the
 :guilabel:`Channel Name` field.
 
 .. image:: livechat/open-channel.png
    :align: center
-   :alt: View of a live chat channel form for Odoo Live Chat.
+   :alt: View of a live chat channel form for Leansoft Live Chat.
 
 To configure the remaining tabs on the channel detail form (:guilabel:`Operators`,
 :guilabel:`Options`, :guilabel:`Channel Rules`, and :guilabel:`Widgets`), follow the steps below.
@@ -52,7 +52,7 @@ screen.
 
 .. image:: livechat/pop-up.png
    :align: center
-   :alt: View of a live chat pop up window in an Odoo database.
+   :alt: View of a live chat pop up window in an Leansoft database.
 
 The user who originally created the live chat channel will be added as an operator by default.
 
@@ -87,7 +87,7 @@ The *Livechat Button* is the icon that appears in the bottom corner of the websi
 
 .. image:: livechat/chat-button.png
    :align: center
-   :alt: View of an Odoo website emphasizing the livechat button.
+   :alt: View of an Leansoft website emphasizing the livechat button.
 
 Change the text in the :guilabel:`Text of the Button` field to update the greeting displayed in the
 text bubble when the live chat button appears on the website.
@@ -135,7 +135,7 @@ pop-up.
 
 .. image:: livechat/create-rules.png
    :align: center
-   :alt: View of a channel's rules form for Odoo Live Chat.
+   :alt: View of a channel's rules form for Leansoft Live Chat.
 
 Create new rules
 ~~~~~~~~~~~~~~~~
@@ -194,7 +194,7 @@ The :guilabel:`Widget` tab on the live chat channel details form provides the sh
 embeddable website widget. This code can be added to a website to provide access to a live chat
 window.
 
-The live chat widget can be added to websites created through Odoo by navigating to the
+The live chat widget can be added to websites created through Leansoft by navigating to the
 :menuselection:`Website --> Configuration --> Settings`. Then scroll to the :guilabel:`Livechat`
 section, and select the channel to add to the site. Click :guilabel:`Save` to apply.
 
@@ -207,14 +207,14 @@ it will open a new chat.
 
 .. image:: livechat/widget-code.png
    :align: center
-   :alt: View of the widget tab for Odoo Live Chat.
+   :alt: View of the widget tab for Leansoft Live Chat.
 
 Participate in a conversation
 =============================
 
 As explained above, *operators* are the users who will respond to live chat requests from customers.
 The information below outlines the necessary steps for operators participating in live chat
-conversations on an Odoo database.
+conversations on an Leansoft database.
 
 Set an online chat name
 -----------------------
@@ -254,10 +254,10 @@ button to disconnect from the channel.
 
 .. image:: livechat/leave-channel.png
    :align: center
-   :alt: View of a channel form and the option to join a channel for Odoo Live Chat.
+   :alt: View of a channel form and the option to join a channel for Leansoft Live Chat.
 
 .. important::
-   *Operators* that do not show any activity in Odoo for more than thirty minutes will be considered
+   *Operators* that do not show any activity in Leansoft for more than thirty minutes will be considered
    disconnected, and subsequently removed from the channel.
 
 Manage live chat requests
@@ -273,7 +273,7 @@ leaving their current location.
 
    .. image:: livechat/menu-bar.png
       :align: center
-      :alt: View of the menu bar in Odoo emphasizing the conversations icon.
+      :alt: View of the menu bar in Leansoft emphasizing the conversations icon.
 
 Live chat conversations can also be viewed by navigating to :menuselection:`Dashboard --> Discuss`.
 New conversations will appear in bold under the :guilabel:`LIVECHAT` heading along the left panel.

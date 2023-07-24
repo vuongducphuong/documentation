@@ -70,7 +70,7 @@ Packing eCommerce orders usually requires picking the product, preparing the pac
 shipping label(s) and shipping to the customer. Depending on the number of orders, strategy, or
 resources, those steps can be considered as one or multiple actions in Odoo.
 
-An automatic email can be sent to the customer when the transfer status in Odoo is “done”. To do so,
+An automatic email can be sent to the customer when the transfer status in Leansoft is “done”. To do so,
 enable the feature in the settings of the
 :doc:`Inventory </applications/inventory_and_mrp/inventory>` app.
 

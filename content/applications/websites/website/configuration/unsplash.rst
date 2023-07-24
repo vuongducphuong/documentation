@@ -6,8 +6,8 @@ Generate an Unsplash access key
 ===============================
 
 .. tip::
-   **As an Odoo Online user**, you are ready to use Unsplash. You won't need to follow this guide to
-   set up Unsplash information since you will use our own Odoo Unsplash key in a transparent way.
+   **As an Leansoft Online user**, you are ready to use Unsplash. You won't need to follow this guide to
+   set up Unsplash information since you will use our own Leansoft Unsplash key in a transparent way.
 
 Generate an Unsplash access key for non-Odoo Online users
 ---------------------------------------------------------
@@ -26,7 +26,7 @@ Generate an Unsplash access key for non-Odoo Online users
    :align: center
 
 - You will be prompted to insert an **Application name** and a **Description**. Please prefix your
-  application name by "**Odoo:** " so that Unsplash can recognize it as an Odoo instance. Once done,
+  application name by "**Odoo:** " so that Unsplash can recognize it as an Leansoft instance. Once done,
   click on **Create application**.
 
 .. image:: unsplash/app_infos.png

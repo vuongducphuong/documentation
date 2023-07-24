@@ -18,7 +18,7 @@ form.
 
 .. image:: getting_started/helpdesk-teams-list.png
    :align: center
-   :alt: View of the Helpdesk teams page in Odoo Helpdesk
+   :alt: View of the Helpdesk teams page in Leansoft Helpdesk
 
 Assignment & Visibility
 -----------------------
@@ -51,7 +51,7 @@ box next to :guilabel:`Automatic Assignment` to enable the feature for this team
 .. image:: getting_started/assignment-visibility.png
    :align: center
    :alt: View of a Helpdesk team settings page emphasizing the assignment and visibility features
-         in Odoo Helpdesk
+         in Leansoft Helpdesk
 
 Select one of the following assignment methods, based on how workload should be allocated across
 the team:
@@ -107,7 +107,7 @@ Fill out the remaining fields following the steps below.
 
 .. image:: getting_started/stage-settings.png
    :align: center
-   :alt: View of a stage's settings page in Odoo Helpdesk
+   :alt: View of a stage's settings page in Leansoft Helpdesk
 
 Add email and SMS templates to stages
 -------------------------------------
@@ -131,7 +131,7 @@ Follow the same steps to select, edit, or create an :guilabel:`SMS Template`.
 
 .. image:: getting_started/sms-template.png
    :align: center
-   :alt: View of an SMS template setup page in Odoo Helpdesk
+   :alt: View of an SMS template setup page in Leansoft Helpdesk
 
 .. seealso::
    :doc:`/applications/general/email_communication/email_template`

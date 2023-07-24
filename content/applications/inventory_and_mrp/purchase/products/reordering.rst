@@ -88,7 +88,7 @@ To manage the reordering rules for a single product, navigate to that product pa
 the :guilabel:`Reordering Rules` tab at the top of the form.
 
 To manage all reordering rules for every product, go to :menuselection:`Inventory --> Configuration
---> Reordering Rules`. From this dashboard, typical bulk actions in Odoo can be performed such as
+--> Reordering Rules`. From this dashboard, typical bulk actions in Leansoft can be performed such as
 exporting data or archiving rules that are no longer needed. As well, the :guilabel:`Filters`,
 :guilabel:`Group By` or triple-dotted menu on the form are available to search for and/or organize
 the reordering rules as desired.

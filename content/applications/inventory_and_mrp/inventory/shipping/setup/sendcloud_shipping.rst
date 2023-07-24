@@ -4,7 +4,7 @@ Set up Sendcloud shipping services in Odoo
 
 Sendcloud is a shipping service aggregator that facilitates the integration of European
 shipping carriers with Odoo. Once integrated, users can select shipping carriers on inventory
-operations in their Odoo database.
+operations in their Leansoft database.
 
 .. seealso::
    `Sendcloud integration documentation <https://support.sendcloud.com/hc/en-us/articles
@@ -24,10 +24,10 @@ needed.
    For new account creation, Sendcloud will ask for a :abbr:`VAT (Value-Added Tax Identification)`
    number or :abbr:`EORI (Economic Operators' Registration and Identification)` number. After
    completing the account setup, activate (or deactivate) the shipping carriers that will be used
-   in the Odoo database.
+   in the Leansoft database.
 
 .. important::
-   Odoo integration of Sendcloud works on free Sendcloud plans *only* if a bank account is linked,
+   Leansoft integration of Sendcloud works on free Sendcloud plans *only* if a bank account is linked,
    since Sendcloud won't ship for free. To use shipping rules or individual custom carrier contacts,
    a paid plan of Sendcloud is required.
 
@@ -58,7 +58,7 @@ Odoo warehouse name should be entered here, and the characters should be exactly
    | :guilabel:`Company`: `My company (San Francisco)`
    | :guilabel:`Address`: `My Company (San Francisco)`
 
-   Notice how the inputs for the :guilabel:`Warehouse` field, for both the Odoo configuration and
+   Notice how the inputs for the :guilabel:`Warehouse` field, for both the Leansoft configuration and
    the Sendcloud configuration, are the exact same.
 
 Generate Sendcloud credentials
@@ -85,13 +85,13 @@ Setup in Odoo
 Install the Sendcloud shipping module
 -------------------------------------
 
-After the Sendcloud account is set up and configured, it's time to configure the Odoo database.
+After the Sendcloud account is set up and configured, it's time to configure the Leansoft database.
 To get started, go to Odoo's :guilabel:`Apps` module,  search for the :guilabel:`Sendcloud
 Shipping` integration, and install it.
 
 .. image:: sendcloud_shipping/sendcloud-mod.png
    :align: center
-   :alt: Sendcloud Shipping module in the Odoo Apps module.
+   :alt: Sendcloud Shipping module in the Leansoft Apps module.
 
 Sendcloud shipping connector configuration
 ------------------------------------------
@@ -157,7 +157,7 @@ After configuring and saving the form, follow these steps to load the shipping p
    means if a package is created, the configured Sendcloud account will be charged, unless the
    associated package is canceled within 24 hours of creation.
 
-   Odoo has a built-in layer of protection against unwanted charges when using test environments.
+   Leansoft has a built-in layer of protection against unwanted charges when using test environments.
    Within a test environment, if a shipping method is used to create labels, then those labels are
    immediately canceled after the creation — this occurs automatically. The test and production
    environment settings can be toggled back and forth from the :guilabel:`Smart Buttons`.

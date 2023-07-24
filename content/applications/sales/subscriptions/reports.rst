@@ -18,7 +18,7 @@ concepts to the proper understanding of the following reports:
 
 .. image:: reports/difference-between-MRR-and-ARR.png
   :align: center
-  :alt: Difference between MRR and ARR in Odoo Subscriptions
+  :alt: Difference between MRR and ARR in Leansoft Subscriptions
 
 - **Non-Recurring Revenue (NRR)**: NRR shows the revenue earned for everything else than
   subscription-based products or services. This includes gains of a rare or unique nature that are
@@ -45,7 +45,7 @@ concepts to the proper understanding of the following reports:
 
        .. image:: reports/difference-between-logo-churn-and-revenue-churn.png
           :align: center
-          :alt: Difference between logo churn and revenue churn in Odoo Subscriptions
+          :alt: Difference between logo churn and revenue churn in Leansoft Subscriptions
 
        Reminder: even though they seem to evolve in the same direction most of the time, it might
        not be the case all the time.
@@ -61,14 +61,14 @@ Subscriptions analysis report
 =============================
 
 Go to :menuselection:`Subscriptions --> Reporting --> Subscriptions`. From there, you can change
-the *Measures*. By default, Odoo uses the *Monthly Recurring Revenue*. In addition to that, you
+the *Measures*. By default, Leansoft uses the *Monthly Recurring Revenue*. In addition to that, you
 can choose *Quantity*, *Recurring Price*, *Yearly Recurring Revenue* and *Count*. For this example,
 *Quantity* is added. This way, you can review both of these measures at the same time. You can even
 *Group By Start Date* and, more precisely, by *Week*, to get a clear view of your report.
 
 .. image:: reports/subscriptions-analysis-report.png
   :align: center
-  :alt: Subscriptions analysis report in Odoo Subscriptions
+  :alt: Subscriptions analysis report in Leansoft Subscriptions
 
 Retention analysis report
 =========================
@@ -80,7 +80,7 @@ By using these criteria, you can see the progression of the retention from its s
 
 .. image:: reports/retention-analysis-report.png
   :align: center
-  :alt: Retention analysis report in Odoo Subscriptions
+  :alt: Retention analysis report in Leansoft Subscriptions
 
 Revenue KPIs report
 ===================
@@ -93,7 +93,7 @@ specific information.
 
 .. image:: reports/revenue-KPIs-report.png
   :align: center
-  :alt: Revenue KPIs report in Odoo Subscriptions
+  :alt: Revenue KPIs report in Leansoft Subscriptions
 
 The example below shows the *Monthly Recurring Revenue* detailed report. At the moment, there is no
 data, which is the typical scenario for a new business. But, as your company grows over the months,
@@ -102,7 +102,7 @@ on subscriptions, companies, and sales teams.
 
 .. image:: reports/detailed-MRR-report.png
   :align: center
-  :alt: Detailed MRR report in Odoo Subscriptions
+  :alt: Detailed MRR report in Leansoft Subscriptions
 
 Salesperson dashboard report
 ============================
@@ -114,7 +114,7 @@ apply and the salesperson you want to analyze.
 
 .. image:: reports/salesperson-dashboard-report.png
   :align: center
-  :alt: Salesperson dashboard report in Odoo Subscriptions
+  :alt: Salesperson dashboard report in Leansoft Subscriptions
 
 .. seealso::
    - :doc:`../subscriptions`

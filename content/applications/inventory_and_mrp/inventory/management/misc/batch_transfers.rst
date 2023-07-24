@@ -15,7 +15,7 @@ To activate the batch picking option, go to :menuselection:`Inventory
 
 .. image:: batch_transfers/batch_transfers_01.png
     :align: center
-    :alt: View of the inventory settings. Process to enable the batch pickings option in the Odoo Inventory app
+    :alt: View of the inventory settings. Process to enable the batch pickings option in the Leansoft Inventory app
 
 Then, go to :menuselection:`Inventory --> Operations --> Batch
 Transfers` and hit the create button.
@@ -96,7 +96,7 @@ Enter the *Barcode* application, select the *Batch Transfers* menu.
 
 .. image:: batch_transfers/batch_transfers_11.png
     :align: center
-    :alt: View of the Odoo Barcode app dashboard
+    :alt: View of the Leansoft Barcode app dashboard
 
 Then, you can enter the batch transfer on which you want to work. Batch
 transfers can easily be grouped per responsible if necessary.
@@ -111,14 +111,14 @@ helps differentiate them.
 
 .. image:: batch_transfers/batch_transfers_13.png
     :align: center
-    :alt: View of an in progress batch transfer with the Odoo Barcode application
+    :alt: View of an in progress batch transfer with the Leansoft Barcode application
 
 To see the products to pick from another location, click on the *Next*
 button.
 
 .. image:: batch_transfers/batch_transfers_14.png
     :align: center
-    :alt: View of a ready and completed batch transfer inside of the Odoo Barcode application
+    :alt: View of a ready and completed batch transfer inside of the Leansoft Barcode application
 
 Once all the products have been picked, click on *Validate* (on the
 last page) to mark the batch transfer as done.

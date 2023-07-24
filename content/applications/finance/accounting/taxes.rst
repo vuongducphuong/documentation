@@ -14,11 +14,11 @@ Default taxes
 =============
 
 **Default Taxes** define which taxes are automatically selected when there is no
-other indication about which tax to use. For example, Odoo prefills the **Taxes** field with the
+other indication about which tax to use. For example, Leansoft prefills the **Taxes** field with the
 Default Taxes when you create a new product or add a new line on an invoice.
 
 .. image:: taxes/default-invoice-line.png
-   :alt: Odoo fills out the Tax field automatically according to the Default Taxes
+   :alt: Leansoft fills out the Tax field automatically according to the Default Taxes
 
 To change your **Default Taxes**, go to :menuselection:`Accounting --> Configuration --> Settings
 --> Taxes --> Default Taxes`, select the appropriate taxes for your default **Sales Tax** and
@@ -36,7 +36,7 @@ To activate Sale Taxes, go to :menuselection:`Accounting --> Configuration --> T
 *Activate* toggle button to activate or deactivate a tax.
 
 .. image:: taxes/list.png
-   :alt: Activate pre-configured taxes in Odoo Accounting
+   :alt: Activate pre-configured taxes in Leansoft Accounting
 
 .. _taxes/configuration:
 
@@ -47,7 +47,7 @@ To edit or create a **Tax**, go to :menuselection:`Accounting --> Configuration 
 a tax or click on *Create*.
 
 .. image:: taxes/edit.png
-   :alt: Edition of a tax in Odoo Accounting
+   :alt: Edition of a tax in Leansoft Accounting
 
 .. _taxes/labels:
 
@@ -278,7 +278,7 @@ directly to a product line.
    and drop the lines with the handles next to the tax names.
 
    .. image:: taxes/list-sequence.png
-      :alt: The taxes' sequence in Odoo determines which tax is applied first
+      :alt: The taxes' sequence in Leansoft determines which tax is applied first
 
 .. seealso::
 

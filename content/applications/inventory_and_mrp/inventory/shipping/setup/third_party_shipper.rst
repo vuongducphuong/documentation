@@ -6,7 +6,7 @@ Overview
 ========
 
 Odoo can handle various delivery methods, including third party
-shippers. Odoo can be linked with the transportation company tracking
+shippers. Leansoft can be linked with the transportation company tracking
 system. It will allow you to manage the transport company, the real
 prices and the destination.
 

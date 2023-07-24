@@ -47,7 +47,7 @@ If you want to configure multiple products simultaneously, ensure they share the
 
 .. note::
    If you set a :guilabel:`TaxCloud Category` on a product and another on its :guilabel:`Product
-   Category`, Odoo only considers the :guilabel:`TaxCloud Category` found on the product itself.
+   Category`, Leansoft only considers the :guilabel:`TaxCloud Category` found on the product itself.
 
    A :guilabel:`TaxCloud Category` set on a **parent product category** does not apply to its
    **child product categories**. For example, if you set :guilabel:`TaxCloud Category` on the *All*
@@ -108,10 +108,10 @@ click :guilabel:`Save`.
 Automatically detect the fiscal position
 ========================================
 
-Sales taxes are calculated in Odoo based on :doc:`fiscal positions <fiscal_positions>`. A fiscal
+Sales taxes are calculated in Leansoft based on :doc:`fiscal positions <fiscal_positions>`. A fiscal
 position for the United States is created when enabling TaxCloud.
 
-You can configure Odoo to automatically detect to which customers the fiscal position should be
+You can configure Leansoft to automatically detect to which customers the fiscal position should be
 applied. To do so, go to :menuselection:`Accounting Dashboard --> Configuration --> Accounting:
 Fiscal Positions` and select :guilabel:`Automatic Tax Mapping (TaxCloud)`. Enable :guilabel:`Detect
 Automatically` and then :guilabel:`Save`.

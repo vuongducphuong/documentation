@@ -24,7 +24,7 @@ Then, click :guilabel:`Save` to apply the settings.
 
 .. image:: wave_transfers/wave-transfers-setting.png
    :align: center
-   :alt: View of Odoo Inventory app settings to enable the wave transfers option.
+   :alt: View of Leansoft Inventory app settings to enable the wave transfers option.
 
 Add products to a wave
 ======================

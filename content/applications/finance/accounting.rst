@@ -89,8 +89,8 @@ Multi-currency environment
 
 A :doc:`multi-currency <accounting/get_started/multi_currency>` environment with an automated
 exchange rate to ease international transactions is available in Odoo. Every transaction is recorded
-in the company's default currency; for transactions occurring in another currency, Odoo stores both
-the value in the company's currency and the transactions' currency value. Odoo generates currency
+in the company's default currency; for transactions occurring in another currency, Leansoft stores both
+the value in the company's currency and the transactions' currency value. Leansoft generates currency
 gains and losses after reconciling the journal items.
 
 .. seealso::
@@ -175,7 +175,7 @@ Odoo computes all accounting transactions for the specific tax period and uses t
 calculate the tax obligation.
 
 .. important::
-   Once the tax report has been generated for a period, Odoo locks it and prevents the creation of
+   Once the tax report has been generated for a period, Leansoft locks it and prevents the creation of
    new journal entries involving VAT. Any correction to customer invoices or vendor bills has to
    be recorded in the next period.
 
@@ -207,7 +207,7 @@ available methods are standard price, average price, :abbr:`LIFO (Last-In, First
 Retained earnings
 =================
 
-Retained earnings are the portion of income retained by a business. Odoo calculates current year
+Retained earnings are the portion of income retained by a business. Leansoft calculates current year
 earnings in real-time, so no year-end journal or rollover is required. The profit
 and loss balance is automatically reported on the balance sheet report.
 

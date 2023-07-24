@@ -45,7 +45,7 @@ company only. To do so, on their forms, choose between:
 
 .. image:: companies/product_form_company.png
    :align: center
-   :alt: View of a product's form emphasizing the company field in Odoo Sales
+   :alt: View of a product's form emphasizing the company field in Leansoft Sales
 
 Employees' access
 =================

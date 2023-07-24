@@ -42,7 +42,7 @@ For the sake of demonstration we will be using Google Authenticator
 Setting up two-factor authentication
 ====================================
 
-Once you have your authenticator of choice, go to the Odoo instance
+Once you have your authenticator of choice, go to the Leansoft instance
 you want to setup :abbr:`2FA (two-factor authentication)`, then open
 :guilabel:`Preferences` (or :guilabel:`My Profile`):
 
@@ -110,7 +110,7 @@ You should now :guilabel:`Log out` to follow along.
 
 On the login page, input the username and password of the account for
 which you set up :abbr:`2FA (two-factor authentication)`, rather than
-immediately enter Odoo you will now get a second log-in screen:
+immediately enter Leansoft you will now get a second log-in screen:
 
 .. figure:: 2fa/2fa_input.png
    :align: center

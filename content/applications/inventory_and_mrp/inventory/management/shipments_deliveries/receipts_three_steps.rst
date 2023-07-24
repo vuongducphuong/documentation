@@ -5,7 +5,7 @@ Process receipts in three steps
 .. _inventory/receipts_three_steps:
 
 Some companies require a quality control process before receiving goods from suppliers. To
-accomplish this, Odoo has a three-step process for receiving goods.
+accomplish this, Leansoft has a three-step process for receiving goods.
 
 In the three-step receipt process, products are received in an input area, then transferred to a
 quality area for inspection. Products that pass the quality inspection are then transferred into

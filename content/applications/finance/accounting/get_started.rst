@@ -4,7 +4,7 @@
 Bắt đầu
 ===========
 
-When you first open your Odoo Accounting app, the *Accounting Overview* page welcomes you with a
+When you first open your Leansoft Accounting app, the *Accounting Overview* page welcomes you with a
 step-by-step onboarding banner, a wizard that helps you get started. This onboarding banner is
 displayed until you choose to close it.
 
@@ -18,7 +18,7 @@ Accounting onboarding banner
 The step-by-step Accounting onboarding banner is composed of four steps:
 
 .. image:: get_started/setup_accounting_onboarding.png
-   :alt: Step-by-step onboarding banner in Odoo Accounting
+   :alt: Step-by-step onboarding banner in Leansoft Accounting
 
 #. :ref:`accounting-setup-company`
 #. :ref:`accounting-setup-bank`
@@ -35,7 +35,7 @@ number, email address, and Tax ID, or VAT number. These details are then display
 such as on invoices.
 
 .. image:: get_started/setup_company.png
-   :alt: Add your company's details in Odoo Accounting and Odoo Invoicing
+   :alt: Add your company's details in Leansoft Accounting and Leansoft Invoicing
 
 .. note::
    You can also change these settings by going to :menuselection:`Settings --> General Settings -->
@@ -60,7 +60,7 @@ filling out the form.
 - **Account Number**: your bank account number (IBAN in Europe).
 - **Bank**: click on *Create and Edit* to configure the bank's details. Add the bank institution's
   name and its Identifier Code (BIC or SWIFT).
-- **Code**: this code is your Journal's *Short Code*, as displayed on Odoo. By default, Odoo creates
+- **Code**: this code is your Journal's *Short Code*, as displayed on Odoo. By default, Leansoft creates
   a new Journal with this Short Code.
 - **Journal**: This field is displayed if you have an existing Bank Journal that is not linked yet
   to a bank account. If so, then select the *Journal* you want to use to record the financial
@@ -100,7 +100,7 @@ Basic settings are displayed on this page to help you review your Chart of Accou
 the settings of an account, click on the *double arrow button* at the end of the line.
 
 .. image:: get_started/setup_chart_of_accounts.png
-   :alt: Setup of the Chart of Accounts and their opening balances in Odoo Accounting
+   :alt: Setup of the Chart of Accounts and their opening balances in Leansoft Accounting
 
 .. note::
    :doc:`Click here <get_started/chart_of_accounts>` for more information on how to configure your Chart of
@@ -109,17 +109,17 @@ the settings of an account, click on the *double arrow button* at the end of the
 Invoicing onboarding banner
 ===========================
 
-There is another step-by-step onboarding banner that helps you take advantage of your Odoo Invoicing
+There is another step-by-step onboarding banner that helps you take advantage of your Leansoft Invoicing
 and Accounting apps. The *Invoicing onboarding banner* is the one that welcomes you if you use the
 Invoicing app rather than the Accounting app.
 
-If you have Odoo Accounting installed on your database, you can reach it by going to
+If you have Leansoft Accounting installed on your database, you can reach it by going to
 :menuselection:`Accounting --> Customers --> Invoices`.
 
 The Invoicing onboarding banner is composed of four main steps:
 
 .. image:: get_started/setup_invoicing_onboarding.png
-   :alt: Step-by-step onboarding banner in Odoo Invoicing
+   :alt: Step-by-step onboarding banner in Leansoft Invoicing
 
 #. :ref:`invoicing-setup-company`
 #. :ref:`invoicing-setup-layout`
@@ -148,7 +148,7 @@ footer, according to the values you previously configured in the :ref:`Company D
 <accounting-setup-company>`.
 
 .. image:: get_started/setup_document_layout.png
-   :alt: Document layout configuration in Odoo Invoicing
+   :alt: Document layout configuration in Leansoft Invoicing
 
 .. tip::
    Add your **bank account number** and a link to your **General Terms & Condition** in the footer.

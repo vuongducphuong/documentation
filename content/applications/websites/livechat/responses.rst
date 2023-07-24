@@ -2,8 +2,8 @@
 Commands and canned responses
 =============================
 
-In the Odoo *Live Chat* application, *commands* allow the user to perform specific actions both
-inside the chat window, and through other Odoo applications. The *Live Chat* app also includes
+In the Leansoft *Live Chat* application, *commands* allow the user to perform specific actions both
+inside the chat window, and through other Leansoft applications. The *Live Chat* app also includes
 *canned responses*. These are customized, pre-configured substitutions that allow users to replace
 shortcut entries in place of longer, well-thought out responses to some of the most common questions
 and comments.
@@ -24,7 +24,7 @@ view of the chat.
 
 .. image:: responses/responses-ticket-link.png
    :align: center
-   :alt: View of the chat window with a helpdesk ticket created in Odoo Live Chat.
+   :alt: View of the chat window with a helpdesk ticket created in Leansoft Live Chat.
 
 More information about each available command can be found below.
 
@@ -42,7 +42,7 @@ entry types an operator can make is displayed.
 
 .. image:: responses/responses-help.png
    :align: center
-   :alt: View of the message generated from using the /help command in Odoo Live Chat.
+   :alt: View of the message generated from using the /help command in Leansoft Live Chat.
 
 .. seealso::
   - :doc:`/applications/productivity/discuss/overview/get_started`
@@ -192,7 +192,7 @@ followed by the shortcut.
 
 .. image:: responses/canned-responses.png
    :align: center
-   :alt: View of a chat window and the use of a canned response in Odoo Live Chat.
+   :alt: View of a chat window and the use of a canned response in Leansoft Live Chat.
 
 .. tip::
    Typing `:` into a chat window on its own will generate a list of available canned responses.

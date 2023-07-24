@@ -38,7 +38,7 @@ Configuration --> Chart of Accounts`, click on *Create*, and fill out the form.
 
 .. image:: deferred_revenues/deferred_revenues01.png
    :align: center
-   :alt: Configuration of a Deferred Revenue Account in Odoo Accounting
+   :alt: Configuration of a Deferred Revenue Account in Leansoft Accounting
 
 .. note::
    This account's type must be either *Current Liabilities* or *Non-current Liabilities*
@@ -54,7 +54,7 @@ deferred.
 
 .. image:: deferred_revenues/deferred_revenues02.png
    :align: center
-   :alt: Selection of a Deferred Revenue Account on a draft invoice in Odoo Accounting
+   :alt: Selection of a Deferred Revenue Account on a draft invoice in Leansoft Accounting
 
 Choose a different Income Account for specific products
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -79,7 +79,7 @@ want to modify, click on the account, and select the right one.
 
 .. image:: deferred_revenues/deferred_revenues04.png
    :align: center
-   :alt: Modification of a posted journal item's account in Odoo Accounting
+   :alt: Modification of a posted journal item's account in Leansoft Accounting
 
 Deferred Revenues entries
 =========================
@@ -99,15 +99,15 @@ Sales** tab.
 
 .. image:: deferred_revenues/deferred_revenues05.png
    :align: center
-   :alt: Deferred Revenue entry in Odoo Accounting
+   :alt: Deferred Revenue entry in Leansoft Accounting
 
 Once done, you can click on *Compute Revenue* (next to the *Confirm* button) to generate all the
-values of the **Revenue Board**. This board shows you all the entries that Odoo will post to
+values of the **Revenue Board**. This board shows you all the entries that Leansoft will post to
 recognize your revenue, and at which date.
 
 .. image:: deferred_revenues/deferred_revenues06.png
    :align: center
-   :alt: Revenue Board in Odoo Accounting
+   :alt: Revenue Board in Leansoft Accounting
 
 What does "Prorata Temporis" mean?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -136,7 +136,7 @@ would do to `create a new entry`_.
 
 .. image:: deferred_revenues/deferred_revenues07.png
    :align: center
-   :alt: Create Deferred Entry from a journal item in Odoo Accounting
+   :alt: Create Deferred Entry from a journal item in Leansoft Accounting
 
 Deferred Revenue Models
 =======================
@@ -162,7 +162,7 @@ model button fills out the form according to that model.
 
 .. image:: deferred_revenues/deferred_revenues08.png
    :align: center
-   :alt: Deferred Revenue model button in Odoo Accounting
+   :alt: Deferred Revenue model button in Leansoft Accounting
 
 .. _deferred-revenues-automation:
 
@@ -184,7 +184,7 @@ You have three choices for the **Automate Deferred Revenue** field:
 
 .. image:: deferred_revenues/deferred_revenues09.png
    :align: center
-   :alt: Automate Deferred Revenue on an account in Odoo Accounting
+   :alt: Automate Deferred Revenue on an account in Leansoft Accounting
 
 .. tip::
    You can, for example, select this account as the default **Income Account** of a product to fully

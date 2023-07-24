@@ -216,7 +216,7 @@ alerts will be created.
 .. important::
    To sell perishable products with expiration dates, the :guilabel:`Removal Strategy` for the
    :guilabel:`Location` the products are stored in must be set to :abbr:`FEFO (First Expiry, First
-   Out)`. If there is not enough stock of perishable products in one lot, Odoo will automatically
+   Out)`. If there is not enough stock of perishable products in one lot, Leansoft will automatically
    take the remaining quantity required from a second lot with the next-soonest expiration date.
    Removal strategies can also be set on :guilabel:`Product Categories`.
 

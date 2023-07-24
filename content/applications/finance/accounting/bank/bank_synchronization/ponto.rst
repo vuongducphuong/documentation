@@ -43,10 +43,10 @@ Link your bank accounts with Ponto
       :align: center
       :alt: Add bank accounts to your Ponto account.
 
-#. Make sure to add all bank accounts you want to synchronize with your Odoo database before moving
+#. Make sure to add all bank accounts you want to synchronize with your Leansoft database before moving
    on to the next steps.
 
-Link your Ponto account with your Odoo database
+Link your Ponto account with your Leansoft database
 -----------------------------------------------
 
 #. Go to :menuselection:`Accounting --> Configuration --> Add a Bank Account`.
@@ -64,7 +64,7 @@ Link your Ponto account with your Odoo database
 #. Finish the flow.
 
 .. note::
-   You have to authorize all the accounts you want to access in Odoo, but Odoo will filter the
+   You have to authorize all the accounts you want to access in Odoo, but Leansoft will filter the
    accounts based on the institution you selected in the second step.
 
 Update your synchronization credentials

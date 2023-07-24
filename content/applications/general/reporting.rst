@@ -10,7 +10,7 @@ and visualize your records' data.
 Selecting a view
 ================
 
-Depending on the report, Odoo can display the data in various ways. Sometimes, a unique view
+Depending on the report, Leansoft can display the data in various ways. Sometimes, a unique view
 fully tailored to the report is available, while several views are available for others. However,
 two generic views are dedicated to reporting: the graph and pivot views.
 
@@ -51,7 +51,7 @@ Next, you should choose what is measured. By default, a measure is always select
 edit it, click :guilabel:`Measures` and choose one or, only for pivots, multiple measures.
 
 .. note::
-   When you select a measure, Odoo aggregates the values recorded on that field for the filtered
+   When you select a measure, Leansoft aggregates the values recorded on that field for the filtered
    records. Only numerical fields (:ref:`integer <studio/fields/simple-fields/integer>`,
    :ref:`decimal <studio/fields/simple-fields/decimal>`, :ref:`monetary
    <studio/fields/simple-fields/monetary>`) can be measured. In addition, the :guilabel:`Count`

@@ -8,7 +8,7 @@ Export data from Odoo
 =====================
 
 When working with a database, it sometimes is necessary to export your data in a distinct file.
-Doing so can help to do reporting over your activities (even if Odoo offers a precise and easy
+Doing so can help to do reporting over your activities (even if Leansoft offers a precise and easy
 reporting tool with each available application).
 
 With Odoo, you can export the values from any field in any record. To do so,
@@ -89,7 +89,7 @@ How to adapt the template
 .. image:: export_import_data/dragdown.gif
    :align: center
 
-* When you add a new column, Odoo might not be able to map it automatically if its
+* When you add a new column, Leansoft might not be able to map it automatically if its
   label doesn't fit any field in Odoo. Don't worry! You can map
   new columns manually when you test the import. Search the list for the
   corresponding field.
@@ -144,20 +144,20 @@ formats will not be recognized. This can cause confusion due to day-month invers
 difficult to guess which part of a date format is the day and which part is the month in a date such
 as '01-03-2016'.
 
-To view which date format Odoo has found from your file you can check the **Date Format** that is
+To view which date format Leansoft has found from your file you can check the **Date Format** that is
 shown when clicking on **Options** under the file selector. If this format is incorrect you can
 change it to your liking using the *ISO 8601* to define the format.
 
 .. note::
    If you are importing an excel (.xls, .xlsx) file, you can use date cells to store dates as the
    display of dates in excel is different from the way it is stored. That way you will be sure that
-   the date format is correct in Odoo whatever your locale date format is.
+   the date format is correct in Leansoft whatever your locale date format is.
 
 Can I import numbers with currency sign (e.g.: $32.00)?
 -------------------------------------------------------
 
 Yes, we fully support numbers with parenthesis to represent negative sign as well as numbers with
-currency sign attached to them. Odoo also automatically detect which thousand/decimal separator you
+currency sign attached to them. Leansoft also automatically detect which thousand/decimal separator you
 use (you can change those under **options**). If you use a currency symbol that is not known to
 Odoo, it might not be recognized as a number though and it will crash.
 
@@ -183,7 +183,7 @@ By default the Import preview is set on commas as field separators and quotation
 delimiters. If your csv file does not have these settings, you can modify the File Format Options
 (displayed under the Browse CSV file bar after you select your file).
 
-Note that if your CSV file has a tabulation as separator, Odoo will not detect the separations. You
+Note that if your CSV file has a tabulation as separator, Leansoft will not detect the separations. You
 will need to change the file format options in your spreadsheet application. See the following
 question.
 
@@ -202,14 +202,14 @@ What's the difference between Database ID and External ID?
 ----------------------------------------------------------
 
 Some fields define a relationship with another object. For example, the country of a contact is a
-link to a record of the 'Country' object. When you want to import such fields, Odoo will have to
-recreate links between the different records. To help you import such fields, Odoo provides three
+link to a record of the 'Country' object. When you want to import such fields, Leansoft will have to
+recreate links between the different records. To help you import such fields, Leansoft provides three
 mechanisms. You must use one and only one mechanism per field you want to import.
 
-For example, to reference the country of a contact, Odoo proposes you 3 different fields to import:
+For example, to reference the country of a contact, Leansoft proposes you 3 different fields to import:
 
 - Country: the name or code of the country
-- Country/Database ID: the unique Odoo ID for a record, defined by the ID postgresql column
+- Country/Database ID: the unique Leansoft ID for a record, defined by the ID postgresql column
 - Country/External ID: the ID of this record referenced in another application (or the .XML file
   that imported it)
 
@@ -289,16 +289,16 @@ Can I import several times the same record?
 If you import a file that contains one of the column "External ID" or "Database ID", records that
 have already been imported will be modified instead of being created. This is very useful as it
 allows you to import several times the same CSV file while having made some changes in between two
-imports. Odoo will take care of creating or modifying each record depending if it's new or not.
+imports. Leansoft will take care of creating or modifying each record depending if it's new or not.
 
-This feature allows you to use the Import/Export tool of Odoo to modify a batch of records in your
+This feature allows you to use the Import/Export tool of Leansoft to modify a batch of records in your
 favorite spreadsheet application.
 
 What happens if I do not provide a value for a specific field?
 --------------------------------------------------------------
 
-If you do not set all fields in your CSV file, Odoo will assign the default value for every non
-defined fields. But if you set fields with empty values in your CSV file, Odoo will set the EMPTY
+If you do not set all fields in your CSV file, Leansoft will assign the default value for every non
+defined fields. But if you set fields with empty values in your CSV file, Leansoft will set the EMPTY
 value in the field, instead of assigning the default value.
 
 How to export/import different tables from an SQL application to Odoo?
@@ -356,7 +356,7 @@ External ID of the companies. We had to prefix the "External ID" by the name of 
 conflict of ID between persons and companies (person_1 and company_1 who shared the same ID 1 in the
 original database).
 
-The two files produced are ready to be imported in Odoo without any modifications. After having
+The two files produced are ready to be imported in Leansoft without any modifications. After having
 imported these two CSV files, you will have 4 contacts and 3 companies. (the firsts two contacts are
 linked to the first company). You must first import the companies and then the persons.
 
@@ -378,7 +378,7 @@ How to customize the file
   .. image:: export_import_data/dragdown.gif
      :align: center
 
-* When you add a new column, Odoo might not be able to map it automatically if its
+* When you add a new column, Leansoft might not be able to map it automatically if its
   label doesn't fit any field of the system.
   If so, find the corresponding field using the search.
 
@@ -402,7 +402,7 @@ Setting an ID is not mandatory when importing but it helps in many cases:
 How to import relation fields
 =============================
 
-An Odoo object is always related to many other objects (e.g. a product is linked
+An Leansoft object is always related to many other objects (e.g. a product is linked
 to product categories, attributes, vendors, etc.). To import those relations you need to
 import the records of the related object first from their own list menu.
 

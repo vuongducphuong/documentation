@@ -71,7 +71,7 @@ also enable :guilabel:`Price Filtering` to enable price filters.
 
 .. tip::
    You can use **attribute filters** even if you do not work with product variants. When adding
-   attributes to your products, make sure only to specify *one* value per attribute. Odoo does not
+   attributes to your products, make sure only to specify *one* value per attribute. Leansoft does not
    create variants if no combination is possible.
 
 Sort-by search

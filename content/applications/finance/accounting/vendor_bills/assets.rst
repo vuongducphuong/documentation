@@ -42,7 +42,7 @@ Configuration --> Chart of Accounts`, click on *Create*, and fill out the form.
 
 .. image:: assets/assets01.png
    :align: center
-   :alt: Configuration of an Assets Account in Odoo Accounting
+   :alt: Configuration of an Assets Account in Leansoft Accounting
 
 .. note::
    This account's type must be either *Fixed Assets* or *Non-current Assets*.
@@ -57,7 +57,7 @@ On a draft bill, select the right account for all the assets you are buying.
 
 .. image:: assets/assets02.png
    :align: center
-   :alt: Selection of an Assets Account on a draft bill in Odoo Accounting
+   :alt: Selection of an Assets Account on a draft bill in Leansoft Accounting
 
 .. _product-assets-account:
 
@@ -86,7 +86,7 @@ one.
 
 .. image:: assets/assets04.png
    :align: center
-   :alt: Modification of a posted journal item's account in Odoo Accounting
+   :alt: Modification of a posted journal item's account in Leansoft Accounting
 
 Assets entries
 ==============
@@ -108,15 +108,15 @@ Purchase** tab.
 
 .. image:: assets/assets05.png
    :align: center
-   :alt: Assets entry in Odoo Accounting
+   :alt: Assets entry in Leansoft Accounting
 
 Once done, you can click on *Compute Depreciation* (next to the *Confirm* button) to generate all
-the values of the **Depreciation Board**. This board shows you all the entries that Odoo will post
+the values of the **Depreciation Board**. This board shows you all the entries that Leansoft will post
 to depreciate your asset, and at which date.
 
 .. image:: assets/assets06.png
    :align: center
-   :alt: Depreciation Board in Odoo Accounting
+   :alt: Depreciation Board in Leansoft Accounting
 
 What does "Prorata Temporis" mean?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -159,7 +159,7 @@ Then, click on *Action*, select **Create Asset**, and fill out the form the same
 
 .. image:: assets/assets07.png
    :align: center
-   :alt: Create Asset Entry from a journal item in Odoo Accounting
+   :alt: Create Asset Entry from a journal item in Leansoft Accounting
 
 Modification of an Asset
 ========================
@@ -178,7 +178,7 @@ accessed with a Smart Button.
 
 .. image:: assets/assets08.png
    :align: center
-   :alt: Gross Increase smart button in Odoo Accounting
+   :alt: Gross Increase smart button in Leansoft Accounting
 
 Disposal of Fixed Assets
 ========================
@@ -189,7 +189,7 @@ To do so, open the asset you want to dispose of, click on *Sell or Dispose*, and
 
 .. image:: assets/assets09.png
    :align: center
-   :alt: Disposal of Assets in Odoo Accounting
+   :alt: Disposal of Assets in Leansoft Accounting
 
 Odoo Accounting then generates all the journal entries necessary to dispose of the asset, including
 the gain or loss on sale, which is based on the difference between the asset's book value at the
@@ -224,7 +224,7 @@ model button fills out the form according to that model.
 
 .. image:: assets/assets10.png
    :align: center
-   :alt: Assets model button in Odoo Accounting
+   :alt: Assets model button in Leansoft Accounting
 
 .. _assets-automation:
 
@@ -246,7 +246,7 @@ You have three choices for the **Automate Assets** field:
 
 .. image:: assets/assets11.png
    :align: center
-   :alt: Automate Assets on an account in Odoo Accounting
+   :alt: Automate Assets on an account in Leansoft Accounting
 
 .. tip::
    You can, for example, select this account as the default **Expense Account** of a product to

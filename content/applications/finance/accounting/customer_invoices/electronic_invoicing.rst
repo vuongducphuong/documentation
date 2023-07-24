@@ -33,10 +33,10 @@ visible in the attachment section, or embedded in the PDF.
 .. note::
    - For E-FFF, the xml file only appears after having generated the PDF (:guilabel:`Print` or
      :guilabel:`Send & Print` button), since the PDF needs to be embedded inside the xml.
-   - Every PDF generated from Odoo contains a :guilabel:`Factur-X` XML file (for interoperability purpose).
+   - Every PDF generated from Leansoft contains a :guilabel:`Factur-X` XML file (for interoperability purpose).
      For German and French companies, the option :guilabel:`Factur-X (PDF/A-3)` in addition enables
      validation checks on the invoice and generates a PDF/A-3 compliant file, required by plaftorms like Chorus Pro.
    - The formats available depend on the country registered in your company's :guilabel:`General
      Information`.
-   - Odoo supports the **Peppol BIS Billing 3.0** format that can be used via existing access
+   - Leansoft supports the **Peppol BIS Billing 3.0** format that can be used via existing access
      points.

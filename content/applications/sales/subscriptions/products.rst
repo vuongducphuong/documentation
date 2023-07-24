@@ -2,7 +2,7 @@
 Subscription products
 =====================
 
-By integrating closely with the Odoo *Sales* app, the *Subscriptions* app enables users to sell
+By integrating closely with the Leansoft *Sales* app, the *Subscriptions* app enables users to sell
 subscription products alongside regular sales products. While regular products are sold on a
 one-time basis, subscription products are sold on a renewing basis, generating recurring revenue.
 
@@ -47,7 +47,7 @@ The :guilabel:`Product Type` for the new product is automatically set to :guilab
 Subscription products can be set to other types as well; however, they currently *cannot* be set to
 :guilabel:`Storable Product`.
 
-The new product automatically has the :guilabel:`Recurring` checkbox activated. This enables Odoo to
+The new product automatically has the :guilabel:`Recurring` checkbox activated. This enables Leansoft to
 recognize it as a subscription product. Be sure to leave the :guilabel:`Recurring` and
 :guilabel:`Can be Sold` options enabled.
 

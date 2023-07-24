@@ -9,7 +9,7 @@ Warehouse
 ---------
 
 In Odoo, a **Warehouse** is the actual building/place in which a company's items are stocked.
-Multiple warehouses can be set up in Odoo and the user can create moves between warehouses.
+Multiple warehouses can be set up in Leansoft and the user can create moves between warehouses.
 
 Location
 --------
@@ -46,7 +46,7 @@ To activate locations, go to :menuselection:`Configuration --> Settings` and ena
 
 .. image:: warehouses_locations/storage-location-warehouse-setting.png
    :align: center
-   :alt: Enable the storage location feature in Odoo Inventory settings.
+   :alt: Enable the storage location feature in Leansoft Inventory settings.
 
 .. important::
    To manage several routes within the warehouses, also enable :guilabel:`Multi-Step Routes` and
@@ -63,7 +63,7 @@ characters maximum.
 
 .. image:: warehouses_locations/create-new-warehouse.png
    :align: center
-   :alt: Short name field of a warehouse on Odoo Inventory.
+   :alt: Short name field of a warehouse on Leansoft Inventory.
 
 .. important::
    The :guilabel:`Short Name` appears on transfer orders and other warehouse documents. Odoo
@@ -90,4 +90,4 @@ Then, fill out a :guilabel:`Location Name` and a :guilabel:`Parent Location` and
 
 .. image:: warehouses_locations/create-new-location.png
    :align: center
-   :alt: Create a new warehouse location in Odoo Inventory.
+   :alt: Create a new warehouse location in Leansoft Inventory.

@@ -63,5 +63,5 @@ is the technical name given to a model. For each model, enable the following opt
 
 .. important::
    Making changes in access rights can have a big impact on the database. For this reason, we
-   recommend you to contact your Odoo Business Analyst or our Support Team, unless you have
+   recommend you to contact your Leansoft Business Analyst or our Support Team, unless you have
    knowledge about Domains in Odoo.

@@ -32,7 +32,7 @@ in the upper right corner of the subscription.
 
 .. image:: renewals/renew-your-subscription.png
   :align: center
-  :alt: Renew your subscription with Odoo Subscriptions
+  :alt: Renew your subscription with Leansoft Subscriptions
 
 .. important::
    The *To renew* tag is automatically ticked when a payment fails. This indicator also appears
@@ -41,7 +41,7 @@ in the upper right corner of the subscription.
 
    .. image:: renewals/customer-preview-of-a-renewal.png
      :align: center
-     :alt: Customer preview of a renewal with Odoo Subscriptions
+     :alt: Customer preview of a renewal with Leansoft Subscriptions
 
 When a subscription needs to be renewed, you have the possibility to use a new button called
 *Renewal quotation*. By clicking on it, a new quotation is created. From there, start a basic sales
@@ -56,7 +56,7 @@ first *Send by email* the quotation to your customers in order to have their con
 
    .. image:: renewals/renew-a-quotation.png
      :align: center
-     :alt: Renew a quotation with Odoo Subscriptions
+     :alt: Renew a quotation with Leansoft Subscriptions
 
    By clicking on the *Sales* button, you have a summary of your sales orders in a list view.
    The only difference between your two quotations is the description underneath the
@@ -64,7 +64,7 @@ first *Send by email* the quotation to your customers in order to have their con
 
    .. image:: renewals/subscription-management-category.png
      :align: center
-     :alt: Renewal as Subscription Management form in Odoo Subscriptions
+     :alt: Renewal as Subscription Management form in Leansoft Subscriptions
 
 Visualize your subscriptions to renew
 =====================================
@@ -74,7 +74,7 @@ to your *Subscriptions dashboard* and use the filter *To renew*.
 
 .. image:: renewals/subscriptions-dashboard-with-the-to-renew-filter.png
   :align: center
-  :alt: List view of all subscriptions and use of the filter to renew in Odoo Subscriptions
+  :alt: List view of all subscriptions and use of the filter to renew in Leansoft Subscriptions
 
 .. seealso::
    - :doc:`../subscriptions`

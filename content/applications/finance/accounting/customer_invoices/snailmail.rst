@@ -19,7 +19,7 @@ Options` section.
 
 .. image:: snailmail/setup-snailmail.png
    :align: center
-   :alt: Under settings enable the snailmail feature in Odoo Accounting
+   :alt: Under settings enable the snailmail feature in Leansoft Accounting
 
 Send invoices by post
 =====================
@@ -30,7 +30,7 @@ your customer’s address is set correctly, including the country, before sendin
 .. important::
    Your document must respect the following rules to pass the validation before being sent:
 
-   - Margins must be **5 mm** on all sides. As Odoo forces the outer margins by filling them with
+   - Margins must be **5 mm** on all sides. As Leansoft forces the outer margins by filling them with
      white before sending the snailmail, it can results in the user's custom being cut off if it
      protrudes into the margins. To check the margins, activate the :ref:`developer mode
      <developer-mode>`, go to :menuselection:`General Settings --> Technical --> Reporting
@@ -49,9 +49,9 @@ Snailmail is an :doc:`/applications/general/in_app_purchase` service that requir
 
 To buy stamps, go to :menuselection:`Accounting --> Configuration --> Settings --> Customer
 invoices: Snailmail`, click on :guilabel:`Buy credits`, or go to :menuselection:`Settings --> In-App
-Purchases: Odoo IAP`, and click on :guilabel:`View my Services`.
+Purchases: Leansoft IAP`, and click on :guilabel:`View my Services`.
 
 .. tip::
-   - If you are on Odoo Online and have the Enterprise version, you benefit from free trial credits
+   - If you are on Leansoft Online and have the Enterprise version, you benefit from free trial credits
      to test the feature.
    - Click `here <https://iap.leansoft.vn/privacy#header_4>`_ to know about our *Privacy Policy*.

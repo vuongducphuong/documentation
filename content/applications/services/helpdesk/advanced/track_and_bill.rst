@@ -177,7 +177,7 @@ product configured in the steps above. After updating any other necessary inform
 :guilabel:`Confirm` the quotation.
 
 .. note::
-   Unlike with the prepaid services quotation, Odoo will not allow an invoice to be created at this
+   Unlike with the prepaid services quotation, Leansoft will not allow an invoice to be created at this
    time. That is because no services have been performed; in other words nothing has been delivered,
    therefore, there is nothing to invoice.
 

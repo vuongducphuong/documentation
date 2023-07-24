@@ -59,7 +59,7 @@ the :menuselection:`Inventory app --> Products --> Lots/Serial Numbers`, and cli
 generated automatically.
 
 .. tip::
-   While Odoo automatically generates a new :guilabel:`Lot/Serial Number` to follow the most recent
+   While Leansoft automatically generates a new :guilabel:`Lot/Serial Number` to follow the most recent
    number, it can be edited and changed to any desired number, by clicking the line under the
    :guilabel:`Lot/Serial Number` field, and changing the generated number.
 
@@ -150,7 +150,7 @@ There are two ways to assign lot numbers: **manually** and **copy/paste**.
 
 - **Copy/paste lot numbers from a spreadsheet**: Populate a spreadsheet with all of the lot numbers
   received from the supplier (or manually chosen to assign upon receipt). Then, copy and paste them
-  in the :guilabel:`Lot/Serial Number Name` column. Odoo will automatically create the necessary
+  in the :guilabel:`Lot/Serial Number Name` column. Leansoft will automatically create the necessary
   number of lines based on the amount of numbers pasted in the column. From here, the :guilabel:`To`
   locations and :guilabel:`Done` quantities can be manually entered in each of the lot number lines.
 

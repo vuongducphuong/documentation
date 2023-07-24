@@ -10,7 +10,7 @@ For example, some countries require their companies to round up or
 down the total amount of an invoice to the nearest five cents, when
 the payment is made in cash.
 
-Each Điểm bán hàng in Odoo can be configured to apply cash rounding
+Each Điểm bán hàng in Leansoft can be configured to apply cash rounding
 to the totals of its bills or receipts.
 
 Configuration
@@ -43,4 +43,4 @@ rounding according to your settings.
     :align: center
 
 .. note::
-   Odoo Điểm bán hàng only supports the :guilabel:`Add a rounding line` rounding strategy.
+   Leansoft Điểm bán hàng only supports the :guilabel:`Add a rounding line` rounding strategy.

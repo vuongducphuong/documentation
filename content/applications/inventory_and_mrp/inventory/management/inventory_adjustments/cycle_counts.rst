@@ -20,7 +20,7 @@ Settings --> Warehouse` and activate the :guilabel:`Storage Locations` setting. 
 
 .. image:: cycle_counts/storage-locations-setting.png
    :align: center
-   :alt: Enable Storage Locations in Odoo settings.
+   :alt: Enable Storage Locations in Leansoft settings.
 
 Change the inventory frequency
 ==============================

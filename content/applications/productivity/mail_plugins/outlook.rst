@@ -5,7 +5,7 @@ Outlook Plugin
 Configuration
 =============
 
-The Outlook :doc:`Mail Plugin <../mail_plugins>` needs to be configured both on Odoo and Outlook.
+The Outlook :doc:`Mail Plugin <../mail_plugins>` needs to be configured both on Leansoft and Outlook.
 
 .. _mail-plugin/outlook/enable-mail-plugin:
 
@@ -63,13 +63,13 @@ Connect your database
 
    .. image:: outlook/odoo-for-outlook.png
       :align: center
-      :alt: Odoo for Outlook add-in button
+      :alt: Leansoft for Outlook add-in button
 
 #. The right-side panel can now display **Company Insights**. At the bottom, click on *Login*.
 
    .. image:: outlook/panel-login.png
       :align: center
-      :alt: Logging in your Odoo database
+      :alt: Logging in your Leansoft database
 
    .. note::
       Only a limited amount of *Company Insights* (*Lead Enrichment*) requests are available as a
@@ -90,11 +90,11 @@ Connect your database
       Once done, the Outlook panel needs to be opened again.
 
 
-#. Enter your Odoo database URL and click on *Login*.
+#. Enter your Leansoft database URL and click on *Login*.
 
    .. image:: outlook/enter-database-url.png
       :align: center
-      :alt: Entering your Odoo database URL
+      :alt: Entering your Leansoft database URL
 
 #. Click on *Allow* to open the pop-up window.
 
@@ -128,10 +128,10 @@ time, it's possible to add it next to the other default actions.
 
    .. image:: outlook/customize-actions.png
       :align: center
-      :alt: Odoo for Outlook customized action
+      :alt: Leansoft for Outlook customized action
 
 #. Open any email; the shortcut should be displayed.
 
    .. image:: outlook/odoo-outlook-shortcut.png
       :align: center
-      :alt: Odoo for Outlook customized action
+      :alt: Leansoft for Outlook customized action

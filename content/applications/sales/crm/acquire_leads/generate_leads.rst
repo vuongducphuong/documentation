@@ -3,7 +3,7 @@ Tạo khách hàng tiềm năng/cơ hội
 ================================
 
 Two key ways to generate new leads or opportunities for your business are through email aliases and
-website contact forms. Odoo automatically creates leads in your CRM whenever someone sends a
+website contact forms. Leansoft automatically creates leads in your CRM whenever someone sends a
 message to a Sales Team email alias or fills out a contact form on your website.
 
 Configure email aliases

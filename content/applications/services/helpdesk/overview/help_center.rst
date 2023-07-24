@@ -44,14 +44,14 @@ To enable the *Knowledge* feature on a *Helpdesk* team, go to :menuselection:`He
 Configuration --> Teams` and select a team, or create a :doc:`new one
 </applications/services/helpdesk/overview/getting_started>`.
 
-When a team has been selected or created, Odoo displays that team's detail form.
+When a team has been selected or created, Leansoft displays that team's detail form.
 
 On the team's detail form, scroll down to the :guilabel:`Self-Service` section. Click the box next
 to :guilabel:`Knowledge` to activate the *Knowledge* feature. When clicked, a new field labeled
 :guilabel:`Article` appears.
 
 Clicking the :guilabel:`Article` field reveals a drop-down menu. At first, there is only one option
-in the drop-down menu titled :guilabel:`Help`, which Odoo provides by default. Select
+in the drop-down menu titled :guilabel:`Help`, which Leansoft provides by default. Select
 :guilabel:`Help` from the drop-down menu to choose this article.
 
 .. tip::
@@ -80,7 +80,7 @@ To search *Knowledge* articles, open a ticket — either from the *Helpdesk* app
 going to :menuselection:`Helpdesk app --> Tickets --> All Tickets`, and selecting a
 :guilabel:`Ticket` from the list.
 
-When a :guilabel:`Ticket` is selected, Odoo reveals that ticket's detail form.
+When a :guilabel:`Ticket` is selected, Leansoft reveals that ticket's detail form.
 
 Click the :guilabel:`Knowledge (book)` icon, located above the chatter to open a search window.
 
@@ -92,7 +92,7 @@ Click the :guilabel:`Knowledge (book)` icon, located above the chatter to open a
    *Knowledge* articles can also be searched by pressing :command:`Ctrl + K` to open the command
    palette, then typing :command:`?`, followed by the name of the desired article.
 
-When Odoo reveals the desired article, click it, or highlight the :guilabel:`Article` title, and
+When Leansoft reveals the desired article, click it, or highlight the :guilabel:`Article` title, and
 press :command:`Enter`. This will open the article in the :guilabel:`Knowledge` application.
 
 To open the article in a new tab, press :command:`Ctrl + Enter`.
@@ -108,7 +108,7 @@ In order for a *Knowledge* article to be available to customers and website visi
 published.
 
 .. note::
-   Even though the *Help* article has been enabled on a team, Odoo will not share all the nested
+   Even though the *Help* article has been enabled on a team, Leansoft will not share all the nested
    articles to the web. Individual articles intended for customers **must** be published for them to
    be viewable on the website.
 
@@ -157,7 +157,7 @@ dashboard or by going to :menuselection:`Helpdesk --> Tickets --> All Tickets` a
 
 Click on the :guilabel:`Knowledge (book)` icon above the chatter for the ticket. This opens a search
 window. In this search window, select, or search for the desired article. Doing so reveals that
-article page in the Odoo *Knowledge* application.
+article page in the Leansoft *Knowledge* application.
 
 To use a template to respond to a ticket, click :guilabel:`Send as message` in the upper right
 corner of the template box, located in the body of the article.
@@ -192,7 +192,7 @@ the box beside it.
 When activated, a new field labeled :guilabel:`Forums` appears beneath.
 
 Click the empty :guilabel:`Forums` field to reveal a drop-down menu. By default, there is only one
-option to begin with, labeled :guilabel:`Help`. That is the option Odoo automatically created when
+option to begin with, labeled :guilabel:`Help`. That is the option Leansoft automatically created when
 the :guilabel:`Community Forums` feature was enabled. Select :guilabel:`Help` from the drop-down
 menu to enable that forum.
 
@@ -203,7 +203,7 @@ Set up a forum
 --------------
 
 The settings on a forum are managed through either the *Website* or *eLearning* applications. From
-the Odoo Dashboard, navigate to :menuselection:`Website --> Configuration --> Forums` or
+the Leansoft Dashboard, navigate to :menuselection:`Website --> Configuration --> Forums` or
 :menuselection:`eLearning --> Forum --> Forums`. In either case, select a forum to edit from the
 list.
 
@@ -222,7 +222,7 @@ visible on the website where the forum is published.
 
 .. image:: help_center/help-center-forum-settings.png
    :align: center
-   :alt: Overview of a forum's settings page in Odoo Helpdesk.
+   :alt: Overview of a forum's settings page in Leansoft Helpdesk.
 
 Karma gains and karma related rights
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -298,7 +298,7 @@ At the top of the ticket detail form, click the :guilabel:`Share on Forum` butto
 
 .. image:: help_center/help-center-share-on-forum.png
    :align: center
-   :alt: Overview of the Forums page of a website to show the available ones in Odoo Helpdesk.
+   :alt: Overview of the Forums page of a website to show the available ones in Leansoft Helpdesk.
 
 When clicked, a pop-up appears. Here, the post and title can be edited to correct any typos, or
 modified to remove any proprietary or client information. :guilabel:`Tags` can also be added to
@@ -355,7 +355,7 @@ the course in sections.
 
 .. image:: help_center/help-center-elearning-course-contents-page.png
    :align: center
-   :alt: View of a course being published for Odoo Helpdesk.
+   :alt: View of a course being published for Leansoft Helpdesk.
 
 .. note::
    In order to add a certification to a course, go to :menuselection:`eLearning --> Configuration
@@ -407,4 +407,4 @@ to be published. Click :guilabel:`OK` to automatically publish all course conten
 
 .. image:: help_center/help-center-elearning-publish-back-end.png
    :align: center
-   :alt: View of a course contents being published in Odoo Helpdesk back-end.
+   :alt: View of a course contents being published in Leansoft Helpdesk back-end.

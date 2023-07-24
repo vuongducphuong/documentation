@@ -13,9 +13,9 @@ How to customize the file
 * Remove columns you don't need. However, we advise you to not remove the *ID* column (see
   why below).
 * Set a unique ID to every single record by dragging down the ID sequencing.
-* Don't change the labels of columns you want to import. Otherwise, Odoo won't recognize
+* Don't change the labels of columns you want to import. Otherwise, Leansoft won't recognize
   them anymore, and you will have to map them on your own in the import screen.
-* Feel free to add new columns, but the fields need to exist in Odoo. If Odoo fails
+* Feel free to add new columns, but the fields need to exist in Odoo. If Leansoft fails
   in matching the column name with a field, you can match it manually when importing
   by browsing a list of available fields.
 
@@ -34,7 +34,7 @@ Setting an ID is not mandatory when importing, but it helps in many cases:
 How to import relation fields
 =============================
 
-An Odoo object is always related to many other objects (e.g., a product is linked
+An Leansoft object is always related to many other objects (e.g., a product is linked
 to product categories, attributes, vendors, etc.). To import those relations, you need to
 import the records of the related object first from their own list menu.
 

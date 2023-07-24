@@ -19,7 +19,7 @@ navigating to :guilabel:`Inventory --> Products --> Products`, then select an ex
 create a new one by clicking :guilabel:`Create`.
 
 First, on the :guilabel:`General Information` tab, make sure that the :guilabel:`Product Type` is
-set to :guilabel:`Storable Product`. This is necessary because Odoo only tracks stock quantities for
+set to :guilabel:`Storable Product`. This is necessary because Leansoft only tracks stock quantities for
 storable products, and this number is used to trigger reordering rules.
 
 .. image:: reordering_rules/product-type.png
@@ -27,7 +27,7 @@ storable products, and this number is used to trigger reordering rules.
    :alt: Set the Product Type as Storable.
 
 Next, click on the :guilabel:`Inventory` tab and select one or more routes from the
-:guilabel:`Routes` section. Doing so tells Odoo which route to use to replenish the product.
+:guilabel:`Routes` section. Doing so tells Leansoft which route to use to replenish the product.
 
 .. image:: reordering_rules/select-routes.png
    :align: center
@@ -36,14 +36,14 @@ Next, click on the :guilabel:`Inventory` tab and select one or more routes from 
 If the product is reordered using the :guilabel:`Buy` route, confirm that the :guilabel:`Can be
 Purchased` checkbox is enabled under the product name. This makes the :guilabel:`Purchase` tab
 appear. Click on the :guilabel:`Purchase` tab, and specify at least one vendor, and the price that
-they sell the product for, so that Odoo knows which company the product should be purchased from.
+they sell the product for, so that Leansoft knows which company the product should be purchased from.
 
 .. image:: reordering_rules/specify-vendor.png
    :align: center
    :alt: Specify a vendor and price on the Purchase tab.
 
 If the product is replenished using the :guilabel:`Manufacture` route, it needs to have at least one
-Bill of Materials (BoM) associated with it. This is necessary because Odoo only creates
+Bill of Materials (BoM) associated with it. This is necessary because Leansoft only creates
 manufacturing orders for products with a :abbr:`BoM (Bill of Materials)`.
 
 If a :abbr:`BoM (Bill of Materials)` does not already exist for the product, select the

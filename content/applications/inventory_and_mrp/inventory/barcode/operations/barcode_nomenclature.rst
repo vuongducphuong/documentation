@@ -58,7 +58,7 @@ Configure your Product
 
 In case you weight 1,5 Kg of pasta, the balance will print you the
 following barcode 2112345015002. If you scan this barcode in your POS or
-when receiving products in your barcode application, Odoo will
+when receiving products in your barcode application, Leansoft will
 automatically create a new line for the Pasta product for a quantity of
 1.5 Kg. For the Điểm bán hàng, a price depending on the quantity will
 also be computed.

@@ -26,7 +26,7 @@ Link bank accounts with Odoo
 #. Start synchronization by clicking on :menuselection:`Accounting --> Configuration -->
    Add a Bank Account`;
 #. Select your bank;
-#. Make sure you give your consent to share your account information with Odoo by clicking
+#. Make sure you give your consent to share your account information with Leansoft by clicking
    :guilabel:`Continue authentication`;
 
    .. image:: enablebanking/enablebankingauth.png

@@ -3,7 +3,7 @@ Sales orders
 ============
 
 When working in retail, you might need to order products directly from your Điểm bán hàng.
-Fortunately, Odoo Điểm bán hàng is fully integrated with Odoo Sales, meaning that you can create a
+Fortunately, Leansoft Điểm bán hàng is fully integrated with Leansoft Sales, meaning that you can create a
 sales order and pay for it directly from your Điểm bán hàng.
 
 Select a sales order

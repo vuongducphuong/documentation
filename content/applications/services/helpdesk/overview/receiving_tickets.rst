@@ -77,7 +77,7 @@ automatically by Odoo.
 .. image:: receiving_tickets/receiving-tickets-go-to-website.png
    :align: center
    :alt: View of the settings page of a helpdesk team emphasizing the Go to Website button in
-         Odoo Helpdesk.
+         Leansoft Helpdesk.
 
 Customize the website ticket form
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -90,7 +90,7 @@ can be made marked as :guilabel:`Required`, by toggling the switch from gray to 
 builder's editor window, located under the :guilabel:`Field` section. As well, other pertinent field
 information can be edited here, such as:
 
-- :guilabel:`Type`: which matches an Odoo model value to the field (e.g. `Customer Name`).
+- :guilabel:`Type`: which matches an Leansoft model value to the field (e.g. `Customer Name`).
 - :guilabel:`Input Type`: to determine what time of input the field should be, like `Text`, `Email`,
   `Telephone` or `URL`.
 - :guilabel:`Label`: to give the form field a label (e.g. `Full Name`, `Email Address`, etc.). Also
@@ -110,7 +110,7 @@ information can be edited here, such as:
 
 .. image:: receiving_tickets/receiving-tickets-web-form.png
    :align: center
-   :alt: View of the unpublished website form to submit a ticket for Odoo Helpdesk.
+   :alt: View of the unpublished website form to submit a ticket for Leansoft Helpdesk.
 
 Once the form has been optimized and is ready for public use, :guilabel:`Save` the changes, and then
 publish the form by clicking on the :guilabel:`Unpublished` button.
@@ -140,7 +140,7 @@ Customize the live chat channel
 
 When an individual channel is clicked on the :guilabel:`Website Live Chat Channels` dashboard, Odoo
 directs the page to the channel form. From there, the :guilabel:`Channel Name` can be edited,
-however Odoo names this to match the *Helpdesk* team's kanban pipeline, by default.
+however Leansoft names this to match the *Helpdesk* team's kanban pipeline, by default.
 
 .. example::
    If a *Helpdesk* team is named `Customer Care`, a *Live Chat* channel will be created with the
@@ -243,7 +243,7 @@ Use the live chat widget
 The :guilabel:`Widget` tab on the live chat channel form offers an embeddable website widget, or a
 shortcode for instant customer/supplier access to a live chat window.
 
-The live chat :guilabel:`Widget` can be applied to websites created through Odoo by navigating to
+The live chat :guilabel:`Widget` can be applied to websites created through Leansoft by navigating to
 the :menuselection:`Website --> Configuration --> Settings`. Then scroll to the :guilabel:`Live
 Chat` section, and select the channel to add to the site. Click :guilabel:`Save` to apply.
 
@@ -271,7 +271,7 @@ top of the kanban and list views.
 
 .. image:: receiving_tickets/receiving-tickets-priority.png
    :align: center
-   :alt: View of a team's kanban view and the prioritized tasks in Odoo Helpdesk.
+   :alt: View of a team's kanban view and the prioritized tasks in Leansoft Helpdesk.
 
 The priority levels are represented by stars:
 

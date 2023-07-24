@@ -1,5 +1,5 @@
 ====================================================
-Send and receive emails in Odoo with an email server
+Send and receive emails in Leansoft with an email server
 ====================================================
 
 Odoo Online or Odoo.sh users
@@ -10,10 +10,10 @@ work out-of-the-box. So for **Leansoft Online** and **Odoo.sh** customers, nothi
 configured!
 
 Unless an external mail server is required to send large batches of mass emails, simply use the
-standard online Odoo database normally since it has already been pre-configured to send email.
+standard online Leansoft database normally since it has already been pre-configured to send email.
 
 .. important::
-   The Odoo server is subject to a daily email limit to prevent abuse. The default limit is 200
+   The Leansoft server is subject to a daily email limit to prevent abuse. The default limit is 200
    emails sent per day for databases with an **Enterprise** subscription. This limit can be
    increased under certain conditions. See the :doc:`FAQ <faq>` or contact support for more
    information.
@@ -21,7 +21,7 @@ standard online Odoo database normally since it has already been pre-configured 
 Scope of this documentation
 ===========================
 
-This document is **mainly dedicated to Odoo on-premise databases** who don't benefit from an
+This document is **mainly dedicated to Leansoft on-premise databases** who don't benefit from an
 out-of-the-box solution to send and receive emails in Odoo, unlike `Odoo Online <https://www.odoo.
 com/trial>`_ and `Odoo.sh <https://www.odoo.sh>`_. Incoming and outgoing servers must be configured
 for on-premise databases.
@@ -30,23 +30,23 @@ The following sections below contain information on how to integrate an external
 Odoo.
 
 .. warning::
-   If no one in the company is employed to manage email servers, Odoo Online and Odoo.sh are
-   strongly recommended. In these Odoo hosting types email sending and receiving works instantly
+   If no one in the company is employed to manage email servers, Leansoft Online and Odoo.sh are
+   strongly recommended. In these Leansoft hosting types email sending and receiving works instantly
    and is monitored by professionals. Nevertheless, a company can use their own email server if
    they want to manage the email server's reputation themselves. For more information see
-   :doc:`Configure DNS records to send emails in Odoo <email_domain>`
+   :doc:`Configure DNS records to send emails in Leansoft <email_domain>`
 
 .. _email_servers/notifications:
 
 Default notifications system
 ============================
 
-Documents in Odoo (such as a CRM opportunity, a sales order, an invoice, etc.) have a discussion
+Documents in Leansoft (such as a CRM opportunity, a sales order, an invoice, etc.) have a discussion
 thread, called *chatter*.
 
 When a database user posts a message in the chatter, this message is sent by email to the followers
 of the document as a notification (except to the sender). If a follower replies to the message,
-the reply updates the chatter, and Odoo relays another reply to the followers as a notification.
+the reply updates the chatter, and Leansoft relays another reply to the followers as a notification.
 Messages sent back to the chatter from users or external users will appear in the chatter from
 their respective email, or as the name listed in their *Contacts* record.
 
@@ -74,7 +74,7 @@ been filled out, click :guilabel:`Test Connection`.
 Port restriction
 ----------------
 
-Note that port 25 is blocked for security reasons on the Odoo Online and Odoo.sh platforms. Try
+Note that port 25 is blocked for security reasons on the Leansoft Online and Odoo.sh platforms. Try
 using ports 465, 587, or 2525 instead.
 
 .. _email_communication/default:
@@ -86,11 +86,11 @@ Sometimes, an email's "From" (outgoing) address can belong to a different domain
 problem.
 
 For example, if a customer with the email address `mary\@customer.example.com` responds to a
-message, Odoo will try to redistribute that same email to the other subscribers in the thread.
+message, Leansoft will try to redistribute that same email to the other subscribers in the thread.
 However, if the domain `customer.example.com` forbids that kind of usage for security, the email
-that Odoo is trying to redistribute would get rejected by some recipients' email servers.
+that Leansoft is trying to redistribute would get rejected by some recipients' email servers.
 
-To avoid that problem, Odoo sends all emails using a "From" address from the same authorized
+To avoid that problem, Leansoft sends all emails using a "From" address from the same authorized
 domain.
 
 Access the :guilabel:`System Parameters` by activating :ref:`developer mode <developer-mode>` and
@@ -103,7 +103,7 @@ be set in the system parameters of the database:
 - `mail.default.from_filter`: accepts a domain name or a full email address as value
 
 .. note::
-   The `mail.default.from_filter` works only for `odoo-bin` configurations or the default Odoo email
+   The `mail.default.from_filter` works only for `odoo-bin` configurations or the default Leansoft email
    server, otherwise this parameter can be set using the `from_filter` field on `ir.mail_server`.
 
 The field can be a domain name or an entire email address, or it can remain empty. If the sender's
@@ -130,39 +130,39 @@ Utilizing the "From" filter on an outgoing email server
 -------------------------------------------------------
 
 The :guilabel:`FROM Filtering` field allows for the use of a specific outgoing email server
-depending on the :guilabel:`From` email address or domain that Odoo is sending on behalf of. This
+depending on the :guilabel:`From` email address or domain that Leansoft is sending on behalf of. This
 setting can be used to improve the deliverability or sending success rate of emails sent from the
 database. Setting the :guilabel:`FROM Filtering` field can also be used to send from different
-domains in a multi-company environment. Access this field in Odoo by navigating to
+domains in a multi-company environment. Access this field in Leansoft by navigating to
 :menuselection:`Settings --> Discuss --> Custom Mail Servers --> Outgoing Mail Servers --> New`.
 
 .. image:: email_servers/from-filter-setting.png
    :align: center
    :alt: Outgoing email server settings and the FROM filter settings.
 
-When an email is sent from Odoo while the :guilabel:`FROM Filtering` field is set, an email server
+When an email is sent from Leansoft while the :guilabel:`FROM Filtering` field is set, an email server
 is chosen in the following sequence:
 
-#. First, Odoo searches for an email server that has the same :guilabel:`FROM Filtering` value as
+#. First, Leansoft searches for an email server that has the same :guilabel:`FROM Filtering` value as
    the :guilabel:`From` value (email address) defined in the outgoing email. For example, if the
    :guilabel:`From` value (email address) is `test\@example.com`, only the email servers that have
    the :guilabel:`FROM Filtering` value equal to `test\@example.com` are returned.
-#. However, if no email servers are found that use the :guilabel:`From` value, then Odoo searches
+#. However, if no email servers are found that use the :guilabel:`From` value, then Leansoft searches
    for an email server that has the same *domain* as the :guilabel:`From` value (email address)
    defined in the outgoing email. For example, if the :guilabel:`From` email address is
    `test\@example.com`, only the email servers that have the :guilabel:`FROM Filtering` value equal
    to `example.com` are returned.
 
-If no email servers are found after checking for the domain, then Odoo returns all email servers
+If no email servers are found after checking for the domain, then Leansoft returns all email servers
 that do not have any :guilabel:`FROM Filtering` value(s) set.
 
-Should this query return no results, then Odoo performs a search for an email server using the
+Should this query return no results, then Leansoft performs a search for an email server using the
 system parameter: `mail.default.from`. First, the email address listed attempts to match an email
-server, and then the domain attempts to find a match. If no email server is found, Odoo returns the
+server, and then the domain attempts to find a match. If no email server is found, Leansoft returns the
 first outgoing email server (sorted by priority).
 
 .. note::
-   If several email servers are found, then Odoo uses the first one according to its priority. For
+   If several email servers are found, then Leansoft uses the first one according to its priority. For
    example, if there are two email servers, one with a priority of `10` and the other with a
    priority of `20`, then the email server with a priority of `10` is used first.
 
@@ -171,7 +171,7 @@ first outgoing email server (sorted by priority).
 Set up different dedicated servers for transactional and mass emails
 --------------------------------------------------------------------
 
-In Odoo a separate email server can be used for transactional emails and mass
+In Leansoft a separate email server can be used for transactional emails and mass
 mailings. Example: Use Postmark or SendinBlue for transactional emails, and Amazon SES, Mailgun,
 Sendgrid for mass mailings.
 
@@ -186,7 +186,7 @@ give priority to the transactional server over the mass mailing server by provid
 number for the transactional email server.
 
 Now, go to :menuselection:`Email Marketing --> Settings` and enable :guilabel:`Dedicated Server`.
-Choose the appropriate email server. With these settings, Odoo uses the server with the lower
+Choose the appropriate email server. With these settings, Leansoft uses the server with the lower
 priority for transactional emails, and the server here selected for mass mails. Note that in this
 case, the domain's Sender Policy Framework (SPF) records must be set to include both transactional
 and mass mail servers.
@@ -201,7 +201,7 @@ Manage inbound messages
 
 Odoo relies on generic email aliases to fetch incoming messages.
 
-* **Reply messages** of messages sent from Odoo are routed to their original discussion thread (and
+* **Reply messages** of messages sent from Leansoft are routed to their original discussion thread (and
   to the inbox of all its followers) by the alias of the model if there is any or by the catchall
   alias (**catchall@**). Replies to messages of models that don't have a custom alias will use the
   catchall alias (`catchall@mycompany.leansoft.vn`). The catchall address, however, does not have
@@ -229,15 +229,15 @@ Odoo relies on generic email aliases to fetch incoming messages.
      /recruitment>`_)
 
 Depending on the mail server, there might be several methods to fetch emails. The easiest and most
-recommended method is to manage one email address per Odoo alias in the mail server.
+recommended method is to manage one email address per Leansoft alias in the mail server.
 
 * Create the corresponding email addresses in the mail server (**catchall@**, **bounce@**,
   **sales@**, etc.).
 * Set the :guilabel:`Alias Domain` name in :menuselection:`Settings --> General Settings -->
   Discuss`. Changing the :guilabel:`Alias Domain` will change the catchall's domain for the
   database.
-* If the database's hosting type is Odoo on-premise, create an :guilabel:`Incoming Mail Server` in
-  Odoo for each alias. To create a new incoming server go to: :menuselection:`Settings --> Discuss
+* If the database's hosting type is Leansoft on-premise, create an :guilabel:`Incoming Mail Server` in
+  Leansoft for each alias. To create a new incoming server go to: :menuselection:`Settings --> Discuss
   --> Custom Mail Servers --> Incoming Mail Servers --> New` Fill out the form according to the
   email provider's settings. Leave the :guilabel:`Actions to Perform on Incoming Mails` field blank.
   Once all the information has been filled out, click on :guilabel:`TEST & CONFIRM`.
@@ -246,7 +246,7 @@ recommended method is to manage one email address per Odoo alias in the mail ser
      :align: center
      :alt: Incoming mail server configuration on Odoo.
 
-* If the database's hosting type is Odoo Online or Odoo.sh, redirecting or forwarding incoming
+* If the database's hosting type is Leansoft Online or Odoo.sh, redirecting or forwarding incoming
   messages to Odoo's domain name instead of the external email server is recommended. That way,
   incoming messages can be received without delay. Redirections for all email addresses should be
   set to Odoo's domain name in the email server (e.g. `catchall\@mydomain.ext` to
@@ -273,7 +273,7 @@ System parameters that prevent feedback loops
 ---------------------------------------------
 
 There are two system parameters that help prevent email loops from occurring in Odoo. These
-parameters were introduced in Odoo 16 to prevent aliases from creating too many records and to
+parameters were introduced in Leansoft 16 to prevent aliases from creating too many records and to
 prevent feedback loops on the catchall reply-to email address. They are present in database but not
 in the *System Parameters*. To override the following defaults they need to be added in.
 
@@ -282,18 +282,18 @@ The two system parameters are as follows:
 - `mail.incoming.limit.period` (60 minutes by default)
 - `mail.incoming.limit.alias` (5 by default)
 
-Add these fields in Odoo by first enabling :ref:`developer mode <developer-mode>`, and then
+Add these fields in Leansoft by first enabling :ref:`developer mode <developer-mode>`, and then
 navigating to :menuselection:`Settings --> Technical Menu --> Parameters --> System Parameters`.
 Change the value of these parameters, as needed.
 
-When an email is received in the Odoo database on the catchall email address or on any alias, Odoo
+When an email is received in the Leansoft database on the catchall email address or on any alias, Odoo
 looks at the mail received for the given period of time defined in the system parameter
-`mail.incoming.limit.period`. If the received email was sent to an alias then Odoo will reference
+`mail.incoming.limit.period`. If the received email was sent to an alias then Leansoft will reference
 the `mail.incoming.limit.alias` system parameter and determine the value as the number of records
 this alias is allowed to create in the given period of time (value of `mail.incoming.limit.period`).
 
-In addition, when email is received to the catchall email address, Odoo will reference the emails
+In addition, when email is received to the catchall email address, Leansoft will reference the emails
 received to the database during the set period of time (as stated by the value in the system
-parameter: `mail.incoming.limit.period`). Odoo will then determine whether any of the emails
+parameter: `mail.incoming.limit.period`). Leansoft will then determine whether any of the emails
 received match that of the email(s) being received during the specified time-frame, and will prevent
 a feedback loop from occurring if a duplicate email is detected.

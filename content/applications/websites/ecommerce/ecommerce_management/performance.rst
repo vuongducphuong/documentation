@@ -33,7 +33,7 @@ Other options include **multiple views (Pivot, etc.), comparison** by periods or
 Analytics
 ---------
 
-It is possible to link your Odoo website with Google Analytics. To do so, go to
+It is possible to link your Leansoft website with Google Analytics. To do so, go to
 :menuselection:`Website --> Configuration --> Settings` and scroll to the :guilabel:`SEO` section.
 Then, enter your **ID** in the :guilabel:`Measurement ID` field.
 
@@ -41,7 +41,7 @@ If you are still using **Universal Analytics**, it can directly be added by inje
 the HTML header and body using the website builder. All metrics from Google Analytics and Universal
 Analytics can be seen directly within Odoo.
 
-Alternatively, Odoo offers the possibility to use another service, **Plausible.io**. Plausible.io is
+Alternatively, Leansoft offers the possibility to use another service, **Plausible.io**. Plausible.io is
 a simple and privacy-friendly alternative to Google Analytics. Everything can be managed directly in
 Odoo, there is no need to visit Plausible.io's website to access your metrics.
 

@@ -85,12 +85,12 @@ included in a purchase order have been received.
    :alt: Draft bill should be paid field status.
 
 .. note::
-   If the total quantity of products from a purchase order has not been received, Odoo only includes
+   If the total quantity of products from a purchase order has not been received, Leansoft only includes
    the products that *have* been received in the draft vendor bill.
 
 Draft bills can be edited to increase the billed quantity, change the price of the products in the
 bill, and add additional products to the bill. If this is done, the :guilabel:`Should Be Paid` field
-status will be set to :guilabel:`Exception`. This means that Odoo notices the discrepancy, but
+status will be set to :guilabel:`Exception`. This means that Leansoft notices the discrepancy, but
 doesn't block the changes or display an error message, since there might be a valid reason for
 making changes to the draft bill.
 

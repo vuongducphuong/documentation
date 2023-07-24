@@ -15,10 +15,10 @@ The following fields are available in the :guilabel:`Create Activities` pop-up w
 
 .. image:: workflow_activities/activity-template.png
    :align: center
-   :alt: An activity template in Odoo Marketing Automation.
+   :alt: An activity template in Leansoft Marketing Automation.
 
 - :guilabel:`Activity Name`: the title of the activity.
-- :guilabel:`Activity Type`: choose between `Email`, `Server Action` (internal Odoo operation), or
+- :guilabel:`Activity Type`: choose between `Email`, `Server Action` (internal Leansoft operation), or
   `SMS`.
 - :guilabel:`Mail Template`: choose from pre-configured templates (or create a new one on-the-fly).
 - :guilabel:`Trigger`: choose when this activity should be triggered.
@@ -50,7 +50,7 @@ Once the activity has been triggered, a figure representing the number of :guila
 
 .. image:: workflow_activities/workflow-activity.png
    :align: center
-   :alt: Typical workflow activity in Odoo Marketing Automation.
+   :alt: Typical workflow activity in Leansoft Marketing Automation.
 
 .. tip::
    If the :guilabel:`Activity Type` of the activity is set to :guilabel:`Email`, there are more

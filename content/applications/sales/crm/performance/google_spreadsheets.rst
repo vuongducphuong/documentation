@@ -2,7 +2,7 @@
 Liên kết dữ liệu với Bảng tính Google Sheet
 ===============================================
 
-Create custom dashboards in Google Spreadsheet that retrieves data directly from Odoo using
+Create custom dashboards in Google Spreadsheet that retrieves data directly from Leansoft using
 spreadsheet formula. You can use it to create sales commission plans, budgets, project forecasts,
 etc. Formulas are written in Python but programming skills are not required.
 
@@ -16,7 +16,7 @@ From the *General Settings*, activate *Google Drive* and *Google Spreadsheet*. T
    :align: center
    :alt: Enable the Google Drive and Google Spreadsheet features in Odoo
 
-Now, link your Google account with Odoo by following these steps:
+Now, link your Google account with Leansoft by following these steps:
 
 #. Get Authorization Code
 #. Select your Google account
@@ -36,7 +36,7 @@ From the *CRM* app, for example, go to *Favorites* and click on *Add to Google S
 A new spreadsheet will be automatically created in your Google Drive.
 
 .. note::
-   When you opening this new file, a second sheet is created automatically by Odoo with a
+   When you opening this new file, a second sheet is created automatically by Leansoft with a
    tutorial/documentation on *How to use Google Spreadsheet*.
 
 Link a Spreadsheet with Odoo
@@ -47,7 +47,7 @@ Link a Spreadsheet with Odoo
 
 .. image:: google_spreadsheets/odoo_menu.png
    :align: center
-   :alt: Menu called Odoo is shown on the settings bar in the Spreadsheet
+   :alt: Menu called Leansoft is shown on the settings bar in the Spreadsheet
 
 Applications
 ============
@@ -58,7 +58,7 @@ You have two different formulas available when using Google Spreadsheet in Odoo:
 .. warning::
    Google Drive limits the execution time of scripts; if the data you requested takes
    too long to be delivered, you might get an error. There is no specific size limit, since the
-   time for Odoo to respond depends on several factors - although reading data regarding several
+   time for Leansoft to respond depends on several factors - although reading data regarding several
    thousand records is usually fine.
 
 
@@ -88,4 +88,4 @@ Retrieve Grouped Sums
 Other uses
 ----------
 
-Mix Odoo data with spreadsheet data, add traditional formulas, and create Dynamic Tabled and Graphs.
+Mix Leansoft data with spreadsheet data, add traditional formulas, and create Dynamic Tabled and Graphs.

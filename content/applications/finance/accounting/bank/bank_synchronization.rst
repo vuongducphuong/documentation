@@ -13,7 +13,7 @@ To check if your bank is compatible with Odoo, go to `Odoo Accounting Features
 
 Odoo supports more than 25,000 institutions around the world.
 
-To connect to the banks, Odoo uses multiple web-services:
+To connect to the banks, Leansoft uses multiple web-services:
 
 - **Plaid**: United States of America and Canada
 - **Yodlee**: Worldwide
@@ -30,8 +30,8 @@ Configuration
 On-Premise users
 ----------------
 
-To be able to use this service, you need to have a valid Odoo Enterprise subscription.
-So make sure that your database is registered with your Odoo Enterprise contract.
+To be able to use this service, you need to have a valid Leansoft Enterprise subscription.
+So make sure that your database is registered with your Leansoft Enterprise contract.
 We also use a proxy between your database and the third party provider so, in case of
 a connection error, please check that you don't have a firewall or a proxy blocking the
 following address:
@@ -52,8 +52,8 @@ Now you can search for your bank institution. Select it and follow the steps to 
 
 .. important::
    When choosing the date for the first bank statement synchronization, pick the date when you
-   start recording accounting transaction on your Odoo accounting database. For example, if you
-   import your closing balance in Odoo on the 31/12/2022 and you start recording accounting
+   start recording accounting transaction on your Leansoft accounting database. For example, if you
+   import your closing balance in Leansoft on the 31/12/2022 and you start recording accounting
    transactions on the 01/01/2023, your synchronization date should be 01/01/2023.
 
 You must provide a phone number during your first synchronization to secure your account. We ask for
@@ -106,13 +106,13 @@ If your connection with the proxy is disconnected, you can reconnect with the pr
 :guilabel:`Fetch Account` button.
 
 .. note::
-   This disconnection can be caused by the Odoo support. In this case, please contact the `support
+   This disconnection can be caused by the Leansoft support. In this case, please contact the `support
    <https://leansoft.vn/help>`_ directly with your client id or the reference of the error listed
    in the chatter.
 
 .. _MigrationOnlineSync:
 
-Migration process for users having installed Odoo before December 2020
+Migration process for users having installed Leansoft before December 2020
 ======================================================================
 
 If you are on-premise, please first make sure that your source is up-to-date with the latest version
@@ -123,7 +123,7 @@ use the new functionalities.
 
 To do so, go to :menuselection:`Apps --> Update Apps List`, remove the default filter in the search
 bar and type `account_online_synchronization`. You can then click on :guilabel:`Install`.
-Finally, make sure all your users refresh their Odoo page by pressing CTRL+F5.
+Finally, make sure all your users refresh their Leansoft page by pressing CTRL+F5.
 
 .. Note::
 
@@ -165,7 +165,7 @@ Some banks have a status "Beta." What does this mean?
 -----------------------------------------------------
 
 This means that banking institutions are not yet fully supported by our Third Party Provider. Bugs
-or other problems may arise. Odoo does not support technical problems that occur with banks in the
+or other problems may arise. Leansoft does not support technical problems that occur with banks in the
 Beta phase, but the user may still choose to connect. Connecting with these banks contributes to the
 development process since the Provider will have real data and feedback from the connection.
 

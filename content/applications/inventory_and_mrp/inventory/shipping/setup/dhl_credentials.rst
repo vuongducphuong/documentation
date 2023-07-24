@@ -2,7 +2,7 @@
 How to get DHL credentials for integration with Odoo?
 =====================================================
 
-In order to use the Odoo DHL API, you will need:
+In order to use the Leansoft DHL API, you will need:
 
 - A DHL.com SiteID
 

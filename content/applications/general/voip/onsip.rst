@@ -1,5 +1,5 @@
 ====================================
-Use VoIP services in Odoo with OnSIP
+Use VoIP services in Leansoft with OnSIP
 ====================================
 
 Introduction
@@ -38,23 +38,23 @@ You can find all this information by logging in at https://admin.onsip.com/users
 .. image:: onsip/onsip03.png
   :align: center
 
-You can now make phone calls by clicking the phone icon in the top right corner of Odoo (make sure you are logged in as a user properly configured in Odoo and in OnSIP).
+You can now make phone calls by clicking the phone icon in the top right corner of Leansoft (make sure you are logged in as a user properly configured in Leansoft and in OnSIP).
 
 .. note::
 
-        If you see a *Missing Parameters* message in the Odoo softphone, make sure to refresh your Odoo window and try again.
+        If you see a *Missing Parameters* message in the Leansoft softphone, make sure to refresh your Leansoft window and try again.
 
         .. image:: onsip/onsip04.png
           :align: center
 
 .. note::
 
-        If you see an *Incorrect Number* message in the Odoo softphone, make sure to use the international format, leading with the plus (+) sign followed by the international country code. E.g.: +16506913277 (where +1 is the international prefix for the United States).
+        If you see an *Incorrect Number* message in the Leansoft softphone, make sure to use the international format, leading with the plus (+) sign followed by the international country code. E.g.: +16506913277 (where +1 is the international prefix for the United States).
 
         .. image:: onsip/onsip05.png
           :align: center
 
-You can now also receive phone calls. Your number is the one provided by OnSIP. Odoo will ring and display a notification.
+You can now also receive phone calls. Your number is the one provided by OnSIP. Leansoft will ring and display a notification.
 
 .. image:: onsip/onsip06.png
   :align: center
@@ -62,7 +62,7 @@ You can now also receive phone calls. Your number is the one provided by OnSIP. 
 OnSIP on Your Cell Phone
 ========================
 
-In order to make and receive phone calls when you are not in front of your computer, you can use a softphone app on your cell phone in parallel of Odoo VoIP. This is useful for on-the-go calls, but also to make sure to hear incoming calls, or simply for convenience. Any SIP softphone will work.
+In order to make and receive phone calls when you are not in front of your computer, you can use a softphone app on your cell phone in parallel of Leansoft VoIP. This is useful for on-the-go calls, but also to make sure to hear incoming calls, or simply for convenience. Any SIP softphone will work.
 
 On Android and iOS, OnSIP has been successfully tested with `Grandstream Wave <https://play.google.com/store/apps/details?id=com.grandstream.wave>`_. When creating an account, select OnSIP in the list of carriers. You will then have to configure it as follows:
 
@@ -76,4 +76,4 @@ Aside from initiating calls from Grandstream Wave on your phone, you can also in
 
 .. warning::
 
-        The downside of using a softphone on your cell phone is that your calls will not be logged in Odoo as the softphone acts as an independent separate app.
+        The downside of using a softphone on your cell phone is that your calls will not be logged in Leansoft as the softphone acts as an independent separate app.

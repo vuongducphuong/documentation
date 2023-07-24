@@ -16,7 +16,7 @@ To start a test, click the :guilabel:`Launch a Test` button at the top of the ca
 
 .. image:: testing_running/launch-test.png
    :align: center
-   :alt: Launch a test button in Odoo Marketing Automation.
+   :alt: Launch a test button in Leansoft Marketing Automation.
 
 When clicked, a :guilabel:`Launch a test` pop-up window appears. In the drop-down field, choose an
 existing record (or create a new one) to run the test on. To create a brand new record, click the
@@ -28,11 +28,11 @@ be entered. When all the necessary information has been entered, click :guilabel
 returns to the :guilabel:`Launch a test` pop-up, with that new record in the :guilabel:`Choose an
 existing record or create a new one to test` field.
 
-Once a record is selected, click :guilabel:`Continue`, and Odoo reveals the campaign test page.
+Once a record is selected, click :guilabel:`Continue`, and Leansoft reveals the campaign test page.
 
 .. image:: testing_running/test-screen.png
    :align: center
-   :alt: Test screen in Odoo Marketing Automation.
+   :alt: Test screen in Leansoft Marketing Automation.
 
 On the campaign test page, the name of the :guilabel:`Record` being tested is visible, along with
 the precise time this test workflow was started in the :guilabel:`Workflow Started On` field.
@@ -40,12 +40,12 @@ Beneath that, in the :guilabel:`Workflow` section is the first activity (or acti
 workflow that's being tested.
 
 To start a test, click the :guilabel:`Run` button, represented by a :guilabel:`▶️ (play button)`
-icon beside the first activity in the workflow. When clicked, the page reloads, and Odoo shows the
+icon beside the first activity in the workflow. When clicked, the page reloads, and Leansoft shows the
 various results (and analytics) connected to that specific activity as they occur, in real-time.
 
 .. image:: testing_running/workflow-test-progress.png
    :align: center
-   :alt: Workflow test progress in Odoo Marketing Automation.
+   :alt: Workflow test progress in Leansoft Marketing Automation.
 
 Once all the workflow activities are completed, the test will end, and move to the
 :guilabel:`Completed` stage. To stop a test before all the workflow activities are completed, click

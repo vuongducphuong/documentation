@@ -57,7 +57,7 @@ invoice line.
 .. note::
     When you see the customer invoice on the screen, you get only a
     **Taxes line** summarizing all the taxes (normal taxes & retentions).
-    But when you print or send the invoice, Odoo does the correct
+    But when you print or send the invoice, Leansoft does the correct
     grouping amongst all the taxes.
 
 The printed invoice will show the different amounts in each tax group.

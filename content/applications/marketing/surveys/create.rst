@@ -12,7 +12,7 @@ sentiments.
 Getting started
 ===============
 
-To begin, open the :guilabel:`Surveys` application and click :guilabel:`Create`. Odoo then
+To begin, open the :guilabel:`Surveys` application and click :guilabel:`Create`. Leansoft then
 redirects the page to a blank survey template form.
 
 On the survey form, add a :guilabel:`Survey Title` and then add a cover image to the survey by
@@ -194,7 +194,7 @@ Description tab
 
 Back on the main survey template page is the :guilabel:`Description` tab, where a custom
 description of the survey can be added. This is displayed beneath the title on the survey's
-homepage, which is on the front end of the website made through the Odoo :guilabel:`Website` app.
+homepage, which is on the front end of the website made through the Leansoft :guilabel:`Website` app.
 
 Test and share the survey
 =========================
@@ -203,12 +203,12 @@ Once the survey is created and saved, run a test to check for possible errors be
 sending it out to the participants by clicking :guilabel:`Test` in the upper left corner of the
 survey template page.
 
-When activated, Odoo redirects the page to a test version of the survey on the front end of the
+When activated, Leansoft redirects the page to a test version of the survey on the front end of the
 website. This page displays how the survey will look to participants. Proceed to run through the
 survey, like a normal participant, to check for errors.
 
 To return to the survey template form in the backend, simply click the :guilabel:`This is a test
-survey. Edit Survey` link in the blue banner along the top of the page. Once Odoo redirects the
+survey. Edit Survey` link in the blue banner along the top of the page. Once Leansoft redirects the
 page to the survey template in the backend, make any further changes, as needed, before officially
 sending the survey out to participants.
 
@@ -216,8 +216,8 @@ When the survey is ready to be shared with the audience, click the :guilabel:`St
 in the upper-left corner of the survey template form. Then, click :guilabel:`Share`.
 
 In the pop-up window, add the survey recipients in the :guilabel:`Recipients` field (for existing
-contacts in the Odoo database) or the :guilabel:`Additional emails` field (for contacts that do not
-want to be listed in the Odoo database). Finally, click :guilabel:`Send`.
+contacts in the Leansoft database) or the :guilabel:`Additional emails` field (for contacts that do not
+want to be listed in the Leansoft database). Finally, click :guilabel:`Send`.
 
 As answers are received, check them by clicking the :guilabel:`Answers` smart button on the survey
 template form, or the :guilabel:`See Results` button in the upper left corner. To end the survey,

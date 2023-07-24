@@ -2,11 +2,11 @@
 Google Sign-In Authentication
 =============================
 
-The *Google Sign-In Authentication* is a useful function that allows Odoo users to sign in to their
+The *Google Sign-In Authentication* is a useful function that allows Leansoft users to sign in to their
 database with their Google account.
 
 This is particularly helpful if the organization uses Google Workspace, and wants employees within
-the organization to connect to Odoo using their Google Accounts.
+the organization to connect to Leansoft using their Google Accounts.
 
 .. seealso::
    - :doc:`/applications/productivity/calendar/google`   
@@ -87,7 +87,7 @@ Credentials
       :alt: OAuth client id selection.
 
 #. Select :guilabel:`Web Application` as the :guilabel:`Application Type`. Now, configure the
-   allowed pages on which Odoo will be redirected.
+   allowed pages on which Leansoft will be redirected.
 
    In order to achieve this, in the :guilabel:`Authorized redirect URIs` field, enter the database's
    domain immediately followed by `/auth_oauth/signin`. For example:
@@ -123,7 +123,7 @@ Odoo activation
    Authentication`.
 
    .. note::
-      Odoo may prompt the user to log-in again after this step.
+      Leansoft may prompt the user to log-in again after this step.
 
 #. Go back to :menuselection:`General Settings --> Integrations --> OAuth Authentication`, activate
    the selection and :guilabel:`Save`. Next, return to :menuselection:`General Settings -->
@@ -132,7 +132,7 @@ Odoo activation
 
    .. image:: google/odoo-client-id.png
       :align: center
-      :alt: Filling out the client id in Odoo settings.
+      :alt: Filling out the client id in Leansoft settings.
 
    .. note::
       Google OAuth2 configuration can also be accessed by clicking on :guilabel:`OAuth Providers`
@@ -140,10 +140,10 @@ Odoo activation
 
 .. _google-sign-in/log-in:
 
-Log in to Odoo with Google
+Log in to Leansoft with Google
 ==========================
 
-To link the Google account to the Odoo profile, click on :guilabel:`Log in with Google` when first
+To link the Google account to the Leansoft profile, click on :guilabel:`Log in with Google` when first
 logging into Odoo.
 
    .. image:: google/first-login.png

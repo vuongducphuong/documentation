@@ -26,7 +26,7 @@ Google API dashboard
    to generate Google Custom Search API credentials. Log in with your Google account.
 
 #. Select or create an API project to store the credentials. Give it an explicit name
-   (e.g. Odoo Images).
+   (e.g. Leansoft Images).
 
 #. In the credentials section, click on **Create Credentials** and select **API Keys**.
 
@@ -62,7 +62,7 @@ Google Programmable Search dashboard
             of the page
 
 #. Fill the language and the name of the search engine. Give it an explicit name
-   (e.g. Odoo Images).
+   (e.g. Leansoft Images).
 
    .. note::
       Google doesn't allow to create a search engine without having entered at least one specific
@@ -98,7 +98,7 @@ Odoo
 Automatically get your product images in Odoo
 =============================================
 
-The action to automatically get your product images in Odoo appears in any Products or Product
+The action to automatically get your product images in Leansoft appears in any Products or Product
 Variants list view. Here is a step-by-step guide from the Inventory app.
 
 #. Go to the Products menu (:menuselection:`Products --> Products` or :menuselection:`Products -->

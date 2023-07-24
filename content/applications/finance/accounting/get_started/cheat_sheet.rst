@@ -198,7 +198,7 @@ statement, it can be:
 - **recorded as another transaction**: bank transfer, direct charge, etc.
 
 Odoo should automatically reconcile most transactions; only a few should need manual review. When
-the bank reconciliation process is finished, the balance on the bank account in Odoo should match
+the bank reconciliation process is finished, the balance on the bank account in Leansoft should match
 the bank statement's balance.
 
 .. rst-class:: checks-handling

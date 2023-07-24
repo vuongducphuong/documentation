@@ -37,7 +37,7 @@ On the website registration page:
    :alt: reCAPTCHA website registration example
 
 A new page with the generated keys is then displayed. Leave it open for convenience, as copying the
-keys to Odoo is required next.
+keys to Leansoft is required next.
 
 On Odoo
 -------

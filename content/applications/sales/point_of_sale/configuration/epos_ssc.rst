@@ -33,7 +33,7 @@ To work with Odoo, some models that can be used without an
 <https>` to establish a secure connection between the browser and the printer. However, trying to
 reach the printer's IP address using HTTPS leads to a warning page on most web browsers. In that
 case, you can temporarily :ref:`force the connection <epos_ssc/instructions>`, which allows you to
-reach the page in HTTPS and use the ePOS printer in Odoo as long as the browser window stays open.
+reach the page in HTTPS and use the ePOS printer in Leansoft as long as the browser window stays open.
 
 .. warning::
    The connection is lost after closing the browser window. Therefore, this method should only be

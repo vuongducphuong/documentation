@@ -7,7 +7,7 @@ option can be accessed by going to :menuselection:`My Account --> Edit Security 
 Account`. It can also be accessed by going to https://leansoft.vn/my/home.
 
 .. danger::
-   Deleting an Odoo account is irreversible. Take caution when performing this action as the
+   Deleting an Leansoft account is irreversible. Take caution when performing this action as the
    leansoft.vn account will not be retrievable.
 
 Upon clicking the :guilabel:`Delete Account` button, a pop-up window will appear, asking you to
