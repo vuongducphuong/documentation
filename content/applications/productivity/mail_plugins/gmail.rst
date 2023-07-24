@@ -93,7 +93,7 @@ configure the Gmail Plugin.
 Install the Gmail Plugin
 ------------------------
 
-First, access the `GitHub repository <https://github.com/odoo/mail-client-extensions>`_ for the
+First, access the `GitHub repository <https://github.com/leansoft/mail-client-extensions>`_ for the
 Leansoft Mail Plugins. Next, click on the green :guilabel:`Code` button. Then, click
 :guilabel:`Download ZIP` to download the Mail Plugin files onto the user's computer.
 
@@ -109,7 +109,7 @@ Delete the following three lines of text from the :file:`login.ts` file:
 
 .. code-block::
 
-   if (!/^https:\/\/([^\/?]*\.)?odoo\.com(\/|$)/.test(validatedUrl)) {
+   if (!/^https:\/\/([^\/?]*\.)?leansoft\.com(\/|$)/.test(validatedUrl)) {
         return notify("The URL must be a subdomain of leansoft.vn");
    }
 

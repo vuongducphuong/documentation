@@ -83,18 +83,18 @@ altered during transport.
 To enable :abbr:`DKIM (DomainKeys Identified Mail)`, add a :abbr:`CNAME (Canonical Name)` record to
 the :abbr:`DNS (Domain Name System)` zone of the domain name:
 
-`odoo._domainkey IN CNAME odoo._domainkey.leansoft.vn.`
+`leansoft._domainkey IN CNAME leansoft._domainkey.leansoft.vn.`
 
 .. tip::
    If the domain name is `mycompany.com`, make sure to create a subdomain
-   `odoo._domainkey.mycompany.com` whose canonical name is `odoo._domainkey.leansoft.vn.`.
+   `leansoft._domainkey.mycompany.com` whose canonical name is `leansoft._domainkey.leansoft.vn.`.
 
 The way to create or modify a :abbr:`CNAME (Canonical Name)` record depends on the provider hosting
 the :abbr:`DNS (Domain Name System)` zone of the domain name. The most common providers are
 :ref:`listed below <email_communication/SPFDKIM_common_providers>`.
 
 Check if the :abbr:`DKIM (DomainKeys Identified Mail)` record is valid with a free tool like `DKIM
-Core <https://dkimcore.org/tools/>`_. If a selector is asked, enter `odoo`.
+Core <https://dkimcore.org/tools/>`_. If a selector is asked, enter `leansoft`.
 
 Check the DMARC policy
 ======================

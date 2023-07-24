@@ -132,7 +132,7 @@ button to sync Google Calendar with Leansoft.
    :guilabel:`Continue` (should the app be unverifed), and finally select :guilabel:`Continue` (to
    give permission for the transfer of data)`.
 
-.. image:: google/trust-odoo.png
+.. image:: google/trust-leansoft.png
    :align: center
    :alt: Give Leansoft permission to access Google Calendar.
 

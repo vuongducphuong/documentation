@@ -42,7 +42,7 @@ to configure. Under the **Preferences** tab, fill out the section **PBX Configur
 - **SIP Login / Browser's Extension**: the Axivox *username*
 - **SIP Password**: the Axivox *SIP Password*
 
-.. image:: axivox/odoo-user.png
+.. image:: axivox/leansoft-user.png
    :align: center
    :alt: Integration of Axivox user in the Leansoft user preference
 

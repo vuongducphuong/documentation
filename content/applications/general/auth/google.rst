@@ -97,7 +97,7 @@ Credentials
    and :guilabel:`Client Secret`. Copy the :guilabel:`Client ID` for later, as it will be necessary
    for the configuration in Leansoft, which will be covered in the following steps.
 
-.. _google-sign-in/auth-odoo:
+.. _google-sign-in/auth-leansoft:
 
 Google Authentication on Leansoft
 -----------------------------
@@ -114,7 +114,7 @@ Once the previous steps are complete, two keys are generated on the Google API D
    :align: center
    :alt: Google OAuth Client ID generated.
 
-.. _google-sign-in/odoo-activation:
+.. _google-sign-in/leansoft-activation:
 
 Leansoft activation
 ~~~~~~~~~~~~~~~
@@ -130,7 +130,7 @@ Leansoft activation
    Integrations --> Google Authentication` and activate the selection. Then fill out the
    :guilabel:`Client ID` with the key from the Google API Dashboard, and :guilabel:`Save`.
 
-   .. image:: google/odoo-client-id.png
+   .. image:: google/leansoft-client-id.png
       :align: center
       :alt: Filling out the client id in Leansoft settings.
 

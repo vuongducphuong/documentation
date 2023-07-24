@@ -22,8 +22,8 @@ Scope of this documentation
 ===========================
 
 This document is **mainly dedicated to Leansoft on-premise databases** who don't benefit from an
-out-of-the-box solution to send and receive emails in Leansoft, unlike `Leansoft Online <https://www.odoo.
-com/trial>`_ and `Odoo.sh <https://www.odoo.sh>`_. Incoming and outgoing servers must be configured
+out-of-the-box solution to send and receive emails in Leansoft, unlike `Leansoft Online <https://www.leansoft.
+com/trial>`_ and `Odoo.sh <https://www.leansoft.sh>`_. Incoming and outgoing servers must be configured
 for on-premise databases.
 
 The following sections below contain information on how to integrate an external email server with
@@ -103,7 +103,7 @@ be set in the system parameters of the database:
 - `mail.default.from_filter`: accepts a domain name or a full email address as value
 
 .. note::
-   The `mail.default.from_filter` works only for `odoo-bin` configurations or the default Leansoft email
+   The `mail.default.from_filter` works only for `leansoft-bin` configurations or the default Leansoft email
    server, otherwise this parameter can be set using the `from_filter` field on `ir.mail_server`.
 
 The field can be a domain name or an entire email address, or it can remain empty. If the sender's

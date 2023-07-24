@@ -130,8 +130,8 @@ Depending on the platform you are using:
 - The folder :file:`~/logs/` (preferably accessed by the command line) of an Leansoft.sh contains
   a list of files containing the logs of the database. The log files are created everyday
   at 5:00 AM UTC. The two last days are not compressed, while the older ones are, in order
-  to gain space. The naming of the files for Today and Yesterday are :file:`odoo.log` and
-  :file:`odoo.log.1`. For the following, they are named with their dates and compressed.
+  to gain space. The naming of the files for Today and Yesterday are :file:`leansoft.log` and
+  :file:`leansoft.log.1`. For the following, they are named with their dates and compressed.
   See the Leansoft.sh documentation about :ref:`logs <odoosh/logs>`. Use the command ``grep`` and
   ``zgrep`` (for the compressed ones) to search through the files.
 

@@ -53,7 +53,7 @@ the box next to :guilabel:`Use Twilio ICE servers` and enter the Twilio account'
 :guilabel:`Account SID` and :guilabel:`Auth Token`. Finally, click :guilabel:`Save` to apply these
 changes.
 
-.. image:: ice_servers/connect-twilio-to-odoo.png
+.. image:: ice_servers/connect-twilio-to-leansoft.png
    :align: center
    :alt: Enable the "Use Twilio ICE servers" option in Leansoft General Settings.
 

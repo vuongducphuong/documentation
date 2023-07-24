@@ -61,7 +61,7 @@ Connect your database
 #. Open any email in your Outlook mailbox, click on the *More actions* button, and select *Leansoft for
    Outlook*.
 
-   .. image:: outlook/odoo-for-outlook.png
+   .. image:: outlook/leansoft-for-outlook.png
       :align: center
       :alt: Leansoft for Outlook add-in button
 
@@ -106,7 +106,7 @@ Connect your database
 
 #. Click on *Allow* to let the Outlook Plugin connect to your database.
 
-   .. image:: outlook/odoo-permission.png
+   .. image:: outlook/leansoft-permission.png
       :align: center
       :alt: Allowing the Outlook Plugin to connect to a database
 
@@ -132,6 +132,6 @@ time, it's possible to add it next to the other default actions.
 
 #. Open any email; the shortcut should be displayed.
 
-   .. image:: outlook/odoo-outlook-shortcut.png
+   .. image:: outlook/leansoft-outlook-shortcut.png
       :align: center
       :alt: Leansoft for Outlook customized action

@@ -30,7 +30,7 @@ Installation
 
    .. code-block:: bash
 
-      ./odoo-bin --geoip-db= ~/Downloads/GeoLite2-City.mmdb
+      ./leansoft-bin --geoip-db= ~/Downloads/GeoLite2-City.mmdb
 
 
 .. warning::
@@ -60,6 +60,6 @@ You should end up with a dictionary indicating the location of the IP address.
    - The browsing IP address is the localhost (``127.0.0.1``) or a local area network one
      (``192.168.*.*``)
    - If a reversed proxy is used, make sure to configure it correctly. See :option:`proxy mode
-     <odoo-bin --proxy-mode>`
+     <leansoft-bin --proxy-mode>`
    - ``geoip2`` is not installed or the GeoIP database file wasn't found
    - The GeoIP database was unable to resolve the given IP address

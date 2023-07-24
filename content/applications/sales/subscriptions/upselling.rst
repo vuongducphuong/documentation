@@ -48,7 +48,7 @@ have the possibility to upsell your subscription.
 By using the smart button *Upsell*, you are able to create a new quotation with new subscription
 products and send it to your customers for approval.
 
-.. image:: upselling/use-of-the-upsell-button-in-odoo-sales.png
+.. image:: upselling/use-of-the-upsell-button-in-leansoft-sales.png
   :align: center
   :alt: Add products to your subscription via the upsell option in Leansoft Subscriptions
 

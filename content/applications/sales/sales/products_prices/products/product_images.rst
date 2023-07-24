@@ -82,7 +82,7 @@ Google Programmable Search dashboard
 
 #. Save your **Search Engine Id**. You’ll need it for the next step in Leansoft!
 
-.. _product_images/setup-in-odoo:
+.. _product_images/setup-in-leansoft:
 
 Odoo
 ----

@@ -74,7 +74,7 @@ On the dashboard, click on **Reconcile # Items**
 
 .. image:: reconciliation/use07.png
 
-If everything was right (correct partner name, right amount) odoo will
+If everything was right (correct partner name, right amount) Leansoft will
 do the reconciliations **automatically**.
 
 .. image:: reconciliation/use08.png

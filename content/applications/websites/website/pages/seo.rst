@@ -182,7 +182,7 @@ an example, the following URLs all do a 301 redirect to the above URL:
 Some URLs have several dynamic parts, like this one (a blog category and
 a post):
 
--  https://leansoft.vn/blog/company-news-5/post/the-odoo-story-56
+-  https://leansoft.vn/blog/company-news-5/post/the-leansoft-story-56
 
 In the above example:
 
