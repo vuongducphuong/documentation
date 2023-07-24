@@ -1,8 +1,8 @@
 :nosearch:
 
-=====
-Setup
-=====
+=========
+Thiết lập
+=========
 
 .. toctree::
    :titlesonly:

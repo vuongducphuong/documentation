@@ -1,5 +1,5 @@
 ================================================
-Process to an Inventory Adjustment with Barcodes
+Quy trình điều chỉnh tồn kho bằng mã vạch
 ================================================
 
 To process an inventory adjustment by using barcodes, you first need to

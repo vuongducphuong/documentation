@@ -2,7 +2,7 @@
 :show-toc:
 
 =============
-Configuration
+Thiết lập
 =============
 
 .. _configuration/settings:

@@ -8,6 +8,6 @@ Tài chính
 
     finance/accounting
     finance/expenses
-    finance/documents
-    finance/sign
-    finance/spreadsheet    
+    .. finance/documents
+    .. finance/sign
+    .. finance/spreadsheet    

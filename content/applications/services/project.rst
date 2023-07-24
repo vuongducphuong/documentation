@@ -4,7 +4,7 @@
 :show-toc:
 
 =======
-Project
+Dự án
 =======
 
 Odoo Project is a tool to manage your ongoing projects. Schedule tasks, assign activities to

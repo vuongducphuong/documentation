@@ -1,7 +1,7 @@
 :nosearch:
 
 ====================
-Warehouse Management
+Quản lý kho hàng
 ====================
 
 .. toctree::

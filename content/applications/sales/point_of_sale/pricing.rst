@@ -1,8 +1,8 @@
 :nosearch:
 
-================
-Pricing features
-================
+============================
+Chính sách giá và khuyến mại
+============================
 
 .. toctree::
    :titlesonly:

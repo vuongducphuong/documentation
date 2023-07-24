@@ -3,9 +3,9 @@
 :hide-page-toc:
 :show-toc:
 
-=======
-Discuss
-=======
+=========
+Thảo luận
+=========
 
 .. toctree::
    :titlesonly:

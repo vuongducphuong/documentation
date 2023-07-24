@@ -1,5 +1,5 @@
 =========
-Reporting
+Báo cáo
 =========
 
 You can find under the :guilabel:`Reporting` menu of most apps several reports that let you analyze

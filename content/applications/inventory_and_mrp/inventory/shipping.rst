@@ -1,7 +1,7 @@
 :nosearch:
 
 ========
-Shipping
+Giao hàng
 ========
 
 .. toctree::

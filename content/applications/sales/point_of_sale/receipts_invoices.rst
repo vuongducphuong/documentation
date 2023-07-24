@@ -1,5 +1,5 @@
 =====================
-Receipts and invoices
+Hóa đơn
 =====================
 
 Receipts

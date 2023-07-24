@@ -1,7 +1,7 @@
 :nosearch:
 
 ========
-Products
+Sản phẩm
 ========
 
 .. toctree::

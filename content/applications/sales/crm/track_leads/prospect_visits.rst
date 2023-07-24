@@ -1,6 +1,6 @@
-===========================
-Track your prospects visits
-===========================
+=====================================================
+Theo dõi các lượt truy cập của khách hàng tiềm năng
+=====================================================
 
 Tracking your website pages will give you much more information about
 the interests of your website visitors.

@@ -1,6 +1,6 @@
-=========================
-Check your Win/Loss Ratio
-=========================
+==============================================
+Kiểm tra tỷ lệ chuyển đổi thành công/thất bại
+==============================================
 
 To see how well you are doing with your pipeline, take a look at
 the Win/Loss ratio.

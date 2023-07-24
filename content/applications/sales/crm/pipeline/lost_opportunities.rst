@@ -1,6 +1,6 @@
-=========================
-Manage lost opportunities
-=========================
+==========================
+Quản lý các cơ hội bị mất
+==========================
 
 While working with your opportunities, you might lose some of them. You
 will want to keep track of the reasons you lost them and also which ways

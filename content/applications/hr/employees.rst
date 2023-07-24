@@ -2,11 +2,11 @@
 :show-content:
 :show-toc:
 
-=========
-Employees
-=========
+===============
+Hồ sơ nhân viên
+===============
 
-Odoo *Employees* organizes a company's employee records, contracts, and departments.
+Leansoft *Employees* organizes a company's employee records, contracts, and departments.
 
 .. toctree::
    :titlesonly:

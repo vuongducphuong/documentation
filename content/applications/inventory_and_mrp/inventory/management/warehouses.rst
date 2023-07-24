@@ -1,7 +1,7 @@
 :nosearch:
 
 ==========
-Warehouses
+Kho hàng
 ==========
 
 .. toctree::

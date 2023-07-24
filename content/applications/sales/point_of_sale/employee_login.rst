@@ -1,5 +1,5 @@
 =========================
-Multi-employee management
+Quản lý nhiều nhân viên
 =========================
 
 Odoo Điểm bán hàng allows you to manage access to a specific POS by enabling the **Multi Employees

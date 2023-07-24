@@ -1,8 +1,8 @@
 :nosearch:
 
-=======
-Surveys
-=======
+========
+Khảo sát
+========
 
 .. seealso::
    - `Leansoft Tutorials: Surveys <https://leansoft.vn/slides/surveys-62>`_

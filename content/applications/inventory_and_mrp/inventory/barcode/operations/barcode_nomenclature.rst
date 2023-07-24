@@ -1,6 +1,6 @@
-========
-Overview
-========
+=========
+Tổng quan
+=========
 
 There are different situations in which barcode nomenclatures can be
 useful. A well-known use case is the one of a Điểm bán hàng which sells

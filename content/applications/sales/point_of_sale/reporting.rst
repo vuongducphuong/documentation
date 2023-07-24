@@ -1,5 +1,5 @@
 =========
-Reporting
+Báo cáo
 =========
 
 View statistics

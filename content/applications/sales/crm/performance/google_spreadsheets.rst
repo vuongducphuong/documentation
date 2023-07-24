@@ -1,6 +1,6 @@
-=====================================================
-How to use Google Spreadsheet in Addition to my Data?
-=====================================================
+===============================================
+Liên kết dữ liệu với Bảng tính Google Sheet
+===============================================
 
 Create custom dashboards in Google Spreadsheet that retrieves data directly from Odoo using
 spreadsheet formula. You can use it to create sales commission plans, budgets, project forecasts,

@@ -1,8 +1,8 @@
 :nosearch:
 
-=============
-Shop features
-=============
+==================
+Dành cho cửa hàng
+==================
 
 .. toctree::
    :titlesonly:

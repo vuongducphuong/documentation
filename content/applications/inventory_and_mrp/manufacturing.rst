@@ -4,7 +4,7 @@
 :show-toc:
 
 =============
-Manufacturing
+Sản xuất
 =============
 
 **Leansoft Manufacturing** helps manufacturers schedule, plan and process manufacturing orders. With
@@ -20,4 +20,4 @@ and allow workers to trigger maintenance operations, feedback loops, quality iss
 
    manufacturing/maintenance
    manufacturing/management
-   manufacturing/quality_control
+   .. manufacturing/quality_control

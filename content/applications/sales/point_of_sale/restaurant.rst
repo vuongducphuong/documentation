@@ -1,7 +1,7 @@
 :show-content:
 
 ===================
-Restaurant features
+Dành cho nhà hàng
 ===================
 
 Managing a restaurant or a bar comes with specific needs. The Điểm bán hàng application provides

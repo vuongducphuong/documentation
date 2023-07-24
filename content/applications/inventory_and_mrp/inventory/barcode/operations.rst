@@ -1,8 +1,8 @@
 :nosearch:
 
-================
-Daily Operations
-================
+==================
+Vận hành hàng ngày
+==================
 
 .. toctree::
    :titlesonly:

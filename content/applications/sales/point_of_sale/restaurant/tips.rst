@@ -38,12 +38,6 @@ checkbox, and click :guilabel:`Save & Close`.
      to avoid unnecessary inventory movements.
    - You can only select one tip product per POS, but you can choose a different one for each.
 
-Tip using an Adyen terminal
----------------------------
-
-If you use an :doc:`Adyen <../payment_methods/terminals/adyen>` payment terminal and wish to enable
-**tips** using the terminal, check :guilabel:`Add tip through payment terminal (Adyen)` below the
-:ref:`tip settings <configuration>`.
 
 Tip after payment
 -----------------

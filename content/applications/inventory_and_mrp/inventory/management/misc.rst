@@ -1,7 +1,7 @@
 :nosearch:
 
 ========================
-Miscellaneous Operations
+Hoạt động khác
 ========================
 
 .. toctree::

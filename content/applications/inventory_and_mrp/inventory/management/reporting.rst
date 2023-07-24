@@ -1,8 +1,8 @@
 :nosearch:
 
-=================
-Valuation Methods
-=================
+=================================
+Phương pháp định giá hàng tồn kho
+=================================
 
 .. toctree::
    :titlesonly:

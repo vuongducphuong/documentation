@@ -4,7 +4,7 @@
 :show-toc:
 
 ===========
-Attendances
+Chấm công
 ===========
 
 **Leansoft Attendances** functions as a time clock. Employees check in and check out of work, while

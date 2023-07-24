@@ -1,5 +1,5 @@
 ===============
-Send quotations
+Gửi báo giá
 ===============
 
 When you qualify a lead into an opportunity you will most likely need to

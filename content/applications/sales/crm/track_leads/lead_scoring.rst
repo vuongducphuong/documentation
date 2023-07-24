@@ -1,6 +1,6 @@
-=========================================
-Assign leads with predictive lead scoring
-=========================================
+==========================================
+Chấm điểm và dự đoán khách hàng tiềm năng
+==========================================
 
 The Odoo *CRM* app can automatically assign leads/opportunities to sales teams and salespeople. A
 standard practice is to assign leads based on the probability of winning each lead. Companies can

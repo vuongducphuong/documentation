@@ -1,6 +1,6 @@
-==========================================
-How to motivate and reward my salespeople?
-==========================================
+=============================================================
+Làm thế nào để khích lệ và khen thưởng nhân viên kinh doanh?
+=============================================================
 
 Challenging your employees to reach specific targets with goals and rewards is an excellent way to
 reinforce good habits and improve your salespeople productivity. The Gamification module gives you

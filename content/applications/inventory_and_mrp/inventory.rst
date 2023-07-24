@@ -4,7 +4,7 @@
 :show-toc:
 
 =========
-Inventory
+Kho vận
 =========
 
 **Leansoft Inventory** is both an inventory application and a warehouse management system, with an

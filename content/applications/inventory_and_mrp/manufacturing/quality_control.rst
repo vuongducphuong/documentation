@@ -1,7 +1,7 @@
 :nosearch:
 
 ===============
-Quality control
+Quản lý chất lượng
 ===============
 
 .. toctree::

@@ -1,8 +1,8 @@
 :nosearch:
 
-======
-Events
-======
+=======
+Sự kiện
+=======
 
 .. seealso::
    - `Leansoft Tutorials: Events <https://leansoft.vn/slides/surveys-63>`_

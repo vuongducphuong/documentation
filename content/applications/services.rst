@@ -8,6 +8,6 @@ Dịch vụ
 .. toctree::
 
     services/project
-    services/timesheets
-    services/field_service
-    services/helpdesk
+    .. services/timesheets
+    .. services/field_service
+    .. services/helpdesk

@@ -1,5 +1,5 @@
 =========================
-Search and filter records
+Tìm kiếm và lọc dữ liệu
 =========================
 
 Odoo uses filters to include only the most relevant records depending on the purpose of the view you

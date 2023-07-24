@@ -1,7 +1,7 @@
 :nosearch:
 
 ========================
-Manufacturing management
+Quy trình sản xuất
 ========================
 
 .. toctree::

@@ -2,7 +2,7 @@
 :show-toc:
 
 ======================================
-Incoming shipments and delivery orders
+Quy trình nhận hàng
 ======================================
 
 There are several ways to handle how a warehouse receives products (receipts) and ships products

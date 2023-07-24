@@ -1,5 +1,5 @@
 ====================
-Multiple sales teams
+Nhiều nhóm bán hàng
 ====================
 
 Use the *Sales Teams* feature to manage several sales teams, departments, or channels, each with

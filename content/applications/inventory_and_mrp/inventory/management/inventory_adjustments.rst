@@ -1,7 +1,7 @@
 :nosearch:
 
 =====================
-Inventory adjustments
+Điều chỉnh tồn kho
 =====================
 
 .. toctree::

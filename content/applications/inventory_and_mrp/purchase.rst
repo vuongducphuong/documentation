@@ -3,9 +3,9 @@
 :hide-page-toc:
 :show-toc:
 
-========
-Purchase
-========
+=========
+Mua hàng
+=========
 
 **Leansoft Purchase** helps you keep track of purchase agreements, quotations, and purchase orders.
 Learn how to keep track of purchase tender, automate replenishments and follow up on your orders.

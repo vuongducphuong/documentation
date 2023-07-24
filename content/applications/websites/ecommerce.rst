@@ -3,9 +3,9 @@
 :hide-page-toc:
 :show-toc:
 
-=========
-eCommerce
-=========
+==================
+Thương mại điện tử
+==================
 
 Run a modern open-source online store with Odoo eCommerce. Learn how to sell online, promote
 products and increase your average cart sizes.

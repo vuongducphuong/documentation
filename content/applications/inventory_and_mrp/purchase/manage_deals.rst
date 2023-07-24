@@ -1,8 +1,8 @@
 :nosearch:
 
-============
-Manage deals
-============
+======================
+Quản lý các giao dịch
+======================
 
 .. toctree::
    :titlesonly:
